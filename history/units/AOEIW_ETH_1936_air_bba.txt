@@ -1,0 +1,14 @@
+air_wings = {
+    271 = {
+        small_plane_airframe_0 = {
+            owner = "ETH"
+            amount = 45
+            version_name = "AOEIW ETH Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "ETH"
+            amount = 10
+            version_name = "AOEIW ETH Close Support"
+        }
+    }
+}

@@ -1,0 +1,142 @@
+AOEIW_JAP_imperial_influence = {
+    AOEIW_JAP_endorse_army = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = {
+            NOT = { has_idea = AOEIW_JAP_army_influence_dominating }
+            OR = {
+                NOT = { has_idea = AOEIW_JAP_army_influence_influential }
+                AND = {
+                    has_idea = AOEIW_JAP_army_influence_influential
+                    NOT = { OR = { has_idea = AOEIW_JAP_navy_influence_dominating has_idea = AOEIW_JAP_zaibatsu_influence_dominating has_idea = AOEIW_JAP_civic_influence_dominating } }
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_INCREASE
+            if = { limit = { has_idea = AOEIW_JAP_army_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_influential add_idea = AOEIW_JAP_army_influence_dominating } }
+            else_if = { limit = { has_idea = AOEIW_JAP_army_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_meddling add_idea = AOEIW_JAP_army_influence_influential } }
+            else_if = { limit = { has_idea = AOEIW_JAP_army_influence_subdued } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_subdued add_idea = AOEIW_JAP_army_influence_meddling } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW_JAP_suppress_army = {
+        cost = 35
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = { NOT = { has_idea = AOEIW_JAP_army_influence_subdued } }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_DECREASE
+            if = { limit = { has_idea = AOEIW_JAP_army_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_meddling add_idea = AOEIW_JAP_army_influence_subdued } }
+            else_if = { limit = { has_idea = AOEIW_JAP_army_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_influential add_idea = AOEIW_JAP_army_influence_meddling } }
+            else_if = { limit = { has_idea = AOEIW_JAP_army_influence_dominating } swap_ideas = { remove_idea = AOEIW_JAP_army_influence_dominating add_idea = AOEIW_JAP_army_influence_influential } }
+        }
+        ai_will_do = { factor = 0.25 }
+    }
+    AOEIW_JAP_endorse_navy = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = {
+            NOT = { has_idea = AOEIW_JAP_navy_influence_dominating }
+            OR = {
+                NOT = { has_idea = AOEIW_JAP_navy_influence_influential }
+                AND = {
+                    has_idea = AOEIW_JAP_navy_influence_influential
+                    NOT = { OR = { has_idea = AOEIW_JAP_army_influence_dominating has_idea = AOEIW_JAP_zaibatsu_influence_dominating has_idea = AOEIW_JAP_civic_influence_dominating } }
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_INCREASE
+            if = { limit = { has_idea = AOEIW_JAP_navy_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_influential add_idea = AOEIW_JAP_navy_influence_dominating } }
+            else_if = { limit = { has_idea = AOEIW_JAP_navy_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_meddling add_idea = AOEIW_JAP_navy_influence_influential } }
+            else_if = { limit = { has_idea = AOEIW_JAP_navy_influence_subdued } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_subdued add_idea = AOEIW_JAP_navy_influence_meddling } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW_JAP_suppress_navy = {
+        cost = 35
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = { NOT = { has_idea = AOEIW_JAP_navy_influence_subdued } }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_DECREASE
+            if = { limit = { has_idea = AOEIW_JAP_navy_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_meddling add_idea = AOEIW_JAP_navy_influence_subdued } }
+            else_if = { limit = { has_idea = AOEIW_JAP_navy_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_influential add_idea = AOEIW_JAP_navy_influence_meddling } }
+            else_if = { limit = { has_idea = AOEIW_JAP_navy_influence_dominating } swap_ideas = { remove_idea = AOEIW_JAP_navy_influence_dominating add_idea = AOEIW_JAP_navy_influence_influential } }
+        }
+        ai_will_do = { factor = 0.25 }
+    }
+    AOEIW_JAP_endorse_zaibatsu = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = {
+            NOT = { has_idea = AOEIW_JAP_zaibatsu_influence_dominating }
+            OR = {
+                NOT = { has_idea = AOEIW_JAP_zaibatsu_influence_influential }
+                AND = {
+                    has_idea = AOEIW_JAP_zaibatsu_influence_influential
+                    NOT = { OR = { has_idea = AOEIW_JAP_army_influence_dominating has_idea = AOEIW_JAP_navy_influence_dominating has_idea = AOEIW_JAP_civic_influence_dominating } }
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_INCREASE
+            if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_influential add_idea = AOEIW_JAP_zaibatsu_influence_dominating } }
+            else_if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_meddling add_idea = AOEIW_JAP_zaibatsu_influence_influential } }
+            else_if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_subdued } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_subdued add_idea = AOEIW_JAP_zaibatsu_influence_meddling } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW_JAP_suppress_zaibatsu = {
+        cost = 35
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = { NOT = { has_idea = AOEIW_JAP_zaibatsu_influence_subdued } }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_DECREASE
+            if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_meddling add_idea = AOEIW_JAP_zaibatsu_influence_subdued } }
+            else_if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_influential add_idea = AOEIW_JAP_zaibatsu_influence_meddling } }
+            else_if = { limit = { has_idea = AOEIW_JAP_zaibatsu_influence_dominating } swap_ideas = { remove_idea = AOEIW_JAP_zaibatsu_influence_dominating add_idea = AOEIW_JAP_zaibatsu_influence_influential } }
+        }
+        ai_will_do = { factor = 0.25 }
+    }
+    AOEIW_JAP_endorse_civic = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = {
+            NOT = { has_idea = AOEIW_JAP_civic_influence_dominating }
+            OR = {
+                NOT = { has_idea = AOEIW_JAP_civic_influence_influential }
+                AND = {
+                    has_idea = AOEIW_JAP_civic_influence_influential
+                    NOT = { OR = { has_idea = AOEIW_JAP_army_influence_dominating has_idea = AOEIW_JAP_navy_influence_dominating has_idea = AOEIW_JAP_zaibatsu_influence_dominating } }
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_INCREASE
+            if = { limit = { has_idea = AOEIW_JAP_civic_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_influential add_idea = AOEIW_JAP_civic_influence_dominating } }
+            else_if = { limit = { has_idea = AOEIW_JAP_civic_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_meddling add_idea = AOEIW_JAP_civic_influence_influential } }
+            else_if = { limit = { has_idea = AOEIW_JAP_civic_influence_subdued } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_subdued add_idea = AOEIW_JAP_civic_influence_meddling } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW_JAP_suppress_civic = {
+        cost = 35
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+        available = { NOT = { has_idea = AOEIW_JAP_civic_influence_subdued } }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_QOL_TT_INFLUENCE_DECREASE
+            if = { limit = { has_idea = AOEIW_JAP_civic_influence_meddling } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_meddling add_idea = AOEIW_JAP_civic_influence_subdued } }
+            else_if = { limit = { has_idea = AOEIW_JAP_civic_influence_influential } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_influential add_idea = AOEIW_JAP_civic_influence_meddling } }
+            else_if = { limit = { has_idea = AOEIW_JAP_civic_influence_dominating } swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_dominating add_idea = AOEIW_JAP_civic_influence_influential } }
+        }
+        ai_will_do = { factor = 0.25 }
+    }
+}

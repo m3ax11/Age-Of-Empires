@@ -1,0 +1,228 @@
+capital = 4
+
+# AOEIW V10 PHASE 1 STARTING WORLD
+add_opinion_modifier = {
+    target = GER
+    modifier = AOEIW_german_austrian_understanding
+}
+
+set_research_slots = 3
+set_convoys = 0
+set_stability = 0.58
+set_war_support = 0.44
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 10
+    fascism = 6
+    communism = 4
+    neutrality = 62
+    imperialism = 18
+}
+recruit_character = AOEIW_AUS_franz_joseph_i
+recruit_character = AUS_alfred_jansa
+recruit_character = AUS_franz_bohme
+recruit_character = AUS_lothar_rendulic
+recruit_character = AUS_karl_eglseer
+recruit_character = AUS_ludwig_von_eimannsberger
+recruit_character = AUS_carl_heinz_birnbacher
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_AUS_legacy_0
+    AOEIW6_AUS_joint_procurement_0
+    civilian_economy
+    export_focus
+    limited_conscription
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    steel_production_1 = 1
+    aluminum_production_1 = 1
+    gwtank_chassis = 1
+    winter_clothes_gw = 1
+    jaegers = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_recon = 1
+    tech_engineers = 1
+    tech_support = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    tech_trucks = 1
+    basic_train = 1
+    electronic_mechanical_engineering = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    motorised_infantry = 1
+}
+oob = "AOEIW_AUS_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_AUS_v7_advisor_1
+recruit_character = AOEIW_AUS_v7_advisor_2
+recruit_character = AOEIW_AUS_v7_advisor_3
+recruit_character = AOEIW_AUS_v7_advisor_4
+recruit_character = AOEIW_AUS_v7_advisor_5
+recruit_character = AOEIW_AUS_v7_advisor_6
+
+if = {
+ limit = { has_dlc = "No Step Back" }
+ set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 engine_tech_1 = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "No Step Back" } }
+ set_technology = { gwtank = 1 basic_light_tank = 1 }
+}
+if = {
+ limit = { has_dlc = "By Blood Alone" }
+ set_technology = { iw_small_airframe = 1 basic_small_airframe = 1 engines_1 = 1 aa_lmg = 1 early_bombs = 1 aircraft_construction = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "By Blood Alone" } }
+ set_technology = { early_fighter = 1 fighter1 = 1 early_bomber = 1 CAS1 = 1 }
+}
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7920 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 648 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 720 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 288 }
+
+# AOEIW V8.8 SPECIALISED FORCE ACCESS
+
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 360 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW AUS Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW AUS Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW AUS Medium Bomber"
+        type = medium_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = medium_bomb_bay
+            engine_type_slot = engine_1_2x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_AUS_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+    }
+    set_air_oob = "AOEIW_AUS_1936_air_legacy"
+}
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = AUS_kurt_schuschnigg
+recruit_character = AUS_karl_renner
+recruit_character = AUS_otto_bauer
+recruit_character = AUS_josef_leopold
+recruit_character = AUS_arthur_seyss_inquart
+recruit_character = AUS_alfred_klahr
+recruit_character = AUS_odilo_globocnik
+recruit_character = AUS_alexander_lohr
+recruit_character = AUS_julius_yllam
+recruit_character = AUS_wilhelm_zehner
+recruit_character = AUS_otto_schobel
+recruit_character = AUS_viktor_seebauer
+recruit_character = AUS_ernst_kaltenbrunner
+recruit_character = AUS_friedrich_mandl
+recruit_character = AUS_eugen_beyer
+recruit_character = AUS_leopold_figl
+recruit_character = AUS_otto_von_habsburg
+recruit_character = AUS_eduard_barger
+recruit_character = AUS_julius_ringel
+recruit_character = AUS_anton_kienbauer
+recruit_character = AUS_sigismund_schilhawsky
+recruit_character = AUS_eduard_von_bohm_ermolli
+recruit_character = AUS_erhard_raus
+recruit_character = AUS_georg_von_trapp
+recruit_character = AUS_johann_koplenig
+recruit_character = AUS_bruno_frei
+recruit_character = AUS_ernst_fischer
+recruit_character = AUS_ernst_rudiger_starhemberg
+recruit_character = AUS_ernst_rudiger_starhemberg_r56
+recruit_character = AUS_richard_steidle
+recruit_character = AUS_wilhelm_miklas
+recruit_character = AUS_franz_winkler
+recruit_character = AUS_emil_fey
+recruit_character = AUS_walter_pfrimer
+recruit_character = AUS_michael_skubl
+recruit_character = AUS_ludwig_stepski_doliwa
+recruit_character = AUS_peter_mandorfer
+recruit_character = AUS_julius_deutsch
+recruit_character = AUS_gottfried_freiherr_von_banfeld
+recruit_character = AUS_georg_thurn_valsassina
+recruit_character = AUS_guido_schmidt
+recruit_character = AUS_hans_pernter
+recruit_character = AUS_wilhelm_taucher
+recruit_character = AUS_karl_buresch
+recruit_character = AUS_theodore_korner
+recruit_character = AUS_berthold_konig
+recruit_character = AUS_hans_karl_zessner_spitzenberg
+recruit_character = AUS_ernst_karl_winter
+recruit_character = AUS_alexander_eifler
+recruit_character = AUS_edmund_glaise_horstenau
+recruit_character = AUS_benno_von_millenkovich
+recruit_character = AUS_paul_hermann_meixer
+recruit_character = AUS_adalbert_schmidt
+recruit_character = AUS_franz_von_kiel
+recruit_character = AUS_karl_banfield_mumb_van_muhlhaim
+recruit_character = AUS_rudolf_towarek
+recruit_character = AUS_johann_kubena
+recruit_character = AUS_karl_werkmann
+recruit_character = AUS_herbert_wagner
+recruit_character = AUS_eugen_sanger
+recruit_character = AUS_hedy_lamarr
+recruit_character = AUS_egon_schweidler
+recruit_character = AUS_paul_eisler
+recruit_character = AUS_gunther_adolf_burstyn
+recruit_character = AUS_otto_grim

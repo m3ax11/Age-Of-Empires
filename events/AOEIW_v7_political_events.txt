@@ -1,0 +1,5 @@
+add_namespace = aoeiw_v7_politics
+
+country_event = { id = aoeiw_v7_politics.1 title = aoeiw_v7_politics.1.t desc = aoeiw_v7_politics.1.d is_triggered_only = yes fire_only_once = yes trigger = { tag = SOV } option = { name = aoeiw_v7_politics.1.a } }
+country_event = { id = aoeiw_v7_politics.2 title = aoeiw_v7_politics.2.t desc = aoeiw_v7_politics.2.d is_triggered_only = yes fire_only_once = yes trigger = { tag = USA } option = { name = aoeiw_v7_politics.2.a } }
+country_event = { id = aoeiw_v7_politics.3 title = aoeiw_v7_politics.3.t desc = aoeiw_v7_politics.3.d is_triggered_only = yes fire_only_once = yes trigger = { tag = USA } option = { name = aoeiw_v7_politics.3.a } }

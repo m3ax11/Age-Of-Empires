@@ -1,0 +1,125 @@
+add_namespace = aoeiw_final_factions
+
+country_event = {
+    id = aoeiw_final_factions.1
+    title = aoeiw_final_factions.1.t
+    desc = aoeiw_final_factions.1.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { original_tag = GER }
+    option = {
+        name = aoeiw_final_factions.1.a
+        ai_chance = { factor = 60 }
+        every_country = {
+            limit = { is_in_faction_with = GER }
+            add_timed_idea = { idea = AOEIW_final_reichspakt_staff days = 240 }
+            add_war_support = 0.02
+        }
+        add_command_power = 20
+    }
+    option = {
+        name = aoeiw_final_factions.1.b
+        ai_chance = { factor = 40 }
+        every_country = {
+            limit = { is_in_faction_with = GER }
+            add_stability = 0.02
+            add_political_power = 25
+        }
+    }
+}
+
+country_event = {
+    id = aoeiw_final_factions.2
+    title = aoeiw_final_factions.2.t
+    desc = aoeiw_final_factions.2.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { original_tag = FRA }
+    option = {
+        name = aoeiw_final_factions.2.a
+        ai_chance = { factor = 65 }
+        every_country = {
+            limit = { is_in_faction_with = FRA }
+            add_timed_idea = { idea = AOEIW_final_old_order_defence days = 240 }
+            add_war_support = 0.02
+        }
+    }
+    option = {
+        name = aoeiw_final_factions.2.b
+        ai_chance = { factor = 35 }
+        add_political_power = 75
+        add_opinion_modifier = { target = GER modifier = AOEIW_final_rivalry_pressure }
+        GER = { add_opinion_modifier = { target = FRA modifier = AOEIW_final_rivalry_pressure } }
+    }
+}
+
+country_event = {
+    id = aoeiw_final_factions.3
+    title = aoeiw_final_factions.3.t
+    desc = aoeiw_final_factions.3.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { original_tag = ITA }
+    option = {
+        name = aoeiw_final_factions.3.a
+        ai_chance = { factor = 55 }
+        every_country = {
+            limit = { is_in_faction_with = ITA }
+            add_timed_idea = { idea = AOEIW_final_mediterranean_coordination days = 240 }
+            navy_experience = 10
+            air_experience = 10
+        }
+    }
+    option = {
+        name = aoeiw_final_factions.3.b
+        ai_chance = { factor = 45 }
+        every_country = {
+            limit = { is_in_faction_with = ITA }
+            army_experience = 10
+            add_command_power = 10
+            add_war_support = 0.02
+        }
+    }
+}
+
+country_event = {
+    id = aoeiw_final_factions.10
+    title = aoeiw_final_factions.10.t
+    desc = aoeiw_final_factions.10.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = GER POL = { exists = yes is_subject_of = GER } }
+    option = {
+        name = aoeiw_final_factions.10.a
+        ai_chance = { factor = 55 }
+        POL = {
+            add_autonomy_ratio = { value = 0.15 localization = AOEIW_final_POL_autonomy_concession }
+            add_stability = 0.05
+            country_event = { id = aoeiw_final_factions.11 days = 1 }
+        }
+        add_political_power = 50
+    }
+    option = {
+        name = aoeiw_final_factions.10.b
+        ai_chance = { factor = 45 }
+        POL = { add_stability = -0.06 add_war_support = 0.06 country_event = { id = aoeiw_final_factions.12 days = 1 } }
+        add_stability = -0.02
+    }
+}
+
+country_event = {
+    id = aoeiw_final_factions.11
+    title = aoeiw_final_factions.11.t
+    desc = aoeiw_final_factions.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_final_factions.11.a add_political_power = 50 }
+}
+country_event = {
+    id = aoeiw_final_factions.12
+    title = aoeiw_final_factions.12.t
+    desc = aoeiw_final_factions.12.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_final_factions.12.a add_political_power = 25 }
+}

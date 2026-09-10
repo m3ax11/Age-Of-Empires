@@ -1,0 +1,35 @@
+
+state={
+	id=497
+	name="STATE_497"
+	manpower = 714153
+	
+	state_category = rural
+
+	resources={
+		rubber = 3
+	}
+	
+	history = {
+
+		buildings = {
+			infrastructure = 1
+			12853 = {
+				naval_base = 1
+			}
+		}
+
+		add_to_array = { state_victory_points = 12853 }
+		victory_points = { 
+			12853 3 
+		}
+        owner = BRA
+        add_core_of = BRA
+    }
+
+	provinces={
+		12853 12999 2214 10874 2035 10956 8172 13336 13409
+	}
+
+	local_supplies=0.0 
+}

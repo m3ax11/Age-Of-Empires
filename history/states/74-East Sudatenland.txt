@@ -1,0 +1,43 @@
+state=
+{
+	id=74
+	name="STATE_74"
+	manpower = 820000
+	
+	state_category = town
+	
+	resources = {
+		coal = 12 # initial distribution / 60 total
+	}
+	
+	history = {
+		victory_points = {
+			3583 5
+		}
+		victory_points = {
+			6485 1
+		}
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			steel_mill = 1
+		}
+
+		add_claim_by = SIL
+
+		1938.9.30 = {
+
+		add_to_array = { state_victory_points = 3583 }
+		add_to_array = { state_victory_points = 6485 }
+
+		}
+        owner = AUS
+        add_core_of = AUS
+    }
+	provinces= {
+		421 3414 3583 6485
+ 	}
+
+	local_supplies=2.0 
+}

@@ -1,0 +1,47 @@
+
+state={
+	id=517
+	name="STATE_517"
+	resources={
+		#steel = 8 #there was no steel production in victoria at this time, moved to state 285 
+		chromium = 2
+		oil = 1
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 3
+			7798 = {
+				naval_base = 4
+				coastal_bunker = 1
+
+			}
+
+		}
+		victory_points = {
+			7798 20 
+		}
+
+		victory_points = {
+			7755 3
+		}
+
+		add_to_array = { state_victory_points = 7798 }
+		add_to_array = { state_victory_points = 7755 }
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		1759 2130 2155 4776 4791 7755 7798 7811 10553 10581 10622 10637 12576 12932 
+	}
+	manpower=2219500
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=0.0
+}

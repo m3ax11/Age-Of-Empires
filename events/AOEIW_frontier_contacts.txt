@@ -1,0 +1,31 @@
+add_namespace = aoeiw_frontier
+country_event = {
+ id = aoeiw_frontier.1 title = aoeiw_frontier.1.t desc = aoeiw_frontier.1.d
+ picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW_frontier_accept trigger = { country_exists = MON NOT = { has_war_with = MON } has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } MON = { has_equipment = { infantry_equipment > 499 } has_capitulated = no } } ai_chance = { factor = 75 } MON = { send_equipment = { equipment = infantry_equipment amount = 500 target = CHI } army_experience = 10 } }
+ option = { name = AOEIW_frontier_decline ai_chance = { factor = 25 } }
+}
+country_event = {
+ id = aoeiw_frontier.2 title = aoeiw_frontier.2.t desc = aoeiw_frontier.2.d
+ picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW_frontier_accept trigger = { country_exists = XIC NOT = { has_war_with = XIC } has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } XIC = { has_equipment = { infantry_equipment > 499 } has_capitulated = no } } ai_chance = { factor = 75 } XIC = { send_equipment = { equipment = infantry_equipment amount = 500 target = CHI } army_experience = 10 } }
+ option = { name = AOEIW_frontier_decline ai_chance = { factor = 25 } }
+}
+country_event = {
+ id = aoeiw_frontier.3 title = aoeiw_frontier.3.t desc = aoeiw_frontier.3.d
+ picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW_frontier_accept trigger = { country_exists = QIN NOT = { has_war_with = QIN } has_country_flag = AOEIW20_UF_government_formed QIN = {  has_capitulated = no } } ai_chance = { factor = 75 } add_stability = 0.03 QIN = { add_stability = 0.03 } }
+ option = { name = AOEIW_frontier_decline ai_chance = { factor = 25 } }
+}
+country_event = {
+ id = aoeiw_frontier.4 title = aoeiw_frontier.4.t desc = aoeiw_frontier.4.d
+ picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW_frontier_accept trigger = { country_exists = MAN NOT = { has_war_with = MAN } has_country_flag = AOEIW20_UF_government_formed MAN = {  has_capitulated = no } } ai_chance = { factor = 75 } add_stability = 0.03 MAN = { add_stability = 0.03 } }
+ option = { name = AOEIW_frontier_decline ai_chance = { factor = 25 } }
+}
+country_event = {
+ id = aoeiw_frontier.5 title = aoeiw_frontier.5.t desc = aoeiw_frontier.5.d
+ picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW_frontier_accept trigger = { country_exists = XIC NOT = { has_war_with = XIC } has_country_flag = AOEIW20_UF_government_formed XIC = {  has_capitulated = no } } ai_chance = { factor = 75 } add_stability = 0.03 XIC = { add_stability = 0.03 } }
+ option = { name = AOEIW_frontier_decline ai_chance = { factor = 25 } }
+}

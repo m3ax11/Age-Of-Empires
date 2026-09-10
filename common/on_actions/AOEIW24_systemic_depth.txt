@@ -1,0 +1,24 @@
+on_actions = {
+    on_weekly_USA = { effect = {
+        if = { limit = { has_completed_focus = AOEIW22_USA_business_plot NOT = { has_country_flag = AOEIW24_USA_corporate_initialized } } set_country_flag = AOEIW24_USA_corporate_initialized set_variable = { AOEIW24_USA_corporate_power = 5 } }
+        if = { limit = { has_completed_focus = AOEIW22_USA_macarthur_republic NOT = { has_country_flag = AOEIW24_USA_macarthur_initialized } } set_country_flag = AOEIW24_USA_macarthur_initialized set_variable = { AOEIW24_USA_military_authority = 5 } }
+        if = { limit = { has_completed_focus = AOEIW22_USA_technocracy NOT = { has_country_flag = AOEIW24_USA_technate_initialized } } set_country_flag = AOEIW24_USA_technate_initialized set_variable = { AOEIW24_USA_technate_efficiency = 4 } }
+        if = { limit = { has_completed_focus = AOEIW22_USA_return_to_articles NOT = { has_country_flag = AOEIW24_USA_articles_initialized } } set_country_flag = AOEIW24_USA_articles_initialized set_variable = { AOEIW24_USA_state_autonomy = 4 } }
+        if = { limit = { has_completed_focus = AOEIW22_USA_imperial_presidency NOT = { has_country_flag = AOEIW24_USA_executive_initialized } } set_country_flag = AOEIW24_USA_executive_initialized set_variable = { AOEIW24_USA_executive_authority = 4 } }
+    } }
+    on_weekly_SOV = { effect = {
+        if = { limit = { has_completed_focus = AOEIW19_SOV_congress_of_soviets has_government = communism NOT = { has_country_flag = AOEIW24_SOV_revolution_started } } set_country_flag = AOEIW24_SOV_revolution_started country_event = { id = AOEIW24_sov.1 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW24_SOV_civil_war_active has_war = no } country_event = { id = AOEIW24_sov.3 hours = 6 } }
+        if = { limit = { has_completed_focus = AOEIW22_SOV_eurasian_idea NOT = { has_country_flag = AOEIW24_SOV_eurasian_initialized } } set_country_flag = AOEIW24_SOV_eurasian_initialized set_variable = { AOEIW24_SOV_eurasian_cohesion = 4 } }
+        if = { limit = { has_completed_focus = AOEIW22_SOV_russian_republic NOT = { has_country_flag = AOEIW24_SOV_republic_initialized } } set_country_flag = AOEIW24_SOV_republic_initialized set_variable = { AOEIW24_SOV_republican_legitimacy = 4 } }
+        if = { limit = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy NOT = { has_country_flag = AOEIW24_SOV_denikin_initialized } } set_country_flag = AOEIW24_SOV_denikin_initialized set_variable = { AOEIW24_SOV_military_authority = 5 } }
+    } }
+    on_weekly_ITA = { effect = {
+        if = { limit = { has_completed_focus = AOEIW22_ITA_mussolini_remains NOT = { has_country_flag = AOEIW24_ITA_fascist_initialized } } set_country_flag = AOEIW24_ITA_fascist_initialized set_variable = { AOEIW24_ITA_duce_control = 5 } }
+        if = { limit = { has_completed_focus = AOEIW22_ITA_syndicalist_italy NOT = { has_country_flag = AOEIW24_ITA_union_initialized } } set_country_flag = AOEIW24_ITA_union_initialized set_variable = { AOEIW24_ITA_union_cohesion = 4 } }
+        if = { limit = { has_completed_focus = AOEIW22_ITA_restore_rome NOT = { has_country_flag = AOEIW24_ITA_rome_initialized } } set_country_flag = AOEIW24_ITA_rome_initialized set_variable = { AOEIW24_ITA_imperial_overstretch = 2 } }
+    } }
+    on_weekly_AUS = { effect = {
+        if = { limit = { has_country_flag = AOEIW22_AUS_nationalities_initialized NOT = { has_country_flag = AOEIW24_AUS_crownlands_initialized } } set_country_flag = AOEIW24_AUS_crownlands_initialized set_variable = { AOEIW24_AUS_magyar_tension = 4 } set_variable = { AOEIW24_AUS_czech_tension = 3 } set_variable = { AOEIW24_AUS_south_slav_tension = 4 } set_variable = { AOEIW24_AUS_galician_tension = 2 } }
+    } }
+}

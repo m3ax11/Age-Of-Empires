@@ -1,0 +1,24 @@
+on_actions = {
+    # La Resistance locks every SPR template at country scope on a 1936 startup.
+    # AOEIW replaces the scripted Spanish Civil War, so the vanilla unlock never runs.
+    on_startup = {
+        effect = {
+            SPR = {
+                country_lock_all_division_template = no
+            }
+        }
+    }
+
+    # Save-compatible cleanup: unlock once when an affected campaign is resumed.
+    on_daily_SPR = {
+        effect = {
+            if = {
+                limit = {
+                    NOT = { has_country_flag = AOEIW_SPR_template_deployment_hotfix_applied }
+                }
+                country_lock_all_division_template = no
+                set_country_flag = AOEIW_SPR_template_deployment_hotfix_applied
+            }
+        }
+    }
+}

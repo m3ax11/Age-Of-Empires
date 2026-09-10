@@ -1,0 +1,19 @@
+air_wings = {
+    111 = {
+        small_plane_airframe_0 = {
+            owner = "FIN"
+            amount = 90
+            version_name = "AOEIW FIN Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "FIN"
+            amount = 30
+            version_name = "AOEIW FIN Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "FIN"
+            amount = 10
+            version_name = "AOEIW FIN Medium Bomber"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+
+state={
+	id=312
+	name="STATE_312"
+	resources={
+		steel=3
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			13433 = {
+				naval_base = 1
+			}
+			8017 = {
+				naval_base = 3
+			}
+		}
+
+		add_to_array = { state_victory_points = 12865 }
+		add_to_array = { state_victory_points = 8017 }
+		add_to_array = { state_victory_points = 13433 }
+		add_to_array = { state_victory_points = 13432 }
+		victory_points = {
+			12865 3
+		}
+		victory_points = {
+			8017 1 
+		}
+		victory_points = {
+			13433 1 
+		}
+		victory_points = {
+			13432 1 
+		}
+        owner = SPR
+        add_core_of = SPR
+    }
+
+	provinces={
+		2031 8017 12865 13432 13433 13434 
+	}
+	
+	manpower=978534
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

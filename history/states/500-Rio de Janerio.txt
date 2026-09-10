@@ -1,0 +1,45 @@
+
+state={
+	id=500
+	name="STATE_500"
+	manpower = 6543768
+	
+	state_category = metropolis
+	
+	#resources={
+	#
+	#}
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 4
+			10980 = {
+				naval_base = 8
+                landmark_cristo_redentor = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+			}
+		}
+
+		add_to_array = { state_victory_points = 10980 }
+		add_to_array = { state_victory_points = 12996 }
+		victory_points = { 10980 30 }
+		victory_points = { 12996 10 }
+        owner = BRA
+        add_core_of = BRA
+    }
+
+	provinces={
+		5172 8190 10980 12996 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,49 @@
+division_template = {
+ name = "Portugal Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "POR Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "POR Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Portugal Infantry Division" location = 10966 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Portugal Infantry Division" location = 12891 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Portugal Infantry Division" location = 3118 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Portugal Infantry Division" location = 1273 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Portugal Infantry Division" location = 8248 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Portugal Infantry Division" location = 9817 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Portugal Infantry Division" location = 11673 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Portugal Infantry Division" location = 1751 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Portugal Infantry Division" location = 11805 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Portugal Infantry Division" location = 3798 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Portugal Infantry Division" location = 12190 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Portugal Infantry Division" location = 12206 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Portugal Infantry Division" location = 10966 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Portugal Infantry Division" location = 12891 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Portugal Infantry Division" location = 3118 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Portugal Infantry Division" location = 1273 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Portugal Infantry Division" location = 8248 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Portugal Infantry Division" location = 9817 division_template = "Portugal Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. POR Rapid Division" location = 10966 division_template = "POR Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. POR Marine Division" location = 10966 division_template = "POR Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

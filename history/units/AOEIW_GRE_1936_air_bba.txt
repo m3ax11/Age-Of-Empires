@@ -1,0 +1,19 @@
+air_wings = {
+    47 = {
+        small_plane_airframe_0 = {
+            owner = "GRE"
+            amount = 90
+            version_name = "AOEIW GRE Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "GRE"
+            amount = 30
+            version_name = "AOEIW GRE Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "GRE"
+            amount = 10
+            version_name = "AOEIW GRE Medium Bomber"
+        }
+    }
+}

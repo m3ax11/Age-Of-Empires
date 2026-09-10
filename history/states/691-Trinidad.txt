@@ -1,0 +1,34 @@
+state={
+	id=691
+	name="STATE_691"
+    resources = {
+        oil = 18
+    }
+
+	manpower = 430192
+	
+	state_category = town
+
+	history = {
+
+
+		add_to_array = { state_victory_points = 3284 }
+		victory_points = {
+			3284 2
+		}
+		buildings = {
+			infrastructure = 2
+			3284 = {
+				naval_base = 2
+			}
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		3284 13012
+	}
+	
+	local_supplies=1.0
+}

@@ -1,0 +1,11 @@
+spriteTypes = {
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_industry_critical" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_industry_critical.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_industry" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_industry.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_military_critical" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_military_critical.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_military" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_military.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_political_critical" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_political_critical.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_political" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_political.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_mobilization" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_mobilization.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_revolution" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_revolution.dds" }
+    spriteType = { name = "GFX_idea_AOEIW_qol_spirit_reformed" texturefile = "gfx/interface/ideas/aoeiw_qol/AOEIW_qol_spirit_reformed.dds" }
+}

@@ -1,0 +1,46 @@
+add_namespace = aoeiw_phase21_super_test
+
+# Hidden manual hooks for regression testing from the debug console. They do
+# not fire on their own and therefore cannot affect normal campaigns.
+country_event = {
+    id = aoeiw_phase21_super_test.1
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = { flag = AOEIW_super_event_visible value = 1 }
+        scoped_sound_effect = "AOEIW_german_war_start"
+    }
+}
+country_event = {
+    id = aoeiw_phase21_super_test.2
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = { flag = AOEIW_super_event_visible value = 2 }
+        scoped_sound_effect = "AOEIW_german_war_start"
+    }
+}
+country_event = {
+    id = aoeiw_phase21_super_test.3
+    hidden = yes
+    is_triggered_only = yes
+    immediate = { set_country_flag = { flag = AOEIW_super_event_visible value = 3 } }
+}
+country_event = {
+    id = aoeiw_phase21_super_test.4
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = { flag = AOEIW_super_event_visible value = 4 }
+        scoped_sound_effect = "AOEIW_nra_victory"
+    }
+}
+country_event = {
+    id = aoeiw_phase21_super_test.5
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = { flag = AOEIW_super_event_visible value = 5 }
+        scoped_sound_effect = "AOEIW_ccp_victory"
+    }
+}

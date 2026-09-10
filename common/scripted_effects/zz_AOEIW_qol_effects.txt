@@ -1,0 +1,26 @@
+# One free entry choice in each doctrine family. The bonuses have one use and
+# therefore accelerate the opening without handing out entire doctrine trees.
+AOEIW_qol_grant_initial_doctrine_choices = {
+    if = {
+        limit = { NOT = { has_country_flag = AOEIW_qol_initial_doctrines_granted } }
+        set_country_flag = AOEIW_qol_initial_doctrines_granted
+        add_doctrine_cost_reduction = {
+            name = AOEIW_qol_free_land_doctrine
+            cost_reduction = 1.0
+            uses = 1
+            category = land_doctrine
+        }
+        add_doctrine_cost_reduction = {
+            name = AOEIW_qol_free_air_doctrine
+            cost_reduction = 1.0
+            uses = 1
+            category = air_doctrine
+        }
+        add_doctrine_cost_reduction = {
+            name = AOEIW_qol_free_naval_doctrine
+            cost_reduction = 1.0
+            uses = 1
+            category = naval_doctrine
+        }
+    }
+}

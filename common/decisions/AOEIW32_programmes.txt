@@ -1,0 +1,229 @@
+AOEIW32_GER_field_programmes = {
+AOEIW32_GER_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_GER_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_GER_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_GER_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_GER_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_GER_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_GER_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_GER_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_FRA_field_programmes = {
+AOEIW32_FRA_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_FRA_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_FRA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_FRA_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_FRA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_FRA_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_FRA_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_FRA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_FRA_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_FRA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_SOV_field_programmes = {
+AOEIW32_SOV_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_SOV_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_SOV_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_SOV_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_SOV_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_SOV_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_SOV_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_SOV_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_SOV_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_SOV_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_USA_field_programmes = {
+AOEIW32_USA_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_USA_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_USA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_USA_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_USA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_USA_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_USA_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_USA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_USA_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_USA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_ENG_field_programmes = {
+AOEIW32_ENG_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_ENG_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_ENG_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_ENG_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_ENG_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_ENG_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_ENG_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_ENG_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_ENG_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_ENG_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_ITA_field_programmes = {
+AOEIW32_ITA_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_ITA_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_ITA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_ITA_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_ITA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_ITA_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_ITA_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_ITA_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_ITA_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_ITA_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_JAP_field_programmes = {
+AOEIW32_JAP_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_JAP_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_JAP_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_JAP_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_JAP_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_JAP_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_JAP_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_JAP_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_JAP_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_JAP_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_AUS_field_programmes = {
+AOEIW32_AUS_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_AUS_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_AUS_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_AUS_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_AUS_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_AUS_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_AUS_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_AUS_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_AUS_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_AUS_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_TUR_field_programmes = {
+AOEIW32_TUR_infantry_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_TUR_mil_army_4 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_TUR_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_TUR_infantry_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_TUR_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+AOEIW32_TUR_armour_programme = {
+ icon = generic_prepare_civil_war
+ cost = 60
+ visible = { has_completed_focus = AOEIW9_TUR_mil_army_7 }
+ available = { has_capitulated = no NOT = { has_country_flag = AOEIW32_TUR_programme_budget } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_TUR_armour_programme_spirit days = 120 } set_country_flag = { flag = AOEIW32_TUR_programme_budget days = 240 } }
+ ai_will_do = { factor = 1 modifier = { factor = 0 has_war = no } }
+}
+}
+
+AOEIW32_GER_implementation = {
+AOEIW32_GER_spd_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW28_GER_spd_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_spd_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_zentrum_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW28_GER_zentrum_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_zentrum_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_liberal_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW28_GER_liberal_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_liberal_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_conservative_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW28_GER_conservative_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_conservative_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_cdu_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW30_GER_cdu_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_cdu_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_dstp_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW30_GER_dstp_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_dstp_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+AOEIW32_GER_kpd_bill = {
+ icon = generic_political_actions
+ cost = 75
+ visible = { has_country_flag = AOEIW30_GER_kpd_government }
+ available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+ complete_effect = { add_timed_idea = { idea = AOEIW32_GER_kpd_bill_spirit days = 180 } set_country_flag = { flag = AOEIW32_GER_legislative_budget days = 240 } }
+ ai_will_do = { factor = 1 }
+}
+}

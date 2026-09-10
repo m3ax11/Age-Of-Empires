@@ -1,0 +1,595 @@
+###########################
+# Low Countries Events
+###########################
+
+add_namespace = netherlands
+
+# bring windmills, polders, gouda and clogs
+country_event = { #Colijn (PM) helped a German woman, Skandaaal!
+	id = netherlands.1
+	title = netherlands.1.t
+	desc = netherlands.1.desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		date > 1936.03.12
+		has_country_leader = { ruling_only = yes character = HOL_hendrikus_colijn }
+	}
+	mean_time_to_happen = {
+			days = 15
+	}
+	fire_only_once = yes
+	option = {
+		name = netherlands.1.a
+		add_political_power = -5
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = netherlands.1.b
+		add_stability = -0.01
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+	}	
+}
+country_event = { #Colijn drops coalition with catholics, governemental crisis
+	id = netherlands.2
+	title = netherlands.2.t
+	desc = netherlands.2.desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		date > 1939.07.12
+		date < 1942.02.02
+		has_country_leader = { ruling_only = yes character = HOL_hendrikus_colijn  }
+		has_war = no
+	}
+	mean_time_to_happen = {
+			days = 90			#late game
+	}
+	fire_only_once = yes
+	option = {
+		name = netherlands.2.a
+		add_political_power = -50
+		add_stability = -0.10
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = netherlands.2.b
+		add_political_power = -20
+		retire_country_leader = yes 
+	}	
+}
+country_event = { #De Geer thinks that all is lost
+	id = netherlands.3
+	title = netherlands.3.t
+	desc = netherlands.3.desc
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		has_war = yes
+		has_capitulated = yes
+		has_country_leader = { ruling_only = yes character = HOL_dirk_jan_de_geer }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+			days = 60
+	}
+	option = {
+		name = netherlands.3.a
+		retire_country_leader = yes
+		add_war_support = 0.05
+	}	
+}
+
+country_event = {
+	id = netherlands.16
+	title = netherlands.16.t
+	desc = netherlands.16.desc
+	picture = GFX_report_event_chamberlain_announce
+
+	is_triggered_only = yes
+
+	option = { #Agree 
+		name = netherlands.16.a
+		ai_chance = {
+			base = 100
+		}
+		ENG = { 
+			diplomatic_relation = { 
+				country = HOL relation = non_aggression_pact
+			} 
+			give_guarantee = HOL
+		}
+		hidden_effect = {
+			news_event = { id = netherlands.17 hours = 48 }
+		}
+	}
+	option = { #Reject
+		name = netherlands.1.b
+		ai_chance = { base = 0 }
+		HOL = { 
+			country_event = { id = netherlands.18 hours = 24 }
+		}
+	}	
+}
+news_event = { #guarantee netherlands - news
+	id = netherlands.17
+	title = netherlands.17.t
+	desc = netherlands.17.desc
+	picture = GFX_news_event_019
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ENG = { has_guaranteed = HOL }
+		OR = {
+			is_neighbor_of = HOL
+			tag = HOL
+		}	
+	}	
+	
+	
+	option = { #Agree
+		name = netherlands.17.a
+		ai_chance = {
+			base = 100
+		}			
+	}	
+}
+country_event = { #failed 
+	id = netherlands.18
+	title = netherlands.18.t
+	desc = netherlands.18.desc
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes	
+	
+	
+	option = { #Agree
+		name = netherlands.18.a
+		ai_chance = {
+			base = 100
+		}
+		
+		set_country_flag = HOL_ENG_guarantees_refused
+	}	
+}
+country_event = {
+	id = netherlands.19
+	title = netherlands.19.t
+	desc = netherlands.19.desc
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #Agree 
+		name = netherlands.19.a
+		ai_chance = {
+			base = 100
+		}
+		FRA = { 
+			diplomatic_relation = { 
+				country = HOL relation = non_aggression_pact
+			} 
+			give_guarantee = HOL
+		}
+		hidden_effect = {
+			country_event = { id = netherlands.20 days = 2 }
+		}
+	}
+	option = { #Reject
+		name = netherlands.1.b
+		ai_chance = { base = 0 }
+		HOL = { 
+			country_event = { id = netherlands.21 hours = 24 }
+		}
+	}	
+}
+country_event = { #netherlands asks for guarantees - FRA
+	id = netherlands.20
+	title = netherlands.20.t
+	desc = netherlands.20.desc
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes	
+	
+	option = { #Agree
+		name = netherlands.19.a
+		set_country_flag = HOL_FRA_guarantees_refused
+	}	
+}
+country_event = { #failed 
+	id = netherlands.21
+	title = netherlands.21.t
+	desc = netherlands.21.desc
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes	
+	
+	
+	option = { #Agree
+		name = netherlands.21.a
+		ai_chance = {
+			base = 100
+		}
+		
+		set_country_flag = HOL_ENG_guarantees_refused
+	}	
+}
+country_event = { #try join benelux customs union
+	id = netherlands.22
+	title = netherlands.22.t
+	desc = netherlands.22.desc
+	picture = GFX_report_event_benelux
+
+	is_triggered_only = yes	
+	
+	
+	option = { #contact BEL
+		name = netherlands.22.a
+		ai_chance = {
+			base = 95
+			modifier = {
+				factor = 0
+				OR = {	
+					has_completed_focus = BEL_go_right
+					has_completed_focus = BEL_go_left
+					is_subject = yes 
+				}
+			}
+		}
+		HOL = {
+			country_event = { id = netherlands.23 days = 1 }
+		}
+		LUX = {
+			country_event = { id = netherlands.24 days = 1 }
+		}		
+		swap_ideas = {
+			remove_idea = BEL_BEL_LUX_customs_union
+			add_idea = BEL_BEL_benelux_customs_union
+		}		
+	}
+	option = { #Refuse
+		name = belgium.22.b
+		ai_chance = {
+			base = 5
+		}
+		HOL = {
+			country_event = { id = netherlands.25 days = 1 }
+		}
+	}	
+}
+country_event = { # join benelux customs union
+	id = netherlands.23
+	title = netherlands.23.t
+	desc = netherlands.23.desc
+	picture = GFX_report_event_benelux
+
+	is_triggered_only = yes	
+	
+	
+	option = { 
+		name = netherlands.23.a
+		ai_chance = {
+			base = 100
+		}
+		add_ideas = BEL_HOL_benelux_customs_union
+		add_political_power = 50
+	}	
+}
+country_event = { # LUX join benelux customs union
+	id = netherlands.24
+	title = netherlands.24.t
+	desc = netherlands.24.desc
+	picture = GFX_report_event_benelux
+
+	is_triggered_only = yes	
+	
+	
+	option = { 
+		name = netherlands.24.a
+		ai_chance = {
+			base = 100
+		}
+		swap_ideas = {
+			remove_idea = BEL_LUX_BEL_customs_union
+			add_idea = BEL_LUX_benelux_customs_union
+		}
+	}	
+}				
+country_event = { # benelux customs union denied
+	id = netherlands.25
+	title = netherlands.25.t
+	desc = netherlands.25.desc
+	picture = GFX_report_event_benelux
+
+	is_triggered_only = yes	
+	
+	
+	option = { 
+		name = netherlands.25.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -10
+		set_global_flag = HOL_benelux_customs_union_denied
+	}	
+}
+country_event = { # reorient the foreign policy
+	id = netherlands.26
+	title = netherlands.26.t
+	desc = netherlands.26.desc
+	picture = GFX_report_event_benelux
+
+	trigger = {
+		has_global_flag = HOL_benelux_customs_union_denied
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+			days = 2
+	}	
+	
+	option = { #neutrality 
+		name = netherlands.26.a
+		ai_chance = {
+			base = 60
+		}
+		add_political_power = 5
+		add_ideas = neutrality_idea
+		set_country_flag = bypass_HOL_maintain_neutrality
+	}
+	option = { 
+		name = netherlands.26.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				OR = {	
+					ENG = {
+						has_government = fascism
+					}
+					ENG = {
+						has_government = communism
+					}
+					ENG = {
+						is_subject = yes
+					}
+					AND = {
+						ENG = {
+							has_war = yes
+						}
+						has_war = no
+					}					
+				}
+			}			
+		}
+	}	
+}							
+country_event = { # communist takeover queen reacts
+	id = netherlands.27
+	title = netherlands.27.t
+	desc = netherlands.27.desc
+	picture = GFX_report_event_benelux
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #queen in exile
+		name = netherlands.27.a
+		hidden_effect = {
+			random_list = {
+				70 = { country_event = { id = netherlands.28 } }
+				30 = { country_event = { id = netherlands.29 } } #Queen caught
+			}
+		}
+	}
+
+	option = { 
+		name = netherlands.27.b
+		add_political_power = -15
+		hidden_effect = {
+			random_list = {
+				30 = { country_event = { id = netherlands.28 } }
+				70 = { country_event = { id = netherlands.29 } } #Queen caught
+			}
+		}		
+	}
+}
+country_event = { # communist takeover queen leaves
+	id = netherlands.28
+	title = netherlands.28.t
+	desc = netherlands.28.desc
+	picture = GFX_report_event_benelux
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = { #queen in exile
+		name = netherlands.28.a
+		
+		add_political_power = 5
+		remove_ideas = HOL_wilhelmina
+		set_country_flag = HOL_wilhelmina_exile
+	}
+}
+
+country_event = { # communist takeover queen captured
+	id = netherlands.29
+	title = netherlands.29.t
+	desc = netherlands.29.desc
+	picture = GFX_report_event_benelux
+
+	is_triggered_only = yes
+	
+	option = { #queen in exile
+		name = netherlands.29.a
+		
+		add_political_power = 20
+		remove_ideas = HOL_wilhelmina
+		set_country_flag = HOL_wilhelmina_captured
+	}
+}
+
+country_event = { 
+	id = netherlands.32
+	title = netherlands.32.t
+	desc = netherlands.32.desc
+	picture = GFX_report_event_congres_wallon
+
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = HOL
+		controls_state = 6
+		controls_state = 34
+		owns_state = 6
+		owns_state = 34
+		HOL = { 
+			NOT = {
+				has_country_flag = HOL_netherlands_32_happend
+				}
+			}
+	}
+	mean_time_to_happen = {
+			days = 60
+	}	
+	option = {
+		name = netherlands.32.a
+		#debuffs removed since integration decision has debuffs, way too much anyway
+		#add_political_power = -100
+		#add_stability = -0.25
+		set_country_flag = HOL_netherlands_32_happend
+	}
+	option = {
+		name = netherlands.32.b
+		add_political_power = 20
+		add_stability = 0.05
+		release_puppet = WLL
+		set_country_flag = HOL_netherlands_32_happend
+		BEL = {
+			FLA = {
+				inherit_technology = BEL
+			}
+			BEL_send_characters_towards_FLA_WLL = yes
+		}	
+		FLA = { #send the flemish techs to wallonia to be sure that they both receive it
+			WLL = {
+				inherit_technology = FLA
+			}
+		}		
+	}	
+}
+
+
+country_event = { 
+	id = netherlands.33
+	title = netherlands.33.t
+	desc = netherlands.33.desc
+	picture = GFX_report_event_map_benelux
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = netherlands.33.a
+		add_political_power = 100
+		add_stability = 0.01
+		HOL = {
+			transfer_state = 6
+			country_event = { id = netherlands.34 hours = 6}
+		}
+
+
+	}
+	option = {
+		name = netherlands.33.b
+		HOL = {
+			country_event = { id = netherlands.35 hours = 6}
+		}	
+	}	
+}
+
+country_event = { 
+	id = netherlands.34
+	title = netherlands.34.t
+	desc = netherlands.34.desc
+	picture = GFX_report_event_dietsche_militie
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = netherlands.33.a
+		add_political_power = 20
+		add_war_support = 0.03
+		add_stability = 0.01
+	}	
+}
+country_event = { 
+	id = netherlands.35
+	title = netherlands.35.t
+	desc = netherlands.35.desc
+	picture = GFX_report_event_map_benelux
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = netherlands.35.a
+		add_war_support = -0.01
+		add_stability = -0.01
+	}	
+}
+
+country_event = { #Wilhelmina abdicates and Juliana ascends
+	id = netherlands.37
+	title = netherlands.37.t
+	desc = netherlands.37.desc
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_government = communism
+		}
+	}
+	
+	option = { #approved
+		name = netherlands.37.a
+		if = {
+			limit = {
+				has_idea = HOL_wilhelmina
+			}
+			swap_ideas = {
+				remove_idea = HOL_wilhelmina
+				add_idea = HOL_juliana
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = HOL_wilhelmina
+					ruling_only = yes
+				}
+			}
+			promote_character = {
+				character = HOL_juliana
+				ideology = centrism
+			}
+		}
+		hidden_effect = {
+			set_country_flag = HOL_wilhelmina_abdication_flag
+		}
+	}
+}

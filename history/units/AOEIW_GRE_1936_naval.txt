@@ -1,0 +1,22 @@
+units = {
+    fleet = {
+        name = "GRE National Fleet"
+        naval_base = 4109
+        task_force = {
+            name = "GRE Main Fleet"
+            location = 4109
+            ship = { name = "GRE Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Cruiser Class" } } }
+            ship = { name = "GRE Cruiser 02" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Cruiser Class" } } }
+            ship = { name = "GRE Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Destroyer Class" } } }
+            ship = { name = "GRE Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Submarine Class" } } }
+            ship = { name = "GRE Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Submarine Class" } } }
+            ship = { name = "GRE Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "AOEIW GRE Submarine Class" } } }
+        }
+    }
+}

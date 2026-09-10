@@ -1,0 +1,53 @@
+division_template = {
+ name = "Greece Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "GRE Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "GRE Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Greece Infantry Division" location = 10203 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Greece Infantry Division" location = 3914 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Greece Infantry Division" location = 1205 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Greece Infantry Division" location = 9940 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Greece Infantry Division" location = 12058 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Greece Infantry Division" location = 4109 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Greece Infantry Division" location = 3973 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Greece Infantry Division" location = 7127 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Greece Infantry Division" location = 3988 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Greece Infantry Division" location = 11905 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Greece Infantry Division" location = 11818 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Greece Infantry Division" location = 7211 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Greece Infantry Division" location = 10203 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Greece Infantry Division" location = 3914 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Greece Infantry Division" location = 1205 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Greece Infantry Division" location = 9940 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Greece Infantry Division" location = 12058 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Greece Infantry Division" location = 4109 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Greece Infantry Division" location = 3973 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Greece Infantry Division" location = 7127 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Greece Infantry Division" location = 3988 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Greece Infantry Division" location = 11905 division_template = "Greece Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. GRE Rapid Division" location = 10203 division_template = "GRE Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. GRE Mountain Division" location = 10203 division_template = "GRE Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

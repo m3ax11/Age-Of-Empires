@@ -1,0 +1,99 @@
+add_namespace = aoeiw_v8
+
+country_event = {
+    id = aoeiw_v8.1
+    title = aoeiw_v8.1.t
+    desc = aoeiw_v8.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = GER }
+    option = {
+        name = aoeiw_v8.1.a
+        add_war_support = 0.03
+        add_political_power = 40
+    }
+    option = {
+        name = aoeiw_v8.1.b
+        add_stability = 0.03
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = aoeiw_v8.2
+    title = aoeiw_v8.2.t
+    desc = aoeiw_v8.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = GER }
+    option = {
+        name = aoeiw_v8.2.a
+        add_war_support = 0.04
+        add_political_power = 35
+    }
+    option = {
+        name = aoeiw_v8.2.b
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+    id = aoeiw_v8.3
+    title = aoeiw_v8.3.t
+    desc = aoeiw_v8.3.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = GER }
+    option = {
+        name = aoeiw_v8.3.a
+        add_political_power = 50
+        add_stability = 0.02
+    }
+    option = {
+        name = aoeiw_v8.3.b
+        add_war_support = 0.04
+    }
+}
+
+country_event = {
+    id = aoeiw_v8.10
+    title = aoeiw_v8.10.t
+    desc = aoeiw_v8.10.d
+    picture = GFX_report_event_SOV_tank_column
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = SOV }
+    option = {
+        name = aoeiw_v8.10.a
+        add_popularity = { ideology = communism popularity = 0.05 }
+        add_political_power = 50
+    }
+    option = {
+        name = aoeiw_v8.10.b
+        add_stability = 0.03
+        add_war_support = 0.03
+    }
+}
+
+country_event = {
+    id = aoeiw_v8.20
+    title = aoeiw_v8.20.t
+    desc = aoeiw_v8.20.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = ENG }
+    option = {
+        name = aoeiw_v8.20.a
+        add_stability = 0.03
+        add_political_power = 40
+    }
+    option = {
+        name = aoeiw_v8.20.b
+        add_war_support = 0.04
+        add_political_power = 25
+    }
+}

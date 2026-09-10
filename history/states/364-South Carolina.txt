@@ -1,0 +1,40 @@
+
+state={
+	id=364
+	name="STATE_364"
+	manpower = 1738764
+	
+	state_category = city
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			7202 = {
+				naval_base = 2
+
+			}
+		}
+
+
+		add_to_array = { state_victory_points = 7202 }
+		add_to_array = { state_victory_points = 7012 }
+		victory_points = {
+			7202 1 
+		}
+		victory_points = {
+			7012 2 
+		}
+        owner = USA
+        add_core_of = CSA
+        add_core_of = USA
+        controller = USA
+    }
+
+	provinces={
+		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
+	}
+
+	local_supplies=0.0 
+}

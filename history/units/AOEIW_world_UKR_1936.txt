@@ -1,0 +1,22 @@
+division_template = {
+    name = "Ukrainian State Field Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "2. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "3. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "4. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "5. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "6. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "7. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "8. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "9. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "10. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "11. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "12. Ukrainian Division" location = 3568 division_template = "Ukrainian State Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+}

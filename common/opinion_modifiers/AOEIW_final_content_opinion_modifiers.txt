@@ -1,0 +1,14 @@
+opinion_modifiers = {
+    AOEIW_final_asian_diplomatic_protocol = {
+        value = 25
+        decay = 1
+    }
+    AOEIW_final_faction_coordination = {
+        value = 20
+        decay = 1
+    }
+    AOEIW_final_rivalry_pressure = {
+        value = -25
+        decay = 1
+    }
+}

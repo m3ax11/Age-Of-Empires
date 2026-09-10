@@ -1,0 +1,99 @@
+ideas = {
+    country = {
+        AOEIW35_GER_imperial_capstone_idea = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 stability_factor = 0.06 recruitable_population_factor = -0.004 consumer_goods_factor = 0.01 }
+        }
+
+        AOEIW35_GER_democratic_capstone_idea = {
+            picture = generic_democratic_reformer_western_european_2d
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { research_speed_factor = 0.035 stability_factor = 0.08 political_power_factor = 0.04 war_support_factor = -0.03 }
+        }
+
+        AOEIW35_GER_workers_capstone_idea = {
+            picture = SOV_third_five_year_plan_military
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.10 production_speed_buildings_factor = 0.08 consumer_goods_factor = -0.02 stability_factor = -0.04 }
+        }
+
+        AOEIW35_GER_nationalist_capstone_idea = {
+            picture = generic_fascist_demagogue_western_european_2d
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_attack_factor = 0.055 planning_speed = 0.08 industrial_capacity_factory = 0.05 stability_factor = -0.07 }
+        }
+
+        AOEIW35_FRA_institutional_capstone_idea = {
+            picture = FRA_factory_strikes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.06 army_org_factor = 0.03 stability_factor = 0.04 }
+        }
+
+        AOEIW35_ENG_institutional_capstone_idea = {
+            picture = eng_chiefs_of_staff_committee
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { navy_org_factor = 0.04 convoy_escort_efficiency = 0.08 stability_factor = 0.04 }
+        }
+
+        AOEIW35_ITA_institutional_capstone_idea = {
+            picture = ITA_hardened_irregular_bands
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 industrial_capacity_factory = 0.05 supply_consumption_factor = 0.03 }
+        }
+
+        AOEIW35_JAP_institutional_capstone_idea = {
+            picture = jap_interservice_rivalry_navy_dominant
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 navy_org_factor = 0.03 production_factory_efficiency_gain_factor = 0.05 }
+        }
+
+        AOEIW35_USA_institutional_capstone_idea = {
+            picture = usa_great_depression_2
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.07 production_speed_buildings_factor = 0.05 consumer_goods_factor = 0.015 }
+        }
+
+        AOEIW35_SOV_institutional_capstone_idea = {
+            picture = SOV_third_five_year_plan_military
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 supply_consumption_factor = -0.03 industrial_capacity_factory = 0.05 }
+        }
+
+        AOEIW35_SPR_institutional_capstone_idea = {
+            picture = SPR_political_violence
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 production_speed_buildings_factor = 0.06 resistance_target = -0.02 }
+        }
+
+        AOEIW35_AUS_institutional_capstone_idea = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 resistance_target = -0.03 army_org_factor = 0.03 }
+        }
+    }
+}

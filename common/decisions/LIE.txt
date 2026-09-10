@@ -1,0 +1,1559 @@
+political_actions = {
+	LIE_grant_boris_smyslovsky_citizenship = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			has_completed_focus = LIE_white_russian_advisors
+		}
+
+		available = {
+			has_idea = LIE_boris_smyslovsky
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+
+		custom_cost_text = EGY_decision_cost_command_power
+
+		complete_effect = {
+			add_command_power = -15
+			add_corps_commander_role = {
+                character = LIE_boris_smyslovsky
+                traits = { infantry_officer war_hero }
+                skill = 2
+                attack_skill = 3
+                defense_skill = 2
+                planning_skill = 1
+                logistics_skill = 2
+				visible = {
+					NOT = {
+						has_government = communism
+					}
+					SOV = {
+						NOT = { 
+							has_completed_focus = SOV_beaten_but_not_defeated
+							has_completed_focus = SOV_form_a_fifth_column
+							has_completed_focus = SOV_counter_coup_old 
+						}
+					}
+				}
+            }
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	LIE_revitalize_old_princely_talent = {
+
+		icon = GFX_decision_generic_monarchy
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			OR = {
+				has_completed_focus = LIE_enact_the_1921_defence_act
+				has_completed_focus = LIE_repeal_the_1868_act
+			}
+		}
+
+		available = {
+			NOT = {
+				has_government = communism
+			}
+			has_army_manpower = {
+				size > 1000 
+			}
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+
+		custom_cost_text = EGY_decision_cost_command_power
+
+		complete_effect = {
+			add_command_power = -15
+			LIE_assemble_the_crew = yes
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+}
+
+LIE_foreign_gold_trading_category = {
+	LIE_offer_fascist_to_trade_gold = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			#has_completed_focus = LIE_axis_gold
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_major = yes
+				has_government = fascism 
+				NOT = {
+					has_war_with = ROOT 
+					has_idea = LIE_gold_trade_with_liechtenstein
+				}
+				NOT = {has_country_flag = LIE_rejected_investment} 
+				NOT = {has_country_flag = LIE_waiting_for_answer_timeout}
+			}
+			NOT = {
+				any_other_country = {
+					has_government = fascism 
+					has_country_flag = LIE_gold_trading_partner
+				}
+			}
+		}
+
+		cost = 50 
+		complete_effect = {
+			FROM = { country_event = { id = BBA_switzerland_trade.8 hours = 4 } }
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				LIE_update_gold_trade_modifiers = yes
+			} 
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LIE_offer_democratic_to_trade_gold = {
+		
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_major = yes
+				NOT = { has_war_with = ROOT } 
+				has_government = democratic 
+				NOT = {					
+					has_idea = LIE_gold_trade_with_liechtenstein
+					#has_dynamic_modifier = { modifier = LIE_stole_our_gold_reserves }
+				}
+				NOT = {has_country_flag = LIE_rejected_investment}  
+				NOT = {has_country_flag = LIE_waiting_for_answer_timeout}
+			}
+			NOT = {
+				any_other_country = {
+					has_government = democratic 
+					has_country_flag = LIE_gold_trading_partner
+				}
+			}
+
+
+		}
+
+		cost = 50 
+		complete_effect = {
+			FROM = { country_event = { id = BBA_switzerland_trade.8 hours = 4 } }
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				LIE_update_gold_trade_modifiers = yes
+			}  
+		}
+		ai_will_do = {
+			base = 100 
+			modifier = {
+				add = 50
+				FROM = {
+					original_tag = ENG # We're related to them they're cool
+				}
+			}
+		}
+	}
+
+	LIE_offer_communist_to_trade_gold = {
+		
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			has_country_flag = LIE_can_trade_gold_with_communist_nations
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_major = yes
+				NOT = { has_war_with = ROOT } 
+				has_government = communism
+				NOT = {					
+					has_idea = LIE_gold_trade_with_liechtenstein
+					#has_dynamic_modifier = { modifier = LIE_stole_our_gold_reserves }
+				}
+				NOT = {has_country_flag = LIE_rejected_investment}  
+				NOT = {has_country_flag = LIE_waiting_for_answer_timeout}
+			}
+			NOT = {
+				any_other_country = {
+					has_government = communism
+					has_country_flag = LIE_gold_trading_partner
+				}
+			}
+
+
+		}
+
+		cost = 50 
+		complete_effect = {
+			FROM = { country_event = { id = BBA_switzerland_trade.8 hours = 4 } }
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				LIE_update_gold_trade_modifiers = yes
+			}  
+		}
+		ai_will_do = {
+			base = 100 
+		}
+	}
+
+	LIE_sever_gold_trade_with_country = {
+
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_major = yes 
+				has_country_flag = LIE_gold_trading_partner
+				NOT = {
+					has_country_flag = LIE_recently_accepted_investment
+				}
+				has_idea = LIE_gold_trade_with_liechtenstein
+			}
+		}
+
+		cost = 50 
+		complete_effect = {
+			FROM = {
+				remove_ideas = LIE_gold_trade_with_liechtenstein
+				country_event = { id = liechtenstein.18 hours = 4 }
+				hidden_effect = {
+					set_country_flag = {
+						flag = LIE_rejected_investment
+						days = 240
+						value = 0
+					}
+				}
+			}
+			LIE_update_gold_trade_modifiers_for_ourselves_negative = yes
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
+
+LIE_landtag_balance_of_power_category = {
+	LIE_bop_hold_FBP_speech = {
+		priority = 118
+		icon = GFX_decision_generic_political_address
+		allowed = {
+			original_tag = LIE
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		available = {}
+
+		cost = 25
+
+		ai_hint_pp_cost = 25
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = 0.05
+				tooltip_side = LIE_FBP_side
+			}
+			custom_effect_tooltip = AFG_reactivates_in_30_days
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = { # Need to have the FBP side in order to allign with Switzerland
+				add = 50
+				is_historical_focus_on = yes
+				has_political_power > 100
+			}
+		}
+	}
+	LIE_bop_hold_VU_speech = {
+		priority = 118
+		icon = GFX_decision_generic_speech
+		allowed = {
+			original_tag = LIE
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		available = {}
+
+		cost = 25
+
+		ai_hint_pp_cost = 25
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = -0.05
+				tooltip_side = LIE_VU_side
+			}
+			custom_effect_tooltip = AFG_reactivates_in_30_days
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	LIE_bop_prioritize_military_industry = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		cost = 50
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		days_remove = 60
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 15
+				has_political_power > 100
+			}
+		}
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.1
+			production_speed_dockyard_factor = 0.1
+		}
+
+		remove_effect = {
+			
+			custom_effect_tooltip = AFG_reactivates_in_180_days
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = -0.1
+				tooltip_side = LIE_VU_side
+			}
+		}
+	}
+	LIE_bop_prioritize_civilian_industry = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		cost = 50
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		days_remove = 60
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+				has_political_power > 150
+			}
+		}
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_infrastructure_factor = 0.1
+			production_speed_rail_way_factor = 0.1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = AFG_reactivates_in_180_days
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = 0.1
+				tooltip_side = LIE_FBP_side
+			}
+		}
+	}
+	LIE_bop_smuggle_resources = {
+
+		icon = GFX_decision_steel
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = democratic
+			has_completed_focus = LIE_legalize_smuggling_operations
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		days_remove = 30
+
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		custom_cost_text = decision_cost_civ_factory_1
+
+		ai_will_do = {
+			base = 5
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+			local_resources_factor = 0.1
+			production_lack_of_resource_penalty_factor = -0.2
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = 0.1
+				tooltip_side = LIE_FBP_side
+			}
+		}
+	}
+	LIE_bop_smuggle_foreign_weaponary = {
+
+		icon = generic_prepare_civil_war
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = democratic
+			has_completed_focus = LIE_legalize_smuggling_operations
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 90
+
+		days_remove = 30
+
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		custom_cost_text = decision_cost_civ_factory_1
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 25
+				is_historical_focus_on = yes
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			random_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					arms_factory > 3
+				}
+				ROOT = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = var:LIE_random_equipment
+						producer = PREV
+					}
+				}
+			}
+			custom_effect_tooltip = AFG_reactivates_in_90_days
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = -0.1
+				tooltip_side = LIE_VU_side
+			}
+			set_variable_to_random = {
+				var = LIE_random_equipment
+				max = 500
+				min = 200
+				integer = yes
+			}
+		}
+	}
+	LIE_bop_open_the_borders = {
+
+		icon = GFX_decision_SWI_dismiss_council
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		cost = 50
+
+		available = {
+			
+		}
+
+		visible = {
+			has_completed_focus = LIE_asylum_for_jews
+		}
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		days_remove = 60
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 50
+				has_political_power > 100
+			}
+		}
+
+		modifier = {
+			monthly_population = 1
+			weekly_manpower = 100
+			stability_weekly = -0.005
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = AFG_reactivates_in_180_days
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = 0.2
+				tooltip_side = LIE_FBP_side
+			}
+		}
+	}
+	LIE_bop_monitor_political_opponents = {
+
+		icon = GFX_decision_SWI_expand_covert_operations
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = democratic
+			has_dlc = "La Resistance"
+			has_completed_focus = LIE_abwehr_contacts
+		}
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+
+		custom_cost_text = EGY_decision_cost_command_power
+
+		fire_only_once = no
+
+		days_re_enable = 365
+
+		days_remove = 180
+
+		ai_will_do = {
+			base = 5
+		}
+
+		modifier = {
+			foreign_subversive_activites = -0.1
+			intel_network_gain_factor = 0.1
+			subversive_activites_upkeep = -0.05
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = AFG_reactivates_in_365_days
+		}
+
+		complete_effect = {
+			add_command_power = -15
+			add_power_balance_value = {
+				id = LIE_landtag_balance_of_power
+				value = -0.2
+				tooltip_side = LIE_VU_side
+			}
+		}
+	}
+}
+
+LIE_support_monarchy_in_AUS_category = {
+	LIE_monarchist_propaganda_in_AUS = {
+
+		icon = generic_nationalism
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = {
+				has_country_flag = LIE_civil_war_fired_in_AUS
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_re_enable = 120
+
+		days_remove = 60
+
+		ai_will_do = {
+			base = 5
+		}
+
+		complete_effect = {
+			AUS = {
+				add_ideas = LIE_monarchist_support_idea
+			}
+		}
+
+		remove_effect = {
+			AUS = {
+				remove_ideas = LIE_monarchist_support_idea
+			}
+		}
+	}
+	LIE_invest_in_AUS = {
+
+		icon = generic_construction
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = {
+				has_country_flag = LIE_civil_war_fired_in_AUS
+			}
+		}
+
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		custom_cost_text = decision_cost_civ_factory_3
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		days_remove = 90
+
+		ai_will_do = {
+			base = 5
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			AUS = {
+				add_ideas = LIE_monarchist_investment_idea
+			}
+		}
+
+		remove_effect = {
+			AUS = {
+				remove_ideas = LIE_monarchist_investment_idea
+			}
+		}
+	}
+	LIE_arm_monarchist_militias_in_AUS = {
+
+		icon = generic_prepare_civil_war
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = {
+				has_country_flag = LIE_civil_war_fired_in_AUS
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_ie_1000
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		days_remove = 90
+
+		ai_will_do = {
+			base = 5
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			AUS = {
+				add_ideas = LIE_monarchist_militias_idea
+			}
+		}
+
+		remove_effect = {
+			AUS = {
+				remove_ideas = LIE_monarchist_militias_idea
+			}
+		}
+	}
+	LIE_sway_army_in_AUS = {
+
+		icon = generic_army_support
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = {
+				has_country_flag = LIE_civil_war_fired_in_AUS
+			}
+		}
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+
+		custom_cost_text = EGY_decision_cost_command_power
+
+		fire_only_once = no
+
+		days_re_enable = 60
+
+		days_remove = 30
+
+		ai_will_do = {
+			base = 5
+		}
+
+		complete_effect = {
+			add_command_power = -15
+			AUS = {
+				add_ideas = LIE_growing_monarchist_army_support_idea
+			}
+		}
+
+		remove_effect = {
+			AUS = {
+				remove_ideas = LIE_growing_monarchist_army_support_idea
+			}
+		}
+	}
+	LIE_launch_monarchist_coup_in_AUS = {
+
+		icon = eng_support_imperialist_coup
+
+		priority = 116
+
+		allowed = {
+			original_tag = LIE
+		}
+
+		available = {
+			AUS = {
+				neutrality > 0.25
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = {
+				has_country_flag = LIE_civil_war_fired_in_AUS
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		complete_effect = {
+			set_country_flag = LIE_civil_war_fired_in_AUS
+			if = {
+				limit = {
+					AUS = {
+						neutrality < 0.7
+					}
+				}
+				AUS = {
+					set_temp_variable = { LIE_monarchist_ideology = party_popularity@neutrality }
+					start_civil_war = {
+						ideology = neutrality #SPLITTING TAG
+						size = var:LIE_monarchist_ideology
+						states = { 848 153 }
+					}
+				}
+				effect_tooltip = {
+					LIE = {
+						puppet = AUS
+						add_to_war = {
+							targeted_alliance = AUS
+							enemy = AUS
+							hostility_reason = asked_to_join
+						}
+						add_opinion_modifier = {
+							target = AUS
+							modifier = POR_helped_in_civil_war
+						}
+					}
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							original_tag = AUS
+							has_government = neutrality
+						}
+						AUS_otto_von_habsburg = {
+							set_nationality = PREV
+							add_country_leader_role = {
+								promote_leader = yes
+								country_leader = {
+									ideology = constitutional_monarchy
+									traits = { savvy_politician }
+									expire = "1980.1.1.1"
+								}
+							}
+						}
+						division_template = {
+							name = "Kaiserlich-Königliche Landwehr" # To avoid cheesing
+							division_names_group = AUS_INF_01
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 3 y = 0 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }   # Eng Bn
+							}
+						}
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "name = \"1 Kaiserlich-Königliche Landwehr\" division_template = \"Kaiserlich-Königliche Landwehr\" start_experience_factor = 0.1 start_equipment_factor = 0.8 force_equipment_variants = { infantry_equipment_1 = { owner = AUS } }" 
+								owner = PREV
+							}
+						}
+						random_owned_controlled_state = {
+							create_unit = {
+								division = "name = \"2 Kaiserlich-Königliche Landwehr\" division_template = \"Kaiserlich-Königliche Landwehr\" start_experience_factor = 0.1 start_equipment_factor = 0.8 force_equipment_variants = { infantry_equipment_1 = { owner = AUS } }" 
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"3 Kaiserlich-Königliche Landwehr\" division_template = \"Kaiserlich-Königliche Landwehr\" start_experience_factor = 0.1 start_equipment_factor = 0.8 force_equipment_variants = { infantry_equipment_1 = { owner = AUS } }" 
+								owner = PREV
+							}
+						}
+						LIE = {
+							puppet = PREV
+							effect_tooltip = {
+								give_military_access = PREV
+							}
+							hidden_effect = {
+								diplomatic_relation = {
+									country = PREV
+									relation = military_access
+									active = yes
+								}
+							}
+							add_opinion_modifier = {
+								target = AUS
+								modifier = POR_helped_in_civil_war
+							}
+						}
+						AUS = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+						LIE = {
+							add_to_war = {
+								targeted_alliance = PREV
+								enemy = AUS
+								hostility_reason = asked_to_join
+							}
+						}
+					}
+				}
+				else = {
+					AUS = {
+						if = {
+							limit = {
+								NOT = {
+									has_character = AUS_otto_von_habsburg
+								}
+							}
+							AUS_otto_von_habsburg = {
+								set_nationality = PREV
+								add_country_leader_role = {
+									promote_leader = yes
+									country_leader = {
+										ideology = constitutional_monarchy
+										traits = { savvy_politician }
+										expire = "1980.1.1.1"
+									}
+								}
+							}
+							else = {	
+								AUS_otto_von_habsburg = {
+									add_country_leader_role = {
+										promote_leader = yes
+										country_leader = {
+											ideology = constitutional_monarchy
+											traits = { savvy_politician }
+											expire = "1980.1.1.1"
+										}
+									}
+								}
+							}
+						}
+						set_politics = {
+							ruling_party = neutrality
+							last_election = "1936.1.1"
+							election_frequency = 48
+							elections_allowed = no
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+LIE_foreign_recruitment_category = {
+	LIE_foreign_recruitment_in_place = {
+		
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = { original_tag = LIE }
+
+		visible = {
+			has_government = fascism
+			has_completed_focus = LIE_foreign_recruitment
+		}
+
+		days_remove = 90
+		days_re_enable = 180
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				NOT = { has_war_with = ROOT } 
+				NOT = { has_government = fascism } 
+				NOT = {					
+					#has_idea = LIE_foreign_recruitment_idea
+				}
+			}
+
+		}
+
+		modifier = {
+			weekly_manpower = 500
+		}
+
+		cost = 50 
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = LIE_foreign_recruitment_idea days = 90 } }  
+			custom_effect_tooltip = LIE_foreign_recruitment_tt
+		}
+		ai_will_do = {
+			base = 100 
+			modifier = {
+				add = 50
+				FROM = {
+					original_tag = ENG # We're related to them they're cool
+				}
+			}
+		}
+	}
+}
+
+#this would have been nice to have if it werent for the fact that this is a pain in the ass to code. will maybe come to this one day
+#LIE_partitioning_russia = {
+#	LIE_propose_surrender_to_the_soviets = {
+#		icon = GFX_decision_congress
+#		fire_only_once = yes
+#		targets = { SOV }
+#
+#		visible = {
+#			has_war_with = SOV
+#			has_completed_focus = LIE_finish_the_fight
+#		}
+#
+#		available = {
+#			SOV = { 
+#				surrender_progress > 0.5
+#				NOT = {
+#					controls_state = 219
+#					controls_state = 195
+#					controls_state = 217
+#					controls_state = 408
+#				}
+#			}
+#			custom_trigger_tooltip = {
+#				custom_trigger_tooltip = {
+#					tooltip = LIE_controls_all_claimed_territory
+#					any_state = {
+#						OR = {
+#							state = 195
+#							state = 208
+#							state = 209
+#							state = 210
+#							state = 263
+#							state = 244
+#							state = 246
+#							state = 242
+#							state = 243
+#							state = 224
+#							state = 219
+#							state = 205
+#							state = 247
+#							state = 264
+#							state = 220
+#							state = 222
+#							state = 223
+#							state = 240
+#							state = 258
+#							state = 254
+#							state = 260
+#							state = 257
+#							state = 255
+#							state = 252
+#							state = 253
+#							state = 248
+#							state = 351
+#							state = 879
+#							state = 214
+#							state = 880
+#							state = 239
+#							if = {
+#								limit = {
+#									GER = { has_country_flag = lie_fuck_you }
+#								}
+#								state = 100
+#							}
+#						}
+#						is_controlled_by = ROOT
+#					}
+#				}
+#			}
+#		}
+# 
+#		complete_effect = {
+#			
+#		}
+#
+#		ai_will_do = {
+#			base = 100
+#			#BANABA
+#		}
+#	}
+#
+#	LIE_propose_german_territorial_expansion = {
+#		icon = GFX_decision_eng_propaganda_campaigns
+#		fire_only_once = yes
+#		targets = { GER }
+#		cost = 10
+#
+#		visible = {
+#			GER = {
+#				exists = yes
+#				is_subject = no
+#				NOT = { OR = { has_war_with = ROOT has_war_with = SOV } }
+#			}
+#		}
+#
+#		available = {
+#			GER = {
+#				is_neighbor_of = SOV
+#				NOT = {
+#					has_non_aggression_pact_with = SOV
+#					#is_in_faction = yes # please dont cause ww3 or smt
+#				}
+#				OR = {
+#					has_government = fascism
+#					has_government = neutrality
+#				}
+#			}
+#			SOV = {
+#				controls_state = 808
+#				controls_state = 12
+#				controls_state = 810
+#				controls_state = 809
+#				controls_state = 190
+#				controls_state = 189
+#				controls_state = 11
+#				controls_state = 815
+#				controls_state = 814
+#			}
+#		}
+#
+#		highlight_states = {
+#			highlight_state_targets = { 
+#				state = 808
+#				state = 12
+#				state = 810
+#				state = 809
+#				state = 190
+#				state = 189
+#				state = 11
+#				state = 815
+#				state = 814
+#			} 
+#		}
+# 
+#		complete_effect = {
+#			GER = {
+#				country_event = {
+#					id = liechtenstein.34
+#					days = 2
+#					random_hours = 12
+#				}
+#			}
+#			custom_effect_tooltip = if_they_accept_tt
+#			custom_effect_tooltip = LIE_germany_will_join_us
+#			custom_effect_tooltip = generic_skip_one_line_tt
+#			effect_tooltip = {
+#				every_state = {
+#					limit = { 
+#						OR = {
+#							state = 808
+#							state = 12
+#							state = 810
+#							state = 809
+#							state = 190
+#							state = 189
+#							state = 11
+#							state = 815
+#							state = 814
+#						}
+#					}
+#					add_claim_by = GER
+#				}
+#			}
+#			#extended claims - resource rights
+#		}
+#
+#		ai_will_do = {
+#			base = 1 
+#			#BANABA
+#		}
+#	}
+#
+#	LIE_propose_ah_ukranian_protectorate = {
+#		icon = GFX_decision_eng_propaganda_campaigns
+#		fire_only_once = yes
+#		targets = { AUS HUN }
+#		cost = 10
+#
+#		visible = {
+#			any_country = {
+#				OR = {
+#					original_tag = AUS
+#					original_tag = HUN
+#				}
+#				has_cosmetic_tag = HUN_EMPIRE
+#				exists = yes
+#				is_subject = no
+#				NOT = { OR = { has_war_with = ROOT has_war_with = SOV } }
+#			}
+#		}
+#
+#		available = {
+#			any_country = {
+#				OR = {
+#					original_tag = AUS
+#					original_tag = HUN
+#				}
+#				has_cosmetic_tag = HUN_EMPIRE
+#				is_neighbor_of = SOV
+#				NOT = {
+#					has_non_aggression_pact_with = SOV
+#					#is_in_faction = yes # please dont cause ww3 or smt
+#				}
+#				OR = {
+#					has_government = fascism
+#					has_government = neutrality
+#				}
+#			}
+#			any_state = {
+#				is_core_of = UKR
+#				is_controlled_by = SOV
+#				NOT = { # Owned by Poland
+#					state = 89
+#					state = 91
+#					state = 93
+#				}
+#			}
+#		}
+#
+#		highlight_states = {
+#			highlight_state_targets = { 
+#				state = 199
+#				state = 201
+#				state = 202
+#				state = 198
+#				state = 203
+#				state = 197
+#				state = 193
+#				state = 225
+#				state = 259
+#				state = 221
+#				state = 228
+#				state = 227
+#				state = 196
+#				state = 200
+#				state = 226
+#			} 
+#		}
+# 
+#		complete_effect = {
+#			every_country = {
+#				limit = { has_cosmetic_tag = HUN_EMPIRE }
+#				country_event = {
+#					id = liechtenstein.34
+#					days = 2
+#					random_hours = 12
+#				}
+#			}
+#			custom_effect_tooltip = if_they_accept_tt
+#			custom_effect_tooltip = LIE_ah_will_join_us
+#			custom_effect_tooltip = generic_skip_one_line_tt
+#			custom_effect_tooltip = LIE_when_we_formed_russia
+#			effect_tooltip = {
+#				every_state = {
+#                    limit = {
+#                        is_core_of = UKR
+#						NOT = {
+#							state = 89
+#							state = 91
+#							state = 93
+#						}
+#                    }
+#                    transfer_state_to = UKR
+#                }
+#			}
+#			custom_effect_tooltip = generic_skip_one_line_tt
+#			PREV = {
+#				set_autonomy = {
+#					target = UKR
+#					autonomous_state = autonomy_integrated_puppet
+#					end_wars = no
+#					end_civil_wars = no
+#				}
+#			}
+#		}
+#
+#		ai_will_do = {
+#			base = 1 
+#			#BANABA
+#		}
+#	}
+#
+#	LIE_propose_japanese_territorial_expansion = {
+#		icon = GFX_decision_eng_propaganda_campaigns
+#		fire_only_once = yes
+#		targets = { JAP }
+#		cost = 10
+#
+#		visible = {
+#			JAP = {
+#				exists = yes
+#				is_subject = no
+#				NOT = { OR = { has_war_with = ROOT has_war_with = SOV } }
+#			}
+#		}
+#
+#		available = {
+#			JAP = {
+#				is_neighbor_of = SOV
+#				NOT = {
+#					has_non_aggression_pact_with = SOV
+#					#is_in_faction = yes # please dont cause ww3 or smt
+#				}
+#				OR = {
+#					has_government = fascism
+#					has_government = neutrality
+#				}
+#			}
+#			SOV = {
+#				controls_state = 408
+#				controls_state = 409
+#				controls_state = 655
+#				controls_state = 657
+#				controls_state = 560
+#				controls_state = 561
+#				controls_state = 562
+#				controls_state = 637
+#				controls_state = 822
+#				controls_state = 875
+#				controls_state = 874
+#			}
+#		}
+#
+#		highlight_states = {
+#			highlight_state_targets = { 
+#				state = 408
+#				state = 409
+#				state = 655
+#				state = 657
+#				state = 560
+#				state = 561
+#				state = 562
+#				state = 637
+#				state = 822
+#				state = 875
+#				state = 874
+#			} 
+#		}
+# 
+#		complete_effect = {
+#			JAP = {
+#				country_event = {
+#					id = liechtenstein.34
+#					days = 2
+#					random_hours = 12
+#				}
+#			}
+#			custom_effect_tooltip = if_they_accept_tt
+#			custom_effect_tooltip = LIE_japan_will_join_us
+#			custom_effect_tooltip = generic_skip_one_line_tt
+#			effect_tooltip = {
+#				every_state = {
+#					limit = { 
+#						OR = {
+#							state = 408
+#							state = 409
+#							state = 655
+#							state = 657
+#							state = 560
+#							state = 561
+#							state = 562
+#							state = 637
+#							state = 822
+#							state = 875
+#						}
+#					}
+#					add_claim_by = JAP
+#				}
+#			}
+#			#extended claims - siberia
+#		}
+#
+#		ai_will_do = {
+#			base = 1 
+#			#BANABA
+#		}
+#	}
+#
+#	LIE_propose_finnish_territorial_expansion = {
+#		icon = GFX_decision_eng_propaganda_campaigns
+#		fire_only_once = yes
+#		targets = { FIN }
+#		cost = 10
+#
+#		visible = {
+#			FIN = {
+#				exists = yes
+#				is_subject = no
+#				NOT = { OR = { has_war_with = ROOT has_war_with = SOV } }
+#			}
+#		}
+#
+#		available = {
+#			FIN = {
+#				is_neighbor_of = SOV
+#				NOT = { 
+#					has_non_aggression_pact_with = SOV
+#					is_in_faction = yes # please dont cause ww3 or smt
+#				}
+#				OR = {
+#					has_government = fascism
+#					has_government = neutrality
+#				}
+#			}
+#			SOV = {
+#				controls_state = 213
+#				controls_state = 215
+#				controls_state = 216
+#			}
+#		}
+#
+#		highlight_states = {
+#			highlight_state_targets = { 
+#				state = 213
+#				state = 215
+#				state = 216
+#			} 
+#		}
+# 
+#		complete_effect = {
+#			FIN = {
+#				country_event = {
+#					id = liechtenstein.34
+#					days = 2
+#					random_hours = 12
+#				}
+#			}
+#			custom_effect_tooltip = if_they_accept_tt
+#			custom_effect_tooltip = LIE_finland_will_join_us
+#			custom_effect_tooltip = generic_skip_one_line_tt
+#			effect_tooltip = {
+#				every_state = {
+#					limit = { 
+#						OR = {
+#							state = 213
+#							state = 215
+#							state = 216
+#						}
+#					}
+#					add_claim_by = FIN
+#				}
+#			}
+#			#extended claims - estonia
+#		}
+#
+#		ai_will_do = {
+#			base = 1 
+#			#BANABA
+#		}
+#	}
+#}

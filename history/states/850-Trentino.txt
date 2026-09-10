@@ -1,0 +1,34 @@
+
+state = {
+	id = 850
+	name = "STATE_850" # Trentino
+	manpower = 370739 # South Tyrol state was 641650 before split (669k according to sources)
+	
+	state_category = town
+
+	history = {
+		victory_points = { #Trento
+			9598 1
+		}
+
+		buildings = {
+			infrastructure = 2 #was 3 before split
+			aluminum_mill = 1	#from r56, replacement for Aluminium - Fantom
+
+			# Ponale Hydroelectric Power Plant
+			6631 = { dam_mountain = 1 }
+		}
+
+
+		add_claim_by = AUS
+		add_to_array = { state_victory_points = 9598 }
+        owner = ITA
+        add_core_of = ITA
+    }
+
+	provinces = {
+		6631 9598 
+	}
+
+	local_supplies = 0.0 
+}

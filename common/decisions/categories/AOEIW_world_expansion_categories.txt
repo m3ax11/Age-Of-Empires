@@ -1,0 +1,16 @@
+AOEIW_world_american_reclamation_category = {
+    icon = generic_military
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+    visible_when_empty = yes
+}
+
+AOEIW_world_british_succession_category = {
+    icon = generic_political_reform
+    allowed = { original_tag = ENG }
+    visible = {
+        original_tag = ENG
+        NOT = { has_country_flag = AOEIW_world_british_succession_settled }
+    }
+    visible_when_empty = no
+}

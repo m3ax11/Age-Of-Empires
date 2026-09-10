@@ -1,0 +1,40 @@
+
+state={
+	id=272
+	name="STATE_272"
+	manpower = 1638000
+	resources={
+		steel = 4
+		aluminium = 1 #artisanal production
+	}
+	
+	state_category = pastoral
+
+	history = {
+
+		victory_points = {
+			4948 5 
+		}
+		victory_points = {
+			12834 1
+		}
+		buildings = {
+			infrastructure = 2 #was 3
+			air_base = 4
+			4948 = {
+				naval_base = 3
+			}
+		}
+
+		add_to_array = { state_victory_points = 4948 }
+		add_to_array = { state_victory_points = 12834 }
+        owner = MLI
+        add_core_of = MLI
+    }
+
+	provinces={
+		2100 4948 7972 8015 12710 12834 13447
+	}
+
+	local_supplies=0.0 
+}

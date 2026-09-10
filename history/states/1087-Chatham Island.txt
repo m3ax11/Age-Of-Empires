@@ -1,0 +1,31 @@
+state={
+	id=1087
+	name="STATE_1087"
+	manpower = 507
+	
+	state_category = small_island
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 13461 }
+		victory_points = {
+			13461 1
+		}
+		buildings = {
+			infrastructure = 1
+			13461 = {
+				naval_base = 1
+			}
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		13461
+	}
+	
+	local_supplies=0.0
+}

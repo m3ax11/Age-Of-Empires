@@ -1,0 +1,36 @@
+state = {
+	id = 1069
+	name = "STATE_1069"
+	manpower = 385342
+	
+	state_category = pastoral
+	
+	resources = {
+		tungsten = 5
+		steel = 2
+	}
+
+	history = {
+
+
+		add_claim_by = BOL
+		add_claim_by = PAR
+
+		add_to_array = { state_victory_points = 12922 }
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			12922 1 
+		}
+        owner = ARG
+        add_core_of = ARG
+    }
+
+	provinces = {
+		10944 12922 12943
+	}
+
+	local_supplies = 0.0 
+}

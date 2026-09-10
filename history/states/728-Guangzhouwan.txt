@@ -1,0 +1,37 @@
+state={
+	id=728
+	name="STATE_728"
+	manpower = 200000
+	
+	state_category = enclave
+
+	resources={
+		coal = 6 # initial distribution / 60 total
+	}
+	
+	history = {
+
+
+
+
+		add_to_array = { state_victory_points = 11981 }
+		buildings = {
+			infrastructure = 2 #was 3
+			11981 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			11981 1
+		}
+        owner = MAL
+        add_core_of = MAL
+        add_core_of = FRA
+    }
+	
+	provinces={
+		11981 
+	}
+
+	local_supplies=0.0 
+}

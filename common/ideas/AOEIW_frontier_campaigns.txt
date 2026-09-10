@@ -1,0 +1,21 @@
+ideas = { country = {
+AOEIW_FRONTIER_MON_herders_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.06 supply_consumption_factor = -0.04 } }
+AOEIW_FRONTIER_MON_directorate_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.15 stability_factor = -0.03 army_org_regain = 0.04 } }
+AOEIW_FRONTIER_MON_winter_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { winter_attrition_factor = -0.15 supply_consumption_factor = -0.03 } }
+AOEIW_FRONTIER_MON_mobile_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_speed_factor = 0.06 army_org_regain = 0.04 } }
+AOEIW_FRONTIER_MON_neutral_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { political_power_gain = 0.10 stability_factor = 0.03 } }
+AOEIW_FRONTIER_MAN_garrison_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 army_speed_factor = -0.02 } }
+AOEIW_FRONTIER_MAN_mobile_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_org_regain = 0.07 army_speed_factor = 0.04 } }
+AOEIW_FRONTIER_MAN_municipal_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_speed_industrial_complex_factor = 0.06 } }
+AOEIW_FRONTIER_MAN_emergency_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 stability_factor = -0.03 } }
+AOEIW_FRONTIER_MAN_medical_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_org_regain = 0.04 experience_loss_factor = -0.08 } }
+AOEIW_FRONTIER_MAN_recovery_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { production_speed_buildings_factor = 0.05 stability_factor = 0.03 } }
+AOEIW_FRONTIER_QIN_assembly_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.06 political_power_gain = 0.08 } }
+AOEIW_FRONTIER_QIN_command_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.15 army_org_factor = 0.04 stability_factor = -0.02 } }
+AOEIW_FRONTIER_QIN_defence_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_FRONTIER_QIN_field_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_speed_factor = 0.04 army_org_regain = 0.06 } }
+AOEIW_FRONTIER_XIC_officers_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_org_factor = 0.05 mobilization_speed = 0.10 } }
+AOEIW_FRONTIER_XIC_civic_spirit = { picture = generic_local_self_management allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.05 political_power_gain = 0.10 } }
+AOEIW_FRONTIER_XIC_passes_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 dig_in_speed_factor = 0.10 } }
+AOEIW_FRONTIER_XIC_reserve_spirit = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_speed_factor = 0.04 army_org_regain = 0.06 } }
+} }

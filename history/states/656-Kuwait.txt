@@ -1,0 +1,30 @@
+state={
+	id=656
+	name="STATE_656"
+	manpower = 80000
+	
+	state_category = rural
+	
+	history = {
+
+		add_claim_by = IRQ #Previously core. Why? Nobody knows.
+
+		add_to_array = { state_victory_points = 8085 }
+		victory_points = {
+			8085 1 
+		}
+		buildings = {
+			infrastructure = 1
+			8085 = {
+				naval_base = 2
+			}
+		}
+        owner = TUR
+        add_core_of = TUR
+    }
+	provinces={
+		8085 13482 13483
+	}
+
+	local_supplies=0.0 
+}

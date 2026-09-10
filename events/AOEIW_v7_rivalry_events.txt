@@ -1,0 +1,364 @@
+add_namespace = aoeiw_v7_rivalry
+
+country_event = {
+    id = aoeiw_v7_rivalry.1
+    title = aoeiw_v7_rivalry.1.t
+    desc = aoeiw_v7_rivalry.1.d
+    is_triggered_only = yes
+    trigger = { tag = AUS }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.1.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.1.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.2
+    title = aoeiw_v7_rivalry.2.t
+    desc = aoeiw_v7_rivalry.2.d
+    is_triggered_only = yes
+    trigger = { tag = BEL }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.2.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.2.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.3
+    title = aoeiw_v7_rivalry.3.t
+    desc = aoeiw_v7_rivalry.3.d
+    is_triggered_only = yes
+    trigger = { tag = BRA }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.3.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.3.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.4
+    title = aoeiw_v7_rivalry.4.t
+    desc = aoeiw_v7_rivalry.4.d
+    is_triggered_only = yes
+    trigger = { tag = BUL }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.4.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.4.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.5
+    title = aoeiw_v7_rivalry.5.t
+    desc = aoeiw_v7_rivalry.5.d
+    is_triggered_only = yes
+    trigger = { tag = CAN }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.5.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.5.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.6
+    title = aoeiw_v7_rivalry.6.t
+    desc = aoeiw_v7_rivalry.6.d
+    is_triggered_only = yes
+    trigger = { tag = CHI }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.6.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.6.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.7
+    title = aoeiw_v7_rivalry.7.t
+    desc = aoeiw_v7_rivalry.7.d
+    is_triggered_only = yes
+    trigger = { tag = DEN }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.7.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.7.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.8
+    title = aoeiw_v7_rivalry.8.t
+    desc = aoeiw_v7_rivalry.8.d
+    is_triggered_only = yes
+    trigger = { tag = EGY }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.8.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.8.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.9
+    title = aoeiw_v7_rivalry.9.t
+    desc = aoeiw_v7_rivalry.9.d
+    is_triggered_only = yes
+    trigger = { tag = ENG }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.9.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.9.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.10
+    title = aoeiw_v7_rivalry.10.t
+    desc = aoeiw_v7_rivalry.10.d
+    is_triggered_only = yes
+    trigger = { tag = ETH }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.10.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.10.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.11
+    title = aoeiw_v7_rivalry.11.t
+    desc = aoeiw_v7_rivalry.11.d
+    is_triggered_only = yes
+    trigger = { tag = FIN }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.11.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.11.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.12
+    title = aoeiw_v7_rivalry.12.t
+    desc = aoeiw_v7_rivalry.12.d
+    is_triggered_only = yes
+    trigger = { tag = FRA }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.12.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.12.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.13
+    title = aoeiw_v7_rivalry.13.t
+    desc = aoeiw_v7_rivalry.13.d
+    is_triggered_only = yes
+    trigger = { tag = GER }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.13.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.13.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.14
+    title = aoeiw_v7_rivalry.14.t
+    desc = aoeiw_v7_rivalry.14.d
+    is_triggered_only = yes
+    trigger = { tag = GRE }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.14.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.14.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.15
+    title = aoeiw_v7_rivalry.15.t
+    desc = aoeiw_v7_rivalry.15.d
+    is_triggered_only = yes
+    trigger = { tag = HOL }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.15.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.15.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.16
+    title = aoeiw_v7_rivalry.16.t
+    desc = aoeiw_v7_rivalry.16.d
+    is_triggered_only = yes
+    trigger = { tag = IRE }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.16.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.16.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.17
+    title = aoeiw_v7_rivalry.17.t
+    desc = aoeiw_v7_rivalry.17.d
+    is_triggered_only = yes
+    trigger = { tag = ITA }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.17.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.17.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.18
+    title = aoeiw_v7_rivalry.18.t
+    desc = aoeiw_v7_rivalry.18.d
+    is_triggered_only = yes
+    trigger = { tag = JAP }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.18.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.18.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.19
+    title = aoeiw_v7_rivalry.19.t
+    desc = aoeiw_v7_rivalry.19.d
+    is_triggered_only = yes
+    trigger = { tag = MEX }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.19.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.19.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.20
+    title = aoeiw_v7_rivalry.20.t
+    desc = aoeiw_v7_rivalry.20.d
+    is_triggered_only = yes
+    trigger = { tag = NOR }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.20.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.20.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.21
+    title = aoeiw_v7_rivalry.21.t
+    desc = aoeiw_v7_rivalry.21.d
+    is_triggered_only = yes
+    trigger = { tag = PER }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.21.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.21.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.22
+    title = aoeiw_v7_rivalry.22.t
+    desc = aoeiw_v7_rivalry.22.d
+    is_triggered_only = yes
+    trigger = { tag = POL }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.22.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.22.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.23
+    title = aoeiw_v7_rivalry.23.t
+    desc = aoeiw_v7_rivalry.23.d
+    is_triggered_only = yes
+    trigger = { tag = POR }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.23.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.23.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.24
+    title = aoeiw_v7_rivalry.24.t
+    desc = aoeiw_v7_rivalry.24.d
+    is_triggered_only = yes
+    trigger = { tag = RAJ }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.24.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.24.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.25
+    title = aoeiw_v7_rivalry.25.t
+    desc = aoeiw_v7_rivalry.25.d
+    is_triggered_only = yes
+    trigger = { tag = ROM }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.25.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.25.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.26
+    title = aoeiw_v7_rivalry.26.t
+    desc = aoeiw_v7_rivalry.26.d
+    is_triggered_only = yes
+    trigger = { tag = SIA }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.26.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.26.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.27
+    title = aoeiw_v7_rivalry.27.t
+    desc = aoeiw_v7_rivalry.27.d
+    is_triggered_only = yes
+    trigger = { tag = SOV }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.27.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.27.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.28
+    title = aoeiw_v7_rivalry.28.t
+    desc = aoeiw_v7_rivalry.28.d
+    is_triggered_only = yes
+    trigger = { tag = SPR }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.28.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.28.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.29
+    title = aoeiw_v7_rivalry.29.t
+    desc = aoeiw_v7_rivalry.29.d
+    is_triggered_only = yes
+    trigger = { tag = SWE }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.29.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.29.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.30
+    title = aoeiw_v7_rivalry.30.t
+    desc = aoeiw_v7_rivalry.30.d
+    is_triggered_only = yes
+    trigger = { tag = SWI }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.30.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.30.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.31
+    title = aoeiw_v7_rivalry.31.t
+    desc = aoeiw_v7_rivalry.31.d
+    is_triggered_only = yes
+    trigger = { tag = TUR }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.31.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.31.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.32
+    title = aoeiw_v7_rivalry.32.t
+    desc = aoeiw_v7_rivalry.32.d
+    is_triggered_only = yes
+    trigger = { tag = USA }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.32.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.32.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}
+
+country_event = {
+    id = aoeiw_v7_rivalry.33
+    title = aoeiw_v7_rivalry.33.t
+    desc = aoeiw_v7_rivalry.33.d
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = { name = aoeiw_v7_rivalry.33.a add_war_support = 0.05 add_command_power = 10 ai_chance = { factor = 65 } }
+    option = { name = aoeiw_v7_rivalry.33.b add_stability = 0.03 add_political_power = 35 ai_chance = { factor = 35 } }
+}

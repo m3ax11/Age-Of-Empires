@@ -1,0 +1,75 @@
+division_template = {
+ name = "Austria-Hungary Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Austria-Hungary Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "AUS Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "AUS Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Austria-Hungary Infantry Division" location = 11542 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Austria-Hungary Infantry Division" location = 6418 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Austria-Hungary Infantry Division" location = 9569 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Austria-Hungary Infantry Division" location = 6670 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Austria-Hungary Infantry Division" location = 6700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Austria-Hungary Infantry Division" location = 3583 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Austria-Hungary Infantry Division" location = 3414 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Austria-Hungary Infantry Division" location = 11610 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Austria-Hungary Infantry Division" location = 3700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Austria-Hungary Infantry Division" location = 6573 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Austria-Hungary Infantry Division" location = 3548 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Austria-Hungary Infantry Division" location = 6571 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Austria-Hungary Infantry Division" location = 11542 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Austria-Hungary Infantry Division" location = 6418 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Austria-Hungary Infantry Division" location = 9569 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Austria-Hungary Infantry Division" location = 6670 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Austria-Hungary Infantry Division" location = 6700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Austria-Hungary Infantry Division" location = 3583 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Austria-Hungary Infantry Division" location = 3414 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Austria-Hungary Infantry Division" location = 11610 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Austria-Hungary Infantry Division" location = 3700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Austria-Hungary Infantry Division" location = 6573 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Austria-Hungary Infantry Division" location = 3548 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Austria-Hungary Infantry Division" location = 6571 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Austria-Hungary Infantry Division" location = 11542 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Austria-Hungary Infantry Division" location = 6418 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Austria-Hungary Infantry Division" location = 9569 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Austria-Hungary Infantry Division" location = 6670 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Austria-Hungary Infantry Division" location = 6700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Austria-Hungary Infantry Division" location = 3583 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Austria-Hungary Infantry Division" location = 3414 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Austria-Hungary Infantry Division" location = 11610 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Austria-Hungary Infantry Division" location = 3700 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Austria-Hungary Infantry Division" location = 6573 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Austria-Hungary Infantry Division" location = 3548 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Austria-Hungary Infantry Division" location = 6571 division_template = "Austria-Hungary Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Austria-Hungary Mobile Division" location = 11542 division_template = "Austria-Hungary Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Austria-Hungary Mobile Division" location = 6418 division_template = "Austria-Hungary Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. AUS Rapid Division" location = 11542 division_template = "AUS Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. AUS Rapid Division" location = 11542 division_template = "AUS Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. AUS Mountain Division" location = 11542 division_template = "AUS Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

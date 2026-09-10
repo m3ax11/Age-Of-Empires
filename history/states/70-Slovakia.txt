@@ -1,0 +1,60 @@
+state={
+	id=70
+	name="STATE_70"
+	manpower = 1472456
+	
+	state_category = city
+	
+	resources={
+		tungsten=2
+	}
+
+	history = {
+
+		victory_points = {
+			9692 10 
+		}
+		victory_points = { 
+			3537 1 
+		}		
+		victory_points = { 
+			541 1
+		}
+		victory_points = { 
+			9539 1
+		}
+		victory_points = { 
+			3484 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			fuel_silo = 1
+			air_base = 3
+			3484 = {
+				landmark_bojnice_castle = {
+					level = 1
+					allowed = {
+						has_dlc = "Peace For Our Time"
+					}
+				}
+			}
+		}
+
+
+		add_to_array = { state_victory_points = 9692 }
+		add_to_array = { state_victory_points = 3537 }
+		add_to_array = { state_victory_points = 541 }
+		add_to_array = { state_victory_points = 9539 }
+		add_to_array = { state_victory_points = 3484 }
+        owner = AUS
+        add_core_of = AUS
+    }
+
+	provinces={
+		541 3484 3537 9539 9692 11522 11539 
+	}
+
+	local_supplies=3.0 
+}

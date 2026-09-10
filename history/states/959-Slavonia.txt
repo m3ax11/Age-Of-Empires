@@ -1,0 +1,32 @@
+state={
+	id=959
+	name="STATE_959"
+	manpower = 634207
+
+	resources = {
+		coal = 1 #initial distribution
+	}
+	
+	state_category = developed_rural
+
+	history = {
+
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			6647 5
+		}
+
+
+		add_to_array = { state_victory_points = 6647 }
+        owner = YUG
+        add_core_of = YUG
+    }
+
+	provinces={
+		3627 6647 9595
+	}
+
+	local_supplies = 0.0 
+}

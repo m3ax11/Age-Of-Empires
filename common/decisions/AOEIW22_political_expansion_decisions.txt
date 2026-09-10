@@ -1,0 +1,19 @@
+AOEIW22_USA_corporate_crisis = {
+    AOEIW22_USA_negotiate_wage_board = { cost = 50 fire_only_once = yes complete_effect = { add_stability = 0.03 add_ideas = AOEIW22_USA_business_concessions_spirit } }
+    AOEIW22_USA_mobilize_strikebreakers = { cost = 35 fire_only_once = yes complete_effect = { add_war_support = 0.03 add_ideas = AOEIW22_USA_corporate_crackdown_spirit } }
+}
+AOEIW22_USA_state_programmes = {
+    AOEIW22_USA_issue_regional_bonds = { cost = 50 days_remove = 90 modifier = { production_speed_buildings_factor = 0.08 } }
+    AOEIW22_USA_interstate_rail_compact = { cost = 60 fire_only_once = yes complete_effect = { random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+}
+AOEIW22_USA_norton_decrees = {
+    AOEIW22_USA_decree_two = { cost = 25 fire_only_once = yes complete_effect = { add_political_power = 50 add_stability = 0.01 } }
+    AOEIW22_USA_bridge_survey = { cost = 40 fire_only_once = yes complete_effect = { random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
+    AOEIW22_USA_imperial_amnesty = { cost = 50 fire_only_once = yes complete_effect = { add_stability = 0.04 add_war_support = -0.02 } }
+}
+AOEIW22_AUS_nationalities = {
+    AOEIW22_AUS_federalize_crownland = { cost = 45 available = { check_variable = { AOEIW22_AUS_nationality_tension > 0 } } complete_effect = { subtract_from_variable = { AOEIW22_AUS_nationality_tension = 1 } add_stability = 0.02 } }
+    AOEIW22_AUS_impose_administration = { cost = 30 complete_effect = { add_to_variable = { AOEIW22_AUS_nationality_tension = 2 } add_political_power = 70 } }
+    AOEIW22_AUS_negotiate_compromise = { cost = 75 available = { check_variable = { AOEIW22_AUS_nationality_tension > 3 } } complete_effect = { subtract_from_variable = { AOEIW22_AUS_nationality_tension = 2 } remove_ideas = AOEIW22_AUS_national_unrest_spirit add_stability = 0.03 } }
+    AOEIW22_AUS_deploy_gendarmerie = { cost = 40 complete_effect = { add_to_variable = { AOEIW22_AUS_nationality_tension = 1 } add_ideas = AOEIW22_AUS_gendarmerie_spirit } }
+}

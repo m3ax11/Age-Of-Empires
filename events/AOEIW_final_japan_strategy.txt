@@ -1,0 +1,114 @@
+add_namespace = aoeiw_final_japan
+
+country_event = {
+    id = aoeiw_final_japan.1
+    title = aoeiw_final_japan.1.t
+    desc = aoeiw_final_japan.1.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = JAP }
+    immediate = { set_country_flag = AOEIW_final_JAP_strategy_debated }
+    option = {
+        name = aoeiw_final_japan.1.a
+        ai_chance = { factor = 45 modifier = { factor = 2 has_idea = AOEIW_JAP_army_influence_dominating } }
+        set_country_flag = AOEIW_final_JAP_continental_ready
+        add_ideas = AOEIW_final_JAP_continental_preparations
+        add_war_support = 0.05
+        army_experience = 15
+    }
+    option = {
+        name = aoeiw_final_japan.1.b
+        ai_chance = { factor = 25 modifier = { factor = 2 has_idea = AOEIW_JAP_navy_influence_dominating } }
+        add_timed_idea = { idea = AOEIW_final_JAP_naval_priority days = 365 }
+        navy_experience = 20
+        air_experience = 10
+    }
+    option = {
+        name = aoeiw_final_japan.1.c
+        ai_chance = { factor = 20 modifier = { factor = 2 has_idea = AOEIW_JAP_civic_influence_dominating } }
+        CHI = { country_event = { id = aoeiw_final_japan.2 days = 3 } }
+        add_political_power = 50
+    }
+    option = {
+        name = aoeiw_final_japan.1.d
+        ai_chance = { factor = 10 }
+        add_stability = 0.05
+        add_political_power = 75
+    }
+}
+
+country_event = {
+    id = aoeiw_final_japan.2
+    title = aoeiw_final_japan.2.t
+    desc = aoeiw_final_japan.2.d
+    picture = GFX_report_event_chinese_soldiers
+    is_triggered_only = yes
+    trigger = { original_tag = CHI }
+    option = {
+        name = aoeiw_final_japan.2.a
+        ai_chance = { factor = 25 modifier = { factor = 2 NOT = { has_war_support > 0.45 } } }
+        add_stability = -0.03
+        add_political_power = 50
+        set_country_flag = AOEIW_final_CHI_nanjing_protocol
+        JAP = { country_event = { id = aoeiw_final_japan.3 days = 1 } }
+    }
+    option = {
+        name = aoeiw_final_japan.2.b
+        ai_chance = { factor = 75 modifier = { factor = 2 has_war_support > 0.55 } }
+        add_war_support = 0.05
+        JAP = { country_event = { id = aoeiw_final_japan.4 days = 1 } }
+    }
+}
+
+country_event = {
+    id = aoeiw_final_japan.3
+    title = aoeiw_final_japan.3.t
+    desc = aoeiw_final_japan.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = JAP }
+    option = {
+        name = aoeiw_final_japan.3.a
+        add_stability = 0.03
+        add_political_power = 75
+        add_opinion_modifier = { target = CHI modifier = AOEIW_final_asian_diplomatic_protocol }
+    }
+}
+
+country_event = {
+    id = aoeiw_final_japan.4
+    title = aoeiw_final_japan.4.t
+    desc = aoeiw_final_japan.4.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { original_tag = JAP }
+    option = {
+        name = aoeiw_final_japan.4.a
+        set_country_flag = AOEIW_final_JAP_continental_ready
+        add_ideas = AOEIW_final_JAP_continental_preparations
+        add_war_support = 0.05
+    }
+}
+
+country_event = {
+    id = aoeiw_final_japan.10
+    title = aoeiw_final_japan.10.t
+    desc = aoeiw_final_japan.10.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = USA }
+    option = { name = aoeiw_final_japan.10.a add_war_support = 0.04 add_political_power = 50 }
+    option = { name = aoeiw_final_japan.10.b add_stability = 0.02 }
+}
+
+country_event = {
+    id = aoeiw_final_japan.11
+    title = aoeiw_final_japan.11.t
+    desc = aoeiw_final_japan.11.d
+    picture = GFX_report_event_soviet_tanks
+    is_triggered_only = yes
+    trigger = { original_tag = SOV }
+    option = { name = aoeiw_final_japan.11.a add_war_support = 0.04 army_experience = 10 }
+    option = { name = aoeiw_final_japan.11.b add_stability = 0.02 }
+}

@@ -1,0 +1,27 @@
+division_template = {
+    name = "Manchurian Restoration Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1. Imperial Reclamation Division" location = 800 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "2. Imperial Reclamation Division" location = 1502 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "3. Imperial Reclamation Division" location = 916 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "4. Imperial Reclamation Division" location = 836 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "5. Imperial Reclamation Division" location = 783 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "6. Imperial Reclamation Division" location = 1776 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "7. Imperial Reclamation Division" location = 800 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "8. Imperial Reclamation Division" location = 1502 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "9. Imperial Reclamation Division" location = 916 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "10. Imperial Reclamation Division" location = 836 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "11. Imperial Reclamation Division" location = 783 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "12. Imperial Reclamation Division" location = 1776 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "13. Imperial Reclamation Division" location = 800 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "14. Imperial Reclamation Division" location = 1502 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "15. Imperial Reclamation Division" location = 916 division_template = "Manchurian Restoration Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+}
+

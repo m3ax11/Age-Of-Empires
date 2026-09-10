@@ -1,0 +1,8 @@
+AOEIW20_UF_war_category = {
+    icon = generic_military
+    allowed = { tag = CHI }
+    visible = {
+        has_country_flag = AOEIW20_UF_government_formed
+        NOT = { has_country_flag = AOEIW20_UF_qing_defeated }
+    }
+}

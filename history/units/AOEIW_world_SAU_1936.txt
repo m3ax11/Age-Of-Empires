@@ -1,0 +1,16 @@
+division_template = {
+    name = "Emirate of Nejd Field Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "2. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "3. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "4. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "5. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "6. Najdi Division" location = 12727 division_template = "Emirate of Nejd Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+}

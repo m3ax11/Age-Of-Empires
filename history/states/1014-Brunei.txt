@@ -1,0 +1,35 @@
+
+state={
+	id=1014
+	name="STATE_1014"
+	resources={
+		rubber=2
+		oil=8
+	}
+
+	history = {
+
+		victory_points = {
+			7387 2
+		}
+		buildings = {
+			infrastructure = 1
+			7387 = {
+				naval_base = 2
+			}
+		}
+
+		add_to_array = { state_victory_points = 7387 }
+        owner = JAP
+        add_core_of = JAP
+    }
+
+	provinces={ #
+		7371 7387
+	}
+	manpower=31135
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=2.0 
+}

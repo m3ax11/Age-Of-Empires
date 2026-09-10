@@ -1,0 +1,40 @@
+AOEIW_national_programs = {
+    allowed = { always = yes }
+    visible = {
+        OR = {
+            has_country_flag = AOEIW_GER_programs_unlocked
+            has_country_flag = AOEIW_ENG_programs_unlocked
+            has_country_flag = AOEIW_FRA_programs_unlocked
+            has_country_flag = AOEIW_SOV_programs_unlocked
+            has_country_flag = AOEIW_SPR_programs_unlocked
+            has_country_flag = AOEIW_CHI_programs_unlocked
+            has_country_flag = AOEIW_TUR_programs_unlocked
+            has_country_flag = AOEIW_JAP_programs_unlocked
+            has_country_flag = AOEIW_USA_programs_unlocked
+            has_country_flag = AOEIW_POR_programs_unlocked
+            has_country_flag = AOEIW_SWE_programs_unlocked
+            has_country_flag = AOEIW_NOR_programs_unlocked
+            has_country_flag = AOEIW_RAJ_programs_unlocked
+            has_country_flag = AOEIW_ITA_programs_unlocked
+            has_country_flag = AOEIW_GRE_programs_unlocked
+            has_country_flag = AOEIW_ROM_programs_unlocked
+            has_country_flag = AOEIW_BUL_programs_unlocked
+            has_country_flag = AOEIW_YUG_programs_unlocked
+            has_country_flag = AOEIW_PER_programs_unlocked
+            has_country_flag = AOEIW_ETH_programs_unlocked
+            has_country_flag = AOEIW_SIA_programs_unlocked
+            has_country_flag = AOEIW_BRA_programs_unlocked
+            has_country_flag = AOEIW_MEX_programs_unlocked
+            has_country_flag = AOEIW_FIN_programs_unlocked
+            has_country_flag = AOEIW_DEN_programs_unlocked
+            has_country_flag = AOEIW_HOL_programs_unlocked
+            has_country_flag = AOEIW_BEL_programs_unlocked
+            has_country_flag = AOEIW_SWI_programs_unlocked
+            has_country_flag = AOEIW_IRE_programs_unlocked
+            has_country_flag = AOEIW_POL_programs_unlocked
+            has_country_flag = AOEIW_AUS_programs_unlocked
+            has_country_flag = AOEIW_CAN_programs_unlocked
+            has_country_flag = AOEIW_EGY_programs_unlocked
+        }
+    }
+}

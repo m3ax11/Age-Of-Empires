@@ -1,0 +1,37 @@
+scripted_gui = {
+    AOEIW_qol_resource_toggle = {
+        context_type = player_context
+        window_name = "AOEIW_qol_resource_toggle_window"
+        parent_window_token = trade_tab
+
+        effects = {
+            resource_toggle_button_click = {
+                if = {
+                    limit = { check_variable = { AOEIW_qol_resource_bar_hidden = 1 } }
+                    clear_variable = AOEIW_qol_resource_bar_hidden
+                }
+                else = {
+                    set_variable = { AOEIW_qol_resource_bar_hidden = 1 }
+                }
+            }
+        }
+        ai_enabled = { always = no }
+    }
+
+    AOEIW_qol_resource_bar = {
+        context_type = player_context
+        window_name = "AOEIW_qol_resource_bar"
+        visible = {
+            NOT = { check_variable = { AOEIW_qol_resource_bar_hidden = 1 } }
+        }
+        effects = {
+            oil_button_click = { set_variable = { AOEIW_qol_resource_selection = 1 } }
+            aluminium_button_click = { set_variable = { AOEIW_qol_resource_selection = 2 } }
+            rubber_button_click = { set_variable = { AOEIW_qol_resource_selection = 3 } }
+            tungsten_button_click = { set_variable = { AOEIW_qol_resource_selection = 4 } }
+            steel_button_click = { set_variable = { AOEIW_qol_resource_selection = 5 } }
+            chromium_button_click = { set_variable = { AOEIW_qol_resource_selection = 6 } }
+        }
+        ai_enabled = { always = no }
+    }
+}

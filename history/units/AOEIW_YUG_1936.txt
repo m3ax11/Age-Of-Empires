@@ -1,0 +1,58 @@
+division_template = {
+ name = "Yugoslavia Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "YUG Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "YUG Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Yugoslavia Infantry Division" location = 3614 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Yugoslavia Infantry Division" location = 9809 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Yugoslavia Infantry Division" location = 9821 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Yugoslavia Infantry Division" location = 9627 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Yugoslavia Infantry Division" location = 9894 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Yugoslavia Infantry Division" location = 6889 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Yugoslavia Infantry Division" location = 3924 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Yugoslavia Infantry Division" location = 11857 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Yugoslavia Infantry Division" location = 6940 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Yugoslavia Infantry Division" location = 9849 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Yugoslavia Infantry Division" location = 619 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Yugoslavia Infantry Division" location = 11586 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Yugoslavia Infantry Division" location = 3614 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Yugoslavia Infantry Division" location = 9809 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Yugoslavia Infantry Division" location = 9821 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Yugoslavia Infantry Division" location = 9627 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Yugoslavia Infantry Division" location = 9894 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Yugoslavia Infantry Division" location = 6889 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Yugoslavia Infantry Division" location = 3924 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Yugoslavia Infantry Division" location = 11857 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Yugoslavia Infantry Division" location = 6940 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Yugoslavia Infantry Division" location = 9849 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Yugoslavia Infantry Division" location = 619 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Yugoslavia Infantry Division" location = 11586 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Yugoslavia Infantry Division" location = 3614 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Yugoslavia Infantry Division" location = 9809 division_template = "Yugoslavia Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. YUG Rapid Division" location = 3614 division_template = "YUG Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. YUG Rapid Division" location = 3614 division_template = "YUG Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. YUG Mountain Division" location = 3614 division_template = "YUG Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

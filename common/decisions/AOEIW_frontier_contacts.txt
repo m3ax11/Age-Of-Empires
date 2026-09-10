@@ -1,0 +1,37 @@
+AOEIW_frontier_contacts = {
+AOEIW_frontier_MON_aid = {
+            icon = generic_political_actions cost = 35 fire_only_once = yes
+            visible = { tag = MON has_country_flag = AOEIW_FRONTIER_MON_aid_unlocked }
+            available = { has_capitulated = no country_exists = CHI NOT = { has_war_with = CHI } CHI = { has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } } has_equipment = { infantry_equipment > 499 } }
+            complete_effect = { CHI = { country_event = { id = aoeiw_frontier.1 days = 1 } } }
+            ai_will_do = { factor = 1 modifier = { factor = 2 CHI = { has_war = yes } } }
+        }
+AOEIW_frontier_XIC_aid = {
+            icon = generic_political_actions cost = 35 fire_only_once = yes
+            visible = { tag = XIC has_country_flag = AOEIW_FRONTIER_XIC_aid_unlocked }
+            available = { has_capitulated = no country_exists = CHI NOT = { has_war_with = CHI } CHI = { has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } } has_equipment = { infantry_equipment > 499 } }
+            complete_effect = { CHI = { country_event = { id = aoeiw_frontier.2 days = 1 } } }
+            ai_will_do = { factor = 1 modifier = { factor = 2 CHI = { has_war = yes } } }
+        }
+AOEIW_frontier_QIN_liaison = {
+            icon = generic_political_actions cost = 35 fire_only_once = yes
+            visible = { tag = QIN has_country_flag = AOEIW_FRONTIER_QIN_liaison_unlocked }
+            available = { has_capitulated = no country_exists = CHI NOT = { has_war_with = CHI } CHI = { has_country_flag = AOEIW20_UF_government_formed }  }
+            complete_effect = { CHI = { country_event = { id = aoeiw_frontier.3 days = 1 } } }
+            ai_will_do = { factor = 1 modifier = { factor = 2 CHI = { has_war = yes } } }
+        }
+AOEIW_frontier_MAN_liaison = {
+            icon = generic_political_actions cost = 35 fire_only_once = yes
+            visible = { tag = MAN has_country_flag = AOEIW_FRONTIER_MAN_liaison_unlocked }
+            available = { has_capitulated = no country_exists = CHI NOT = { has_war_with = CHI } CHI = { has_country_flag = AOEIW20_UF_government_formed }  }
+            complete_effect = { CHI = { country_event = { id = aoeiw_frontier.4 days = 1 } } }
+            ai_will_do = { factor = 1 modifier = { factor = 2 CHI = { has_war = yes } } }
+        }
+AOEIW_frontier_XIC_liaison = {
+            icon = generic_political_actions cost = 35 fire_only_once = yes
+            visible = { tag = XIC has_country_flag = AOEIW_FRONTIER_XIC_liaison_unlocked }
+            available = { has_capitulated = no country_exists = CHI NOT = { has_war_with = CHI } CHI = { has_country_flag = AOEIW20_UF_government_formed }  }
+            complete_effect = { CHI = { country_event = { id = aoeiw_frontier.5 days = 1 } } }
+            ai_will_do = { factor = 1 modifier = { factor = 2 CHI = { has_war = yes } } }
+        }
+}

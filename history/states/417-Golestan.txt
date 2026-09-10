@@ -1,0 +1,41 @@
+
+state={
+	id=417
+	name="STATE_417" # Hamadan
+	manpower = 796396
+	state_category = town
+	resources = {
+		steel=1 # reduced to 1 for local mining may be even an exaggeration
+		# chromium=5 manganese, lead, copper but no chromium
+		# late game aluminium and more iron.
+	}
+
+	history = {
+
+		victory_points = {
+			8040 3 
+		}
+		victory_points = {
+			2065 1 
+		}
+		victory_points = {
+			10922 5
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+		add_to_array = { state_victory_points = 8040 }
+		add_to_array = { state_victory_points = 2065 }
+		add_to_array = { state_victory_points = 10922 }
+        owner = PER
+        add_core_of = PER
+    }
+
+	provinces={
+		1982 2065 8040 8125 10922 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=931
+	name="STATE_931"
+	state_category = large_town
+
+	history = {
+
+		buildings = {
+			infrastructure = 2 #was 3
+		}
+
+		add_to_array = { state_victory_points = 4956 }
+		add_to_array = { state_victory_points = 2011 }
+		add_to_array = { state_victory_points = 13262 }
+		victory_points = {
+			4956 15
+		}
+		victory_points = {
+			2011 5
+		}
+		victory_points = {
+			13262 10
+		}
+        owner = MEX
+        add_core_of = MEX
+    }
+
+	provinces={
+		1952 2008 2011 4956 13254 13261 13262
+	}
+	manpower=1885848
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,40 @@
+state = {
+	id = 1067
+	name = "STATE_1067"
+	manpower = 304182
+	
+	state_category = rural
+	
+	resources = {
+		oil = 4
+	}
+
+	history = {
+
+
+		add_to_array = { state_victory_points = 10953 }
+		add_to_array = { state_victory_points = 8161 }
+		buildings = {
+			infrastructure = 1
+			10953 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			10953 1 
+		}
+
+		victory_points = {
+			8161 1 
+		}
+        owner = ARG
+        add_core_of = ARG
+    }
+
+	provinces = {
+		8161 8176 10953 11005 13365 13366 13356
+	}
+
+	local_supplies = 0.0 
+}

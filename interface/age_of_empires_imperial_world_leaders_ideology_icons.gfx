@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_ideology_1_group"
+        texturefile = "gfx/interface/ideologies/age_of_empires_imperial_world_leaders_1_group.dds"
+    }
+}

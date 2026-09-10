@@ -1,0 +1,28 @@
+state = {
+	id = 1042
+	manpower = 51000
+	name = "STATE_1042"
+	state_category = small_island
+	history = {
+
+
+		add_to_array = { state_victory_points = 3311 }
+		victory_points = {
+			3311 1 #Douglas
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			3311 = {
+				naval_base = 1
+			}
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+	provinces = {
+		3311 
+	}
+	
+
+	local_supplies=0.000
+}

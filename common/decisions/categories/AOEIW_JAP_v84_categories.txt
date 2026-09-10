@@ -1,0 +1,4 @@
+AOEIW_JAP_imperial_influence = {
+    allowed = { original_tag = JAP }
+    visible = { has_country_flag = AOEIW_JAP_influence_unlocked }
+}

@@ -1,0 +1,56 @@
+capital = 286
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_INA_leader
+recruit_character = AOEIW_world_INA_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    tech_recon = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    mtg_transport = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+}
+add_ideas = { AOEIW_world_colonial_administration civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 14400 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 960 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 720 }
+oob = "AOEIW_world_INA_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = VIN_nguyen_tuong_tam
+recruit_character = VIN_ho_chi_minh
+recruit_character = VIN_ta_thu_thau
+recruit_character = VIN_cuong_de
+recruit_character = VIN_bao_dai
+recruit_character = VIN_vo_nguyen_giap
+recruit_character = VIN_van_tien_dung
+recruit_character = VIN_hoang_van_thai
+recruit_character = VIN_ngo_dinh_diem
+recruit_character = VIN_truong_chinh
+recruit_character = VIN_tran_khanh_giu
+recruit_character = VIN_truong_tu_anh
+recruit_character = VIN_phan_boi_chau
+recruit_character = VIN_nguyen_an_ninh
+recruit_character = VIN_ha_huy_tap
+recruit_character = VIN_anh_phan_van_hum
+recruit_character = VIN_hoang_xuan_han
+recruit_character = VIN_luu_van_lang
+recruit_character = VIN_tran_trong_kim
+recruit_character = VIN_tran_van_chuong
+recruit_character = VIN_kha_vang_can

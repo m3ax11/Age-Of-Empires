@@ -1,0 +1,274 @@
+## Parliamentary model adapted from RT56's German election loop:
+## campaign polls persist between elections and are copied into real seats on polling day.
+AOEIW34_GER_seed_bundestag_polls = {
+    set_variable = { AOEIW34_GER_spd_projected = 125 }
+    set_variable = { AOEIW34_GER_cdu_projected = 130 }
+    set_variable = { AOEIW34_GER_zentrum_projected = 0 }
+    set_variable = { AOEIW34_GER_lvp_projected = 58 }
+    set_variable = { AOEIW34_GER_dnvp_projected = 0 }
+    set_variable = { AOEIW34_GER_dstp_projected = 42 }
+    set_variable = { AOEIW34_GER_kpd_projected = 35 }
+}
+
+AOEIW34_GER_seed_reichstag_polls = {
+    set_variable = { AOEIW34_GER_spd_projected = 70 }
+    set_variable = { AOEIW34_GER_cdu_projected = 0 }
+    set_variable = { AOEIW34_GER_zentrum_projected = 65 }
+    set_variable = { AOEIW34_GER_lvp_projected = 20 }
+    set_variable = { AOEIW34_GER_dnvp_projected = 60 }
+    set_variable = { AOEIW34_GER_dstp_projected = 30 }
+    set_variable = { AOEIW34_GER_kpd_projected = 25 }
+}
+
+AOEIW34_GER_copy_polls_to_seats = {
+    set_variable = { AOEIW30_GER_spd_seats = AOEIW34_GER_spd_projected }
+    set_variable = { AOEIW30_GER_cdu_seats = AOEIW34_GER_cdu_projected }
+    set_variable = { AOEIW30_GER_zentrum_seats = AOEIW34_GER_zentrum_projected }
+    set_variable = { AOEIW30_GER_lvp_seats = AOEIW34_GER_lvp_projected }
+    set_variable = { AOEIW30_GER_dnvp_seats = AOEIW34_GER_dnvp_projected }
+    set_variable = { AOEIW30_GER_dstp_seats = AOEIW34_GER_dstp_projected }
+    set_variable = { AOEIW30_GER_kpd_seats = AOEIW34_GER_kpd_projected }
+    set_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_spd_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_cdu_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_zentrum_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_lvp_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_dnvp_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_dstp_seats }
+    add_to_variable = { AOEIW30_GER_total_seats = AOEIW30_GER_kpd_seats }
+    set_variable = { AOEIW30_GER_majority_seats = AOEIW30_GER_total_seats }
+    divide_variable = { AOEIW30_GER_majority_seats = 2 }
+    add_to_variable = { AOEIW30_GER_majority_seats = 1 }
+}
+
+AOEIW34_GER_unseat_government = {
+    if = { limit = { has_completed_focus = AOEIW28_GER_spd } uncomplete_national_focus = { focus = AOEIW28_GER_spd uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW28_GER_zentrum } uncomplete_national_focus = { focus = AOEIW28_GER_zentrum uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW28_GER_liberal } uncomplete_national_focus = { focus = AOEIW28_GER_liberal uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW28_GER_conservative } uncomplete_national_focus = { focus = AOEIW28_GER_conservative uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW30_GER_cdu } uncomplete_national_focus = { focus = AOEIW30_GER_cdu uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW30_GER_dstp } uncomplete_national_focus = { focus = AOEIW30_GER_dstp uncomplete_children = no refund_political_power = no } }
+    if = { limit = { has_completed_focus = AOEIW30_GER_kpd } uncomplete_national_focus = { focus = AOEIW30_GER_kpd uncomplete_children = no refund_political_power = no } }
+    clr_country_flag = AOEIW28_GER_spd_government
+    clr_country_flag = AOEIW28_GER_zentrum_government
+    clr_country_flag = AOEIW28_GER_liberal_government
+    clr_country_flag = AOEIW28_GER_conservative_government
+    clr_country_flag = AOEIW30_GER_cdu_government
+    clr_country_flag = AOEIW30_GER_dstp_government
+    clr_country_flag = AOEIW30_GER_kpd_government
+    set_variable = { AOEIW29_GER_government_size = 0 }
+    AOEIW29_GER_refresh_cabinet = yes
+}
+
+AOEIW30_GER_establish_chamber = {
+    set_country_flag = AOEIW28_GER_parliament_enabled
+    clr_country_flag = AOEIW30_GER_bundestag
+    clr_country_flag = AOEIW30_GER_reichstag
+    if = {
+        limit = { has_government = democratic }
+        set_country_flag = AOEIW30_GER_bundestag
+        if = { limit = { NOT = { has_country_flag = AOEIW34_GER_polls_initialized } } AOEIW34_GER_seed_bundestag_polls = yes }
+    }
+    else = {
+        set_country_flag = AOEIW30_GER_reichstag
+        if = { limit = { NOT = { has_country_flag = AOEIW34_GER_polls_initialized } } AOEIW34_GER_seed_reichstag_polls = yes }
+    }
+    set_country_flag = AOEIW34_GER_polls_initialized
+    mark_focus_tree_layout_dirty = yes
+}
+
+AOEIW30_GER_clear_candidates = {
+    clr_country_flag = AOEIW29_GER_spd_candidate
+    clr_country_flag = AOEIW29_GER_zentrum_candidate
+    clr_country_flag = AOEIW29_GER_liberal_candidate
+    clr_country_flag = AOEIW29_GER_conservative_candidate
+    clr_country_flag = AOEIW30_GER_spd_candidate
+    clr_country_flag = AOEIW30_GER_zentrum_candidate
+    clr_country_flag = AOEIW30_GER_lvp_candidate
+    clr_country_flag = AOEIW30_GER_dnvp_candidate
+    clr_country_flag = AOEIW30_GER_cdu_candidate
+    clr_country_flag = AOEIW30_GER_dstp_candidate
+    clr_country_flag = AOEIW30_GER_kpd_candidate
+    set_variable = { AOEIW29_GER_candidate_count = 0 }
+    set_variable = { AOEIW30_GER_coalition_seats = 0 }
+    set_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+    set_variable = { AOEIW30_GER_government_leader_seats = 0 }
+}
+
+AOEIW30_GER_set_bundestag_seats = {
+    set_variable = { AOEIW30_GER_zentrum_seats = 0 }
+    set_variable = { AOEIW30_GER_dnvp_seats = 0 }
+    random_list = {
+        35 = {
+            set_variable = { AOEIW30_GER_spd_seats = 32 }
+            set_variable = { AOEIW30_GER_cdu_seats = 31 }
+            set_variable = { AOEIW30_GER_lvp_seats = 12 }
+            set_variable = { AOEIW30_GER_dstp_seats = 15 }
+            set_variable = { AOEIW30_GER_kpd_seats = 10 }
+        }
+        35 = {
+            set_variable = { AOEIW30_GER_spd_seats = 38 }
+            set_variable = { AOEIW30_GER_cdu_seats = 24 }
+            set_variable = { AOEIW30_GER_lvp_seats = 16 }
+            set_variable = { AOEIW30_GER_dstp_seats = 12 }
+            set_variable = { AOEIW30_GER_kpd_seats = 10 }
+        }
+        30 = {
+            set_variable = { AOEIW30_GER_spd_seats = 27 }
+            set_variable = { AOEIW30_GER_cdu_seats = 38 }
+            set_variable = { AOEIW30_GER_lvp_seats = 14 }
+            set_variable = { AOEIW30_GER_dstp_seats = 11 }
+            set_variable = { AOEIW30_GER_kpd_seats = 10 }
+        }
+    }
+}
+
+AOEIW30_GER_set_reichstag_seats = {
+    set_variable = { AOEIW30_GER_cdu_seats = 0 }
+    random_list = {
+        35 = {
+            set_variable = { AOEIW30_GER_spd_seats = 28 }
+            set_variable = { AOEIW30_GER_zentrum_seats = 23 }
+            set_variable = { AOEIW30_GER_lvp_seats = 13 }
+            set_variable = { AOEIW30_GER_dnvp_seats = 20 }
+            set_variable = { AOEIW30_GER_dstp_seats = 9 }
+            set_variable = { AOEIW30_GER_kpd_seats = 7 }
+        }
+        35 = {
+            set_variable = { AOEIW30_GER_spd_seats = 34 }
+            set_variable = { AOEIW30_GER_zentrum_seats = 18 }
+            set_variable = { AOEIW30_GER_lvp_seats = 16 }
+            set_variable = { AOEIW30_GER_dnvp_seats = 17 }
+            set_variable = { AOEIW30_GER_dstp_seats = 8 }
+            set_variable = { AOEIW30_GER_kpd_seats = 7 }
+        }
+        30 = {
+            set_variable = { AOEIW30_GER_spd_seats = 23 }
+            set_variable = { AOEIW30_GER_zentrum_seats = 28 }
+            set_variable = { AOEIW30_GER_lvp_seats = 12 }
+            set_variable = { AOEIW30_GER_dnvp_seats = 25 }
+            set_variable = { AOEIW30_GER_dstp_seats = 7 }
+            set_variable = { AOEIW30_GER_kpd_seats = 5 }
+        }
+    }
+}
+
+AOEIW30_GER_open_ballot = {
+    AOEIW34_GER_unseat_government = yes
+    AOEIW30_GER_clear_candidates = yes
+    AOEIW34_GER_copy_polls_to_seats = yes
+    set_country_flag = AOEIW28_GER_election_pending
+    mark_focus_tree_layout_dirty = yes
+}
+
+AOEIW30_GER_recount_candidate_seats = {
+    set_variable = { AOEIW29_GER_candidate_count = 0 }
+    set_variable = { AOEIW30_GER_coalition_seats = 0 }
+    if = { limit = { has_country_flag = AOEIW30_GER_spd_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_spd_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_zentrum_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_zentrum_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_lvp_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_lvp_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_dnvp_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dnvp_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_cdu_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_cdu_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_dstp_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dstp_seats } }
+    if = { limit = { has_country_flag = AOEIW30_GER_kpd_candidate } add_to_variable = { AOEIW29_GER_candidate_count = 1 } add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_kpd_seats } }
+}
+
+# Backwards-compatible entry point used by older saves and existing events.
+AOEIW29_GER_open_ballot = { AOEIW30_GER_open_ballot = yes }
+
+AOEIW29_GER_refresh_cabinet = {
+    remove_ideas = AOEIW28_GER_spd_cabinet
+    remove_ideas = AOEIW28_GER_zentrum_cabinet
+    remove_ideas = AOEIW28_GER_liberal_cabinet
+    remove_ideas = AOEIW28_GER_conservative_cabinet
+    remove_ideas = AOEIW30_GER_cdu_cabinet
+    remove_ideas = AOEIW30_GER_dstp_cabinet
+    remove_ideas = AOEIW30_GER_kpd_cabinet
+    remove_ideas = AOEIW29_GER_coalition_coordination
+    remove_ideas = AOEIW30_GER_broad_coalition
+    remove_ideas = AOEIW29_GER_spd_social_insurance_idea
+    remove_ideas = AOEIW29_GER_spd_industrial_bargain_idea
+    remove_ideas = AOEIW29_GER_zentrum_subsidiarity_idea
+    remove_ideas = AOEIW29_GER_zentrum_national_standards_idea
+    remove_ideas = AOEIW29_GER_liberal_competition_idea
+    remove_ideas = AOEIW29_GER_liberal_innovation_idea
+    remove_ideas = AOEIW29_GER_conservative_rural_settlement_idea
+    remove_ideas = AOEIW29_GER_conservative_defence_industry_idea
+    remove_ideas = AOEIW30_GER_cdu_social_market_idea
+    remove_ideas = AOEIW30_GER_cdu_federal_compromise_idea
+    remove_ideas = AOEIW30_GER_dstp_civil_service_idea
+    remove_ideas = AOEIW30_GER_dstp_scientific_state_idea
+    remove_ideas = AOEIW30_GER_kpd_workers_control_idea
+    remove_ideas = AOEIW30_GER_kpd_red_welfare_idea
+    if = {
+        limit = { has_country_flag = AOEIW28_GER_spd_government }
+        add_ideas = AOEIW28_GER_spd_cabinet
+        if = { limit = { has_completed_focus = AOEIW29_GER_spd_social_insurance } add_ideas = AOEIW29_GER_spd_social_insurance_idea }
+        if = { limit = { has_completed_focus = AOEIW29_GER_spd_industrial_bargain } add_ideas = AOEIW29_GER_spd_industrial_bargain_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW28_GER_zentrum_government }
+        add_ideas = AOEIW28_GER_zentrum_cabinet
+        if = { limit = { has_completed_focus = AOEIW29_GER_zentrum_subsidiarity } add_ideas = AOEIW29_GER_zentrum_subsidiarity_idea }
+        if = { limit = { has_completed_focus = AOEIW29_GER_zentrum_national_standards } add_ideas = AOEIW29_GER_zentrum_national_standards_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW28_GER_liberal_government }
+        add_ideas = AOEIW28_GER_liberal_cabinet
+        if = { limit = { has_completed_focus = AOEIW29_GER_liberal_competition } add_ideas = AOEIW29_GER_liberal_competition_idea }
+        if = { limit = { has_completed_focus = AOEIW29_GER_liberal_innovation } add_ideas = AOEIW29_GER_liberal_innovation_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW28_GER_conservative_government }
+        add_ideas = AOEIW28_GER_conservative_cabinet
+        if = { limit = { has_completed_focus = AOEIW29_GER_conservative_rural_settlement } add_ideas = AOEIW29_GER_conservative_rural_settlement_idea }
+        if = { limit = { has_completed_focus = AOEIW29_GER_conservative_defence_industry } add_ideas = AOEIW29_GER_conservative_defence_industry_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW30_GER_cdu_government }
+        add_ideas = AOEIW30_GER_cdu_cabinet
+        if = { limit = { has_completed_focus = AOEIW30_GER_cdu_social_market } add_ideas = AOEIW30_GER_cdu_social_market_idea }
+        if = { limit = { has_completed_focus = AOEIW30_GER_cdu_federal_compromise } add_ideas = AOEIW30_GER_cdu_federal_compromise_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW30_GER_dstp_government }
+        add_ideas = AOEIW30_GER_dstp_cabinet
+        if = { limit = { has_completed_focus = AOEIW30_GER_dstp_civil_service } add_ideas = AOEIW30_GER_dstp_civil_service_idea }
+        if = { limit = { has_completed_focus = AOEIW30_GER_dstp_scientific_state } add_ideas = AOEIW30_GER_dstp_scientific_state_idea }
+    }
+    if = {
+        limit = { has_country_flag = AOEIW30_GER_kpd_government }
+        add_ideas = AOEIW30_GER_kpd_cabinet
+        if = { limit = { has_completed_focus = AOEIW30_GER_kpd_workers_control } add_ideas = AOEIW30_GER_kpd_workers_control_idea }
+        if = { limit = { has_completed_focus = AOEIW30_GER_kpd_red_welfare } add_ideas = AOEIW30_GER_kpd_red_welfare_idea }
+    }
+    if = { limit = { check_variable = { AOEIW29_GER_government_size > 1 } } add_ideas = AOEIW29_GER_coalition_coordination }
+    if = { limit = { check_variable = { AOEIW29_GER_government_size > 2 } } add_ideas = AOEIW30_GER_broad_coalition }
+}
+
+AOEIW30_GER_confirm_coalition = {
+    clr_country_flag = AOEIW28_GER_spd_government
+    clr_country_flag = AOEIW28_GER_zentrum_government
+    clr_country_flag = AOEIW28_GER_liberal_government
+    clr_country_flag = AOEIW28_GER_conservative_government
+    clr_country_flag = AOEIW30_GER_cdu_government
+    clr_country_flag = AOEIW30_GER_dstp_government
+    clr_country_flag = AOEIW30_GER_kpd_government
+    set_variable = { AOEIW29_GER_government_size = 0 }
+    if = { limit = { has_country_flag = AOEIW30_GER_spd_candidate } set_country_flag = AOEIW28_GER_spd_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_zentrum_candidate } set_country_flag = AOEIW28_GER_zentrum_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_lvp_candidate } set_country_flag = AOEIW28_GER_liberal_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_dnvp_candidate } set_country_flag = AOEIW28_GER_conservative_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_cdu_candidate } set_country_flag = AOEIW30_GER_cdu_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_dstp_candidate } set_country_flag = AOEIW30_GER_dstp_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    if = { limit = { has_country_flag = AOEIW30_GER_kpd_candidate } set_country_flag = AOEIW30_GER_kpd_government add_to_variable = { AOEIW29_GER_government_size = 1 } }
+    set_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+    set_variable = { AOEIW30_GER_government_leader_seats = 0 }
+    AOEIW30_GER_clear_candidates = yes
+    set_variable = { AOEIW28_GER_months = 0 }
+    clr_country_flag = AOEIW28_GER_election_pending
+    AOEIW29_GER_refresh_cabinet = yes
+    mark_focus_tree_layout_dirty = yes
+}
+
+# Compatibility wrapper retained for old scripted references.
+AOEIW29_GER_confirm_coalition = { AOEIW30_GER_confirm_coalition = yes }

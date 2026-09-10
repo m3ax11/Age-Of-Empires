@@ -1,0 +1,61 @@
+division_template = {
+ name = "Polish Commonwealth Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Polish Commonwealth Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "POL Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Polish Commonwealth Infantry Division" location = 6558 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Polish Commonwealth Infantry Division" location = 11399 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Polish Commonwealth Infantry Division" location = 362 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Polish Commonwealth Infantry Division" location = 3544 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Polish Commonwealth Infantry Division" location = 402 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Polish Commonwealth Infantry Division" location = 9508 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Polish Commonwealth Infantry Division" location = 3392 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Polish Commonwealth Infantry Division" location = 560 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Polish Commonwealth Infantry Division" location = 406 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Polish Commonwealth Infantry Division" location = 11301 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Polish Commonwealth Infantry Division" location = 3254 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Polish Commonwealth Infantry Division" location = 6557 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Polish Commonwealth Infantry Division" location = 6558 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Polish Commonwealth Infantry Division" location = 11399 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Polish Commonwealth Infantry Division" location = 362 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Polish Commonwealth Infantry Division" location = 3544 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Polish Commonwealth Infantry Division" location = 402 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Polish Commonwealth Infantry Division" location = 9508 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Polish Commonwealth Infantry Division" location = 3392 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Polish Commonwealth Infantry Division" location = 560 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Polish Commonwealth Infantry Division" location = 406 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Polish Commonwealth Infantry Division" location = 11301 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Polish Commonwealth Infantry Division" location = 3254 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Polish Commonwealth Infantry Division" location = 6557 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Polish Commonwealth Infantry Division" location = 6558 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Polish Commonwealth Infantry Division" location = 11399 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Polish Commonwealth Infantry Division" location = 362 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Polish Commonwealth Infantry Division" location = 3544 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Polish Commonwealth Infantry Division" location = 402 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Polish Commonwealth Infantry Division" location = 9508 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Polish Commonwealth Infantry Division" location = 3392 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Polish Commonwealth Infantry Division" location = 560 division_template = "Polish Commonwealth Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Polish Commonwealth Mobile Division" location = 406 division_template = "Polish Commonwealth Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Polish Commonwealth Mobile Division" location = 11301 division_template = "Polish Commonwealth Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. POL Rapid Division" location = 6558 division_template = "POL Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. POL Rapid Division" location = 6558 division_template = "POL Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+}

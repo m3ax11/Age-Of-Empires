@@ -1,0 +1,30 @@
+
+state={
+	id=414
+	name="STATE_414"
+	resources={
+		coal = 1 # a bit of an exageration in the early game but was clearly exploited at the time. resource split with other regions but should be the most important coal mining centre. 
+		steel=3 # early exploitation of Bafq iron metallogenic belt and Gol-e-Gohar mine with beginning of some dev plan but the main should be the mining act of 38. replaces steel for state 411 and elsewhere.
+	}
+	history = {
+		buildings = {
+			infrastructure = 1
+		}
+
+
+		add_to_array = { state_victory_points = 10913 }
+		victory_points = {
+			10913 1 
+		}
+        owner = PER
+        add_core_of = PER
+    }
+
+	provinces={
+		1986 10913 11249 12780 12809 
+	}
+	manpower=486013
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

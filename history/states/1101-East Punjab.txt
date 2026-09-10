@@ -1,0 +1,33 @@
+
+state={
+	id=1101
+	name="STATE_1101" #
+	manpower = 16959758 
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 10729 }
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10729 3
+		}
+        owner = RAJ
+        add_core_of = RAJ
+    }
+
+	provinces={
+		1129 2002 2076 7106 10729 12708 12868 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,137 @@
+capital = 271
+set_research_slots = 4
+set_convoys = 0
+set_stability = 0.7
+set_war_support = 0.65
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 5
+    fascism = 4
+    communism = 5
+    neutrality = 72
+    imperialism = 14
+}
+recruit_character = AOEIW_ETH_menelik_ii
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_ETH_legacy_0
+    civilian_economy
+    export_focus
+    volunteer_only
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    gw_artillery = 1
+    tech_mountaineers = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+    tech_recon = 1
+    motorised_infantry = 1
+}
+oob = "AOEIW_ETH_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_ETH_v7_advisor_1
+recruit_character = AOEIW_ETH_v7_advisor_2
+recruit_character = AOEIW_ETH_v7_advisor_3
+recruit_character = AOEIW_ETH_v7_advisor_4
+recruit_character = AOEIW_ETH_v7_advisor_5
+recruit_character = AOEIW_ETH_v7_advisor_6
+
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4400 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 360 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 400 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 180 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW ETH Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW ETH Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_ETH_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+    }
+    set_air_oob = "AOEIW_ETH_1936_air_legacy"
+}
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = ETH_haile_selassie
+recruit_character = ETH_fitawrari_yeebio_woldai
+recruit_character = ETH_seyoum_mengesha
+recruit_character = ETH_hailu_tekle_haymanot
+recruit_character = ETH_gabriel_zawde_gilaneh
+recruit_character = ETH_woldemeskal_tariku
+recruit_character = ETH_ras_kebbede
+recruit_character = ETH_wondossen_kassa
+recruit_character = ETH_ras_kassa
+recruit_character = ETH_dedja_zinatch_nadeon
+recruit_character = ETH_haile_abba_mersa
+recruit_character = ETH_mesfin_sileshi
+recruit_character = ETH_lij_abiye_abebe
+recruit_character = ETH_john_robinson
+recruit_character = ETH_lij_johannes
+recruit_character = ETH_fitauri_zawde_gobena
+recruit_character = ETH_desta_damtew
+recruit_character = ETH_ras_imru_haile_selassie
+recruit_character = ETH_bedjironde_tekle_hawariate
+recruit_character = ETH_makonnen_endelkatchew
+recruit_character = BEL_leopold_reul
+recruit_character = ETH_feodor_konovalov
+recruit_character = ETH_haile_selassie_gugsa
+recruit_character = ETH_alemework_beyene
+recruit_character = ETH_ilio_barontini
+recruit_character = ETH_daba_birrou
+recruit_character = ETH_abuna_qerellos_iv

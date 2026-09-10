@@ -1,0 +1,35 @@
+state={
+	id=699
+	name="STATE_699"
+	manpower = 48263
+	
+	state_category = wasteland
+
+	history = {
+
+
+		add_claim_by = MOR
+		add_to_array = { state_victory_points = 8038 }
+		add_to_array = { state_victory_points = 10875 }
+		buildings = {
+			infrastructure = 1
+			8038 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8038 1
+		}
+       		victory_points = {
+               		10875 1
+       		}
+        owner = SPR
+        add_core_of = SPR
+    }
+	
+	provinces={
+		4920 5012 7979 8038 8111 10875
+	}
+
+	local_supplies=0.0 
+}

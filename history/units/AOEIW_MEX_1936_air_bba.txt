@@ -1,0 +1,19 @@
+air_wings = {
+    277 = {
+        small_plane_airframe_0 = {
+            owner = "MEX"
+            amount = 100
+            version_name = "AOEIW MEX Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "MEX"
+            amount = 30
+            version_name = "AOEIW MEX Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "MEX"
+            amount = 15
+            version_name = "AOEIW MEX Medium Bomber"
+        }
+    }
+}

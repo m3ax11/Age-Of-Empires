@@ -1,0 +1,35 @@
+
+state={
+	id=932
+	name="STATE_932"
+	state_category = city
+
+	history = {
+
+		buildings = {
+			infrastructure = 2 #was 3
+		}
+
+		add_to_array = { state_victory_points = 13252 }
+		add_to_array = { state_victory_points = 13246 }
+		add_to_array = { state_victory_points = 7913 }
+		victory_points = {
+			13252 20
+		}
+		victory_points = {
+			13246 5
+		}
+		victory_points = {
+			7913 3
+		}
+        owner = MEX
+        add_core_of = MEX
+    }
+	provinces={
+		7913 8089 13246 13247 13252 
+	}
+	manpower=2162078
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

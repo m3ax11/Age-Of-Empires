@@ -1,0 +1,130 @@
+division_template = {
+ name = "Russian Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Russian Empire Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "SOV Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "SOV Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Russian Empire Infantry Division" location = 11724 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Russian Empire Infantry Division" location = 418 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Russian Empire Infantry Division" location = 11614 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Russian Empire Infantry Division" location = 9259 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Russian Empire Infantry Division" location = 9461 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Russian Empire Infantry Division" location = 10256 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Russian Empire Infantry Division" location = 4311 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Russian Empire Infantry Division" location = 306 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Russian Empire Infantry Division" location = 4640 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Russian Empire Infantry Division" location = 11127 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Russian Empire Infantry Division" location = 10641 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Russian Empire Infantry Division" location = 525 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Russian Empire Infantry Division" location = 382 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Russian Empire Infantry Division" location = 105 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Russian Empire Infantry Division" location = 11248 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Russian Empire Infantry Division" location = 487 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Russian Empire Infantry Division" location = 1517 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Russian Empire Infantry Division" location = 11504 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Russian Empire Infantry Division" location = 1819 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Russian Empire Infantry Division" location = 185 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Russian Empire Infantry Division" location = 11724 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Russian Empire Infantry Division" location = 418 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Russian Empire Infantry Division" location = 11614 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Russian Empire Infantry Division" location = 9259 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Russian Empire Infantry Division" location = 9461 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Russian Empire Infantry Division" location = 10256 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Russian Empire Infantry Division" location = 4311 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Russian Empire Infantry Division" location = 306 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Russian Empire Infantry Division" location = 4640 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Russian Empire Infantry Division" location = 11127 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Russian Empire Infantry Division" location = 10641 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Russian Empire Infantry Division" location = 525 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Russian Empire Infantry Division" location = 382 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Russian Empire Infantry Division" location = 105 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Russian Empire Infantry Division" location = 11248 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Russian Empire Infantry Division" location = 487 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Russian Empire Infantry Division" location = 1517 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Russian Empire Infantry Division" location = 11504 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Russian Empire Infantry Division" location = 1819 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Russian Empire Infantry Division" location = 185 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. Russian Empire Infantry Division" location = 11724 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. Russian Empire Infantry Division" location = 418 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. Russian Empire Infantry Division" location = 11614 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. Russian Empire Infantry Division" location = 9259 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. Russian Empire Infantry Division" location = 9461 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. Russian Empire Infantry Division" location = 10256 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. Russian Empire Infantry Division" location = 4311 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. Russian Empire Infantry Division" location = 306 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "49. Russian Empire Infantry Division" location = 4640 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "50. Russian Empire Infantry Division" location = 11127 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "51. Russian Empire Infantry Division" location = 10641 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "52. Russian Empire Infantry Division" location = 525 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "53. Russian Empire Infantry Division" location = 382 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "54. Russian Empire Infantry Division" location = 105 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "55. Russian Empire Infantry Division" location = 11248 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "56. Russian Empire Infantry Division" location = 487 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "57. Russian Empire Infantry Division" location = 1517 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "58. Russian Empire Infantry Division" location = 11504 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "59. Russian Empire Infantry Division" location = 1819 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "60. Russian Empire Infantry Division" location = 185 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "61. Russian Empire Infantry Division" location = 11724 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "62. Russian Empire Infantry Division" location = 418 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "63. Russian Empire Infantry Division" location = 11614 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "64. Russian Empire Infantry Division" location = 9259 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "65. Russian Empire Infantry Division" location = 9461 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "66. Russian Empire Infantry Division" location = 10256 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "67. Russian Empire Infantry Division" location = 4311 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "68. Russian Empire Infantry Division" location = 306 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "69. Russian Empire Infantry Division" location = 4640 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "70. Russian Empire Infantry Division" location = 11127 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "71. Russian Empire Infantry Division" location = 10641 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "72. Russian Empire Infantry Division" location = 525 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "73. Russian Empire Infantry Division" location = 382 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "74. Russian Empire Infantry Division" location = 105 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "75. Russian Empire Infantry Division" location = 11248 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "76. Russian Empire Infantry Division" location = 487 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "77. Russian Empire Infantry Division" location = 1517 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "78. Russian Empire Infantry Division" location = 11504 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "79. Russian Empire Infantry Division" location = 1819 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "80. Russian Empire Infantry Division" location = 185 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "81. Russian Empire Infantry Division" location = 11724 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "82. Russian Empire Infantry Division" location = 418 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "83. Russian Empire Infantry Division" location = 11614 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "84. Russian Empire Infantry Division" location = 9259 division_template = "Russian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Russian Empire Mobile Division" location = 9461 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Russian Empire Mobile Division" location = 10256 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. Russian Empire Mobile Division" location = 4311 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. Russian Empire Mobile Division" location = 306 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "5. Russian Empire Mobile Division" location = 4640 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "6. Russian Empire Mobile Division" location = 11127 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "7. Russian Empire Mobile Division" location = 10641 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "8. Russian Empire Mobile Division" location = 525 division_template = "Russian Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. SOV Rapid Division" location = 11724 division_template = "SOV Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. SOV Rapid Division" location = 11724 division_template = "SOV Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. SOV Rapid Division" location = 11724 division_template = "SOV Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. SOV Mountain Division" location = 11724 division_template = "SOV Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

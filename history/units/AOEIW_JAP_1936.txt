@@ -1,0 +1,102 @@
+division_template = {
+ name = "Japan Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Japan Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "JAP Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "JAP Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "JAP Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Japan Infantry Division" location = 7421 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Japan Infantry Division" location = 4434 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Japan Infantry Division" location = 10243 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Japan Infantry Division" location = 10032 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Japan Infantry Division" location = 4056 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Japan Infantry Division" location = 7387 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Japan Infantry Division" location = 12110 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Japan Infantry Division" location = 12225 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Japan Infantry Division" location = 10325 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Japan Infantry Division" location = 7415 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Japan Infantry Division" location = 7421 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Japan Infantry Division" location = 4434 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Japan Infantry Division" location = 10243 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Japan Infantry Division" location = 10032 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Japan Infantry Division" location = 4056 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Japan Infantry Division" location = 7387 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Japan Infantry Division" location = 12110 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Japan Infantry Division" location = 12225 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Japan Infantry Division" location = 10325 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Japan Infantry Division" location = 7415 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Japan Infantry Division" location = 7421 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Japan Infantry Division" location = 4434 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Japan Infantry Division" location = 10243 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Japan Infantry Division" location = 10032 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Japan Infantry Division" location = 4056 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Japan Infantry Division" location = 7387 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Japan Infantry Division" location = 12110 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Japan Infantry Division" location = 12225 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Japan Infantry Division" location = 10325 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Japan Infantry Division" location = 7415 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Japan Infantry Division" location = 7421 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Japan Infantry Division" location = 4434 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Japan Infantry Division" location = 10243 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. Japan Infantry Division" location = 10032 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. Japan Infantry Division" location = 4056 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. Japan Infantry Division" location = 7387 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. Japan Infantry Division" location = 12110 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. Japan Infantry Division" location = 12225 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. Japan Infantry Division" location = 10325 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. Japan Infantry Division" location = 7415 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "49. Japan Infantry Division" location = 7381 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "50. Japan Infantry Division" location = 7421 division_template = "Japan Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Japan Mobile Division" location = 4434 division_template = "Japan Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Japan Mobile Division" location = 10243 division_template = "Japan Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. Japan Mobile Division" location = 10032 division_template = "Japan Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. Japan Mobile Division" location = 4056 division_template = "Japan Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. JAP Rapid Division" location = 7381 division_template = "JAP Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. JAP Rapid Division" location = 7381 division_template = "JAP Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. JAP Rapid Division" location = 7381 division_template = "JAP Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. JAP Mountain Division" location = 7381 division_template = "JAP Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+ division = { name = "1. JAP Marine Division" location = 7381 division_template = "JAP Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

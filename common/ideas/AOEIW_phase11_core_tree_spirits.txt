@@ -1,0 +1,118 @@
+ideas = {
+    country = {
+        AOEIW11_strategic_foreign_office = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0300
+                trade_opinion_factor = 0.1000
+            }
+        }
+        AOEIW11_trade_protocols = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0300
+                consumer_goods_factor = -0.0050
+            }
+        }
+        AOEIW11_economic_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0300
+                intel_network_gain_factor = 0.0500
+                trade_opinion_factor = -0.0500
+            }
+        }
+        AOEIW11_cooperative_security = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0150
+                planning_speed = 0.0300
+                army_org_factor = 0.0100
+            }
+        }
+        AOEIW11_strategic_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0200
+                planning_speed = 0.0400
+                intel_network_gain_factor = 0.0500
+            }
+        }
+        AOEIW11_arbitration_framework = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0200
+                political_power_factor = 0.0200
+            }
+        }
+        AOEIW11_grand_strategy = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                max_command_power = 10
+                planning_speed = 0.0300
+            }
+        }
+        AOEIW11_faction_leadership = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                command_power_gain_mult = 0.0500
+                political_power_factor = 0.0300
+            }
+        }
+        AOEIW11_faction_coordination = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.0300
+                land_reinforce_rate = 0.0100
+            }
+        }
+        AOEIW11_POL_reichspakt_integration = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0300
+                army_org_factor = 0.0100
+                stability_factor = 0.0100
+            }
+        }
+        AOEIW11_POL_negotiated_autonomy = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0500
+                research_speed_factor = 0.0200
+                consumer_goods_factor = 0.0050
+            }
+        }
+        AOEIW11_POL_sovereign_reconstruction = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0400
+                political_power_factor = 0.0400
+                stability_factor = -0.0200
+            }
+        }
+    }
+}

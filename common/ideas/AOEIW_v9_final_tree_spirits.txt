@@ -1,0 +1,2347 @@
+ideas = {
+    country = {
+        AOEIW9_AUS_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_AUS_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0500
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_AUS_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_AUS_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_AUS_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_AUS_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_AUS_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_BEL_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_BEL_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_BEL_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_BEL_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_BEL_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_BEL_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_BEL_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_BRA_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_BRA_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_BRA_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_BRA_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_BRA_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_BRA_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_BRA_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_BUL_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_BUL_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_BUL_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_BUL_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_BUL_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_BUL_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_BUL_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_CAN_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_CAN_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_CAN_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_CAN_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_CAN_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_CAN_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_CAN_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_CHI_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_CHI_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0550
+                production_factory_efficiency_gain_factor = 0.0800
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_CHI_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_CHI_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_CHI_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_CHI_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_CHI_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_DEN_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_DEN_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_DEN_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_DEN_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_DEN_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_DEN_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_DEN_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_EGY_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_EGY_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_EGY_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_EGY_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_EGY_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_EGY_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_EGY_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_ENG_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_ENG_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0750
+                production_factory_efficiency_gain_factor = 0.0900
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_ENG_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_ENG_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_ENG_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_ENG_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_ENG_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_ETH_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1800
+                production_speed_infrastructure_factor = 0.1350
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_ETH_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_ETH_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_ETH_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_ETH_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_ETH_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_ETH_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_FIN_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_FIN_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_FIN_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_FIN_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_FIN_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_FIN_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_FIN_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_FRA_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_FRA_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0650
+                production_factory_efficiency_gain_factor = 0.0850
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_FRA_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_FRA_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_FRA_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_FRA_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_FRA_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_GER_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0700
+                production_speed_infrastructure_factor = 0.0525
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_GER_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1000
+                production_factory_efficiency_gain_factor = 0.1100
+                production_speed_arms_factory_factor = 0.1200
+                industrial_capacity_factory = 0.0800
+            }
+        }
+        AOEIW9_GER_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_GER_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_GER_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_GER_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_GER_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_GRE_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_GRE_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_GRE_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_GRE_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_GRE_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_GRE_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_GRE_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_HOL_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_HOL_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_HOL_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_HOL_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_HOL_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_HOL_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_HOL_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_IRE_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_IRE_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_IRE_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_IRE_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_IRE_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_IRE_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_IRE_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_ITA_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_ITA_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0600
+                production_factory_efficiency_gain_factor = 0.0800
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_ITA_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_ITA_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_ITA_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_ITA_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_ITA_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_JAP_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_JAP_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0700
+                production_factory_efficiency_gain_factor = 0.0900
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_JAP_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_JAP_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_JAP_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_JAP_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_JAP_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_MEX_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_MEX_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_MEX_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_MEX_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_MEX_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_MEX_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_MEX_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_NOR_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_NOR_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_NOR_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_NOR_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_NOR_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_NOR_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_NOR_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_PER_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_PER_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_PER_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_PER_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_PER_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_PER_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_PER_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_POL_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_POL_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_POL_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_POL_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_POL_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_POL_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_POL_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_POR_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_POR_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_POR_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_POR_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_POR_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_POR_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_POR_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_RAJ_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_RAJ_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0500
+                production_factory_efficiency_gain_factor = 0.0800
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_RAJ_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_RAJ_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_RAJ_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_RAJ_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_RAJ_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_ROM_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_ROM_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_ROM_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_ROM_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_ROM_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_ROM_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_ROM_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_SIA_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_SIA_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_SIA_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_SIA_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_SIA_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_SIA_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_SIA_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_SOV_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1000
+                production_speed_infrastructure_factor = 0.0750
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_SOV_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0700
+                production_factory_efficiency_gain_factor = 0.1000
+                production_speed_arms_factory_factor = 0.1000
+                industrial_capacity_factory = 0.0700
+            }
+        }
+        AOEIW9_SOV_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_SOV_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_SOV_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_SOV_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_SOV_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_SPR_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_SPR_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0500
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_SPR_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_SPR_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_SPR_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_SPR_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_SPR_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_SWE_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_SWE_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_SWE_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_SWE_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_SWE_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_SWE_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_SWE_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_SWI_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1400
+                production_speed_infrastructure_factor = 0.1050
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_SWI_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0350
+                production_factory_efficiency_gain_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0600
+                industrial_capacity_factory = 0.0350
+            }
+        }
+        AOEIW9_SWI_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0250
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_SWI_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_SWI_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_SWI_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_SWI_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_TUR_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0600
+                production_speed_infrastructure_factor = 0.0450
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_TUR_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0500
+                production_factory_efficiency_gain_factor = 0.0800
+                production_speed_arms_factory_factor = 0.0800
+                industrial_capacity_factory = 0.0600
+            }
+        }
+        AOEIW9_TUR_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_TUR_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_TUR_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_TUR_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_TUR_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_USA_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0800
+                production_speed_infrastructure_factor = 0.0600
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_USA_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0850
+                production_factory_efficiency_gain_factor = 0.1000
+                production_speed_arms_factory_factor = 0.1000
+                industrial_capacity_factory = 0.0700
+            }
+        }
+        AOEIW9_USA_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0350
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_USA_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_USA_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_USA_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_USA_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_YUG_spirit_civilian_engine = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0900
+                production_speed_infrastructure_factor = 0.0675
+                consumer_goods_factor = -0.0200
+            }
+        }
+        AOEIW9_YUG_spirit_war_industry = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.0450
+                production_factory_efficiency_gain_factor = 0.0750
+                production_speed_arms_factory_factor = 0.0700
+                industrial_capacity_factory = 0.0450
+            }
+        }
+        AOEIW9_YUG_spirit_research_network = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0300
+                production_factory_start_efficiency_factor = 0.0300
+            }
+        }
+        AOEIW9_YUG_spirit_statecraft = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1000
+                stability_factor = 0.0400
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW9_YUG_spirit_constitutional = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.0200
+                production_speed_buildings_factor = 0.0400
+                stability_factor = 0.0500
+            }
+        }
+        AOEIW9_YUG_spirit_mobilised_society = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0800
+                recruitable_population_factor = 0.0100
+                army_org_factor = 0.0250
+            }
+        }
+        AOEIW9_YUG_spirit_military_reform = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                planning_speed = 0.0800
+                land_reinforce_rate = 0.0200
+                army_morale_factor = 0.0300
+            }
+        }
+    }
+}

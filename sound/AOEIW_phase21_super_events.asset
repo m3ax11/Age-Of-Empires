@@ -1,0 +1,52 @@
+category = {
+    name = "Effects"
+    soundeffects = {
+        AOEIW_german_war_start
+        AOEIW_nra_victory
+        AOEIW_ccp_victory
+    }
+}
+
+sound = {
+    name = "AOEIW_german_war_start_base"
+    file = "aoeiw_phase21/german_war_start.ogg"
+    always_load = no
+}
+sound = {
+    name = "AOEIW_nra_victory_base"
+    file = "aoeiw_phase21/nra_victory.ogg"
+    always_load = no
+}
+sound = {
+    name = "AOEIW_ccp_victory_base"
+    file = "aoeiw_phase21/ccp_victory.ogg"
+    always_load = no
+}
+
+soundeffect = {
+    name = AOEIW_german_war_start
+    loop = no
+    sounds = { sound = AOEIW_german_war_start_base }
+    max_audible = 1
+    max_audible_behaviour = fail
+    is3d = no
+    volume = 0.82
+}
+soundeffect = {
+    name = AOEIW_nra_victory
+    loop = no
+    sounds = { sound = AOEIW_nra_victory_base }
+    max_audible = 1
+    max_audible_behaviour = fail
+    is3d = no
+    volume = 0.82
+}
+soundeffect = {
+    name = AOEIW_ccp_victory
+    loop = no
+    sounds = { sound = AOEIW_ccp_victory_base }
+    max_audible = 1
+    max_audible_behaviour = fail
+    is3d = no
+    volume = 0.82
+}

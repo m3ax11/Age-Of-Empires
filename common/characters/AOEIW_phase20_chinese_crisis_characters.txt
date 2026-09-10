@@ -1,0 +1,58 @@
+characters = {
+    AOEIW20_UF_national_salvation_council = {
+        name = AOEIW20_UF_national_salvation_council
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { AOEIW20_UF_collective_leadership } }
+    }
+    AOEIW20_UF_chiang_kaishek = {
+        name = AOEIW20_UF_chiang_kaishek
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { AOEIW20_UF_nationalist_moderniser } }
+    }
+    AOEIW20_UF_mao_zedong = {
+        name = AOEIW20_UF_mao_zedong
+        portraits = {
+            civilian = {
+                large = GFX_portrait_prc_mao_zedong
+                small = GFX_portrait_PRC_mao_zedong_small
+            }
+        }
+        country_leader = { ideology = marxism expire = "1965.1.1.1" traits = { AOEIW20_UF_mass_revolutionary } }
+    }
+    AOEIW20_UF_zhu_de = {
+        name = AOEIW20_UF_zhu_de
+        corps_commander = { skill = 4 attack_skill = 4 defense_skill = 3 planning_skill = 3 logistics_skill = 4 traits = { infantry_officer } }
+    }
+    AOEIW20_UF_li_zongren = {
+        name = AOEIW20_UF_li_zongren
+        corps_commander = { skill = 4 attack_skill = 3 defense_skill = 4 planning_skill = 4 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW20_UF_bai_chongxi = {
+        name = AOEIW20_UF_bai_chongxi
+        corps_commander = { skill = 4 attack_skill = 4 defense_skill = 3 planning_skill = 4 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW20_UF_xue_yue = {
+        name = AOEIW20_UF_xue_yue
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { infantry_officer } }
+    }
+    AOEIW20_UF_peng_dehuai = {
+        name = AOEIW20_UF_peng_dehuai
+        corps_commander = { skill = 4 attack_skill = 4 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { infantry_officer } }
+    }
+    AOEIW20_QIN_puyi = {
+        name = AOEIW_CHI_puyi
+        portraits = { civilian = { large = GFX_AOEIW_portrait_CHI } }
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { popular_figurehead } }
+    }
+    AOEIW20_QIN_zhang_zuolin = {
+        name = AOEIW20_QIN_zhang_zuolin
+        corps_commander = { skill = 4 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 4 traits = { organizer } }
+    }
+    AOEIW20_QIN_wu_peifu = {
+        name = AOEIW20_QIN_wu_peifu
+        corps_commander = { skill = 4 attack_skill = 4 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { infantry_officer } }
+    }
+    AOEIW20_MAN_puyi = {
+        name = AOEIW_CHI_puyi
+        portraits = { civilian = { large = GFX_AOEIW_portrait_CHI } }
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { popular_figurehead } }
+    }
+}

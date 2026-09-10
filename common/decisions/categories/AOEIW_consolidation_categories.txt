@@ -1,0 +1,12 @@
+AOEIW_consolidation_crisis_category = {
+    icon = generic_military
+    allowed = { always = yes }
+    visible = {
+        OR = {
+            is_ai = no
+            original_tag = GER original_tag = FRA original_tag = SOV original_tag = ITA
+            original_tag = ENG original_tag = USA original_tag = JAP original_tag = CHI
+        }
+    }
+    visible_when_empty = no
+}

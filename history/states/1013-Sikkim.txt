@@ -1,0 +1,30 @@
+state={
+	id=1013
+	name="STATE_1013"
+	manpower = 109808 
+	
+	state_category = rural
+
+	history = {
+
+
+		add_claim_by = NEP
+		add_claim_by = BHU
+		add_to_array = { state_victory_points = 4435 }
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			4435 1 # Gangtok
+		}
+        owner = RAJ
+        add_core_of = RAJ
+    }
+
+	provinces={
+		4435
+	}
+
+	local_supplies=0.0 
+}

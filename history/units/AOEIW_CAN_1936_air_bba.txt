@@ -1,0 +1,19 @@
+air_wings = {
+    276 = {
+        small_plane_airframe_0 = {
+            owner = "CAN"
+            amount = 120
+            version_name = "AOEIW CAN Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "CAN"
+            amount = 35
+            version_name = "AOEIW CAN Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "CAN"
+            amount = 20
+            version_name = "AOEIW CAN Medium Bomber"
+        }
+    }
+}

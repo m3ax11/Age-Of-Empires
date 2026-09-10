@@ -1,0 +1,28 @@
+state={
+	id=956
+	name="STATE_956"
+	manpower = 67395
+	
+	state_category = pastoral
+
+	history = {
+
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6672 1 
+		}
+
+
+		add_to_array = { state_victory_points = 6672 }
+        owner = YUG
+        add_core_of = YUG
+    }
+
+	provinces={
+		6672 
+	}
+
+	local_supplies = 0.0 
+}

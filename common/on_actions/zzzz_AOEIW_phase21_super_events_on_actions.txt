@@ -1,0 +1,69 @@
+on_actions = {
+    # ROOT is one side and FROM the other.  The relation hook fires even for
+    # effect-created wars, unlike focus-specific event calls.
+    on_war_relation_added = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        AND = { original_tag = GER FROM = { original_tag = SOV } }
+                        AND = { original_tag = SOV FROM = { original_tag = GER } }
+                    }
+                    NOT = { has_global_flag = AOEIW21_GER_SOV_super_event_seen }
+                }
+                set_global_flag = AOEIW21_GER_SOV_super_event_seen
+                every_country = {
+                    limit = { is_ai = no }
+                    set_country_flag = { flag = AOEIW_super_event_visible value = 1 }
+                    scoped_sound_effect = "AOEIW_german_war_start"
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        AND = { original_tag = GER FROM = { original_tag = FRA } }
+                        AND = { original_tag = FRA FROM = { original_tag = GER } }
+                    }
+                    NOT = { has_global_flag = AOEIW21_GER_FRA_super_event_seen }
+                }
+                set_global_flag = AOEIW21_GER_FRA_super_event_seen
+                every_country = {
+                    limit = { is_ai = no }
+                    set_country_flag = { flag = AOEIW_super_event_visible value = 2 }
+                    scoped_sound_effect = "AOEIW_german_war_start"
+                }
+            }
+        }
+    }
+
+    # A light weekly fallback covers wars restored from saves and unusual relation
+    # changes without placing another scripted check on every in-game day.
+    on_weekly_GER = {
+        effect = {
+            if = {
+                limit = {
+                    has_war_with = SOV
+                    NOT = { has_global_flag = AOEIW21_GER_SOV_super_event_seen }
+                }
+                set_global_flag = AOEIW21_GER_SOV_super_event_seen
+                every_country = {
+                    limit = { is_ai = no }
+                    set_country_flag = { flag = AOEIW_super_event_visible value = 1 }
+                    scoped_sound_effect = "AOEIW_german_war_start"
+                }
+            }
+            if = {
+                limit = {
+                    has_war_with = FRA
+                    NOT = { has_global_flag = AOEIW21_GER_FRA_super_event_seen }
+                }
+                set_global_flag = AOEIW21_GER_FRA_super_event_seen
+                every_country = {
+                    limit = { is_ai = no }
+                    set_country_flag = { flag = AOEIW_super_event_visible value = 2 }
+                    scoped_sound_effect = "AOEIW_german_war_start"
+                }
+            }
+        }
+    }
+}

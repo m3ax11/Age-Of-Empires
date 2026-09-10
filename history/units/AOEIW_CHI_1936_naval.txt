@@ -1,0 +1,32 @@
+units = {
+    fleet = {
+        name = "CHI National Fleet"
+        naval_base = 7014
+        task_force = {
+            name = "CHI Main Fleet"
+            location = 7014
+            ship = { name = "CHI Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Cruiser Class" } } }
+            ship = { name = "CHI Cruiser 02" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Cruiser Class" } } }
+            ship = { name = "CHI Cruiser 03" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Cruiser Class" } } }
+            ship = { name = "CHI Cruiser 04" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Cruiser Class" } } }
+            ship = { name = "CHI Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 08" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 09" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Destroyer 12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Destroyer Class" } } }
+            ship = { name = "CHI Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+            ship = { name = "CHI Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+            ship = { name = "CHI Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+            ship = { name = "CHI Submarine 04" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+            ship = { name = "CHI Submarine 05" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+            ship = { name = "CHI Submarine 06" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "AOEIW CHI Submarine Class" } } }
+        }
+    }
+}

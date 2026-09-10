@@ -1,0 +1,61 @@
+# Age of Empires / Imperial World - single 1936 scenario
+bookmarks = {
+    bookmark = {
+        name = "AOEIW81_TIME_OF_UPHEAVAL_NAME"
+        desc = "AOEIW81_TIME_OF_UPHEAVAL_DESC"
+        date = 1936.1.1.12
+        picture = "GFX_AOEIW81_select_date_1936"
+        default_country = "ENG"
+        default = yes
+
+        "GER" = {
+            history = "AOEIW81_GER_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { AOEIW_GER_legacy_0 AOEIW6_GER_rearmament_coordination_0 }
+            focuses = { }
+        }
+        "ENG" = {
+            history = "AOEIW81_ENG_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { }
+            focuses = { }
+        }
+        "SOV" = {
+            history = "AOEIW81_SOV_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { AOEIW8_SOV_backward_industry AOEIW8_SOV_divided_politics AOEIW8_SOV_weak_officer_corps AOEIW8_SOV_russian_resilience }
+            focuses = { }
+        }
+        "FRA" = {
+            history = "AOEIW81_FRA_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { AOEIW_FRA_legacy_0 AOEIW6_FRA_procurement_0 }
+            focuses = { }
+        }
+        "SPR" = {
+            history = "AOEIW81_SPR_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { AOEIW_SPR_legacy_0 AOEIW6_SPR_regional_economy_0 }
+            focuses = { }
+        }
+        "JAP" = {
+            history = "AOEIW81_JAP_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { }
+            focuses = { }
+        }
+        "TUR" = {
+            history = "AOEIW81_TUR_BOOKMARK_DESC"
+            ideology = neutrality
+            ideas = { }
+            focuses = { }
+        }
+        "---" = {
+            history = "AOEIW81_OTHER_BOOKMARK_DESC"
+        }
+
+        effect = {
+            randomize_weather = 22345
+        }
+    }
+}

@@ -1,0 +1,34 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		1413 4434 7223 7642 12277 12293 13521 13522 13523 13524
+	}
+	state_category = town
+	history = {
+
+
+		add_to_array = { state_victory_points = 13522 } #Semarang
+		add_to_array = { state_victory_points = 7223 } #Tegal
+		add_to_array = { state_victory_points = 4434 } #Cilacap
+		victory_points = {
+			13522 10
+		}
+		victory_points = {
+			4434 1
+		}
+		victory_points = {
+			7223 1
+		}
+		
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3 #was: 5
+		}
+        owner = JAP
+        add_core_of = JAP
+    }
+	manpower=12002699
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+}

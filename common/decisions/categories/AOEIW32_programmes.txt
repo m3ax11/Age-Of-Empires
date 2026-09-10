@@ -1,0 +1,10 @@
+AOEIW32_GER_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = GER } visible = { original_tag = GER } }
+AOEIW32_FRA_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = FRA } visible = { original_tag = FRA } }
+AOEIW32_SOV_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = SOV } visible = { original_tag = SOV } }
+AOEIW32_USA_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = USA } visible = { original_tag = USA } }
+AOEIW32_ENG_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = ENG } visible = { original_tag = ENG } }
+AOEIW32_ITA_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = ITA } visible = { original_tag = ITA } }
+AOEIW32_JAP_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = JAP } visible = { original_tag = JAP } }
+AOEIW32_AUS_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = AUS } visible = { original_tag = AUS } }
+AOEIW32_TUR_field_programmes = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = TUR } visible = { original_tag = TUR } }
+AOEIW32_GER_implementation = { icon = GFX_decision_category_generic_political_actions allowed = { original_tag = GER } visible = { has_country_flag = AOEIW28_GER_parliament_enabled } }

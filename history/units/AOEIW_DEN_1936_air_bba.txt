@@ -1,0 +1,19 @@
+air_wings = {
+    37 = {
+        small_plane_airframe_0 = {
+            owner = "DEN"
+            amount = 70
+            version_name = "AOEIW DEN Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "DEN"
+            amount = 20
+            version_name = "AOEIW DEN Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "DEN"
+            amount = 10
+            version_name = "AOEIW DEN Medium Bomber"
+        }
+    }
+}

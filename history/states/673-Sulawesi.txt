@@ -1,0 +1,36 @@
+state = {
+	id = 673
+	name = "STATE_673"
+	resources = {
+		rubber = 30
+	}
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 10263 }
+		add_to_array = { state_victory_points = 4564 }
+		victory_points = {
+			10263 3
+		}
+		victory_points = {
+			4564 1
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			air_base = 2
+			10263 = {
+				naval_base = 3
+			}
+		}
+        owner = JAP
+        add_core_of = JAP
+    }
+	provinces = {
+		10263 1561 4349 1589 10464 7598 4308 12330 7336 10450 4564 12444 10222
+	}
+	manpower = 3088216
+	state_category = town
+	local_supplies = 1.0 
+}

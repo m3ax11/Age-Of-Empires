@@ -1,0 +1,40 @@
+state={
+	id=319
+	name="STATE_319"
+	resources={
+		steel = 3
+	}
+	provinces={
+		4598 7632 10484 7660 13486 13487 13488
+	}
+	manpower=1522109
+	state_category=town
+	buildings_max_level_factor=1.000
+	
+	history = {
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			7660 = {
+				naval_base = 2
+			}
+		}
+
+		add_to_array = { state_victory_points = 7660 }
+		add_to_array = { state_victory_points = 4598 }
+		victory_points = {
+			7660 5 
+		}
+		victory_points = {
+			4598 1 
+		}
+        owner = SPR
+        add_core_of = SPR
+    }
+
+	local_supplies=0.0 
+}

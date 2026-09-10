@@ -1,0 +1,248 @@
+add_namespace = aoeiw_phase16_fra
+
+# France only: the nationwide strike becomes the revolutionary test of discipline.
+country_event = {
+    id = aoeiw_phase16_fra.1
+    title = aoeiw_phase16_fra.1.t
+    desc = aoeiw_phase16_fra.1.d
+    picture = GFX_report_event_generic_strike
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = FRA }
+
+    option = {
+        name = aoeiw_phase16_fra.1.a
+        ai_chance = { factor = 7 }
+        add_political_power = -30
+        add_stability = -0.02
+        add_war_support = 0.02
+        set_country_flag = AOEIW16_FRA_disciplined_general_strike
+    }
+    option = {
+        name = aoeiw_phase16_fra.1.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.04
+        add_war_support = 0.04
+        set_country_flag = AOEIW16_FRA_spontaneous_factory_seizures
+    }
+}
+
+# France only: the army fractures, but the choice concerns the treatment of useful officers.
+country_event = {
+    id = aoeiw_phase16_fra.2
+    title = aoeiw_phase16_fra.2.t
+    desc = aoeiw_phase16_fra.2.d
+    picture = GFX_report_event_generic_soldiers_surrendering
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = FRA }
+
+    option = {
+        name = aoeiw_phase16_fra.2.a
+        ai_chance = { factor = 7 }
+        add_political_power = -40
+        add_stability = 0.01
+        army_experience = 10
+        set_country_flag = AOEIW16_FRA_technical_officers_retained
+    }
+    option = {
+        name = aoeiw_phase16_fra.2.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.02
+        add_war_support = 0.03
+        army_experience = 5
+        set_country_flag = AOEIW16_FRA_bonapartist_command_purged
+    }
+}
+
+# France only: the Congress proclaims the Commune and ends the Bonapartist state.
+country_event = {
+    id = aoeiw_phase16_fra.3
+    title = aoeiw_phase16_fra.3.t
+    desc = aoeiw_phase16_fra.3.d
+    picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = FRA }
+
+    option = {
+        name = aoeiw_phase16_fra.3.a
+
+        if = {
+            limit = { is_faction_leader = yes }
+            dismantle_faction = yes
+        }
+        else_if = {
+            limit = { is_in_faction = yes }
+            leave_faction = yes
+        }
+
+        remove_ideas = {
+            AOEIW_FRA_legacy_0
+            AOEIW_FRA_legacy_1
+            AOEIW_FRA_legacy_2
+            AOEIW_FRA_legacy_3
+            AOEIW9_FRA_spirit_mobilised_society
+            AOEIW11_faction_leadership
+            AOEIW16_FRA_strike_wave
+            AOEIW16_FRA_revolutionary_command_crisis
+        }
+        AOEIW9_install_workers_government = yes
+        set_cosmetic_tag = FRA_COMMUNE
+        set_party_name = {
+            ideology = communism
+            long_name = AOEIW16_FRA_communal_congress_long
+            name = AOEIW16_FRA_communal_congress
+        }
+        set_popularities = {
+            democratic = 12
+            fascism = 3
+            communism = 70
+            neutrality = 10
+            imperialism = 5
+        }
+        retire_character = AOEIW_FRA_napoleon_iv
+        promote_character = { character = FRA_maurice_thorez ideology = stalinism }
+        add_ideas = {
+            AOEIW16_FRA_postrevolution_industry_disruption
+            AOEIW16_FRA_postrevolution_command_disruption
+        }
+        add_political_power = -100
+        add_stability = -0.08
+        add_war_support = 0.05
+        set_country_flag = AOEIW16_FRA_commune_proclaimed
+
+        if = {
+            limit = { AUS = { exists = yes } }
+            AUS = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = FRA modifier = AOEIW_old_order_cooperation }
+            }
+        }
+        if = {
+            limit = { BEL = { exists = yes } }
+            BEL = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = FRA modifier = AOEIW_old_order_cooperation }
+            }
+        }
+
+        country_event = { id = aoeiw_phase16_fra.4 days = 1 }
+        if = {
+            limit = { AUS = { exists = yes } }
+            AUS = { country_event = { id = aoeiw_phase16_fra.5 days = 1 } }
+        }
+        else_if = {
+            limit = { BEL = { exists = yes } }
+            BEL = { country_event = { id = aoeiw_phase16_fra.6 days = 1 } }
+        }
+    }
+}
+
+# France only: the fleet survives, but admirals and sailors contest its new chain of command.
+country_event = {
+    id = aoeiw_phase16_fra.4
+    title = aoeiw_phase16_fra.4.t
+    desc = aoeiw_phase16_fra.4.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = FRA
+        has_country_flag = AOEIW16_FRA_commune_proclaimed
+    }
+
+    option = {
+        name = aoeiw_phase16_fra.4.a
+        ai_chance = { factor = 6 }
+        add_political_power = -50
+        add_stability = 0.02
+        navy_experience = 15
+        add_ideas = AOEIW16_FRA_admirals_compromise
+        set_country_flag = AOEIW16_FRA_admirals_compromise
+    }
+    option = {
+        name = aoeiw_phase16_fra.4.b
+        ai_chance = { factor = 4 }
+        add_stability = -0.02
+        add_war_support = 0.04
+        navy_experience = 10
+        add_ideas = AOEIW16_FRA_sailors_committees
+        set_country_flag = AOEIW16_FRA_sailors_committees
+    }
+}
+
+# Austria-Hungary only: the former ally decides whether to rebuild a conservative alliance.
+country_event = {
+    id = aoeiw_phase16_fra.5
+    title = aoeiw_phase16_fra.5.t
+    desc = aoeiw_phase16_fra.5.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = AUS }
+
+    option = {
+        name = aoeiw_phase16_fra.5.a
+        trigger = { is_in_faction = no }
+        ai_chance = { factor = 7 }
+        set_rule = { can_create_factions = yes }
+        create_faction = AOEIW16_constitutional_entente
+        add_stability = -0.02
+        add_war_support = 0.04
+        add_opinion_modifier = { target = FRA modifier = AOEIW16_old_order_betrayed }
+        set_country_flag = AOEIW16_AUS_rallied_old_order
+        if = {
+            limit = { BEL = { exists = yes } }
+            BEL = { country_event = { id = aoeiw_phase16_fra.6 days = 1 } }
+        }
+    }
+    option = {
+        name = aoeiw_phase16_fra.5.b
+        ai_chance = { factor = 3 }
+        add_stability = 0.03
+        add_political_power = 50
+        add_opinion_modifier = { target = FRA modifier = AOEIW16_old_order_betrayed }
+        set_country_flag = AOEIW16_AUS_armed_neutrality
+        if = {
+            limit = { BEL = { exists = yes } }
+            BEL = { country_event = { id = aoeiw_phase16_fra.6 days = 1 } }
+        }
+    }
+}
+
+# Belgium only: Brussels responds after Vienna has chosen its course.
+country_event = {
+    id = aoeiw_phase16_fra.6
+    title = aoeiw_phase16_fra.6.t
+    desc = aoeiw_phase16_fra.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = BEL }
+
+    option = {
+        name = aoeiw_phase16_fra.6.a
+        trigger = {
+            is_in_faction = no
+            AUS = {
+                exists = yes
+                has_country_flag = AOEIW16_AUS_rallied_old_order
+                is_faction_leader = yes
+            }
+        }
+        ai_chance = { factor = 7 }
+        AUS = { add_to_faction = BEL }
+        add_stability = 0.02
+        add_opinion_modifier = { target = FRA modifier = AOEIW16_old_order_betrayed }
+        set_country_flag = AOEIW16_BEL_joined_constitutional_entente
+    }
+    option = {
+        name = aoeiw_phase16_fra.6.b
+        ai_chance = { factor = 3 }
+        add_stability = 0.03
+        add_war_support = 0.02
+        add_opinion_modifier = { target = FRA modifier = AOEIW16_old_order_betrayed }
+        set_country_flag = AOEIW16_BEL_independent_defence
+    }
+}

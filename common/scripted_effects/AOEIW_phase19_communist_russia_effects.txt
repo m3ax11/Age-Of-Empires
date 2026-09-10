@@ -1,0 +1,52 @@
+AOEIW19_SOV_proclaim_union = {
+    if = {
+        limit = { is_faction_leader = yes }
+        dismantle_faction = yes
+    }
+    else_if = {
+        limit = { is_in_faction = yes }
+        leave_faction = yes
+    }
+
+    remove_ideas = {
+        AOEIW9_SOV_spirit_statecraft
+        AOEIW9_SOV_spirit_constitutional
+        AOEIW9_SOV_spirit_mobilised_society
+        AOEIW8_SOV_divided_politics
+        AOEIW8_SOV_divided_politics_1
+        AOEIW8_SOV_divided_politics_2
+        AOEIW8_SOV_divided_politics_3
+        AOEIW8_SOV_weak_officer_corps
+        AOEIW8_SOV_weak_officer_corps_1
+        AOEIW8_SOV_weak_officer_corps_2
+        AOEIW8_SOV_weak_officer_corps_3
+        AOEIW19_SOV_factory_soviet_agitation
+        AOEIW19_SOV_soldiers_councils
+        AOEIW19_SOV_railway_committee_disruption
+        AOEIW19_SOV_red_guard_columns
+    }
+    AOEIW9_install_workers_government = yes
+    set_cosmetic_tag = SOV_SOVIET_UNION
+    set_party_name = {
+        ideology = communism
+        long_name = AOEIW19_SOV_all_russian_congress_long
+        name = AOEIW19_SOV_all_russian_congress
+    }
+    set_popularities = {
+        democratic = 8
+        fascism = 3
+        communism = 76
+        neutrality = 8
+        imperialism = 5
+    }
+    retire_character = AOEIW_SOV_nicholas_ii
+    add_ideas = {
+        AOEIW19_SOV_postrevolution_officer_collapse
+        AOEIW19_SOV_postrevolution_industrial_seizures
+        AOEIW19_SOV_postrevolution_supply_breakdown
+    }
+    add_political_power = -150
+    add_stability = -0.12
+    add_war_support = 0.10
+    set_country_flag = AOEIW19_SOV_union_proclaimed
+}

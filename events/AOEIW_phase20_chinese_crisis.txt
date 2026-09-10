@@ -1,0 +1,213 @@
+add_namespace = aoeiw_phase20_chi
+
+# The visible event only records consent and schedules the first safe stage.
+country_event = {
+    id = aoeiw_phase20_chi.100
+    title = aoeiw_phase20_chi.100.t
+    desc = aoeiw_phase20_chi.100.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = CHI NOT = { has_country_flag = AOEIW20_UF_joined } }
+    option = {
+        name = aoeiw_phase20_chi.100.a
+        set_country_flag = AOEIW20_UF_joined
+        country_event = { id = aoeiw_phase20_chi.101 days = 1 }
+    }
+}
+
+country_event = {
+    id = aoeiw_phase20_chi.101
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { tag = CHI has_country_flag = AOEIW20_UF_joined }
+    immediate = {
+        AOEIW20_UF_transfer_qing_states_1 = yes
+        country_event = { id = aoeiw_phase20_chi.102 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.102
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_transfer_qing_states_2 = yes
+        country_event = { id = aoeiw_phase20_chi.103 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.103
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_transfer_qing_states_3 = yes
+        country_event = { id = aoeiw_phase20_chi.104 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.104
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_prepare_qing = yes
+        country_event = { id = aoeiw_phase20_chi.105 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.105
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_transform_player = yes
+        country_event = { id = aoeiw_phase20_chi.106 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.106
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_mobilise_army = yes
+        country_event = { id = aoeiw_phase20_chi.107 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.107
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { MAN = { exists = yes } NOT = { has_war_with = MAN } }
+            declare_war_on = { target = MAN type = annex_everything }
+        }
+        set_country_flag = AOEIW20_UF_war_started
+        every_country = {
+            limit = { is_ai = no }
+            set_country_flag = { flag = AOEIW_super_event_visible value = 3 }
+        }
+    }
+}
+
+country_event = {
+    id = aoeiw_phase20_chi.300
+    title = aoeiw_phase20_chi.300.t
+    desc = aoeiw_phase20_chi.300.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = aoeiw_phase20_chi.300.a
+        add_war_support = 0.02
+    }
+}
+
+# Forced victory settlement: end the Qing war before constructing Manchuria.
+country_event = {
+    id = aoeiw_phase20_chi.200
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = AOEIW20_UF_victory_processing
+        MAN = { white_peace = ROOT }
+        country_event = { id = aoeiw_phase20_chi.201 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.201
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_resolve_qing_defeat = yes
+        country_event = { id = aoeiw_phase20_chi.202 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.202
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        AOEIW20_UF_create_manchurian_settlement = yes
+        set_country_flag = AOEIW20_UF_qing_defeated
+        country_event = { id = aoeiw_phase20_chi.203 days = 1 }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.203
+    title = aoeiw_phase20_chi.203.t
+    desc = aoeiw_phase20_chi.203.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = aoeiw_phase20_chi.203.a
+        add_stability = 0.10
+        add_war_support = 0.05
+        add_political_power = 150
+    }
+}
+
+country_event = {
+    id = aoeiw_phase20_chi.210
+    title = aoeiw_phase20_chi.210.t
+    desc = aoeiw_phase20_chi.210.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = MAN }
+    option = { name = aoeiw_phase20_chi.210.a add_war_support = 0.10 add_political_power = 100 }
+}
+
+# Compatibility handlers for the pre-United-Front China focus tree. They keep
+# old saves and console-triggered legacy focuses safe without recreating the
+# unstable civil-war/tag-swap implementation that Full Build 5 replaced.
+country_event = {
+    id = aoeiw_phase20_chi.1
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { NOT = { has_country_flag = AOEIW20_UF_joined } }
+            country_event = { id = aoeiw_phase20_chi.100 hours = 1 }
+        }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.10
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        add_political_power = 50
+        set_country_flag = AOEIW20_legacy_dynastic_resolution_seen
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.20
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { NOT = { has_country_flag = AOEIW20_UF_joined } }
+            country_event = { id = aoeiw_phase20_chi.100 hours = 1 }
+        }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.30
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { NOT = { has_country_flag = AOEIW20_UF_joined } }
+            country_event = { id = aoeiw_phase20_chi.100 hours = 1 }
+        }
+    }
+}
+country_event = {
+    id = aoeiw_phase20_chi.40
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        add_stability = 0.02
+        set_country_flag = AOEIW20_legacy_settlement_seen
+    }
+}

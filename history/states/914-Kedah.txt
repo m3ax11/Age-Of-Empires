@@ -1,0 +1,34 @@
+state={
+	id=914
+	name="STATE_914"
+	state_category = rural
+	resources = {
+		rubber = 44
+	}
+	history = {
+
+
+		buildings = {
+			infrastructure = 2 #was 3
+
+			13525 = { # Penang
+				naval_base = 2
+			}
+		}
+
+		victory_points = { 1291 1 } # Alor Setar
+		victory_points = { 13525 3 } # Penang
+		add_to_array = { state_victory_points = 1291 }
+		add_to_array = { state_victory_points = 13525 }
+        owner = JAP
+        add_core_of = JAP
+    }
+
+	provinces={
+		1291 7342 12144 13525
+	}
+	manpower=887351
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

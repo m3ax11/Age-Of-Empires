@@ -1,0 +1,19 @@
+air_wings = {
+    289 = {
+        small_plane_airframe_0 = {
+            owner = "SIA"
+            amount = 70
+            version_name = "AOEIW SIA Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "SIA"
+            amount = 20
+            version_name = "AOEIW SIA Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "SIA"
+            amount = 10
+            version_name = "AOEIW SIA Medium Bomber"
+        }
+    }
+}

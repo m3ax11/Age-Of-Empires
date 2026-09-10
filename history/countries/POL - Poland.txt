@@ -1,0 +1,386 @@
+capital = 10
+set_research_slots = 3
+set_convoys = 29
+set_stability = 0.60
+set_war_support = 0.46
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 20
+    fascism = 12
+    communism = 8
+    neutrality = 48
+    imperialism = 12
+}
+recruit_character = AOEIW_POL_stanislaw_ii
+recruit_character = POL_wladyslaw_sikorski
+recruit_character = POL_edward_rydzsmigly
+recruit_character = POL_tadeusz_kutrzeba
+recruit_character = POL_wladyslaw_anders
+recruit_character = POL_jozef_haller
+recruit_character = POL_stefan_frankowski
+recruit_character = POL_jozef_unrug
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_POL_legacy_0
+    AOEIW6_POL_reichspakt_dependency_0
+    civilian_economy
+    export_focus
+    limited_conscription
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_mountaineers = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    interwar_antitank = 1
+    interwar_antiair = 1
+    fuel_silos = 1
+    tech_military_police = 1
+    tech_maintenance_company = 1
+    bicycle_infantry = 1
+    basic_train = 1
+    marines = 1
+    early_ship_hull_light = 1
+    basic_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_depth_charges = 1
+    improved_depth_charges = 1
+    basic_torpedo = 1
+    improved_ship_torpedo_launcher = 1
+    basic_battery = 1
+    basic_light_battery = 1
+    damage_control_1 = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+oob = "AOEIW_POL_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_POL_v7_advisor_1
+recruit_character = AOEIW_POL_v7_advisor_2
+recruit_character = AOEIW_POL_v7_advisor_3
+recruit_character = AOEIW_POL_v7_advisor_4
+recruit_character = AOEIW_POL_v7_advisor_5
+recruit_character = AOEIW_POL_v7_advisor_6
+
+if = {
+ limit = { has_dlc = "No Step Back" }
+ set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 engine_tech_1 = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "No Step Back" } }
+ set_technology = { gwtank = 1 basic_light_tank = 1 }
+}
+if = {
+ limit = { has_dlc = "By Blood Alone" }
+ set_technology = { iw_small_airframe = 1 basic_small_airframe = 1 engines_1 = 1 aa_lmg = 1 early_bombs = 1 aircraft_construction = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "By Blood Alone" } }
+ set_technology = { early_fighter = 1 fighter1 = 1 early_bomber = 1 CAS1 = 1 }
+}
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7040 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 576 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 640 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 256 }
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 360 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW POL Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW POL Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW POL Medium Bomber"
+        type = medium_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = medium_bomb_bay
+            engine_type_slot = engine_1_2x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_POL_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+    }
+    set_air_oob = "AOEIW_POL_1936_air_legacy"
+}
+
+# AOEIW V8.9 STARTING NAVY DESIGNS
+
+create_equipment_variant = {
+    name = "AOEIW POL Destroyer Class"
+    type = ship_hull_light_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = light_ship_engine_1
+        fixed_ship_torpedo_slot = ship_torpedo_1
+        mid_1_custom_slot = empty
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW POL Cruiser Class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = cruiser_ship_engine_1
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_light_battery_1
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW POL Battleship Class"
+    type = ship_hull_heavy_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_heavy_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        front_1_custom_slot = empty
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_heavy_battery_1
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW POL Submarine Class"
+    type = ship_hull_submarine_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_1
+        fixed_ship_engine_slot = sub_ship_engine_1
+        rear_1_custom_slot = empty
+    }
+}
+set_naval_oob = "AOEIW_POL_1936_naval"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = POL_julian_leszczynski_lenski
+recruit_character = POL_ignacy_moscicki
+recruit_character = POL_boleslaw_wieniawa_glugoszowski
+recruit_character = POL_wladyslaw_gomulka
+recruit_character = POL_maria_koszutska
+recruit_character = POL_wincenty_witos
+recruit_character = POL_stanislaw_mikolajczyk
+recruit_character = POL_wladyslaw_raczkiewicz
+recruit_character = POL_boleslaw_piasecki
+recruit_character = POL_wladyslaw_bortnowski
+recruit_character = POL_stanislaw_kopanski
+recruit_character = POL_marian_kukiel
+recruit_character = POL_stanislaw_sosabowski
+recruit_character = POL_lucjan_zeligowski
+recruit_character = POL_kazimierz_sosnkowski
+recruit_character = POL_roman_abraham
+recruit_character = POL_wincenty_kowalski
+recruit_character = POL_karol_korytowski
+recruit_character = POL_xawery_czernicki
+recruit_character = POL_jozef_zajac
+recruit_character = POL_ludomil_rayski
+recruit_character = POL_stanislaw_pawluc
+recruit_character = POL_stanislav_maczek
+recruit_character = POL_wladyslaw_kalkus
+recruit_character = POL_kazimierz_switalski
+recruit_character = POL_wanda_wasilewska
+recruit_character = POL_Tadeusz_Malinowski
+recruit_character = POL_zygmunt_buhusz_szysko
+recruit_character = POL_roman_dmowski
+recruit_character = POL_witold_pilecki
+recruit_character = POL_irena_anders
+recruit_character = POL_mieczyslaw_michalowicz
+recruit_character = POL_boleslaw_bierut
+recruit_character = POL_edward_osobka_morawski
+recruit_character = POL_jozef_beck
+recruit_character = POL_zdzislaw_lubomirski
+recruit_character = POL_aleksander_kakowski
+recruit_character = POL_stanislaw_radkiewicz
+recruit_character = POL_jan_kowalewski
+recruit_character = POL_eugeniusz_kwiatkowiski
+recruit_character = POL_marian_rejewski
+recruit_character = POL_jerzy_rutkowski
+recruit_character = POL_karl_albrecht
+recruit_character = POL_sejmik_regency
+recruit_character = POL_pavel_bermondt_avalov
+recruit_character = POL_anna_andersson
+recruit_character = POL_friedrich_christian
+recruit_character = POL_rudinger_von_der_goltz
+recruit_character = POL_vladislav_korchits
+recruit_character = POL_wojtek
+recruit_character = POL_Stanislaw_Ulam
+recruit_character = POL_Wlodzimierz_Steyer
+recruit_character = POL_Mariusz_Zaruski
+recruit_character = POL_Janusz_Radziwill
+recruit_character = POL_Tadeusz_Kasprzycki
+recruit_character = POL_Stanislaw_Ujejski
+recruit_character = POL_Bronislaw_Prugar_Ketling
+recruit_character = POL_Mieczyslaw_Dabkowski
+recruit_character = POL_Aleksander_Szychowski
+recruit_character = POL_Tadeusz_Klimecki
+recruit_character = POL_Marian_Spychalski
+recruit_character = POL_Mieczyslaw_Kulinski
+recruit_character = POL_Stanislaw_Haller
+recruit_character = POL_Kazimierz_Schally
+recruit_character = POL_Waclaw_Stachiewicz
+recruit_character = POL_Franciszek_Skibinksi
+recruit_character = POL_Tadeusz_Komorowski
+recruit_character = POL_Josef_Kapciuk
+recruit_character = POL_Jan_Kruszewski
+recruit_character = POL_Adam_Mohuczy
+recruit_character = POL_Marian_Januszajtis_Zegota
+recruit_character = POL_Michal_Zymierski
+recruit_character = POL_konstantin_rokossovsky
+recruit_character = POL_Stefan_Mossor
+recruit_character = POL_Jerzy_Swirski
+recruit_character = POL_Jozef_Cyrankiewicz
+recruit_character = POL_Edward_Gierek
+recruit_character = POL_Maciej_Rataj
+recruit_character = POL_Adam_Ciolkosz
+recruit_character = POL_Wojciech_Korfanty
+recruit_character = POL_Stanislaw_Piasecki
+recruit_character = POL_Leon_Kozlowski
+recruit_character = POL_Ignacy_Paderewski
+recruit_character = POL_August_Zaleski
+recruit_character = POL_Wladyslaw_Studnicki
+recruit_character = POL_Zygmunt_Modzelewski
+recruit_character = POL_Eustachy_Sapieha
+recruit_character = POL_Adam_Poszwinski
+recruit_character = POL_Kazimierz_Bartel
+recruit_character = POL_Jan_Kwapinski
+recruit_character = POL_Henryk_Strasburger
+recruit_character = POL_Aleksander_Prystor
+recruit_character = POL_Ignacy_Matuszewski
+recruit_character = POL_Tadeusz_Schaetzel
+recruit_character = POL_Marian_Zyndram_Koscialkowski
+recruit_character = POL_Adam_Koc
+recruit_character = POL_Aleksander_Osinski
+recruit_character = POL_Leon_Berbecki
+recruit_character = POL_Felicjan_Skladkowski
+recruit_character = POL_Kordian_Zamorski
+recruit_character = POL_Stanislaw_Glabinski
+recruit_character = POL_Wojciech_Zaleski
+recruit_character = POL_Wojciech_Kwasieborski
+recruit_character = POL_Zygmunt_Zaremba
+recruit_character = POL_Adam_Ronikier
+recruit_character = POL_Adam_Doboszynski
+recruit_character = POL_Adolf_Nowaczynski
+recruit_character = POL_cardinal_Adam_Sapieha
+recruit_character = POL_Stanislaw_Grabski
+recruit_character = POL_Roman_Rybarski
+recruit_character = POL_Janusz_Jedrzejewicz
+recruit_character = POL_Juliusz_Ulrych
+recruit_character = POL_Mieczyslaw_Norwid_Neugebauer
+recruit_character = POL_Zygmunt_Zulawski
+recruit_character = POL_Kazimierz_Puzak
+recruit_character = POL_Jan_Pilsudski
+recruit_character = POL_zymunt_modzelewski
+recruit_character = POL_jedrzeg_moraczewski
+recruit_character = POL_emil_rauer
+recruit_character = POL_antoni_balcar
+recruit_character = POL_edward_drozniak
+recruit_character = POL_antoni_xiezopolski
+recruit_character = POL_Juliusz_Rommel
+recruit_character = POL_Franciszek_Kleeberg
+recruit_character = POL_Wiktor_Thommee
+recruit_character = POL_Stanislaw_Grzmot_Skotnicki
+recruit_character = POL_Wilhelm_Orlik_Ruckemann
+recruit_character = POL_Emil_Krukowicz_Przedrzymirski
+recruit_character = POL_Michal_Tokarzewski_Karaszewicz
+recruit_character = POL_Walerian_Czuma
+recruit_character = POL_Czeslaw_Mlot_Fijalkowski
+recruit_character = POL_Wladyslaw_Langner
+recruit_character = POL_Franciszek_Wlad
+recruit_character = POL_Mieczyslaw_Boruta_Spiechowicz
+recruit_character = POL_Edmund_Knoll_Kownacki
+recruit_character = POL_Gustaw_Orlicz_Dreszer
+recruit_character = POL_Kazimierz_Fabrycy
+recruit_character = POL_Stanislaw_Hryniewiecki
+recruit_character = POL_Tadeusz_Piskor
+recruit_character = POL_Kazimierz_Dzierzanowski
+recruit_character = POL_Juliusz_Zulauf
+recruit_character = POL_Rudolf_Prich
+recruit_character = POL_leonard_skierski
+recruit_character = POL_adrian_carton_de_wiart
+recruit_character = POL_stefan_dab_biernacki
+recruit_character = POL_tadeusz_bielecki
+recruit_character = POL_joseph_rotblat
+recruit_character = POL_franciszek_misztal
+recruit_character = POL_stanislaw_prauss
+recruit_character = POL_aleksander_potyrala
+recruit_character = POL_mieczyslaw_filipowicz
+recruit_character = POL_rudolf_gundlach
+recruit_character = POL_jan_lapuszewski
+recruit_character = POL_fryderyk_krystian_wettyn
+recruit_character = POL_tomasz_arciszewski

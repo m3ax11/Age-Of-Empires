@@ -1,0 +1,26 @@
+opinion_modifiers = {
+    AOEIW11_diplomatic_mission = {
+        value = 15
+        decay = 0
+    }
+    AOEIW11_strategic_pressure_opinion = {
+        value = -15
+        decay = 0
+    }
+    AOEIW11_arbitration_channel = {
+        value = 10
+        decay = 0
+    }
+    AOEIW11_independence_crisis_opinion = {
+        value = -50
+        decay = 0
+    }
+    AOEIW11_formal_warning_opinion = {
+        value = -10
+        decay = 0
+    }
+    AOEIW11_ultimatum_opinion = {
+        value = -15
+        decay = 0
+    }
+}

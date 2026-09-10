@@ -1,0 +1,19 @@
+air_wings = {
+    107 = {
+        small_plane_airframe_0 = {
+            owner = "YUG"
+            amount = 95
+            version_name = "AOEIW YUG Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "YUG"
+            amount = 30
+            version_name = "AOEIW YUG Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "YUG"
+            amount = 10
+            version_name = "AOEIW YUG Medium Bomber"
+        }
+    }
+}

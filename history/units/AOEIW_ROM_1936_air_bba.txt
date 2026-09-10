@@ -1,0 +1,19 @@
+air_wings = {
+    46 = {
+        small_plane_airframe_0 = {
+            owner = "ROM"
+            amount = 110
+            version_name = "AOEIW ROM Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "ROM"
+            amount = 35
+            version_name = "AOEIW ROM Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "ROM"
+            amount = 15
+            version_name = "AOEIW ROM Medium Bomber"
+        }
+    }
+}

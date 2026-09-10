@@ -1,0 +1,26 @@
+state={
+	id=924
+	name="STATE_924"
+	provinces={
+		1592 
+	}
+	state_category = pastoral
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 1592 }
+		victory_points = {
+			1592 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+        owner = VIN
+        add_core_of = VIN
+    }
+	manpower=50000
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

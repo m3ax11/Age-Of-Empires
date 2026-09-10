@@ -1,0 +1,24 @@
+state={
+	id=854
+	name="STATE_854"
+	provinces={
+		2057 4974 8101 10815 10901 
+	}
+	history = {
+
+
+		add_to_array = { state_victory_points = 10901 }
+		victory_points = {
+			10901 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+        owner = TUR
+        add_core_of = TUR
+    }
+	manpower=48256
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

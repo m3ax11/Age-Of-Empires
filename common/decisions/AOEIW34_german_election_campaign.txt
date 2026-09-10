@@ -1,0 +1,146 @@
+## AOE parliamentary campaign loop, structurally modelled on RT56 Germany.
+AOEIW34_GER_projected_results = {
+    AOEIW34_GER_divert_military_funding = {
+        priority = 119
+        icon = GFX_decision_generic_factory
+        cost = 35
+        fire_only_once = yes
+        visible = { has_country_flag = AOEIW28_GER_parliament_enabled }
+        complete_effect = {
+            add_war_support = -0.075
+            add_political_power = 35
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { base = 1 }
+    }
+
+    AOEIW34_GER_spd_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_spd_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { democratic_drift = 0.03 communism_drift = 0.01 }
+        visible = { check_variable = { AOEIW34_GER_spd_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_spd_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_cdu_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_cvu_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { democratic_drift = 0.04 }
+        visible = { check_variable = { AOEIW34_GER_cdu_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_cdu_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_zentrum_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_zentrum_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { neutrality_drift = 0.02 democratic_drift = 0.02 }
+        visible = { check_variable = { AOEIW34_GER_zentrum_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_zentrum_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_lvp_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_dstp_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { democratic_drift = 0.04 }
+        visible = { check_variable = { AOEIW34_GER_lvp_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_lvp_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_dnvp_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_dnvp_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { neutrality_drift = 0.04 }
+        visible = { check_variable = { AOEIW34_GER_dnvp_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_dnvp_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_dstp_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_dstp_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { democratic_drift = 0.04 }
+        visible = { check_variable = { AOEIW34_GER_dstp_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_dstp_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_kpd_propaganda = {
+        priority = 118
+        icon = GFX_AOEIW34_decision_GER_party_kpd_icon
+        cost = 25
+        days_remove = 30
+        days_re_enable = 100
+        modifier = { communism_drift = 0.04 }
+        visible = { check_variable = { AOEIW34_GER_kpd_projected > 0 } }
+        remove_effect = { add_to_variable = { AOEIW34_GER_kpd_projected = 10 } }
+        ai_will_do = { base = 0 }
+    }
+
+    AOEIW34_GER_party_drift_mission = {
+        priority = 117
+        icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+        activation = {
+            has_country_flag = AOEIW28_GER_parliament_enabled
+            NOT = { has_country_flag = AOEIW28_GER_election_pending }
+            NOT = { OR = { has_government = fascism has_government = communism } }
+            is_ai = no
+        }
+        cancel_trigger = {
+            OR = {
+                has_country_flag = AOEIW28_GER_election_pending
+                NOT = { has_country_flag = AOEIW28_GER_parliament_enabled }
+                has_government = fascism
+                has_government = communism
+                is_ai = yes
+            }
+        }
+        available = { hidden_trigger = { always = no } }
+        days_mission_timeout = 30
+        is_good = no
+        timeout_effect = {
+            if = { limit = { has_country_flag = AOEIW28_GER_spd_government check_variable = { AOEIW34_GER_spd_projected > 1 } } add_to_variable = { AOEIW34_GER_spd_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW30_GER_cdu_government check_variable = { AOEIW34_GER_cdu_projected > 1 } } add_to_variable = { AOEIW34_GER_cdu_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW28_GER_zentrum_government check_variable = { AOEIW34_GER_zentrum_projected > 1 } } add_to_variable = { AOEIW34_GER_zentrum_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW28_GER_liberal_government check_variable = { AOEIW34_GER_lvp_projected > 1 } } add_to_variable = { AOEIW34_GER_lvp_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW28_GER_conservative_government check_variable = { AOEIW34_GER_dnvp_projected > 1 } } add_to_variable = { AOEIW34_GER_dnvp_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW30_GER_dstp_government check_variable = { AOEIW34_GER_dstp_projected > 1 } } add_to_variable = { AOEIW34_GER_dstp_projected = -1 } }
+            if = { limit = { has_country_flag = AOEIW30_GER_kpd_government check_variable = { AOEIW34_GER_kpd_projected > 1 } } add_to_variable = { AOEIW34_GER_kpd_projected = -1 } }
+            random_list = {
+                25 = { if = { limit = { check_variable = { AOEIW34_GER_spd_projected > 0 } } add_to_variable = { AOEIW34_GER_spd_projected = 1 } } }
+                15 = { if = { limit = { check_variable = { AOEIW34_GER_cdu_projected > 0 } } add_to_variable = { AOEIW34_GER_cdu_projected = 1 } } }
+                15 = { if = { limit = { check_variable = { AOEIW34_GER_zentrum_projected > 0 } } add_to_variable = { AOEIW34_GER_zentrum_projected = 1 } } }
+                15 = { if = { limit = { check_variable = { AOEIW34_GER_lvp_projected > 0 } } add_to_variable = { AOEIW34_GER_lvp_projected = 1 } } }
+                10 = { if = { limit = { check_variable = { AOEIW34_GER_dnvp_projected > 0 } } add_to_variable = { AOEIW34_GER_dnvp_projected = 1 } } }
+                10 = { if = { limit = { check_variable = { AOEIW34_GER_dstp_projected > 0 } } add_to_variable = { AOEIW34_GER_dstp_projected = 1 } } }
+                10 = { if = { limit = { check_variable = { AOEIW34_GER_kpd_projected > 0 } } add_to_variable = { AOEIW34_GER_kpd_projected = 1 } } }
+            }
+        }
+        ai_will_do = { base = 0 }
+    }
+}

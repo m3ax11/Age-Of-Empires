@@ -1,0 +1,32 @@
+state={
+	id=1127
+	name="STATE_1127"
+	resources={
+		
+	}
+
+	history = {
+
+
+
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			13502 2 # Singaraja
+		}
+		add_to_array = { state_victory_points = 13502 }
+        owner = JAP
+        add_core_of = JAP
+    }
+
+	provinces={
+		4273 13502 13503
+	}
+	manpower = 1029335
+	state_category = small_island
+
+	local_supplies=1.0 
+}

@@ -1,0 +1,30 @@
+on_actions = {
+    on_monthly = {
+        effect = {
+            GER = {
+                if = {
+                    limit = { has_country_flag = AOEIW28_GER_parliament_enabled NOT = { OR = { has_government = fascism has_government = communism } } }
+                    add_to_variable = { AOEIW28_GER_months = 1 }
+                    if = {
+                        limit = { check_variable = { AOEIW28_GER_months > 47 } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
+                        AOEIW30_GER_open_ballot = yes
+                        country_event = { id = AOEIW28_elections.1 days = 1 }
+                    }
+                }
+                else = {
+                    clr_country_flag = AOEIW28_GER_election_pending
+                    AOEIW30_GER_clear_candidates = yes
+                    clr_country_flag = AOEIW28_GER_spd_government
+                    clr_country_flag = AOEIW28_GER_zentrum_government
+                    clr_country_flag = AOEIW28_GER_liberal_government
+                    clr_country_flag = AOEIW28_GER_conservative_government
+                    clr_country_flag = AOEIW30_GER_cdu_government
+                    clr_country_flag = AOEIW30_GER_dstp_government
+                    clr_country_flag = AOEIW30_GER_kpd_government
+                    set_variable = { AOEIW29_GER_government_size = 0 }
+                    AOEIW29_GER_refresh_cabinet = yes
+                }
+            }
+        }
+    }
+}

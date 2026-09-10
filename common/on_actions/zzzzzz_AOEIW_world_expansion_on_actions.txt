@@ -1,0 +1,74 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            SOV = {
+                set_autonomy = { target = UKR autonomy_state = autonomy_puppet freedom_level = 0.35 }
+                set_autonomy = { target = GEO autonomy_state = autonomy_puppet freedom_level = 0.45 }
+                set_autonomy = { target = KAZ autonomy_state = autonomy_puppet freedom_level = 0.45 }
+            }
+            GER = {
+                set_autonomy = { target = EST autonomy_state = autonomy_puppet freedom_level = 0.35 }
+                set_autonomy = { target = MAL autonomy_state = autonomy_puppet freedom_level = 0.25 }
+            }
+            FRA = {
+                set_autonomy = { target = MLI autonomy_state = autonomy_puppet freedom_level = 0.25 }
+                set_autonomy = { target = VIN autonomy_state = autonomy_puppet freedom_level = 0.25 }
+                add_ideas = AOEIW_world_FRA_metropolitan_command
+            }
+            SPR = {
+                set_autonomy = { target = ARG autonomy_state = autonomy_puppet freedom_level = 0.35 }
+                set_autonomy = { target = PRU autonomy_state = autonomy_puppet freedom_level = 0.35 }
+            }
+            USA = {
+                # French America, the Thirteen Colonies and New England are
+                # integrated directly by the scenario history in this edition.
+                set_country_flag = AOEIW_world_USA_reunited_flag
+                add_ideas = AOEIW_world_USA_reunited
+                add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 18000 }
+                add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1200 }
+            }
+        }
+    }
+
+    on_weekly_USA = {
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = AOEIW_world_USA_reclamation_started
+                    QUE = { exists = yes has_capitulated = yes }
+                }
+                annex_country = { target = QUE transfer_troops = yes }
+            }
+            if = {
+                limit = {
+                    has_country_flag = AOEIW_world_USA_reclamation_started
+                    CSA = { exists = yes has_capitulated = yes }
+                }
+                annex_country = { target = CSA transfer_troops = yes }
+            }
+            if = {
+                limit = {
+                    has_country_flag = AOEIW_world_USA_reclamation_started
+                    HAI = { exists = yes has_capitulated = yes }
+                }
+                annex_country = { target = HAI transfer_troops = yes }
+            }
+            if = {
+                limit = {
+                    has_country_flag = AOEIW_world_USA_reclamation_started
+                    NOT = { QUE = { exists = yes } }
+                    NOT = { CSA = { exists = yes } }
+                    NOT = { HAI = { exists = yes } }
+                    NOT = { has_country_flag = AOEIW_world_USA_reunited_flag }
+                }
+                set_country_flag = AOEIW_world_USA_reunited_flag
+                remove_ideas = AOEIW_world_USA_fractured_republic
+                remove_ideas = AOEIW_world_USA_federal_mobilisation_spirit
+                add_ideas = AOEIW_world_USA_reunited
+                add_stability = 0.10
+                add_war_support = 0.10
+                news_event = { id = AOEIW_world.2 hours = 6 }
+            }
+        }
+    }
+}

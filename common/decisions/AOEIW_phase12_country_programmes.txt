@@ -1,0 +1,593 @@
+AOEIW12_FRA_country_programmes = {
+    AOEIW12_FRA_procurement_boards = {
+        cost = 50
+        allowed = { original_tag = FRA }
+        visible = {
+            has_completed_focus = AOEIW9_FRA_eco_war_2
+            NOT = { has_country_flag = AOEIW12_FRA_procurement_board_done }
+        }
+        available = { owns_state = 16 controls_state = 16 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            army_experience = 5
+            set_country_flag = AOEIW12_FRA_procurement_board_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    AOEIW12_FRA_industrial_coordination = {
+        cost = 45
+        allowed = { original_tag = FRA }
+        visible = {
+            has_completed_focus = AOEIW9_FRA_eco_civ_2
+            NOT = { has_country_flag = AOEIW12_FRA_industrial_coordination_done }
+        }
+        available = { owns_state = 16 controls_state = 16 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_FRA_industrial_coordination_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_FRA_faction_conference = {
+        cost = 50
+        allowed = { original_tag = FRA }
+        visible = {
+            has_completed_focus = AOEIW9_FRA_dip_root
+            NOT = { has_country_flag = AOEIW12_FRA_faction_conference_done }
+            NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        }
+        available = { is_faction_leader = yes }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { AUS = { exists = yes is_in_faction_with = FRA } }
+                AUS = { add_opinion_modifier = { target = FRA modifier = AOEIW_old_order_cooperation } }
+            }
+            if = {
+                limit = { BEL = { exists = yes is_in_faction_with = FRA } }
+                BEL = { add_opinion_modifier = { target = FRA modifier = AOEIW_old_order_cooperation } }
+            }
+            add_political_power = 20
+            set_country_flag = AOEIW12_FRA_faction_conference_done
+        }
+        ai_will_do = { factor = 5 }
+    }
+
+    AOEIW12_FRA_worker_dispute_settlement = {
+        cost = 40
+        allowed = { original_tag = FRA }
+        visible = {
+            has_completed_focus = AOEIW9_FRA_politics_settlement
+            NOT = { has_country_flag = AOEIW12_FRA_worker_dispute_done }
+        }
+        available = { has_war = no }
+        fire_only_once = yes
+        complete_effect = {
+            add_stability = 0.03
+            add_war_support = -0.01
+            set_country_flag = AOEIW12_FRA_worker_dispute_done
+        }
+        ai_will_do = { factor = 5 }
+    }
+
+    AOEIW12_FRA_imperial_investment = {
+        cost = 55
+        allowed = { original_tag = FRA }
+        visible = {
+            has_completed_focus = AOEIW9_FRA_eco_civ_4
+            NOT = { has_country_flag = AOEIW12_FRA_imperial_investment_done }
+            NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            add_tech_bonus = { name = AOEIW12_FRA_imperial_industry bonus = 0.5 uses = 1 category = industry }
+            set_country_flag = AOEIW12_FRA_imperial_investment_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+}
+
+AOEIW12_GER_country_programmes = {
+    AOEIW12_GER_reichspakt_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = GER }
+        visible = {
+            has_completed_focus = AOEIW9_GER_dip_a_3
+            NOT = { has_country_flag = AOEIW12_GER_reichspakt_contracts_done }
+            NOT = { has_country_flag = AOEIW17_GER_workers_federation_proclaimed }
+        }
+        available = { is_faction_leader = yes }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { HOL = { exists = yes is_in_faction_with = GER } }
+                HOL = { add_opinion_modifier = { target = GER modifier = AOEIW_reichspakt_cooperation } }
+            }
+            if = {
+                limit = { POL = { exists = yes is_in_faction_with = GER } }
+                POL = { add_opinion_modifier = { target = GER modifier = AOEIW_reichspakt_cooperation } }
+            }
+            add_tech_bonus = { name = AOEIW12_GER_reichspakt_industry bonus = 0.5 uses = 1 category = industry }
+            set_country_flag = AOEIW12_GER_reichspakt_contracts_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_GER_ruhr_armament_coordination = {
+        cost = 55
+        allowed = { original_tag = GER }
+        visible = {
+            has_completed_focus = AOEIW9_GER_eco_war_2
+            NOT = { has_country_flag = AOEIW12_GER_ruhr_coordination_done }
+        }
+        available = { owns_state = 57 controls_state = 57 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 57 controls_state = 57 }
+                57 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_GER_ruhr_coordination_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    AOEIW12_GER_polish_economic_integration = {
+        cost = 45
+        allowed = { original_tag = GER }
+        visible = {
+            has_completed_focus = AOEIW9_GER_dip_a_4
+            NOT = { has_country_flag = AOEIW12_GER_polish_integration_done }
+            NOT = { has_country_flag = AOEIW17_GER_workers_federation_proclaimed }
+        }
+        available = { POL = { exists = yes is_subject_of = GER } }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { POL = { exists = yes is_subject_of = GER owns_state = 10 controls_state = 10 } }
+                10 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+                POL = {
+                    add_political_power = 25
+                    add_opinion_modifier = { target = GER modifier = AOEIW_reichspakt_cooperation }
+                }
+            }
+            set_country_flag = AOEIW12_GER_polish_integration_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    AOEIW12_GER_military_procurement = {
+        cost = 50
+        allowed = { original_tag = GER }
+        visible = {
+            has_completed_focus = AOEIW9_GER_mil_army_2
+            NOT = { has_country_flag = AOEIW12_GER_military_procurement_done }
+        }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW12_GER_procurement_artillery bonus = 0.75 uses = 1 category = artillery }
+            army_experience = 10
+            set_country_flag = AOEIW12_GER_military_procurement_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+}
+
+AOEIW12_SPR_country_programmes = {
+    AOEIW12_SPR_catalan_industrial_agreements = {
+        cost = 45
+        allowed = { original_tag = SPR }
+        visible = {
+            has_completed_focus = AOEIW9_SPR_eco_civ_2
+            NOT = { has_country_flag = AOEIW12_SPR_catalan_agreements_done }
+        }
+        available = { owns_state = 165 controls_state = 165 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 165 controls_state = 165 }
+                165 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_SPR_catalan_agreements_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_SPR_basque_steel_contracts = {
+        cost = 45
+        allowed = { original_tag = SPR }
+        visible = {
+            has_completed_focus = AOEIW9_SPR_eco_war_2
+            NOT = { has_country_flag = AOEIW12_SPR_basque_contracts_done }
+        }
+        available = { owns_state = 792 controls_state = 792 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 792 controls_state = 792 }
+                792 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_SPR_basque_contracts_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_SPR_asturian_mining_programme = {
+        cost = 35
+        allowed = { original_tag = SPR }
+        visible = {
+            has_completed_focus = AOEIW9_SPR_eco_infra_1
+            NOT = { has_country_flag = AOEIW12_SPR_asturian_mining_done }
+        }
+        available = { owns_state = 790 controls_state = 790 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 790 controls_state = 790 }
+                790 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+            add_tech_bonus = { name = AOEIW12_SPR_asturian_extraction bonus = 0.5 uses = 1 category = industry }
+            set_country_flag = AOEIW12_SPR_asturian_mining_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    AOEIW12_SPR_madrid_procurement = {
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = {
+            has_completed_focus = AOEIW9_SPR_mil_army_2
+            NOT = { has_country_flag = AOEIW12_SPR_madrid_procurement_done }
+        }
+        available = { owns_state = 41 controls_state = 41 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 41 controls_state = 41 }
+                41 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            army_experience = 5
+            set_country_flag = AOEIW12_SPR_madrid_procurement_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_SPR_regional_political_concessions = {
+        cost = 40
+        allowed = { original_tag = SPR }
+        visible = {
+            has_completed_focus = AOEIW9_SPR_politics_settlement
+            NOT = { has_country_flag = AOEIW12_SPR_regional_concessions_done }
+        }
+        available = { has_war = no }
+        fire_only_once = yes
+        complete_effect = {
+            add_stability = 0.035
+            add_war_support = -0.01
+            set_country_flag = AOEIW12_SPR_regional_concessions_done
+        }
+        ai_will_do = { factor = 5 }
+    }
+}
+
+AOEIW12_POR_country_programmes = {
+    AOEIW12_POR_brazilian_investment = {
+        cost = 50
+        allowed = { original_tag = POR }
+        visible = {
+            has_completed_focus = AOEIW9_POR_dip_b_6
+            NOT = { has_country_flag = AOEIW12_POR_brazilian_investment_done }
+        }
+        available = { BRA = { exists = yes is_subject_of = POR owns_state = 500 controls_state = 500 } }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { BRA = { exists = yes is_subject_of = POR owns_state = 500 controls_state = 500 } }
+                500 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+                BRA = { add_opinion_modifier = { target = POR modifier = AOEIW_luso_brazilian_union_opinion } }
+            }
+            add_political_power = 15
+            set_country_flag = AOEIW12_POR_brazilian_investment_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_POR_atlantic_trade_programme = {
+        cost = 45
+        allowed = { original_tag = POR }
+        visible = {
+            has_completed_focus = AOEIW9_POR_eco_civ_2
+            NOT = { has_country_flag = AOEIW12_POR_atlantic_trade_done }
+        }
+        available = { owns_state = 112 controls_state = 112 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 112 controls_state = 112 }
+                112 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = dockyard level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = { name = AOEIW12_POR_atlantic_trade bonus = 0.5 uses = 1 category = naval_equipment }
+            set_country_flag = AOEIW12_POR_atlantic_trade_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    AOEIW12_POR_colonial_infrastructure = {
+        cost = 50
+        allowed = { original_tag = POR }
+        visible = {
+            has_completed_focus = AOEIW9_POR_eco_infra_2
+            NOT = { has_country_flag = AOEIW12_POR_colonial_infrastructure_done }
+        }
+        available = {
+            owns_state = 540 controls_state = 540
+            owns_state = 544 controls_state = 544
+        }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 540 controls_state = 540 }
+                540 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+            if = {
+                limit = { owns_state = 544 controls_state = 544 }
+                544 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+            set_country_flag = AOEIW12_POR_colonial_infrastructure_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+
+    AOEIW12_POR_imperial_recruitment = {
+        cost = 45
+        allowed = { original_tag = POR }
+        visible = {
+            has_completed_focus = AOEIW9_POR_mil_army_2
+            NOT = { has_country_flag = AOEIW12_POR_imperial_recruitment_done }
+        }
+        available = { has_war = no }
+        fire_only_once = yes
+        complete_effect = {
+            add_manpower = 30000
+            army_experience = 8
+            add_war_support = 0.01
+            set_country_flag = AOEIW12_POR_imperial_recruitment_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+}
+
+AOEIW12_AUS_country_programmes = {
+    AOEIW12_AUS_nationality_negotiations = {
+        cost = 45
+        allowed = { original_tag = AUS }
+        visible = {
+            has_completed_focus = AOEIW9_AUS_politics_settlement
+            NOT = { has_country_flag = AOEIW12_AUS_nationality_negotiations_done }
+        }
+        available = { has_war = no }
+        fire_only_once = yes
+        complete_effect = {
+            add_stability = 0.035
+            add_political_power = 15
+            set_country_flag = AOEIW12_AUS_nationality_negotiations_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_AUS_danubian_investment = {
+        cost = 40
+        allowed = { original_tag = AUS }
+        visible = {
+            has_completed_focus = AOEIW9_AUS_eco_infra_2
+            NOT = { has_country_flag = AOEIW12_AUS_danubian_investment_done }
+        }
+        available = { owns_state = 43 controls_state = 43 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 43 controls_state = 43 }
+                43 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+            add_tech_bonus = { name = AOEIW12_AUS_danubian_industry bonus = 0.5 uses = 1 category = industry }
+            set_country_flag = AOEIW12_AUS_danubian_investment_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_AUS_bohemian_contracts = {
+        cost = 50
+        allowed = { original_tag = AUS }
+        visible = {
+            has_completed_focus = AOEIW9_AUS_eco_war_2
+            NOT = { has_country_flag = AOEIW12_AUS_bohemian_contracts_done }
+        }
+        available = { owns_state = 9 controls_state = 9 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 9 controls_state = 9 }
+                9 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_AUS_bohemian_contracts_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    AOEIW12_AUS_hungarian_industrial_agreements = {
+        cost = 45
+        allowed = { original_tag = AUS }
+        visible = {
+            has_completed_focus = AOEIW9_AUS_eco_civ_2
+            NOT = { has_country_flag = AOEIW12_AUS_hungarian_agreements_done }
+        }
+        available = { owns_state = 155 controls_state = 155 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 155 controls_state = 155 }
+                155 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_AUS_hungarian_agreements_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+}
+
+AOEIW12_ITA_country_programmes = {
+    AOEIW12_ITA_mediterranean_league_arbitration = {
+        cost = 45
+        allowed = { original_tag = ITA }
+        visible = {
+            has_completed_focus = AOEIW9_ITA_dip_root
+            NOT = { has_country_flag = AOEIW12_ITA_league_arbitration_done }
+            NOT = { has_country_flag = AOEIW18_ITA_federation_proclaimed }
+        }
+        available = { is_faction_leader = yes }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { ROM = { exists = yes is_in_faction_with = ITA } }
+                ROM = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_arbitration } }
+            }
+            if = {
+                limit = { YUG = { exists = yes is_in_faction_with = ITA } }
+                YUG = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_arbitration } }
+            }
+            if = {
+                limit = { BUL = { exists = yes is_in_faction_with = ITA } }
+                BUL = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_arbitration } }
+            }
+            add_stability = 0.015
+            set_country_flag = AOEIW12_ITA_league_arbitration_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_ITA_naval_contracts = {
+        cost = 50
+        allowed = { original_tag = ITA }
+        visible = {
+            has_completed_focus = AOEIW9_ITA_mil_sea_2
+            NOT = { has_country_flag = AOEIW12_ITA_naval_contracts_done }
+        }
+        available = { owns_state = 117 controls_state = 117 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 117 controls_state = 117 }
+                117 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = dockyard level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = { name = AOEIW12_ITA_naval_contracts bonus = 0.5 uses = 1 category = naval_equipment }
+            set_country_flag = AOEIW12_ITA_naval_contracts_done
+        }
+        ai_will_do = { factor = 7 }
+    }
+
+    AOEIW12_ITA_southern_development = {
+        cost = 50
+        allowed = { original_tag = ITA }
+        visible = {
+            has_completed_focus = AOEIW9_ITA_eco_civ_2
+            NOT = { has_country_flag = AOEIW12_ITA_southern_development_done }
+        }
+        available = { owns_state = 156 controls_state = 156 }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { owns_state = 156 controls_state = 156 }
+                156 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            set_country_flag = AOEIW12_ITA_southern_development_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    AOEIW12_ITA_balkan_mediation = {
+        cost = 40
+        allowed = { original_tag = ITA }
+        visible = {
+            has_completed_focus = AOEIW9_ITA_dip_a_3
+            NOT = { has_country_flag = AOEIW12_ITA_balkan_mediation_done }
+            NOT = { has_country_flag = AOEIW18_ITA_federation_proclaimed }
+        }
+        available = {
+            OR = {
+                ROM = { exists = yes is_in_faction_with = ITA }
+                YUG = { exists = yes is_in_faction_with = ITA }
+                BUL = { exists = yes is_in_faction_with = ITA }
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { ROM = { exists = yes is_in_faction_with = ITA } }
+                ROM = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation } }
+            }
+            if = {
+                limit = { YUG = { exists = yes is_in_faction_with = ITA } }
+                YUG = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation } }
+            }
+            if = {
+                limit = { BUL = { exists = yes is_in_faction_with = ITA } }
+                BUL = { add_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation } }
+            }
+            add_political_power = 20
+            set_country_flag = AOEIW12_ITA_balkan_mediation_done
+        }
+        ai_will_do = { factor = 6 }
+    }
+}

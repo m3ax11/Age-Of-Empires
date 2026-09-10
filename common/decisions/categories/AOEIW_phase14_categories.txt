@@ -1,0 +1,14 @@
+AOEIW14_GER_reichspakt_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = GER }
+    visible = { has_country_flag = AOEIW14_GER_reichspakt_reformed }
+}
+
+AOEIW14_USA_emergency_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = {
+        has_country_flag = AOEIW14_USA_crisis_route
+        NOT = { has_country_flag = AOEIW14_USA_crisis_resolved }
+    }
+}

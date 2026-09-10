@@ -1,0 +1,90 @@
+ideas = { country = {
+AOEIW_CORE_BEL_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_dockyard_factor = 0.12 } }
+AOEIW_CORE_BEL_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.07 } }
+AOEIW_CORE_BEL_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 dig_in_speed_factor = 0.10 } }
+AOEIW_CORE_BEL_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_speed_factor = 0.06 army_org_regain = 0.05 } }
+AOEIW_CORE_BUL_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_speed_infrastructure_factor = 0.10 } }
+AOEIW_CORE_BUL_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 } }
+AOEIW_CORE_BUL_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_CORE_BUL_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { planning_speed = 0.12 army_speed_factor = 0.04 } }
+AOEIW_CORE_DEN_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { navy_fuel_consumption_factor = -0.10 } }
+AOEIW_CORE_DEN_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.08 } }
+AOEIW_CORE_DEN_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.05 dig_in_speed_factor = 0.15 } }
+AOEIW_CORE_DEN_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_speed_factor = 0.08 } }
+AOEIW_CORE_EGY_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.10 } }
+AOEIW_CORE_EGY_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.10 } }
+AOEIW_CORE_EGY_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 } }
+AOEIW_CORE_EGY_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.08 army_org_regain = 0.03 } }
+AOEIW_CORE_ETH_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.15 } }
+AOEIW_CORE_ETH_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.06 } }
+AOEIW_CORE_ETH_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { dig_in_speed_factor = 0.20 army_defence_factor = 0.03 } }
+AOEIW_CORE_ETH_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.10 } }
+AOEIW_CORE_GRE_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.08 } }
+AOEIW_CORE_GRE_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.07 } }
+AOEIW_CORE_GRE_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_CORE_GRE_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { naval_invasion_prep_speed = 0.15 army_org_regain = 0.03 } }
+AOEIW_CORE_IRE_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.08 } }
+AOEIW_CORE_IRE_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.07 } }
+AOEIW_CORE_IRE_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.04 surrender_limit = 0.04 } }
+AOEIW_CORE_IRE_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.15 army_speed_factor = 0.04 } }
+AOEIW_CORE_NOR_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { repair_speed_factor = 0.15 } }
+AOEIW_CORE_NOR_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.10 } }
+AOEIW_CORE_NOR_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.05 naval_coordination = 0.05 } }
+AOEIW_CORE_NOR_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { winter_attrition_factor = -0.15 army_speed_factor = 0.04 } }
+AOEIW_CORE_SIA_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.09 } }
+AOEIW_CORE_SIA_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.09 } }
+AOEIW_CORE_SIA_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 } }
+AOEIW_CORE_SIA_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.06 army_speed_factor = 0.04 } }
+AOEIW_CORE_AUS_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_speed_infrastructure_factor = 0.08 } }
+AOEIW_CORE_AUS_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 } }
+AOEIW_CORE_AUS_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_org_factor = 0.05 } }
+AOEIW_CORE_AUS_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { planning_speed = 0.12 army_speed_factor = 0.04 } }
+AOEIW_CORE_BRA_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.10 } }
+AOEIW_CORE_BRA_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 } }
+AOEIW_CORE_BRA_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { naval_coordination = 0.06 army_defence_factor = 0.03 } }
+AOEIW_CORE_BRA_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.08 } }
+AOEIW_CORE_CAN_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.10 } }
+AOEIW_CORE_CAN_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.07 } }
+AOEIW_CORE_CAN_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { naval_coordination = 0.08 } }
+AOEIW_CORE_CAN_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_org_regain = 0.08 } }
+AOEIW_CORE_FIN_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.12 } }
+AOEIW_CORE_FIN_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 } }
+AOEIW_CORE_FIN_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { dig_in_speed_factor = 0.15 army_defence_factor = 0.04 } }
+AOEIW_CORE_FIN_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { winter_attrition_factor = -0.20 army_speed_factor = 0.03 } }
+AOEIW_CORE_HOL_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.15 } }
+AOEIW_CORE_HOL_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_dockyard = 0.10 } }
+AOEIW_CORE_HOL_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_CORE_HOL_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { naval_invasion_prep_speed = 0.12 supply_consumption_factor = -0.04 } }
+AOEIW_CORE_MEX_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_speed_industrial_complex_factor = 0.06 } }
+AOEIW_CORE_MEX_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 } }
+AOEIW_CORE_MEX_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.15 } }
+AOEIW_CORE_MEX_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_org_factor = 0.06 } }
+AOEIW_CORE_PER_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { fuel_gain_factor = 0.08 production_speed_infrastructure_factor = 0.07 } }
+AOEIW_CORE_PER_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 } }
+AOEIW_CORE_PER_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_CORE_PER_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.08 army_fuel_consumption_factor = -0.04 } }
+AOEIW_CORE_POL_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.09 } }
+AOEIW_CORE_POL_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 } }
+AOEIW_CORE_POL_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 dig_in_speed_factor = 0.08 } }
+AOEIW_CORE_POL_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { planning_speed = 0.15 army_speed_factor = 0.03 } }
+AOEIW_CORE_POR_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { navy_fuel_consumption_factor = -0.10 } }
+AOEIW_CORE_POR_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { repair_speed_factor = 0.15 } }
+AOEIW_CORE_POR_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.05 } }
+AOEIW_CORE_POR_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.08 } }
+AOEIW_CORE_ROM_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { fuel_gain_factor = 0.12 } }
+AOEIW_CORE_ROM_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.07 } }
+AOEIW_CORE_ROM_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.07 } }
+AOEIW_CORE_ROM_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_fuel_consumption_factor = -0.08 army_speed_factor = 0.04 } }
+AOEIW_CORE_SPR_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.08 stability_factor = 0.02 } }
+AOEIW_CORE_SPR_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_max_efficiency_factor = 0.08 } }
+AOEIW_CORE_SPR_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.05 mobilization_speed = 0.08 } }
+AOEIW_CORE_SPR_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.06 army_org_regain = 0.04 } }
+AOEIW_CORE_SWE_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.10 } }
+AOEIW_CORE_SWE_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 } }
+AOEIW_CORE_SWE_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { naval_coordination = 0.05 army_defence_factor = 0.04 } }
+AOEIW_CORE_SWE_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_org_factor = 0.05 army_speed_factor = 0.03 } }
+AOEIW_CORE_YUG_civil = { picture = generic_foreign_capital allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 production_speed_infrastructure_factor = 0.10 } }
+AOEIW_CORE_YUG_strategic = { picture = generic_central_management allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.10 } }
+AOEIW_CORE_YUG_defence = { picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 } }
+AOEIW_CORE_YUG_mobile = { picture = generic_reserve_divisions allowed = { always = no } removal_cost = -1 modifier = { army_org_regain = 0.08 } }
+} }

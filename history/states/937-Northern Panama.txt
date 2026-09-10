@@ -1,0 +1,29 @@
+state={
+	id=937
+	name="STATE_937"
+	
+	history = {
+
+		buildings = {
+			infrastructure = 2
+			4611 = {
+				naval_base = 1
+			}
+		}
+
+		add_to_array = { state_victory_points = 4611 }
+		victory_points = {
+			4611 1
+		}
+        owner = SPR
+        add_core_of = SPR
+    }
+	provinces={
+		1633 4611 4624
+	}
+	manpower=285197
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,530 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_001"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_001.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_002"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_002.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_003"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_003.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_004"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_004.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_005"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_005.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_006"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_006.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_007"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_007.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_008"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_008.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_009"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_009.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_010"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_010.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_011"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_011.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_012"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_012.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_013"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_013.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_014"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_014.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_015"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_015.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_016"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_016.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_017"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_017.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_018"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_018.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_019"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_019.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_020"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_020.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_021"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_021.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_022"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_022.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_023"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_023.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_024"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_024.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_025"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_025.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_026"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_026.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_027"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_027.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_028"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_028.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_029"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_029.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_030"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_030.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_031"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_031.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_032"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_032.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_033"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_033.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_034"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_034.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_035"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_035.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_036"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_036.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_037"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_037.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_038"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_038.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_039"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_039.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_040"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_040.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_041"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_041.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_042"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_042.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_043"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_043.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_044"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_044.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_045"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_045.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_046"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_046.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_047"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_047.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_048"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_048.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_049"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_049.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_050"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_050.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_051"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_051.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_052"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_052.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_053"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_053.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_054"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_054.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_055"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_055.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_056"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_056.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_057"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_057.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_058"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_058.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_059"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_059.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_060"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_060.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_061"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_061.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_062"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_062.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_063"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_063.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_064"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_064.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_065"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_065.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_066"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_066.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_067"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_067.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_068"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_068.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_069"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_069.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_070"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_070.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_071"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_071.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_072"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_072.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_073"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_073.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_074"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_074.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_075"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_075.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_076"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_076.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_077"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_077.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_078"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_078.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_079"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_079.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_080"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_080.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_081"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_081.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_082"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_082.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_083"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_083.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_084"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_084.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_085"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_085.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_086"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_086.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_087"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_087.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_088"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_088.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_089"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_089.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_090"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_090.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_091"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_091.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_092"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_092.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_093"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_093.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_094"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_094.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_095"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_095.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_096"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_096.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_097"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_097.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_098"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_098.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_099"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_099.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_100"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_100.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_101"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_101.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_102"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_102.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_103"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_103.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_104"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_104.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_105"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_105.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_106"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_106.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_107"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_107.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_108"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_108.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_109"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_109.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_110"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_110.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_111"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_111.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_112"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_112.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_113"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_113.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_114"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_114.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_115"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_115.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_116"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_116.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_117"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_117.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_118"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_118.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_119"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_119.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_120"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_120.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_121"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_121.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_122"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_122.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_123"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_123.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_124"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_124.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_125"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_125.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_126"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_126.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_127"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_127.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_128"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_128.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_129"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_129.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_130"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_130.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_131"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_131.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_V9_REF_132"
+        texturefile = "gfx/interface/goals/aoeiw_v9_ref/ref_132.png"
+    }
+}

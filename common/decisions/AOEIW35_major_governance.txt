@@ -1,0 +1,278 @@
+AOEIW35_GER_governance_category = {
+    AOEIW35_GER_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_GER_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_GER_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_GER_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_GER_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_GER_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_GER_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_GER_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_GER_national_programme days = 180 }
+            country_event = { id = AOEIW35_ger.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_FRA_governance_category = {
+    AOEIW35_FRA_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_FRA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_FRA_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_FRA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_FRA_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_FRA_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_FRA_national_programme days = 180 }
+            country_event = { id = AOEIW35_fra.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_ENG_governance_category = {
+    AOEIW35_ENG_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_ENG_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_ENG_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_ENG_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_ENG_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_ENG_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_ENG_national_programme days = 180 }
+            country_event = { id = AOEIW35_eng.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_ITA_governance_category = {
+    AOEIW35_ITA_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_ITA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_ITA_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_ITA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_ITA_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_ITA_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_ITA_national_programme days = 180 }
+            country_event = { id = AOEIW35_ita.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_JAP_governance_category = {
+    AOEIW35_JAP_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_JAP_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_JAP_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_JAP_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_JAP_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_JAP_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_JAP_national_programme days = 180 }
+            country_event = { id = AOEIW35_jap.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_USA_governance_category = {
+    AOEIW35_USA_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_USA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_USA_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_USA_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_USA_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_USA_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_USA_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_USA_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_USA_national_programme days = 180 }
+            country_event = { id = AOEIW35_usa.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_SOV_governance_category = {
+    AOEIW35_SOV_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_SOV_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_SOV_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_SOV_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_SOV_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_SOV_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_SOV_national_programme days = 180 }
+            country_event = { id = AOEIW35_sov.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_SPR_governance_category = {
+    AOEIW35_SPR_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_SPR_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_SPR_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_SPR_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_SPR_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_SPR_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_SPR_national_programme days = 180 }
+            country_event = { id = AOEIW35_spr.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_AUS_governance_category = {
+    AOEIW35_AUS_support_left = {
+        icon = generic_political_actions
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_AUS_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = -0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_stability < 0.55 } }
+    }
+    AOEIW35_AUS_support_right = {
+        icon = generic_army_support
+        cost = 40
+        days_re_enable = 90
+        visible = { has_power_balance = { id = AOEIW35_AUS_governance_balance } }
+        complete_effect = { add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = 0.08 } }
+        ai_will_do = { factor = 1 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW35_AUS_launch_national_programme = {
+        icon = generic_industry
+        cost = 75
+        days_re_enable = 180
+        visible = { has_power_balance = { id = AOEIW35_AUS_governance_balance } }
+        available = { has_political_power > 74 }
+        complete_effect = {
+            add_dynamic_modifier = { modifier = AOEIW35_AUS_national_programme days = 180 }
+            country_event = { id = AOEIW35_aus.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+}

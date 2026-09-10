@@ -1,0 +1,1363 @@
+ideas = {
+    country = {
+        AOEIW_AUS_legacy_0 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.080
+                consumer_goods_factor = 0.040
+            }
+        }
+        AOEIW_AUS_legacy_1 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.050
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_AUS_legacy_2 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.030
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_AUS_legacy_3 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.030
+                stability_factor = 0.030
+                consumer_goods_factor = -0.010
+            }
+        }
+        AOEIW_BEL_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.100
+                land_reinforce_rate = -0.020
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_BEL_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.060
+                land_reinforce_rate = -0.010
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_BEL_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.020
+                land_reinforce_rate = 0.000
+                planning_speed = 0.000
+            }
+        }
+        AOEIW_BEL_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.050
+                land_reinforce_rate = 0.030
+                planning_speed = 0.050
+            }
+        }
+        AOEIW_BRA_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_BRA_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_BRA_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_BRA_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_BUL_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_BUL_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_BUL_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_BUL_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_CAN_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_CAN_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_CAN_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_CAN_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_CHI_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_CHI_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_CHI_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_CHI_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_DEN_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.100
+                land_reinforce_rate = -0.020
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_DEN_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.060
+                land_reinforce_rate = -0.010
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_DEN_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.020
+                land_reinforce_rate = 0.000
+                planning_speed = 0.000
+            }
+        }
+        AOEIW_DEN_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.050
+                land_reinforce_rate = 0.030
+                planning_speed = 0.050
+            }
+        }
+        AOEIW_EGY_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_EGY_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_EGY_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_EGY_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_ENG_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.100
+                navy_org_factor = -0.080
+                political_power_factor = -0.060
+            }
+        }
+        AOEIW_ENG_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.060
+                navy_org_factor = -0.040
+                political_power_factor = -0.030
+            }
+        }
+        AOEIW_ENG_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.020
+                navy_org_factor = -0.010
+                political_power_factor = 0.000
+            }
+        }
+        AOEIW_ENG_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.050
+                navy_org_factor = 0.050
+                political_power_factor = 0.030
+            }
+        }
+        AOEIW_ETH_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_ETH_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_ETH_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_ETH_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_FIN_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.100
+                land_reinforce_rate = -0.020
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_FIN_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.060
+                land_reinforce_rate = -0.010
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_FIN_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.020
+                land_reinforce_rate = 0.000
+                planning_speed = 0.000
+            }
+        }
+        AOEIW_FIN_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.050
+                land_reinforce_rate = 0.030
+                planning_speed = 0.050
+            }
+        }
+        AOEIW_FRA_legacy_0 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.080
+                stability_factor = -0.050
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_FRA_legacy_1 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.050
+                stability_factor = -0.030
+                consumer_goods_factor = 0.020
+            }
+        }
+        AOEIW_FRA_legacy_2 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.010
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_FRA_legacy_3 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.020
+                stability_factor = 0.020
+                consumer_goods_factor = -0.010
+            }
+        }
+        AOEIW_GER_legacy_0 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.050
+                land_reinforce_rate = -0.010
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_GER_legacy_1 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.030
+                land_reinforce_rate = -0.005
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_GER_legacy_2 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.010
+                land_reinforce_rate = 0.000
+                planning_speed = -0.010
+            }
+        }
+        AOEIW_GER_legacy_3 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.030
+                land_reinforce_rate = 0.020
+                planning_speed = 0.040
+            }
+        }
+        AOEIW_GER_legacy_4 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.080
+                land_reinforce_rate = 0.040
+                planning_speed = 0.080
+            }
+        }
+        AOEIW_GRE_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_GRE_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_GRE_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_GRE_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_HOL_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_HOL_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_HOL_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_HOL_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_IRE_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_IRE_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_IRE_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_IRE_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_ITA_legacy_0 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.070
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_ITA_legacy_1 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.050
+                stability_factor = -0.040
+                consumer_goods_factor = 0.020
+            }
+        }
+        AOEIW_ITA_legacy_2 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_ITA_legacy_3 = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.030
+                stability_factor = 0.030
+                consumer_goods_factor = -0.010
+            }
+        }
+        AOEIW_JAP_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.100
+                navy_org_factor = -0.080
+                political_power_factor = -0.060
+            }
+        }
+        AOEIW_JAP_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.060
+                navy_org_factor = -0.040
+                political_power_factor = -0.030
+            }
+        }
+        AOEIW_JAP_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.020
+                navy_org_factor = -0.010
+                political_power_factor = 0.000
+            }
+        }
+        AOEIW_JAP_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.050
+                navy_org_factor = 0.050
+                political_power_factor = 0.030
+            }
+        }
+        AOEIW_MEX_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_MEX_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_MEX_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_MEX_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_NOR_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.100
+                navy_org_factor = -0.080
+                political_power_factor = -0.060
+            }
+        }
+        AOEIW_NOR_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.060
+                navy_org_factor = -0.040
+                political_power_factor = -0.030
+            }
+        }
+        AOEIW_NOR_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.020
+                navy_org_factor = -0.010
+                political_power_factor = 0.000
+            }
+        }
+        AOEIW_NOR_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.050
+                navy_org_factor = 0.050
+                political_power_factor = 0.030
+            }
+        }
+        AOEIW_PER_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_PER_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_PER_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_PER_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_POL_legacy_0 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = -0.080
+                mobilization_speed = -0.120
+                max_dig_in_factor = -0.100
+            }
+        }
+        AOEIW_POL_legacy_1 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = -0.050
+                mobilization_speed = -0.080
+                max_dig_in_factor = -0.060
+            }
+        }
+        AOEIW_POL_legacy_2 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = -0.020
+                mobilization_speed = -0.030
+                max_dig_in_factor = -0.020
+            }
+        }
+        AOEIW_POL_legacy_3 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.030
+                mobilization_speed = 0.050
+                max_dig_in_factor = 0.050
+            }
+        }
+        AOEIW_POR_legacy_0 = {
+            picture = generic_flexible_foreign_policy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                navy_org_factor = -0.050
+                stability_factor = -0.030
+            }
+        }
+        AOEIW_POR_legacy_1 = {
+            picture = generic_flexible_foreign_policy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.040
+                navy_org_factor = -0.030
+                stability_factor = -0.020
+            }
+        }
+        AOEIW_POR_legacy_2 = {
+            picture = generic_flexible_foreign_policy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                navy_org_factor = -0.010
+                stability_factor = -0.010
+            }
+        }
+        AOEIW_POR_legacy_3 = {
+            picture = generic_flexible_foreign_policy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.020
+                navy_org_factor = 0.030
+                stability_factor = 0.020
+            }
+        }
+        AOEIW_RAJ_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_RAJ_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_RAJ_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_RAJ_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_ROM_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_ROM_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_ROM_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_ROM_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_SIA_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_SIA_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_SIA_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_SIA_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+        AOEIW_SOV_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_SOV_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_SOV_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_SOV_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_SPR_legacy_0 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.050
+                planning_speed = -0.100
+                mobilization_speed = -0.100
+            }
+        }
+        AOEIW_SPR_legacy_1 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.030
+                planning_speed = -0.060
+                mobilization_speed = -0.050
+            }
+        }
+        AOEIW_SPR_legacy_2 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.010
+                planning_speed = -0.020
+                mobilization_speed = 0.000
+            }
+        }
+        AOEIW_SPR_legacy_3 = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.020
+                planning_speed = 0.030
+                mobilization_speed = 0.050
+            }
+        }
+        AOEIW_SWE_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.100
+                land_reinforce_rate = -0.020
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_SWE_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.060
+                land_reinforce_rate = -0.010
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_SWE_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.020
+                land_reinforce_rate = 0.000
+                planning_speed = 0.000
+            }
+        }
+        AOEIW_SWE_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.050
+                land_reinforce_rate = 0.030
+                planning_speed = 0.050
+            }
+        }
+        AOEIW_SWI_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.100
+                land_reinforce_rate = -0.020
+                planning_speed = -0.080
+            }
+        }
+        AOEIW_SWI_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.060
+                land_reinforce_rate = -0.010
+                planning_speed = -0.040
+            }
+        }
+        AOEIW_SWI_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = -0.020
+                land_reinforce_rate = 0.000
+                planning_speed = 0.000
+            }
+        }
+        AOEIW_SWI_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.050
+                land_reinforce_rate = 0.030
+                planning_speed = 0.050
+            }
+        }
+        AOEIW_TUR_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_TUR_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_TUR_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_TUR_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_USA_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.120
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.080
+            }
+        }
+        AOEIW_USA_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.050
+                production_speed_buildings_factor = -0.040
+            }
+        }
+        AOEIW_USA_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                consumer_goods_factor = 0.020
+                production_speed_buildings_factor = 0.000
+            }
+        }
+        AOEIW_USA_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.060
+                consumer_goods_factor = -0.030
+                production_speed_buildings_factor = 0.050
+            }
+        }
+        AOEIW_YUG_legacy_0 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.100
+                stability_factor = -0.100
+                consumer_goods_factor = 0.050
+            }
+        }
+        AOEIW_YUG_legacy_1 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                stability_factor = -0.060
+                consumer_goods_factor = 0.030
+            }
+        }
+        AOEIW_YUG_legacy_2 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                stability_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+        AOEIW_YUG_legacy_3 = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.050
+                stability_factor = 0.050
+                consumer_goods_factor = -0.020
+            }
+        }
+    }
+}

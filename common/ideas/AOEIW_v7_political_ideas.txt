@@ -1,0 +1,7 @@
+ideas = {
+ country = {
+  AOEIW_SOV_revolutionary_state = { allowed = { always = no } removal_cost = -1 modifier = { political_power_factor = 0.10 army_attack_factor = 0.05 production_factory_efficiency_gain_factor = 0.10 } }
+  AOEIW_USA_communism_state = { allowed = { always = no } removal_cost = -1 modifier = { political_power_factor = 0.10 production_factory_efficiency_gain_factor = 0.10 stability_factor = 0.05 } }
+  AOEIW_USA_fascism_state = { allowed = { always = no } removal_cost = -1 modifier = { war_support_factor = 0.10 army_attack_factor = 0.05 production_factory_efficiency_gain_factor = 0.10 } }
+ }
+}

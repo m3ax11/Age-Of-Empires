@@ -1,0 +1,51 @@
+division_template = {
+ name = "the Netherlands Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "HOL Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "HOL Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. the Netherlands Infantry Division" location = 3262 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. the Netherlands Infantry Division" location = 6496 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. the Netherlands Infantry Division" location = 11562 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. the Netherlands Infantry Division" location = 153 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. the Netherlands Infantry Division" location = 10906 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. the Netherlands Infantry Division" location = 6241 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. the Netherlands Infantry Division" location = 9363 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. the Netherlands Infantry Division" location = 9335 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. the Netherlands Infantry Division" location = 6336 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. the Netherlands Infantry Division" location = 391 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. the Netherlands Infantry Division" location = 3211 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. the Netherlands Infantry Division" location = 9498 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. the Netherlands Infantry Division" location = 3262 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. the Netherlands Infantry Division" location = 6496 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. the Netherlands Infantry Division" location = 11562 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. the Netherlands Infantry Division" location = 153 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. the Netherlands Infantry Division" location = 10906 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. the Netherlands Infantry Division" location = 6241 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. the Netherlands Infantry Division" location = 9363 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. the Netherlands Infantry Division" location = 9335 division_template = "the Netherlands Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. HOL Rapid Division" location = 3262 division_template = "HOL Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. HOL Marine Division" location = 3262 division_template = "HOL Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

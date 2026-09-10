@@ -1,0 +1,165 @@
+capital = 3
+set_research_slots = 4
+set_convoys = 0
+set_stability = 0.7
+set_war_support = 0.65
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 55
+    fascism = 5
+    communism = 7
+    neutrality = 30
+    imperialism = 3
+}
+recruit_character = AOEIW_SWI_jonas_furrer
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_SWI_legacy_0
+    civilian_economy
+    export_focus
+    volunteer_only
+}
+set_technology = {
+    camo = 1
+    etax_doctrine = 1
+    winter_clothes_gw = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_mountaineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_recon = 1
+    tech_field_hospital = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    aluminum_production_1 = 1
+    basic_train = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+oob = "AOEIW_SWI_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_SWI_v7_advisor_1
+recruit_character = AOEIW_SWI_v7_advisor_2
+recruit_character = AOEIW_SWI_v7_advisor_3
+recruit_character = AOEIW_SWI_v7_advisor_4
+recruit_character = AOEIW_SWI_v7_advisor_5
+recruit_character = AOEIW_SWI_v7_advisor_6
+
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5280 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 432 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 480 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
+# AOEIW V8.8 SPECIALISED FORCE ACCESS
+
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 180 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW SWI Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW SWI Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_SWI_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+    }
+    set_air_oob = "AOEIW_SWI_1936_air_legacy"
+}
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = SWI_federal_council
+recruit_character = SWI_wilhelm_gustlof
+recruit_character = SWI_fritz_platten
+recruit_character = SWI_jean_de_muralt
+recruit_character = SWI_hans_oehler
+recruit_character = SWI_etienne_primault
+recruit_character = SWI_heinrich_rengel
+recruit_character = SWI_nicolas_jaquet
+recruit_character = SWI_eugen_bircher
+recruit_character = SWI_henry_pillichody
+recruit_character = SWI_jakob_huber
+recruit_character = SWI_jakob_huber_r56
+recruit_character = SWI_johannes_baumann
+recruit_character = SWI_roger_masson
+recruit_character = SWI_roger_masson_r56
+recruit_character = SWI_giuseppe_motta
+recruit_character = SWI_ernst_wetter
+recruit_character = SWI_renzo_lardelli
+recruit_character = SWI_friedrich_prisi
+recruit_character = SWI_rudolf_miescher
+recruit_character = SWI_jakob_labhart_r56
+recruit_character = SWI_friedrich_rihner
+recruit_character = SWI_hans_bandi
+recruit_character = SWI_gottlieb_duttweiler
+recruit_character = SWI_edouard_petitpierre
+recruit_character = SWI_august_haefeli
+recruit_character = SWI_oskar_meier
+recruit_character = SWI_dr_max
+recruit_character = SWI_hans_oprecht_r56
+recruit_character = SWI_edgar_woog
+recruit_character = SWI_claude_pasquier
+recruit_character = SWI_oscar_frey
+recruit_character = SWI_franz_joseph_ii
+recruit_character = SWI_jules_borel
+recruit_character = SWI_pierre_de_muralt
+recruit_character = SWI_paul_vollenwieder
+recruit_character = SWI_otto_hilfiker
+recruit_character = SWI_rudolf_probst
+recruit_character = SWI_roger_dollfus_de_volckersberg
+recruit_character = SWI_karl_heinz_ignas
+recruit_character = SWI_max_leo_keller
+recruit_character = SWI_paul_scherrer
+recruit_character = SWI_jakob_ackeret
+recruit_character = SWI_heinrich_mohaupt

@@ -1,0 +1,30 @@
+state = {
+	id = 736
+	name = "STATE_736" #Name was Istria before the Pola (Istria) split and merge with Fiume
+	
+	state_category = rural
+
+	history = {
+		victory_points = {
+			599 1 
+		}
+
+
+
+
+		add_claim_by = VNZ
+		add_to_array = { state_victory_points = 599 }
+		buildings = {
+			infrastructure = 1 #was 2
+		}
+        owner = ITA
+        add_core_of = ITA
+    }
+	provinces={
+		599 11595 
+	}
+	manpower=407426
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

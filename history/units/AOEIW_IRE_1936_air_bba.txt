@@ -1,0 +1,14 @@
+air_wings = {
+    113 = {
+        small_plane_airframe_0 = {
+            owner = "IRE"
+            amount = 55
+            version_name = "AOEIW IRE Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "IRE"
+            amount = 15
+            version_name = "AOEIW IRE Close Support"
+        }
+    }
+}

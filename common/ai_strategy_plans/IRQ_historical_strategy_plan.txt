@@ -1,0 +1,121 @@
+IRQ_historical_plan = {
+	name = "Iraq Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = IRQ
+		has_dlc = "Graveyard of Empires"
+	}
+	enable = {
+		has_global_flag = irq_dlc_focus_tree
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = IRQ_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = IRQ_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = IRQ_ai_behavior
+				option = HISTORICAL
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		has_war = no 
+	}
+
+	ai_national_focuses = {
+		
+		#1936
+		IRQ_ensure_sunni_dominance				#35
+		IRQ_party_of_national_brotherhood		#70
+		IRQ_royal_iraqi_army					#70
+		IRQ_bakr_sidqi_coup						#70
+		IRQ_raf_levies_focus					#70
+		IRQ_assasination_of_sidqi				#70
+		
+		#1937
+		IRQ_expand_habbaniya_airbase			#35
+		IRQ_decouple_from_the_pound				#70
+		IRQ_found_the_iraqi_state_railways		#35
+		IRQ_purchase_foreign_equipment			#35
+		IRQ_independent_flight_schools			#35
+		IRQ_infantry_focus						#70
+		IRQ_purchase_british_aircraft			#70
+
+		#1938
+		IRQ_strengthen_the_iraqi_dinar			#35
+		IRQ_heavy_industry_investments			#70
+		IRQ_local_arms_industry					#70
+		IRQ_al_muthanna_club					#70
+		IRQ_construct_the_kut_barrage			#70
+		IRQ_baghdad_colleges_of_engineering_and_education	#70
+
+		#1939
+		IRQ_found_southern_steel_plants			#70
+		IRQ_modernization						#35
+		IRQ_purchase_armored_equipment			#70
+		IRQ_strengthen_mesopotamian_farming		#35
+		IRQ_scavenging							#70
+		IRQ_cavalry_integration					#35 - r56: moved earlier to delay the invasion a bit more towards the historical timeline
+		IRQ_training							#70 - r56: moved earlier to delay the invasion a bit more towards the historical timeline
+
+		#1940
+		IRQ_extensive_irrigation_projects		#70 - r56: moved earlier to delay the invasion a bit more towards the historical timeline
+		IRQ_finish_the_berlin_baghdad_railway	#70 - r56: added to delay the invasion a bit more towards the historical timeline
+		IRQ_rural_electrification				#70 - r56: added to delay the invasion a bit more towards the historical timeline
+		IRQ_suppress_tribal_revolts				#70 - r56: moved earlier to delay the invasion a bit more towards the historical timeline
+		IRQ_strengthen_the_golden_square		#70
+		
+		#1941
+		IRQ_revoke_anglo_iraq_treaty			#70
+		IRQ_fligerfuhrer_irak					#14
+		IRQ_restore_regent						#14
+		IRQ_refuge_for_the_grand_mufti			#70
+		IRQ_anglo_iraqi_oil_expansion
+		IRQ_support_the_allied_war_effort
+		IRQ_allied_training
+		IRQ_renegotiate_treaty
+
+		#1942
+		IRQ_construct_the_dukan_dam
+		IRQ_fighter_training
+		IRQ_kurdish_outreach
+		
+		#1943
+		IRQ_form_the_independent_mechanized_brigade
+		IRQ_army_research_bonus
+		IRQ_expand_oil_production
+		IRQ_invest_in_ordnance_mountain_howitzers
+		IRQ_establish_iraqi_coastal_defense_force
+		
+		#1944
+
+	}
+
+	focus_factors = {
+		IRQ_join_axis = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

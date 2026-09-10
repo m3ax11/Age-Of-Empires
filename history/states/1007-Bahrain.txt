@@ -1,0 +1,33 @@
+
+state={
+	id=1007
+	name="STATE_1007"
+	manpower = 74040
+	state_category = pastoral
+	resources={
+		oil= 6
+	}
+	history = {
+
+                add_claim_by = PER
+
+		add_to_array = { state_victory_points = 13306 }
+		victory_points = {
+			13306 1
+		}
+		buildings = {
+			infrastructure = 1 #was 2
+			13306 = {
+				naval_base = 2
+			}
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		13306
+	}
+
+	local_supplies=0.0 
+}

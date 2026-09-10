@@ -1,0 +1,72 @@
+division_template = {
+    name = "Qing Survival Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 1 y = 3 }
+        infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } infantry = { x = 2 y = 3 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+    division = { name = "1. Qing Survival Division" location = 1134 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "2. Qing Survival Division" location = 1104 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "3. Qing Survival Division" location = 800 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "4. Qing Survival Division" location = 1502 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "5. Qing Survival Division" location = 916 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "6. Qing Survival Division" location = 836 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "7. Qing Survival Division" location = 783 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "8. Qing Survival Division" location = 1069 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "9. Qing Survival Division" location = 1137 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "10. Qing Survival Division" location = 531 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "11. Qing Survival Division" location = 5016 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "12. Qing Survival Division" location = 1725 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "13. Qing Survival Division" location = 3742 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "14. Qing Survival Division" location = 994 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "15. Qing Survival Division" location = 4407 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "16. Qing Survival Division" location = 1134 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "17. Qing Survival Division" location = 1104 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "18. Qing Survival Division" location = 800 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "19. Qing Survival Division" location = 1502 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "20. Qing Survival Division" location = 916 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "21. Qing Survival Division" location = 836 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "22. Qing Survival Division" location = 783 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "23. Qing Survival Division" location = 1069 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "24. Qing Survival Division" location = 1137 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "25. Qing Survival Division" location = 531 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "26. Qing Survival Division" location = 5016 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "27. Qing Survival Division" location = 1725 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "28. Qing Survival Division" location = 3742 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "29. Qing Survival Division" location = 994 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "30. Qing Survival Division" location = 4407 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "31. Qing Survival Division" location = 1134 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "32. Qing Survival Division" location = 1104 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "33. Qing Survival Division" location = 800 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "34. Qing Survival Division" location = 1502 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "35. Qing Survival Division" location = 916 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "36. Qing Survival Division" location = 836 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "37. Qing Survival Division" location = 783 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "38. Qing Survival Division" location = 1069 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "39. Qing Survival Division" location = 1137 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "40. Qing Survival Division" location = 531 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "41. Qing Survival Division" location = 5016 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "42. Qing Survival Division" location = 1725 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "43. Qing Survival Division" location = 3742 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "44. Qing Survival Division" location = 994 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "45. Qing Survival Division" location = 4407 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "46. Qing Survival Division" location = 1134 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "47. Qing Survival Division" location = 1104 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "48. Qing Survival Division" location = 800 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "49. Qing Survival Division" location = 1502 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "50. Qing Survival Division" location = 916 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "51. Qing Survival Division" location = 836 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "52. Qing Survival Division" location = 783 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "53. Qing Survival Division" location = 1069 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "54. Qing Survival Division" location = 1137 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "55. Qing Survival Division" location = 531 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "56. Qing Survival Division" location = 5016 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "57. Qing Survival Division" location = 1725 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "58. Qing Survival Division" location = 3742 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "59. Qing Survival Division" location = 994 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+    division = { name = "60. Qing Survival Division" location = 4407 division_template = "Qing Survival Division" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+}
+

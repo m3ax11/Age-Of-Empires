@@ -1,0 +1,109 @@
+AOEIW_world_american_reclamation_category = {
+    AOEIW_world_USA_emergency_reconstruction = {
+        icon = generic_industry
+        cost = 35
+        fire_only_once = yes
+        visible = {
+            original_tag = USA
+            NOT = { has_country_flag = AOEIW_world_USA_reconstruction_started }
+        }
+        available = { date > 1936.5.31 }
+        complete_effect = {
+            set_country_flag = AOEIW_world_USA_reconstruction_started
+            add_ideas = AOEIW_world_USA_industrial_recovery
+            add_political_power = 50
+            378 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+            378 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            375 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+        ai_will_do = { base = 100 }
+    }
+
+    AOEIW_world_USA_federal_mobilisation = {
+        icon = generic_military
+        cost = 50
+        fire_only_once = yes
+        visible = {
+            original_tag = USA
+            has_country_flag = AOEIW_world_USA_reconstruction_started
+            NOT = { has_country_flag = AOEIW_world_USA_mobilisation_started }
+        }
+        available = { date > 1936.11.30 has_war_support > 0.25 }
+        complete_effect = {
+            set_country_flag = AOEIW_world_USA_mobilisation_started
+            add_ideas = AOEIW_world_USA_federal_mobilisation_spirit
+            add_war_support = 0.08
+            add_command_power = 35
+            army_experience = 20
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 24000 }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1800 }
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 2200 }
+        }
+        ai_will_do = { base = 100 }
+    }
+
+    AOEIW_world_USA_begin_reclamation = {
+        icon = generic_war
+        cost = 75
+        fire_only_once = yes
+        visible = {
+            original_tag = USA
+            has_country_flag = AOEIW_world_USA_mobilisation_started
+            NOT = { has_country_flag = AOEIW_world_USA_reclamation_started }
+        }
+        available = {
+            date > 1937.3.31
+            has_war = no
+            QUE = { exists = yes }
+            CSA = { exists = yes }
+            HAI = { exists = yes }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW_world_USA_reclamation_started
+            add_war_support = 0.10
+            declare_war_on = { target = QUE type = annex_everything }
+            declare_war_on = { target = CSA type = annex_everything }
+            declare_war_on = { target = HAI type = annex_everything }
+            country_event = { id = AOEIW_world.1 hours = 6 }
+        }
+        ai_will_do = { base = 100 }
+    }
+}
+
+AOEIW_world_british_succession_category = {
+    AOEIW_world_proclaim_king_george = {
+        icon = generic_political_reform
+        cost = 25
+        fire_only_once = yes
+        visible = {
+            original_tag = ENG
+            NOT = { has_country_flag = AOEIW_world_british_succession_settled }
+        }
+        available = { has_political_power > 24 }
+        complete_effect = {
+            set_country_flag = AOEIW_world_british_succession_settled
+            retire_character = AOEIW_ENG_queen_victoria
+            promote_character = { character = AOEIW_world_ENG_king_george ideology = despotism }
+            add_stability = 0.05
+            add_war_support = 0.03
+        }
+        ai_will_do = { base = 8 }
+    }
+
+    AOEIW_world_confirm_queen_victoria = {
+        icon = generic_political_reform
+        cost = 0
+        fire_only_once = yes
+        visible = {
+            original_tag = ENG
+            NOT = { has_country_flag = AOEIW_world_british_succession_settled }
+        }
+        available = { always = yes }
+        complete_effect = {
+            set_country_flag = AOEIW_world_british_succession_settled
+            add_political_power = 25
+            add_stability = 0.02
+        }
+        ai_will_do = { base = 3 }
+    }
+}

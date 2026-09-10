@@ -1,0 +1,71 @@
+division_template = {
+ name = "Ottoman Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Ottoman Empire Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "TUR Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "TUR Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Ottoman Empire Infantry Division" location = 11842 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Ottoman Empire Infantry Division" location = 3862 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Ottoman Empire Infantry Division" location = 919 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Ottoman Empire Infantry Division" location = 5049 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Ottoman Empire Infantry Division" location = 1005 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Ottoman Empire Infantry Division" location = 9833 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Ottoman Empire Infantry Division" location = 12758 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Ottoman Empire Infantry Division" location = 12029 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Ottoman Empire Infantry Division" location = 6935 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Ottoman Empire Infantry Division" location = 12376 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Ottoman Empire Infantry Division" location = 12473 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Ottoman Empire Infantry Division" location = 1056 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Ottoman Empire Infantry Division" location = 11842 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Ottoman Empire Infantry Division" location = 3862 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Ottoman Empire Infantry Division" location = 919 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Ottoman Empire Infantry Division" location = 5049 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Ottoman Empire Infantry Division" location = 1005 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Ottoman Empire Infantry Division" location = 9833 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Ottoman Empire Infantry Division" location = 12758 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Ottoman Empire Infantry Division" location = 12029 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Ottoman Empire Infantry Division" location = 6935 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Ottoman Empire Infantry Division" location = 12376 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Ottoman Empire Infantry Division" location = 12473 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Ottoman Empire Infantry Division" location = 1056 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Ottoman Empire Infantry Division" location = 11842 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Ottoman Empire Infantry Division" location = 3862 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Ottoman Empire Infantry Division" location = 919 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Ottoman Empire Infantry Division" location = 5049 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Ottoman Empire Infantry Division" location = 1005 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Ottoman Empire Infantry Division" location = 9833 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Ottoman Empire Infantry Division" location = 12758 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Ottoman Empire Infantry Division" location = 12029 division_template = "Ottoman Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Ottoman Empire Mobile Division" location = 6935 division_template = "Ottoman Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Ottoman Empire Mobile Division" location = 12376 division_template = "Ottoman Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. TUR Rapid Division" location = 11842 division_template = "TUR Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. TUR Rapid Division" location = 11842 division_template = "TUR Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. TUR Mountain Division" location = 11842 division_template = "TUR Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

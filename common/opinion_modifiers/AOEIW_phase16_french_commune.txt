@@ -1,0 +1,11 @@
+opinion_modifiers = {
+    AOEIW16_old_order_betrayed = {
+        value = -100
+        decay = 0.5
+    }
+
+    AOEIW16_revolutionary_sympathy = {
+        value = 50
+        decay = 0.25
+    }
+}

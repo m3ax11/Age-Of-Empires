@@ -1,0 +1,8 @@
+division_template = {
+	name = "Sledge Patrol"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		
+	}
+}

@@ -1,0 +1,429 @@
+ideas = {
+    country = {
+        AOEIW_JAP_imperial_army = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.04
+                army_org_factor = 0.03
+                supply_consumption_factor = 0.10
+                max_planning_factor = -0.05
+            }
+        }
+
+        AOEIW_JAP_imperial_army_defensive = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = 0.08
+                army_org_factor = 0.04
+                max_dig_in_factor = 0.10
+                army_attack_factor = 0.02
+            }
+        }
+
+        AOEIW_JAP_imperial_army_logistical = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.05
+                army_org_factor = 0.04
+                supply_consumption_factor = -0.08
+                planning_speed = 0.05
+            }
+        }
+
+        AOEIW_JAP_imperial_navy = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.05
+                political_power_factor = -0.02
+            }
+        }
+
+        AOEIW_JAP_imperial_navy_reformed = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.10
+                war_support_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_separate_air_services = {
+            picture = generic_air_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = -0.10
+                political_power_factor = -0.02
+            }
+        }
+
+        AOEIW_JAP_unified_air_services = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.08
+                war_support_factor = 0.03
+            }
+        }
+
+        AOEIW_JAP_resource_poverty = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.15
+                consumer_goods_factor = 0.04
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+
+        AOEIW_JAP_economic_miracle = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = 0.05
+                consumer_goods_factor = -0.03
+                production_factory_efficiency_gain_factor = 0.10
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_political_violence = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.10
+                political_power_factor = -0.08
+            }
+        }
+
+        AOEIW_JAP_spirit_wartime_state = {
+            picture = FRA_national_mobilization_focus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.10
+                mobilization_speed = 0.10
+                consumer_goods_factor = -0.02
+            }
+        }
+
+        AOEIW_JAP_army_guardians = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.05
+                political_power_factor = -0.05
+                war_support_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_spirit_warrior_ethos = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.04
+                army_morale_factor = 0.05
+                war_support_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_nation_of_service = {
+            picture = generic_war_preparation
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.03
+                training_time_army_factor = -0.08
+                war_support_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_spirit_constitutional_empire = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_gain = 0.10
+                war_support_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_peoples_commonwealth = {
+            picture = generic_communism_drift_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.05
+                stability_factor = 0.05
+                consumer_goods_factor = -0.02
+            }
+        }
+
+        AOEIW_JAP_imperial_coordination = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.10
+                stability_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_spirit_colonial_resources = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = 0.10
+                production_speed_buildings_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_integrated_economy = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.02
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_spirit_mass_production = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.10
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_china_war_mobilization = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_attack_factor = 0.05
+                war_support_factor = 0.08
+                supply_consumption_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_embargo_preparations = {
+            picture = generic_improved_industries
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = 0.08
+                consumer_goods_factor = 0.02
+                war_support_factor = 0.04
+            }
+        }
+
+        AOEIW_JAP_spirit_greater_east_asia = {
+            picture = generic_political_support
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.08
+                political_power_gain = 0.08
+                army_morale_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_army_influence_subdued = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.02
+            }
+        }
+
+        AOEIW_JAP_army_influence_meddling = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.01
+            }
+        }
+
+        AOEIW_JAP_army_influence_influential = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.03
+                army_attack_factor = 0.02
+            }
+        }
+
+        AOEIW_JAP_army_influence_dominating = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.05
+                army_attack_factor = 0.05
+                political_power_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_navy_influence_subdued = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_navy_influence_meddling = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.01
+            }
+        }
+
+        AOEIW_JAP_navy_influence_influential = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.05
+            }
+        }
+
+        AOEIW_JAP_navy_influence_dominating = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.10
+                political_power_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_zaibatsu_influence_subdued = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_zaibatsu_influence_meddling = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.02
+            }
+        }
+
+        AOEIW_JAP_zaibatsu_influence_influential = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.07
+                consumer_goods_factor = -0.01
+            }
+        }
+
+        AOEIW_JAP_zaibatsu_influence_dominating = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.12
+                consumer_goods_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_civic_influence_subdued = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.03
+            }
+        }
+
+        AOEIW_JAP_civic_influence_meddling = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.03
+            }
+        }
+
+        AOEIW_JAP_civic_influence_influential = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.08
+                stability_factor = 0.03
+            }
+        }
+
+        AOEIW_JAP_civic_influence_dominating = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.15
+                stability_factor = 0.06
+                war_support_factor = -0.03
+            }
+        }
+
+    }
+}

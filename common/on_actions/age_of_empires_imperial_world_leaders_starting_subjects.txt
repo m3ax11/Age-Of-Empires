@@ -1,0 +1,21 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            JAP = {
+                set_country_flag = JAP_aizawas_trial_over_flag
+                set_country_flag = AOEIW_JAP_vanilla_kodoha_disabled
+                country_event = { id = aoeiw_jap_v84.1 days = 56 }
+            }
+            ENG = {
+                set_autonomy = {
+                    target = RAJ
+                    autonomy_state = autonomy_free
+                }
+                set_autonomy = {
+                    target = CAN
+                    autonomy_state = autonomy_free
+                }
+            }
+        }
+    }
+}

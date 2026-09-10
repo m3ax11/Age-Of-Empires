@@ -1,0 +1,53 @@
+ideas = {
+    country = {
+        AOEIW8_SOV_backward_industry = {
+            picture = generic_industrial_concern_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.10
+                consumer_goods_factor = 0.12
+                production_speed_buildings_factor = -0.08
+                local_resources_factor = -0.10
+            }
+        }
+        AOEIW8_SOV_divided_politics = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.05
+                stability_factor = -0.10
+                war_support_factor = -0.05
+            }
+        }
+        AOEIW8_SOV_weak_officer_corps = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.05
+                planning_speed = -0.20
+                max_planning = -0.05
+                max_planning_factor = -0.05
+                max_dig_in_factor = -0.20
+            }
+        }
+        AOEIW8_SOV_russian_resilience = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.10
+                army_org_factor = 0.05
+                army_morale_factor = 0.10
+                stability_factor = -0.05
+                recruitable_population_factor = 0.05
+            }
+        }
+    }
+}

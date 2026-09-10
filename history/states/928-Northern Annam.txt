@@ -1,0 +1,34 @@
+state={
+	id=928
+	name="STATE_928"
+	provinces={
+		1302 4397 7280 9988 10016 11909 11936 12297 
+	}
+	state_category = rural
+
+	resources={
+		steel= 1 # tiny bit of iron
+	}
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 4397 }
+		victory_points = {
+			4397 1
+		}
+		buildings = {
+			infrastructure = 2 #was 3
+			4397 = {
+				naval_base = 1
+			}
+		}
+        owner = VIN
+        add_core_of = VIN
+    }
+	manpower=3875624
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,93 @@
+# AOEIW V10 PHASE 8 — Portuguese AI mobilisation
+# Threat-staged force development for a small Atlantic empire. Only one stage is active at a time.
+# Values are ordinary AI desires/production minima; no free manpower/equipment or hidden output bonuses.
+
+AOEIW_POR_peacetime_posture = {
+    allowed = { original_tag = POR }
+    enable = {
+        is_ai = yes
+        has_war = no
+        threat < 0.25
+        NOT = { any_claim = yes }
+        NOT = { has_wargoal_against = SPR }
+        NOT = {
+            any_other_country = { has_wargoal_against = ROOT }
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = added_military_to_civilian_factory_ratio value = 0 }
+    ai_strategy = { type = build_army id = infantry value = 18 }
+    ai_strategy = { type = build_army id = AOEIW_mobile value = 1 }
+    ai_strategy = { type = equipment_stockpile_surplus_ratio value = 25 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = infantry_equipment value = 1 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = artillery_equipment value = 1 }
+}
+
+AOEIW_POR_rising_tension_posture = {
+    allowed = { original_tag = POR }
+    enable = {
+        is_ai = yes
+        has_war = no
+        NOT = { threat < 0.25 }
+        NOT = { any_claim = yes }
+        NOT = { has_wargoal_against = SPR }
+        NOT = {
+            any_other_country = { has_wargoal_against = ROOT }
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = added_military_to_civilian_factory_ratio value = 10 }
+    ai_strategy = { type = build_army id = infantry value = 22 }
+    ai_strategy = { type = build_army id = AOEIW_mobile value = 1 }
+    ai_strategy = { type = equipment_stockpile_surplus_ratio value = 10 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = infantry_equipment value = 2 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = artillery_equipment value = 1 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = support_equipment value = 1 }
+    ai_strategy = { type = pp_spend_amount id = idea value = 150 }
+}
+
+AOEIW_POR_direct_threat_posture = {
+    allowed = { original_tag = POR }
+    enable = {
+        is_ai = yes
+        has_war = no
+        OR = {
+            any_claim = yes
+            has_wargoal_against = SPR
+            any_other_country = { has_wargoal_against = ROOT }
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = added_military_to_civilian_factory_ratio value = 25 }
+    ai_strategy = { type = build_army id = infantry value = 26 }
+    ai_strategy = { type = build_army id = AOEIW_mobile value = 2 }
+    ai_strategy = { type = equipment_stockpile_surplus_ratio value = -10 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = infantry_equipment value = 3 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = artillery_equipment value = 1 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = support_equipment value = 1 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = motorized_equipment value = 1 }
+    ai_strategy = { type = pp_spend_amount id = idea value = 150 }
+}
+
+AOEIW_POR_wartime_posture = {
+    allowed = { original_tag = POR }
+    enable = {
+        is_ai = yes
+        has_war = yes
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = added_military_to_civilian_factory_ratio value = 35 }
+    ai_strategy = { type = build_army id = infantry value = 30 }
+    ai_strategy = { type = build_army id = AOEIW_mobile value = 2 }
+    ai_strategy = { type = force_build_armies value = 3 }
+    ai_strategy = { type = equipment_stockpile_surplus_ratio value = -25 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = infantry_equipment value = 4 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = artillery_equipment value = 2 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = support_equipment value = 1 }
+    ai_strategy = { type = equipment_production_min_factories_archetype id = motorized_equipment value = 1 }
+    ai_strategy = { type = pp_spend_amount id = idea value = 150 }
+}

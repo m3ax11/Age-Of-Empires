@@ -1,0 +1,56 @@
+division_template = {
+ name = "Dominion of Canada Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "CAN Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "CAN Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Dominion of Canada Infantry Division" location = 4872 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Dominion of Canada Infantry Division" location = 7899 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Dominion of Canada Infantry Division" location = 1424 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Dominion of Canada Infantry Division" location = 4285 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Dominion of Canada Infantry Division" location = 4345 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Dominion of Canada Infantry Division" location = 12149 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Dominion of Canada Infantry Division" location = 10230 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Dominion of Canada Infantry Division" location = 3778 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Dominion of Canada Infantry Division" location = 3775 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Dominion of Canada Infantry Division" location = 3010 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Dominion of Canada Infantry Division" location = 1408 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Dominion of Canada Infantry Division" location = 7361 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Dominion of Canada Infantry Division" location = 7259 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Dominion of Canada Infantry Division" location = 12223 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Dominion of Canada Infantry Division" location = 4739 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Dominion of Canada Infantry Division" location = 1848 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Dominion of Canada Infantry Division" location = 1873 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Dominion of Canada Infantry Division" location = 3721 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Dominion of Canada Infantry Division" location = 4218 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Dominion of Canada Infantry Division" location = 983 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Dominion of Canada Infantry Division" location = 4872 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Dominion of Canada Infantry Division" location = 7899 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Dominion of Canada Infantry Division" location = 1424 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Dominion of Canada Infantry Division" location = 4285 division_template = "Dominion of Canada Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. CAN Rapid Division" location = 4872 division_template = "CAN Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. CAN Rapid Division" location = 4872 division_template = "CAN Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. CAN Marine Division" location = 4872 division_template = "CAN Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

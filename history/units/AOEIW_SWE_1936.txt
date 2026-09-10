@@ -1,0 +1,46 @@
+division_template = {
+ name = "Sweden Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "SWE Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Sweden Infantry Division" location = 383 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Sweden Infantry Division" location = 11380 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Sweden Infantry Division" location = 9393 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Sweden Infantry Division" location = 6050 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Sweden Infantry Division" location = 9149 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Sweden Infantry Division" location = 408 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Sweden Infantry Division" location = 11091 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Sweden Infantry Division" location = 130 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Sweden Infantry Division" location = 6132 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Sweden Infantry Division" location = 109 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Sweden Infantry Division" location = 9279 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Sweden Infantry Division" location = 11215 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Sweden Infantry Division" location = 383 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Sweden Infantry Division" location = 11380 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Sweden Infantry Division" location = 9393 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Sweden Infantry Division" location = 6050 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Sweden Infantry Division" location = 9149 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Sweden Infantry Division" location = 408 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Sweden Infantry Division" location = 11091 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Sweden Infantry Division" location = 130 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Sweden Infantry Division" location = 6132 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Sweden Infantry Division" location = 109 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Sweden Infantry Division" location = 9279 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Sweden Infantry Division" location = 11215 division_template = "Sweden Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. SWE Rapid Division" location = 383 division_template = "SWE Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. SWE Rapid Division" location = 383 division_template = "SWE Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ MAPMODE_IMPERIAL_WORLD_GEOPOLITICS_MAP_MODE: "Imperial World"
+ MAPMODE_IMPERIAL_WORLD_GEOPOLITICS_MAP_MODE_NAME: "Imperial World"
+ MAPMODE_IMPERIAL_WORLD_GEOPOLITICS_MAP_MODE_DESCRIPTION: "Displays the great power blocs, ideological alignments, subordinate states and active belligerents of the Imperial World."
+ imperial_world_geopolitics_map_mode_tooltip: "§Y[FROM.GetNameWithFlag]§!\nFaction: §Y[FROM.GetFactionName]§!\nGovernment: §Y[FROM.GetRulingIdeology]§!"
+ imperial_world_geopolitics_map_mode_tooltip_delayed: "§gMuted bloc colours show strategic alignment. Subjects are dimmed; countries at war receive a brighter border.§!"
+ AOEIW_qol_free_land_doctrine: "Free Initial Land Doctrine"
+ AOEIW_qol_free_air_doctrine: "Free Initial Air Doctrine"
+ AOEIW_qol_free_naval_doctrine: "Free Initial Naval Doctrine"

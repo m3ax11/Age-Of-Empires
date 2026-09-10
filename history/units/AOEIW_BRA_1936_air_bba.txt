@@ -1,0 +1,19 @@
+air_wings = {
+    500 = {
+        small_plane_airframe_0 = {
+            owner = "BRA"
+            amount = 120
+            version_name = "AOEIW BRA Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "BRA"
+            amount = 40
+            version_name = "AOEIW BRA Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "BRA"
+            amount = 20
+            version_name = "AOEIW BRA Medium Bomber"
+        }
+    }
+}

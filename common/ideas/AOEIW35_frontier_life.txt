@@ -1,0 +1,27 @@
+ideas = {
+    country = {
+        AOEIW35_MON_frontier_compact = {
+            picture = jap_supremacy_of_will
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 supply_consumption_factor = -0.04 stability_factor = 0.03 }
+        }
+
+        AOEIW35_MAN_frontier_compact = {
+            picture = SOV_third_five_year_plan_military
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 industrial_capacity_factory = 0.05 stability_factor = 0.02 }
+        }
+
+        AOEIW35_XIC_frontier_compact = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 supply_consumption_factor = -0.03 production_speed_buildings_factor = 0.04 }
+        }
+    }
+}

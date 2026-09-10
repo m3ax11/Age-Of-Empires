@@ -1,0 +1,433 @@
+add_namespace = aoeiw_major_immersion
+
+country_event = {
+    id = aoeiw_major_immersion.1
+    title = aoeiw_major_immersion.1.t
+    desc = aoeiw_major_immersion.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.1.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.1.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.2
+    title = aoeiw_major_immersion.2.t
+    desc = aoeiw_major_immersion.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.2.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.2.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.3
+    title = aoeiw_major_immersion.3.t
+    desc = aoeiw_major_immersion.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.3.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.3.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.4
+    title = aoeiw_major_immersion.4.t
+    desc = aoeiw_major_immersion.4.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.4.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.4.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.5
+    title = aoeiw_major_immersion.5.t
+    desc = aoeiw_major_immersion.5.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.5.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.5.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.6
+    title = aoeiw_major_immersion.6.t
+    desc = aoeiw_major_immersion.6.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.6.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.6.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.7
+    title = aoeiw_major_immersion.7.t
+    desc = aoeiw_major_immersion.7.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.7.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.7.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.8
+    title = aoeiw_major_immersion.8.t
+    desc = aoeiw_major_immersion.8.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.8.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.8.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.9
+    title = aoeiw_major_immersion.9.t
+    desc = aoeiw_major_immersion.9.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.9.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.9.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.10
+    title = aoeiw_major_immersion.10.t
+    desc = aoeiw_major_immersion.10.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.10.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.10.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.11
+    title = aoeiw_major_immersion.11.t
+    desc = aoeiw_major_immersion.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.11.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.11.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.12
+    title = aoeiw_major_immersion.12.t
+    desc = aoeiw_major_immersion.12.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.12.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.12.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.13
+    title = aoeiw_major_immersion.13.t
+    desc = aoeiw_major_immersion.13.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.13.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.13.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.14
+    title = aoeiw_major_immersion.14.t
+    desc = aoeiw_major_immersion.14.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.14.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.14.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.15
+    title = aoeiw_major_immersion.15.t
+    desc = aoeiw_major_immersion.15.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.15.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.15.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.16
+    title = aoeiw_major_immersion.16.t
+    desc = aoeiw_major_immersion.16.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.16.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.16.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.17
+    title = aoeiw_major_immersion.17.t
+    desc = aoeiw_major_immersion.17.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.17.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.17.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.18
+    title = aoeiw_major_immersion.18.t
+    desc = aoeiw_major_immersion.18.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.18.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.18.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.19
+    title = aoeiw_major_immersion.19.t
+    desc = aoeiw_major_immersion.19.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.19.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.19.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.20
+    title = aoeiw_major_immersion.20.t
+    desc = aoeiw_major_immersion.20.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.20.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.20.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.21
+    title = aoeiw_major_immersion.21.t
+    desc = aoeiw_major_immersion.21.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.21.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.21.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.22
+    title = aoeiw_major_immersion.22.t
+    desc = aoeiw_major_immersion.22.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.22.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.22.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.23
+    title = aoeiw_major_immersion.23.t
+    desc = aoeiw_major_immersion.23.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.23.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.23.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}
+
+country_event = {
+    id = aoeiw_major_immersion.24
+    title = aoeiw_major_immersion.24.t
+    desc = aoeiw_major_immersion.24.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = aoeiw_major_immersion.24.a
+        add_political_power = 30
+        add_war_support = 0.015
+    }
+    option = {
+        name = aoeiw_major_immersion.24.b
+        add_stability = 0.02
+        army_experience = 5
+    }
+}

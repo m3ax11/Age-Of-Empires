@@ -1,0 +1,109 @@
+ideas = {
+    country = {
+        AOEIW14_GER_constitutional_opposition = {
+            removal_cost = -1
+            modifier = { political_power_factor = -0.10 stability_factor = -0.03 }
+        }
+        AOEIW14_GER_regional_concessions = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 political_power_factor = -0.04 war_support_factor = -0.03 }
+        }
+        AOEIW14_GER_adenauer_government = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 research_speed_factor = 0.04 consumer_goods_factor = -0.02 trade_opinion_factor = 0.15 recruitable_population_factor = -0.05 war_support_factor = -0.05 }
+        }
+        AOEIW14_GER_federal_economic_council_spirit = {
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.08 consumer_goods_factor = -0.01 trade_opinion_factor = 0.10 }
+        }
+        AOEIW14_GER_professional_reichswehr_spirit = {
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 training_time_army_factor = -0.08 recruitable_population_factor = -0.03 }
+        }
+        AOEIW14_GER_air_defence_board = {
+            removal_cost = -1
+            modifier = { production_speed_air_base_factor = 0.15 production_speed_radar_station_factor = 0.20 air_mission_efficiency = 0.05 }
+        }
+        AOEIW14_GER_directed_reichspakt = {
+            removal_cost = -1
+            modifier = { political_power_factor = 0.05 command_power_gain_mult = 0.05 stability_factor = -0.02 }
+        }
+        AOEIW14_GER_federal_reichspakt = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 trade_opinion_factor = 0.10 political_power_factor = -0.03 }
+        }
+        AOEIW14_GER_european_settlement_spirit = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 research_speed_factor = 0.03 consumer_goods_factor = -0.02 war_support_factor = -0.05 }
+        }
+        AOEIW14_POL_autonomy_settlement = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 political_power_factor = 0.03 }
+        }
+        AOEIW14_HOL_constitutional_guarantee = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 war_support_factor = 0.03 }
+        }
+        AOEIW14_FRA_rhine_dialogue = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.02 trade_opinion_factor = 0.05 }
+        }
+        AOEIW14_AUS_vienna_consultation = {
+            removal_cost = -1
+            modifier = { political_power_factor = 0.03 stability_factor = 0.02 }
+        }
+
+        AOEIW14_USA_economic_emergency = {
+            removal_cost = -1
+            modifier = { stability_factor = -0.06 consumer_goods_factor = 0.04 production_factory_efficiency_gain_factor = -0.05 }
+        }
+        AOEIW14_USA_political_paralysis = {
+            removal_cost = -1
+            modifier = { political_power_factor = -0.12 stability_factor = -0.05 consumer_goods_factor = 0.03 }
+        }
+        AOEIW14_USA_federal_confrontation = {
+            removal_cost = -1
+            modifier = { stability_factor = -0.07 industrial_capacity_factory = -0.05 political_power_factor = -0.08 }
+        }
+        AOEIW14_USA_temporary_military_administration = {
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.08 political_power_factor = -0.10 war_support_factor = 0.05 planning_speed = 0.05 }
+        }
+        AOEIW14_USA_civilian_restoration = {
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 political_power_factor = 0.05 consumer_goods_factor = -0.01 }
+        }
+        AOEIW14_USA_permanent_directorate = {
+            removal_cost = -1
+            modifier = { stability_factor = -0.04 war_support_factor = 0.10 consumer_goods_factor = 0.05 command_power_gain_mult = 0.10 max_planning_factor = 0.05 }
+        }
+        AOEIW14_USA_continental_logistics = {
+            removal_cost = -1
+            modifier = { production_speed_infrastructure_factor = 0.15 supply_consumption_factor = -0.05 }
+        }
+        AOEIW14_USA_military_industrial_coordination_spirit = {
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.05 production_factory_efficiency_gain_factor = 0.05 consumer_goods_factor = 0.02 }
+        }
+        AOEIW14_USA_air_defence_grid_spirit = {
+            removal_cost = -1
+            modifier = { production_speed_air_base_factor = 0.15 production_speed_radar_station_factor = 0.20 air_mission_efficiency = 0.05 }
+        }
+        AOEIW14_USA_nuclear_coordination = {
+            removal_cost = -1
+            modifier = { production_speed_nuclear_reactor_factor = 0.20 nuclear_production_factor = 0.10 research_speed_factor = 0.03 consumer_goods_factor = 0.02 }
+        }
+        AOEIW14_USA_central_planning_board = {
+            removal_cost = -1
+            modifier = { planning_speed = 0.10 max_planning_factor = 0.08 political_power_factor = -0.04 }
+        }
+        AOEIW14_USA_staff_collegium = {
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 research_speed_factor = 0.03 command_power_gain_mult = 0.05 }
+        }
+        AOEIW14_USA_integrated_war_planning_spirit = {
+            removal_cost = -1
+            modifier = { planning_speed = 0.05 max_planning_factor = 0.05 air_mission_efficiency = 0.05 research_speed_factor = 0.02 }
+        }
+    }
+}

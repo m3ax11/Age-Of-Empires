@@ -1,0 +1,56 @@
+AOEIW35_MON_frontier_category = {
+    AOEIW35_MON_frontier_council = {
+        icon = generic_political_rally
+        cost = 45
+        days_re_enable = 120
+        visible = { has_completed_focus = AOEIW_FRONTIER_MON_khural }
+        complete_effect = { add_stability = 0.02 add_political_power = 25 }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW35_MON_frontier_programme = {
+        icon = generic_cavalry
+        cost = 60
+        days_re_enable = 180
+        visible = { has_completed_focus = AOEIW_FRONTIER_MON_khural }
+        complete_effect = { add_timed_idea = { idea = AOEIW35_MON_frontier_compact days = 180 } army_experience = 10 }
+        ai_will_do = { factor = 1 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_MAN_frontier_category = {
+    AOEIW35_MAN_frontier_council = {
+        icon = generic_political_rally
+        cost = 45
+        days_re_enable = 120
+        visible = { has_completed_focus = AOEIW_FRONTIER_MAN_survival }
+        complete_effect = { add_stability = 0.02 add_political_power = 25 }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW35_MAN_frontier_programme = {
+        icon = generic_army_support
+        cost = 60
+        days_re_enable = 180
+        visible = { has_completed_focus = AOEIW_FRONTIER_MAN_survival }
+        complete_effect = { add_timed_idea = { idea = AOEIW35_MAN_frontier_compact days = 180 } army_experience = 10 }
+        ai_will_do = { factor = 1 modifier = { factor = 2 has_war = yes } }
+    }
+}
+
+AOEIW35_XIC_frontier_category = {
+    AOEIW35_XIC_frontier_council = {
+        icon = generic_political_rally
+        cost = 45
+        days_re_enable = 120
+        visible = { has_completed_focus = AOEIW_FRONTIER_XIC_conference }
+        complete_effect = { add_stability = 0.02 add_political_power = 25 }
+        ai_will_do = { factor = 1 }
+    }
+    AOEIW35_XIC_frontier_programme = {
+        icon = generic_political_rally
+        cost = 60
+        days_re_enable = 180
+        visible = { has_completed_focus = AOEIW_FRONTIER_XIC_conference }
+        complete_effect = { add_timed_idea = { idea = AOEIW35_XIC_frontier_compact days = 180 } army_experience = 10 }
+        ai_will_do = { factor = 1 modifier = { factor = 2 has_war = yes } }
+    }
+}

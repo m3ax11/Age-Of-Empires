@@ -1,0 +1,115 @@
+AOEIW12_FRA_country_programmes = {
+    allowed = { original_tag = FRA }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_FRA_eco_root
+            has_completed_focus = AOEIW9_FRA_dip_root
+            has_completed_focus = AOEIW9_FRA_politics_root
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_FRA_procurement_board_done
+                has_country_flag = AOEIW12_FRA_industrial_coordination_done
+                has_country_flag = AOEIW12_FRA_faction_conference_done
+                has_country_flag = AOEIW12_FRA_worker_dispute_done
+                has_country_flag = AOEIW12_FRA_imperial_investment_done
+            }
+        }
+    }
+}
+
+AOEIW12_GER_country_programmes = {
+    allowed = { original_tag = GER }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_GER_eco_root
+            has_completed_focus = AOEIW9_GER_dip_root
+            has_completed_focus = AOEIW9_GER_mil_root
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_GER_reichspakt_contracts_done
+                has_country_flag = AOEIW12_GER_ruhr_coordination_done
+                has_country_flag = AOEIW12_GER_polish_integration_done
+                has_country_flag = AOEIW12_GER_military_procurement_done
+            }
+        }
+    }
+}
+
+AOEIW12_SPR_country_programmes = {
+    allowed = { original_tag = SPR }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_SPR_eco_root
+            has_completed_focus = AOEIW9_SPR_politics_p1_1
+            has_completed_focus = AOEIW9_SPR_politics_p2_1
+            has_completed_focus = AOEIW9_SPR_politics_p3_1
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_SPR_catalan_agreements_done
+                has_country_flag = AOEIW12_SPR_basque_contracts_done
+                has_country_flag = AOEIW12_SPR_asturian_mining_done
+                has_country_flag = AOEIW12_SPR_madrid_procurement_done
+                has_country_flag = AOEIW12_SPR_regional_concessions_done
+            }
+        }
+    }
+}
+
+AOEIW12_POR_country_programmes = {
+    allowed = { original_tag = POR }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_POR_eco_root
+            has_completed_focus = AOEIW9_POR_dip_root
+            has_completed_focus = AOEIW9_POR_mil_root
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_POR_brazilian_investment_done
+                has_country_flag = AOEIW12_POR_atlantic_trade_done
+                has_country_flag = AOEIW12_POR_colonial_infrastructure_done
+                has_country_flag = AOEIW12_POR_imperial_recruitment_done
+            }
+        }
+    }
+}
+
+AOEIW12_AUS_country_programmes = {
+    allowed = { original_tag = AUS }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_AUS_eco_root
+            has_completed_focus = AOEIW9_AUS_politics_root
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_AUS_nationality_negotiations_done
+                has_country_flag = AOEIW12_AUS_danubian_investment_done
+                has_country_flag = AOEIW12_AUS_bohemian_contracts_done
+                has_country_flag = AOEIW12_AUS_hungarian_agreements_done
+            }
+        }
+    }
+}
+
+AOEIW12_ITA_country_programmes = {
+    allowed = { original_tag = ITA }
+    visible = {
+        OR = {
+            has_completed_focus = AOEIW9_ITA_eco_root
+            has_completed_focus = AOEIW9_ITA_dip_root
+            has_completed_focus = AOEIW9_ITA_mil_root
+        }
+        NOT = {
+            AND = {
+                has_country_flag = AOEIW12_ITA_league_arbitration_done
+                has_country_flag = AOEIW12_ITA_naval_contracts_done
+                has_country_flag = AOEIW12_ITA_southern_development_done
+                has_country_flag = AOEIW12_ITA_balkan_mediation_done
+            }
+        }
+    }
+}

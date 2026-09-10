@@ -1,0 +1,53 @@
+﻿l_english:
+ # characters
+ ADR_co_prince_council:0 "Co-Prince Council"
+ ADR_roc_pallares_i_rossell:0 "Roc Pallares I Rossell"
+ ADR_miquel_mateu_i_pla:0 "Miquel Mateu I Pla"
+ ADR_consell_sindical:0 "Consell Sindical"
+ ADR_ramon_iglesias_i_navarri:0 "Ramón i Navarri"
+
+ andorra_focus:0 "Andorran National Focus"
+ #ideas
+
+ ADR_spanish_refugees:0 "[SPR.GetAdjective] Refugees"
+ ADR_tourist_industry:0 "Tourism Industry"
+
+ #focuses
+
+ ADR_continue_the_policy_of_neutrality:0 "Continue the Policy of Neutrality"
+ ADR_continue_the_policy_of_neutrality_desc:0 ""
+ ADR_accept_spanish_refugees:0 "Accept Spanish Refugees"
+ ADR_accept_spanish_refugees_desc:0 "With much violence in Spain, many people are seeking to flee the nation, and we are happy to accept them for our own benefits."
+ ADR_normalize_spanish_relations:0 "Normalize [SPR.GetAdjective] Relations"
+ ADR_normalize_spanish_relations_desc:0 ""
+ ADR_expand_the_tourist_industry:0 "Expand the Tourist Industry"
+ ADR_expand_the_tourist_industry_desc:0 ""
+ ADR_encourage_foreign_investment:0 "Encourage Foreign Investment"
+ ADR_encourage_foreign_investment_desc:0 ""
+ ADR_abandon_the_policy_of_neutrality:0 "End the Status Quo"
+ ADR_abandon_the_policy_of_neutrality_desc:0 ""
+ ADR_accept_french_potectorate:0 "Accept the [FRA.GetAdjective] Protectorate"
+ ADR_accept_french_potectorate_desc:0 ""
+ ADR_a_flexible_foreign_policy:0 "A Flexible Foreign Policy"
+ ADR_a_flexible_foreign_policy_desc:0 ""
+
+ #events
+
+ andorra.1.t:0 "[ADR.GetName] Asks for Guarantees"
+ andorra.1.d:0 "With our civil war now over, [ADR.GetNameDef] has once again reached out to us asking for political and military protection for their nation, such as it was in the years prior."
+ andorra.1.a:0 "We will always have friends in the [ADR.GetAdjective] people."
+ andorra.1.b:0 "We are no longer interested in Andorra."
+ andorra.2.t:0 "Spain Re-establishes Their Guarantee"
+ andorra.2.d:0 "The Spanish government has agreed to re-establish their guarantee of military protection on our nation, just as it was in the years prior."
+ andorra.2.a:0 "The friendship lives on."
+ andorra.3.t:0 "Spain Refuses to Re-establish Their Guarantee"
+ andorra.3.d:0 "The Spanish government has refused to re-establish their guarantee of military protection on our nation, it may be clear that they have other plans."
+ andorra.3.a:0 "Perhaps we should look elsewhere..."
+
+ #decisons
+
+ ADR_become_catalonia:0 "Become Catalonia"
+ ADR_became_catalonia_flag:0 "Has formed Catalonia"
+
+ # Tooltip
+ CAT_unlocks_further_decisions:0 "We will unlock §YDecisions§! that will allow us to core §YAragón§!, §YValencia§!, and the §YBaleric Islands§!"

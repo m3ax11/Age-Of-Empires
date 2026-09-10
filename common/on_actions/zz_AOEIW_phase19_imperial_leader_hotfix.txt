@@ -1,0 +1,224 @@
+on_actions = {
+    # Save-compatible repair: the imperial ideology requires an imperialism_type
+    # leader role. The original monarch characters only carried despotism roles.
+    on_daily_BRA = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_BRA_pedro_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_CHI = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_CHI_puyi
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_ENG = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_ENG_queen_victoria
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_ETH = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_ETH_menelik_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_FRA = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_FRA_napoleon_iv
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_GER = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_GER_wilhelm_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_JAP = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_JAP_emperor_meiji
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_PER = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_PER_mozaffar_ad_din
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_POR = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_POR_carlos_i
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_RAJ = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_RAJ_bahadur_shah_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_SIA = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_SIA_chulalongkorn
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_SOV = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_SOV_nicholas_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+
+    on_daily_TUR = {
+        effect = {
+            if = {
+                limit = {
+                    has_government = imperialism
+                    NOT = { has_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied }
+                }
+                add_country_leader_role = {
+                    character = AOEIW_TUR_abdulhamid_ii
+                    promote_leader = yes
+                    country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+                }
+                set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            }
+        }
+    }
+}

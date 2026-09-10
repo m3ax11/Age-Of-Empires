@@ -1,0 +1,7 @@
+opinion_modifiers = {
+    AOEIW14_constitutional_dialogue = { value = 35 }
+    AOEIW14_autonomy_compromise = { value = 45 }
+    AOEIW14_treaty_rejected = { value = -25 }
+    AOEIW14_rhine_rapprochement = { value = 30 }
+    AOEIW14_vienna_consultation = { value = 25 }
+}

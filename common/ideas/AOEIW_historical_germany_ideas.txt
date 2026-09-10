@@ -1,0 +1,18 @@
+ideas = {
+    country = {
+        AOEIW_HIST_GER_industrialist_backing = { picture = generic_production allowed = { always = yes } modifier = { production_factory_max_efficiency_factor = 0.05 consumer_goods_factor = -0.03 } }
+        AOEIW_HIST_GER_dictatorship_in_formation = { picture = generic_political_support allowed = { always = yes } modifier = { political_power_gain = 0.08 stability_factor = -0.03 } }
+        AOEIW_HIST_GER_centralised_state = { picture = generic_political_support allowed = { always = yes } modifier = { political_power_gain = 0.12 stability_factor = 0.04 } }
+        AOEIW_HIST_GER_totalitarian_state = { picture = generic_political_support allowed = { always = yes } modifier = { political_power_gain = 0.18 stability_factor = 0.08 drift_defence_factor = 0.25 } }
+        AOEIW_HIST_GER_four_year_plan_spirit = { picture = generic_production allowed = { always = yes } modifier = { production_speed_industrial_complex_factor = 0.10 production_speed_arms_factory_factor = 0.10 consumer_goods_factor = 0.03 } }
+        AOEIW_HIST_GER_autarky_programme = { picture = generic_production allowed = { always = yes } modifier = { production_speed_synthetic_refinery_factor = 0.20 fuel_gain_factor = 0.08 } }
+        AOEIW_HIST_GER_mobilised_economy = { picture = generic_production allowed = { always = yes } modifier = { production_factory_efficiency_gain_factor = 0.08 production_factory_max_efficiency_factor = 0.05 } }
+        AOEIW_HIST_GER_general_staff_compromise = { picture = generic_army_doctrine allowed = { always = yes } modifier = { planning_speed = 0.10 army_org_factor = 0.03 } }
+        AOEIW_HIST_GER_mobile_warfare_command = { picture = generic_tank allowed = { always = yes } modifier = { army_speed_factor = 0.05 army_armor_speed_factor = 0.08 } }
+        AOEIW_HIST_GER_combined_arms_command = { picture = generic_air_doctrine allowed = { always = yes } modifier = { air_mission_efficiency = 0.05 army_org_factor = 0.02 } }
+        AOEIW_HIST_GER_plan_z_spirit = { picture = generic_navy_doctrine allowed = { always = yes } modifier = { naval_speed_factor = 0.05 navy_org_factor = 0.06 } }
+        AOEIW_HIST_GER_uboat_spirit = { picture = generic_navy_doctrine allowed = { always = yes } modifier = { convoy_raiding_efficiency_factor = 0.12 naval_speed_factor = 0.03 } }
+        AOEIW_HIST_GER_blitzkrieg_machine_spirit = { picture = generic_army_doctrine allowed = { always = yes } modifier = { planning_speed = 0.12 army_speed_factor = 0.05 air_mission_efficiency = 0.03 } }
+        AOEIW_HIST_GER_eastern_campaign = { picture = generic_army_doctrine allowed = { always = yes } modifier = { supply_consumption_factor = -0.05 max_planning_factor = 0.05 army_org_regain = 0.05 } }
+    }
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+    SpriteType = { name = "GFX_AOEIW_portrait_GER" texturefile = "gfx/leaders/AOEIW_v5/GER.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_ITA" texturefile = "gfx/leaders/AOEIW_v5/ITA.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_HOL" texturefile = "gfx/leaders/AOEIW_v5/HOL.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_NOR" texturefile = "gfx/leaders/AOEIW_v5/NOR.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_FRA" texturefile = "gfx/leaders/AOEIW_v5/FRA.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_ENG" texturefile = "gfx/leaders/AOEIW_v5/ENG.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_SOV" texturefile = "gfx/leaders/AOEIW_v5/SOV.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_SPR" texturefile = "gfx/leaders/AOEIW_v5/SPR.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_CHI" texturefile = "gfx/leaders/AOEIW_v5/CHI.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_TUR" texturefile = "gfx/leaders/AOEIW_v5/TUR.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_JAP" texturefile = "gfx/leaders/AOEIW_v5/JAP.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_USA" texturefile = "gfx/leaders/AOEIW_v5/USA.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_POR" texturefile = "gfx/leaders/AOEIW_v5/POR.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_SWE" texturefile = "gfx/leaders/AOEIW_v5/SWE.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_RAJ" texturefile = "gfx/leaders/AOEIW_v5/RAJ.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_GRE" texturefile = "gfx/leaders/AOEIW_v5/GRE.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_ROM" texturefile = "gfx/leaders/AOEIW_v5/ROM.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_BUL" texturefile = "gfx/leaders/AOEIW_v5/BUL.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_YUG" texturefile = "gfx/leaders/AOEIW_v5/YUG.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_PER" texturefile = "gfx/leaders/AOEIW_v5/PER.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_ETH" texturefile = "gfx/leaders/AOEIW_v5/ETH.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_SIA" texturefile = "gfx/leaders/AOEIW_v5/SIA.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_BRA" texturefile = "gfx/leaders/AOEIW_v5/BRA.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_MEX" texturefile = "gfx/leaders/AOEIW_v5/MEX.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_FIN" texturefile = "gfx/leaders/AOEIW_v5/FIN.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_DEN" texturefile = "gfx/leaders/AOEIW_v5/DEN.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_BEL" texturefile = "gfx/leaders/AOEIW_v5/BEL.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_SWI" texturefile = "gfx/leaders/AOEIW_v5/SWI.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_IRE" texturefile = "gfx/leaders/AOEIW_v5/IRE.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_POL" texturefile = "gfx/leaders/AOEIW_v5/POL.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_AUS" texturefile = "gfx/leaders/AOEIW_v5/AUS.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_CAN" texturefile = "gfx/leaders/AOEIW_v5/CAN.dds" }
+    SpriteType = { name = "GFX_AOEIW_portrait_EGY" texturefile = "gfx/leaders/AOEIW_v5/EGY.dds" }
+}

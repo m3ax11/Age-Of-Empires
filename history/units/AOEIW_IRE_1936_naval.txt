@@ -1,0 +1,16 @@
+units = {
+    fleet = {
+        name = "IRE National Fleet"
+        naval_base = 11293
+        task_force = {
+            name = "IRE Main Fleet"
+            location = 11293
+            ship = { name = "IRE Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Destroyer Class" } } }
+            ship = { name = "IRE Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Destroyer Class" } } }
+            ship = { name = "IRE Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Destroyer Class" } } }
+            ship = { name = "IRE Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Destroyer Class" } } }
+            ship = { name = "IRE Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Submarine Class" } } }
+            ship = { name = "IRE Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = IRE version_name = "AOEIW IRE Submarine Class" } } }
+        }
+    }
+}

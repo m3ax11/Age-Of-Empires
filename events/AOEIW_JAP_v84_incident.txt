@@ -1,0 +1,48 @@
+add_namespace = aoeiw_jap_v84
+
+country_event = {
+    id = aoeiw_jap_v84.1
+    title = aoeiw_jap_v84.1.t
+    desc = aoeiw_jap_v84.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = JAP }
+    option = {
+        name = aoeiw_jap_v84.1.a
+        ai_chance = { factor = 75 }
+        set_country_flag = AOEIW_JAP_path_historical
+        set_country_flag = AOEIW_JAP_influence_unlocked
+        add_stability = -0.04
+        add_war_support = 0.04
+        add_political_power = 50
+        remove_ideas = AOEIW_JAP_political_violence
+        country_event = { id = aoeiw_jap_v84.2 days = 2 }
+    }
+    option = {
+        name = aoeiw_jap_v84.1.b
+        ai_chance = { factor = 15 }
+        set_country_flag = AOEIW_JAP_path_kodoha
+        set_country_flag = AOEIW_JAP_influence_unlocked
+        add_stability = -0.12
+        add_war_support = 0.08
+        add_political_power = 25
+        swap_ideas = { remove_idea = AOEIW_JAP_army_influence_influential add_idea = AOEIW_JAP_army_influence_dominating }
+        country_event = { id = aoeiw_jap_v84.3 days = 2 }
+    }
+    option = {
+        name = aoeiw_jap_v84.1.c
+        ai_chance = { factor = 10 }
+        set_country_flag = AOEIW_JAP_path_antimilitary
+        set_country_flag = AOEIW_JAP_influence_unlocked
+        add_stability = -0.06
+        add_popularity = { ideology = democratic popularity = 0.08 }
+        swap_ideas = { remove_idea = AOEIW_JAP_army_influence_influential add_idea = AOEIW_JAP_army_influence_meddling }
+        swap_ideas = { remove_idea = AOEIW_JAP_civic_influence_subdued add_idea = AOEIW_JAP_civic_influence_influential }
+        country_event = { id = aoeiw_jap_v84.4 days = 2 }
+    }
+}
+
+country_event = { id = aoeiw_jap_v84.2 title = aoeiw_jap_v84.2.t desc = aoeiw_jap_v84.2.d picture = GFX_report_event_generic_parliament is_triggered_only = yes fire_only_once = yes trigger = { tag = JAP } option = { name = aoeiw_jap_v84.2.a add_stability = 0.03 add_political_power = 40 } }
+country_event = { id = aoeiw_jap_v84.3 title = aoeiw_jap_v84.3.t desc = aoeiw_jap_v84.3.d picture = GFX_report_event_generic_parliament is_triggered_only = yes fire_only_once = yes trigger = { tag = JAP } option = { name = aoeiw_jap_v84.3.a add_war_support = 0.04 army_experience = 15 } }
+country_event = { id = aoeiw_jap_v84.4 title = aoeiw_jap_v84.4.t desc = aoeiw_jap_v84.4.d picture = GFX_report_event_generic_parliament is_triggered_only = yes fire_only_once = yes trigger = { tag = JAP } option = { name = aoeiw_jap_v84.4.a add_stability = 0.03 add_political_power = 50 } }

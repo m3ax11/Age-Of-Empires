@@ -1,0 +1,229 @@
+ideas = {
+    country = {
+        AOEIW16_FRA_strike_wave = {
+            picture = FRA_factory_strikes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.10
+                stability_factor = -0.05
+                industrial_capacity_factory = -0.12
+                production_factory_efficiency_gain_factor = -0.12
+                consumer_goods_factor = 0.03
+            }
+        }
+
+        AOEIW16_FRA_revolutionary_command_crisis = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.10
+                army_org_factor = -0.12
+                planning_speed = -0.15
+                land_reinforce_rate = -0.03
+                army_morale_factor = -0.08
+            }
+        }
+
+        AOEIW16_FRA_postrevolution_industry_disruption = {
+            picture = FRA_factory_strikes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.03
+                industrial_capacity_factory = -0.08
+                production_factory_efficiency_gain_factor = -0.08
+                consumer_goods_factor = 0.02
+            }
+        }
+
+        AOEIW16_FRA_postrevolution_command_disruption = {
+            picture = generic_army_problems
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.08
+                planning_speed = -0.10
+                land_reinforce_rate = -0.02
+            }
+        }
+
+        AOEIW16_FRA_admirals_compromise = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.05
+                navy_org_factor = 0.02
+                naval_morale_factor = 0.02
+            }
+        }
+
+        AOEIW16_FRA_sailors_committees = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = -0.08
+                naval_morale_factor = 0.04
+                industrial_capacity_dockyard = -0.05
+            }
+        }
+
+        AOEIW16_FRA_factory_councils = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.08
+                industrial_capacity_factory = 0.05
+                production_speed_arms_factory_factor = 0.06
+            }
+        }
+
+        AOEIW16_FRA_maximum_efficiency_directive_spirit = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_max_efficiency_factor = 0.13
+                production_factory_start_efficiency_factor = 0.05
+            }
+        }
+
+        AOEIW16_FRA_mass_rifle_production = {
+            picture = generic_infantry_equipment_manufacturer_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_start_efficiency_factor = 0.05
+            }
+            equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+        }
+
+        AOEIW16_FRA_communal_arsenals_spirit = {
+            picture = generic_artillery_manufacturer_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            equipment_bonus = {
+                support_equipment = {
+                    build_cost_ic = -0.08
+                    instant = yes
+                }
+                artillery_equipment = {
+                    build_cost_ic = -0.08
+                    instant = yes
+                }
+            }
+        }
+
+        AOEIW16_FRA_citizen_army_spirit = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.02
+                mobilization_speed = 0.20
+                training_time_army_factor = -0.08
+            }
+        }
+
+        AOEIW16_FRA_mass_war_staff_spirit = {
+            picture = generic_communist_army
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                land_reinforce_rate = 0.04
+                army_morale_factor = 0.08
+                planning_speed = 0.05
+                army_infantry_attack_factor = 0.05
+                army_infantry_defence_factor = 0.05
+            }
+        }
+
+        AOEIW16_FRA_workers_air_production = {
+            picture = generic_air_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.05
+                air_accidents_factor = -0.15
+            }
+            equipment_bonus = {
+                small_plane_airframe = {
+                    build_cost_ic = -0.08
+                    instant = yes
+                }
+            }
+        }
+
+        AOEIW16_FRA_red_fleets_spirit = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.06
+                naval_morale_factor = 0.06
+                industrial_capacity_dockyard = 0.06
+            }
+        }
+
+        AOEIW16_FRA_revolutionary_diplomacy_spirit = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.05
+                improve_relations_maintain_cost_factor = -0.20
+                justify_war_goal_time = -0.10
+            }
+        }
+
+        AOEIW16_FRA_fortress_commune_spirit = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = 0.08
+                army_core_defence_factor = 0.08
+                consumer_goods_factor = 0.02
+            }
+        }
+
+        AOEIW16_FRA_arsenal_of_the_commune_spirit = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.03
+                production_speed_arms_factory_factor = 0.05
+                land_reinforce_rate = 0.02
+                army_morale_factor = 0.04
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+# Phase 9 centralises the common government mechanics used by each country's
+# bespoke terminal political settlement. Country-specific spirits and institutional
+# rewards remain in their individual focus trees.
+
+AOEIW9_install_imperial_government = {
+    set_politics = {
+        ruling_party = imperialism
+        elections_allowed = no
+    }
+}
+
+AOEIW9_install_non_aligned_government = {
+    set_politics = {
+        ruling_party = neutrality
+        elections_allowed = no
+    }
+}
+
+AOEIW9_install_democratic_government = {
+    set_politics = {
+        ruling_party = democratic
+        elections_allowed = yes
+        election_frequency = 48
+    }
+}
+
+# SPR remains vulnerable to the vanilla La Resistance election on-action, which
+# would restart the obsolete civil-war chain. The constitutional government is
+# installed, but elections stay suspended until that event system is replaced.
+AOEIW9_install_spanish_constitutional_government = {
+    set_politics = {
+        ruling_party = democratic
+        elections_allowed = no
+    }
+}
+
+AOEIW9_install_nationalist_government = {
+    set_politics = {
+        ruling_party = fascism
+        elections_allowed = no
+    }
+}
+
+AOEIW9_install_workers_government = {
+    set_politics = {
+        ruling_party = communism
+        elections_allowed = no
+    }
+}

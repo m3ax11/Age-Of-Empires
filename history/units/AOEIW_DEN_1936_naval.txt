@@ -1,0 +1,20 @@
+units = {
+    fleet = {
+        name = "DEN National Fleet"
+        naval_base = 6287
+        task_force = {
+            name = "DEN Main Fleet"
+            location = 6287
+            ship = { name = "DEN Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Cruiser Class" } } }
+            ship = { name = "DEN Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Destroyer Class" } } }
+            ship = { name = "DEN Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Submarine Class" } } }
+            ship = { name = "DEN Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Submarine Class" } } }
+            ship = { name = "DEN Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = DEN version_name = "AOEIW DEN Submarine Class" } } }
+        }
+    }
+}

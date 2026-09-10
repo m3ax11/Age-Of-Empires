@@ -1,0 +1,1144 @@
+rt56_state_id,rt56_file,aoe_state_id,aoe_file,match_method,owner
+1,1-France.txt,1,1-France.txt,exact_label,FRA
+10,10-Poland.txt,10,10-Poland.txt,exact_label,POL
+100,100-Iceland.txt,100,100-Iceland.txt,exact_label,GER
+1000,1000-Piaui.txt,937,937 - Piaui.txt,exact_label,BRA
+1001,1001-Maranhao.txt,497,497-Maranhao.txt,exact_label,BRA
+1002,1002-Parana.txt,944,944 - Parana.txt,exact_label,BRA
+1003,1003-Ceara.txt,935,935 - Ceara.txt,exact_label,BRA
+1004,1004-Paraiba.txt,,,owner_transition,BRA
+1005,1005-Pernambuco.txt,936,936 - Pernambuco.txt,exact_label,BRA
+1006,1006-Alagoas.txt,,,owner_transition,BRA
+1007,1007-Bahrain.txt,1014,1014 - Bahrain.txt,exact_label,ENG
+1008,1008-Faryab.txt,,,owner_transition,PER
+1009,1009-Bamian.txt,,,owner_transition,PER
+101,101-Greenland.txt,101,101-Greenland.txt,exact_label,DEN
+1010,1010-Helmand.txt,,,owner_transition,PER
+1011,1011-Alborz.txt,,,owner_transition,PER
+1012,1012-Monaco.txt,,,rt56_owner,MNC
+1013,1013-Sikkim.txt,985,985 - Sikkim.txt,exact_label,RAJ
+1014,1014-Brunei.txt,1023,1023 - Brunei.txt,exact_label,JAP
+1015,1015-San Marino.txt,,,rt56_owner,SAN
+1016,1016-Jerusalem.txt,,,owner_transition,TUR
+1017,1017-Beersheba.txt,,,owner_transition,TUR
+1018,1018-Shanland.txt,,,owner_transition,RAJ
+1019,1019-Sagaing.txt,998,998-Sagaing.txt,exact_label,RAJ
+102,102-North-Eastern Slovenia.txt,102,102-North-Eastern Slovenia.txt,exact_label,YUG
+1020,1020-Bago.txt,,,owner_transition,RAJ
+1021,1021-Mafraq.txt,,,owner_transition,ENG
+1022,1022-Maan.txt,,,owner_transition,ENG
+1023,1023-Delaware.txt,,,owner_transition,USA
+1024,1024-Bornholm.txt,910,910-Bornholm.txt,exact_label,DEN
+1025,1025-Fyn.txt,911,911-Fyn.txt,exact_label,DEN
+1026,1026-Ostergotland.txt,913,913-Ostergotland.txt,exact_label,SWE
+1027,1027-JanMayen.txt,914,914-JanMayen.txt,exact_label,NOR
+1028,1028-Dalarna.txt,916,916-Dalarna.txt,exact_label,SWE
+1029,1029-Vasterbotten.txt,918,918-Vasterbotten.txt,exact_label,SWE
+103,103-Croatia.txt,103,103-Croatia.txt,exact_label,YUG
+1030,1030-Varmland.txt,919,919-Varmland.txt,exact_label,SWE
+1031,1031-Opplandene.txt,920,920-Opplandene.txt,exact_label,NOR
+1032,1032-Telemark.txt,921,921-Telemark.txt,exact_label,NOR
+1033,1033-Helgeland.txt,923,923-Helgeland.txt,exact_label,NOR
+1034,1034-Troms.txt,924,924-Troms.txt,exact_label,NOR
+1035,1035-Finnmark.txt,925,925-Finnmark.txt,exact_label,NOR
+1036,1036-Turku.txt,926,926-Turku.txt,exact_label,FIN
+1037,1037-Hame.txt,927,927-Hame.txt,exact_label,FIN
+1038,1038-Kyme.txt,928,928-Kyme.txt,exact_label,FIN
+1039,1039-Oulu.txt,929,929-Oulu.txt,exact_label,FIN
+104,104-Bosnia.txt,104,104-Bosnia.txt,exact_label,YUG
+1040,1040-Mikkeli.txt,930,930-Mikkeli.txt,exact_label,FIN
+1041,1041-Cumbria.txt,931,931-Cumbria.txt,exact_label,ENG
+1042,1042-Isle of Man.txt,932,932-Isle of Man.txt,exact_label,ENG
+1043,1043-Suourland.txt,,,owner_transition,GER
+1044,1044-Nakhchivan.txt,,,owner_transition,SOV
+1045,1045-Basra.txt,,,owner_transition,TUR
+1046,1046-Karbala.txt,,,owner_transition,TUR
+1047,1047-Dulaim.txt,,,owner_transition,TUR
+1048,1048-Sulymaniyah.txt,,,owner_transition,TUR
+1049,1049-Erbil.txt,,,owner_transition,TUR
+105,105-Montenegro.txt,105,105-Montenegro.txt,exact_label,YUG
+1050,1050-Guantanamo Bay.txt,,,owner_transition,USA
+1051,1051-Choco.txt,,,owner_transition,SPR
+1052,1052-Acre.txt,940,940 - Acre.txt,exact_label,BRA
+1053,1053-Saarland.txt,,,owner_transition,GER
+1054,1054-Styria.txt,,,owner_transition,AUS
+1055,1055-Zanzibar.txt,,,owner_transition,ENG
+1056,1056-Amapa.txt,939,939 - Amapa.txt,exact_label,BRA
+1057,1057-Tocantins.txt,941,941 - Tocantins.txt,exact_label,BRA
+1058,1058-Rondonia.txt,942,942 - Rondonia.txt,exact_label,BRA
+1059,1059-Cerro Largo.txt,945,945 - Cerro Largo.txt,exact_label,SPR
+106,106-Macedonia.txt,106,106-Macedonia.txt,exact_label,YUG
+1060,1060-Paysandu.txt,946,946 - Paysandu.txt,exact_label,SPR
+1061,1061-Tacna.txt,947,947 - Tacna.txt,exact_label,PRU
+1062,1062-Aysen.txt,949,949 - Aysen.txt,exact_label,SPR
+1063,1063-Araucania.txt,950,950 - Araucania.txt,exact_label,SPR
+1064,1064-Arica.txt,951,951 - Arica.txt,exact_label,SPR
+1065,1065-Tierra del Fuego.txt,953,953 - Tierra del Fuego.txt,exact_label,ARG
+1066,1066-Santa Cruz.txt,954,954 - Santa Cruz.txt,exact_label,ARG
+1067,1067-Chubut.txt,955,955 - Chubut.txt,exact_label,ARG
+1068,1068-Santa Fe.txt,956,956 - Santa Fe.txt,exact_label,ARG
+1069,1069-Formosa.txt,957,957 - Formosa.txt,exact_label,ARG
+107,107-Kosavo.txt,107,107-Kosavo.txt,exact_label,YUG
+1070,1070-San Luis.txt,958,958 - San Luis.txt,exact_label,ARG
+1071,1071-Los Andes.txt,959,959 - Los Andes.txt,exact_label,ARG
+1072,1072-Deep Amazonas.txt,,,owner_transition,BRA
+1073,1073-Amazonas del Norte.txt,,,owner_transition,SPR
+1074,1074-Easter Island.txt,948,948 - Easter Island.txt,exact_label,SPR
+1075,1075-Gyarong.txt,,,owner_transition,CHI
+1076,1076-Channel Islands.txt,,,owner_transition,ENG
+1077,1077-Chaco Boreal.txt,688,688-Chaco Boreal.txt,exact_label,SPR
+1078,1078-South Sudetenland.txt,972,972 - South Sudetenland.txt,exact_label,AUS
+1079,1079-Sint Maarten.txt,,,owner_transition,HOL
+108,108-Eastern Serbia.txt,108,108-Eastern Serbia.txt,exact_label,YUG
+1080,1080-Martinique.txt,,,owner_transition,FRA
+1081,1081-St Kitts & Nevis.txt,,,owner_transition,ENG
+1082,1082-Dominica.txt,,,owner_transition,ENG
+1083,1083-St Lucia.txt,,,owner_transition,ENG
+1084,1084-St Vincent & the Grenadines.txt,,,owner_transition,ENG
+1085,1085-Grenada.txt,,,owner_transition,ENG
+1086,1086-Burgenland.txt,975,975 - Burgenland.txt,exact_label,AUS
+1087,1087-Chatham Island.txt,,,owner_transition,ENG
+1088,1088-American Samoa.txt,1072,1072 - American Samoa.txt,exact_label,USA
+1089,1089-Niue.txt,,,owner_transition,ENG
+109,109-Eastern Croatia.txt,109,109-Eastern Croatia.txt,exact_label,YUG
+1090,1090-Uttarakhand.txt,,,owner_transition,RAJ
+1091,1091-Gandaki.txt,,,owner_transition,RAJ
+1092,1092-North Bihar.txt,,,owner_transition,RAJ
+1093,1093-West Sindh.txt,,,owner_transition,RAJ
+1094,1094-Antwerp.txt,977,977 - Antwerp.txt,exact_label,BEL
+1095,1095-Ardennes.txt,980,980 - Ardennes.txt,exact_label,BEL
+1096,1096-Kaiser Wilhelms Land.txt,979,979 - Kaiser Wilhelms Land.txt,exact_label,ENG
+1097,1097-Barotseland.txt,981,981 - Barotseland.txt,exact_label,ENG
+1098,1098-Madras States.txt,982,982 - Madras States.txt,exact_label,RAJ
+1099,1099-Deccan States.txt,983,983 - Deccan States.txt,exact_label,RAJ
+11,11-Kaunas.txt,11,11-Kaunas.txt,stable_legacy_id,EST
+110,110-Norway.txt,110,110-Norway.txt,exact_label,NOR
+1100,1100-Bastar.txt,984,984 - Bastar.txt,exact_label,RAJ
+1101,1101-East Punjab.txt,986,986 - East Punjab.txt,exact_label,RAJ
+1102,1102-Inner Oman.txt,,,owner_transition,TUR
+1103,1103-Dhofar.txt,1016,1016 - Dhofar.txt,exact_label,TUR
+1104,1104-South Transdanubia.txt,974,974 - South Transdanubia.txt,exact_label,AUS
+1105,1105-South Kyushu.txt,1018,1018 - South Kyushu.txt,exact_label,JAP
+1106,1106-South Tohoku.txt,1019,1019 - South Tohoku.txt,exact_label,JAP
+1107,1107-Sanin.txt,1020,1020 - Sanin.txt,exact_label,JAP
+1108,1108-Zamboanga.txt,1025,1025 - Zamboanga.txt,exact_label,JAP
+1109,1109-North Mindanao.txt,1026,1026 - North Mindanao.txt,exact_label,JAP
+111,111-Uusima.txt,111,111-Uusima.txt,exact_label,FIN
+1110,1110-Bataan.txt,1027,1027 - Bataan.txt,exact_label,JAP
+1111,1111-Yanan.txt,1032,1032 - Yanan.txt,exact_label,CHI
+1112,1112-Fangchenggang.txt,1033,1033 - Fangchenggang.txt,exact_label,CHI
+1113,1113-Suzhou.txt,1034,1034 - Suzhou.txt,exact_label,CHI
+1114,1114-Nanjing.txt,1035,1035 - Nanjing.txt,exact_label,CHI
+1115,1115-Wuhan.txt,1036,1036 - Wuhan.txt,exact_label,CHI
+1116,1116-Chongqing.txt,1037,1037 - Chongqing.txt,exact_label,CHI
+1117,1117-Jinan.txt,1038,1038 - Jinan.txt,exact_label,CHI
+1118,1118-Hebei-Chahar.txt,1039,1039 - Hebei-Chahar.txt,exact_label,CHI
+1119,1119-Alxa.txt,1040,1040 - Alxa.txt,exact_label,CHI
+112,112-Lisbon.txt,112,112-Lisbon.txt,exact_label,POR
+1120,1120-Chengdu.txt,1041,1041 - Chengdu.txt,exact_label,CHI
+1121,1121-Khotan.txt,1042,1042 - Khotan.txt,exact_label,CHI
+1122,1122-Pailingmiao.txt,1043,1043 - Pailingmiao.txt,exact_label,CHI
+1123,1123-Wuwei.txt,1044,1044 - Wuwei.txt,exact_label,CHI
+1124,1124-Guyuan.txt,1045,1045 - Guyuan.txt,exact_label,CHI
+1125,1125-Yulin.txt,1046,1046 - Yulin.txt,exact_label,CHI
+1126,1126-Batavia.txt,1058,1058-Batavia.txt,exact_label,JAP
+1127,1127-Bali.txt,1052,1052-Bali.txt,exact_label,JAP
+1128,1128-Ajteh.txt,1050,1050-Ajteh.txt,exact_label,JAP
+1129,1129 - Perak.txt,1064,1064 - Perak.txt,exact_label,JAP
+113,113-Ireland.txt,113,113-Ireland.txt,exact_label,IRE
+1130,1130 - Pahang.txt,1063,1063 - Pahang.txt,exact_label,JAP
+1131,1131 - Limbang.txt,1059,1059 - Limbang.txt,exact_label,JAP
+1132,1132 - Central Siam.txt,1077,1077 - Central Siam.txt,exact_label,SIA
+1133,1133 - Eastern Siam.txt,1078,1078 - Eastern Siam.txt,exact_label,SIA
+1134,1134 - Bangkok.txt,1076,1076 - Bangkok.txt,exact_label,SIA
+1135,1135-Padang.txt,1048,1048-Padang.txt,exact_label,JAP
+1136,1136-Auckland.txt,1079,1079-Auckland.txt,exact_label,ENG
+1137,1137-Dutch Southern New Guinea.txt,1057,1057-Dutch Southern New Guinea.txt,exact_label,JAP
+1138,1138 - Bougainville.txt,1070,1070 - Bougainville.txt,exact_label,ENG
+1139,1139 - Marlborough.txt,1080,1080 - Marlborough.txt,exact_label,ENG
+114,114-Sardinia.txt,114,114-Sardinia.txt,exact_label,ITA
+1140,1140 - Otago.txt,1081,1081 - Otago.txt,exact_label,ENG
+1141,1141 - Vanuatu.txt,1071,1071 - Vanuatu.txt,exact_label,FRA
+1142,1142-Dutch Timor.txt,1054,1054-Dutch Timor.txt,exact_label,JAP
+1143,1143 - Vorstenlanden.txt,,,owner_transition,JAP
+115,115-Sicily.txt,115,115-Sicily.txt,exact_label,ITA
+116,116-Malta.txt,116,116-Malta.txt,exact_label,ENG
+117,117-Napoli.txt,117,117-Napoli.txt,exact_label,ITA
+118,118-Gibralter.txt,118,118-Gibralter.txt,exact_label,ENG
+119,119-Northern Ireland.txt,119,119-Northern Ireland.txt,exact_label,ENG
+12,12-Latvia.txt,12,12-Latvia.txt,exact_label,EST
+120,120-Scottish Highlands.txt,120,120-Scottish Highlands.txt,exact_label,ENG
+121,121-Scottish Lowlands.txt,121,121-Scottish Lowlands.txt,exact_label,ENG
+122,122-Wales.txt,122,122-Wales.txt,exact_label,ENG
+123,123-Cornwall.txt,123,123-Cornwall.txt,exact_label,ENG
+124,124-Gotland.txt,124,124-Gotland.txt,exact_label,SWE
+125,125-East Anglia.txt,125,125-East Anglia.txt,exact_label,ENG
+126,126-Greater London Area.txt,126,126-Greater London Area.txt,exact_label,ENG
+127,127-South-east England.txt,127,127-South-east England.txt,exact_label,ENG
+128,128-West Midlands.txt,128,128-West Midlands.txt,exact_label,ENG
+129,129-East Midlands.txt,129,129-East Midlands.txt,exact_label,ENG
+13,13-Estonia.txt,13,13-Estonia.txt,exact_label,EST
+130,130-Yorkshire.txt,130,130-Yorkshire.txt,exact_label,ENG
+131,131-Northern England.txt,131,131-Northern England.txt,exact_label,ENG
+132,132-North-west England.txt,132,132-North-west England.txt,exact_label,ENG
+133,133-Strathclyde.txt,133,133-Strathclyde.txt,exact_label,ENG
+134,134-Connaught.txt,134,134-Connaught.txt,exact_label,IRE
+135,135-Munster.txt,135,135-Munster.txt,exact_label,IRE
+136,136-Aberdeenshire.txt,136,136-Aberdeenshire.txt,exact_label,ENG
+137,137-Crimea.txt,137,137-Crimea.txt,exact_label,UKR
+138,138-Skane.txt,138,138-Skane.txt,exact_label,SWE
+139,139-Smaland.txt,139,139-Smaland.txt,exact_label,SWE
+14,14-Brittany.txt,14,14-Brittany.txt,exact_label,FRA
+140,140-Vaster Gotland.txt,140,140-Vaster Gotland.txt,exact_label,SWE
+141,141-Sodermanland.txt,141,141-Sodermanland.txt,exact_label,SWE
+142,142-Vestlandet.txt,142,142-Vestlandet.txt,exact_label,NOR
+143,143-Midt-Noreg.txt,143,143-Midt-Noreg.txt,exact_label,NOR
+144,144-Nord-Noreg.txt,144,144-Nord-Noreg.txt,exact_label,NOR
+145,145-Aland.txt,145,145-Aland.txt,exact_label,FIN
+146,146-Karelia.txt,146,146-Karelia.txt,exact_label,FIN
+147,147-Salla.txt,147,147-Salla.txt,exact_label,FIN
+148,148-Lappi.txt,148,148-Lappi.txt,exact_label,FIN
+149,149-Vaasa.txt,149,149-Vaasa.txt,exact_label,FIN
+15,15-Normandy.txt,15,15-Normandy.txt,exact_label,FRA
+150,150-Kuopio.txt,150,150-Kuopio.txt,exact_label,FIN
+151,151-Eastern Swiss Alps.txt,151,151-Eastern Swiss Alps.txt,exact_label,SWI
+152,152-Upper Austria.txt,152,152-Upper Austria.txt,exact_label,AUS
+153,153-Tyrol.txt,153,153-Tyrol.txt,exact_label,AUS
+154,154-Southern plain.txt,154,154-Southern plain.txt,exact_label,AUS
+155,155-Western Hungary.txt,155,155-Western Hungary.txt,exact_label,AUS
+156,156-Calabria.txt,156,156-Calabria.txt,exact_label,ITA
+157,157-Abruzzo.txt,157,157-Abruzzo.txt,exact_label,ITA
+158,158-Piedmont.txt,158,158-Piedmont.txt,exact_label,ITA
+159,159-Lombardy.txt,159,159-Lombardy.txt,exact_label,ITA
+16,16-Ile de France.txt,16,16-Ile de France.txt,exact_label,FRA
+160,160-Veneto.txt,160,160-Veneto.txt,exact_label,ITA
+161,161-Emilia Romagna.txt,161,161-Emilia Romagna.txt,exact_label,ITA
+162,162-Tuscany.txt,162,162-Tuscany.txt,exact_label,ITA
+163,163-Dalmatia.txt,163,163-Dalmatia.txt,exact_label,ITA
+164,164-Dodecanese.txt,164,164-Dodecanese.txt,exact_label,ITA
+165,165-Catalonia.txt,165,165-Catalonia.txt,exact_label,SPR
+166,166-Western Aragon.txt,166,166-Western Aragon.txt,exact_label,SPR
+167,167-Valencia.txt,167,167-Valencia.txt,exact_label,SPR
+168,168-Murcia.txt,168,168-Murcia.txt,exact_label,SPR
+169,169-Sevilla.txt,169,169-Sevilla.txt,exact_label,SPR
+17,17-Alcase Lorraine.txt,17,17-Alcase Lorraine.txt,exact_label,FRA
+170,170-Extremadura.txt,170,170-Extremadura.txt,exact_label,SPR
+171,171-Galicia.txt,171,171-Galicia.txt,exact_label,SPR
+172,172-Navarre.txt,172,172-Navarre.txt,exact_label,SPR
+173,173-Granada.txt,173,173-Granada.txt,exact_label,SPR
+174,174-Leon.txt,174,174-Leon.txt,exact_label,SPR
+175,175-Ciudad Real.txt,175,175-Ciudad Real.txt,exact_label,SPR
+176,176-Burgos.txt,176,176-Burgos.txt,exact_label,SPR
+177,177-Balearic Islands.txt,177,177-Balearic Islands.txt,exact_label,SPR
+178,178-Canary islands.txt,178,178-Canary islands.txt,exact_label,SPR
+179,179-Beja.txt,179,179-Beja.txt,exact_label,POR
+18,18-Champagne.txt,18,18-Champagne.txt,exact_label,FRA
+180,180-Porto.txt,180,180-Porto.txt,exact_label,POR
+181,181-Guarda.txt,181,181-Guarda.txt,exact_label,POR
+182,182-Crete.txt,182,182-Crete.txt,exact_label,GRE
+183,183-Cyprus.txt,183,183-Cyprus.txt,exact_label,ENG
+184,184-Thrace.txt,184,184-Thrace.txt,exact_label,GRE
+185,185-Epirus.txt,185,185-Epirus.txt,exact_label,GRE
+186,186-Peloponnese.txt,186,186-Peloponnese.txt,exact_label,GRE
+187,187-Aegean Islands.txt,187,187-Aegean Islands.txt,exact_label,GRE
+188,188-Memel.txt,188,188-Memel.txt,exact_label,EST
+189,189-Kaunas.txt,189,189-Kaunas.txt,stable_legacy_id,EST
+19,19-Aquitaine.txt,19,19-Aquitaine.txt,exact_label,FRA
+190,190-Kurzeme.txt,190,190-Kurzeme.txt,exact_label,EST
+191,191-Tartu.txt,191,191-Tartu.txt,exact_label,EST
+192,192-Odessa.txt,192,192-Odessa.txt,exact_label,UKR
+193,193-Kiev.txt,193,193-Kiev.txt,exact_label,UKR
+194,194-Pinsk Marches.txt,194,194-Pinsk Marches.txt,exact_label,SOV
+195,195-Leningrad Area.txt,195,195-Leningrad Area.txt,exact_label,SOV
+196,196-Kherson.txt,196,196-Kherson.txt,exact_label,UKR
+197,197-Mykolaiv.txt,197,197-Mykolaiv.txt,exact_label,UKR
+198,198-Vinnytsia.txt,198,198-Vinnytsia.txt,exact_label,UKR
+199,199-Khmelnytskyi.txt,199,199-Khmelnytskyi.txt,exact_label,UKR
+2,2-Italy.txt,2,2-Italy.txt,exact_label,ITA
+20,20-Franche-comte.txt,20,20-Franche-comte.txt,exact_label,FRA
+200,200-Rivne.txt,200,200-Rivne.txt,exact_label,UKR
+201,201-Zhytomyr.txt,201,201-Zhytomyr.txt,exact_label,UKR
+202,202-Western Kiev.txt,202,202-Western Kiev.txt,exact_label,UKR
+203,203-Cherkasy.txt,203,203-Cherkasy.txt,exact_label,UKR
+204,204-Brest.txt,204,204-Brest.txt,exact_label,SOV
+205,205-Hrodna.txt,205,205-Hrodna.txt,exact_label,SOV
+206,206-Minsk.txt,206,206-Minsk.txt,exact_label,SOV
+207,207-Viciebsk.txt,207,207-Viciebsk.txt,exact_label,SOV
+208,208-Pskov.txt,208,208-Pskov.txt,exact_label,SOV
+209,209-Smolensk.txt,209,209-Smolensk.txt,stable_legacy_id,SOV
+21,21-Bouches-du-Rhone.txt,21,21-Bouches-du-Rhone.txt,exact_label,FRA
+210,210-Bryansk.txt,210,210-Bryansk.txt,stable_legacy_id,SOV
+211,211-Burgas.txt,211,211-Burgas.txt,exact_label,BUL
+212,212-Plovdiv.txt,212,212-Plovdiv.txt,exact_label,BUL
+213,213-Murmansk.txt,213,213-Murmansk.txt,exact_label,SOV
+214,214-Arkhangelsk.txt,214,214-Arkhangelsk.txt,exact_label,SOV
+215,215-Eastern Karelia.txt,215,215-Eastern Karelia.txt,exact_label,SOV
+216,216-Below Zero.txt,216,216-Below Zero.txt,exact_label,SOV
+217,217-Stalingrad Area.txt,217,217-Stalingrad Area.txt,exact_label,SOV
+218,218-Rostov Area.txt,218,218-Rostov Area.txt,exact_label,UKR
+219,219-Moscow Area.txt,219,219-Moscow Area.txt,exact_label,SOV
+22,22-Roussillion.txt,22,22-Roussillion.txt,exact_label,FRA
+220,220-Kursk Area.txt,220,220-Kursk Area.txt,exact_label,SOV
+221,221-Kharkov.txt,221,221-Kharkov.txt,exact_label,UKR
+222,222-Orel.txt,222,222-Orel.txt,exact_label,SOV
+223,223-tula.txt,223,223-tula.txt,exact_label,SOV
+224,224-Bryansk.txt,224,224-Bryansk.txt,stable_legacy_id,SOV
+225,225-Glukhov.txt,225,225-Glukhov.txt,exact_label,UKR
+226,226-Nikopol.txt,226,226-Nikopol.txt,exact_label,UKR
+227,227-Stalino.txt,227,227-Stalino.txt,exact_label,UKR
+228,228-Taganrog.txt,228,228-Taganrog.txt,exact_label,UKR
+229,229-baku.txt,229,229-baku.txt,exact_label,GEO
+23,23-Poitou.txt,23,23-Poitou.txt,exact_label,FRA
+230,230-Armenia.txt,230,230-Armenia.txt,exact_label,GEO
+231,231-Georgia.txt,231,231-Georgia.txt,stable_legacy_id,GEO
+232,232-Grozny.txt,232,232-Grozny.txt,exact_label,SOV
+233,233-Caucasus Mountains.txt,233,233-Caucasus Mountains.txt,exact_label,SOV
+234,234-Krasodar.txt,234,234-Krasodar.txt,exact_label,SOV
+235,235-Stravropol.txt,235,235-Stravropol.txt,exact_label,SOV
+236,236-Astrakhan.txt,236,236-Astrakhan.txt,exact_label,SOV
+237,237-Elista.txt,237,237-Elista.txt,exact_label,SOV
+238,238-volgodonsk.txt,238,238-volgodonsk.txt,exact_label,SOV
+239,239-Saratov.txt,239,239-Saratov.txt,exact_label,SOV
+24,24-Centre.txt,24,24-Centre.txt,exact_label,FRA
+240,240-Voronezh.txt,240,240-Voronezh.txt,exact_label,SOV
+241,241-Pochep.txt,241,241-Pochep.txt,exact_label,SOV
+242,242-Smolensk.txt,242,242-Smolensk.txt,stable_legacy_id,SOV
+243,243-Roslavl.txt,243,243-Roslavl.txt,exact_label,SOV
+244,244-Gatchina.txt,244,244-Gatchina.txt,exact_label,SOV
+245,245-Donetsk.txt,245,245-Donetsk.txt,exact_label,SOV
+246,246-Rzhev.txt,246,246-Rzhev.txt,exact_label,SOV
+247,247-Tver.txt,247,247-Tver.txt,exact_label,SOV
+248,248-Yaroslavl.txt,248,248-Yaroslavl.txt,exact_label,SOV
+249,249-Kazan.txt,249,249-Kazan.txt,exact_label,SOV
+25,25-Limousin.txt,25,25-Limousin.txt,exact_label,FRA
+250,250-ulyanovsky.txt,250,250-ulyanovsky.txt,exact_label,SOV
+251,251-Samara.txt,251,251-Samara.txt,exact_label,SOV
+252,252-Nizhny Novogrod.txt,252,252-Nizhny Novogrod.txt,exact_label,SOV
+253,253-Ivanovo.txt,253,253-Ivanovo.txt,exact_label,SOV
+254,254-Ryazan.txt,254,254-Ryazan.txt,exact_label,SOV
+255,255-Penza.txt,255,255-Penza.txt,exact_label,SOV
+256,256-Cheboksary.txt,256,256-Cheboksary.txt,exact_label,SOV
+257,257-Livny.txt,257,257-Livny.txt,exact_label,SOV
+258,258-lipetsk.txt,258,258-lipetsk.txt,exact_label,SOV
+259,259-Liski.txt,259,259-Liski.txt,exact_label,UKR
+26,26-Bourgogne.txt,26,26-Bourgogne.txt,exact_label,FRA
+260,260-Borisoglbsk.txt,260,260-Borisoglbsk.txt,exact_label,SOV
+261,261-USA.txt,261,261-USA.txt,exact_label,USA
+262,262-Torzhok.txt,262,262-Torzhok.txt,exact_label,SOV
+263,263-Veliky Novogrod.txt,263,263-Veliky Novogrod.txt,exact_label,SOV
+264,264-Tikhvin.txt,264,264-Tikhvin.txt,exact_label,SOV
+265,265-Mikhaylovka.txt,265,265-Mikhaylovka.txt,exact_label,SOV
+266,266-Persia.txt,266,266-Persia.txt,exact_label,PER
+267,267-Afghanistan.txt,267,267-Afghanistan.txt,exact_label,PER
+268,268-French Somaliland.txt,268,268-French Somaliland.txt,exact_label,FRA
+269,269-British Somaliland.txt,269,269-British Somaliland.txt,exact_label,ENG
+27,27-Champagne2.txt,27,27-Champagne2.txt,exact_label,FRA
+270,270-Pitcarin Island.txt,270,270-Pitcarin Island.txt,exact_label,ENG
+271,271-ethiopia.txt,271,271-ethiopia.txt,exact_label,ETH
+272,272-French Africa.txt,272,272-French Africa.txt,exact_label,MLI
+273,273-Italian Africa.txt,273,273-Italian Africa.txt,exact_label,ITA
+274,274-British Africa.txt,274,274-British Africa.txt,exact_label,ENG
+275,275-South Africa.txt,275,275-South Africa.txt,exact_label,ENG
+276,276-Canada.txt,276,276-Canada.txt,exact_label,CAN
+277,277-Mexico.txt,277,277-Mexico.txt,exact_label,MEX
+278,278-Argentina.txt,278,278-Argentina.txt,exact_label,ARG
+279,279-Chile.txt,279,279-Chile.txt,exact_label,SPR
+28,28-Alcase.txt,28,28-Alcase.txt,exact_label,FRA
+280,280-Brazil.txt,280,280-Brazil.txt,exact_label,BRA
+281,281-India.txt,281,281-India.txt,exact_label,ENG
+282,282-Japan.txt,282,282-Japan.txt,exact_label,JAP
+283,283-China.txt,283,283-China.txt,exact_label,CHI
+284,284-New Zealand.txt,284,284-New Zealand.txt,exact_label,ENG
+285,285-Austraila.txt,285,285-Austraila.txt,exact_label,ENG
+286,286-Indochina.txt,286,286-Indochina.txt,exact_label,VIN
+287,287-Sinkiang.txt,287,287-Sinkiang.txt,exact_label,CHI
+288,288-Burma.txt,288,288-Magwe.txt,stable_legacy_id,RAJ
+289,289-Western Siam.txt,289,289-Western Siam.txt,exact_label,SIA
+29,29-Pas de Calais.txt,29,29-Pas de Calais.txt,exact_label,FRA
+290,290-Spanish Africa.txt,290,290-Spanish Africa.txt,exact_label,SPR
+291,291-Iraq.txt,291,291-Iraq.txt,exact_label,TUR
+292,292-Saudi Arabia.txt,292,292-Saudi Arabia.txt,exact_label,SAU
+293,293-Yemen.txt,293,293-Yemen.txt,exact_label,YEM
+294,294-Oman.txt,294,294-Oman.txt,exact_label,TUR
+295,295-Congo.txt,295,295-Congo.txt,exact_label,BEL
+296,296-Portugal Africa.txt,296,296-Portugal Africa.txt,exact_label,POR
+297,297-Belgian Africa.txt,297,297-Belgian Africa.txt,exact_label,SPR
+298,298-Liberia.txt,298,298-Liberia.txt,exact_label,ITA
+299,299-Falkand Islands.txt,299,299-Falkand Islands.txt,exact_label,ENG
+3,3-Swiss Plateau.txt,3,3-Swiss Plateau.txt,exact_label,SWI
+30,30-Loire.txt,30,30-Loire.txt,exact_label,FRA
+300,300-Uruguay.txt,300,300-Uruguay.txt,exact_label,SPR
+301,301-paraguay.txt,301,301-paraguay.txt,exact_label,SPR
+302,302-bolivia.txt,302,302-bolivia.txt,exact_label,SPR
+303,303-Peru.txt,303,303-Peru.txt,exact_label,PRU
+304,304-Panama.txt,304,304-Panama.txt,exact_label,SPR
+305,305-Ecuador.txt,305,305-Ecuador.txt,exact_label,SPR
+306,306-Colombia.txt,306,306-Colombia.txt,exact_label,SPR
+307,307-Venezuela.txt,307,307-Venezuela.txt,exact_label,SPR
+308,308-Britain SA.txt,308,308-Britain SA.txt,exact_label,ENG
+309,309-Dutch SA.txt,309,309-Dutch SA.txt,exact_label,HOL
+31,31-Midi Pyrenees.txt,31,31-Midi Pyrenees.txt,exact_label,FRA
+310,310-French SA.txt,310,310-French SA.txt,exact_label,FRA
+311,311-BritMex.txt,311,311-BritMex.txt,exact_label,ENG
+312,312-Honduras.txt,312,312-Honduras.txt,exact_label,SPR
+313,313-Guatemala.txt,313,313-Guatemala.txt,exact_label,SPR
+314,314-El Salvador.txt,314,314-El Salvador.txt,exact_label,SPR
+315,315-Cuba.txt,315,315-Cuba.txt,exact_label,SPR
+316,316-Costa Rica.txt,316,316-Costa Rica.txt,exact_label,SPR
+317,317-Nicaragua.txt,317,317-Nicaragua.txt,exact_label,SPR
+318,318-Haiti.txt,318,318-Haiti.txt,exact_label,SPR
+319,319-Dominican Republic.txt,319,319-Dominican Republic.txt,exact_label,SPR
+32,32-Rhone Alpes.txt,32,32-Rhone Alpes.txt,exact_label,FRA
+320,320-French India.txt,320,320-French India.txt,exact_label,FRA
+321,321-Goa.txt,321,321-Goa.txt,exact_label,POR
+322,322-Tibet.txt,322,322-Tibet.txt,exact_label,CHI
+323,323-Nepal.txt,323,323-Nepal.txt,exact_label,RAJ
+324,324-Bhutan.txt,324,324-Bhutan.txt,exact_label,RAJ
+325,325-Yunnan.txt,325,325-Yunnan.txt,exact_label,CHI
+326,326-HongKong.txt,326,326-HongKong.txt,exact_label,ENG
+327,327-Philippines.txt,327,327-Philippines.txt,exact_label,JAP
+328,328-Manchukuo.txt,328,328-Manchukuo.txt,exact_label,CHI
+329,329-Tannu Tuva.txt,329,329-Tannu Tuva.txt,exact_label,CHI
+33,33-Centre sud.txt,33,33-Centre sud.txt,exact_label,FRA
+330,330-Mongolia.txt,330,330-Mongolia.txt,exact_label,MON
+331,331-Newfoundland.txt,331,331-Newfoundland.txt,exact_label,ENG
+332,332-Labrador.txt,332,332-Labrador.txt,exact_label,ENG
+333,333-British Borneo.txt,333,333-British Borneo.txt,exact_label,JAP
+334,334-Dutch Borneo.txt,334,334-Kalimantan Barat.txt,stable_legacy_id,JAP
+335,335-West Java.txt,335,335-West Java.txt,exact_label,JAP
+336,336-Singapore.txt,336,336-Singapore.txt,exact_label,JAP
+337,337-Faroe Islands.txt,337,337-Faroe Islands.txt,exact_label,DEN
+338,338-Gloucestershire.txt,338,338-Gloucestershire.txt,exact_label,ENG
+339,339-Izmir.txt,339,339-Izmir.txt,exact_label,TUR
+34,34-Wallonie.txt,34,34-Wallonie.txt,exact_label,BEL
+340,340-Bursa.txt,340,340-Bursa.txt,exact_label,TUR
+341,341-Edirne.txt,341,341-Edirne.txt,exact_label,TUR
+342,342-Antalya.txt,342,342-Antalya.txt,exact_label,TUR
+343,343-Afyon.txt,343,343-Afyon.txt,exact_label,TUR
+344,344-Adana.txt,344,344-Adana.txt,exact_label,TUR
+345,345-Mersin.txt,345,345-Mersin.txt,exact_label,TUR
+346,346-Konya.txt,346,346-Konya.txt,exact_label,TUR
+347,347-Izmit.txt,347,347-Izmit.txt,exact_label,TUR
+348,348-Kayseri.txt,348,348-Kayseri.txt,exact_label,TUR
+349,349-Silvas.txt,349,349-Silvas.txt,exact_label,TUR
+35,35-Gelderland.txt,35,35-Gelderland.txt,exact_label,HOL
+350,350-Diyarbekir.txt,350,350-Diyarbekir.txt,exact_label,TUR
+351,351-Vologda.txt,351,351-Vologda.txt,exact_label,SOV
+352,352-Hakkari.txt,352,352-Hakkari.txt,exact_label,TUR
+353,353-Erzurum.txt,353,353-Erzurum.txt,exact_label,TUR
+354,354-Trabzon.txt,354,354-Trabzon.txt,exact_label,TUR
+355,355-Samsun.txt,355,355-Samsun.txt,exact_label,TUR
+356,356-Sinop.txt,356,356-Sinop.txt,exact_label,TUR
+357,357-New England.txt,357,357-New England.txt,exact_label,QUE
+358,358-New York.txt,358,358-New York.txt,exact_label,CSA
+359,359-New Jersey.txt,359,359-New Jersey.txt,exact_label,CSA
+36,36-Friesland.txt,36,36-Friesland.txt,exact_label,HOL
+360,360-Pennsylvania.txt,360,360-Pennsylvania.txt,exact_label,CSA
+361,361-Maryland.txt,361,361-Maryland.txt,exact_label,CSA
+362,362-Virginia.txt,362,362-Virginia.txt,exact_label,CSA
+363,363-North Carolina.txt,363,363-North Carolina.txt,exact_label,CSA
+364,364-South Carolina.txt,364,364-South Carolina.txt,exact_label,CSA
+365,365-Georgia.txt,365,365-Georgia.txt,stable_legacy_id,CSA
+366,366-Florida.txt,366,366-Florida.txt,exact_label,USA
+367,367-Alabama.txt,367,367-Alabama.txt,exact_label,HAI
+368,368-Tennesse.txt,368,368-Tennesse.txt,exact_label,HAI
+369,369-Kentucky.txt,369,369-Kentucky.txt,exact_label,HAI
+37,37-Denmark.txt,37,37-Denmark.txt,exact_label,DEN
+370,370-Mississippi.txt,370,370-Mississippi.txt,exact_label,HAI
+371,371-Louisiana.txt,371,371-Louisiana.txt,exact_label,HAI
+372,372-Arkansas.txt,372,372-Arkansas.txt,exact_label,HAI
+373,373-Missouri.txt,373,373-Missouri.txt,exact_label,HAI
+374,374-Oklahoma.txt,374,374-Oklahoma.txt,exact_label,HAI
+375,375-Texas.txt,375,375-Texas.txt,exact_label,USA
+376,376-New Mexico.txt,376,376-New Mexico.txt,exact_label,USA
+377,377-Arizona.txt,377,377-Arizona.txt,exact_label,USA
+378,378-California.txt,378,378-California.txt,exact_label,USA
+379,379-Nevada.txt,379,379-Nevada.txt,exact_label,USA
+38,38-Sweden.txt,38,38-Sweden.txt,exact_label,SWE
+380,380-Utah.txt,380,380-Utah.txt,exact_label,USA
+381,381-Wyoming.txt,381,381-Wyoming.txt,exact_label,USA
+382,382-Colorado.txt,382,382-Colorado.txt,exact_label,USA
+383,383-Kansas.txt,383,383-Kansas.txt,exact_label,USA
+384,384-Nebraska.txt,384,384-Nebraska.txt,exact_label,USA
+385,385-Oregon.txt,385,385-Oregon.txt,exact_label,USA
+386,386-Washington.txt,386,386-Washington.txt,exact_label,USA
+387,387-Idaho.txt,387,387-Idaho.txt,exact_label,USA
+388,388-Montana.txt,388,388-Montana.txt,exact_label,USA
+389,389-North Dakota.txt,389,389-North Dakota.txt,exact_label,USA
+39,39-South Tyrol.txt,39,39-South Tyrol.txt,exact_label,ITA
+390,390-South Dakota.txt,390,390-South Dakota.txt,exact_label,USA
+391,391-Minnesota.txt,391,391-Minnesota.txt,exact_label,USA
+392,392-Iowa.txt,392,392-Iowa.txt,exact_label,USA
+393,393-Michigan.txt,393,393-Michigan.txt,exact_label,USA
+394,394-Wisconsin.txt,394,394-Wisconsin.txt,exact_label,USA
+395,395-Illinois.txt,395,395-Illinois.txt,exact_label,USA
+396,396-Indiana.txt,396,396-Indiana.txt,exact_label,USA
+397,397-Syktyvkar.txt,397,397-Syktyvkar.txt,exact_label,SOV
+398,398-Perm.txt,398,398-Perm.txt,exact_label,SOV
+399,399-Izhevsk.txt,399,399-Izhevsk.txt,exact_label,SOV
+4,4-Austria.txt,4,4-Austria.txt,exact_label,AUS
+40,40-USSR.txt,40,40-USSR.txt,exact_label,SOV
+400,400-Kirov.txt,400,400-Kirov.txt,exact_label,SOV
+401,401-Engels.txt,401,401-Engels.txt,exact_label,SOV
+402,402-Akhtubinsk.txt,402,402-Akhtubinsk.txt,exact_label,KAZ
+403,403-Kharabali.txt,403,403-Kharabali.txt,exact_label,SOV
+404,404-Saykhin.txt,404,404-Saykhin.txt,exact_label,KAZ
+405,405-Atyrau.txt,405,405-Atyrau.txt,exact_label,KAZ
+406,406-Krasnyy Yar.txt,406,406-Krasnyy Yar.txt,exact_label,KAZ
+407,407-Uralsk.txt,407,407-Uralsk.txt,exact_label,KAZ
+408,408-Vladivostok.txt,408,408-Vladivostok.txt,exact_label,SOV
+409,409-Khabarovsk.txt,409,409-Khabarovsk.txt,exact_label,SOV
+41,41-Madrid.txt,41,41-Madrid.txt,exact_label,SPR
+410,410-Sistan.txt,410,410-Sistan.txt,exact_label,PER
+411,411-Hormozgan.txt,411,411-Hormozgan.txt,exact_label,PER
+412,412-Fars.txt,412,412-Fars.txt,exact_label,PER
+413,413-Khuzestan.txt,413,413-Khuzestan.txt,exact_label,PER
+414,414-Kerman.txt,414,414-Kerman.txt,exact_label,PER
+415,415-South Khorasan.txt,415,415-South Khorasan.txt,stable_legacy_id,PER
+416,416-Razavi Khorasan.txt,416,416-Razavi Khorasan.txt,exact_label,PER
+417,417-Golestan.txt,417,417-Golestan.txt,exact_label,PER
+418,418-Semnan.txt,418,418-Semnan.txt,exact_label,PER
+419,419-Azerbaijan.txt,419,419-Azerbaijan.txt,exact_label,PER
+42,42-Rhineland.txt,42,42-Rhineland.txt,exact_label,GER
+420,420-Gilan.txt,420,420-Gilan.txt,exact_label,PER
+421,421-Kurdistan.txt,421,421-Kurdistan.txt,stable_legacy_id,PER
+422,422-Ceylon.txt,422,422-Ceylon.txt,exact_label,ENG
+423,423-Tamil.txt,423,423-Madras.txt,stable_legacy_id,RAJ
+424,424-Andra Pradesh.txt,424,424-Andra Pradesh.txt,exact_label,RAJ
+425,425-Karnataka.txt,425,425-Mysore.txt,stable_legacy_id,RAJ
+426,426-Odisha.txt,426,426-Orissa.txt,stable_legacy_id,RAJ
+427,427-Hydrabad.txt,427,427-Hyderabad.txt,stable_legacy_id,RAJ
+428,428-Gujarat.txt,428,428-Western Indian States.txt,stable_legacy_id,RAJ
+429,429-Mumbai.txt,429,429-Bombay.txt,stable_legacy_id,RAJ
+43,43-Hungary.txt,43,43-Hungary.txt,exact_label,AUS
+430,430-Bangladesh.txt,430,430-Bangladesh.txt,exact_label,RAJ
+431,431-Calcutta.txt,431,431-Calcutta.txt,exact_label,RAJ
+432,432-Assam.txt,432,432-Assam.txt,exact_label,RAJ
+433,433-Manipur.txt,990,990-Manipur.txt,exact_label,RAJ
+434,434-Arunachal Pradesh.txt,434,434-Arunachal Pradesh.txt,exact_label,RAJ
+435,435-Bihar.txt,435,435-Bihar.txt,exact_label,RAJ
+436,436-Jharkhand.txt,436,436-Central Provinces.txt,stable_legacy_id,RAJ
+437,437-Madhya Pradesh.txt,437,437-Central Indian Provinces.txt,stable_legacy_id,RAJ
+438,438-Lucknow.txt,438,438-United Provinces.txt,stable_legacy_id,RAJ
+439,439-Delhi.txt,439,439-Delhi.txt,exact_label,RAJ
+44,44-Albania.txt,44,44-Albania.txt,exact_label,BUL
+440,440-Punjab.txt,440,440-West Punjab.txt,stable_legacy_id,RAJ
+441,441-Kashmir.txt,441,441-Kashmir.txt,exact_label,RAJ
+442,442-Peshawar.txt,442,442-Peshawar.txt,exact_label,RAJ
+443,443-Hyderabad.txt,427,427-Hyderabad.txt,exact_label,RAJ
+444,444-Karachi.txt,444,444-Baluchistan States.txt,stable_legacy_id,RAJ
+445,445-Hindu Kush.txt,445,445-Quetta.txt,stable_legacy_id,RAJ
+446,446-East Java.txt,1051,1051-East Java.txt,exact_label,JAP
+447,447-Alexandria.txt,447,447-Alexandria.txt,exact_label,EGY
+448,448-Tripoli.txt,448,448-Tripoli.txt,exact_label,ITA
+449,449-Libyan Coast.txt,449,449-Libyan Coast.txt,exact_label,ITA
+45,45-Yugoslavia.txt,45,45-Yugoslavia.txt,exact_label,YUG
+450,450-Benghasi.txt,450,450-Benghasi.txt,exact_label,ITA
+451,451-Derna.txt,451,451-Derna.txt,exact_label,ITA
+452,452-Marsa Matruh.txt,452,452-Marsa Matruh.txt,exact_label,EGY
+453,453-Sinai.txt,453,453-Sinai.txt,exact_label,EGY
+454,454-Israel.txt,454,454-Israel.txt,exact_label,TUR
+455,455-Jordan.txt,455,455-Jordan.txt,exact_label,TUR
+456,456-Luxor.txt,456,456-Luxor.txt,exact_label,EGY
+457,457-Aswan.txt,457,457-Aswan.txt,exact_label,EGY
+458,458-Tunisia.txt,458,458-Tunisia.txt,exact_label,FRA
+459,459-Western Algeria.txt,459,459-Western Algeria.txt,exact_label,FRA
+46,46-Romania.txt,46,46-Romania.txt,exact_label,ROM
+460,460-Eastern Algeria.txt,460,460-Eastern Algeria.txt,exact_label,FRA
+461,461-Northern Morocco.txt,461,461-Northern Morocco.txt,exact_label,FRA
+462,462-Southern Morocco.txt,462,462-Southern Morocco.txt,exact_label,FRA
+463,463-Alaska.txt,463,463-Alaska.txt,exact_label,USA
+464,464-Nova Scotia.txt,464,464-Nova Scotia.txt,exact_label,CAN
+465,465-New Brunswick.txt,465,465-New Brunswick.txt,exact_label,CAN
+466,466-Quebec.txt,466,466-Quebec.txt,exact_label,CAN
+467,467-Manitoba.txt,467,467-Manitoba.txt,exact_label,CAN
+468,468-Nunavut.txt,468,468-Nunavut.txt,exact_label,CAN
+469,469-Saskatchewan.txt,469,469-Saskatchewan.txt,exact_label,CAN
+47,47-Greece.txt,47,47-Greece.txt,exact_label,GRE
+470,470-Alberta.txt,470,470-Alberta.txt,exact_label,CAN
+471,471-Northwestern Canada.txt,471,471-Northwestern Canada.txt,exact_label,CAN
+472,472-Northwest Territories.txt,472,472-Northwest Territories.txt,exact_label,CAN
+473,473-British Columbia.txt,473,473-British Columbia.txt,exact_label,CAN
+474,474-Yucatan.txt,474,474-Yucatan.txt,exact_label,MEX
+475,475-Chiapas.txt,475,475-Chiapas.txt,exact_label,MEX
+476,476-Oaxaca.txt,476,476-Oaxaca.txt,exact_label,MEX
+477,477-Veracruz.txt,477,477-Veracruz.txt,exact_label,MEX
+478,478-Nayarit.txt,478,478-Nayarit.txt,exact_label,MEX
+479,479-Tamaulipas.txt,479,479-Tamaulipas.txt,exact_label,MEX
+48,48-Bulgaria.txt,48,48-Bulgaria.txt,exact_label,BUL
+480,480-Coahuila.txt,480,480-Coahuila.txt,exact_label,MEX
+481,481-Sinaloa.txt,481,481-Sinaloa.txt,exact_label,MEX
+482,482-Chihuahua.txt,482,482-Chihuahua.txt,exact_label,MEX
+483,483-Sonora.txt,483,483-Sonora.txt,exact_label,MEX
+484,484-Baja California.txt,484,484-Baja California.txt,exact_label,MEX
+485,485-Guerrero.txt,485,485-Guerrero.txt,exact_label,MEX
+486,486-Meta.txt,486,486-Meta.txt,exact_label,SPR
+487,487-Amazinas.txt,487,487-Amazinas.txt,exact_label,SPR
+488,488-Bolivar.txt,488,488-Bolivar.txt,exact_label,SPR
+489,489-Monagas.txt,489,489-Monagas.txt,exact_label,SPR
+49,49-Turkey.txt,49,49-Turkey.txt,exact_label,TUR
+490,490-Pastaza.txt,490,490-Pastaza.txt,exact_label,PRU
+491,491-Loreto.txt,491,491-Loreto.txt,exact_label,PRU
+492,492-Piura.txt,492,492-Piura.txt,exact_label,PRU
+493,493-La Libertad.txt,493,493-La Libertad.txt,exact_label,SPR
+494,494-Ucayali.txt,494,494-Ucayali.txt,exact_label,PRU
+495,495-Amazonas.txt,495,495-Amazonas.txt,exact_label,BRA
+496,496-Minas Gerais.txt,496,496-Para.txt,stable_legacy_id,BRA
+497,497-Para.txt,497,497-Maranhao.txt,stable_legacy_id,BRA
+498,498-Rio Grande.txt,498,498-Rio Grande.txt,exact_label,BRA
+499,499-Bahia.txt,499,499-Bahia.txt,exact_label,BRA
+5,5-Germany.txt,5,5-Germany.txt,exact_label,GER
+50,50-Baden.txt,50,50-Baden.txt,exact_label,GER
+500,500-Rio de Janerio.txt,500,500-Rio de Janerio.txt,exact_label,BRA
+501,501-Saol Paulo.txt,501,501-Saol Paulo.txt,exact_label,BRA
+502,502-Rio Grande Sul.txt,502,502-Rio Grande Sul.txt,exact_label,BRA
+503,503-Santa Catarina.txt,503,503-Santa Catarina.txt,exact_label,BRA
+504,504-Iguacu.txt,504,504-Iguacu.txt,exact_label,BRA
+505,505-Goias.txt,505,505-Goias.txt,exact_label,BRA
+506,506-Northern Chile.txt,506,506-Northern Chile.txt,exact_label,SPR
+507,507-Southern Chile.txt,507,507-Southern Chile.txt,exact_label,SPR
+508,508-Argentine Northwest.txt,508,508-Argentine Northwest.txt,exact_label,ARG
+509,509-Gran Chaco.txt,509,509-Gran Chaco.txt,exact_label,ARG
+51,51-Moselland.txt,51,51-Moselland.txt,exact_label,GER
+510,510-Mesopotamia.txt,510,510-Mesopotamia.txt,exact_label,ARG
+511,511-Cuyo.txt,511,511-Cuyo.txt,exact_label,ARG
+512,512-Patagonia.txt,512,512-Patagonia.txt,exact_label,ARG
+513,513-Southern Algeria.txt,513,513-Southern Algeria.txt,exact_label,FRA
+514,514-North Africa.txt,514,514-North Africa.txt,exact_label,FRA
+515,515-Central Africa.txt,515,515-Central Africa.txt,exact_label,FRA
+516,516-Northern Siberia.txt,516,516-Northern Siberia.txt,exact_label,SOV
+517,517-Victoria.txt,517,517-Victoria.txt,exact_label,ENG
+518,518-Tasmania.txt,518,518-Tasmania.txt,exact_label,ENG
+519,519-South Australia.txt,519,519-South Australia.txt,exact_label,ENG
+52,52-Wuttemberg.txt,52,52-Wuttemberg.txt,exact_label,GER
+520,520-Northern Territory.txt,520,520-Northern Territory.txt,exact_label,ENG
+521,521-Queensland.txt,521,521-Queensland.txt,exact_label,ENG
+522,522-Western Australia.txt,522,522-Western Australia.txt,exact_label,ENG
+523,523-New Guinea.txt,523,523-New Guinea.txt,exact_label,ENG
+524,524-Taiwan.txt,524,524-Taiwan.txt,exact_label,JAP
+525,525-South Korea.txt,525,525-South Korea.txt,exact_label,JAP
+526,526-Okinawa.txt,526,526-Okinawa.txt,exact_label,JAP
+527,527-North Korea.txt,527,527-North Korea.txt,exact_label,JAP
+528,528-Nagasaki.txt,528,528-Nagasaki.txt,exact_label,JAP
+529,529-Hiroshima.txt,529,529-Hiroshima.txt,exact_label,JAP
+53,53-Oberbayern.txt,53,53-Oberbayern.txt,exact_label,GER
+530,530-Tokushima.txt,530,530-Tokushima.txt,exact_label,JAP
+531,531-Osaka.txt,531,531-Osaka.txt,exact_label,JAP
+532,532-Nagoya.txt,532,532-Nagoya.txt,exact_label,JAP
+533,533-Akita.txt,533,533-Akita.txt,exact_label,JAP
+534,534-Niigata.txt,534,534-Niigata.txt,exact_label,JAP
+535,535-Nagano.txt,535,535-Nagano.txt,exact_label,JAP
+536,536-Hokkaido.txt,536,536-Hokkaido.txt,exact_label,JAP
+537,537-South Sakhalin.txt,537,537-South Sakhalin.txt,exact_label,JAP
+538,538-Cameroun.txt,538,538-Cameroun.txt,exact_label,BEL
+539,539-Gabon.txt,539,539-Gabon.txt,exact_label,FRA
+54,54-Bayreuth.txt,54,54-Bayreuth.txt,exact_label,GER
+540,540-Angola.txt,540,540-Angola.txt,exact_label,POR
+541,541-South West Africa.txt,541,541-South West Africa.txt,exact_label,ENG
+542,542-Bechuana Land.txt,542,542-Bechuana Land.txt,exact_label,ENG
+543,543-Madagascar.txt,543,543-Madagascar.txt,exact_label,FRA
+544,544-East Africa.txt,544,544-East Africa.txt,stable_legacy_id,POR
+545,545-Rhodessa.txt,545,545-Rhodessa.txt,exact_label,ENG
+546,546-Tanganyika.txt,546,546-Tanganyika.txt,exact_label,ENG
+547,547-East Africa.txt,547,547-East Africa.txt,stable_legacy_id,ENG
+548,548-Uganda.txt,548,548-Uganda.txt,exact_label,ENG
+549,549-Sudan.txt,549,549-Sudan.txt,exact_label,ENG
+55,55-Nassau.txt,55,55-Nassau.txt,exact_label,GER
+550,550-Eritrea.txt,550,550-Eritrea.txt,exact_label,ITA
+551,551-Khartoum.txt,551,551-Khartoum.txt,exact_label,ENG
+552,552-Western Egypt.txt,552,552-Western Egypt.txt,exact_label,EGY
+553,553-Lebanon.txt,553,553-Lebanon.txt,exact_label,TUR
+554,554-Syria.txt,554,554-Syria.txt,exact_label,TUR
+555,555-Lagos.txt,555,555-Lagos.txt,exact_label,JAP
+556,556-Mali.txt,556,556-Mali.txt,exact_label,MLI
+557,557-Mauritania.txt,557,557-Mauritania.txt,exact_label,MLI
+558,558-Nigeria.txt,558,558-Nigeria.txt,exact_label,ENG
+559,559-Somaliland.txt,559,559-Somaliland.txt,exact_label,ITA
+56,56-Weser-Ems.txt,56,56-Weser-Ems.txt,exact_label,GER
+560,560-TS 2.txt,560,560-TS 2.txt,exact_label,SOV
+561,561-TS 3.txt,561,561-TS 3.txt,exact_label,SOV
+562,562-TS 4.txt,562,562-TS 4.txt,exact_label,SOV
+563,563-TS 5.txt,563,563-TS 5.txt,exact_label,SOV
+564,564-TS 6.txt,564,564-TS 6.txt,exact_label,SOV
+565,565-TS 7.txt,565,565-TS 7.txt,exact_label,SOV
+566,566-TS 8.txt,566,566-TS 8.txt,exact_label,SOV
+567,567-TS 9.txt,567,567-TS 9.txt,exact_label,SOV
+568,568-TS 10.txt,568,568-TS 10.txt,exact_label,SOV
+569,569-TS 11.txt,569,569-TS 11.txt,exact_label,SOV
+57,57-Westfalen.txt,57,57-Westfalen.txt,exact_label,GER
+570,570-TS 12.txt,570,570-TS 12.txt,exact_label,SOV
+571,571-TS 13.txt,571,571-TS 13.txt,exact_label,SOV
+572,572-TS 14.txt,572,572-TS 14.txt,exact_label,SOV
+573,573-Ts 15.txt,573,573-Ts 15.txt,exact_label,SOV
+574,574-Siberia 1.txt,574,574-Siberia 1.txt,exact_label,SOV
+575,575-Siberia 2.txt,575,575-Siberia 2.txt,exact_label,SOV
+576,576-Siberia 3.txt,576,576-Siberia 3.txt,exact_label,SOV
+577,577-Siberia 4.txt,577,577-Siberia 4.txt,exact_label,SOV
+578,578-Siberia 5.txt,578,578-Siberia 5.txt,exact_label,SOV
+579,579-Siberia 6.txt,579,579-Siberia 6.txt,exact_label,SOV
+58,58-Schleswig - Holstein.txt,58,58-Schleswig - Holstein.txt,exact_label,GER
+580,580-Siberia 7.txt,580,580-Siberia 7.txt,exact_label,SOV
+581,581-Northern Urals.txt,581,581-Northern Urals.txt,exact_label,SOV
+582,582-Sourthern Urals.txt,582,582-Sourthern Urals.txt,exact_label,SOV
+583,583-Kazakhstan.txt,583,583-Kazakhstan.txt,exact_label,KAZ
+584,584-Turkmenistan.txt,584,584-Turkmenistan.txt,exact_label,KAZ
+585,585-Uzbekistan.txt,585,585-Uzbekistan.txt,exact_label,KAZ
+586,586-Kyrgyzstan.txt,586,586-Kyrgyzstan.txt,exact_label,KAZ
+587,587-Western Kazakstan.txt,587,587-Western Kazakstan.txt,exact_label,KAZ
+588,588-Some Mountains.txt,588,588-Some Mountains.txt,exact_label,KAZ
+589,589-Eastern Kazakhstan.txt,589,589-Eastern Kazakhstan.txt,exact_label,KAZ
+59,59-Ost - Hannover.txt,59,59-Ost - Hannover.txt,exact_label,GER
+590,590-Northern Kazakhstan.txt,590,590-Northern Kazakhstan.txt,exact_label,KAZ
+591,591-Hainan.txt,591,591-Hainan.txt,exact_label,CHI
+592,592-Guangzhou.txt,592,592-Guangzhou.txt,exact_label,CHI
+593,593-Guangdong.txt,593,593-Guangdong.txt,exact_label,CHI
+594,594-Nanning.txt,594,594-Nanning.txt,exact_label,CHI
+595,595-Fujian.txt,595,595-Fujian.txt,exact_label,CHI
+596,596-Zhejiang.txt,596,596-Zhejiang.txt,exact_label,CHI
+597,597-Shandong.txt,597,597-Shandong.txt,exact_label,CHI
+598,598-Jiansu.txt,598,598-Jiansu.txt,exact_label,CHI
+599,599-Guanxi.txt,599,599-Guanxi.txt,exact_label,CHI
+6,6-Belgium.txt,6,6-Belgium.txt,exact_label,BEL
+60,60-Sud-Hannover.txt,60,60-Sud-Hannover.txt,exact_label,GER
+600,600-Jiangxi.txt,600,600-Jiangxi.txt,exact_label,CHI
+601,601-China 1.txt,601,601-China 1.txt,exact_label,CHI
+602,602-China 2.txt,602,602-China 2.txt,exact_label,CHI
+603,603-China 3.txt,603,603-China 3.txt,exact_label,CHI
+604,604-China 4.txt,604,604-China 4.txt,exact_label,CHI
+605,605-China 5.txt,605,605-China 5.txt,exact_label,CHI
+606,606-China 6.txt,606,606-China 6.txt,exact_label,CHI
+607,607-China 7.txt,607,607-China 7.txt,exact_label,CHI
+608,608-Beijing.txt,608,608-Beijing.txt,exact_label,CHI
+609,609-China 8.txt,609,609-China 8.txt,exact_label,JAP
+61,61-Mecklenburg.txt,61,61-Mecklenburg.txt,exact_label,GER
+610,610-China 9.txt,610,610-China 9.txt,exact_label,MAN
+611,611-China 10.txt,611,611-China 10.txt,exact_label,CHI
+612,612-China 11.txt,612,612-China 11.txt,exact_label,CHI
+613,613-China 12.txt,613,613-China 12.txt,exact_label,CHI
+614,614-China 13.txt,614,614-China 13.txt,exact_label,CHI
+615,615-Shanxi.txt,615,615-Shanxi.txt,exact_label,CHI
+616,616-China 14.txt,616,616-China 14.txt,exact_label,CHI
+617,617-Xinjiang.txt,617,617-Xinjiang.txt,exact_label,CHI
+618,618-China 15.txt,618,618-China 15.txt,exact_label,CHI
+619,619-China 16.txt,619,619-China 16.txt,exact_label,CHI
+62,62-Pommern.txt,62,62-Pommern.txt,exact_label,GER
+620,620-China 17.txt,620,620-China 17.txt,exact_label,CHI
+621,621-China 18.txt,621,621-China 18.txt,exact_label,CHI
+622,622-China 19.txt,622,622-China 19.txt,exact_label,CHI
+623,623-Luzon.txt,623,623-Luzon.txt,exact_label,JAP
+624,624-Central islands.txt,624,624-Central islands.txt,exact_label,JAP
+625,625-Samar.txt,625,625-Samar.txt,exact_label,JAP
+626,626-Palawan.txt,626,626-Palawan.txt,exact_label,JAP
+627,627-Mindanao.txt,627,627-Mindanao.txt,exact_label,JAP
+628,628-Cebu.txt,628,628-Cebu.txt,exact_label,JAP
+629,629-Hawaii.txt,629,629-Hawaii.txt,exact_label,USA
+63,63-WestPrussen.txt,63,63-WestPrussen.txt,exact_label,GER
+630,630-Johnston Atoll.txt,630,630-Johnston Atoll.txt,exact_label,USA
+631,631-Midway Island.txt,631,631-Midway Island.txt,exact_label,USA
+632,632-Wake Island.txt,632,632-Wake Island.txt,exact_label,USA
+633,633-Marshall Islands.txt,633,633-Marshall Islands.txt,exact_label,JAP
+634,634-Solomon Islands.txt,634,634-Solomon Islands.txt,exact_label,ENG
+635,635-New Caledonia.txt,635,635-New Caledonia.txt,exact_label,FRA
+636,636-Fiji.txt,636,636-Fiji.txt,exact_label,ENG
+637,637-State 1.txt,637,637-State 1.txt,exact_label,SOV
+638,638-Guam.txt,638,638-Guam.txt,exact_label,USA
+639,639-Maiana.txt,639,639-Maiana.txt,exact_label,ENG
+64,64-Brandenburg.txt,64,64-Brandenburg.txt,exact_label,GER
+640,640-Stae 2.txt,640,640-Mandalay.txt,stable_legacy_id,RAJ
+641,641-Tahiti.txt,641,641-Tahiti.txt,exact_label,FRA
+642,642-Phoenix Island.txt,642,642-Phoenix Island.txt,exact_label,USA
+643,643-Fongafale.txt,643,643-Fongafale.txt,exact_label,ENG
+644,644-state 3.txt,644,644-state 3.txt,exact_label,SOV
+645,645-Iwo Jima.txt,645,645-Iwo Jima.txt,exact_label,JAP
+646,646-Saipan.txt,646,646-Saipan.txt,exact_label,JAP
+647,647-Palau.txt,647,647-Palau.txt,exact_label,JAP
+648,648-Marcus Island.txt,648,648-Marcus Island.txt,exact_label,JAP
+649,649-Galapagos Islands.txt,649,649-Galapagos Islands.txt,exact_label,SPR
+65,65-Sachsen.txt,65,65-Sachsen.txt,exact_label,GER
+650,650-Attu Island.txt,650,650-Attu Island.txt,exact_label,USA
+651,651-Sov state 5.txt,651,651-Sov state 5.txt,exact_label,SOV
+652,652-Sov state 6.txt,652,652-Sov state 6.txt,exact_label,SOV
+653,653-Sov state 7.txt,653,653-Sov state 7.txt,exact_label,SOV
+654,654-sov state 8.txt,654,654-sov state 8.txt,exact_label,SOV
+655,655-North Sakhalin.txt,655,655-North Sakhalin.txt,exact_label,SOV
+656,656-Kuwait.txt,656,656-Kuwait.txt,exact_label,TUR
+657,657-Border state.txt,657,657-Border state.txt,exact_label,SOV
+658,658-Arab UK 1.txt,658,658-Arab UK 1.txt,exact_label,ENG
+659,659-Arabian UK 2.txt,659,659-Arabian UK 2.txt,exact_label,ENG
+66,66-Niederschlesien.txt,66,66-Niederschlesien.txt,exact_label,GER
+660,660-Equatorial Africa.txt,660,660-Equatorial Africa.txt,exact_label,FRA
+661,661-Tripolitania.txt,661,661-Tripolitania.txt,exact_label,ITA
+662,662-Sirte.txt,662,662-Sirte.txt,exact_label,ITA
+663,663-Cyrenaica.txt,663,663-Cyrenaica.txt,exact_label,ITA
+664,664-Southern Slovakia.txt,664,664-Southern Slovakia.txt,exact_label,AUS
+665,665-Gabes.txt,665,665-Gabes.txt,exact_label,FRA
+666,666-Norrnorrland.txt,666,666-Norrnorrland.txt,exact_label,SWE
+667,667-West Nusa Tenggara.txt,667,667-West Nusa Tenggara.txt,exact_label,JAP
+668,668-The Moluccas.txt,668,668-The Moluccas.txt,exact_label,JAP
+669,669-Dutch New Guinea.txt,669,669-Dutch New Guinea.txt,exact_label,JAP
+67,67-Oberschlesien.txt,67,67-Oberschlesien.txt,exact_label,GER
+670,670-Laos.txt,670,670-Laos.txt,exact_label,VIN
+671,671-Annam.txt,671,671-Annam.txt,exact_label,VIN
+672,672-South Sumatra.txt,672,672-South Sumatra.txt,exact_label,JAP
+673,673-Sulawesi.txt,673,673-Sulawesi.txt,exact_label,JAP
+674,674-Central Australia.txt,674,674-Central Australia.txt,exact_label,ENG
+675,675-Al Hajara.txt,675,675-Al Hajara.txt,exact_label,TUR
+676,676-Mosul.txt,676,676-Mosul.txt,exact_label,TUR
+677,677-Aleppo.txt,677,677-Aleppo.txt,exact_label,TUR
+678,678-Rub al Khali.txt,678,678-Rub al Khali.txt,exact_label,TUR
+679,679-Hejaz.txt,679,679-Hejaz.txt,exact_label,OMA
+68,68-Wartheland.txt,68,68-Wartheland.txt,exact_label,GER
+680,680-Deir-az-Zur.txt,680,680-Deir-az-Zur.txt,exact_label,TUR
+681,681-Soviet Lakes.txt,681,681-Soviet Lakes.txt,exact_label,ENG
+682,682-Northern Ontario.txt,682,682-Northern Ontario.txt,exact_label,CAN
+683,683-Northeastern Canada.txt,683,683-Northeastern Canada.txt,exact_label,CAN
+684,684-Caroline Islands.txt,684,684-Caroline Islands.txt,exact_label,JAP
+685,685-Panama Canal.txt,685,685-Panama Canal.txt,exact_label,USA
+686,686-Puerto Rico.txt,686,686-Puerto Rico.txt,exact_label,USA
+687,687-British Guyana.txt,687,687-British Guyana.txt,exact_label,ENG
+688,688-Chaco Boreal.txt,688,688-Chaco Boreal.txt,exact_label,SPR
+689,689-Jamaica.txt,689,689-Jamaica.txt,exact_label,ENG
+69,69-Sudatenland.txt,69,69-Sudatenland.txt,exact_label,AUS
+690,690-Bahama Islands.txt,690,690-Bahama Islands.txt,exact_label,ENG
+691,691-Trinidad.txt,691,691-Trinidad.txt,exact_label,ENG
+692,692-Windward Islands.txt,692,692-Windward Islands.txt,exact_label,ENG
+693,693-Southern Bahamas.txt,693,693-Southern Bahamas.txt,exact_label,ENG
+694,694-French Caribbean.txt,694,694-French Caribbean.txt,exact_label,FRA
+695,695-Curacao.txt,695,695-Curacao.txt,exact_label,HOL
+696,696-Bermuda.txt,696,696-Bermuda.txt,exact_label,ENG
+697,697-Madeira.txt,697,697-Madeira.txt,exact_label,POR
+698,698-Azores.txt,698,698-Azores.txt,exact_label,POR
+699,699-Rio de Oro.txt,699,699-Rio de Oro.txt,exact_label,SPR
+7,7-Holland.txt,7,7-Holland.txt,exact_label,HOL
+70,70-Slovakia.txt,70,70-Slovakia.txt,exact_label,AUS
+700,700-Sierra Leone.txt,700,700-Sierra Leone.txt,exact_label,ENG
+701,701-Gambia.txt,701,701-Gambia.txt,exact_label,ENG
+702,702-Cape Verde.txt,702,702-Cape Verde.txt,exact_label,POR
+703,703-Ascension.txt,703,703-Ascension.txt,exact_label,ENG
+704,704-Saint Helena.txt,704,704-Saint Helena.txt,exact_label,ENG
+705,705-Sao Tome.txt,705,705-Sao Tome.txt,exact_label,POR
+706,706-Reunion.txt,706,706-Reunion.txt,exact_label,FRA
+707,707-Mauritius.txt,707,707-Mauritius.txt,exact_label,ENG
+708,708-Comoro Islands.txt,708,708-Comoro Islands.txt,exact_label,FRA
+709,709-Seychelles.txt,709,709-Seychelles.txt,exact_label,ENG
+71,71-East Slovakia.txt,71,71-East Slovakia.txt,exact_label,AUS
+710,710-Diego Garcia.txt,710,710-Diego Garcia.txt,exact_label,ENG
+711,711-Christmas Island.txt,711,711-Christmas Island.txt,exact_label,ENG
+712,712-Cocos Islands.txt,712,712-Cocos Islands.txt,exact_label,ENG
+713,713-Kerguelen.txt,713,713-Kerguelen.txt,exact_label,FRA
+714,714-Heilungkiang.txt,714,714-Heilungkiang.txt,exact_label,CHI
+715,715-Liaoning.txt,715,715-Liaoning.txt,exact_label,CHI
+716,716-Liaotung.txt,716,716-Liaotung.txt,exact_label,CHI
+717,717-Chuho.txt,717,717-Chuho.txt,exact_label,CHI
+718,718-Stanleyville.txt,718,718-Stanleyville.txt,exact_label,BEL
+719,719-Natal.txt,719,719-Natal.txt,exact_label,ENG
+72,72-Zaolzie.txt,72,72-Zaolzie.txt,exact_label,AUS
+720,720-South Georgia.txt,720,720-South Georgia.txt,exact_label,ENG
+721,721-Portuguese Timor.txt,721,721-Portuguese Timor.txt,exact_label,POR
+722,722-Petsamo.txt,722,722-Petsamo.txt,exact_label,FIN
+723,723-Southern Island.txt,723,723-Southern Island.txt,exact_label,ENG
+724,724-Southern Siam.txt,724,724-Southern Siam.txt,exact_label,SIA
+725,725-Nauru.txt,725,725-Nauru.txt,exact_label,ENG
+726,726-Samoa.txt,726,726-Samoa.txt,exact_label,ENG
+727,727-Line Islands.txt,727,727-Line Islands.txt,exact_label,USA
+728,728-Guangzhouwan.txt,728,728-Guangzhouwan.txt,exact_label,MAL
+729,729-Macau.txt,729,729-Macau.txt,exact_label,POR
+73,73-Carpathian Ruthenia.txt,73,73-Carpathian Ruthenia.txt,exact_label,AUS
+730,730-St Pierre and Miquelon .txt,730,730-St Pierre and Miquelon .txt,exact_label,FRA
+731,731-Central Macedonia.txt,731,731-Central Macedonia.txt,exact_label,GRE
+732,732-Pamir.txt,732,732-Pamir.txt,exact_label,KAZ
+733,733-Andaman.txt,733,733-Andaman.txt,exact_label,ENG
+734,734-Nendo.txt,734,734-Nendo.txt,exact_label,ENG
+735,735-Savoy.txt,735,735-Savoy.txt,exact_label,FRA
+736,736-Litorale.txt,736,736-Litorale.txt,exact_label,ITA
+737,737-New Britain.txt,737,737-New Britain.txt,exact_label,ENG
+738,738-Aru Islands.txt,738,738-Aru Islands.txt,exact_label,JAP
+739,739-Haida Gwaii.txt,739,739-Haida Gwaii.txt,exact_label,CAN
+74,74-East Sudatenland.txt,74,74-East Sudatenland.txt,exact_label,AUS
+740,740-Vancouver Island.txt,740,740-Vancouver Island.txt,exact_label,CAN
+741,741-Cambodia.txt,741,741-Cambodia.txt,exact_label,VIN
+742,742-Stalinabad.txt,742,742-Stalinabad.txt,exact_label,KAZ
+743,743-Qingdao.txt,743,743-Qingdao.txt,exact_label,MAL
+744,744-Xian.txt,744,744-Xian.txt,exact_label,CHI
+745,745-Dalian.txt,745,745-Dalian.txt,exact_label,JAP
+746,746-Ordos.txt,746,746-Ordos.txt,exact_label,CHI
+747,747-Dali Bai.txt,747,747-Dali Bai.txt,exact_label,CHI
+748,748-Zunyi.txt,748,748-Zunyi.txt,exact_label,CHI
+749,749-Huangshan.txt,749,749-Huangshan.txt,exact_label,CHI
+75,75-Moravia.txt,75,75-Moravia.txt,exact_label,AUS
+750,750-Changde.txt,750,750-Changde.txt,exact_label,CHI
+751,751-Liangshan.txt,751,751-Liangshan.txt,exact_label,CHI
+752,752-Chamdo.txt,752,752-Chamdo.txt,exact_label,CHI
+753,753-Gannan.txt,753,753-Gannan.txt,exact_label,CHI
+754,754-Golog.txt,754,754-Golog.txt,exact_label,CHI
+755,755-Haixi.txt,755,755-Haixi.txt,exact_label,CHI
+756,756-Jiuquan.txt,756,756-Jiuquan.txt,exact_label,CHI
+757,757-Shigatse.txt,757,757-Shigatse.txt,exact_label,CHI
+758,758-Ngari.txt,758,758-Ngari.txt,exact_label,CHI
+759,759-Kunlun.txt,759,759-Kunlun.txt,exact_label,CHI
+76,76-Northern Transylvania.txt,76,76-Northern Transylvania.txt,exact_label,ROM
+760,760-Dabancheng.txt,760,760-Dabancheng.txt,exact_label,CHI
+761,761-Hulunbuir.txt,761,761-Hulunbuir.txt,exact_label,CHI
+762,762-Katowice.txt,762,762-Katowice.txt,exact_label,GER
+763,763-Konigsberg.txt,763,763-Konigsberg.txt,exact_label,GER
+764,764-West Banat.txt,764,764-West Banat.txt,exact_label,YUG
+765,765-Qatar.txt,765,765-Qatar.txt,exact_label,ENG
+766,766-Southern Bessarabia.txt,766,766-Southern Bessarabia.txt,exact_label,ROM
+767,767-North Darfur.txt,767,767-North Darfur.txt,exact_label,ENG
+768,768-Rwanda.txt,768,768-Rwanda.txt,exact_label,BEL
+769,769-Burundi.txt,769,769-Burundi.txt,exact_label,BEL
+77,77-Dobrogea.txt,77,77-Dobrogea.txt,exact_label,ROM
+770,770-Malawi.txt,770,770-Malawi.txt,exact_label,ENG
+771,771-Zambia.txt,771,771-Zambia.txt,exact_label,ENG
+772,772-Middle Congo.txt,772,772-Middle Congo.txt,exact_label,FRA
+773,773-Cameroon.txt,773,773-Cameroon.txt,exact_label,FRA
+774,774-Chad.txt,774,774-Chad.txt,exact_label,FRA
+775,775-B.E.T..txt,775,775-B.E.T..txt,exact_label,FRA
+776,776-Dahomey.txt,776,776-Dahomey.txt,exact_label,MLI
+777,777-Togo.txt,777,777-Togo.txt,exact_label,MLI
+778,778-Upper Volta.txt,778,778-Upper Volta.txt,exact_label,MLI
+779,779-Ivory Coast.txt,779,779-Ivory Coast.txt,exact_label,MLI
+78,78-Bessarabia.txt,78,78-Bessarabia.txt,exact_label,ROM
+780,780-Guinea.txt,780,780-Guinea.txt,exact_label,MLI
+781,781-Niger.txt,781,781-Niger.txt,exact_label,MLI
+782,782-Tombouctou.txt,782,782-Tombouctou.txt,exact_label,MLI
+783,783-Sidi Ifni.txt,783,783-Sidi Ifni.txt,exact_label,SPR
+784,784-Ermland-Masuren.txt,784,784-Ermland-Masuren.txt,exact_label,EST
+785,785-Picardy.txt,785,785-Picardy.txt,exact_label,FRA
+786,786-Mauritanian Desert.txt,786,786-Mauritanian Desert.txt,exact_label,MLI
+787,787-North Kashmir.txt,787,787-North Kashmir.txt,exact_label,RAJ
+788,788-Salamanca.txt,788,788-Salamanca.txt,exact_label,SPR
+789,789-Cordoba.txt,789,789-Cordoba.txt,exact_label,SPR
+79,79-moldovia.txt,79,79-moldovia.txt,exact_label,ROM
+790,790-Asturias.txt,790,790-Asturias.txt,exact_label,SPR
+791,791-Valladolid.txt,791,791-Valladolid.txt,exact_label,SPR
+792,792-Basque Country.txt,792,792-Basque Country.txt,exact_label,SPR
+793,793-Guadalajara.txt,793,793-Guadalajara.txt,exact_label,SPR
+794,794-Eastern Aragon.txt,794,794-Eastern Aragon.txt,exact_label,SPR
+795,795-Santarem.txt,795,795-Santarem.txt,exact_label,POR
+796,796-North Angola.txt,796,796-North Angola.txt,exact_label,POR
+797,797-Istanbul.txt,797,797-Istanbul.txt,exact_label,TUR
+798,798-Amasya.txt,798,798-Amasya.txt,exact_label,TUR
+799,799-Hatay.txt,799,799-Hatay.txt,exact_label,TUR
+8,8-Luxemburg.txt,8,8-Luxemburg.txt,exact_label,FRA
+80,80-Bocovina.txt,80,80-Bocovina.txt,exact_label,ROM
+800,800-Van.txt,800,800-Van.txt,exact_label,TUR
+801,801-Moesia.txt,801,801-Moesia.txt,exact_label,BUL
+802,802-Kosovo.txt,802,802-Kosovo.txt,exact_label,YUG
+803,803-Southern Serbia.txt,803,803-Southern Serbia.txt,exact_label,YUG
+804,804-Herzegovina.txt,804,804-Herzegovina.txt,exact_label,YUG
+805,805-Northern Epirus.txt,805,805-Northern Epirus.txt,exact_label,BUL
+806,806-French Basque Country.txt,806,806-French Basque Country.txt,exact_label,FRA
+807,807-Gdynia.txt,807,807-Gdynia.txt,exact_label,GER
+808,808-Riga.txt,808,808-Riga.txt,exact_label,EST
+809,809-Latgale.txt,809,809-Latgale.txt,exact_label,EST
+81,81-Oltenia.txt,81,81-Oltenia.txt,exact_label,ROM
+810,810-Zemgale.txt,810,810-Zemgale.txt,exact_label,EST
+811,811-Saaremaa.txt,811,811-Saaremaa.txt,exact_label,EST
+812,812-Tallinn.txt,812,812-Tallinn.txt,exact_label,EST
+813,813-Rakvere.txt,813,813-Rakvere.txt,exact_label,EST
+814,814-Suduva.txt,814,814-Suduva.txt,exact_label,EST
+815,815-Aukstaitija.txt,815,815-Aukstaitija.txt,exact_label,EST
+816,816-West Virginia.txt,816,816-West Virginia.txt,exact_label,CSA
+817,817-Gobi.txt,817,817-Gobi.txt,exact_label,MON
+818,818-Khovd.txt,818,818-Khovd.txt,exact_label,MON
+819,819-Dornod.txt,819,819-Dornod.txt,exact_label,MON
+82,82-Banat.txt,82,82-Banat.txt,exact_label,ROM
+820,820-Khovsgol.txt,820,820-Khovsgol.txt,exact_label,MON
+821,821 - Chenchnya-Ingushetia.txt,821,821 - Chenchnya-Ingushetia.txt,exact_label,SOV
+822,822 - Chukotka.txt,822,822 - Chukotka.txt,exact_label,SOV
+823,823 - Karakalpakstan.txt,823,823 - Karakalpakstan.txt,exact_label,KAZ
+824,824 - Yamalia.txt,824,824 - Yamalia.txt,exact_label,SOV
+825,825 - Nenetsia.txt,825,825 - Nenetsia.txt,exact_label,SOV
+826,826 - Abkhazia.txt,826,826 - Abkhazia.txt,exact_label,SOV
+827,827 - Kabardino-Balkaria.txt,827,827 - Kabardino-Balkaria.txt,exact_label,SOV
+828,828 - North Ossetia.txt,828,828 - North Ossetia.txt,exact_label,SOV
+829,829 - Volga Germany.txt,829,829 - Volga Germany.txt,exact_label,SOV
+83,83-crisana.txt,83,83-crisana.txt,exact_label,ROM
+830,830 - Bukhara.txt,830,830 - Bukhara.txt,exact_label,KAZ
+831,831 - Khiva.txt,831,831 - Khiva.txt,exact_label,KAZ
+832,832 - Dashhowuz.txt,832,832 - Dashhowuz.txt,exact_label,KAZ
+833,833 - Mari El.txt,833,833 - Mari El.txt,exact_label,SOV
+834,834 - Balta.txt,834,834 - Balta.txt,exact_label,UKR
+835,835-Haraghe.txt,835,835-Haraghe.txt,exact_label,ETH
+836,836-Bale.txt,836,836-Bale.txt,exact_label,ETH
+837,837-Sidamo.txt,837,837-Sidamo.txt,exact_label,ETH
+838,838-Illubabor.txt,838,838-Illubabor.txt,exact_label,ETH
+839,839-Welega.txt,839,839-Welega.txt,exact_label,ETH
+84,84-Transylvania.txt,84,84-Transylvania.txt,exact_label,ROM
+840,840-Gojjam.txt,840,840-Gojjam.txt,exact_label,ETH
+841,841-Begemder.txt,841,841-Begemder.txt,exact_label,ETH
+842,842-Tigray.txt,842,842-Tigray.txt,exact_label,ETH
+843,843-Wello.txt,843,843-Wello.txt,exact_label,ETH
+844,844-jubaland.txt,844,844-jubaland.txt,exact_label,ITA
+845,845-Jura Mountains.txt,845,845-Jura Mountains.txt,exact_label,SWI
+846,846-Ticino.txt,846,846-Ticino.txt,exact_label,SWI
+847,847-Western Swiss Alps.txt,847,847-Western Swiss Alps.txt,exact_label,SWI
+848,848-Voralberg.txt,848,848-Voralberg.txt,exact_label,AUS
+849,849-Puglia.txt,849,849-Puglia.txt,exact_label,ITA
+85,85-Danzig.txt,85,85-Danzig.txt,exact_label,GER
+850,850-Trentino.txt,850,850-Trentino.txt,exact_label,ITA
+851,851-Var.txt,851,851-Var.txt,exact_label,FRA
+852,852-Istria.txt,852,852-Istria.txt,exact_label,ITA
+853,853-Ljubljana.txt,853,853-Ljubljana.txt,exact_label,YUG
+854,854-Jawf.txt,854,854-Jawf.txt,exact_label,TUR
+855,855-Tabuk.txt,855,855-Tabuk.txt,exact_label,TUR
+856,856-Asir-Makkah.txt,856,856-Asir-Makkah.txt,exact_label,TUR
+857,857-Ha'il.txt,857,857-Ha'il.txt,exact_label,TUR
+858,858-Najiran.txt,858,858-Najiran.txt,exact_label,TUR
+859,859-Dammam.txt,859,859-Dammam.txt,exact_label,TUR
+86,86-Poznan.txt,86,86-Poznan.txt,exact_label,GER
+860,860-Cote-Nord.txt,860,860-Cote-Nord.txt,exact_label,CAN
+861,861-Saguenay.txt,861,861-Saguenay.txt,exact_label,CAN
+862,862-ouest du quebec.txt,862,862-ouest du quebec.txt,exact_label,CAN
+863,863-Maurice.txt,863,863-Maurice.txt,exact_label,CAN
+864,864-Yukon.txt,864,864-Yukon.txt,exact_label,CAN
+865,865-Northern Saskatchewan.txt,865,865-Northern Saskatchewan.txt,exact_label,CAN
+866,866-Districts of Ontario.txt,866,866-Districts of Ontario.txt,exact_label,CAN
+867,867-Northern Manitoba.txt,867,867-Northern Manitoba.txt,exact_label,CAN
+868,868-Isan.txt,868,868-Isan.txt,exact_label,SIA
+869,869-Lanna.txt,869,869-Lanna.txt,exact_label,SIA
+87,87-Lodz.txt,87,87-Lodz.txt,exact_label,POL
+870,870-North West Australia.txt,870,870-North West Australia.txt,exact_label,ENG
+871,871-South West Australia.txt,871,871-South West Australia.txt,exact_label,ENG
+872,872-North Queensland.txt,872,872-North Queensland.txt,exact_label,ENG
+873,873-South West Queensland.txt,873,873-South West Queensland.txt,exact_label,ENG
+874,874-Magadan.txt,874,874-Magadan.txt,exact_label,SOV
+875,875-Chukchi Peninsulay.txt,875,875-Chukchi Peninsulay.txt,exact_label,SOV
+876,876-Udachny.txt,876,876-Udachny.txt,exact_label,SOV
+877,877-Verkhoyansk.txt,877,877-Verkhoyansk.txt,exact_label,SOV
+878,878-Khatangsky.txt,878,878-Khatangsky.txt,exact_label,SOV
+879,879-Kargopol.txt,879,879-Kargopol.txt,exact_label,SOV
+88,88-Kielce.txt,88,88-Kielce.txt,exact_label,POL
+880,880-Kotlas.txt,880,880-Kotlas.txt,exact_label,SOV
+881,881-Karagandy.txt,881,881-Karagandy.txt,exact_label,KAZ
+882,882-Pavlodar.txt,882,882-Pavlodar.txt,exact_label,KAZ
+883,883-Kassala.txt,883,883-Kassala.txt,exact_label,ENG
+884,884-Upper Nile.txt,884,884-Upper Nile.txt,exact_label,ENG
+885,885-Bahr al Ghazal.txt,885,885-Bahr al Ghazal.txt,exact_label,ENG
+886,886-Blue Nile.txt,886,886-Blue Nile.txt,exact_label,ENG
+887,887-South Darfur.txt,887,887-South Darfur.txt,exact_label,ENG
+888,888-Lusambo.txt,888,888-Lusambo.txt,exact_label,BEL
+889,889-Elisabethville.txt,889,889-Elisabethville.txt,exact_label,BEL
+89,89-Krakow.txt,89,89-Krakow.txt,exact_label,POL
+890,890-Costermansville.txt,890,890-Costermansville.txt,exact_label,BEL
+891,891-Zambesi.txt,891,891-Zambesi.txt,exact_label,POR
+892,892-South West Angola.txt,892,892-South West Angola.txt,exact_label,POR
+893,893-Karas.txt,893,893-Karas.txt,exact_label,ENG
+894,894-Kuneme.txt,894,894-Kuneme.txt,exact_label,ENG
+895,895-Kavango.txt,895,895-Kavango.txt,exact_label,ENG
+896,896-Manica e Sofala.txt,896,896-Manica e Sofala.txt,exact_label,POR
+897,897-Zambezia-Mocambique.txt,897,897-Zambezia-Mocambique.txt,exact_label,POR
+898,898-Gao.txt,898,898-Gao.txt,exact_label,MLI
+899,899-Kayes-Koulikoro.txt,899,899-Kayes-Koulikoro.txt,exact_label,MLI
+9,9-Czechoslovakia.txt,9,9-Czechoslovakia.txt,exact_label,AUS
+90,90-Lwow.txt,90,90-Lwow.txt,exact_label,POL
+900,900-Benue.txt,900,900-Benue.txt,exact_label,ENG
+901,901-Borno.txt,901,901-Borno.txt,exact_label,ENG
+902,902-Sokoto.txt,902,902-Sokoto.txt,exact_label,ENG
+903,903-Garissa.txt,903,903-Garissa.txt,exact_label,ENG
+904,904-Nyanza-Rift Valley.txt,904,904-Nyanza-Rift Valley.txt,exact_label,ENG
+905,905-Mombasa.txt,905,905-Mombasa.txt,exact_label,ENG
+906,906-Socotra.txt,906,906-Socotra.txt,exact_label,ENG
+907,907-Cairo.txt,,,rt56_owner,EGY
+908,908-Afar.txt,908,908-Afar.txt,exact_label,PER
+909,909-Riau Islands.txt,,,owner_transition,JAP
+91,91-Tarnopol.txt,91,91-Tarnopol.txt,exact_label,POL
+910,910-Shkoder.txt,934,934-Shkoder.txt,exact_label,BUL
+911,911-West Suez.txt,,,owner_transition,ENG
+912,912-Friuli.txt,,,owner_transition,ITA
+913,913-Solt-Kiskun.txt,,,owner_transition,AUS
+914,914-Kedah.txt,,,owner_transition,JAP
+915,915-Pahang.txt,1063,1063 - Pahang.txt,exact_label,JAP
+916,916-Perak.txt,1064,1064 - Perak.txt,exact_label,JAP
+917,917-Hwanghae.txt,,,owner_transition,JAP
+918,918-Hamgyong.txt,1028,1028 - Hamgyong.txt,exact_label,JAP
+919,919-Jeolla.txt,,,owner_transition,JAP
+92,92-Lublin.txt,92,92-Lublin.txt,exact_label,POL
+920,920-Gyeongsang.txt,1030,1030 - Gyeongsang.txt,exact_label,JAP
+921,921-New Hampshire.txt,,,owner_transition,USA
+922,922-Frankfurt.txt,,,owner_transition,GER
+923,923-Baden.txt,50,50-Baden.txt,exact_label,GER
+924,924-Champasak.txt,,,owner_transition,VIN
+925,925-Battambang.txt,1067,1067 - Battambang.txt,exact_label,VIN
+926,926-Luang Prabang.txt,,,owner_transition,VIN
+927,927-South Annam.txt,,,owner_transition,VIN
+928,928-Northern Annam.txt,,,owner_transition,VIN
+929,929-Durango.txt,,,owner_transition,MEX
+93,93-Volhynian.txt,93,93-Volhynian.txt,exact_label,POL
+930,930-Zacatecas.txt,,,owner_transition,MEX
+931,931-San Luis Potosi.txt,,,owner_transition,MEX
+932,932-Puebla.txt,,,owner_transition,MEX
+933,933-Batna.txt,,,owner_transition,FRA
+934,934-Suwalki.txt,,,owner_transition,POL
+935,935-Grodno.txt,,,owner_transition,POL
+936,936-Outer Wilno.txt,,,owner_transition,POL
+937,937-Northern Panama.txt,,,owner_transition,SPR
+938,938-Basutoland.txt,,,owner_transition,ENG
+939,939-Swaziland.txt,,,owner_transition,ENG
+94,94-Polesie.txt,94,94-Polesie.txt,exact_label,POL
+940,940-Orange Free State.txt,,,owner_transition,ENG
+941,941-Andong.txt,,,owner_transition,CHI
+942,942-Jiandao.txt,,,owner_transition,CHI
+943,943-Binjiang.txt,,,owner_transition,CHI
+944,944-Longjiang.txt,,,owner_transition,CHI
+945,945-Heihe.txt,,,owner_transition,CHI
+946,946-West Xing'an.txt,,,owner_transition,CHI
+947,947-Jinzhou.txt,,,owner_transition,CHI
+948,948-Apure.txt,,,owner_transition,SPR
+949,949-Gaza.txt,,,owner_transition,TUR
+95,95-Nowogrodek.txt,95,95-Nowogrodek.txt,exact_label,POL
+950,950-Debar.txt,,,owner_transition,YUG
+951,951-Johor.txt,1060,1060 - Johor.txt,exact_label,JAP
+952,952-Syrmia.txt,,,owner_transition,YUG
+953,953-Mitrovica.txt,,,owner_transition,YUG
+954,954-Atacama.txt,952,952 - Atacama.txt,exact_label,SPR
+955,955-Northern Dobruja.txt,971,971 - Northern Dobruja.txt,exact_label,ROM
+956,956-Prekmurje.txt,,,owner_transition,YUG
+957,957-Marchia.txt,,,owner_transition,ITA
+958,958-Kvarner.txt,,,owner_transition,YUG
+959,959-Slavonia.txt,,,owner_transition,YUG
+96,96-Wilejka.txt,96,96-Wilejka.txt,exact_label,SOV
+960,960-Terengganu.txt,,,owner_transition,JAP
+961,961-Banja Luka.txt,,,owner_transition,YUG
+962,962-Posavina.txt,,,owner_transition,YUG
+963,963-West Sandzak.txt,,,owner_transition,YUG
+964,964-Northern Schleswig.txt,,,owner_transition,DEN
+965,965-Eupen-Malmedy.txt,,,owner_transition,BEL
+966,966-West Bank.txt,,,owner_transition,TUR
+967,967-Agder.txt,922,922-Agder.txt,exact_label,NOR
+968,968-Jamtland.txt,917,917-Jamtland.txt,exact_label,SWE
+969,969-Baahuslen.txt,,,owner_transition,SWE
+97,97-Bialystok.txt,97,97-Bialystok.txt,exact_label,POL
+970,970-Shetland.txt,933,933-Shetland.txt,exact_label,ENG
+971,971-Orkney.txt,,,owner_transition,ENG
+972,972-Virgin Islands.txt,,,owner_transition,USA
+973,973-Andorra.txt,,,rt56_owner,ADR
+974,974-North Sumatra.txt,,,owner_transition,JAP
+975,975-North Sulawesi.txt,,,owner_transition,JAP
+976,976-Central Java.txt,,,owner_transition,JAP
+977,977-West Kalimantan.txt,,,owner_transition,JAP
+978,978-Central Kalimantan.txt,,,owner_transition,JAP
+979,979-Khasab.txt,,,owner_transition,TUR
+98,98-Mazurskie.txt,98,98-Mazurskie.txt,exact_label,POL
+980,980-Bandar Abbas.txt,,,owner_transition,PER
+981,981-Bushehr.txt,,,owner_transition,PER
+982,982-South Khorasan.txt,,,owner_transition,PER
+983,983-Golestan.txt,417,417-Golestan.txt,exact_label,PER
+984,984-Mazandaran.txt,,,owner_transition,PER
+985,985-South Ashkhabad.txt,,,owner_transition,SOV
+986,986-Qazvin.txt,,,owner_transition,PER
+987,987-Ardabil.txt,,,owner_transition,PER
+988,988-West Azerbaijan.txt,,,owner_transition,PER
+989,989-Ostrhineland.txt,,,owner_transition,GER
+99,99-Jutland.txt,99,99-Jutland.txt,exact_label,DEN
+990,990-Vermont.txt,,,owner_transition,USA
+991,991-Massachusetts.txt,,,owner_transition,USA
+992,992-Rhode Island.txt,,,owner_transition,USA
+993,993-Connecticut.txt,,,owner_transition,USA
+994,994-La Habana.txt,,,owner_transition,SPR
+995,995-East Suez.txt,,,owner_transition,ENG
+996,996-Uzhhorod.txt,,,owner_transition,AUS
+997,997-Liechtenstein.txt,,,rt56_owner,LIE
+998,998-Southern Schleswig.txt,,,owner_transition,GER
+999,999-Espirito Santo.txt,943,943 - Espirito Santo.txt,exact_label,BRA

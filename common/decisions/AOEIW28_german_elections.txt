@@ -1,0 +1,289 @@
+AOEIW28_GER_parliament_category = {
+    AOEIW31_GER_spd_coalition_talks = {
+        icon = generic_political_actions
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_spd_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_spd_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 1 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_spd_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_spd_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_zentrum_coalition_talks = {
+        icon = generic_political_actions
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_reichstag
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_zentrum_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_zentrum_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 2 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_zentrum_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_zentrum_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_dnvp_coalition_talks = {
+        icon = generic_political_actions
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_reichstag
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_dnvp_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_dnvp_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 3 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_dnvp_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dnvp_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_cdu_coalition_talks = {
+        icon = generic_political_actions
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_bundestag
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_cdu_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_cdu_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 4 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_cdu_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_cdu_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW34_GER_lvp_coalition_talks = {
+        icon = GFX_AOEIW34_decision_GER_party_dstp_icon
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_lvp_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_lvp_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 5 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_lvp_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_lvp_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW34_GER_dstp_coalition_talks = {
+        icon = GFX_AOEIW34_decision_GER_party_dstp_icon
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_dstp_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_dstp_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 6 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_dstp_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dstp_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW34_GER_kpd_coalition_talks = {
+        icon = GFX_AOEIW34_decision_GER_party_kpd_icon
+        priority = 120
+        cost = 5
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader = 0 }
+            check_variable = { AOEIW30_GER_kpd_seats > 19 }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW30_GER_kpd_candidate
+            set_variable = { AOEIW30_GER_chosen_gov_leader = 7 }
+            set_variable = { AOEIW30_GER_government_leader_seats = AOEIW30_GER_kpd_seats }
+            set_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_kpd_seats }
+            set_variable = { AOEIW29_GER_candidate_count = 1 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_spd = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_spd_seats > 0 }
+            check_variable = { var = AOEIW30_GER_spd_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { has_country_flag = AOEIW30_GER_spd_candidate }
+            NOT = { has_country_flag = AOEIW30_GER_dnvp_candidate }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_spd_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_spd_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_zentrum = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_reichstag
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_zentrum_seats > 0 }
+            check_variable = { var = AOEIW30_GER_zentrum_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { OR = { has_country_flag = AOEIW30_GER_zentrum_candidate has_country_flag = AOEIW30_GER_kpd_candidate } }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_zentrum_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_zentrum_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_lvp = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_lvp_seats > 0 }
+            check_variable = { var = AOEIW30_GER_lvp_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { has_country_flag = AOEIW30_GER_lvp_candidate }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_lvp_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_lvp_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_dnvp = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_reichstag
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_dnvp_seats > 0 }
+            check_variable = { var = AOEIW30_GER_dnvp_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { OR = { has_country_flag = AOEIW30_GER_dnvp_candidate has_country_flag = AOEIW30_GER_spd_candidate has_country_flag = AOEIW30_GER_kpd_candidate } }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_dnvp_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dnvp_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_cdu = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            has_country_flag = AOEIW30_GER_bundestag
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_cdu_seats > 0 }
+            check_variable = { var = AOEIW30_GER_cdu_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { OR = { has_country_flag = AOEIW30_GER_cdu_candidate has_country_flag = AOEIW30_GER_kpd_candidate } }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_cdu_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_cdu_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_dstp = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_dstp_seats > 0 }
+            check_variable = { var = AOEIW30_GER_dstp_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { OR = { has_country_flag = AOEIW30_GER_dstp_candidate has_country_flag = AOEIW30_GER_kpd_candidate } }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_dstp_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_dstp_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW31_GER_invite_kpd = {
+        icon = generic_political_actions
+        priority = 110
+        cost = 0
+        visible = {
+            has_country_flag = AOEIW28_GER_election_pending
+            check_variable = { AOEIW30_GER_chosen_gov_leader > 0 }
+            check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = less_than }
+            check_variable = { AOEIW29_GER_candidate_count < 3 }
+            check_variable = { AOEIW30_GER_kpd_seats > 0 }
+            check_variable = { var = AOEIW30_GER_kpd_seats value = AOEIW30_GER_government_leader_seats compare = less_than_or_equals }
+            NOT = { OR = { has_country_flag = AOEIW30_GER_kpd_candidate has_country_flag = AOEIW30_GER_zentrum_candidate has_country_flag = AOEIW30_GER_dnvp_candidate has_country_flag = AOEIW30_GER_cdu_candidate has_country_flag = AOEIW30_GER_dstp_candidate } }
+        }
+        complete_effect = { set_country_flag = AOEIW30_GER_kpd_candidate add_to_variable = { AOEIW30_GER_coalition_seats = AOEIW30_GER_kpd_seats } add_to_variable = { AOEIW29_GER_candidate_count = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW30_GER_confirm_coalition = {
+        icon = generic_political_actions
+        priority = 100
+        cost = 5
+        visible = { has_country_flag = AOEIW28_GER_election_pending check_variable = { AOEIW30_GER_chosen_gov_leader > 0 } }
+        available = { check_variable = { var = AOEIW30_GER_coalition_seats value = AOEIW30_GER_majority_seats compare = greater_than_or_equals } }
+        complete_effect = { AOEIW30_GER_confirm_coalition = yes }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW30_GER_reset_coalition_talks = {
+        icon = generic_political_actions
+        priority = 99
+        cost = 0
+        visible = { has_country_flag = AOEIW28_GER_election_pending check_variable = { AOEIW30_GER_chosen_gov_leader > 0 } }
+        complete_effect = { AOEIW30_GER_clear_candidates = yes }
+        ai_will_do = { factor = 0 }
+    }
+
+    AOEIW28_GER_early_election = {
+        icon = generic_political_actions
+        priority = 90
+        cost = 150
+        visible = { has_country_flag = AOEIW28_GER_parliament_enabled NOT = { OR = { has_government = fascism has_government = communism } } }
+        available = { NOT = { OR = { has_country_flag = AOEIW28_GER_election_cooldown has_country_flag = AOEIW28_GER_election_pending } } }
+        complete_effect = { add_stability = -0.03 set_country_flag = { flag = AOEIW28_GER_election_cooldown days = 365 } AOEIW30_GER_open_ballot = yes country_event = { id = AOEIW28_elections.1 days = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+}

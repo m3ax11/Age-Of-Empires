@@ -1,0 +1,19 @@
+air_wings = {
+    48 = {
+        small_plane_airframe_0 = {
+            owner = "BUL"
+            amount = 85
+            version_name = "AOEIW BUL Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "BUL"
+            amount = 25
+            version_name = "AOEIW BUL Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "BUL"
+            amount = 10
+            version_name = "AOEIW BUL Medium Bomber"
+        }
+    }
+}

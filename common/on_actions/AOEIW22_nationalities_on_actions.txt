@@ -1,0 +1,14 @@
+on_actions = {
+    on_weekly_AUS = { effect = {
+        if = { limit = { has_completed_focus = AOEIW9_AUS_politics_p1_1 NOT = { has_country_flag = AOEIW22_AUS_nationalities_initialized } }
+            set_country_flag = AOEIW22_AUS_nationalities_initialized set_country_flag = AOEIW22_AUS_federal_model set_variable = { AOEIW22_AUS_nationality_tension = 2 } add_ideas = AOEIW22_AUS_federal_nationalities_spirit }
+        if = { limit = { has_completed_focus = AOEIW9_AUS_politics_p2_1 NOT = { has_country_flag = AOEIW22_AUS_nationalities_initialized } }
+            set_country_flag = AOEIW22_AUS_nationalities_initialized set_country_flag = AOEIW22_AUS_dual_model set_variable = { AOEIW22_AUS_nationality_tension = 4 } add_ideas = AOEIW22_AUS_dual_compromise_spirit }
+        if = { limit = { has_completed_focus = AOEIW9_AUS_politics_p3_1 NOT = { has_country_flag = AOEIW22_AUS_nationalities_initialized } }
+            set_country_flag = AOEIW22_AUS_nationalities_initialized set_country_flag = AOEIW22_AUS_central_model set_variable = { AOEIW22_AUS_nationality_tension = 6 } add_ideas = AOEIW22_AUS_central_authority_spirit }
+        if = { limit = { has_country_flag = AOEIW22_AUS_central_model check_variable = { AOEIW22_AUS_nationality_tension > 6 } NOT = { has_country_flag = AOEIW22_AUS_unrest_warning } }
+            set_country_flag = AOEIW22_AUS_unrest_warning country_event = { id = AOEIW22_austria.1 hours = 6 } }
+        if = { limit = { check_variable = { AOEIW22_AUS_nationality_tension > 9 } NOT = { has_country_flag = AOEIW22_AUS_unrest_crisis } }
+            set_country_flag = AOEIW22_AUS_unrest_crisis country_event = { id = AOEIW22_austria.2 hours = 6 } }
+    } }
+}

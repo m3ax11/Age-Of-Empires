@@ -1,0 +1,25 @@
+units = {
+    fleet = {
+        name = "SWE National Fleet"
+        naval_base = 11215
+        task_force = {
+            name = "SWE Main Fleet"
+            location = 11215
+            ship = { name = "SWE Battleship 01" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Battleship Class" } } }
+            ship = { name = "SWE Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Cruiser Class" } } }
+            ship = { name = "SWE Cruiser 02" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Cruiser Class" } } }
+            ship = { name = "SWE Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Destroyer 08" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Destroyer Class" } } }
+            ship = { name = "SWE Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Submarine Class" } } }
+            ship = { name = "SWE Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Submarine Class" } } }
+            ship = { name = "SWE Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Submarine Class" } } }
+            ship = { name = "SWE Submarine 04" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "AOEIW SWE Submarine Class" } } }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+AOEIW_final_JAP_expansion_category = {
+    AOEIW_final_JAP_imperial_conference = {
+        icon = generic_political_discourse
+        cost = 25
+        fire_only_once = yes
+        allowed = { original_tag = JAP }
+        visible = { date > 1936.3.1 CHI = { exists = yes } }
+        available = { has_war = no }
+        complete_effect = { country_event = { id = aoeiw_final_japan.1 hours = 6 } }
+        ai_will_do = { base = 10 }
+    }
+
+    AOEIW_final_JAP_prepare_continental_war = {
+        icon = generic_military
+        cost = 75
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_final_JAP_strategy_debated CHI = { exists = yes } }
+        available = {
+            has_war = no
+            NOT = { has_country_flag = AOEIW_final_JAP_continental_ready }
+            NOT = { has_idea = AOEIW_final_JAP_naval_priority }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW_final_JAP_continental_ready
+            add_ideas = AOEIW_final_JAP_continental_preparations
+            add_war_support = 0.04
+            army_experience = 15
+        }
+        ai_will_do = {
+            base = 2
+            modifier = { factor = 4 has_idea = AOEIW_JAP_army_influence_dominating }
+            modifier = { factor = 0.25 has_idea = AOEIW_JAP_civic_influence_dominating }
+            modifier = { factor = 0.2 has_war = yes }
+        }
+    }
+
+    AOEIW_final_JAP_authorise_china_expedition = {
+        icon = generic_military
+        cost = 50
+        fire_only_once = yes
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_final_JAP_continental_ready CHI = { exists = yes } }
+        available = {
+            has_war = no
+            num_divisions > 30
+            has_war_support > 0.45
+            NOT = { has_war_with = CHI }
+        }
+        complete_effect = {
+            custom_effect_tooltip = AOEIW_final_JAP_authorise_china_expedition_tt
+            create_wargoal = { type = annex_everything target = CHI }
+            remove_ideas = AOEIW_final_JAP_continental_preparations
+            clr_country_flag = AOEIW_final_JAP_continental_ready
+            set_country_flag = AOEIW_final_JAP_china_war_authorised
+            add_war_support = 0.06
+        }
+        ai_will_do = {
+            base = 3
+            modifier = { factor = 3 has_idea = AOEIW_JAP_army_influence_dominating }
+            modifier = { factor = 0.25 has_idea = AOEIW_JAP_civic_influence_dominating }
+            modifier = { factor = 0.2 CHI = { strength_ratio = { tag = JAP ratio > 0.80 } } }
+        }
+    }
+
+    AOEIW_final_JAP_navy_first = {
+        icon = generic_naval
+        cost = 60
+        days_re_enable = 365
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_final_JAP_strategy_debated }
+        available = {
+            has_war = no
+            NOT = { has_country_flag = AOEIW_final_JAP_continental_ready }
+            NOT = { has_idea = AOEIW_final_JAP_naval_priority }
+        }
+        complete_effect = {
+            add_timed_idea = { idea = AOEIW_final_JAP_naval_priority days = 365 }
+            navy_experience = 20
+            air_experience = 10
+            random_owned_controlled_state = {
+                limit = { is_coastal = yes }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = dockyard level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = { factor = 4 has_idea = AOEIW_JAP_navy_influence_dominating }
+            modifier = { factor = 0.25 has_idea = AOEIW_JAP_army_influence_dominating }
+        }
+    }
+
+    AOEIW_final_JAP_offer_nanjing_protocol = {
+        icon = generic_political_discourse
+        cost = 50
+        days_re_enable = 365
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_final_JAP_strategy_debated CHI = { exists = yes } }
+        available = { has_war = no NOT = { has_war_with = CHI } }
+        complete_effect = { CHI = { country_event = { id = aoeiw_final_japan.2 days = 3 } } }
+        ai_will_do = {
+            base = 1
+            modifier = { factor = 4 has_idea = AOEIW_JAP_civic_influence_dominating }
+            modifier = { factor = 0.25 has_idea = AOEIW_JAP_army_influence_dominating }
+        }
+    }
+
+    AOEIW_final_JAP_arm_the_manchurian_restoration = {
+        icon = generic_military
+        cost = 50
+        fire_only_once = yes
+        allowed = { original_tag = JAP }
+        visible = {
+            MAN = { exists = yes is_subject_of = JAP }
+            CHI = { exists = yes }
+        }
+        available = { has_war = no NOT = { has_war_with = CHI } }
+        complete_effect = {
+            MAN = {
+                add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 12000 }
+                add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 }
+                add_manpower = 150000
+                add_ideas = AOEIW20_MAN_reclamation_mandate
+            }
+            set_country_flag = AOEIW_final_JAP_continental_ready
+            add_ideas = AOEIW_final_JAP_continental_preparations
+            add_war_support = 0.04
+        }
+        ai_will_do = { base = 4 }
+    }
+}

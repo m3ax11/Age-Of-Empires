@@ -1,0 +1,32 @@
+state={
+	id=1125
+	name="STATE_1125"
+	resources={
+		coal = 12 #initial distribution
+	}
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 7314 }
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			7314 1 
+		}
+        owner = CHI
+        add_core_of = CHI
+    }
+
+	provinces={
+		1458 7314 7659 
+	}
+	manpower = 1057400
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies=0.0 
+}

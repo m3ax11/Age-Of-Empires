@@ -1,0 +1,18 @@
+spriteTypes = {
+SpriteType = { name = "GFX_AOEIW_depot_standards_medium" texturefile = "gfx/interface/technologies/tech_logistics_company.dds" }
+SpriteType = { name = "GFX_AOEIW_field_maintenance_medium" texturefile = "gfx/interface/technologies/tech_maintenance_company.dds" }
+SpriteType = { name = "GFX_AOEIW_interchangeable_workshops_medium" texturefile = "gfx/interface/technologies/basic_machine_tools.dds" }
+SpriteType = { name = "GFX_AOEIW_distributed_depots_medium" texturefile = "gfx/interface/technologies/tech_logistics_company2.dds" }
+SpriteType = { name = "GFX_AOEIW_reich_motor_pool_medium" texturefile = "gfx/interface/technologies/motorised_infantry.dds" }
+SpriteType = { name = "GFX_AOEIW_entente_motor_pool_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+SpriteType = { name = "GFX_AOEIW_eurasian_motor_pool_medium" texturefile = "gfx/interface/technologies/tech_logistics_company3.dds" }
+SpriteType = { name = "GFX_AOEIW24_integrated_staff_work_medium" texturefile = "gfx/interface/technologies/recon.dds" }
+SpriteType = { name = "GFX_AOEIW24_national_radio_grid_medium" texturefile = "gfx/interface/technologies/radio.dds" }
+SpriteType = { name = "GFX_AOEIW24_mobile_command_posts_medium" texturefile = "gfx/interface/technologies/radio_detection.dds" }
+SpriteType = { name = "GFX_AOEIW24_armoured_recovery_columns_medium" texturefile = "gfx/interface/technologies/tech_maintenance_company2.dds" }
+SpriteType = { name = "GFX_AOEIW24_colonial_supply_corps_medium" texturefile = "gfx/interface/technologies/tech_logistics_company4.dds" }
+SpriteType = { name = "GFX_AOEIW24_convoy_coordination_medium" texturefile = "gfx/interface/technologies/integrated_convoy_defence.dds" }
+SpriteType = { name = "GFX_AOEIW24_mass_production_bureaus_medium" texturefile = "gfx/interface/technologies/assembly_line_production.dds" }
+SpriteType = { name = "GFX_AOEIW24_distributed_war_industry_medium" texturefile = "gfx/interface/technologies/dispersed_industry4.dds" }
+SpriteType = { name = "GFX_AOEIW24_amphibious_logistics_medium" texturefile = "gfx/interface/technologies/generic_amphibious_mech_1.dds" }
+}

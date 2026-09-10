@@ -1,0 +1,33 @@
+
+state={
+	id=513
+	name="STATE_513"
+
+	history = {
+
+
+		add_to_array = { state_victory_points = 3991 }
+		add_to_array = { state_victory_points = 9960 }
+		victory_points = {
+			3991 1 
+		}
+		victory_points = {
+			9960 1
+		}
+		buildings = {
+			infrastructure = 1 #was 2
+
+		}
+        owner = FRA
+        add_core_of = FRA
+    }
+
+	provinces={
+		1126 1128 1967 3991 4018 4150 7008 7040 9960 10045 12018 12020 13074
+	}
+	manpower=512748
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=0.0 
+}

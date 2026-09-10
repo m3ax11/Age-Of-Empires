@@ -1,0 +1,242 @@
+guiTypes = {
+    containerWindowType = {
+        name = "AOEIW_qol_resource_toggle_window"
+        size = { width = 48 height = 30 }
+        buttonType = {
+            name = "resource_toggle_button"
+            position = { x = 266 y = 9 }
+            size = { x = 42 y = 24 }
+            quadTextureSprite = "GFX_division_designer_button"
+            buttonFont = "hoi_16mbs"
+            buttonText = AOEIW_QOL_RESOURCE_TOGGLE_SHORT
+            pdx_tooltip = AOEIW_QOL_RESOURCE_TOGGLE_TT
+            clicksound = click_default
+            oversound = ui_menu_over
+        }
+    }
+
+    containerWindowType = {
+        name = "AOEIW_qol_resource_bar"
+        position = { x = 0 y = 3 }
+        size = { width = 1920 height = 72 }
+        orientation = UPPER_LEFT
+        clipping = no
+
+        containerWindowType = {
+            name = "resource_bar_inner"
+            position = { x = 1012 y = 0 }
+            size = { width = 438 height = 63 }
+            orientation = UPPER_LEFT
+            clipping = no
+
+            background = {
+                name = "resource_bar_background"
+                quadTextureSprite = "GFX_mini_tooltip"
+                alwaystransparent = yes
+            }
+
+            # Oil
+            containerWindowType = {
+                name = "oil_container"
+                position = { x = 3 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "oil_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_OIL_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "oil_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 1
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "oil_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_oil_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            # Aluminium
+            containerWindowType = {
+                name = "aluminium_container"
+                position = { x = 75 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "aluminium_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_ALUMINIUM_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "aluminium_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 2
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "aluminium_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_aluminium_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            # Rubber
+            containerWindowType = {
+                name = "rubber_container"
+                position = { x = 147 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "rubber_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_RUBBER_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "rubber_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 3
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "rubber_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_rubber_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            # Tungsten
+            containerWindowType = {
+                name = "tungsten_container"
+                position = { x = 219 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "tungsten_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_TUNGSTEN_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "tungsten_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 4
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "tungsten_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_tungsten_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            # Steel
+            containerWindowType = {
+                name = "steel_container"
+                position = { x = 291 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "steel_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_STEEL_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "steel_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 5
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "steel_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_steel_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            # Chromium
+            containerWindowType = {
+                name = "chromium_container"
+                position = { x = 363 y = 2 }
+                size = { width = 70 height = 28 }
+                buttonType = {
+                    name = "chromium_button"
+                    position = { x = 0 y = 0 }
+                    size = { x = 70 y = 28 }
+                    quadTextureSprite = "GFX_mini_tooltip"
+                    pdx_tooltip = AOEIW_QOL_CHROMIUM_TT
+                    clicksound = click_default
+                }
+                iconType = {
+                    name = "chromium_icon"
+                    position = { x = 3 y = 1 }
+                    spriteType = "GFX_resources_strip"
+                    frame = 6
+                    alwaystransparent = yes
+                }
+                instantTextboxType = {
+                    name = "chromium_value"
+                    position = { x = 18 y = 4 }
+                    font = "hoi_18mbs"
+                    text = [AOEIW_qol_chromium_text]
+                    maxWidth = 48
+                    maxHeight = 22
+                    fixedsize = yes
+                    format = center
+                }
+            }
+
+            instantTextboxType = {
+                name = "resource_detail_text"
+                position = { x = 7 y = 34 }
+                font = "hoi_16mbs"
+                text = [AOEIW_qol_resource_detail_text]
+                maxWidth = 424
+                maxHeight = 25
+                fixedsize = yes
+                format = center
+            }
+        }
+    }
+}

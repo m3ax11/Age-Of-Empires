@@ -1,0 +1,253 @@
+# Engine-safe China redesign. CHI remains the player and becomes the United
+# Front. MAN carries Puyi's Qing state continuously from Jehol to the postwar
+# Manchurian settlement. No civil-war engine, tag swap, or landless tag spawn.
+
+AOEIW20_UF_transfer_qing_states_1 = {
+    # Puyi's state already owns Jehol as an engine-safe bootstrap state. It
+    # loses its harmless provincial cover only when the uprising is declared.
+    MAN = {
+        drop_cosmetic_tag = yes
+        set_country_flag = AOEIW20_QIN_uprising_declared
+    }
+
+    # Move legacy imperial formations out of territory about to defect before
+    # borders move. This prevents units visibly spawning inside the enemy.
+    759 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+    760 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+    616 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+    753 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+    717 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+    601 = { teleport_armies = { limit = { original_tag = CHI } to_state = 1116 } }
+}
+
+AOEIW20_UF_transfer_qing_states_2 = {
+    MAN = {
+        transfer_state = 283
+        transfer_state = 287
+        transfer_state = 322
+        transfer_state = 328
+        transfer_state = 329
+        transfer_state = 591
+        transfer_state = 597
+        transfer_state = 601
+        transfer_state = 603
+        transfer_state = 604
+        transfer_state = 605
+        transfer_state = 606
+        transfer_state = 607
+        transfer_state = 608
+        transfer_state = 611
+        transfer_state = 612
+        transfer_state = 613
+        transfer_state = 614
+        transfer_state = 615
+        transfer_state = 616
+        transfer_state = 617
+        transfer_state = 618
+        transfer_state = 619
+        transfer_state = 620
+        transfer_state = 621
+        transfer_state = 622
+        add_state_core = 283
+        add_state_core = 287
+        add_state_core = 322
+        add_state_core = 328
+        add_state_core = 329
+        add_state_core = 591
+        add_state_core = 597
+        add_state_core = 601
+        add_state_core = 603
+        add_state_core = 604
+        add_state_core = 605
+        add_state_core = 606
+        add_state_core = 607
+        add_state_core = 608
+        add_state_core = 611
+        add_state_core = 612
+        add_state_core = 613
+        add_state_core = 614
+        add_state_core = 615
+        add_state_core = 616
+        add_state_core = 617
+        add_state_core = 618
+        add_state_core = 619
+        add_state_core = 620
+        add_state_core = 621
+        add_state_core = 622
+    }
+}
+
+AOEIW20_UF_transfer_qing_states_3 = {
+    MAN = {
+        transfer_state = 714
+        transfer_state = 715
+        transfer_state = 716
+        transfer_state = 717
+        transfer_state = 743
+        transfer_state = 746
+        transfer_state = 752
+        transfer_state = 753
+        transfer_state = 754
+        transfer_state = 755
+        transfer_state = 756
+        transfer_state = 757
+        transfer_state = 758
+        transfer_state = 759
+        transfer_state = 760
+        transfer_state = 761
+        transfer_state = 1117
+        transfer_state = 1118
+        transfer_state = 1119
+        transfer_state = 1121
+        transfer_state = 1122
+        transfer_state = 1123
+        transfer_state = 1124
+        add_state_core = 714
+        add_state_core = 715
+        add_state_core = 716
+        add_state_core = 717
+        add_state_core = 743
+        add_state_core = 746
+        add_state_core = 752
+        add_state_core = 753
+        add_state_core = 754
+        add_state_core = 755
+        add_state_core = 756
+        add_state_core = 757
+        add_state_core = 758
+        add_state_core = 759
+        add_state_core = 760
+        add_state_core = 761
+        add_state_core = 1117
+        add_state_core = 1118
+        add_state_core = 1119
+        add_state_core = 1121
+        add_state_core = 1122
+        add_state_core = 1123
+        add_state_core = 1124
+    }
+}
+
+AOEIW20_UF_prepare_qing = {
+    MAN = {
+        set_capital = { state = 608 }
+        set_politics = { ruling_party = neutrality elections_allowed = no }
+        set_popularities = { democratic = 6 fascism = 5 communism = 9 neutrality = 80 }
+        set_party_name = { ideology = neutrality long_name = AOEIW20_QIN_party_long name = AOEIW20_QIN_party }
+        add_ideas = AOEIW20_QIN_strive_for_survival
+        add_manpower = 900000
+        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 125000 }
+        add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 5000 }
+        add_equipment_to_stockpile = { type = support_equipment_1 amount = 5000 }
+        load_oob = "AOEIW_QIN_1936"
+        load_focus_tree = { tree = AOEIW_FRONTIER_MAN_focus keep_completed = no }
+        set_country_flag = AOEIW20_QIN_survival_government
+    }
+}
+
+AOEIW20_UF_transform_player = {
+    retire_character = AOEIW_CHI_puyi
+    promote_character = { character = AOEIW20_UF_national_salvation_council ideology = despotism }
+    set_capital = { state = 1116 }
+    set_cosmetic_tag = CHI_UF
+    set_politics = { ruling_party = neutrality elections_allowed = no }
+    set_popularities = { democratic = 22 fascism = 3 communism = 35 neutrality = 40 }
+    set_party_name = { ideology = neutrality long_name = AOEIW20_UF_party_long name = AOEIW20_UF_party }
+    remove_ideas = AOEIW_CHI_legacy_0
+    add_ideas = AOEIW20_UF_uneasy_coalition
+    add_manpower = 1200000
+    add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 190000 }
+    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 9000 }
+    add_equipment_to_stockpile = { type = support_equipment_1 amount = 9000 }
+    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
+    load_focus_tree = { tree = AOEIW20_UF_focus keep_completed = no }
+    set_country_flag = AOEIW20_UF_government_formed
+}
+
+AOEIW20_UF_mobilise_army = {
+    load_oob = "AOEIW_UF_1936"
+    set_country_flag = AOEIW20_UF_army_mobilised
+}
+
+# MAN remains alive throughout the settlement. This returns every non-
+# Manchurian Qing state to CHI before Japan receives the six-state remnant.
+AOEIW20_UF_resolve_qing_defeat = {
+    MAN = { set_capital = { state = 328 } }
+    CHI = {
+        transfer_state = 610
+        transfer_state = 283
+        transfer_state = 287
+        transfer_state = 322
+        transfer_state = 329
+        transfer_state = 591
+        transfer_state = 597
+        transfer_state = 601
+        transfer_state = 603
+        transfer_state = 604
+        transfer_state = 605
+        transfer_state = 606
+        transfer_state = 607
+        transfer_state = 608
+        transfer_state = 611
+        transfer_state = 612
+        transfer_state = 613
+        transfer_state = 614
+        transfer_state = 615
+        transfer_state = 616
+        transfer_state = 617
+        transfer_state = 618
+        transfer_state = 619
+        transfer_state = 620
+        transfer_state = 621
+        transfer_state = 622
+        transfer_state = 743
+        transfer_state = 746
+        transfer_state = 752
+        transfer_state = 753
+        transfer_state = 754
+        transfer_state = 755
+        transfer_state = 756
+        transfer_state = 757
+        transfer_state = 758
+        transfer_state = 759
+        transfer_state = 760
+        transfer_state = 1117
+        transfer_state = 1118
+        transfer_state = 1119
+        transfer_state = 1121
+        transfer_state = 1122
+        transfer_state = 1123
+        transfer_state = 1124
+    }
+}
+
+AOEIW20_UF_create_manchurian_settlement = {
+    MAN = {
+        transfer_state = 328
+        transfer_state = 714
+        transfer_state = 715
+        transfer_state = 716
+        transfer_state = 717
+        transfer_state = 761
+        add_state_core = 328
+        add_state_core = 714
+        add_state_core = 715
+        add_state_core = 716
+        add_state_core = 717
+        add_state_core = 761
+        set_capital = { state = 328 }
+        set_politics = { ruling_party = neutrality elections_allowed = no }
+        set_popularities = { democratic = 3 fascism = 12 communism = 3 neutrality = 82 }
+        add_ideas = AOEIW20_MAN_reclamation_mandate
+        add_manpower = 400000
+        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 35000 }
+        add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1500 }
+        add_equipment_to_stockpile = { type = support_equipment_1 amount = 1500 }
+        load_oob = "AOEIW_MAN_restoration"
+        set_country_flag = AOEIW20_MAN_restoration_established
+    }
+    if = {
+        limit = { country_exists = JAP }
+        JAP = { set_autonomy = { target = MAN autonomy_state = autonomy_puppet } }
+    }
+}

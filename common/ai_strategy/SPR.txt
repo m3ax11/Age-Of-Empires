@@ -1,0 +1,3 @@
+# AOEIW V8.11
+# Intentionally empty: disables vanilla Spain-specific AI strategies.
+# Spain is handled by AOEIW ai_strategy_plans instead.

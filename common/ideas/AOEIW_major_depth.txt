@@ -1,0 +1,830 @@
+ideas = {
+    country = {
+        AOEIW_DEPTH_GER_federal_credit = {
+            picture = GER_deutsche_werke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.06 consumer_goods_factor = 0.02 }
+        }
+        AOEIW_DEPTH_GER_treasury_control = {
+            picture = GER_wirtschaftswunder
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { political_power_gain = 0.08 production_speed_industrial_complex_factor = -0.03 }
+        }
+        AOEIW_DEPTH_GER_works_councils = {
+            picture = GER_the_shield_of_democracy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 production_factory_efficiency_gain_factor = 0.04 political_power_gain = -0.04 }
+        }
+        AOEIW_DEPTH_GER_pension_compact = {
+            picture = GER_iron_front
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { recruitable_population_factor = 0.03 consumer_goods_factor = 0.02 }
+        }
+        AOEIW_DEPTH_GER_council_autonomy = {
+            picture = GER_limited_democratic_principles
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.06 political_power_gain = -0.04 }
+        }
+        AOEIW_DEPTH_GER_quota_directorate = {
+            picture = GER_deutsche_werke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.04 stability_factor = -0.03 }
+        }
+        AOEIW_DEPTH_GER_rearmament_credit = {
+            picture = GER_deutsche_werke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_arms_factory_factor = 0.08 consumer_goods_factor = 0.04 }
+        }
+        AOEIW_DEPTH_GER_balanced_orders = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 production_speed_arms_factory_factor = -0.03 }
+        }
+        AOEIW_DEPTH_GER_federal_accounts_1 = {
+            picture = GER_organization_todt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_federal_accounts_2 = {
+            picture = GER_organization_todt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.05 political_power_gain = 0.03 }
+        }
+        AOEIW_DEPTH_GER_federal_accounts_3 = {
+            picture = GER_organization_todt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.07 political_power_gain = 0.06 }
+        }
+        AOEIW_DEPTH_GER_civil_continuity_1 = {
+            picture = GER_limited_democratic_principles
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_GER_civil_continuity_2 = {
+            picture = GER_limited_democratic_principles
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 political_power_gain = 0.04 }
+        }
+        AOEIW_DEPTH_GER_civil_continuity_3 = {
+            picture = GER_limited_democratic_principles
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 political_power_gain = 0.08 surrender_limit = 0.03 }
+        }
+        AOEIW_DEPTH_GER_workshop_representation_1 = {
+            picture = GER_reichswerke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_workshop_representation_2 = {
+            picture = GER_reichswerke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_GER_workshop_representation_3 = {
+            picture = GER_reichswerke
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.08 stability_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_rearmament_contracts_1 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.02 }
+        }
+        AOEIW_DEPTH_GER_rearmament_contracts_2 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.04 production_factory_max_efficiency_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_rearmament_contracts_3 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.06 production_factory_max_efficiency_factor = 0.05 production_lack_of_resource_penalty_factor = -0.05 }
+        }
+        AOEIW_DEPTH_GER_mobile_services_1 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.05 }
+        }
+        AOEIW_DEPTH_GER_mobile_services_2 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.10 army_fuel_consumption_factor = -0.04 }
+        }
+        AOEIW_DEPTH_GER_mobile_services_3 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.15 army_fuel_consumption_factor = -0.06 supply_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_GER_precision_industry_1 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_precision_industry_2 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 production_factory_max_efficiency_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_precision_industry_3 = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.07 production_factory_max_efficiency_factor = 0.05 }
+        }
+        AOEIW_DEPTH_GER_field_services_1 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.04 }
+        }
+        AOEIW_DEPTH_GER_field_services_2 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.07 experience_loss_factor = -0.05 }
+        }
+        AOEIW_DEPTH_GER_overseas_stations_1 = {
+            picture = GER_seeherrschaft
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.03 }
+        }
+        AOEIW_DEPTH_GER_overseas_stations_2 = {
+            picture = GER_seeherrschaft
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.05 navy_fuel_consumption_factor = -0.03 }
+        }
+        AOEIW_DEPTH_GER_overseas_stations_3 = {
+            picture = GER_seeherrschaft
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.08 navy_fuel_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_GER_convoy_service_1 = {
+            picture = GER_navy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.04 }
+        }
+        AOEIW_DEPTH_GER_convoy_service_2 = {
+            picture = GER_navy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.07 navy_fuel_consumption_factor = -0.04 }
+        }
+        AOEIW_DEPTH_GER_civil_contract_drive_active = {
+            picture = GER_aufrustung
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.15 production_speed_infrastructure_factor = 0.10 industrial_capacity_factory = -0.05 }
+        }
+        AOEIW_DEPTH_GER_arsenal_shifts_active = {
+            picture = GER_wirtschaftswunder
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.12 production_factory_efficiency_gain_factor = 0.10 production_speed_industrial_complex_factor = -0.10 }
+        }
+        AOEIW_DEPTH_GER_mobile_supply_push_active = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_speed_factor = 0.10 planning_speed = 0.20 army_fuel_consumption_factor = 0.10 }
+        }
+        AOEIW_DEPTH_GER_refit_front_active = {
+            picture = GER_seeherrschaft
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.20 supply_consumption_factor = -0.10 army_attack_factor = -0.05 }
+        }
+        AOEIW_DEPTH_GER_escort_rotation_active = {
+            picture = GER_generic_navy_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.15 navy_fuel_consumption_factor = -0.15 naval_invasion_prep_speed = -0.10 }
+        }
+        AOEIW_DEPTH_GER_fleet_refit_active = {
+            picture = GER_navy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.30 industrial_capacity_dockyard = 0.10 navy_org_factor = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_estate_compromise = {
+            picture = SOV_national_brotherhood_idea_ccp_sov_compatibility
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 consumer_goods_factor = 0.02 recruitable_population_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_land_ministry = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { mobilization_speed = 0.06 political_power_gain = -0.06 }
+        }
+        AOEIW_DEPTH_SOV_grain_cooperatives = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 consumer_goods_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_central_grain = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.04 stability_factor = -0.025 }
+        }
+        AOEIW_DEPTH_SOV_rural_contracts_1 = {
+            picture = SOV_defense_industry
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_rural_contracts_2 = {
+            picture = SOV_defense_industry
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 recruitable_population_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_rural_contracts_3 = {
+            picture = SOV_defense_industry
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 recruitable_population_factor = 0.05 supply_consumption_factor = -0.03 }
+        }
+        AOEIW_DEPTH_SOV_zemstvo_services_1 = {
+            picture = SOV_national_brotherhood_idea_ccp_sov_compatibility
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { political_power_gain = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_zemstvo_services_2 = {
+            picture = SOV_national_brotherhood_idea_ccp_sov_compatibility
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { political_power_gain = 0.06 stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_zemstvo_services_3 = {
+            picture = SOV_national_brotherhood_idea_ccp_sov_compatibility
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { political_power_gain = 0.09 stability_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_district_services_1 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_infrastructure_factor = 0.04 }
+        }
+        AOEIW_DEPTH_SOV_district_services_2 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_infrastructure_factor = 0.07 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_district_services_3 = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_infrastructure_factor = 0.10 production_factory_efficiency_gain_factor = 0.05 recruitable_population_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_imperial_supply_1 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_imperial_supply_2 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 supply_consumption_factor = -0.03 }
+        }
+        AOEIW_DEPTH_SOV_imperial_supply_3 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.05 supply_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_winter_services_1 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { winter_attrition_factor = -0.10 }
+        }
+        AOEIW_DEPTH_SOV_winter_services_2 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { winter_attrition_factor = -0.15 army_org_regain = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_winter_services_3 = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { winter_attrition_factor = -0.20 army_org_regain = 0.05 supply_consumption_factor = -0.04 }
+        }
+        AOEIW_DEPTH_SOV_cadre_education_1 = {
+            picture = SOV_war_heroes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_cadre_education_2 = {
+            picture = SOV_war_heroes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 research_speed_factor = 0.01 }
+        }
+        AOEIW_DEPTH_SOV_cadre_education_3 = {
+            picture = SOV_war_heroes
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.07 research_speed_factor = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_plan_reserves_1 = {
+            picture = SOV_red_army_alt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.02 }
+        }
+        AOEIW_DEPTH_SOV_plan_reserves_2 = {
+            picture = SOV_red_army_alt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.04 production_factory_max_efficiency_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_plan_reserves_3 = {
+            picture = SOV_red_army_alt
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.06 production_factory_max_efficiency_factor = 0.05 }
+        }
+        AOEIW_DEPTH_SOV_international_staff_1 = {
+            picture = SOV_generic_land_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_international_staff_2 = {
+            picture = SOV_generic_land_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.05 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_international_staff_3 = {
+            picture = SOV_generic_land_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_org_regain = 0.07 production_factory_efficiency_gain_factor = 0.05 planning_speed = 0.10 }
+        }
+        AOEIW_DEPTH_SOV_operational_depth_1 = {
+            picture = SOV_generic_land_4
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.05 }
+        }
+        AOEIW_DEPTH_SOV_operational_depth_2 = {
+            picture = SOV_generic_land_4
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.10 army_speed_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_operational_depth_3 = {
+            picture = SOV_generic_land_4
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.15 army_speed_factor = 0.05 supply_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_industrial_spares_1 = {
+            picture = SOV_mytishchy_machine_building_plant
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_industrial_spares_2 = {
+            picture = SOV_mytishchy_machine_building_plant
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 production_factory_max_efficiency_factor = 0.03 }
+        }
+        AOEIW_DEPTH_SOV_industrial_spares_3 = {
+            picture = SOV_mytishchy_machine_building_plant
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.07 production_factory_max_efficiency_factor = 0.05 }
+        }
+        AOEIW_DEPTH_SOV_northern_fleet_1 = {
+            picture = SOV_red_navy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.05 }
+        }
+        AOEIW_DEPTH_SOV_northern_fleet_2 = {
+            picture = SOV_red_navy
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.10 navy_fuel_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_volga_construction_active = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.15 production_speed_infrastructure_factor = 0.15 industrial_capacity_factory = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_arsenal_standardisation_active = {
+            picture = SOV_fourth_five_year_plan
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.12 production_factory_efficiency_gain_factor = 0.15 production_speed_industrial_complex_factor = -0.10 }
+        }
+        AOEIW_DEPTH_SOV_winter_distribution_active = {
+            picture = SOV_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { winter_attrition_factor = -0.30 supply_consumption_factor = -0.12 army_org_regain = 0.15 army_attack_factor = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_operational_reserves_active = {
+            picture = generic_logistics
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_attack_factor = 0.08 army_speed_factor = 0.10 planning_speed = 0.20 supply_consumption_factor = 0.12 }
+        }
+        AOEIW_DEPTH_SOV_grain_transport_active = {
+            picture = SOV_mytishchy_machine_building_plant
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.12 stability_factor = 0.05 industrial_capacity_factory = -0.05 }
+        }
+        AOEIW_DEPTH_SOV_district_recruitment_active = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { mobilization_speed = 0.30 army_org_regain = 0.15 production_speed_industrial_complex_factor = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_municipal_compact = {
+            picture = FRA_matignon_agreements
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 production_speed_industrial_complex_factor = 0.04 political_power_gain = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_prefectural_budget = {
+            picture = FRA_sncaso
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_arms_factory_factor = 0.05 stability_factor = -0.02 }
+        }
+        AOEIW_DEPTH_FRA_civilian_ministers = {
+            picture = FRA_matignon_agreements
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 planning_speed = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_staff_direct_rule = {
+            picture = FRA_national_mobilization_focus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { planning_speed = 0.08 political_power_gain = -0.07 }
+        }
+        AOEIW_DEPTH_FRA_communal_supply = {
+            picture = FRA_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 industrial_capacity_factory = -0.02 }
+        }
+        AOEIW_DEPTH_FRA_emergency_requisition = {
+            picture = FRA_generic_land_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.04 political_power_gain = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_municipal_compact_1 = {
+            picture = FRA_matignon_agreements
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_FRA_municipal_compact_2 = {
+            picture = FRA_matignon_agreements
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 political_power_gain = 0.04 }
+        }
+        AOEIW_DEPTH_FRA_municipal_compact_3 = {
+            picture = FRA_matignon_agreements
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 political_power_gain = 0.06 production_speed_industrial_complex_factor = 0.04 }
+        }
+        AOEIW_DEPTH_FRA_labour_compact_1 = {
+            picture = FRA_market_dynamism
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_labour_compact_2 = {
+            picture = FRA_market_dynamism
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.05 stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_FRA_labour_compact_3 = {
+            picture = FRA_market_dynamism
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.07 stability_factor = 0.03 recruitable_population_factor = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_imperial_service_1 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { mobilization_speed = 0.05 }
+        }
+        AOEIW_DEPTH_FRA_imperial_service_2 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { mobilization_speed = 0.10 army_org_factor = 0.02 }
+        }
+        AOEIW_DEPTH_FRA_imperial_service_3 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { mobilization_speed = 0.15 army_org_factor = 0.04 }
+        }
+        AOEIW_DEPTH_FRA_reserve_transport_1 = {
+            picture = FRA_panhard
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.02 }
+        }
+        AOEIW_DEPTH_FRA_reserve_transport_2 = {
+            picture = FRA_panhard
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.04 planning_speed = 0.05 }
+        }
+        AOEIW_DEPTH_FRA_reserve_transport_3 = {
+            picture = FRA_panhard
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.06 planning_speed = 0.10 }
+        }
+        AOEIW_DEPTH_FRA_medical_service_1 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { experience_loss_factor = -0.03 }
+        }
+        AOEIW_DEPTH_FRA_medical_service_2 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { experience_loss_factor = -0.05 army_org_regain = 0.04 }
+        }
+        AOEIW_DEPTH_FRA_medical_service_3 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { experience_loss_factor = -0.08 army_org_regain = 0.07 }
+        }
+        AOEIW_DEPTH_FRA_communal_distribution_1 = {
+            picture = FRA_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.02 }
+        }
+        AOEIW_DEPTH_FRA_communal_distribution_2 = {
+            picture = FRA_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_communal_distribution_3 = {
+            picture = FRA_generic_3
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { stability_factor = 0.04 production_factory_efficiency_gain_factor = 0.05 supply_consumption_factor = -0.03 }
+        }
+        AOEIW_DEPTH_FRA_supplier_standards_1 = {
+            picture = FRA_sncaso
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.02 }
+        }
+        AOEIW_DEPTH_FRA_supplier_standards_2 = {
+            picture = FRA_sncaso
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.04 production_factory_max_efficiency_factor = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_supplier_standards_3 = {
+            picture = FRA_sncaso
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.05 production_factory_max_efficiency_factor = 0.05 }
+        }
+        AOEIW_DEPTH_FRA_air_coordination_1 = {
+            picture = FRA_aeb
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { air_mission_efficiency = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_air_coordination_2 = {
+            picture = FRA_aeb
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { air_mission_efficiency = 0.05 air_accidents_factor = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_maritime_service_1 = {
+            picture = FRA_generic_navy_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.03 }
+        }
+        AOEIW_DEPTH_FRA_maritime_service_2 = {
+            picture = FRA_generic_navy_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.06 navy_fuel_consumption_factor = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_municipal_contract_drive_active = {
+            picture = FRA_generic_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_speed_industrial_complex_factor = 0.15 production_speed_infrastructure_factor = 0.10 industrial_capacity_factory = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_supplier_conversion_active = {
+            picture = FRA_generic_2
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.12 production_factory_efficiency_gain_factor = 0.10 production_speed_industrial_complex_factor = -0.10 }
+        }
+        AOEIW_DEPTH_FRA_methodical_operation_active = {
+            picture = FRA_generic_land_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_defence_factor = 0.10 max_planning = 0.15 dig_in_speed_factor = 0.20 army_speed_factor = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_mobile_counterstroke_active = {
+            picture = FRA_generic_land_4
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { army_attack_factor = 0.08 army_speed_factor = 0.12 army_org_regain = 0.15 supply_consumption_factor = 0.10 }
+        }
+        AOEIW_DEPTH_FRA_maritime_watch_active = {
+            picture = FRA_generic_navy_2
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { naval_coordination = 0.15 navy_fuel_consumption_factor = -0.12 air_mission_efficiency = -0.05 }
+        }
+        AOEIW_DEPTH_FRA_air_liaison_exercise_active = {
+            picture = generic_air_europe_1
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { air_mission_efficiency = 0.12 air_accidents_factor = -0.15 naval_coordination = -0.05 }
+        }
+    }
+}

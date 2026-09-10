@@ -1,0 +1,29 @@
+
+state={
+	id=505
+	name="STATE_505"
+	manpower = 1453561
+	
+	state_category = town
+	
+	history = {
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_to_array = { state_victory_points = 12987 }
+		add_to_array = { state_victory_points = 5208 }
+		victory_points = { 12987 5 }
+		victory_points = { 5208 10 }
+        owner = BRA
+        add_core_of = BRA
+    }
+
+	provinces={
+		5115 5148 5208 8140 12959 12987 
+	}
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

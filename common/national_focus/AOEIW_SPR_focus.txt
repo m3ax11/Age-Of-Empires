@@ -1,0 +1,2337 @@
+focus_tree = {
+	# AOEIW36 wide modular layout
+    id = AOEIW9_SPR_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10000
+            tag = SPR
+        }
+    }
+    continuous_focus_position = { x = 50 y = 2600 }
+    reset_on_civilwar = no
+
+    initial_show_position = { x = 4 y = 0 }
+    shortcut = {
+        name = AOEIW_SPR_crown_path_shortcut
+        target = AOEIW9_SPR_politics_p1_1
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_SPR_charter_path_shortcut
+        target = AOEIW9_SPR_politics_p2_1
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_SPR_directorate_path_shortcut
+        target = AOEIW9_SPR_politics_p3_1
+        scroll_wheel_factor = 0.72
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,1
+        # AOEIW expansion-space base: 5,1
+        id = AOEIW9_SPR_politics_p1_1
+        icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+        x = 1
+        y = 0
+        cost = 7
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            add_political_power = 82
+                        add_war_support = 0.045
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p2_1 focus = AOEIW9_SPR_politics_p3_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,2
+        # AOEIW expansion-space base: 6,2
+        id = AOEIW9_SPR_politics_p1_2
+        icon = GFX_focus_generic_democratic_europe
+        x = 1
+        y = 1
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_0 add_idea = AOEIW_SPR_legacy_1 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,3
+        # AOEIW expansion-space base: 5,2
+        id = AOEIW9_SPR_politics_p1_3
+        icon = GFX_focus_generic_social_democracy
+        x = 1
+        y = 2
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_2 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,4
+        # AOEIW expansion-space base: 6,3
+        id = AOEIW9_SPR_politics_p1_4
+        icon = GFX_focus_spr_maintain_the_republic
+        x = 1
+        y = 3
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_1 add_idea = AOEIW_SPR_legacy_2 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,5
+        # AOEIW expansion-space base: 5,3
+        id = AOEIW9_SPR_politics_p1_5
+        icon = GFX_focus_AFG_parliamentary_democracy
+        x = 1
+        y = 4
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,6
+        # AOEIW expansion-space base: 6,4
+        id = AOEIW9_SPR_politics_p1_6
+        icon = GFX_focus_generic_monarchist_sentiment
+        x = 1
+        y = 5
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.06 }
+            AOEIW9_install_spanish_constitutional_government = yes
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_2 add_idea = AOEIW_SPR_legacy_3 }
+            add_ideas = AOEIW9_SPR_spirit_statecraft
+            add_political_power = 75
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,1
+        # AOEIW expansion-space base: 10,1
+        id = AOEIW9_SPR_politics_p2_1
+        icon = GFX_focus_generic_social_democracy
+        x = 5
+        y = 0
+        cost = 4
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            add_stability = 0.085
+                        random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p1_1 focus = AOEIW9_SPR_politics_p3_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,2
+        # AOEIW expansion-space base: 9,2
+        id = AOEIW9_SPR_politics_p2_2
+        icon = GFX_goal_generic_political_pressure
+        x = 5
+        y = 1
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_0 add_idea = AOEIW_SPR_legacy_1 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,3
+        # AOEIW expansion-space base: 11,3
+        id = AOEIW9_SPR_politics_p2_3
+        icon = GFX_goal_generic_propaganda
+        x = 5
+        y = 2
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_2 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,4
+        # AOEIW expansion-space base: 9,3
+        id = AOEIW9_SPR_politics_p2_4
+        icon = GFX_focus_CHL_endorse_the_constitution
+        x = 5
+        y = 3
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_1 add_idea = AOEIW_SPR_legacy_2 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,5
+        # AOEIW expansion-space base: 11,4
+        id = AOEIW9_SPR_politics_p2_5
+        icon = GFX_focus_generic_election
+        x = 5
+        y = 4
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,6
+        # AOEIW expansion-space base: 9,4
+        id = AOEIW9_SPR_politics_p2_6
+        icon = GFX_focus_generic_social_democracy
+        x = 5
+        y = 5
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.06 }
+            AOEIW9_install_non_aligned_government = yes
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_2 add_idea = AOEIW_SPR_legacy_3 }
+            add_ideas = AOEIW9_SPR_spirit_constitutional
+            add_political_power = 75
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,1
+        # AOEIW expansion-space base: 15,1
+        id = AOEIW9_SPR_politics_p3_1
+        icon = GFX_focus_spa_caudillo_of_spain
+        x = 9
+        y = 0
+        cost = 5
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 25
+        
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            add_political_power = 48
+                        add_stability = 0.045
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p1_1 focus = AOEIW9_SPR_politics_p2_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,2
+        # AOEIW expansion-space base: 16,2
+        id = AOEIW9_SPR_politics_p3_2
+        icon = GFX_focus_generic_spread_fascism
+        x = 9
+        y = 1
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_0 add_idea = AOEIW_SPR_legacy_1 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,3
+        # AOEIW expansion-space base: 15,2
+        id = AOEIW9_SPR_politics_p3_3
+        icon = GFX_focus_HUN_government_of_national_unity
+        x = 9
+        y = 2
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_2 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,4
+        # AOEIW expansion-space base: 16,3
+        id = AOEIW9_SPR_politics_p3_4
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 9
+        y = 3
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_1 add_idea = AOEIW_SPR_legacy_2 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,5
+        # AOEIW expansion-space base: 15,3
+        id = AOEIW9_SPR_politics_p3_5
+        icon = GFX_focus_generic_spread_fascism
+        x = 9
+        y = 4
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,6
+        # AOEIW expansion-space base: 16,4
+        id = AOEIW9_SPR_politics_p3_6
+        icon = GFX_focus_generic_spur_communist_revolutions
+        x = 9
+        y = 5
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.06 }
+            AOEIW9_install_nationalist_government = yes
+            swap_ideas = { remove_idea = AOEIW_SPR_legacy_2 add_idea = AOEIW_SPR_legacy_3 }
+            add_ideas = AOEIW9_SPR_spirit_mobilised_society
+            add_political_power = 75
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        id = AOEIW26_SPR_council_of_the_spains
+        icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+        x = 1
+        y = 6
+        cost = 6
+        prerequisite = { focus = AOEIW9_SPR_politics_p1_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.06
+            add_political_power = 75
+            add_manpower = 50000
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        id = AOEIW26_SPR_cortes_of_the_realms
+        icon = GFX_focus_spr_maintain_the_republic
+        x = 5
+        y = 6
+        cost = 6
+        prerequisite = { focus = AOEIW9_SPR_politics_p2_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 100
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        id = AOEIW26_SPR_unify_the_national_movement
+        icon = GFX_focus_spa_unify_the_nationalist_front
+        x = 9
+        y = 6
+        cost = 6
+        prerequisite = { focus = AOEIW9_SPR_politics_p3_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+        completion_reward = {
+            add_war_support = 0.07
+            add_command_power = 30
+            army_experience = 20
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        id = AOEIW27_SPR_foral_compromise
+        icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+        x = 1
+        y = 7
+        cost = 6
+        prerequisite = { focus = AOEIW26_SPR_council_of_the_spains }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 100
+            add_war_support = 0.02
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        id = AOEIW27_SPR_imperial_social_charter
+        icon = GFX_focus_spr_maintain_the_republic
+        x = 5
+        y = 7
+        cost = 6
+        prerequisite = { focus = AOEIW26_SPR_cortes_of_the_realms }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_stability = 0.04
+            add_political_power = 75
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
+    }
+
+    focus = {
+        id = AOEIW27_SPR_caudillo_of_empire
+        icon = GFX_focus_spa_caudillo_of_spain
+        x = 9
+        y = 7
+        cost = 6
+        prerequisite = { focus = AOEIW26_SPR_unify_the_national_movement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+        completion_reward = {
+            add_war_support = 0.06
+            add_command_power = 35
+            army_experience = 25
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,7
+        # AOEIW expansion-space base: 10,8
+        id = AOEIW9_SPR_politics_settlement
+        icon = GFX_goal_generic_political_pressure
+        x = 5
+        y = 8
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_political_settlement = yes
+            add_stability = 0.04
+            add_war_support = 0.03
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = { focus = AOEIW27_SPR_foral_compromise focus = AOEIW27_SPR_imperial_social_charter focus = AOEIW27_SPR_caudillo_of_empire }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,0
+        # AOEIW expansion-space base: 31,0
+        id = AOEIW9_SPR_eco_root
+        icon = GFX_focus_generic_industrial_experts
+        x = 23
+        y = 0
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    165 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+    add_political_power = 25
+}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,1
+        # AOEIW expansion-space base: 26,1
+        id = AOEIW9_SPR_eco_civ_1
+        icon = GFX_focus_generic_commission
+        x = 15
+        y = 1
+        cost = 6
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    165 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+    }
+
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+                        add_political_power = 36
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,2
+        # AOEIW expansion-space base: 25,2
+        id = AOEIW9_SPR_eco_civ_2
+        icon = GFX_focus_generic_steel_mill
+        x = 15
+        y = 2
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    792 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+    }
+    add_resource = { type = steel amount = 2 state = 792 }
+    add_tech_bonus = { name = AOEIW9_SPR_civ_1_bonus bonus = 0.50 uses = 1 category = industry }
+    swap_ideas = { remove_idea = AOEIW6_SPR_regional_economy_0 add_idea = AOEIW6_SPR_regional_economy_1 }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,3
+        # AOEIW expansion-space base: 27,3
+        id = AOEIW9_SPR_eco_civ_3
+        icon = GFX_focus_generic_industry_investment
+        x = 14
+        y = 3
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = { remove_ideas = AOEIW_CORE_SPR_strategic add_ideas = AOEIW_CORE_SPR_civil  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_2 }
+        mutually_exclusive = { focus = AOEIW9_SPR_eco_civ_4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_eco_civ_4 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,3
+        # AOEIW expansion-space base: 25,3
+        id = AOEIW9_SPR_eco_civ_4
+        icon = GFX_focus_generic_reorient_production
+        x = 16
+        y = 3
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = { remove_ideas = AOEIW_CORE_SPR_civil add_ideas = AOEIW_CORE_SPR_strategic  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_2 }
+        mutually_exclusive = { focus = AOEIW9_SPR_eco_civ_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_eco_civ_3 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,4
+        # AOEIW expansion-space base: 27,4
+        id = AOEIW9_SPR_eco_civ_5
+        icon = GFX_focus_generic_industry_investment
+        x = 15
+        y = 4
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    165 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = dockyard level = 1 instant_build = yes }
+        add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+    }
+    add_tech_bonus = { name = AOEIW9_SPR_civ_4_bonus bonus = 0.50 uses = 1 category = industry }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_3 focus = AOEIW9_SPR_eco_civ_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,5
+        # AOEIW expansion-space base: 25,4
+        id = AOEIW9_SPR_eco_civ_6
+        icon = GFX_focus_generic_railroad
+        x = 15
+        y = 5
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,6
+        # AOEIW expansion-space base: 27,4
+        id = AOEIW9_SPR_eco_civ_7
+        icon = GFX_focus_generic_mass_production
+        x = 15
+        y = 6
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 165 controls_state = 165 }
+                165 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_6 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,7
+        # AOEIW expansion-space base: 25,4
+        id = AOEIW9_SPR_eco_civ_8
+        icon = GFX_focus_generic_steel_mill
+        x = 15
+        y = 7
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW9_SPR_spirit_civilian_engine
+            swap_ideas = { remove_idea = AOEIW6_SPR_regional_economy_2 add_idea = AOEIW6_SPR_regional_economy_3 }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,1
+        # AOEIW expansion-space base: 36,1
+        id = AOEIW9_SPR_eco_war_1
+        icon = GFX_focus_generic_commission
+        x = 28
+        y = 1
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_war_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,2
+        # AOEIW expansion-space base: 37,2
+        id = AOEIW9_SPR_eco_war_2
+        icon = GFX_focus_generic_military_industry
+        x = 28
+        y = 2
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+    165 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = dockyard level = 1 instant_build = yes }
+    }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,3
+        # AOEIW expansion-space base: 36,2
+        id = AOEIW9_SPR_eco_war_3
+        icon = GFX_focus_generic_modernize_industry
+        x = 28
+        y = 3
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,4
+        # AOEIW expansion-space base: 37,3
+        id = AOEIW9_SPR_eco_war_4
+        icon = GFX_focus_generic_military_industry
+        x = 28
+        y = 4
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+    165 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+    }
+    add_tech_bonus = { name = AOEIW9_SPR_war_3_bonus bonus = 0.50 uses = 1 category = industry }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,5
+        # AOEIW expansion-space base: 36,3
+        id = AOEIW9_SPR_eco_war_5
+        icon = GFX_focus_generic_steel_mill
+        x = 28
+        y = 5
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+    792 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+    }
+    add_resource = { type = steel amount = 1 state = 792 }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,6
+        # AOEIW expansion-space base: 37,4
+        id = AOEIW9_SPR_eco_war_6
+        icon = GFX_focus_generic_mass_production
+        x = 28
+        y = 6
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+    790 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+    }
+    add_resource = { type = coal amount = 1 state = 790 }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,7
+        # AOEIW expansion-space base: 36,4
+        id = AOEIW9_SPR_eco_war_7
+        icon = GFX_focus_generic_industry_1
+        x = 28
+        y = 7
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_war_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_ideas = AOEIW9_SPR_spirit_war_industry
+            army_experience = 15
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_6 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,2
+        # AOEIW expansion-space base: 31,1
+        id = AOEIW9_SPR_eco_science_1
+        icon = GFX_focus_generic_university_2
+        x = 20
+        y = 2
+        cost = 4
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 28,3
+        # AOEIW expansion-space base: 30,2
+        id = AOEIW9_SPR_eco_science_2
+        icon = GFX_focus_generic_university_1
+        x = 19
+        y = 3
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,3
+        # AOEIW expansion-space base: 32,3
+        id = AOEIW9_SPR_eco_science_3
+        icon = GFX_focus_generic_university_2
+        x = 21
+        y = 3
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 28,4
+        # AOEIW expansion-space base: 30,3
+        id = AOEIW9_SPR_eco_science_4
+        icon = GFX_focus_generic_industrial_experts
+        x = 19
+        y = 4
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,4
+        # AOEIW expansion-space base: 32,4
+        id = AOEIW9_SPR_eco_science_5
+        icon = GFX_focus_generic_industrial_experts
+        x = 21
+        y = 4
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_research_slot = 1
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,5
+        # AOEIW expansion-space base: 30,4
+        id = AOEIW9_SPR_eco_science_6
+        icon = GFX_focus_generic_university_3
+        x = 20
+        y = 5
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SPR_sci_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_ideas = AOEIW9_SPR_spirit_research_network
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_4 }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 36,1
+        # AOEIW expansion-space base: 29,3
+        id = AOEIW9_SPR_eco_infra_1
+        icon = GFX_focus_HUN_the_old_habsburg_king
+        x = 24
+        y = 1
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_tech_bonus = { name = AOEIW_CORE_SPR_logistics bonus = 0.5 uses = 1 category = support_tech } }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,2
+        # AOEIW expansion-space base: 30,4
+        id = AOEIW9_SPR_eco_infra_2
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 23
+        y = 2
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    41 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+    add_political_power = 30
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,2
+        # AOEIW expansion-space base: 29,4
+        id = AOEIW9_SPR_eco_infra_3
+        icon = GFX_focus_generic_low_cost_housing
+        x = 25
+        y = 2
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+    165 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+    }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 36,3
+        # AOEIW expansion-space base: 30,5
+        id = AOEIW9_SPR_eco_infra_4
+        icon = GFX_focus_generic_railroad
+        x = 24
+        y = 3
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_2 }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,8
+        # AOEIW expansion-space base: 31,10
+        id = AOEIW9_SPR_eco_final
+        icon = GFX_focus_generic_industry_3
+        x = 23
+        y = 8
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            AOEIW_consolidation_apply_industrial_programme = yes
+            add_political_power = 50
+            add_stability = 0.02
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = { focus = AOEIW9_SPR_eco_civ_8 }
+        prerequisite = { focus = AOEIW9_SPR_eco_science_6 }
+        prerequisite = { focus = AOEIW9_SPR_eco_infra_4 }
+        prerequisite = { focus = AOEIW9_SPR_eco_war_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,10
+        # AOEIW expansion-space base: 8,9
+        id = AOEIW9_SPR_mil_root
+        icon = GFX_goal_generic_army_doctrines
+        x = 6
+        y = 9
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_command_power = 20
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,11
+        # AOEIW expansion-space base: 3,10
+        id = AOEIW9_SPR_mil_army_1
+        icon = GFX_focus_generic_military_academy
+        x = 1
+        y = 10
+        cost = 6
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = infantry_weapons
+            }
+        
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            navy_experience = 33
+                        add_equipment_to_stockpile = { type = convoy_1 amount = 27 producer = ROOT }
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,12
+        # AOEIW expansion-space base: 2,11
+        id = AOEIW9_SPR_mil_army_2
+        icon = GFX_focus_generic_military_academy
+        x = 1
+        y = 11
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,13
+        # AOEIW expansion-space base: 4,12
+        id = AOEIW9_SPR_mil_army_3
+        icon = GFX_focus_generic_defensive_reorganization
+        x = 0
+        y = 12
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { remove_ideas = AOEIW_CORE_SPR_mobile add_ideas = AOEIW_CORE_SPR_defence  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_2 }
+        mutually_exclusive = { focus = AOEIW9_SPR_mil_army_4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_mil_army_4 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,13
+        # AOEIW expansion-space base: 2,12
+        id = AOEIW9_SPR_mil_army_4
+        icon = GFX_focus_generic_army_doctrines_2
+        x = 3
+        y = 12
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { remove_ideas = AOEIW_CORE_SPR_defence add_ideas = AOEIW_CORE_SPR_mobile  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_2 }
+        mutually_exclusive = { focus = AOEIW9_SPR_mil_army_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_mil_army_3 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,14
+        # AOEIW expansion-space base: 4,13
+        id = AOEIW9_SPR_mil_army_5
+        icon = GFX_focus_generic_truck
+        x = 1
+        y = 13
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = motorized_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_3 focus = AOEIW9_SPR_mil_army_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,15
+        # AOEIW expansion-space base: 2,13
+        id = AOEIW9_SPR_mil_army_6
+        icon = GFX_goal_generic_army_doctrines
+        x = 1
+        y = 14
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,16
+        # AOEIW expansion-space base: 4,13
+        id = AOEIW9_SPR_mil_army_7
+        icon = GFX_focus_generic_army_tanks2
+        x = 1
+        y = 15
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = armor
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_6 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,17
+        # AOEIW expansion-space base: 2,13
+        id = AOEIW9_SPR_mil_army_8
+        icon = GFX_goal_generic_army_doctrines
+        x = 1
+        y = 16
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_7_bonus
+                bonus = 0.50
+                uses = 1
+                category = logistics_tech
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,18
+        # AOEIW expansion-space base: 4,14
+        id = AOEIW9_SPR_mil_army_9
+        icon = GFX_goal_generic_army_artillery2
+        x = 1
+        y = 17
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SPR_army_8_bonus
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+            add_ideas = AOEIW9_SPR_spirit_military_reform
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_8 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,11
+        # AOEIW expansion-space base: 8,10
+        id = AOEIW9_SPR_mil_air_1
+        icon = GFX_goal_generic_build_airforce
+        x = 6
+        y = 10
+        cost = 7
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,12
+        # AOEIW expansion-space base: 9,11
+        id = AOEIW9_SPR_mil_air_2
+        icon = GFX_focus_generic_pilot_training
+        x = 6
+        y = 11
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,13
+        # AOEIW expansion-space base: 8,11
+        id = AOEIW9_SPR_mil_air_3
+        icon = GFX_focus_generic_air_defense
+        x = 6
+        y = 12
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_doc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,14
+        # AOEIW expansion-space base: 9,12
+        id = AOEIW9_SPR_mil_air_4
+        icon = GFX_focus_generic_long_range_aircraft
+        x = 6
+        y = 13
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,15
+        # AOEIW expansion-space base: 8,12
+        id = AOEIW9_SPR_mil_air_5
+        icon = GFX_goal_generic_radar
+        x = 6
+        y = 14
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,16
+        # AOEIW expansion-space base: 9,13
+        id = AOEIW9_SPR_mil_air_6
+        icon = GFX_focus_generic_air_defense
+        x = 6
+        y = 15
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SPR_air_doc_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 19,11
+        # AOEIW expansion-space base: 13,10
+        id = AOEIW9_SPR_mil_sea_1
+        icon = GFX_goal_generic_build_navy
+        x = 11
+        y = 10
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navy_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,12
+        # AOEIW expansion-space base: 12,11
+        id = AOEIW9_SPR_mil_sea_2
+        icon = GFX_focus_generic_military_industry
+        x = 10
+        y = 11
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+    navy_experience = 12
+    add_tech_bonus = { name = AOEIW9_SPR_navy_1_bonus bonus = 0.50 uses = 1 category = naval_equipment }
+    171 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = { type = dockyard level = 1 instant_build = yes }
+    }
+}
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,12
+        # AOEIW expansion-space base: 14,12
+        id = AOEIW9_SPR_mil_sea_3
+        icon = GFX_focus_generic_cruiser2
+        x = 13
+        y = 11
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navy_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navydoc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,13
+        # AOEIW expansion-space base: 12,12
+        id = AOEIW9_SPR_mil_sea_4
+        icon = GFX_focus_generic_escort_efficiency
+        x = 10
+        y = 12
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navy_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,13
+        # AOEIW expansion-space base: 14,13
+        id = AOEIW9_SPR_mil_sea_5
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 13
+        y = 12
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navy_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 19,14
+        # AOEIW expansion-space base: 12,13
+        id = AOEIW9_SPR_mil_sea_6
+        icon = GFX_focus_generic_navy_battleship2
+        x = 11
+        y = 13
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navy_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SPR_navydoc_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_4 }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,19
+        # AOEIW expansion-space base: 8,20
+        id = AOEIW9_SPR_mil_final
+        icon = GFX_focus_generic_combined_arms
+        x = 6
+        y = 18
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            AOEIW_consolidation_apply_military_reform = yes
+            army_experience = 25
+            air_experience = 15
+            navy_experience = 10
+            add_war_support = 0.04
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = { focus = AOEIW9_SPR_mil_army_9 }
+        prerequisite = { focus = AOEIW9_SPR_mil_air_6 }
+        prerequisite = { focus = AOEIW9_SPR_mil_sea_6 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,10
+        # AOEIW expansion-space base: 35,9
+        id = AOEIW9_SPR_dip_root
+        icon = GFX_goal_generic_army_doctrines
+        x = 24
+        y = 9
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+            add_ideas = AOEIW11_strategic_foreign_office
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = { focus = AOEIW9_SPR_politics_settlement }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,11
+        # AOEIW expansion-space base: 32,10
+        id = AOEIW9_SPR_dip_a_1
+        icon = GFX_goal_generic_political_pressure
+        x = 21
+        y = 10
+        cost = 5
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { FRA = { exists = yes } }
+                add_opinion_modifier = { target = FRA modifier = AOEIW11_strategic_pressure_opinion }
+                FRA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        
+            # AOEIW INTEGRATED COUNTRY EFFECT BEGIN
+            add_political_power = 50
+                        add_stability = 0.045
+                        add_command_power = 6
+            # AOEIW INTEGRATED COUNTRY EFFECT END
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,12
+        # AOEIW expansion-space base: 33,11
+        id = AOEIW9_SPR_dip_a_2
+        icon = GFX_focus_generic_military_mission
+        x = 20
+        y = 11
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = FRA modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { FRA = { exists = yes } }
+                add_opinion_modifier = { target = FRA modifier = AOEIW11_strategic_pressure_opinion }
+                FRA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,12
+        # AOEIW expansion-space base: 32,11
+        id = AOEIW9_SPR_dip_a_3
+        icon = GFX_focus_generic_concessions
+        x = 23
+        y = 11
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_tech_bonus = {
+                name = AOEIW11_SPR_dip_a_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,13
+        # AOEIW expansion-space base: 33,12
+        id = AOEIW9_SPR_dip_a_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 21
+        y = 12
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_SPR_dip_a_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_2 }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,14
+        # AOEIW expansion-space base: 32,12
+        id = AOEIW9_SPR_dip_a_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 21
+        y = 13
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { FRA = { exists = yes } }
+                add_opinion_modifier = { target = FRA modifier = AOEIW11_formal_warning_opinion }
+                FRA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,15
+        # AOEIW expansion-space base: 33,13
+        id = AOEIW9_SPR_dip_a_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 21
+        y = 14
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { FRA = { exists = yes } NOT = { has_war_with = FRA } } create_wargoal = { type = annex_everything target = FRA } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+            if = {
+                limit = { FRA = { exists = yes } }
+                add_opinion_modifier = { target = FRA modifier = AOEIW11_ultimatum_opinion }
+                FRA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,11
+        # AOEIW expansion-space base: 38,10
+        id = AOEIW9_SPR_dip_b_1
+        icon = GFX_goal_generic_alliance
+        x = 28
+        y = 10
+        cost = 6
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { POR = { exists = yes } }
+                add_opinion_modifier = { target = POR modifier = AOEIW11_strategic_pressure_opinion }
+                POR = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_root }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 40,12
+        # AOEIW expansion-space base: 37,11
+        id = AOEIW9_SPR_dip_b_2
+        icon = GFX_focus_generic_military_mission
+        x = 26
+        y = 11
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = POR modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { POR = { exists = yes } }
+                add_opinion_modifier = { target = POR modifier = AOEIW11_strategic_pressure_opinion }
+                POR = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 44,12
+        # AOEIW expansion-space base: 39,12
+        id = AOEIW9_SPR_dip_b_3
+        icon = GFX_focus_generic_concessions
+        x = 29
+        y = 11
+        cost = 4
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_tech_bonus = {
+                name = AOEIW11_SPR_dip_b_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_1 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 40,13
+        # AOEIW expansion-space base: 37,12
+        id = AOEIW9_SPR_dip_b_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 26
+        y = 12
+        cost = 5
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_SPR_dip_b_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 44,13
+        # AOEIW expansion-space base: 39,13
+        id = AOEIW9_SPR_dip_b_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 29
+        y = 12
+        cost = 6
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { POR = { exists = yes } }
+                add_opinion_modifier = { target = POR modifier = AOEIW11_formal_warning_opinion }
+                POR = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 42,14
+        # AOEIW expansion-space base: 37,13
+        id = AOEIW9_SPR_dip_b_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 28
+        y = 13
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { POR = { exists = yes } NOT = { has_war_with = POR } } create_wargoal = { type = annex_everything target = POR } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+            if = {
+                limit = { POR = { exists = yes } }
+                add_opinion_modifier = { target = POR modifier = AOEIW11_ultimatum_opinion }
+                POR = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_4 }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_5 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,19
+        # AOEIW expansion-space base: 35,17
+        id = AOEIW9_SPR_dip_final
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 24
+        y = 18
+        cost = 7
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_diplomatic_charter = yes
+            add_political_power = 75
+            add_war_support = 0.05
+            add_ideas = AOEIW11_grand_strategy
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = { focus = AOEIW9_SPR_dip_a_6 }
+        prerequisite = { focus = AOEIW9_SPR_dip_b_6 }
+    }
+
+    focus = {
+        id = AOEIW35_SPR_institutional_settlement
+        icon = GFX_focus_generic_concessions
+        x = 14
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_SPR_politics_settlement }
+        dynamic = yes
+        allow_branch = { OR = { has_completed_focus = AOEIW9_SPR_politics_settlement } }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { if = { limit = { has_any_power_balance = no } set_power_balance = { id = AOEIW35_SPR_governance_balance left_side = AOEIW35_SPR_left_side right_side = AOEIW35_SPR_right_side set_value = 0 } } country_event = { id = AOEIW35_spr.1 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_SPR_institutional_left
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 13
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW35_SPR_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_SPR_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = -0.15 } add_stability = 0.02 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_SPR_institutional_right
+        icon = GFX_goal_generic_propaganda
+        x = 15
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW35_SPR_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_SPR_institutional_left }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = 0.15 } add_war_support = 0.02 add_stability = -0.01 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_SPR_institutional_capstone
+        icon = GFX_goal_generic_national_unity
+        x = 14
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW35_SPR_institutional_left focus = AOEIW35_SPR_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_ideas = AOEIW35_SPR_institutional_capstone_idea country_event = { id = AOEIW35_spr.2 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+}

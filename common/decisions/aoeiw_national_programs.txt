@@ -1,0 +1,1256 @@
+AOEIW_national_programs = {
+    AOEIW_GER_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = GER }
+        visible = { has_country_flag = AOEIW_GER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_GER_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = GER }
+        visible = { has_country_flag = AOEIW_GER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_GER_research_grants = {
+        cost = 50
+        allowed = { original_tag = GER }
+        visible = { has_country_flag = AOEIW_GER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_GER_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ENG_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = ENG }
+        visible = { has_country_flag = AOEIW_ENG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ENG_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = ENG }
+        visible = { has_country_flag = AOEIW_ENG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ENG_research_grants = {
+        cost = 50
+        allowed = { original_tag = ENG }
+        visible = { has_country_flag = AOEIW_ENG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_ENG_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FRA_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = FRA }
+        visible = { has_country_flag = AOEIW_FRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FRA_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = FRA }
+        visible = { has_country_flag = AOEIW_FRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FRA_research_grants = {
+        cost = 50
+        allowed = { original_tag = FRA }
+        visible = { has_country_flag = AOEIW_FRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_FRA_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SOV_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = SOV }
+        visible = { has_country_flag = AOEIW_SOV_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SOV_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = SOV }
+        visible = { has_country_flag = AOEIW_SOV_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SOV_research_grants = {
+        cost = 50
+        allowed = { original_tag = SOV }
+        visible = { has_country_flag = AOEIW_SOV_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_SOV_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SPR_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW_SPR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SPR_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW_SPR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SPR_research_grants = {
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW_SPR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_SPR_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CHI_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = CHI }
+        visible = { has_country_flag = AOEIW_CHI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CHI_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = CHI }
+        visible = { has_country_flag = AOEIW_CHI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CHI_research_grants = {
+        cost = 50
+        allowed = { original_tag = CHI }
+        visible = { has_country_flag = AOEIW_CHI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_CHI_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_TUR_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = TUR }
+        visible = { has_country_flag = AOEIW_TUR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_TUR_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = TUR }
+        visible = { has_country_flag = AOEIW_TUR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_TUR_research_grants = {
+        cost = 50
+        allowed = { original_tag = TUR }
+        visible = { has_country_flag = AOEIW_TUR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_TUR_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_JAP_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_JAP_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_JAP_research_grants = {
+        cost = 50
+        allowed = { original_tag = JAP }
+        visible = { has_country_flag = AOEIW_JAP_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_JAP_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_USA_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = USA }
+        visible = { has_country_flag = AOEIW_USA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_USA_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = USA }
+        visible = { has_country_flag = AOEIW_USA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_USA_research_grants = {
+        cost = 50
+        allowed = { original_tag = USA }
+        visible = { has_country_flag = AOEIW_USA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_USA_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POR_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = POR }
+        visible = { has_country_flag = AOEIW_POR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POR_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = POR }
+        visible = { has_country_flag = AOEIW_POR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POR_research_grants = {
+        cost = 50
+        allowed = { original_tag = POR }
+        visible = { has_country_flag = AOEIW_POR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_POR_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWE_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = SWE }
+        visible = { has_country_flag = AOEIW_SWE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWE_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = SWE }
+        visible = { has_country_flag = AOEIW_SWE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWE_research_grants = {
+        cost = 50
+        allowed = { original_tag = SWE }
+        visible = { has_country_flag = AOEIW_SWE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_SWE_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_NOR_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = NOR }
+        visible = { has_country_flag = AOEIW_NOR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_NOR_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = NOR }
+        visible = { has_country_flag = AOEIW_NOR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_NOR_research_grants = {
+        cost = 50
+        allowed = { original_tag = NOR }
+        visible = { has_country_flag = AOEIW_NOR_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_NOR_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_RAJ_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = RAJ }
+        visible = { has_country_flag = AOEIW_RAJ_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_RAJ_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = RAJ }
+        visible = { has_country_flag = AOEIW_RAJ_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_RAJ_research_grants = {
+        cost = 50
+        allowed = { original_tag = RAJ }
+        visible = { has_country_flag = AOEIW_RAJ_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_RAJ_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ITA_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = ITA }
+        visible = { has_country_flag = AOEIW_ITA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ITA_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = ITA }
+        visible = { has_country_flag = AOEIW_ITA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ITA_research_grants = {
+        cost = 50
+        allowed = { original_tag = ITA }
+        visible = { has_country_flag = AOEIW_ITA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_ITA_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_GRE_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = GRE }
+        visible = { has_country_flag = AOEIW_GRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_GRE_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = GRE }
+        visible = { has_country_flag = AOEIW_GRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_GRE_research_grants = {
+        cost = 50
+        allowed = { original_tag = GRE }
+        visible = { has_country_flag = AOEIW_GRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_GRE_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ROM_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = ROM }
+        visible = { has_country_flag = AOEIW_ROM_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ROM_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = ROM }
+        visible = { has_country_flag = AOEIW_ROM_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ROM_research_grants = {
+        cost = 50
+        allowed = { original_tag = ROM }
+        visible = { has_country_flag = AOEIW_ROM_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_ROM_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BUL_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = BUL }
+        visible = { has_country_flag = AOEIW_BUL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BUL_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = BUL }
+        visible = { has_country_flag = AOEIW_BUL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BUL_research_grants = {
+        cost = 50
+        allowed = { original_tag = BUL }
+        visible = { has_country_flag = AOEIW_BUL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_BUL_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_YUG_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = YUG }
+        visible = { has_country_flag = AOEIW_YUG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_YUG_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = YUG }
+        visible = { has_country_flag = AOEIW_YUG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_YUG_research_grants = {
+        cost = 50
+        allowed = { original_tag = YUG }
+        visible = { has_country_flag = AOEIW_YUG_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_YUG_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_PER_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = PER }
+        visible = { has_country_flag = AOEIW_PER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_PER_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = PER }
+        visible = { has_country_flag = AOEIW_PER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_PER_research_grants = {
+        cost = 50
+        allowed = { original_tag = PER }
+        visible = { has_country_flag = AOEIW_PER_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_PER_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ETH_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = ETH }
+        visible = { has_country_flag = AOEIW_ETH_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ETH_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = ETH }
+        visible = { has_country_flag = AOEIW_ETH_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_ETH_research_grants = {
+        cost = 50
+        allowed = { original_tag = ETH }
+        visible = { has_country_flag = AOEIW_ETH_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_ETH_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SIA_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = SIA }
+        visible = { has_country_flag = AOEIW_SIA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SIA_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = SIA }
+        visible = { has_country_flag = AOEIW_SIA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SIA_research_grants = {
+        cost = 50
+        allowed = { original_tag = SIA }
+        visible = { has_country_flag = AOEIW_SIA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_SIA_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BRA_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = BRA }
+        visible = { has_country_flag = AOEIW_BRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BRA_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = BRA }
+        visible = { has_country_flag = AOEIW_BRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BRA_research_grants = {
+        cost = 50
+        allowed = { original_tag = BRA }
+        visible = { has_country_flag = AOEIW_BRA_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_BRA_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_MEX_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = MEX }
+        visible = { has_country_flag = AOEIW_MEX_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_MEX_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = MEX }
+        visible = { has_country_flag = AOEIW_MEX_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_MEX_research_grants = {
+        cost = 50
+        allowed = { original_tag = MEX }
+        visible = { has_country_flag = AOEIW_MEX_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_MEX_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FIN_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = FIN }
+        visible = { has_country_flag = AOEIW_FIN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FIN_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = FIN }
+        visible = { has_country_flag = AOEIW_FIN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_FIN_research_grants = {
+        cost = 50
+        allowed = { original_tag = FIN }
+        visible = { has_country_flag = AOEIW_FIN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_FIN_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_DEN_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = DEN }
+        visible = { has_country_flag = AOEIW_DEN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_DEN_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = DEN }
+        visible = { has_country_flag = AOEIW_DEN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_DEN_research_grants = {
+        cost = 50
+        allowed = { original_tag = DEN }
+        visible = { has_country_flag = AOEIW_DEN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_DEN_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_HOL_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = HOL }
+        visible = { has_country_flag = AOEIW_HOL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_HOL_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = HOL }
+        visible = { has_country_flag = AOEIW_HOL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_HOL_research_grants = {
+        cost = 50
+        allowed = { original_tag = HOL }
+        visible = { has_country_flag = AOEIW_HOL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_HOL_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BEL_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = BEL }
+        visible = { has_country_flag = AOEIW_BEL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BEL_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = BEL }
+        visible = { has_country_flag = AOEIW_BEL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_BEL_research_grants = {
+        cost = 50
+        allowed = { original_tag = BEL }
+        visible = { has_country_flag = AOEIW_BEL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_BEL_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWI_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = SWI }
+        visible = { has_country_flag = AOEIW_SWI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWI_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = SWI }
+        visible = { has_country_flag = AOEIW_SWI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_SWI_research_grants = {
+        cost = 50
+        allowed = { original_tag = SWI }
+        visible = { has_country_flag = AOEIW_SWI_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_SWI_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_IRE_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = IRE }
+        visible = { has_country_flag = AOEIW_IRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_IRE_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = IRE }
+        visible = { has_country_flag = AOEIW_IRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_IRE_research_grants = {
+        cost = 50
+        allowed = { original_tag = IRE }
+        visible = { has_country_flag = AOEIW_IRE_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_IRE_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POL_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = POL }
+        visible = { has_country_flag = AOEIW_POL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POL_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = POL }
+        visible = { has_country_flag = AOEIW_POL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_POL_research_grants = {
+        cost = 50
+        allowed = { original_tag = POL }
+        visible = { has_country_flag = AOEIW_POL_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_POL_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_AUS_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = AUS }
+        visible = { has_country_flag = AOEIW_AUS_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_AUS_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = AUS }
+        visible = { has_country_flag = AOEIW_AUS_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_AUS_research_grants = {
+        cost = 50
+        allowed = { original_tag = AUS }
+        visible = { has_country_flag = AOEIW_AUS_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_AUS_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CAN_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = CAN }
+        visible = { has_country_flag = AOEIW_CAN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CAN_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = CAN }
+        visible = { has_country_flag = AOEIW_CAN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_CAN_research_grants = {
+        cost = 50
+        allowed = { original_tag = CAN }
+        visible = { has_country_flag = AOEIW_CAN_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_CAN_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_EGY_industrial_contracts = {
+        cost = 50
+        allowed = { original_tag = EGY }
+        visible = { has_country_flag = AOEIW_EGY_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_EGY_staff_exercises = {
+        cost = 35
+        allowed = { original_tag = EGY }
+        visible = { has_country_flag = AOEIW_EGY_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 25
+            add_command_power = 10
+        }
+        ai_will_do = { factor = 5 }
+    }
+    AOEIW_EGY_research_grants = {
+        cost = 50
+        allowed = { original_tag = EGY }
+        visible = { has_country_flag = AOEIW_EGY_programs_unlocked }
+        available = { always = yes }
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = { name = AOEIW_EGY_decision_research bonus = 0.75 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 5 }
+    }
+}

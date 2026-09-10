@@ -1,0 +1,20 @@
+characters = {
+    AOEIW22_USA_douglas_macarthur = {
+        name = AOEIW22_USA_douglas_macarthur
+        portraits = { civilian = { large = GFX_portrait_USA_douglas_macarthur } }
+        country_leader = { ideology = military_cesarism expire = "1965.1.1.1" }
+        field_marshal = { skill = 4 attack_skill = 4 defense_skill = 4 planning_skill = 4 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW22_SOV_anton_denikin = {
+        name = AOEIW22_SOV_anton_denikin
+        portraits = { civilian = { large = GFX_portrait_SOV_anton_denikin } }
+        country_leader = { ideology = military_cesarism expire = "1965.1.1.1" }
+        field_marshal = { skill = 4 attack_skill = 4 defense_skill = 4 planning_skill = 4 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW22_ITA_benito_mussolini = {
+        name = AOEIW22_ITA_benito_mussolini
+        portraits = { civilian = { large = GFX_portrait_ITA_benito_mussolini } }
+        country_leader = { ideology = fascism_ideology expire = "1965.1.1.1" }
+        field_marshal = { skill = 4 attack_skill = 4 defense_skill = 4 planning_skill = 4 logistics_skill = 3 traits = { organizer } }
+    }
+}

@@ -1,0 +1,206 @@
+focus_tree = {
+ id = AOEIW_FRONTIER_XIC_focus
+ country = { factor = 0 modifier = { add = 200000 tag = XIC } }
+ continuous_focus_position = { x = 50 y = 1430 }
+ reset_on_civilwar = no
+ focus = {
+        # AOEIW visual-layout base: 9,0
+    id = AOEIW_FRONTIER_XIC_conference icon = GFX_focus_generic_military_academy x = 5 y = 0 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    
+    completion_reward = { add_political_power = 50 country_event = { id = AOEIW35_xic.1 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 3,1
+    id = AOEIW_FRONTIER_XIC_officers icon = GFX_focus_generic_military_mission x = 1 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_conference } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_civic }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_XIC_officers_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_civic } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 15,1
+    id = AOEIW_FRONTIER_XIC_civic icon = GFX_focus_generic_social_democracy x = 7 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_conference } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_officers }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_XIC_civic_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_officers } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 1,2
+    id = AOEIW_FRONTIER_XIC_drill icon = GFX_focus_generic_mountain_troops x = 0 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_officers }
+    completion_reward = { army_experience = 25 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_civic } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 5,2
+    id = AOEIW_FRONTIER_XIC_staff icon = GFX_focus_generic_mountain_training x = 2 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_officers }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_civic } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 13,2
+    id = AOEIW_FRONTIER_XIC_markets icon = GFX_focus_generic_farmland x = 6 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_civic }
+    completion_reward = { add_stability = 0.03 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_officers } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 17,2
+    id = AOEIW_FRONTIER_XIC_credit icon = GFX_focus_generic_currency_reforms x = 8 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_civic }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_officers } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 9,3
+    id = AOEIW_FRONTIER_XIC_settlement icon = GFX_focus_generic_improve_the_administration x = 5 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_drill focus = AOEIW_FRONTIER_XIC_markets } prerequisite = { focus = AOEIW_FRONTIER_XIC_staff focus = AOEIW_FRONTIER_XIC_credit }
+    completion_reward = { add_command_power = 15 add_stability = 0.02 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW_FRONTIER_XIC_roads icon = GFX_focus_generic_road_investment x = 0 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_settlement }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,4
+    id = AOEIW_FRONTIER_XIC_workshop icon = GFX_focus_generic_industry_1 x = 2 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_settlement }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,4
+    id = AOEIW_FRONTIER_XIC_passes icon = GFX_focus_generic_mountain_fortification x = 4 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_settlement } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_reserve }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_XIC_passes_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_reserve } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 12,4
+    id = AOEIW_FRONTIER_XIC_reserve icon = GFX_focus_generic_army_doctrines_2 x = 6 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_settlement } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_passes }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_XIC_reserve_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_passes } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 18,4
+    id = AOEIW_FRONTIER_XIC_envoys icon = GFX_focus_chi_united_front x = 9 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_settlement }
+    completion_reward = { add_political_power = 35 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW_FRONTIER_XIC_depots icon = GFX_focus_generic_supply_line x = 0 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_roads }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,5
+    id = AOEIW_FRONTIER_XIC_arsenal icon = GFX_goal_generic_small_arms x = 2 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_workshop }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 10,6
+    id = AOEIW_FRONTIER_XIC_commission icon = GFX_focus_generic_commission x = 5 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_passes focus = AOEIW_FRONTIER_XIC_reserve } prerequisite = { focus = AOEIW_FRONTIER_XIC_arsenal }
+    completion_reward = { army_experience = 25 add_command_power = 15 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 16,5
+    id = AOEIW_FRONTIER_XIC_aid icon = GFX_focus_generic_arms_trade x = 8 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_envoys } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_mediation } available = { CHI = { has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } } }
+    completion_reward = { set_country_flag = AOEIW_FRONTIER_XIC_aid_unlocked  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_mediation } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 20,5
+    id = AOEIW_FRONTIER_XIC_mediation icon = GFX_focus_generic_diplomatic_treaty x = 10 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_envoys } mutually_exclusive = { focus = AOEIW_FRONTIER_XIC_aid } available = { CHI = { has_country_flag = AOEIW20_UF_government_formed } }
+    completion_reward = { set_country_flag = AOEIW_FRONTIER_XIC_liaison_unlocked  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_XIC_aid } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 18,6
+    id = AOEIW_FRONTIER_XIC_relief icon = GFX_focus_generic_welfare x = 9 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_aid focus = AOEIW_FRONTIER_XIC_mediation }
+    completion_reward = { add_stability = 0.05 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,7
+    id = AOEIW_FRONTIER_XIC_airfield icon = GFX_focus_generic_air_bases x = 4 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_commission }
+    completion_reward = { random_owned_controlled_state = { add_building_construction = { type = air_base level = 1 instant_build = yes } } air_experience = 15 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,7
+    id = AOEIW_FRONTIER_XIC_signals icon = GFX_focus_generic_radio_communication x = 6 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_commission }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = electronics } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,7
+    id = AOEIW_FRONTIER_XIC_repair icon = GFX_focus_generic_truck x = 1 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_depots } prerequisite = { focus = AOEIW_FRONTIER_XIC_arsenal }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 7,8
+    id = AOEIW_FRONTIER_XIC_institute icon = GFX_focus_generic_university_2 x = 2 y = 8 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_repair } prerequisite = { focus = AOEIW_FRONTIER_XIC_signals }
+    completion_reward = { add_research_slot = 1 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 15,9
+    id = AOEIW_FRONTIER_XIC_province icon = GFX_focus_generic_economic_recovery x = 7 y = 9 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_XIC_institute } prerequisite = { focus = AOEIW_FRONTIER_XIC_relief } prerequisite = { focus = AOEIW_FRONTIER_XIC_airfield }
+    completion_reward = { add_stability = 0.04 add_political_power = 70 country_event = { id = AOEIW35_xic.2 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+}

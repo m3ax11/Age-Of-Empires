@@ -1,0 +1,55 @@
+division_template = {
+ name = "Swiss Confederation Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "SWI Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "SWI Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Swiss Confederation Infantry Division" location = 9600 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Swiss Confederation Infantry Division" location = 9638 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Swiss Confederation Infantry Division" location = 6666 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Swiss Confederation Infantry Division" location = 658 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Swiss Confederation Infantry Division" location = 9620 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Swiss Confederation Infantry Division" location = 663 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Swiss Confederation Infantry Division" location = 3641 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Swiss Confederation Infantry Division" location = 6683 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Swiss Confederation Infantry Division" location = 9622 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Swiss Confederation Infantry Division" location = 636 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Swiss Confederation Infantry Division" location = 9587 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Swiss Confederation Infantry Division" location = 3612 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Swiss Confederation Infantry Division" location = 9600 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Swiss Confederation Infantry Division" location = 9638 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Swiss Confederation Infantry Division" location = 6666 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Swiss Confederation Infantry Division" location = 658 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Swiss Confederation Infantry Division" location = 9620 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Swiss Confederation Infantry Division" location = 663 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Swiss Confederation Infantry Division" location = 3641 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Swiss Confederation Infantry Division" location = 6683 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Swiss Confederation Infantry Division" location = 9622 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Swiss Confederation Infantry Division" location = 636 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Swiss Confederation Infantry Division" location = 9587 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Swiss Confederation Infantry Division" location = 3612 division_template = "Swiss Confederation Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. SWI Rapid Division" location = 9600 division_template = "SWI Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. SWI Mountain Division" location = 9600 division_template = "SWI Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

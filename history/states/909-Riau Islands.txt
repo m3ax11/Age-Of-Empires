@@ -1,0 +1,34 @@
+state={
+	id=909
+	name="STATE_909"
+	state_category=small_island
+	resources={
+		rubber = 2
+		aluminium = 28 # was: 50
+	}
+	provinces={
+		12113
+	}
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 12113 }
+		victory_points = {
+			12113 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+			12113 = {
+				naval_base = 1
+			}
+		}
+        owner = JAP
+        add_core_of = JAP
+    }
+	manpower=177500
+	buildings_max_level_factor=1.000
+
+	local_supplies = 1.0 
+}

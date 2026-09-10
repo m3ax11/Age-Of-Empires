@@ -1,0 +1,83 @@
+capital = 231
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_CAF_leader
+recruit_character = AOEIW_world_CAF_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_recon = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_military_police = 1
+    tech_mountaineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    paratroopers = 1
+    gw_artillery = 1
+    strategic_bomber1 = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    early_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    basic_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    early_ship_hull_heavy = 1
+    basic_battery = 1
+    basic_heavy_battery = 1
+    basic_light_battery = 1
+    basic_medium_battery = 1
+    basic_torpedo = 1
+    basic_depth_charges = 1
+    mtg_transport = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+add_ideas = { AOEIW_world_frontier_state civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 12600 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 840 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 630 }
+oob = "AOEIW_world_CAF_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = GEO_noe_zhordania
+recruit_character = GEO_kandid_charkviani
+recruit_character = GEO_alexander_nikuradse
+recruit_character = GEO_irakli_bagration_mukhraneli
+recruit_character = GEO_mikheil_tsereteli
+recruit_character = GEO_shalva_maglakelidze
+recruit_character = GEO_michael_achmeteli
+recruit_character = GEO_leo_kereselidze
+recruit_character = GEO_revaz_gabashvili
+recruit_character = GEO_sosipatre_asatiani
+recruit_character = GEO_evgeni_gegechkori
+recruit_character = GEO_akaki_chkhenkeli
+recruit_character = GEO_guiorgui_magalachvili
+recruit_character = GEO_grigol_robakidze
+recruit_character = GEO_giorgi_kvinitadze
+recruit_character = GEO_valerian_tevzadze
+recruit_character = GEO_viktor_lomidze
+recruit_character = GEO_alexandre_chkheidze
+recruit_character = GEO_sergey_kavtaradze
+recruit_character = GEO_archil_gelovani
+recruit_character = GEO_vladimir_dekanozov
+recruit_character = GEO_varlam_urdia
+recruit_character = GEO_evstafii_tatanashvili
+recruit_character = GEO_giorgi_abashvili
+recruit_character = GEO_porfiry_chanchibadze
+recruit_character = GEO_nikoloz_muskhelishvili
+recruit_character = GEO_pavle_abramidze
+recruit_character = GEO_kalistrate_tsintsadze
+recruit_character = GEO_ioseb_jughashvili
+recruit_character = GEO_georgy_beriev

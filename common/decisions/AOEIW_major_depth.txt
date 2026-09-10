@@ -1,0 +1,395 @@
+AOEIW_DEPTH_GER_programmes = {
+    AOEIW_DEPTH_GER_rhineland_works = {
+        icon = generic_industry
+        cost = 60
+        days_remove = 90
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_ruhr_contract NOT = { has_country_flag = AOEIW_DEPTH_GER_rhineland_works_done } }
+        available = { owns_state = 42 controls_state = 42 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_GER_rhineland_works_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_GER_rhineland_works_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 42 } NOT = { controls_state = 42 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_GER_rhineland_works_busy add_political_power = 30 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_GER_rhineland_works_busy
+            if = { limit = { owns_state = 42 controls_state = 42 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_GER_rhineland_works_done } }
+                42 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = train_equipment_1 amount = 30 producer = GER }
+                set_country_flag = AOEIW_DEPTH_GER_rhineland_works_done
+                country_event = { id = aoeiw_depth.100 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_silesian_arsenal = {
+        icon = generic_industry
+        cost = 75
+        days_remove = 120
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_steel_reserve NOT = { has_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_done } }
+        available = { owns_state = 66 controls_state = 66 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 66 } NOT = { controls_state = 66 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_busy add_political_power = 37 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_busy
+            if = { limit = { owns_state = 66 controls_state = 66 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_done } }
+                66 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 400 producer = GER }
+                set_country_flag = AOEIW_DEPTH_GER_silesian_arsenal_done
+                country_event = { id = aoeiw_depth.101 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+}
+
+AOEIW_DEPTH_GER_staff_programmes = {
+    AOEIW_DEPTH_GER_civil_contract_drive = {
+        icon = generic_prepare_civil_war
+        cost = 75
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_ruhr_deliveries }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_procurement_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_procurement_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_procurement_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_civil_contract_drive_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_arsenal_shifts = {
+        icon = generic_prepare_civil_war
+        cost = 75
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_arsenal_inspection }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_procurement_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_procurement_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_procurement_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_arsenal_shifts_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_mobile_supply_push = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_maintenance_columns }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 25 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_field_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_field_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_field_budget_budget_locked days = 180 }
+            add_command_power = -25
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_mobile_supply_push_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_refit_front = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_replacement_school }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 20 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_field_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_field_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_field_budget_budget_locked days = 180 }
+            add_command_power = -20
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_refit_front_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_escort_rotation = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_convoy_school }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_naval_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_naval_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_naval_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_escort_rotation_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_GER_fleet_refit = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_naval_fuel }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_GER_naval_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_GER_naval_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_GER_naval_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_GER_fleet_refit_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+}
+
+AOEIW_DEPTH_SOV_programmes = {
+    AOEIW_DEPTH_SOV_volga_works = {
+        icon = generic_industry
+        cost = 70
+        days_remove = 120
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_volga_contract NOT = { has_country_flag = AOEIW_DEPTH_SOV_volga_works_done } }
+        available = { owns_state = 217 controls_state = 217 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_SOV_volga_works_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_SOV_volga_works_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 217 } NOT = { controls_state = 217 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_SOV_volga_works_busy add_political_power = 35 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_SOV_volga_works_busy
+            if = { limit = { owns_state = 217 controls_state = 217 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_SOV_volga_works_done } }
+                217 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 producer = SOV }
+                set_country_flag = AOEIW_DEPTH_SOV_volga_works_done
+                country_event = { id = aoeiw_depth.120 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_moscow_arsenal = {
+        icon = generic_industry
+        cost = 75
+        days_remove = 90
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_capital_arsenal NOT = { has_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_done } }
+        available = { owns_state = 219 controls_state = 219 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 219 } NOT = { controls_state = 219 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_busy add_political_power = 37 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_busy
+            if = { limit = { owns_state = 219 controls_state = 219 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_done } }
+                219 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = SOV }
+                set_country_flag = AOEIW_DEPTH_SOV_moscow_arsenal_done
+                country_event = { id = aoeiw_depth.121 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+}
+
+AOEIW_DEPTH_SOV_staff_programmes = {
+    AOEIW_DEPTH_SOV_volga_construction = {
+        icon = generic_prepare_civil_war
+        cost = 75
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_volga_acceptance }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_industrial_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_industrial_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_industrial_budget_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_volga_construction_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_arsenal_standardisation = {
+        icon = generic_prepare_civil_war
+        cost = 75
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_arsenal_gauges }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_industrial_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_industrial_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_industrial_budget_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_arsenal_standardisation_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_winter_distribution = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_recovery_columns }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 20 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_stavka_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_stavka_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_stavka_budget_budget_locked days = 180 }
+            add_command_power = -20
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_winter_distribution_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_operational_reserves = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_second_echelon }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 30 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_stavka_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_stavka_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_stavka_budget_budget_locked days = 180 }
+            add_command_power = -30
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_operational_reserves_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_grain_transport = {
+        icon = generic_prepare_civil_war
+        cost = 55
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_grain_dispatch }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_provincial_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_provincial_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_provincial_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_grain_transport_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_SOV_district_recruitment = {
+        icon = generic_prepare_civil_war
+        cost = 55
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_district_medicine }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_SOV_provincial_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_SOV_provincial_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_SOV_provincial_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_SOV_district_recruitment_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+}
+
+AOEIW_DEPTH_FRA_programmes = {
+    AOEIW_DEPTH_FRA_algerian_arsenal = {
+        icon = generic_industry
+        cost = 75
+        days_remove = 120
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_algerian_contract NOT = { has_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_done } }
+        available = { owns_state = 459 controls_state = 459 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 459 } NOT = { controls_state = 459 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_busy add_political_power = 37 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_busy
+            if = { limit = { owns_state = 459 controls_state = 459 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_done } }
+                459 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = support_equipment_1 amount = 150 producer = FRA }
+                set_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_done
+                country_event = { id = aoeiw_depth.110 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_paris_reconstruction = {
+        icon = generic_industry
+        cost = 60
+        days_remove = 90
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_paris_contract NOT = { has_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_done } }
+        available = { owns_state = 16 controls_state = 16 has_capitulated = no num_of_civilian_factories > 0 NOT = { has_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_busy } }
+        modifier = { civilian_factory_use = 1 }
+        complete_effect = { set_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_busy }
+        cancel_trigger = { OR = { NOT = { owns_state = 16 } NOT = { controls_state = 16 } has_capitulated = yes } }
+        cancel_effect = { clr_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_busy add_political_power = 30 }
+        remove_effect = {
+            clr_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_busy
+            if = { limit = { owns_state = 16 controls_state = 16 has_capitulated = no NOT = { has_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_done } }
+                16 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = FRA }
+                set_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_done
+                country_event = { id = aoeiw_depth.111 }
+            }
+        }
+        ai_will_do = { base = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+}
+
+AOEIW_DEPTH_FRA_staff_programmes = {
+    AOEIW_DEPTH_FRA_municipal_contract_drive = {
+        icon = generic_prepare_civil_war
+        cost = 70
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_supplier_acceptance }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_development_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_development_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_development_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_municipal_contract_drive_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_supplier_conversion = {
+        icon = generic_prepare_civil_war
+        cost = 70
+        days_re_enable = 210
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_standard_chassis }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_development_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_development_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_development_budget_locked days = 210 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_supplier_conversion_active days = 120 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_methodical_operation = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_fire_plan }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 25 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_reserve_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_reserve_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_reserve_budget_budget_locked days = 180 }
+            add_command_power = -25
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_methodical_operation_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_mobile_counterstroke = {
+        icon = generic_prepare_civil_war
+        cost = 60
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_counterstroke }
+        available = { has_capitulated = no has_war = yes NOT = { command_power < 25 } custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_reserve_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_reserve_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_reserve_budget_budget_locked days = 180 }
+            add_command_power = -25
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_mobile_counterstroke_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_maritime_watch = {
+        icon = generic_prepare_civil_war
+        cost = 55
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_maritime_patrols }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_service_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_service_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_service_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_maritime_watch_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+    AOEIW_DEPTH_FRA_air_liaison_exercise = {
+        icon = generic_prepare_civil_war
+        cost = 55
+        days_re_enable = 180
+        fire_only_once = no
+        visible = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_alpine_radio }
+        available = { has_capitulated = no custom_trigger_tooltip = { tooltip = AOEIW_DEPTH_FRA_service_budget_budget_locked_tt NOT = { has_country_flag = AOEIW_DEPTH_FRA_service_budget_budget_locked } } }
+        complete_effect = {
+            set_country_flag = { flag = AOEIW_DEPTH_FRA_service_budget_budget_locked days = 180 }
+            
+            add_timed_idea = { idea = AOEIW_DEPTH_FRA_air_liaison_exercise_active days = 90 }
+        }
+        ai_will_do = { base = 2 modifier = { factor = 3 has_war = yes } }
+    }
+}

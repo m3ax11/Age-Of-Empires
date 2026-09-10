@@ -1,0 +1,35 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 202959		#rural regions + lowlands
+	
+	state_category = rural
+	
+	history = {
+
+		victory_points = {
+			11691 2 #Mukachevo
+		}
+		victory_points = {
+			3548 1 #Khust
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		add_claim_by = HUN
+
+		add_claim_by = UKR
+		add_to_array = { state_victory_points = 3548 }
+        owner = AUS
+        add_core_of = AUS
+    }
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+
+	local_supplies=0.0 
+}

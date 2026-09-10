@@ -1,0 +1,40 @@
+
+state={
+	id=498
+	name="STATE_498"
+	manpower = 535261
+
+	state_category = town
+
+	history = {
+
+		buildings = {
+			infrastructure = 1
+			10933 = {
+				naval_base = 2
+			}
+		}
+
+		add_to_array = { state_victory_points = 10933 }
+		victory_points = { 
+			10933 3 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Trial of Allegiance"
+				}
+			}
+			set_demilitarized_zone = yes
+		}
+        owner = BRA
+        add_core_of = BRA
+    }
+
+	provinces={
+		2175 10933 13335
+	}
+
+	local_supplies=0.0 
+	
+}

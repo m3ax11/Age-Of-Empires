@@ -1,0 +1,142 @@
+characters = {
+    AOEIW_world_UKR_leader = {
+        name = AOEIW_world_UKR_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_UKR_general = {
+        name = AOEIW_world_UKR_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_BTF_leader = {
+        name = AOEIW_world_BTF_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_BTF_general = {
+        name = AOEIW_world_BTF_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_CAF_leader = {
+        name = AOEIW_world_CAF_leader
+        country_leader = { ideology = conservatism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_CAF_general = {
+        name = AOEIW_world_CAF_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_TRK_leader = {
+        name = AOEIW_world_TRK_leader
+        country_leader = { ideology = conservatism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_TRK_general = {
+        name = AOEIW_world_TRK_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_SIK_leader = {
+        name = AOEIW_world_SIK_leader
+        country_leader = { ideology = stalinism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_SIK_general = {
+        name = AOEIW_world_SIK_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_TIB_leader = {
+        name = AOEIW_world_TIB_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_TIB_general = {
+        name = AOEIW_world_TIB_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_SAU_leader = {
+        name = AOEIW_world_SAU_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_SAU_general = {
+        name = AOEIW_world_SAU_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_YEM_leader = {
+        name = AOEIW_world_YEM_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_YEM_general = {
+        name = AOEIW_world_YEM_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_HEJ_leader = {
+        name = AOEIW_world_HEJ_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_HEJ_general = {
+        name = AOEIW_world_HEJ_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_INA_leader = {
+        name = AOEIW_world_INA_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_INA_general = {
+        name = AOEIW_world_INA_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_FWA_leader = {
+        name = AOEIW_world_FWA_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_FWA_general = {
+        name = AOEIW_world_FWA_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_GEA_leader = {
+        name = AOEIW_world_GEA_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_GEA_general = {
+        name = AOEIW_world_GEA_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_ARG_leader = {
+        name = AOEIW_world_ARG_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_ARG_general = {
+        name = AOEIW_world_ARG_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_PRU_leader = {
+        name = AOEIW_world_PRU_leader
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_PRU_general = {
+        name = AOEIW_world_PRU_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_NEE_leader = {
+        name = AOEIW_world_NEE_leader
+        country_leader = { ideology = conservatism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_NEE_general = {
+        name = AOEIW_world_NEE_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_TCO_leader = {
+        name = AOEIW_world_TCO_leader
+        country_leader = { ideology = conservatism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_TCO_general = {
+        name = AOEIW_world_TCO_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_FAM_leader = {
+        name = AOEIW_world_FAM_leader
+        country_leader = { ideology = liberalism expire = "1965.1.1.1" traits = { } }
+    }
+    AOEIW_world_FAM_general = {
+        name = AOEIW_world_FAM_general
+        corps_commander = { skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 traits = { organizer } }
+    }
+    AOEIW_world_ENG_king_george = {
+        name = AOEIW_world_ENG_king_george
+        country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { AOEIW_world_king_george } }
+    }
+}
