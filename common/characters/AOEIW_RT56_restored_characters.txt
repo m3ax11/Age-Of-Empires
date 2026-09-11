@@ -16,10 +16,10 @@ characters = {
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name= MON_horloogiyn_choybalsan
 		portraits={
 			army={
+				large="GFX_MON_Portrait_khorloogiin_choibalsan"
 				small="GFX_idea_generic_army_asia_2"
 			}
 		}

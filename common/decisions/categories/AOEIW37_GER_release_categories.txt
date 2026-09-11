@@ -1,0 +1,12 @@
+AOEIW37_GER_continental_policy_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = GER }
+    visible = {
+        OR = {
+            has_country_flag = AOEIW37_GER_imperial_order
+            has_country_flag = AOEIW37_GER_democratic_order
+            has_country_flag = AOEIW37_GER_workers_order
+            has_country_flag = AOEIW37_GER_nationalist_order
+        }
+    }
+}

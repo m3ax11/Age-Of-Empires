@@ -29,7 +29,7 @@ air_wings = {
 			owner = "SOV" 
 			amount = 48
 		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
+		# The 46ya transport brigade remains abstracted into the imperial logistics pool.
 	}
 
 	# BOVO Aviatsya Komandovaniya -- Minsk

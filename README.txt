@@ -1,11 +1,13 @@
-Age Of Empires – Road to 56 Compatibility
+Age Of Empires – RT56 Edition
 
-Load order:
-1. The Road to 56
-2. Age Of Empires
-3. This compatibility layer (dependencies enforce the final layer)
+This package is the standalone edition. Enable only this mod; do not load a
+separate copy of The Road to 56, Age Of Empires, or the former compatibility
+layer with it.
 
-State merge: 1138 RT56 states mapped to AOE by stable geography/name or safe owner transition; 5 kept pure RT56; 116 mappings intentionally cross numeric state IDs.
-RT56 supplies state topology, additional states, regional cores and the technology GUI.
-AOE supplies scenario owners, imperial cores, focus trees, events and custom systems.
-Use a new game after every compatibility-layer update.
+The edition combines RT56's map, technology and supporting systems with the
+Age Of Empires setting, countries, imperial order, focus trees, events and
+mechanics. Begin a new campaign after every update.
+
+Developers: RT56_STATE_MERGE.csv is the authoritative state-mapping ledger.
+Its 116 cross-ID mappings are intentional and must be checked before moving
+ownership or rewriting any state reference.

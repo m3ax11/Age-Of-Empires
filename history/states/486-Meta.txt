@@ -11,7 +11,8 @@ state={
 		buildings = {
 			infrastructure = 0
 		}
-        owner = SPR
+        owner = PRU
+        add_core_of = PRU
         add_core_of = SPR
     }
 

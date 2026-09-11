@@ -1,5 +1,48 @@
 ideas = {
     country = {
+        # Compatibility spirits for the superseded dynastic-crisis tree. The
+        # current campaign loads the holding/United Front trees, but old saves
+        # and console-triggered legacy focuses must still resolve every idea.
+        AOEIW20_CHI_dynastic_crisis = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.12
+                political_power_factor = -0.08
+                consumer_goods_factor = 0.04
+            }
+        }
+        AOEIW20_CHI_costly_dynastic_settlement = {
+            picture = generic_neutrality_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.08
+                political_power_factor = 0.05
+                consumer_goods_factor = 0.05
+            }
+        }
+        AOEIW20_CHI_nra_underground = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.04
+                planning_speed = 0.05
+                stability_factor = -0.03
+            }
+        }
+        AOEIW20_CHI_mao_underground = {
+            picture = generic_communism_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.02
+                army_morale_factor = 0.04
+                stability_factor = -0.03
+            }
+        }
         AOEIW20_UF_uneasy_coalition = {
             picture = generic_disjointed_gov
             allowed = { always = no }

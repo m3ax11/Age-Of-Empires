@@ -1,0 +1,77 @@
+AOEIW37_WORLD_imperial_aftermath_category = {
+    AOEIW37_WORLD_convene_reconstruction_conference = {
+        icon = generic_political_discourse
+        cost = 75
+        fire_only_once = yes
+        allowed = { OR = { original_tag = FRA original_tag = SOV original_tag = POR } }
+        visible = { has_country_flag = AOEIW37_WORLD_imperial_war_registered }
+        available = {
+            date > 1940.1.1
+            has_war = no
+            has_capitulated = no
+            any_subject_country = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW37_WORLD_reconstruction_conference_held
+            remove_ideas = AOEIW37_WORLD_wartime_imperial_commission
+            add_ideas = AOEIW37_WORLD_reconstruction_secretariat
+            if = { limit = { original_tag = FRA MLI = { exists = yes is_subject_of = FRA } } MLI = { country_event = { id = AOEIW37_world.3 days = 2 } } }
+            if = { limit = { original_tag = FRA VIN = { exists = yes is_subject_of = FRA } } VIN = { country_event = { id = AOEIW37_world.3 days = 3 } } }
+            if = { limit = { original_tag = SOV UKR = { exists = yes is_subject_of = SOV } } UKR = { country_event = { id = AOEIW37_world.3 days = 2 } } }
+            if = { limit = { original_tag = SOV GEO = { exists = yes is_subject_of = SOV } } GEO = { country_event = { id = AOEIW37_world.3 days = 3 } } }
+            if = { limit = { original_tag = SOV KAZ = { exists = yes is_subject_of = SOV } } KAZ = { country_event = { id = AOEIW37_world.3 days = 4 } } }
+            if = { limit = { original_tag = POR BRA = { exists = yes is_subject_of = POR } } BRA = { country_event = { id = AOEIW37_world.3 days = 2 } } }
+        }
+        ai_will_do = { base = 20 modifier = { factor = 2 has_stability > 0.55 } }
+    }
+
+    AOEIW37_WORLD_present_postwar_memorandum = {
+        icon = generic_political_discourse
+        cost = 50
+        fire_only_once = yes
+        allowed = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+        visible = {
+            has_country_flag = AOEIW37_WORLD_service_debate_seen
+            NOT = { has_country_flag = AOEIW37_WORLD_compact_requested }
+            NOT = { has_country_flag = AOEIW37_WORLD_charter_settled }
+            NOT = { has_country_flag = AOEIW37_WORLD_directed_settled }
+        }
+        available = {
+            date > 1940.1.1
+            has_war = no
+            OR = {
+                AND = { OR = { original_tag = MLI original_tag = VIN } is_subject_of = FRA FRA = { exists = yes has_war = no has_capitulated = no } }
+                AND = { OR = { original_tag = UKR original_tag = GEO original_tag = KAZ } is_subject_of = SOV SOV = { exists = yes has_war = no has_capitulated = no } }
+                AND = { original_tag = BRA is_subject_of = POR POR = { exists = yes has_war = no has_capitulated = no } }
+            }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW37_WORLD_compact_requested
+            if = { limit = { OR = { original_tag = MLI original_tag = VIN } } FRA = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+            if = { limit = { OR = { original_tag = UKR original_tag = GEO original_tag = KAZ } } SOV = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+            if = { limit = { original_tag = BRA } POR = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+        }
+        ai_will_do = { base = 15 modifier = { factor = 2 has_country_flag = AOEIW37_WORLD_metropole_fell } }
+    }
+
+    AOEIW37_WORLD_establish_joint_supply_board = {
+        icon = generic_industry
+        cost = 60
+        fire_only_once = yes
+        allowed = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+        visible = { has_country_flag = AOEIW37_WORLD_charter_settled }
+        available = { date > 1941.1.1 has_war = no has_stability > 0.40 }
+        complete_effect = {
+            set_country_flag = AOEIW37_WORLD_supply_board_established
+            add_ideas = AOEIW37_WORLD_joint_supply_board
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            if = { limit = { OR = { original_tag = MLI original_tag = VIN } FRA = { exists = yes } } FRA = { add_timed_idea = { idea = AOEIW37_WORLD_joint_supply_board days = 365 } } }
+            if = { limit = { OR = { original_tag = UKR original_tag = GEO original_tag = KAZ } SOV = { exists = yes } } SOV = { add_timed_idea = { idea = AOEIW37_WORLD_joint_supply_board days = 365 } } }
+            if = { limit = { original_tag = BRA POR = { exists = yes } } POR = { add_timed_idea = { idea = AOEIW37_WORLD_joint_supply_board days = 365 } } }
+        }
+        ai_will_do = { base = 10 }
+    }
+}

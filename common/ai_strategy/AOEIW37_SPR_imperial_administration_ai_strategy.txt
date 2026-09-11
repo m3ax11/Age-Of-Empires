@@ -1,0 +1,43 @@
+AOEIW37_SPR_commonwealth_ai_posture = {
+    allowed = { original_tag = SPR }
+    enable = { has_country_flag = AOEIW37_SPR_commonwealth_proclaimed }
+    abort = { always = no }
+
+    ai_strategy = { type = befriend id = ARG value = 120 }
+    ai_strategy = { type = befriend id = PRU value = 120 }
+    ai_strategy = { type = protect id = ARG value = 90 }
+    ai_strategy = { type = protect id = PRU value = 90 }
+}
+
+AOEIW37_SPR_directorate_ai_posture = {
+    allowed = { original_tag = SPR }
+    enable = { has_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed }
+    abort = { always = no }
+
+    ai_strategy = { type = befriend id = ARG value = 70 }
+    ai_strategy = { type = befriend id = PRU value = 70 }
+    ai_strategy = { type = protect id = ARG value = 140 }
+    ai_strategy = { type = protect id = PRU value = 140 }
+}
+
+AOEIW37_ARG_cadiz_ai_posture = {
+    allowed = { original_tag = ARG }
+    enable = {
+        has_country_flag = AOEIW37_SPR_cadiz_delegate
+        is_subject_of = SPR
+    }
+    abort = { NOT = { is_subject_of = SPR } }
+
+    ai_strategy = { type = befriend id = SPR value = 110 }
+}
+
+AOEIW37_PRU_cadiz_ai_posture = {
+    allowed = { original_tag = PRU }
+    enable = {
+        has_country_flag = AOEIW37_SPR_cadiz_delegate
+        is_subject_of = SPR
+    }
+    abort = { NOT = { is_subject_of = SPR } }
+
+    ai_strategy = { type = befriend id = SPR value = 110 }
+}

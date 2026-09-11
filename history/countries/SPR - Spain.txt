@@ -393,13 +393,13 @@ set_naval_oob = "AOEIW_SPR_1936_naval"
 # AOEIW WORLD DEPENDENCIES BEGIN
 set_autonomy = {
     target = ARG
-    autonomous_state = autonomy_puppet
-    freedom_level = 0.25
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.20
 }
 set_autonomy = {
     target = PRU
-    autonomous_state = autonomy_puppet
-    freedom_level = 0.25
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.20
 }
 # AOEIW WORLD DEPENDENCIES END
 

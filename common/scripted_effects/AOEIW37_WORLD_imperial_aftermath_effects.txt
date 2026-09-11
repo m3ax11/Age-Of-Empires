@@ -1,0 +1,203 @@
+# Shared setup for the imperial war-service and collapse reactions.
+# Called from AOEIW37_WORLD_imperial_aftermath_on_actions.txt in country scope.
+
+AOEIW37_WORLD_register_imperial_war = {
+    if = {
+        limit = {
+            original_tag = FRA
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_war_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_war_registered
+        add_ideas = AOEIW37_WORLD_wartime_imperial_commission
+        if = {
+            limit = {
+                MLI = {
+                    exists = yes
+                    is_subject_of = FRA
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            MLI = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 3 }
+            }
+        }
+        if = {
+            limit = {
+                VIN = {
+                    exists = yes
+                    is_subject_of = FRA
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            VIN = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 4 }
+            }
+        }
+    }
+    if = {
+        limit = {
+            original_tag = SOV
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_war_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_war_registered
+        add_ideas = AOEIW37_WORLD_wartime_imperial_commission
+        if = {
+            limit = {
+                UKR = {
+                    exists = yes
+                    is_subject_of = SOV
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            UKR = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 3 }
+            }
+        }
+        if = {
+            limit = {
+                GEO = {
+                    exists = yes
+                    is_subject_of = SOV
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            GEO = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 4 }
+            }
+        }
+        if = {
+            limit = {
+                KAZ = {
+                    exists = yes
+                    is_subject_of = SOV
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            KAZ = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 5 }
+            }
+        }
+    }
+    if = {
+        limit = {
+            original_tag = POR
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_war_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_war_registered
+        add_ideas = AOEIW37_WORLD_wartime_imperial_commission
+        if = {
+            limit = {
+                BRA = {
+                    exists = yes
+                    is_subject_of = POR
+                    NOT = { has_country_flag = AOEIW37_WORLD_service_debate_seen }
+                }
+            }
+            BRA = {
+                set_country_flag = AOEIW37_WORLD_service_debate_seen
+                country_event = { id = AOEIW37_world.1 days = 3 }
+            }
+        }
+    }
+}
+
+AOEIW37_WORLD_register_imperial_collapse = {
+    if = {
+        limit = {
+            original_tag = FRA
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_collapse_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_collapse_registered
+        if = {
+            limit = { MLI = { exists = yes is_subject_of = FRA } }
+            MLI = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 1 }
+            }
+        }
+        if = {
+            limit = { VIN = { exists = yes is_subject_of = FRA } }
+            VIN = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 2 }
+            }
+        }
+        if = {
+            limit = { ENG = { exists = yes } }
+            ENG = { country_event = { id = AOEIW37_world.20 days = 2 } }
+        }
+        if = {
+            limit = { ITA = { exists = yes } }
+            ITA = { country_event = { id = AOEIW37_world.20 days = 3 } }
+        }
+    }
+    if = {
+        limit = {
+            original_tag = SOV
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_collapse_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_collapse_registered
+        if = {
+            limit = { UKR = { exists = yes is_subject_of = SOV } }
+            UKR = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 1 }
+            }
+        }
+        if = {
+            limit = { GEO = { exists = yes is_subject_of = SOV } }
+            GEO = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 2 }
+            }
+        }
+        if = {
+            limit = { KAZ = { exists = yes is_subject_of = SOV } }
+            KAZ = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 3 }
+            }
+        }
+        if = {
+            limit = { JAP = { exists = yes } }
+            JAP = { country_event = { id = AOEIW37_world.20 days = 2 } }
+        }
+        if = {
+            limit = { CHI = { exists = yes } }
+            CHI = { country_event = { id = AOEIW37_world.20 days = 3 } }
+        }
+    }
+    if = {
+        limit = {
+            original_tag = POR
+            NOT = { has_country_flag = AOEIW37_WORLD_imperial_collapse_registered }
+        }
+        set_country_flag = AOEIW37_WORLD_imperial_collapse_registered
+        if = {
+            limit = { BRA = { exists = yes is_subject_of = POR } }
+            BRA = {
+                set_country_flag = AOEIW37_WORLD_metropole_fell
+                add_ideas = AOEIW37_WORLD_metropolitan_collapse
+                country_event = { id = AOEIW37_world.2 days = 1 }
+            }
+        }
+        if = {
+            limit = { ENG = { exists = yes } }
+            ENG = { country_event = { id = AOEIW37_world.20 days = 2 } }
+        }
+        if = {
+            limit = { USA = { exists = yes } }
+            USA = { country_event = { id = AOEIW37_world.20 days = 3 } }
+        }
+    }
+}

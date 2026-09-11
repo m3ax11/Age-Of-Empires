@@ -1,0 +1,193 @@
+add_namespace = AOEIW37_world
+
+# A subject chooses how it will serve once its overlord enters a major war.
+country_event = {
+    id = AOEIW37_world.1
+    title = AOEIW37_world.1.t
+    desc = AOEIW37_world.1.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+    option = {
+        name = AOEIW37_world.1.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_war_support > 0.50 } }
+        add_timed_idea = { idea = AOEIW37_WORLD_expeditionary_commitment days = 540 }
+        add_war_support = 0.03
+        add_autonomy_ratio = { value = 0.03 localization = AOEIW37_WORLD_war_service_autonomy }
+        army_experience = 10
+    }
+    option = {
+        name = AOEIW37_world.1.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_stability < 0.50 } }
+        add_timed_idea = { idea = AOEIW37_WORLD_home_defence_mandate days = 540 }
+        add_stability = 0.03
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_WORLD_home_defence_autonomy }
+    }
+}
+
+# A capitulated metropole produces an emergency choice without auto-releasing tags.
+country_event = {
+    id = AOEIW37_world.2
+    title = AOEIW37_world.2.t
+    desc = AOEIW37_world.2.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+    option = {
+        name = AOEIW37_world.2.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_war = yes } }
+        add_timed_idea = { idea = AOEIW37_WORLD_emergency_command days = 365 }
+        add_war_support = 0.05
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_WORLD_emergency_command_autonomy }
+    }
+    option = {
+        name = AOEIW37_world.2.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_stability < 0.50 } }
+        add_timed_idea = { idea = AOEIW37_WORLD_provisional_civil_council days = 365 }
+        add_stability = 0.05
+        add_autonomy_ratio = { value = 0.10 localization = AOEIW37_WORLD_provisional_council_autonomy }
+    }
+}
+
+# A restored overlord opens reconstruction talks with each surviving subject.
+country_event = {
+    id = AOEIW37_world.3
+    title = AOEIW37_world.3.t
+    desc = AOEIW37_world.3.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { OR = { original_tag = MLI original_tag = VIN original_tag = UKR original_tag = GEO original_tag = KAZ original_tag = BRA } }
+    option = {
+        name = AOEIW37_world.3.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_country_flag = AOEIW37_WORLD_metropole_fell } }
+        set_country_flag = AOEIW37_WORLD_compact_requested
+        if = { limit = { OR = { original_tag = MLI original_tag = VIN } } FRA = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+        if = { limit = { OR = { original_tag = UKR original_tag = GEO original_tag = KAZ } } SOV = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+        if = { limit = { original_tag = BRA } POR = { country_event = { id = AOEIW37_world.10 days = 2 } } }
+    }
+    option = {
+        name = AOEIW37_world.3.b
+        ai_chance = { factor = 40 }
+        set_country_flag = AOEIW37_WORLD_compact_requested
+        remove_ideas = AOEIW37_WORLD_metropolitan_collapse
+        add_ideas = AOEIW37_WORLD_directed_compact
+        set_country_flag = AOEIW37_WORLD_directed_settled
+        add_autonomy_ratio = { value = 0.03 localization = AOEIW37_WORLD_directed_recovery_autonomy }
+        add_stability = 0.03
+        if = { limit = { OR = { original_tag = MLI original_tag = VIN } } FRA = { country_event = { id = AOEIW37_world.13 days = 1 } } }
+        if = { limit = { OR = { original_tag = UKR original_tag = GEO original_tag = KAZ } } SOV = { country_event = { id = AOEIW37_world.13 days = 1 } } }
+        if = { limit = { original_tag = BRA } POR = { country_event = { id = AOEIW37_world.13 days = 1 } } }
+    }
+}
+
+# FROM is the subject that submitted the memorandum.
+country_event = {
+    id = AOEIW37_world.10
+    title = AOEIW37_world.10.t
+    desc = AOEIW37_world.10.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = FRA original_tag = SOV original_tag = POR }
+        FROM = { exists = yes is_subject_of = ROOT }
+    }
+    option = {
+        name = AOEIW37_world.10.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_stability > 0.55 } }
+        remove_ideas = AOEIW37_WORLD_central_administration_burden
+        add_ideas = AOEIW37_WORLD_reformed_imperial_union
+        set_country_flag = AOEIW37_WORLD_reformed_compact
+        add_opinion_modifier = { target = FROM modifier = AOEIW37_WORLD_charter_concession }
+        FROM = {
+            remove_ideas = AOEIW37_WORLD_metropolitan_collapse
+            remove_ideas = AOEIW37_WORLD_directed_compact
+            add_ideas = AOEIW37_WORLD_federal_charter
+            set_country_flag = AOEIW37_WORLD_charter_settled
+            add_autonomy_ratio = { value = 0.15 localization = AOEIW37_WORLD_charter_autonomy }
+            add_opinion_modifier = { target = ROOT modifier = AOEIW37_WORLD_charter_concession }
+            country_event = { id = AOEIW37_world.11 days = 1 }
+        }
+    }
+    option = {
+        name = AOEIW37_world.10.b
+        ai_chance = { factor = 40 modifier = { factor = 1.5 has_war_support > 0.60 } }
+        remove_ideas = AOEIW37_WORLD_reformed_imperial_union
+        add_ideas = AOEIW37_WORLD_central_administration_burden
+        set_country_flag = AOEIW37_WORLD_directed_compact_policy
+        add_opinion_modifier = { target = FROM modifier = AOEIW37_WORLD_directed_settlement }
+        FROM = {
+            remove_ideas = AOEIW37_WORLD_metropolitan_collapse
+            remove_ideas = AOEIW37_WORLD_federal_charter
+            add_ideas = AOEIW37_WORLD_directed_compact
+            set_country_flag = AOEIW37_WORLD_directed_settled
+            add_autonomy_ratio = { value = 0.05 localization = AOEIW37_WORLD_directed_recovery_autonomy }
+            add_opinion_modifier = { target = ROOT modifier = AOEIW37_WORLD_directed_settlement }
+            country_event = { id = AOEIW37_world.12 days = 1 }
+        }
+    }
+}
+
+country_event = {
+    id = AOEIW37_world.11
+    title = AOEIW37_world.11.t
+    desc = AOEIW37_world.11.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    option = { name = AOEIW37_world.11.a add_stability = 0.04 add_political_power = 50 }
+}
+
+country_event = {
+    id = AOEIW37_world.12
+    title = AOEIW37_world.12.t
+    desc = AOEIW37_world.12.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    option = { name = AOEIW37_world.12.a add_war_support = 0.04 add_political_power = 25 }
+}
+
+# A subject accepted the old hierarchy during the conference.
+country_event = {
+    id = AOEIW37_world.13
+    title = AOEIW37_world.13.t
+    desc = AOEIW37_world.13.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = FRA original_tag = SOV original_tag = POR }
+        FROM = { exists = yes is_subject_of = ROOT }
+    }
+    option = {
+        name = AOEIW37_world.13.a
+        set_country_flag = AOEIW37_WORLD_directed_compact_policy
+        add_political_power = 25
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW37_WORLD_shared_sacrifice } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW37_WORLD_shared_sacrifice }
+    }
+}
+
+# Regional powers decide whether a collapsing imperial network is a relief problem
+# or a strategic opening. FROM is the capitulated metropole.
+country_event = {
+    id = AOEIW37_world.20
+    title = AOEIW37_world.20.t
+    desc = AOEIW37_world.20.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { OR = { original_tag = ENG original_tag = ITA original_tag = JAP original_tag = CHI original_tag = USA } }
+    option = {
+        name = AOEIW37_world.20.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_government = democratic } }
+        add_timed_idea = { idea = AOEIW37_WORLD_relief_mission days = 240 }
+        add_political_power = -25
+        add_opinion_modifier = { target = FROM modifier = AOEIW37_WORLD_relief_diplomacy }
+    }
+    option = {
+        name = AOEIW37_world.20.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_war = yes } }
+        add_timed_idea = { idea = AOEIW37_WORLD_strategic_watch days = 240 }
+        add_war_support = 0.02
+        add_opinion_modifier = { target = FROM modifier = AOEIW37_WORLD_strategic_encroachment }
+    }
+}

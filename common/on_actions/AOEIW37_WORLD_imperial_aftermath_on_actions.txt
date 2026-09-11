@@ -1,0 +1,16 @@
+on_actions = {
+    on_war_relation_added = {
+        effect = {
+            ROOT = { AOEIW37_WORLD_register_imperial_war = yes }
+            FROM = { AOEIW37_WORLD_register_imperial_war = yes }
+        }
+    }
+
+    # ROOT is the surrendering country. The subjects retain agency; this hook
+    # creates a crisis and a later settlement path rather than releasing tags.
+    on_capitulation = {
+        effect = {
+            ROOT = { AOEIW37_WORLD_register_imperial_collapse = yes }
+        }
+    }
+}

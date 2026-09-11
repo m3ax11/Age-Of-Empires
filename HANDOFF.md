@@ -1,6 +1,30 @@
 # Age of Empires — RT56 Edition: development handoff
 
-Audited 2026-09-10. This is a reconstruction from the supplied archive, not from conversation memory. No gameplay, map, localisation, or asset files were changed.
+Reconstructed from the supplied archive on 2026-09-10 and advanced as a release-candidate working copy on 2026-09-11. The original archive remains the provenance baseline; this file records the current implementation state.
+
+## 2026-09-11 release-candidate status
+
+The working copy is now a Git repository. Commit `a29d19aa` is the untouched extracted archive plus the initial audit handoff. All later work is reviewable against that baseline. Do not discard the current working tree: it contains the integrated release pass.
+
+Completed in the current working tree:
+
+- Repaired the unmatched brace in `common/characters/KAL.txt`.
+- Restored four compatibility ideas used by the legacy China handlers without changing the CHI-player/MAN-Puyi architecture.
+- Removed thirteen duplicate scripted-trigger collisions by renaming the earlier redundant definitions with the `AOEIW_legacy_` prefix; the later RT56 definitions remain authoritative.
+- Completed all previously missing AOE English localization detected by the validator and replaced the visible USA mobilization placeholder.
+- Reorganized Spanish South America into two integrated subjects. ARG administers the Southern Cone; PRU administers the Andes and northern Spanish South America. Both retain local cores and Spain retains imperial cores. Central America and the Caribbean remain directly Spanish.
+- Added Spain's Cádiz imperial-governance lifecycle: 11 focuses, 12 decisions, 18 events, 11 spirits, 3 dynamic modifiers and 4 AI plans. It covers Argentine and Peruvian investment, petitions, wartime mobilization, foreign reactions and a postwar commonwealth/directorate payoff.
+- Added Germany's release-candidate continuation: 28 focuses, 7 decisions, 20 events, 20 ideas and 6 AI plans. The four political outcomes now lead into distinct continental orders, while economy, resource, armed-forces and postwar settlement branches provide 1940s play.
+- Added the `AOEIW37_WORLD` imperial-war and aftermath chain for FRA–MLI/VIN, SOV–UKR/GEO/KAZ and POR–BRA. War service, metropolitan collapse, subject memoranda, reconstruction policy, outside-power reactions and joint supply boards now form one sequence.
+- Replaced all eleven broken icon identifiers in `AOEIW_historical_germany_ideas.txt`, supplied the existing large Choybalsan portrait, and resolved new Germany/Spain/world icon references against the installed game assets.
+- Reconciled the standalone installation instructions in `README.txt` and `AOE_RT56_EDITION_README.txt`.
+- Added `tools/validate_aoeiw.py`. With installed HOI4 1.19.2 as its reference, it currently parses 5,257 mod script files and reports no proven brace, duplicate AOE ID, AOE reference, AOE English-localization, province/strategic-region or Spanish-subject contract failures.
+
+The every-country inventory covers all 49 countries that directly own a state in the supported 1936 start. Forty-five have an AOE-selected tree. ADR, LIE, MNC and SAN rely on inherited/shared microstate content. The detailed tier table and risk assessment are in `work/world-release-audit.md` outside the packaged mod; `work/country-coverage.json` is its machine-readable source.
+
+Work still in progress: regional authored-content passes under the `AOEIW38_AMERICAS_AFRICA`, `AOEIW38_EUROPE` and `AOEIW38_ASIA_MIDDLE` prefixes. These target repeated generic mid-tier content, Mongolia, Yemen, regional reactions and postwar outcomes. Re-run the full validator and asset/reference scans after integrating them.
+
+Known release gate: no fresh game has yet loaded this exact post-change working tree. A separate HOI4 process was already running another mod, so it was not interrupted. Before packaging, run only this edition on HOI4 1.19.2, start Time of Upheaval in 1936, preserve the raw `error.log`, and smoke-test GER, SPR/ARG/PRU, CHI/MAN, USA, British succession and one imperial-aftermath chain.
 
 ## Authoritative input and working copy
 
@@ -8,7 +32,7 @@ Audited 2026-09-10. This is a reconstruction from the supplied archive, not from
 - ZIP SHA-256: `2b424e8ab25ef102eda864e4a9e553a6ec6eb90d96382e975b63252cee6a26e7`.
 - Extracted working copy: `C:\Users\Stack\Documents\Codex\2026-09-10\we-are-continuing-development-of-an\work\archive-audit\Age_Of_Empires_RT56_Edition`.
 - This handoff is also copied into that working copy as `HANDOFF.md`. The original ZIP remains unchanged. Other installed/Desktop copies were not treated as sources or merged into this copy.
-- No `AGENTS.md`, existing handoff, dedicated TODO file, or Git metadata was found in the archive. `git status --short` and `git diff --stat` both failed because this is not a Git repository. **Uncommitted changes, branch, last commit, and which edits belonged to the previous session cannot be recovered from this ZIP.** Do not call the archive a clean Git checkout.
+- No `AGENTS.md`, existing handoff, dedicated TODO file, or Git metadata was present in the archive. Git was initialized after extraction; `a29d19aa` records the archive baseline.
 
 All paths below are relative to the extracted mod root unless explicitly absolute.
 
@@ -16,7 +40,7 @@ All paths below are relative to the extracted mod root unless explicitly absolut
 
 This is an extensive standalone, all-in-one merger of The Road to 56, Age of Empires, and their compatibility layer. `descriptor.mod` declares HOI4 `1.19.*` and replaces `history/states` and `map/strategicregions`. That is a declared target, not a verified runtime result.
 
-`AOE_RT56_EDITION_README.txt` explicitly says to enable **only this edition**, without separate RT56/AOE/compatibility mods, and start a new game after updating. The older `README.txt` still describes a three-mod load order; it is stale for this packaged edition. `README.md` is inherited RT56 contributor documentation, including attribution and contribution conventions, rather than an AOE design specification. `Credits.txt` and `Unique Commanders IDS.txt` should be retained.
+`AOE_RT56_EDITION_README.txt` and `README.txt` now consistently say to enable **only this edition**, without separate RT56/AOE/compatibility mods, and start a new game after updating. `README.md` is inherited RT56 contributor documentation, including attribution and contribution conventions, rather than an AOE design specification. `Credits.txt` and `Unique Commanders IDS.txt` should be retained.
 
 The archive contains 29,554 files. Principal counts:
 
@@ -82,15 +106,15 @@ This audit indexed 5,242 script/interface/map definition files with a comment/st
 - Custom localisation files checked had BOMs and language headers. No duplicate AOE-prefixed English keys found by the key scan; keep naming conventions despite that clean result.
 - All extracted original files matched their ZIP CRCs before adding this handoff.
 
-## Known defects and unfinished work
+## Initial audit findings and disposition
 
-### 1. Confirmed structural error — fix first
+### 1. Confirmed structural error — resolved
 
-`common/characters/KAL.txt` has **one unmatched opening brace**. At the end of `KAL_stepanov`, the closures account for `ai_will_do`, `advisor`, and the character, leaving the top-level `characters` block open. This was the only brace imbalance found in the 5,242-file scan. Repair the closure and run a fresh-game load with the unfiltered HOI4 error log; do not assume a crash is proven from static inspection alone.
+`common/characters/KAL.txt` had one unmatched opening brace. The missing top-level closure has been restored, and the release validator now reports no structural imbalance.
 
-### 2. Confirmed English localisation gaps
+### 2. Confirmed English localisation gaps — resolved
 
-World-expansion content references missing English keys:
+The following world-expansion gaps were present in the archive and have now been localized:
 
 - Seven spirit names in `common/ideas/AOEIW_world_expansion_ideas.txt`: `AOEIW_world_frontier_state`, `AOEIW_world_colonial_administration`, `AOEIW_world_american_breakaway`, `AOEIW_world_USA_fractured_republic`, `AOEIW_world_USA_industrial_recovery`, `AOEIW_world_USA_reunited`, `AOEIW_world_FRA_metropolitan_command`. Several are applied at startup, so this is not exclusively dormant content.
 - Both categories in `common/decisions/categories/AOEIW_world_expansion_categories.txt`: `AOEIW_world_american_reclamation_category` and `AOEIW_world_british_succession_category`.
@@ -98,27 +122,27 @@ World-expansion content references missing English keys:
 - Seven event strings in `events/AOEIW_world_expansion_events.txt`: `AOEIW_world.1.t/.d/.a` and `AOEIW_world.2.t/.d/.a/.b`.
 - The broader scan also found missing research/doctrine-bonus display names such as `AOEIW_event_land_doctrine` and `AOEIW_AUS_event_air` in country event files. These are bonus labels, not missing event titles; review their presentation separately.
 
-No missing AOE focus title/description keys were found by the English scan. Two character-ID lookup candidates were false positives: `AOEIW20_QIN_puyi` and `AOEIW20_MAN_puyi` explicitly use the existing `AOEIW_CHI_puyi` name key.
+The added release content also has complete English names and descriptions under its own prefixes. Two character-ID lookup candidates remain intentional: `AOEIW20_QIN_puyi` and `AOEIW20_MAN_puyi` explicitly use the existing `AOEIW_CHI_puyi` name key.
 
-### 3. Confirmed legacy China reference debt, lower priority
+### 3. Legacy China compatibility debt — resolved
 
-`common/national_focus/AOEIW_CHI_focus.txt` references four undefined idea IDs: `AOEIW20_CHI_dynastic_crisis` (lines 33 and 212), `AOEIW20_CHI_costly_dynastic_settlement` (222), `AOEIW20_CHI_nra_underground` (256), and `AOEIW20_CHI_mao_underground` (438). Localisation exists, but idea definitions do not.
+`common/national_focus/AOEIW_CHI_focus.txt` referenced four undefined idea IDs: `AOEIW20_CHI_dynastic_crisis`, `AOEIW20_CHI_costly_dynastic_settlement`, `AOEIW20_CHI_nra_underground`, and `AOEIW20_CHI_mao_underground`. Compatibility definitions now exist in `common/ideas/AOEIW_phase20_chinese_crisis.txt`.
 
-The normal CHI selectors prefer the newer holding/UF trees, and `events/AOEIW_phase20_chinese_crisis.txt:160` explicitly retains handlers for old saves/console-triggered legacy focuses. Repair this compatibility gap only within that intent; do not revive the superseded unstable China implementation.
+The normal CHI selectors still prefer the newer holding/UF trees, and the compatibility definitions do not revive the superseded unstable China implementation.
 
 ### 4. Inherited integration candidates needing runtime/base-game verification
 
-- Thirteen scripted-trigger IDs are defined more than once. Examples: `is_independent_china_or_warlord` in `CHI_scripted_triggers.txt:17` and `r56_scripted_triggers.txt:121` has different country lists; several GER predicates occur in both GER and r56_GER trigger files; four Belgian aircraft predicates repeat inside `r56_scripted_triggers.txt`. Determine intended effective definitions before consolidating anything.
+- Thirteen scripted-trigger IDs were defined more than once. Earlier redundant copies now use the `AOEIW_legacy_` prefix, preserving the source for review while leaving the later RT56 definitions authoritative.
 - Namespace case mismatches occur in inherited files: `BBA_Switzerland` is declared but 31 events use `BBA_switzerland`; `NSB_news.200` also differs from the declared lowercase namespace. Treat as candidates until checked against engine behavior; no such mismatch was found for AOE events.
 - The archive-only scan reports 301 unresolved event-reference occurrences, 8 focus-reference occurrences and 74 OOB-reference occurrences outside the AOE subset. Some can resolve from the base game/DLC or parameter substitution. These are **not 383 confirmed bugs**. Example candidates include `PRC_sea_soviet_advisors`, `GER_around_maginot_vanilla`, and `GER_weserubung`.
 - The USA reclamation chain remains alongside an already-reunited start. Its launch requires QUE/CSA/HAI to exist, so the normal start appears to block that old chain. Confirm intended visibility/release behavior before deleting it.
 - Phase-35 governance, phase-36 layout and German coalition transitions need in-game regression coverage. Static completeness does not prove correct scopes, UI behavior, reachable branches or balanced effects.
 
-### 5. Explicit TODOs and documentation debt
+### 5. Explicit AOE TODOs and documentation debt — resolved
 
-- `history/units/AOEIW_GER_1936_air_bba.txt:43` and legacy variant line 40 retain `TODO: REMOVE THIS LATER ???` next to transport aircraft.
-- SOV BBA/legacy air OOBs retain a transport-aviation TODO.
-- `common/characters/AOEIW_RT56_restored_characters.txt:19` records a missing large portrait for MON's Choybalsan advisor.
+- The German transport aircraft are now documented as an intentional limited airborne capability.
+- The Russian transport brigade is explicitly abstracted into the logistics pool rather than left as an unfinished note.
+- The restored Choybalsan advisor now uses the existing RT56 large portrait.
 - Many other TODO/placeholder hits belong to inherited RT56 content, and “unfinished” also occurs in deliberate lore titles. They are not evidence of a half-completed previous-session edit.
 - Reconcile the old compatibility README with the standalone instructions. No archive-local test history or patch-by-patch completion log establishes what the previous session finished.
 
@@ -126,7 +150,7 @@ The normal CHI selectors prefer the newer holding/UF trees, and `events/AOEIW_ph
 
 Preserve all `AOEIW`, numbered phase prefixes, lower-/uppercase event namespaces, variables, country/global flags, cosmetic tags, event targets, and focus IDs. Filename age does not mean obsolete: phase-28 files contain phase-34 logic. Preserve selector weights, mutually exclusive branches, `allow_branch` visibility and existing layout-dirty calls unless a specific defect warrants changing them. Keep UTF-8 BOM/language headers in localisation and retain attribution. The inherited commander ID document reserves future legacy IDs starting at 5600; check existing allocations before adding legacy IDs.
 
-**Recommended next task: a narrow startup-stability and visible-text patch.** Establish this extracted snapshot as an explicit version-control baseline; fix the KAL brace; add the confirmed world-system English strings without changing effects; then load a fresh 1936 game using only this edition on its declared compatible game version. Inspect the raw error log and exercise CHI's opening chain, MAN continuity, Germany's government/election UI, USA's reunited start and British succession. Only then prioritise inherited reference warnings and legacy China cleanup.
+**Recommended next task:** finish and validate the three AOEIW38 regional batches, then perform the exact-build fresh-start/runtime gate described near the top of this handoff. Prioritize engine errors that cite AOE-owned files; qualify inherited RT56 warnings rather than changing them blindly.
 
 The bundled `errorlog_cleaner.py` rewrites the installed game's log to suppress some entries; it was not run. Keep raw logs for validation.
 

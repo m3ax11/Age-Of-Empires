@@ -1,0 +1,17 @@
+AOEIW37_SPR_imperial_administration_category = {
+    icon = spr_reassert_american_dominance
+    allowed = {
+        OR = {
+            original_tag = SPR
+            original_tag = ARG
+            original_tag = PRU
+        }
+    }
+    visible = {
+        OR = {
+            has_country_flag = AOEIW37_SPR_imperial_congress_opened
+            has_country_flag = AOEIW37_SPR_cadiz_delegate
+        }
+    }
+    priority = 90
+}

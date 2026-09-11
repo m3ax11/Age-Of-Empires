@@ -16,8 +16,8 @@ on_actions = {
                 add_ideas = AOEIW_world_FRA_metropolitan_command
             }
             SPR = {
-                set_autonomy = { target = ARG autonomy_state = autonomy_puppet freedom_level = 0.35 }
-                set_autonomy = { target = PRU autonomy_state = autonomy_puppet freedom_level = 0.35 }
+                set_autonomy = { target = ARG autonomy_state = autonomy_integrated_puppet freedom_level = 0.20 }
+                set_autonomy = { target = PRU autonomy_state = autonomy_integrated_puppet freedom_level = 0.20 }
             }
             USA = {
                 # French America, the Thirteen Colonies and New England are

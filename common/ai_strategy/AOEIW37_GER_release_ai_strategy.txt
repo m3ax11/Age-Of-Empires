@@ -1,0 +1,74 @@
+AOEIW37_GER_imperial_continental_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_imperial_order }
+    abort = { always = no }
+
+    ai_strategy = { type = befriend id = AUS value = 70 }
+    ai_strategy = { type = befriend id = HOL value = 80 }
+    ai_strategy = { type = protect id = POL value = 90 }
+    ai_strategy = { type = protect id = EST value = 60 }
+    ai_strategy = { type = protect id = MAL value = 50 }
+}
+
+AOEIW37_GER_democratic_continental_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_democratic_order }
+    abort = { always = no }
+
+    ai_strategy = { type = befriend id = FRA value = 80 }
+    ai_strategy = { type = befriend id = AUS value = 70 }
+    ai_strategy = { type = befriend id = HOL value = 90 }
+    ai_strategy = { type = protect id = POL value = 70 }
+    ai_strategy = { type = antagonize id = FRA value = -80 }
+    ai_strategy = { type = antagonize id = AUS value = -60 }
+}
+
+AOEIW37_GER_workers_continental_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_workers_order }
+    abort = { always = no }
+
+    ai_strategy = { type = befriend id = SOV value = 80 }
+    ai_strategy = { type = befriend id = FRA value = 50 }
+    ai_strategy = { type = protect id = POL value = 50 }
+    ai_strategy = { type = antagonize id = SOV value = -50 }
+}
+
+AOEIW37_GER_nationalist_continental_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_nationalist_order }
+    abort = { always = no }
+
+    ai_strategy = { type = antagonize id = FRA value = 100 }
+    ai_strategy = { type = antagonize id = SOV value = 120 }
+    ai_strategy = { type = antagonize id = ENG value = 80 }
+    ai_strategy = { type = contain id = FRA value = 60 }
+    ai_strategy = { type = contain id = SOV value = 80 }
+}
+
+AOEIW37_GER_diplomatic_accommodation_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_diplomatic_accommodation }
+    abort = { NOT = { has_country_flag = AOEIW37_GER_diplomatic_accommodation } }
+
+    ai_strategy = { type = befriend id = FRA value = 60 }
+    ai_strategy = { type = befriend id = ENG value = 50 }
+    ai_strategy = { type = befriend id = AUS value = 60 }
+    ai_strategy = { type = befriend id = HOL value = 60 }
+    ai_strategy = { type = protect id = POL value = 50 }
+    ai_strategy = { type = antagonize id = FRA value = -40 }
+    ai_strategy = { type = antagonize id = ENG value = -40 }
+}
+
+AOEIW37_GER_armed_vigilance_policy = {
+    allowed = { original_tag = GER }
+    enable = { has_country_flag = AOEIW37_GER_diplomatic_vigilance }
+    abort = { NOT = { has_country_flag = AOEIW37_GER_diplomatic_vigilance } }
+
+    ai_strategy = { type = antagonize id = FRA value = 50 }
+    ai_strategy = { type = antagonize id = ENG value = 40 }
+    ai_strategy = { type = antagonize id = SOV value = 60 }
+    ai_strategy = { type = contain id = FRA value = 40 }
+    ai_strategy = { type = contain id = SOV value = 50 }
+    ai_strategy = { type = protect id = POL value = 40 }
+}

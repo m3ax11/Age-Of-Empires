@@ -2334,4 +2334,271 @@ focus_tree = {
         completion_reward = { add_ideas = AOEIW35_SPR_institutional_capstone_idea country_event = { id = AOEIW35_spr.2 hours = 6 } }
         ai_will_do = { factor = 5 }
     }
+
+    # AOEIW37: the South American empire becomes an active political and military
+    # relationship after Spain has settled its own constitution.
+    focus = {
+        id = AOEIW37_SPR_congress_of_cadiz
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 17
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW35_SPR_institutional_capstone }
+        available = {
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            set_country_flag = AOEIW37_SPR_imperial_congress_opened
+            add_ideas = AOEIW37_SPR_unsettled_imperial_compact
+            country_event = { id = AOEIW37_spr.1 hours = 6 }
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.2 hours = 12 } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.3 hours = 18 } } }
+        }
+        ai_will_do = { factor = 12 }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_charter_of_equal_realms
+        icon = GFX_focus_spr_maintain_the_republic
+        x = 16
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW37_SPR_congress_of_cadiz }
+        mutually_exclusive = { focus = AOEIW37_SPR_viceroyal_directorate }
+        available = {
+            OR = {
+                has_completed_focus = AOEIW9_SPR_politics_p1_6
+                has_completed_focus = AOEIW9_SPR_politics_p2_6
+            }
+        }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            set_country_flag = AOEIW37_SPR_charter_policy
+            swap_ideas = { remove_idea = AOEIW37_SPR_unsettled_imperial_compact add_idea = AOEIW37_SPR_chartered_empire }
+            add_stability = 0.03
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_opinion_modifier = { target = SPR modifier = AOEIW14_autonomy_compromise } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_opinion_modifier = { target = SPR modifier = AOEIW14_autonomy_compromise } } }
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.14 hours = 6 } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.14 hours = 12 } } }
+        }
+        ai_will_do = { factor = 10 modifier = { factor = 1.5 has_completed_focus = AOEIW9_SPR_politics_p1_6 } }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_viceroyal_directorate
+        icon = GFX_focus_spa_caudillo_of_spain
+        x = 18
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW37_SPR_congress_of_cadiz }
+        mutually_exclusive = { focus = AOEIW37_SPR_charter_of_equal_realms }
+        available = {
+            OR = {
+                has_completed_focus = AOEIW9_SPR_politics_p2_6
+                has_completed_focus = AOEIW9_SPR_politics_p3_6
+            }
+        }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+        completion_reward = {
+            set_country_flag = AOEIW37_SPR_directorate_policy
+            swap_ideas = { remove_idea = AOEIW37_SPR_unsettled_imperial_compact add_idea = AOEIW37_SPR_directed_empire }
+            add_war_support = 0.03
+            add_command_power = 10
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.14 hours = 6 } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.14 hours = 12 } } }
+        }
+        ai_will_do = { factor = 10 modifier = { factor = 1.5 has_completed_focus = AOEIW9_SPR_politics_p3_6 } }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_rioplatense_public_works
+        icon = GFX_focus_generic_industry_2
+        x = 15
+        y = 13
+        cost = 6
+        prerequisite = { focus = AOEIW37_SPR_charter_of_equal_realms focus = AOEIW37_SPR_viceroyal_directorate }
+        available = { ARG = { exists = yes is_subject_of = SPR } }
+        bypass = { NOT = { ARG = { exists = yes is_subject_of = SPR } } }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            ARG = {
+                capital_scope = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+                add_ideas = AOEIW37_SPR_imperial_development_partner
+                add_stability = 0.02
+                if = { limit = { has_country_flag = AOEIW37_SPR_cooperative_delegation } add_political_power = 25 }
+                if = { limit = { has_country_flag = AOEIW37_SPR_guarded_delegation } add_autonomy_ratio = { value = 0.02 localization = AOEIW37_SPR_locally_supervised_works_autonomy } }
+            }
+            if = { limit = { has_country_flag = AOEIW37_SPR_congress_funded_development } add_political_power = 25 }
+        }
+        ai_will_do = { factor = 9 modifier = { factor = 1.4 has_country_flag = AOEIW37_SPR_congress_funded_development } }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_andean_development_corporation
+        icon = GFX_focus_generic_industry_3
+        x = 19
+        y = 13
+        cost = 6
+        prerequisite = { focus = AOEIW37_SPR_charter_of_equal_realms focus = AOEIW37_SPR_viceroyal_directorate }
+        available = { PRU = { exists = yes is_subject_of = SPR } }
+        bypass = { NOT = { PRU = { exists = yes is_subject_of = SPR } } }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            PRU = {
+                capital_scope = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+                add_ideas = AOEIW37_SPR_imperial_development_partner
+                add_stability = 0.02
+                if = { limit = { has_country_flag = AOEIW37_SPR_cooperative_delegation } add_political_power = 25 }
+                if = { limit = { has_country_flag = AOEIW37_SPR_guarded_delegation } add_autonomy_ratio = { value = 0.02 localization = AOEIW37_SPR_locally_supervised_works_autonomy } }
+            }
+            add_tech_bonus = { name = AOEIW37_SPR_andean_extraction bonus = 0.5 uses = 1 category = excavation_tech }
+            if = { limit = { has_country_flag = AOEIW37_SPR_congress_funded_development } add_political_power = 25 }
+        }
+        ai_will_do = { factor = 9 modifier = { factor = 1.4 has_country_flag = AOEIW37_SPR_congress_funded_development } }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_imperial_defence_board
+        icon = GFX_focus_generic_combined_arms
+        x = 17
+        y = 14
+        cost = 6
+        prerequisite = { focus = AOEIW37_SPR_rioplatense_public_works }
+        prerequisite = { focus = AOEIW37_SPR_andean_development_corporation }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT }
+        completion_reward = {
+            set_country_flag = AOEIW37_SPR_imperial_defence_board_formed
+            army_experience = 15
+            navy_experience = 10
+            if = { limit = { has_country_flag = AOEIW37_SPR_congress_prioritised_defence } add_command_power = 15 army_experience = 5 }
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_ideas = AOEIW37_SPR_imperial_defence_partner army_experience = 10 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_ideas = AOEIW37_SPR_imperial_defence_partner army_experience = 10 } }
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.15 hours = 6 } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.15 hours = 12 } } }
+        }
+        ai_will_do = { factor = 11 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 1.4 has_country_flag = AOEIW37_SPR_congress_prioritised_defence } }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_two_ocean_routes
+        icon = GFX_focus_generic_navy_battleship2
+        x = 16
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW37_SPR_imperial_defence_board }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW37_SPR_two_ocean_convoys bonus = 0.5 uses = 2 category = naval_equipment }
+            if = { limit = { has_country_flag = AOEIW37_SPR_congress_prioritised_defence } navy_experience = 10 }
+            random_owned_controlled_state = {
+                limit = { is_coastal = yes is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = dockyard level = 1 instant_build = yes }
+            }
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_political_power = 35 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_political_power = 35 } }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_cabinet_of_the_americas
+        icon = GFX_focus_generic_concessions
+        x = 18
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW37_SPR_imperial_defence_board }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            set_country_flag = AOEIW37_SPR_american_cabinet_established
+            add_political_power = 50
+            add_stability = 0.02
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_political_power = 50 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_political_power = 50 } }
+        }
+        ai_will_do = { factor = 9 }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_test_the_imperial_compact
+        icon = GFX_goal_generic_national_unity
+        x = 17
+        y = 16
+        cost = 6
+        prerequisite = { focus = AOEIW37_SPR_two_ocean_routes }
+        prerequisite = { focus = AOEIW37_SPR_cabinet_of_the_americas }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { country_event = { id = AOEIW37_spr.4 hours = 6 } }
+        ai_will_do = { factor = 12 }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_commonwealth_of_the_spains
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 16
+        y = 17
+        cost = 7
+        prerequisite = { focus = AOEIW37_SPR_test_the_imperial_compact }
+        mutually_exclusive = { focus = AOEIW37_SPR_one_crown_two_oceans }
+        available = { has_country_flag = AOEIW37_SPR_partnership_settlement }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_ideas = AOEIW37_SPR_commonwealth_of_realms
+            set_country_flag = AOEIW37_SPR_commonwealth_proclaimed
+            country_event = { id = AOEIW37_spr.9 hours = 6 }
+        }
+        ai_will_do = { factor = 15 }
+    }
+
+    focus = {
+        id = AOEIW37_SPR_one_crown_two_oceans
+        icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+        x = 18
+        y = 17
+        cost = 7
+        prerequisite = { focus = AOEIW37_SPR_test_the_imperial_compact }
+        mutually_exclusive = { focus = AOEIW37_SPR_commonwealth_of_the_spains }
+        available = { has_country_flag = AOEIW37_SPR_directed_settlement }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+        completion_reward = {
+            add_ideas = AOEIW37_SPR_one_crown_two_oceans_idea
+            set_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed
+            country_event = { id = AOEIW37_spr.9 hours = 6 }
+        }
+        ai_will_do = { factor = 15 }
+    }
 }

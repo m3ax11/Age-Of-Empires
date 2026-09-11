@@ -14,7 +14,7 @@
 # 
 #	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE CHI TAG
 
-is_independent_china_or_warlord = { #Does not include sinkiang
+AOEIW_legacy_is_independent_china_or_warlord = { # Expanded legacy roster retained for compatibility review.
 	OR = {
 		original_tag = CHI
 		original_tag = PRC

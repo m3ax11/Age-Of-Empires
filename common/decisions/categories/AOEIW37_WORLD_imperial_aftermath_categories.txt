@@ -1,0 +1,23 @@
+AOEIW37_WORLD_imperial_aftermath_category = {
+    icon = GFX_decision_category_generic_political_actions
+    allowed = {
+        OR = {
+            original_tag = FRA original_tag = SOV original_tag = POR
+            original_tag = MLI original_tag = VIN original_tag = UKR
+            original_tag = GEO original_tag = KAZ original_tag = BRA
+        }
+    }
+    visible = {
+        OR = {
+            AND = {
+                has_country_flag = AOEIW37_WORLD_imperial_war_registered
+                NOT = { has_country_flag = AOEIW37_WORLD_reconstruction_conference_held }
+            }
+            AND = {
+                has_country_flag = AOEIW37_WORLD_service_debate_seen
+                NOT = { has_country_flag = AOEIW37_WORLD_directed_settled }
+                NOT = { has_country_flag = AOEIW37_WORLD_supply_board_established }
+            }
+        }
+    }
+}

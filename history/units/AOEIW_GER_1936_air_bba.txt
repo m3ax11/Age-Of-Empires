@@ -40,7 +40,7 @@ air_wings = {
 			version_name = "Ju 86"
 		}
 		name = "Kampfgeschwader 153"
-		# TODO: REMOVE THIS LATER ???
+		# The Ju 52 transport fleet gives the Reich a limited airborne capability at game start.
 		transport_plane_equipment_1 = {
 			owner = "GER" 
 			amount = 80

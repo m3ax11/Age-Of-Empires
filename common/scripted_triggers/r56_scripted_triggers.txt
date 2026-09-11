@@ -1,4 +1,4 @@
-is_available_fighter_BEL = {
+AOEIW_legacy_is_available_fighter_BEL = {
 	OR = {
 		AND = {
 			has_tech = fighter1
@@ -24,7 +24,7 @@ is_available_fighter_BEL = {
 	}
 }
 
-is_available_heavy_fighter_BEL = {
+AOEIW_legacy_is_available_heavy_fighter_BEL = {
 	OR = {
 		AND = {
 			has_tech = heavy_fighter1
@@ -50,7 +50,7 @@ is_available_heavy_fighter_BEL = {
 	}
 }
 
-is_available_cas_BEL = {
+AOEIW_legacy_is_available_cas_BEL = {
 	OR = {
 		AND = {
 			has_tech = CAS1
@@ -76,7 +76,7 @@ is_available_cas_BEL = {
 	}
 }
 
-is_available_tac_BEL = {
+AOEIW_legacy_is_available_tac_BEL = {
 	OR = {
 		AND = {
 			has_tech = tactical_bomber1

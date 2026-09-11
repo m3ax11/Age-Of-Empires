@@ -6277,4 +6277,595 @@ focus = {
         completion_reward = { add_ideas = AOEIW35_GER_nationalist_capstone_idea country_event = { id = AOEIW35_ger.2 hours = 6 } }
         ai_will_do = { factor = 5 }
     }
+
+    # AOEIW37 RELEASE CANDIDATE: POLITICAL CONSEQUENCES
+    # Each constitutional route now develops through institutions and foreign policy
+    # before unlocking a distinct, persistent continental programme.
+
+    focus = {
+        id = AOEIW37_GER_imperial_federal_congress
+        icon = GFX_goal_generic_major_alliance
+        x = 2
+        y = 30
+        cost = 5
+        prerequisite = { focus = AOEIW35_GER_imperial_capstone }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.02
+            country_event = { id = AOEIW37_ger.1 hours = 6 }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_charters_of_the_realm
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 1
+        y = 31
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_imperial_federal_congress }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 35
+            every_subject_country = {
+                country_event = { id = AOEIW37_ger.20 hours = 6 }
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_imperial_defence_council
+        icon = GFX_focus_generic_military_mission
+        x = 3
+        y = 31
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_imperial_federal_congress }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            army_experience = 20
+            add_command_power = 15
+            add_doctrine_cost_reduction = {
+                name = AOEIW37_GER_imperial_defence_bonus
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW37_GER_pax_germanica
+        icon = GFX_focus_GER_mitteleuropa
+        x = 2
+        y = 32
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_charters_of_the_realm }
+        prerequisite = { focus = AOEIW37_GER_imperial_defence_council }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            set_country_flag = AOEIW37_GER_imperial_order
+            add_ideas = AOEIW37_GER_federal_hegemony
+            add_political_power = 75
+            hidden_effect = {
+                every_other_country = {
+                    limit = { OR = { original_tag = FRA original_tag = ENG original_tag = AUS original_tag = POL original_tag = HOL original_tag = ITA original_tag = SOV } }
+                    country_event = { id = AOEIW37_ger.10 hours = 12 }
+                }
+            }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_congress_of_nations
+        icon = GFX_goal_generic_major_alliance
+        x = 11
+        y = 29
+        cost = 5
+        prerequisite = { focus = AOEIW35_GER_democratic_capstone }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.03
+            country_event = { id = AOEIW37_ger.2 hours = 6 }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_european_development_bank
+        icon = GFX_focus_generic_industry_2
+        x = 10
+        y = 30
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_congress_of_nations }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW37_GER_development_bank_bonus
+                bonus = 0.50
+                uses = 1
+                category = construction_tech
+            }
+            add_political_power = 35
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_collective_security_staff
+        icon = GFX_focus_generic_military_mission
+        x = 12
+        y = 30
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_congress_of_nations }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            army_experience = 15
+            air_experience = 10
+            add_command_power = 15
+            add_doctrine_cost_reduction = {
+                name = AOEIW37_GER_collective_security_bonus
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW37_GER_charter_of_free_europe
+        icon = GFX_focus_GER_european_confederation
+        x = 11
+        y = 31
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_european_development_bank }
+        prerequisite = { focus = AOEIW37_GER_collective_security_staff }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            set_country_flag = AOEIW37_GER_democratic_order
+            add_ideas = AOEIW37_GER_european_charter
+            add_stability = 0.03
+            hidden_effect = {
+                every_other_country = {
+                    limit = { OR = { original_tag = FRA original_tag = ENG original_tag = AUS original_tag = POL original_tag = HOL original_tag = ITA original_tag = SOV } }
+                    country_event = { id = AOEIW37_ger.11 hours = 12 }
+                }
+            }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_continental_workers_congress
+        icon = GFX_focus_generic_workers
+        x = 20
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW35_GER_workers_capstone }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.02
+            country_event = { id = AOEIW37_ger.3 hours = 6 }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_planned_exchange_network
+        icon = GFX_focus_generic_industry_2
+        x = 19
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_workers_congress }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW37_GER_planned_exchange_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_stability = 0.01
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_peoples_defence_college
+        icon = GFX_goal_generic_army_doctrines
+        x = 21
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_workers_congress }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            army_experience = 25
+            add_command_power = 15
+            add_doctrine_cost_reduction = {
+                name = AOEIW37_GER_peoples_defence_bonus
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW37_GER_union_of_european_republics
+        icon = GFX_focus_generic_soviet_politics
+        x = 20
+        y = 22
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_planned_exchange_network }
+        prerequisite = { focus = AOEIW37_GER_peoples_defence_college }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            set_country_flag = AOEIW37_GER_workers_order
+            add_ideas = AOEIW37_GER_continental_planning
+            add_political_power = 50
+            hidden_effect = {
+                every_other_country = {
+                    limit = { OR = { original_tag = FRA original_tag = ENG original_tag = AUS original_tag = POL original_tag = HOL original_tag = ITA original_tag = SOV } }
+                    country_event = { id = AOEIW37_ger.12 hours = 12 }
+                }
+            }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_continental_new_order
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 32
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW35_GER_nationalist_capstone }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+        completion_reward = {
+            add_political_power = 50
+            add_war_support = 0.03
+            country_event = { id = AOEIW37_ger.4 hours = 6 }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_occupation_directorate
+        icon = GFX_focus_generic_national_security
+        x = 31
+        y = 23
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_new_order }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = -0.02
+            add_war_support = 0.03
+            if = {
+                limit = { any_owned_state = { NOT = { is_core_of = ROOT } } }
+                random_owned_state = {
+                    limit = { NOT = { is_core_of = ROOT } }
+                    add_compliance = 5
+                }
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_total_armaments_command
+        icon = GFX_focus_GER_the_four_year_plan_historical
+        x = 33
+        y = 23
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_new_order }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW37_GER_total_armaments_bonus
+                bonus = 0.50
+                uses = 2
+                category = industry
+            }
+            army_experience = 15
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_fortress_europe
+        icon = GFX_focus_generic_home_defense
+        x = 32
+        y = 24
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_occupation_directorate }
+        prerequisite = { focus = AOEIW37_GER_total_armaments_command }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            set_country_flag = AOEIW37_GER_nationalist_order
+            add_ideas = AOEIW37_GER_fortress_europe_spirit
+            add_war_support = 0.05
+            hidden_effect = {
+                every_other_country = {
+                    limit = { OR = { original_tag = FRA original_tag = ENG original_tag = AUS original_tag = POL original_tag = HOL original_tag = ITA original_tag = SOV } }
+                    country_event = { id = AOEIW37_ger.13 hours = 12 }
+                }
+            }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    # AOEIW37 RELEASE CANDIDATE: RESOURCE SECURITY
+    focus = {
+        id = AOEIW37_GER_continental_resource_board
+        icon = GFX_focus_generic_steel_mill
+        x = 47
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_GER_eco_final }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_political_power = 35
+            add_tech_bonus = {
+                name = AOEIW37_GER_resource_board_bonus
+                bonus = 0.50
+                uses = 1
+                category = excavation_tech
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_synthetic_independence
+        icon = GFX_focus_generic_industry_3
+        x = 46
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_resource_board }
+        mutually_exclusive = { focus = AOEIW37_GER_commercial_access }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW37_GER_synthetic_independence_spirit
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW37_GER_commercial_access
+        icon = GFX_goal_generic_trade
+        x = 48
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_continental_resource_board }
+        mutually_exclusive = { focus = AOEIW37_GER_synthetic_independence }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW37_GER_commercial_access_spirit
+            add_political_power = 50
+            add_stability = 0.01
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = no } }
+    }
+
+    focus = {
+        id = AOEIW37_GER_strategic_reserve
+        icon = GFX_focus_generic_self_management
+        x = 47
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_synthetic_independence focus = AOEIW37_GER_commercial_access }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_ideas = AOEIW37_GER_strategic_reserves
+            add_fuel = 20000
+            add_war_support = 0.02
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    # AOEIW37 RELEASE CANDIDATE: 1940s FORCE INTEGRATION
+    focus = {
+        id = AOEIW37_GER_operational_lessons_board
+        icon = GFX_goal_generic_army_doctrines
+        x = 46
+        y = 26
+        cost = 5
+        prerequisite = { focus = AOEIW9_GER_mil_final }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            army_experience = 20
+            air_experience = 10
+            navy_experience = 10
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_armoured_supply_columns
+        icon = GFX_focus_generic_tank_production
+        x = 44
+        y = 27
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_operational_lessons_board }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            army_experience = 20
+            add_tech_bonus = {
+                name = AOEIW37_GER_armoured_supply_bonus
+                bonus = 0.50
+                uses = 1
+                category = armor
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_integrated_air_defence_grid
+        icon = GFX_focus_generic_air_defense
+        x = 48
+        y = 27
+        cost = 5
+        prerequisite = { focus = AOEIW37_GER_operational_lessons_board }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            air_experience = 20
+            add_tech_bonus = {
+                name = AOEIW37_GER_air_defence_bonus
+                bonus = 0.50
+                uses = 1
+                category = radar_tech
+            }
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_joint_arms_directorate
+        icon = GFX_focus_generic_combined_arms
+        x = 46
+        y = 28
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_armoured_supply_columns }
+        prerequisite = { focus = AOEIW37_GER_integrated_air_defence_grid }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIR_XP }
+        completion_reward = {
+            add_ideas = AOEIW37_GER_joint_arms_board
+            add_command_power = 20
+            add_doctrine_cost_reduction = {
+                name = AOEIW37_GER_joint_arms_bonus
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    # AOEIW37 RELEASE CANDIDATE: LATE-GAME SETTLEMENTS
+    # These payoffs only unlock once the political, resource and military programmes
+    # have all matured, giving every political route a genuine 1940s conclusion.
+
+    focus = {
+        id = AOEIW37_GER_compact_beyond_the_crisis
+        icon = GFX_focus_GER_monarchy_compromise
+        x = 2
+        y = 33
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_pax_germanica }
+        available = {
+            has_completed_focus = AOEIW37_GER_strategic_reserve
+            has_completed_focus = AOEIW37_GER_joint_arms_directorate
+        }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            country_event = { id = AOEIW37_ger.7 hours = 6 }
+        }
+        ai_will_do = { factor = 12 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_european_commonwealth
+        icon = GFX_focus_GER_european_confederation
+        x = 11
+        y = 32
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_charter_of_free_europe }
+        available = {
+            has_completed_focus = AOEIW37_GER_strategic_reserve
+            has_completed_focus = AOEIW37_GER_joint_arms_directorate
+        }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            country_event = { id = AOEIW37_ger.8 hours = 6 }
+        }
+        ai_will_do = { factor = 12 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_common_plan_fulfilled
+        icon = GFX_focus_generic_soviet_politics
+        x = 20
+        y = 23
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_union_of_european_republics }
+        available = {
+            has_completed_focus = AOEIW37_GER_strategic_reserve
+            has_completed_focus = AOEIW37_GER_joint_arms_directorate
+        }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            country_event = { id = AOEIW37_ger.9 hours = 6 }
+        }
+        ai_will_do = { factor = 12 }
+    }
+
+    focus = {
+        id = AOEIW37_GER_reckoning_of_victory
+        icon = GFX_focus_generic_treaty
+        x = 32
+        y = 25
+        cost = 7
+        prerequisite = { focus = AOEIW37_GER_fortress_europe }
+        available = {
+            has_war = no
+            has_completed_focus = AOEIW37_GER_strategic_reserve
+            has_completed_focus = AOEIW37_GER_joint_arms_directorate
+        }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            country_event = { id = AOEIW37_ger.14 hours = 6 }
+        }
+        ai_will_do = { factor = 12 }
+    }
 }

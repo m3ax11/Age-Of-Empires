@@ -1,0 +1,145 @@
+ideas = {
+    country = {
+        AOEIW37_SPR_unsettled_imperial_compact = {
+            picture = generic_disjointed_gov
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.05
+                consumer_goods_factor = 0.015
+            }
+        }
+
+        AOEIW37_SPR_chartered_empire = {
+            picture = generic_constitutional_guarantees
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.04
+                trade_opinion_factor = 0.10
+                subjects_autonomy_gain = 0.10
+            }
+        }
+
+        AOEIW37_SPR_directed_empire = {
+            picture = generic_oppression
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.04
+                political_power_factor = 0.05
+                subjects_autonomy_gain = -0.15
+            }
+        }
+
+        AOEIW37_SPR_imperial_development_partner = {
+            picture = generic_improved_industries
+            allowed = {
+                OR = { original_tag = ARG original_tag = PRU }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_infrastructure_factor = 0.10
+                production_speed_industrial_complex_factor = 0.05
+                local_resources_factor = 0.05
+            }
+        }
+
+        AOEIW37_SPR_imperial_defence_partner = {
+            picture = generic_volunteer_expedition_bonus
+            allowed = {
+                OR = { original_tag = ARG original_tag = PRU }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.03
+                division_defence_factor = 0.04
+                planning_speed = 0.05
+            }
+        }
+
+        AOEIW37_SPR_subject_charter = {
+            picture = generic_constitutional_guarantees
+            allowed = {
+                OR = { original_tag = ARG original_tag = PRU }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                autonomy_gain = 0.10
+                production_speed_buildings_factor = 0.05
+            }
+        }
+
+        AOEIW37_SPR_subject_directorate = {
+            picture = generic_oppression
+            allowed = {
+                OR = { original_tag = ARG original_tag = PRU }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.05
+                recruitable_population_factor = 0.005
+                stability_factor = -0.03
+                autonomy_gain = -0.15
+            }
+        }
+
+        AOEIW37_SPR_commonwealth_of_realms = {
+            picture = generic_constitutional_guarantees
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                consumer_goods_factor = -0.02
+                research_speed_factor = 0.02
+                trade_opinion_factor = 0.15
+            }
+        }
+
+        AOEIW37_SPR_one_crown_two_oceans_idea = {
+            picture = generic_volunteer_expedition_bonus
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.06
+                army_org_factor = 0.03
+                supply_consumption_factor = -0.04
+                subjects_autonomy_gain = -0.20
+            }
+        }
+
+        AOEIW37_SPR_postwar_concord = {
+            picture = generic_constitutional_guarantees
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.04
+                consumer_goods_factor = -0.01
+                production_speed_infrastructure_factor = 0.10
+            }
+        }
+
+        AOEIW37_SPR_permanent_imperial_staff = {
+            picture = generic_army_war_college
+            allowed = { original_tag = SPR }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.08
+                army_morale_factor = 0.03
+                max_command_power = 15
+            }
+        }
+    }
+}
