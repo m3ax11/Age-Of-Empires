@@ -29,7 +29,7 @@ The every-country inventory covers all 49 countries that directly own a state in
 
 The regional authored-content passes under `AOEIW38_AMERICAS_AFRICA`, `AOEIW38_EUROPE` and `AOEIW38_ASIA_MIDDLE` are complete and integrated. Static validation is clean. The next work should be driven by an exact-build runtime smoke test and gameplay observations rather than another broad content expansion.
 
-Known release gate: no fresh game has yet loaded this exact post-change working tree. A separate HOI4 process was already running another mod, so it was not interrupted. Before packaging, run only this edition on HOI4 1.19.2, start Time of Upheaval in 1936, preserve the raw `error.log`, and smoke-test GER, SPR/ARG/PRU, CHI/MAN, USA, British succession and one imperial-aftermath chain.
+Runtime status: this exact post-change working tree reached HOI4 1.19.2's main-menu reset with only this edition enabled. The raw `error.log` contained three warnings from stale disabled Workshop descriptors and no AOE/RT56 parser errors. The temporary playset descriptor was removed and the user's prior `dlc_load.json` was restored byte-for-byte. A country was not selected in this automated pass, so the remaining release gate is a fresh **Time of Upheaval** 1936 start followed by targeted gameplay checks of GER, SPR/ARG/PRU, CHI/MAN, USA, British succession, Mongolia/Yemen convergence, regional restoration and one imperial-aftermath chain.
 
 ## Authoritative input and working copy
 
