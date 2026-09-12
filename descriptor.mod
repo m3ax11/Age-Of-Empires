@@ -1,4 +1,4 @@
-name="Age Of Empires – RT56 Edition"
+name="Age Of Empires - RT56 Edition"
 supported_version="1.19.*"
 replace_path="history/states"
 replace_path="map/strategicregions"
@@ -14,4 +14,5 @@ tags={
     "Technologies"
 }
 remote_file_id="3796962392"
+
 
