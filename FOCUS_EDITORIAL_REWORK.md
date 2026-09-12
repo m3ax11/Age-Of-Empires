@@ -6,7 +6,21 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany is the completed reference pass. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany and the United States are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## United States — branch stories
+
+### Constitutional breakdown
+
+The Depression turns the dispute between the White House, Congress and state governors into a contest over who can still issue lawful orders. A workers' government can carry the red stars to Washington, while a military administration or a Pacific secession tests whether the Union survives by consent. The path ends only when taxes, contracts and mobilisation again answer to a constitution. Its language should sound like American headlines, speeches and constitutional arguments rather than another European ministry chart.
+
+### Roads, laboratories and the arsenal
+
+The Bureau of Public Roads, Detroit plants, Maxwell Field, NACA at Langley and the Signal Corps laboratories provide the real machinery of mobilisation. Civil works become defence roads; automobile dies become armament tools; air doctrine moves from classroom arguments to exercises and radar sets. The scientific escalation runs from Goddard's rockets through the Uranium Committee to the Chicago pile. The result is the Arsenal of Democracy, built through named places and agencies rather than generic boards.
+
+### The hemisphere
+
+The Good Neighbor policy has to become a reciprocal bargain rather than a slogan masking intervention. The Havana meeting gives collective defence a real diplomatic scene and forces the American republics to respond. A federal breakdown on the Pacific coast is written through Sacramento and Washington, while restored government brings governors back into the capital. The branch ends with a working continental order whose legitimacy depends on how those choices were made.
 
 ## Germany — branch stories
 
@@ -47,3 +61,6 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [DHM: The Iron Front](https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/eisernefront)
 - [bpb: Reichsrat and Länder representation](https://www.bpb.de/kurz-knapp/taegliche-dosis-politik/545448/vor-90-jahren-aufloesung-des-reichsrates/)
 - [DHM: The Reichs-Landbund](https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/reichs-landbund)
+- [Federal Highway Administration: Bureau of Public Roads in the 1930s](https://highways.fhwa.dot.gov/federal-lands/about/history)
+- [U.S. Department of Energy: Chicago Pile and Manhattan Project history](https://www.energy.gov/sites/prod/files/edg/media/The_Manhattan_Project_2010.pdf)
+- [U.S. Office of the Historian: the 1940 Havana meeting](https://history.state.gov/historicaldocuments/frus1940v05/d271)
