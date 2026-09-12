@@ -1,0 +1,19 @@
+on_actions = {
+    # ROOT is the country that capitulated; FROM is the principal victor.
+    on_capitulation = {
+        effect = {
+            ROOT = {
+                if = {
+                    limit = { OR = { original_tag = BEL original_tag = BUL original_tag = DEN original_tag = FIN original_tag = GRE original_tag = HOL original_tag = IRE original_tag = NOR original_tag = POL original_tag = POR original_tag = ROM original_tag = SWE original_tag = SWI original_tag = YUG } NOT = { has_country_flag = AOEIW38_EUROPE_homeland_lost } }
+                    set_country_flag = AOEIW38_EUROPE_homeland_lost
+                    add_ideas = AOEIW38_EUROPE_government_in_exile_network
+                    country_event = { id = AOEIW38_europe.10 hours = 6 }
+                    every_country = {
+                        limit = { exists = yes OR = { original_tag = BEL original_tag = BUL original_tag = DEN original_tag = FIN original_tag = GRE original_tag = HOL original_tag = IRE original_tag = NOR original_tag = POL original_tag = POR original_tag = ROM original_tag = SWE original_tag = SWI original_tag = YUG } NOT = { tag = ROOT } }
+                        country_event = { id = AOEIW38_europe.11 days = 1 }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+AOEIW38_ASIA_MIDDLE_regional_consequences_category = {
+    AOEIW38_ASIA_MIDDLE_MON_rotate_frontier_patrols = {
+        icon = generic_army_support
+        cost = 35 days_re_enable = 180
+        allowed = { original_tag = MON }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_frontier_council_open }
+        available = { has_capitulated = no }
+        complete_effect = { add_timed_idea = { idea = AOEIW38_ASIA_MIDDLE_MON_frontier_patrol days = 120 } army_experience = 5 }
+        ai_will_do = { base = 8 modifier = { factor = 2 has_war = yes } }
+    }
+    AOEIW38_ASIA_MIDDLE_MON_dispatch_ulan_bator_mission = {
+        icon = generic_political_discourse
+        cost = 45 days_re_enable = 270
+        allowed = { original_tag = MON }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_network_complete }
+        available = { CHI = { exists = yes } }
+        complete_effect = {
+            add_opinion_modifier = { target = CHI modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation }
+            CHI = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } }
+            add_command_power = 5
+        }
+        ai_will_do = { base = 6 modifier = { factor = 2 has_country_flag = AOEIW38_ASIA_MIDDLE_MON_solidarity_policy } }
+    }
+    AOEIW38_ASIA_MIDDLE_MON_northern_staff_exchange = {
+        icon = generic_military
+        cost = 45 days_re_enable = 270
+        allowed = { original_tag = MON }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_network_complete }
+        available = { SOV = { exists = yes } }
+        complete_effect = {
+            add_opinion_modifier = { target = SOV modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation }
+            SOV = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } }
+            army_experience = 8
+        }
+        ai_will_do = { base = 6 modifier = { factor = 2 is_subject_of = SOV } }
+    }
+    AOEIW38_ASIA_MIDDLE_MON_postwar_caravan_grants = {
+        icon = generic_industry
+        cost = 60 fire_only_once = yes
+        allowed = { original_tag = MON }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_steppe_compact }
+        available = { date > 1941.1.1 has_war = no }
+        complete_effect = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            add_stability = 0.02
+        }
+        ai_will_do = { base = 12 }
+    }
+
+    AOEIW38_ASIA_MIDDLE_YEM_register_red_sea_convoys = {
+        icon = generic_naval
+        cost = 35 days_re_enable = 180
+        allowed = { original_tag = YEM }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_straits_council_open }
+        available = { has_capitulated = no }
+        complete_effect = { add_equipment_to_stockpile = { type = convoy_1 amount = 4 producer = ROOT } navy_experience = 5 }
+        ai_will_do = { base = 8 modifier = { factor = 2 has_war = yes } }
+    }
+    AOEIW38_ASIA_MIDDLE_YEM_negotiate_pilgrimage_guarantees = {
+        icon = generic_political_discourse
+        cost = 45 days_re_enable = 270
+        allowed = { original_tag = YEM }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_red_sea_conference }
+        available = { SAU = { exists = yes } }
+        complete_effect = {
+            add_opinion_modifier = { target = SAU modifier = AOEIW38_ASIA_MIDDLE_regional_conference }
+            SAU = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_regional_conference } }
+            add_stability = 0.01
+        }
+        ai_will_do = { base = 7 }
+    }
+    AOEIW38_ASIA_MIDDLE_YEM_admit_port_concessions = {
+        icon = generic_industry
+        cost = 55 fire_only_once = yes
+        allowed = { original_tag = YEM }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_open_straits }
+        available = { has_war = no }
+        complete_effect = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+            add_political_power = 35
+        }
+        ai_will_do = { base = 10 }
+    }
+    AOEIW38_ASIA_MIDDLE_YEM_fortify_the_pilot_stations = {
+        icon = generic_coastal_fortification
+        cost = 55 fire_only_once = yes
+        allowed = { original_tag = YEM }
+        visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_guarded_straits }
+        available = { has_war = yes }
+        complete_effect = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT is_coastal = yes } add_building_construction = { type = coastal_bunker level = 1 instant_build = yes } }
+            add_war_support = 0.02
+        }
+        ai_will_do = { base = 12 }
+    }
+
+    AOEIW38_ASIA_MIDDLE_MAN_charter_the_border_markets = {
+        icon = generic_industry cost = 60 fire_only_once = yes
+        allowed = { original_tag = MAN } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.1.1 has_war = no }
+        complete_effect = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+        ai_will_do = { base = 9 }
+    }
+    AOEIW38_ASIA_MIDDLE_CHI_convene_the_reconstruction_board = {
+        icon = generic_industry cost = 65 fire_only_once = yes
+        allowed = { original_tag = CHI } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.1.1 }
+        complete_effect = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
+        ai_will_do = { base = 10 modifier = { factor = 1.5 has_war = no } }
+    }
+    AOEIW38_ASIA_MIDDLE_JAP_audit_continental_obligations = {
+        icon = generic_political_discourse cost = 60 fire_only_once = yes
+        allowed = { original_tag = JAP } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.6.1 }
+        complete_effect = { add_stability = 0.02 add_political_power = 50 if = { limit = { MAN = { exists = yes } } MAN = { country_event = { id = AOEIW38_asia_middle.60 days = 2 } } } }
+        ai_will_do = { base = 9 modifier = { factor = 1.5 has_war = no } }
+    }
+    AOEIW38_ASIA_MIDDLE_PER_open_the_transiranian_board = {
+        icon = generic_industry cost = 55 fire_only_once = yes
+        allowed = { original_tag = PER } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.1.1 }
+        complete_effect = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_command_power = 10 }
+        ai_will_do = { base = 10 }
+    }
+    AOEIW38_ASIA_MIDDLE_RAJ_ratify_the_service_compact = {
+        icon = generic_political_discourse cost = 65 fire_only_once = yes
+        allowed = { original_tag = RAJ } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.6.1 has_stability > 0.40 }
+        complete_effect = { add_stability = 0.03 add_political_power = 40 if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.05 localization = AOEIW38_ASIA_MIDDLE_service_compact_autonomy } } }
+        ai_will_do = { base = 10 modifier = { factor = 1.5 is_subject = yes } }
+    }
+    AOEIW38_ASIA_MIDDLE_SIA_fund_the_mekong_watch = {
+        icon = generic_military cost = 50 fire_only_once = yes
+        allowed = { original_tag = SIA } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.1.1 }
+        complete_effect = { add_command_power = 10 army_experience = 10 add_stability = 0.02 }
+        ai_will_do = { base = 10 modifier = { factor = 1.5 has_war = yes } }
+    }
+    AOEIW38_ASIA_MIDDLE_TUR_convene_the_straits_commission = {
+        icon = generic_political_discourse cost = 60 fire_only_once = yes
+        allowed = { original_tag = TUR } visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+        available = { date > 1941.1.1 has_war = no }
+        complete_effect = {
+            add_political_power = 45 add_stability = 0.02
+            every_country = { limit = { OR = { original_tag = SOV original_tag = ENG original_tag = ITA original_tag = GRE } } add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_regional_conference } }
+        }
+        ai_will_do = { base = 11 }
+    }
+}

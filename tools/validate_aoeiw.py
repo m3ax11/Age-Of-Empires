@@ -112,6 +112,16 @@ def collect_localisation(root: Path):
     return keys, malformed
 
 
+def collect_sprite_names(*roots: Path):
+    names = set()
+    pattern = re.compile(r'\bname\s*=\s*"?(GFX_[A-Za-z0-9_.:-]+)')
+    for root in roots:
+        for path in root.rglob("*.gfx"):
+            text = path.read_text(encoding="utf-8-sig", errors="ignore")
+            names.update(pattern.findall(text))
+    return names
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
@@ -254,6 +264,47 @@ def main() -> int:
                     focus_id = prop(node, "id")
                     if focus_id:
                         definitions["focus"][focus_id].append((relative, line))
+
+        # Asset checks need the base-game/DLC sprite registry to avoid reporting
+        # valid vanilla references as missing from this standalone package.
+        sprite_names = collect_sprite_names(root, vanilla)
+        direct_sprite = re.compile(
+            r'\b(?:icon|picture|large|small)\s*=\s*"?(GFX_[A-Za-z0-9_.:-]+)'
+        )
+        for path in files_under(root):
+            relative = path.relative_to(root).as_posix()
+            if not is_aoe(relative):
+                continue
+            source = path.read_text(encoding="utf-8-sig", errors="ignore")
+            newlines = [match.start() for match in re.finditer("\n", source)]
+            for match in direct_sprite.finditer(source):
+                sprite = match.group(1)
+                if sprite not in sprite_names:
+                    line = bisect.bisect_left(newlines, match.start()) + 1
+                    findings["missing_assets"].append((relative, line, sprite))
+        for identifier, sites in definitions["idea"].items():
+            relative, line = sites[0]
+            idea_nodes = parsed.get(relative, [])
+            for node, _ in walk(idea_nodes):
+                if node[0] != identifier or node[2] != line:
+                    continue
+                picture = prop(node, "picture")
+                if picture and not picture.startswith("GFX_"):
+                    sprite = f"GFX_idea_{picture}"
+                    if sprite not in sprite_names:
+                        findings["missing_assets"].append((relative, line, sprite))
+                break
+        for relative, nodes in parsed.items():
+            if not relative.startswith("common/decisions/") or not is_aoe(relative):
+                continue
+            for node, parent in walk(nodes):
+                if parent == "" or node[1] != "{" or not is_aoe(node[0]):
+                    continue
+                icon = prop(node, "icon")
+                if icon and not icon.startswith("GFX_"):
+                    sprite = f"GFX_decision_{icon}"
+                    if sprite not in sprite_names:
+                        findings["missing_assets"].append((relative, node[2], sprite))
 
     for kind in (
         "event", "focus", "state", "region", "scripted_effect", "scripted_trigger",

@@ -1,0 +1,92 @@
+ideas = {
+    country = {
+        AOEIW38_ASIA_MIDDLE_MON_watch_council = {
+            picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1
+            modifier = { political_power_factor = -0.03 intel_from_operatives_factor = 0.08 max_command_power = 10 }
+        }
+        AOEIW38_ASIA_MIDDLE_MON_steppe_signals = {
+            picture = generic_army_war_college allowed = { always = no } removal_cost = -1
+            modifier = { army_org_factor = 0.03 planning_speed = 0.06 supply_consumption_factor = -0.04 }
+        }
+        AOEIW38_ASIA_MIDDLE_MON_enduring_compact = {
+            picture = generic_political_support allowed = { always = no } removal_cost = -1
+            modifier = { stability_factor = 0.05 political_power_factor = 0.05 supply_consumption_factor = -0.05 trade_opinion_factor = 0.10 }
+        }
+        AOEIW38_ASIA_MIDDLE_MON_frontier_patrol = {
+            picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1
+            modifier = { army_defence_factor = 0.05 max_dig_in = 1 recon_factor = 0.05 }
+        }
+        AOEIW38_ASIA_MIDDLE_YEM_straits_administration = {
+            picture = generic_political_support allowed = { always = no } removal_cost = -1
+            modifier = { political_power_factor = -0.03 naval_detection = 0.05 trade_opinion_factor = 0.05 }
+        }
+        AOEIW38_ASIA_MIDDLE_YEM_red_sea_gateway = {
+            picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1
+            modifier = { industrial_capacity_dockyard = 0.10 production_speed_infrastructure_factor = 0.10 trade_opinion_factor = 0.10 stability_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_YEM_convoy_code = {
+            picture = generic_navy_bonus allowed = { always = no } removal_cost = -1
+            modifier = { convoy_escort_efficiency = 0.08 navy_org_factor = 0.03 naval_coordination = 0.05 }
+        }
+        AOEIW38_ASIA_MIDDLE_YEM_coastal_levies = {
+            picture = generic_coastal_defense_ships allowed = { always = no } removal_cost = -1
+            modifier = { army_defence_factor = 0.04 coastal_bunker_effectiveness_factor = 0.10 war_support_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_MAN_civil_frontier = {
+            picture = generic_local_self_management allowed = { always = no } removal_cost = -1
+            modifier = { stability_factor = 0.04 resistance_target = -0.04 production_speed_infrastructure_factor = 0.06 }
+        }
+        AOEIW38_ASIA_MIDDLE_MAN_military_cordon = {
+            picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1
+            modifier = { army_defence_factor = 0.05 max_dig_in = 1 war_support_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_CHI_inland_reconstruction = {
+            picture = generic_economic_increase allowed = { always = no } removal_cost = -1
+            modifier = { repair_speed_factor = 0.12 production_speed_infrastructure_factor = 0.08 supply_consumption_factor = -0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_CHI_maritime_customs = {
+            picture = free_trade allowed = { always = no } removal_cost = -1
+            modifier = { trade_opinion_factor = 0.12 industrial_capacity_dockyard = 0.06 political_power_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_JAP_continental_bureaux = {
+            picture = etgi_laws_foreign_relations_1 allowed = { always = no } removal_cost = -1
+            modifier = { resistance_target = -0.03 compliance_growth_speed = 0.05 consumer_goods_factor = 0.01 }
+        }
+        AOEIW38_ASIA_MIDDLE_JAP_negotiated_ports = {
+            picture = free_trade allowed = { always = no } removal_cost = -1
+            modifier = { trade_opinion_factor = 0.12 industrial_capacity_dockyard = 0.08 justify_war_goal_time = 0.05 }
+        }
+        AOEIW38_ASIA_MIDDLE_PER_corridor_state = {
+            picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1
+            modifier = { local_resources_factor = 0.08 production_speed_infrastructure_factor = 0.10 supply_consumption_factor = -0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_PER_guarded_sovereignty = {
+            picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1
+            modifier = { stability_factor = 0.04 enemy_justify_war_goal_time = 0.10 army_defence_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_RAJ_federal_war_council = {
+            picture = generic_constitutional_guarantees allowed = { always = no } removal_cost = -1
+            modifier = { political_power_factor = 0.04 stability_factor = 0.04 training_time_army_factor = -0.04 }
+        }
+        AOEIW38_ASIA_MIDDLE_RAJ_defence_directorate = {
+            picture = generic_army_war_college allowed = { always = no } removal_cost = -1
+            modifier = { army_org_factor = 0.04 war_support_factor = 0.04 political_power_factor = -0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_SIA_river_compact = {
+            picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1
+            modifier = { production_speed_infrastructure_factor = 0.08 trade_opinion_factor = 0.10 stability_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_SIA_armed_balance = {
+            picture = generic_fortify_the_borders allowed = { always = no } removal_cost = -1
+            modifier = { army_defence_factor = 0.04 max_dig_in = 1 enemy_justify_war_goal_time = 0.08 }
+        }
+        AOEIW38_ASIA_MIDDLE_TUR_straits_convention = {
+            picture = generic_political_support allowed = { always = no } removal_cost = -1
+            modifier = { trade_opinion_factor = 0.10 stability_factor = 0.04 navy_org_factor = 0.03 }
+        }
+        AOEIW38_ASIA_MIDDLE_TUR_fortified_narrows = {
+            picture = generic_coastal_navy allowed = { always = no } removal_cost = -1
+            modifier = { coastal_bunker_effectiveness_factor = 0.12 army_defence_factor = 0.04 war_support_factor = 0.03 }
+        }
+    }
+}

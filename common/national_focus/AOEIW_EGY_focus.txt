@@ -1807,6 +1807,44 @@ focus_tree = {
         prerequisite = { focus = AOEIW9_EGY_dip_b_5 }
     }
 
+    focus = {
+        id = AOEIW38_EGY_guardians_of_the_canal
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 2
+        relative_position_id = AOEIW9_EGY_dip_final
+        cost = 5
+        prerequisite = { focus = AOEIW9_EGY_dip_final }
+        prerequisite = { focus = AOEIW9_EGY_mil_final }
+        available = { date > 1939.1.1 }
+        completion_reward = { set_country_flag = AOEIW38_regional_programme_open add_ideas = AOEIW38_EGY_canal_emergency country_event = { id = AOEIW38_aa.4 hours = 6 } }
+        ai_will_do = { factor = 16 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_EGY_canal_authority
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_EGY_guardians_of_the_canal
+        cost = 6
+        prerequisite = { focus = AOEIW38_EGY_guardians_of_the_canal }
+        completion_reward = { remove_ideas = AOEIW38_EGY_canal_emergency add_ideas = AOEIW38_EGY_canal_authority_spirit navy_experience = 12 add_political_power = 25 }
+        ai_will_do = { factor = 16 }
+    }
+
+    focus = {
+        id = AOEIW38_EGY_canal_and_nile_settlement
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_EGY_canal_authority
+        cost = 6
+        prerequisite = { focus = AOEIW38_EGY_canal_authority }
+        completion_reward = { add_political_power = 40 add_stability = 0.03 }
+        ai_will_do = { factor = 15 modifier = { factor = 1.5 ETH = { exists = yes } } }
+    }
+
 
 
 }

@@ -1,6 +1,6 @@
 AOEIW35_GER_governance_category = {
     AOEIW35_GER_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_GER_governance_balance } }
@@ -31,7 +31,7 @@ AOEIW35_GER_governance_category = {
 
 AOEIW35_FRA_governance_category = {
     AOEIW35_FRA_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_FRA_governance_balance } }
@@ -62,7 +62,7 @@ AOEIW35_FRA_governance_category = {
 
 AOEIW35_ENG_governance_category = {
     AOEIW35_ENG_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_ENG_governance_balance } }
@@ -93,7 +93,7 @@ AOEIW35_ENG_governance_category = {
 
 AOEIW35_ITA_governance_category = {
     AOEIW35_ITA_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_ITA_governance_balance } }
@@ -124,7 +124,7 @@ AOEIW35_ITA_governance_category = {
 
 AOEIW35_JAP_governance_category = {
     AOEIW35_JAP_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_JAP_governance_balance } }
@@ -155,7 +155,7 @@ AOEIW35_JAP_governance_category = {
 
 AOEIW35_USA_governance_category = {
     AOEIW35_USA_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_USA_governance_balance } }
@@ -186,7 +186,7 @@ AOEIW35_USA_governance_category = {
 
 AOEIW35_SOV_governance_category = {
     AOEIW35_SOV_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_SOV_governance_balance } }
@@ -217,7 +217,7 @@ AOEIW35_SOV_governance_category = {
 
 AOEIW35_SPR_governance_category = {
     AOEIW35_SPR_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_SPR_governance_balance } }
@@ -248,7 +248,7 @@ AOEIW35_SPR_governance_category = {
 
 AOEIW35_AUS_governance_category = {
     AOEIW35_AUS_support_left = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 40
         days_re_enable = 90
         visible = { has_power_balance = { id = AOEIW35_AUS_governance_balance } }

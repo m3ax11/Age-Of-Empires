@@ -1,0 +1,11 @@
+AOEIW38_ASIA_MIDDLE_regional_consequences_category = {
+    icon = GFX_decision_category_generic_political_actions
+    allowed = {
+        OR = {
+            original_tag = MON original_tag = MAN original_tag = CHI
+            original_tag = JAP original_tag = PER original_tag = RAJ
+            original_tag = SIA original_tag = TUR original_tag = YEM
+        }
+    }
+    visible = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open }
+}

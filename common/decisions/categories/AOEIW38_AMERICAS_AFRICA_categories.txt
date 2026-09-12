@@ -1,0 +1,10 @@
+AOEIW38_regional_programmes_category = {
+    icon = generic_political_discourse
+    allowed = { OR = { original_tag = BRA original_tag = CAN original_tag = MEX original_tag = EGY original_tag = ETH original_tag = ARG original_tag = PRU } }
+    visible = {
+        OR = {
+            has_country_flag = AOEIW38_regional_programme_open
+            AND = { OR = { original_tag = ARG original_tag = PRU } is_subject_of = SPR date > 1939.1.1 }
+        }
+    }
+}

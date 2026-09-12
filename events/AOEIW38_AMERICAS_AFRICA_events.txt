@@ -1,0 +1,228 @@
+add_namespace = AOEIW38_aa
+
+country_event = {
+    id = AOEIW38_aa.1
+    title = AOEIW38_aa.1.t
+    desc = AOEIW38_aa.1.d
+    picture = GFX_report_event_generic_construction_site
+    is_triggered_only = yes
+    option = {
+        name = AOEIW38_aa.1.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_stability > 0.55 } }
+        set_country_flag = AOEIW38_BRA_basin_partnership
+        add_stability = 0.03
+        if = { limit = { ARG = { exists = yes } } add_opinion_modifier = { target = ARG modifier = AOEIW38_regional_partnership } ARG = { add_opinion_modifier = { target = BRA modifier = AOEIW38_regional_partnership } } }
+        if = { limit = { PRU = { exists = yes } } add_opinion_modifier = { target = PRU modifier = AOEIW38_regional_partnership } PRU = { add_opinion_modifier = { target = BRA modifier = AOEIW38_regional_partnership } } }
+    }
+    option = {
+        name = AOEIW38_aa.1.b
+        ai_chance = { factor = 40 modifier = { factor = 1.5 has_war = yes } }
+        set_country_flag = AOEIW38_BRA_fortress_interior
+        add_command_power = 15
+        add_war_support = 0.04
+    }
+}
+
+country_event = {
+    id = AOEIW38_aa.2
+    title = AOEIW38_aa.2.t
+    desc = AOEIW38_aa.2.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    option = {
+        name = AOEIW38_aa.2.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_war = yes } }
+        set_country_flag = AOEIW38_CAN_ocean_commitment
+        navy_experience = 12
+        add_war_support = 0.03
+        if = { limit = { is_subject_of = ENG } ENG = { country_event = { id = AOEIW38_aa.60 days = 2 } } }
+    }
+    option = {
+        name = AOEIW38_aa.2.b
+        ai_chance = { factor = 40 modifier = { factor = 1.5 has_stability < 0.55 } }
+        set_country_flag = AOEIW38_CAN_home_conversion
+        add_stability = 0.04
+        add_political_power = 35
+        if = { limit = { is_subject_of = ENG } ENG = { country_event = { id = AOEIW38_aa.60 days = 2 } } }
+    }
+}
+
+country_event = {
+    id = AOEIW38_aa.3
+    title = AOEIW38_aa.3.t
+    desc = AOEIW38_aa.3.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    option = {
+        name = AOEIW38_aa.3.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_stability > 0.50 } }
+        set_country_flag = AOEIW38_MEX_contract_compromise
+        add_stability = 0.03
+        if = { limit = { USA = { exists = yes } } USA = { country_event = { id = AOEIW38_aa.40 days = 2 } } }
+    }
+    option = {
+        name = AOEIW38_aa.3.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_war_support > 0.55 } }
+        set_country_flag = AOEIW38_MEX_resource_sovereignty
+        add_war_support = 0.04
+        if = { limit = { USA = { exists = yes } } USA = { country_event = { id = AOEIW38_aa.41 days = 2 } } }
+    }
+}
+
+country_event = {
+    id = AOEIW38_aa.4
+    title = AOEIW38_aa.4.t
+    desc = AOEIW38_aa.4.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    option = { name = AOEIW38_aa.4.a ai_chance = { factor = 60 modifier = { factor = 1.5 has_war = yes } } set_country_flag = AOEIW38_EGY_canal_sovereignty add_war_support = 0.04 add_command_power = 10 }
+    option = { name = AOEIW38_aa.4.b ai_chance = { factor = 40 modifier = { factor = 1.5 has_stability > 0.55 } } set_country_flag = AOEIW38_EGY_open_passage add_stability = 0.04 add_political_power = 30 }
+}
+
+country_event = {
+    id = AOEIW38_aa.5
+    title = AOEIW38_aa.5.t
+    desc = AOEIW38_aa.5.d
+    picture = GFX_report_event_generic_construction_site
+    is_triggered_only = yes
+    option = { name = AOEIW38_aa.5.a ai_chance = { factor = 55 modifier = { factor = 1.5 has_war = yes } } set_country_flag = AOEIW38_ETH_defensive_corridors army_experience = 12 add_stability = 0.02 }
+    option = { name = AOEIW38_aa.5.b ai_chance = { factor = 45 modifier = { factor = 1.5 has_war_support > 0.55 } } set_country_flag = AOEIW38_ETH_red_sea_ambition navy_experience = 10 add_war_support = 0.03 }
+}
+
+# A regional neighbour receives Brazil's invitation. FROM is Brazil.
+country_event = {
+    id = AOEIW38_aa.10
+    title = AOEIW38_aa.10.t
+    desc = AOEIW38_aa.10.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { OR = { original_tag = ARG original_tag = PRU } FROM = { original_tag = BRA } }
+    option = {
+        name = AOEIW38_aa.10.a
+        ai_chance = { factor = 65 modifier = { factor = 1.5 has_war = no } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_regional_partnership }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_regional_partnership } }
+        add_political_power = 20
+    }
+    option = { name = AOEIW38_aa.10.b ai_chance = { factor = 35 } add_opinion_modifier = { target = FROM modifier = AOEIW38_strategic_exclusion } add_war_support = 0.02 }
+}
+
+country_event = {
+    id = AOEIW38_aa.20
+    title = AOEIW38_aa.20.t
+    desc = AOEIW38_aa.20.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    option = { name = AOEIW38_aa.20.a add_ideas = AOEIW38_regional_war_cabinet add_command_power = 10 set_country_flag = AOEIW38_war_service_record }
+}
+
+country_event = {
+    id = AOEIW38_aa.21
+    title = AOEIW38_aa.21.t
+    desc = AOEIW38_aa.21.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    option = { name = AOEIW38_aa.21.a add_stability = 0.02 add_political_power = 25 set_country_flag = AOEIW38_postwar_review_open }
+}
+
+# FROM is Egypt, proposing a standing Nile commission.
+country_event = {
+    id = AOEIW38_aa.30
+    title = AOEIW38_aa.30.t
+    desc = AOEIW38_aa.30.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { original_tag = ETH FROM = { original_tag = EGY } }
+    option = {
+        name = AOEIW38_aa.30.a
+        ai_chance = { factor = 65 modifier = { factor = 1.5 has_opinion = { target = FROM value > 0 } } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_resource_compromise }
+        add_ideas = AOEIW38_ETH_nile_guarantee
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_resource_compromise } add_ideas = AOEIW38_EGY_nile_settlement country_event = { id = AOEIW38_aa.32 days = 1 } }
+    }
+    option = { name = AOEIW38_aa.30.b ai_chance = { factor = 35 } add_war_support = 0.03 add_opinion_modifier = { target = FROM modifier = AOEIW38_strategic_exclusion } FROM = { country_event = { id = AOEIW38_aa.33 days = 1 } } }
+}
+
+# FROM is Ethiopia, demanding equal standing on the Nile.
+country_event = {
+    id = AOEIW38_aa.31
+    title = AOEIW38_aa.31.t
+    desc = AOEIW38_aa.31.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { original_tag = EGY FROM = { original_tag = ETH } }
+    option = {
+        name = AOEIW38_aa.31.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_stability > 0.55 } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_resource_compromise }
+        add_ideas = AOEIW38_EGY_nile_settlement
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_resource_compromise } add_ideas = AOEIW38_ETH_nile_guarantee country_event = { id = AOEIW38_aa.32 days = 1 } }
+    }
+    option = { name = AOEIW38_aa.31.b ai_chance = { factor = 45 } add_war_support = 0.03 add_opinion_modifier = { target = FROM modifier = AOEIW38_strategic_exclusion } FROM = { country_event = { id = AOEIW38_aa.33 days = 1 } } }
+}
+
+country_event = { id = AOEIW38_aa.32 title = AOEIW38_aa.32.t desc = AOEIW38_aa.32.d picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes option = { name = AOEIW38_aa.32.a add_stability = 0.03 } }
+country_event = { id = AOEIW38_aa.33 title = AOEIW38_aa.33.t desc = AOEIW38_aa.33.d picture = GFX_report_event_generic_riot is_triggered_only = yes option = { name = AOEIW38_aa.33.a add_war_support = 0.02 } }
+
+# The United States reacts to Mexico's oil settlement.
+country_event = { id = AOEIW38_aa.40 title = AOEIW38_aa.40.t desc = AOEIW38_aa.40.d picture = GFX_report_event_generic_stock_traders is_triggered_only = yes trigger = { original_tag = USA FROM = { original_tag = MEX } } option = { name = AOEIW38_aa.40.a add_opinion_modifier = { target = FROM modifier = AOEIW38_resource_compromise } FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_resource_compromise } } } }
+country_event = { id = AOEIW38_aa.41 title = AOEIW38_aa.41.t desc = AOEIW38_aa.41.d picture = GFX_report_event_generic_stock_traders is_triggered_only = yes trigger = { original_tag = USA FROM = { original_tag = MEX } } option = { name = AOEIW38_aa.41.a add_opinion_modifier = { target = FROM modifier = AOEIW38_strategic_exclusion } FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_strategic_exclusion } } } }
+
+# FROM is the Argentine subject petitioning Madrid.
+country_event = {
+    id = AOEIW38_aa.50
+    title = AOEIW38_aa.50.t
+    desc = AOEIW38_aa.50.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SPR FROM = { original_tag = ARG is_subject_of = ROOT } }
+    option = {
+        name = AOEIW38_aa.50.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_stability > 0.50 } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_imperial_concession }
+        FROM = { add_ideas = AOEIW38_ARG_federal_export_compact add_autonomy_ratio = { value = 0.10 localization = AOEIW38_economic_compact_autonomy } add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_concession } country_event = { id = AOEIW38_aa.52 days = 1 } }
+    }
+    option = { name = AOEIW38_aa.50.b ai_chance = { factor = 40 modifier = { factor = 1.5 has_war = yes } } FROM = { add_ideas = AOEIW38_imperial_requisition add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_rebuff } country_event = { id = AOEIW38_aa.53 days = 1 } } }
+}
+
+# FROM is the Peruvian subject petitioning Madrid.
+country_event = {
+    id = AOEIW38_aa.51
+    title = AOEIW38_aa.51.t
+    desc = AOEIW38_aa.51.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SPR FROM = { original_tag = PRU is_subject_of = ROOT } }
+    option = {
+        name = AOEIW38_aa.51.a
+        ai_chance = { factor = 60 modifier = { factor = 1.5 has_stability > 0.50 } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_imperial_concession }
+        FROM = { add_ideas = AOEIW38_PRU_andean_logistics_mission add_autonomy_ratio = { value = 0.10 localization = AOEIW38_economic_compact_autonomy } add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_concession } country_event = { id = AOEIW38_aa.52 days = 1 } }
+    }
+    option = { name = AOEIW38_aa.51.b ai_chance = { factor = 40 modifier = { factor = 1.5 has_war = yes } } FROM = { add_ideas = AOEIW38_imperial_requisition add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_rebuff } country_event = { id = AOEIW38_aa.53 days = 1 } } }
+}
+
+country_event = { id = AOEIW38_aa.52 title = AOEIW38_aa.52.t desc = AOEIW38_aa.52.d picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes option = { name = AOEIW38_aa.52.a add_stability = 0.03 } }
+country_event = { id = AOEIW38_aa.53 title = AOEIW38_aa.53.t desc = AOEIW38_aa.53.d picture = GFX_report_event_generic_riot is_triggered_only = yes option = { name = AOEIW38_aa.53.a add_war_support = 0.03 } }
+
+# FROM is Canada requesting that wartime service carry constitutional weight.
+country_event = {
+    id = AOEIW38_aa.60
+    title = AOEIW38_aa.60.t
+    desc = AOEIW38_aa.60.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = ENG FROM = { original_tag = CAN is_subject_of = ROOT } }
+    option = {
+        name = AOEIW38_aa.60.a
+        ai_chance = { factor = 65 modifier = { factor = 1.5 has_stability > 0.50 } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_imperial_concession }
+        FROM = { add_autonomy_ratio = { value = 0.05 localization = AOEIW38_dominion_service_autonomy } add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_concession } add_stability = 0.02 }
+    }
+    option = {
+        name = AOEIW38_aa.60.b
+        ai_chance = { factor = 35 modifier = { factor = 1.5 has_war = yes } }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_imperial_rebuff }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_imperial_rebuff } add_war_support = 0.03 }
+    }
+}

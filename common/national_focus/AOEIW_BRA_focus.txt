@@ -2056,6 +2056,52 @@ focus_tree = {
         prerequisite = { focus = AOEIW9_BRA_dip_b_6 }
     }
 
+    focus = {
+        id = AOEIW38_BRA_amazon_reckoning
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 2
+        relative_position_id = AOEIW9_BRA_dip_final
+        cost = 5
+        prerequisite = { focus = AOEIW9_BRA_dip_final }
+        prerequisite = { focus = AOEIW9_BRA_mil_final }
+        available = { date > 1939.1.1 }
+        completion_reward = {
+            set_country_flag = AOEIW38_regional_programme_open
+            add_ideas = AOEIW38_BRA_frontier_bargain
+            country_event = { id = AOEIW38_aa.1 hours = 6 }
+        }
+        ai_will_do = { factor = 15 modifier = { factor = 1.5 date > 1940.1.1 } }
+    }
+
+    focus = {
+        id = AOEIW38_BRA_continental_arteries
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_BRA_amazon_reckoning
+        cost = 6
+        prerequisite = { focus = AOEIW38_BRA_amazon_reckoning }
+        completion_reward = {
+            remove_ideas = AOEIW38_BRA_frontier_bargain
+            add_ideas = AOEIW38_BRA_continental_arteries_spirit
+            random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+        ai_will_do = { factor = 15 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_BRA_south_atlantic_settlement
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_BRA_continental_arteries
+        cost = 6
+        prerequisite = { focus = AOEIW38_BRA_continental_arteries }
+        completion_reward = { add_ideas = AOEIW38_BRA_south_atlantic_power navy_experience = 15 add_political_power = 35 }
+        ai_will_do = { factor = 15 }
+    }
+
 
 
 }

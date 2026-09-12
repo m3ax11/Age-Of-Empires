@@ -1,0 +1,128 @@
+AOEIW38_EUROPE_BEL_staff_policy = {
+    allowed = { original_tag = BEL }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = HOL value = 60 }
+    ai_strategy = { type = protect id = HOL value = 35 }
+}
+AOEIW38_EUROPE_HOL_staff_policy = {
+    allowed = { original_tag = HOL }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = BEL value = 60 }
+    ai_strategy = { type = protect id = BEL value = 35 }
+}
+
+AOEIW38_EUROPE_DEN_northern_policy = {
+    allowed = { original_tag = DEN }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = NOR value = 50 }
+    ai_strategy = { type = befriend id = SWE value = 50 }
+    ai_strategy = { type = protect id = NOR value = 30 }
+}
+AOEIW38_EUROPE_FIN_northern_policy = {
+    allowed = { original_tag = FIN }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = SWE value = 60 }
+    ai_strategy = { type = protect id = SWE value = 30 }
+}
+AOEIW38_EUROPE_NOR_northern_policy = {
+    allowed = { original_tag = NOR }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = DEN value = 45 }
+    ai_strategy = { type = befriend id = SWE value = 55 }
+    ai_strategy = { type = protect id = DEN value = 30 }
+}
+AOEIW38_EUROPE_SWE_northern_policy = {
+    allowed = { original_tag = SWE }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = DEN value = 40 }
+    ai_strategy = { type = befriend id = FIN value = 60 }
+    ai_strategy = { type = befriend id = NOR value = 55 }
+    ai_strategy = { type = protect id = FIN value = 35 }
+    ai_strategy = { type = protect id = NOR value = 30 }
+}
+
+AOEIW38_EUROPE_BUL_balkan_policy = {
+    allowed = { original_tag = BUL }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ROM value = 35 }
+    ai_strategy = { type = befriend id = YUG value = 35 }
+    ai_strategy = { type = befriend id = GRE value = 25 }
+}
+AOEIW38_EUROPE_GRE_balkan_policy = {
+    allowed = { original_tag = GRE }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ROM value = 40 }
+    ai_strategy = { type = befriend id = YUG value = 40 }
+    ai_strategy = { type = protect id = YUG value = 25 }
+}
+AOEIW38_EUROPE_ROM_balkan_policy = {
+    allowed = { original_tag = ROM }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = BUL value = 35 }
+    ai_strategy = { type = befriend id = GRE value = 40 }
+    ai_strategy = { type = befriend id = YUG value = 40 }
+}
+AOEIW38_EUROPE_YUG_balkan_policy = {
+    allowed = { original_tag = YUG }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = BUL value = 30 }
+    ai_strategy = { type = befriend id = GRE value = 45 }
+    ai_strategy = { type = befriend id = ROM value = 45 }
+    ai_strategy = { type = protect id = GRE value = 25 }
+}
+
+AOEIW38_EUROPE_IRE_relief_policy = {
+    allowed = { original_tag = IRE }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = POR value = 35 }
+    ai_strategy = { type = befriend id = SWI value = 35 }
+}
+AOEIW38_EUROPE_POR_relief_policy = {
+    allowed = { original_tag = POR }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = IRE value = 35 }
+    ai_strategy = { type = befriend id = SWI value = 35 }
+}
+AOEIW38_EUROPE_SWI_relief_policy = {
+    allowed = { original_tag = SWI }
+    enable = { OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_regional_convention_joined } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = IRE value = 35 }
+    ai_strategy = { type = befriend id = POR value = 35 }
+}
+
+AOEIW38_EUROPE_POL_continuity_policy = {
+    allowed = { original_tag = POL }
+    enable = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = equipment_stockpile_surplus_ratio value = 15 }
+    ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 }
+}
+
+AOEIW38_EUROPE_HOL_charter_policy = {
+    allowed = { original_tag = HOL }
+    enable = { has_country_flag = AOEIW38_EUROPE_imperial_charter_convened }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = INS value = 70 }
+    ai_strategy = { type = befriend id = INS value = 50 }
+}
+AOEIW38_EUROPE_POR_charter_policy = {
+    allowed = { original_tag = POR }
+    enable = { has_country_flag = AOEIW38_EUROPE_imperial_charter_convened }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = ANG value = 60 }
+    ai_strategy = { type = protect id = MZB value = 60 }
+    ai_strategy = { type = befriend id = BRA value = 40 }
+}

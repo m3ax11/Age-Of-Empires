@@ -4199,6 +4199,82 @@ focus_tree = {
         }
     }
 
+    focus = {
+        id = AOEIW38_ASIA_MIDDLE_YEM_straits_council
+        icon = GFX_focus_generic_navy_battleship2
+        x = 16 y = 7 cost = 6
+        prerequisite = { focus = AOEIW_UNIQUE_YEM_post_1 }
+        prerequisite = { focus = AOEIW_world_YEM_diplomatic_final }
+        available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+        completion_reward = {
+            set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_straits_council_open
+            add_ideas = AOEIW38_ASIA_MIDDLE_YEM_straits_administration
+            country_event = { id = AOEIW38_asia_middle.20 hours = 6 }
+        }
+        ai_will_do = { factor = 12 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_ASIA_MIDDLE_YEM_open_roadstead
+        icon = GFX_focus_generic_merchant_fleet
+        x = 14 y = 8 cost = 6
+        prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_straits_council }
+        mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_YEM_coastal_guard }
+        available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+        completion_reward = {
+            set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_open_straits
+            country_event = { id = AOEIW38_asia_middle.21 hours = 6 }
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 2 has_war = no } }
+        allow_branch = { NOT = { has_completed_focus = AOEIW38_ASIA_MIDDLE_YEM_coastal_guard } }
+    }
+
+    focus = {
+        id = AOEIW38_ASIA_MIDDLE_YEM_coastal_guard
+        icon = GFX_focus_generic_coastal_fort
+        x = 18 y = 8 cost = 6
+        prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_straits_council }
+        mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_YEM_open_roadstead }
+        available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+        completion_reward = {
+            set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_guarded_straits
+            country_event = { id = AOEIW38_asia_middle.22 hours = 6 }
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 2 has_war = yes } }
+        allow_branch = { NOT = { has_completed_focus = AOEIW38_ASIA_MIDDLE_YEM_open_roadstead } }
+    }
+
+    focus = {
+        id = AOEIW38_ASIA_MIDDLE_YEM_red_sea_conference
+        icon = GFX_goal_generic_alliance
+        x = 16 y = 9 cost = 6
+        prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_open_roadstead focus = AOEIW38_ASIA_MIDDLE_YEM_coastal_guard }
+        available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+        completion_reward = {
+            set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_red_sea_conference
+            country_event = { id = AOEIW38_asia_middle.23 hours = 6 }
+        }
+        ai_will_do = { factor = 10 }
+    }
+
+    focus = {
+        id = AOEIW38_ASIA_MIDDLE_YEM_gateway_settlement
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 16 y = 10 cost = 7
+        prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_red_sea_conference }
+        available = { date > 1940.1.1 }
+        available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+        completion_reward = {
+            set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_gateway_settled
+            remove_ideas = AOEIW38_ASIA_MIDDLE_YEM_straits_administration
+            add_ideas = AOEIW38_ASIA_MIDDLE_YEM_red_sea_gateway
+            country_event = { id = AOEIW38_asia_middle.24 hours = 6 }
+        }
+        ai_will_do = { factor = 14 modifier = { factor = 1.5 has_war = no } }
+    }
+
 # AOEIW UNIQUE COUNTRY STRUCTURE END
         continuous_focus_position = { x = 50 y = 1040 }
     }

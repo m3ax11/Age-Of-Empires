@@ -1,0 +1,5 @@
+AOEIW38_EUROPE_staff_convention = { value = 30 decay = 1 }
+AOEIW38_EUROPE_sheltered_exiles = { value = 20 decay = 1 }
+AOEIW38_EUROPE_guarded_frontier = { value = -10 decay = 1 }
+AOEIW38_EUROPE_charter_concession = { value = 35 decay = 1 }
+AOEIW38_EUROPE_charter_refused = { value = -25 decay = 1 }

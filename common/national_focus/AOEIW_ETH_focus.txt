@@ -1811,6 +1811,44 @@ focus_tree = {
         prerequisite = { focus = AOEIW9_ETH_dip_b_5 }
     }
 
+    focus = {
+        id = AOEIW38_ETH_reconstruction_levy
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 2
+        relative_position_id = AOEIW9_ETH_dip_final
+        cost = 5
+        prerequisite = { focus = AOEIW9_ETH_dip_final }
+        prerequisite = { focus = AOEIW9_ETH_mil_final }
+        available = { date > 1939.1.1 }
+        completion_reward = { set_country_flag = AOEIW38_regional_programme_open add_ideas = AOEIW38_ETH_reconstruction_levy_spirit country_event = { id = AOEIW38_aa.5 hours = 6 } }
+        ai_will_do = { factor = 16 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_ETH_highland_corridors
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_ETH_reconstruction_levy
+        cost = 6
+        prerequisite = { focus = AOEIW38_ETH_reconstruction_levy }
+        completion_reward = { remove_ideas = AOEIW38_ETH_reconstruction_levy_spirit add_ideas = AOEIW38_ETH_highland_corridors_spirit random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+        ai_will_do = { factor = 16 }
+    }
+
+    focus = {
+        id = AOEIW38_ETH_red_sea_horizon
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_ETH_highland_corridors
+        cost = 6
+        prerequisite = { focus = AOEIW38_ETH_highland_corridors }
+        completion_reward = { add_ideas = AOEIW38_ETH_red_sea_crown navy_experience = 12 add_war_support = 0.03 }
+        ai_will_do = { factor = 15 modifier = { factor = 1.5 EGY = { exists = yes } } }
+    }
+
 
 
 }

@@ -1,0 +1,72 @@
+AOEIW38_BRA_basin_diplomacy = {
+    allowed = { original_tag = BRA }
+    enable = { has_country_flag = AOEIW38_BRA_basin_partnership }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ARG value = 70 }
+    ai_strategy = { type = befriend id = PRU value = 55 }
+    ai_strategy = { type = protect id = ARG value = 35 }
+}
+
+AOEIW38_BRA_fortress_diplomacy = {
+    allowed = { original_tag = BRA }
+    enable = { has_country_flag = AOEIW38_BRA_fortress_interior }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = ARG value = 35 }
+    ai_strategy = { type = antagonize id = PRU value = 25 }
+}
+
+AOEIW38_CAN_ocean_policy = {
+    allowed = { original_tag = CAN }
+    enable = { has_country_flag = AOEIW38_CAN_ocean_commitment }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ENG value = 80 }
+    ai_strategy = { type = protect id = ENG value = 55 }
+    ai_strategy = { type = befriend id = USA value = 50 }
+}
+
+AOEIW38_MEX_contract_diplomacy = {
+    allowed = { original_tag = MEX }
+    enable = { has_country_flag = AOEIW38_MEX_contract_compromise }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = USA value = 65 }
+    ai_strategy = { type = befriend id = BRA value = 35 }
+}
+
+AOEIW38_MEX_sovereignty_diplomacy = {
+    allowed = { original_tag = MEX }
+    enable = { has_country_flag = AOEIW38_MEX_resource_sovereignty }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = USA value = 55 }
+    ai_strategy = { type = befriend id = BRA value = 45 }
+}
+
+AOEIW38_EGY_nile_policy = {
+    allowed = { original_tag = EGY }
+    enable = { has_idea = AOEIW38_EGY_nile_settlement }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ETH value = 75 }
+    ai_strategy = { type = protect id = ETH value = 30 }
+}
+
+AOEIW38_ETH_nile_policy = {
+    allowed = { original_tag = ETH }
+    enable = { has_idea = AOEIW38_ETH_nile_guarantee }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = EGY value = 65 }
+}
+
+AOEIW38_ARG_imperial_compact_policy = {
+    allowed = { original_tag = ARG }
+    enable = { has_idea = AOEIW38_ARG_federal_export_compact is_subject_of = SPR }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = SPR value = 70 }
+    ai_strategy = { type = protect id = SPR value = 35 }
+}
+
+AOEIW38_PRU_imperial_compact_policy = {
+    allowed = { original_tag = PRU }
+    enable = { has_idea = AOEIW38_PRU_andean_logistics_mission is_subject_of = SPR }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = SPR value = 70 }
+    ai_strategy = { type = protect id = SPR value = 35 }
+}

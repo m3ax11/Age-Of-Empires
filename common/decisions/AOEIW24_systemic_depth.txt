@@ -1,6 +1,6 @@
 AOEIW24_USA_corporate_balance = {
     AOEIW24_USA_federal_contracts = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 35 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_business_plot }
         available = { always = yes }
@@ -8,7 +8,7 @@ AOEIW24_USA_corporate_balance = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_wagner_board = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_business_plot }
         available = { always = yes }
@@ -16,7 +16,7 @@ AOEIW24_USA_corporate_balance = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_congressional_inquiry = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_business_plot }
         available = { always = yes }
@@ -27,7 +27,7 @@ AOEIW24_USA_corporate_balance = {
 
 AOEIW24_USA_macarthur_authority = {
     AOEIW24_USA_address_the_union = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 40 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_macarthur_republic }
         available = { always = yes }
@@ -35,7 +35,7 @@ AOEIW24_USA_macarthur_authority = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_staff_directives = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_macarthur_republic }
         available = { always = yes }
@@ -43,7 +43,7 @@ AOEIW24_USA_macarthur_authority = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_review_emergency_mandate = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 75 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_macarthur_republic }
         available = { always = yes }
@@ -54,7 +54,7 @@ AOEIW24_USA_macarthur_authority = {
 
 AOEIW24_USA_technate_projects = {
     AOEIW24_USA_compute_energy_budget = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_technocracy }
         available = { always = yes }
@@ -62,7 +62,7 @@ AOEIW24_USA_technate_projects = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_open_engineering_directorate = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_technocracy }
         available = { always = yes }
@@ -70,7 +70,7 @@ AOEIW24_USA_technate_projects = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_audit_human_cost = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_technocracy }
         available = { always = yes }
@@ -81,7 +81,7 @@ AOEIW24_USA_technate_projects = {
 
 AOEIW24_USA_federal_balance = {
     AOEIW24_USA_governors_compact = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_return_to_articles }
         available = { always = yes }
@@ -89,7 +89,7 @@ AOEIW24_USA_federal_balance = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_emergency_federal_grant = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_return_to_articles }
         available = { always = yes }
@@ -97,7 +97,7 @@ AOEIW24_USA_federal_balance = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_call_state_convention = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 70 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_return_to_articles }
         available = { always = yes }
@@ -108,7 +108,7 @@ AOEIW24_USA_federal_balance = {
 
 AOEIW24_USA_executive_power = {
     AOEIW24_USA_issue_emergency_decree = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 35 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_imperial_presidency }
         available = { always = yes }
@@ -116,7 +116,7 @@ AOEIW24_USA_executive_power = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_restore_congressional_review = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 65 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_imperial_presidency }
         available = { always = yes }
@@ -124,7 +124,7 @@ AOEIW24_USA_executive_power = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_USA_loyalist_appointments = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_USA_imperial_presidency }
         available = { always = yes }
@@ -135,7 +135,7 @@ AOEIW24_USA_executive_power = {
 
 AOEIW24_SOV_revolutionary_crisis = {
     AOEIW24_SOV_secure_railway_soviets = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 40 fire_only_once = yes
         visible = { has_country_flag = AOEIW24_SOV_revolutionary_crisis }
         available = { always = yes }
@@ -143,7 +143,7 @@ AOEIW24_SOV_revolutionary_crisis = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_win_over_garrisons = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_country_flag = AOEIW24_SOV_revolutionary_crisis }
         available = { always = yes }
@@ -151,7 +151,7 @@ AOEIW24_SOV_revolutionary_crisis = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_stockpile_for_revolution = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_country_flag = AOEIW24_SOV_revolutionary_crisis }
         available = { always = yes }
@@ -159,7 +159,7 @@ AOEIW24_SOV_revolutionary_crisis = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_launch_revolution = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 25 fire_only_once = yes
         visible = { has_country_flag = AOEIW24_SOV_revolutionary_crisis }
         available = { check_variable = { AOEIW24_SOV_revolutionary_control > 4 } }
@@ -170,7 +170,7 @@ AOEIW24_SOV_revolutionary_crisis = {
 
 AOEIW24_SOV_eurasian_council = {
     AOEIW24_SOV_convene_steppe_delegates = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_eurasian_idea }
         available = { always = yes }
@@ -178,7 +178,7 @@ AOEIW24_SOV_eurasian_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_fund_caucasus_corridor = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_eurasian_idea }
         available = { always = yes }
@@ -186,7 +186,7 @@ AOEIW24_SOV_eurasian_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_arbitrate_member_dispute = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_eurasian_idea }
         available = { always = yes }
@@ -197,7 +197,7 @@ AOEIW24_SOV_eurasian_council = {
 
 AOEIW24_SOV_duma_politics = {
     AOEIW24_SOV_form_duma_coalition = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_russian_republic }
         available = { always = yes }
@@ -205,7 +205,7 @@ AOEIW24_SOV_duma_politics = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_publish_federal_budget = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_russian_republic }
         available = { always = yes }
@@ -213,7 +213,7 @@ AOEIW24_SOV_duma_politics = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_face_vote_of_confidence = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 65 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_russian_republic }
         available = { always = yes }
@@ -224,7 +224,7 @@ AOEIW24_SOV_duma_politics = {
 
 AOEIW24_SOV_denikin_command = {
     AOEIW24_SOV_promote_white_officers = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy }
         available = { always = yes }
@@ -232,7 +232,7 @@ AOEIW24_SOV_denikin_command = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_restore_civil_courts = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy }
         available = { always = yes }
@@ -240,7 +240,7 @@ AOEIW24_SOV_denikin_command = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SOV_audit_army_governors = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy }
         available = { always = yes }
@@ -251,7 +251,7 @@ AOEIW24_SOV_denikin_command = {
 
 AOEIW24_ITA_grand_council = {
     AOEIW24_ITA_balance_party_barons = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_mussolini_remains }
         available = { always = yes }
@@ -259,7 +259,7 @@ AOEIW24_ITA_grand_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_bypass_grand_council = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 35 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_mussolini_remains }
         available = { always = yes }
@@ -267,7 +267,7 @@ AOEIW24_ITA_grand_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_call_council_vote = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 65 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_mussolini_remains }
         available = { always = yes }
@@ -278,7 +278,7 @@ AOEIW24_ITA_grand_council = {
 
 AOEIW24_ITA_workers_councils = {
     AOEIW24_ITA_convene_factory_delegates = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_syndicalist_italy }
         available = { always = yes }
@@ -286,7 +286,7 @@ AOEIW24_ITA_workers_councils = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_arbitrate_wage_dispute = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_syndicalist_italy }
         available = { always = yes }
@@ -294,7 +294,7 @@ AOEIW24_ITA_workers_councils = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_national_labor_congress = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 70 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_syndicalist_italy }
         available = { always = yes }
@@ -305,7 +305,7 @@ AOEIW24_ITA_workers_councils = {
 
 AOEIW24_ITA_roman_provinces = {
     AOEIW24_ITA_raise_new_legions = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 40 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_restore_rome }
         available = { always = yes }
@@ -313,7 +313,7 @@ AOEIW24_ITA_roman_provinces = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_integrate_provincial_elites = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 65 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_restore_rome }
         available = { always = yes }
@@ -321,7 +321,7 @@ AOEIW24_ITA_roman_provinces = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ITA_audit_mediterranean_garrisons = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_completed_focus = AOEIW22_ITA_restore_rome }
         available = { always = yes }
@@ -332,7 +332,7 @@ AOEIW24_ITA_roman_provinces = {
 
 AOEIW24_AUS_crownland_council = {
     AOEIW24_AUS_hungarian_compromise = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -340,7 +340,7 @@ AOEIW24_AUS_crownland_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_AUS_bohemian_crown = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -348,7 +348,7 @@ AOEIW24_AUS_crownland_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_AUS_south_slav_diet = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -356,7 +356,7 @@ AOEIW24_AUS_crownland_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_AUS_galician_commission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -364,7 +364,7 @@ AOEIW24_AUS_crownland_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_AUS_imperial_language_ordinance = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 35 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -372,7 +372,7 @@ AOEIW24_AUS_crownland_council = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_AUS_congress_of_crownlands = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 75 fire_only_once = yes
         visible = { has_country_flag = AOEIW22_AUS_nationalities_initialized }
         available = { always = yes }
@@ -383,7 +383,7 @@ AOEIW24_AUS_crownland_council = {
 
 AOEIW24_ENG_imperial_cabinet = {
     AOEIW24_ENG_convene_imperial_cabinet = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = ENG }
         available = { always = yes }
@@ -391,7 +391,7 @@ AOEIW24_ENG_imperial_cabinet = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ENG_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = ENG }
         available = { always = yes }
@@ -402,7 +402,7 @@ AOEIW24_ENG_imperial_cabinet = {
 
 AOEIW24_JAP_service_rivalry = {
     AOEIW24_JAP_hold_liaison_conference = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = JAP }
         available = { always = yes }
@@ -410,7 +410,7 @@ AOEIW24_JAP_service_rivalry = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_JAP_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = JAP }
         available = { always = yes }
@@ -421,7 +421,7 @@ AOEIW24_JAP_service_rivalry = {
 
 AOEIW24_CHI_provincial_cohesion = {
     AOEIW24_CHI_negotiate_provincial_compact = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = CHI }
         available = { always = yes }
@@ -429,7 +429,7 @@ AOEIW24_CHI_provincial_cohesion = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_CHI_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = CHI }
         available = { always = yes }
@@ -440,7 +440,7 @@ AOEIW24_CHI_provincial_cohesion = {
 
 AOEIW24_RAJ_princely_conference = {
     AOEIW24_RAJ_summon_princely_chamber = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = RAJ }
         available = { always = yes }
@@ -448,7 +448,7 @@ AOEIW24_RAJ_princely_conference = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_RAJ_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = RAJ }
         available = { always = yes }
@@ -459,7 +459,7 @@ AOEIW24_RAJ_princely_conference = {
 
 AOEIW24_TUR_assembly_politics = {
     AOEIW24_TUR_seek_assembly_mandate = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = TUR }
         available = { always = yes }
@@ -467,7 +467,7 @@ AOEIW24_TUR_assembly_politics = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_TUR_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = TUR }
         available = { always = yes }
@@ -478,7 +478,7 @@ AOEIW24_TUR_assembly_politics = {
 
 AOEIW24_BRA_federal_bargain = {
     AOEIW24_BRA_convene_governors = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = BRA }
         available = { always = yes }
@@ -486,7 +486,7 @@ AOEIW24_BRA_federal_bargain = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_BRA_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = BRA }
         available = { always = yes }
@@ -497,7 +497,7 @@ AOEIW24_BRA_federal_bargain = {
 
 AOEIW24_MEX_social_settlement = {
     AOEIW24_MEX_convene_social_congress = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = MEX }
         available = { always = yes }
@@ -505,7 +505,7 @@ AOEIW24_MEX_social_settlement = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_MEX_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = MEX }
         available = { always = yes }
@@ -516,7 +516,7 @@ AOEIW24_MEX_social_settlement = {
 
 AOEIW24_BUL_crown_and_committees = {
     AOEIW24_BUL_summon_crown_council = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = BUL }
         available = { always = yes }
@@ -524,7 +524,7 @@ AOEIW24_BUL_crown_and_committees = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_BUL_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = BUL }
         available = { always = yes }
@@ -535,7 +535,7 @@ AOEIW24_BUL_crown_and_committees = {
 
 AOEIW24_GRE_national_schism = {
     AOEIW24_GRE_call_reconciliation_conference = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { original_tag = GRE }
         available = { always = yes }
@@ -543,7 +543,7 @@ AOEIW24_GRE_national_schism = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_GRE_national_programme = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = GRE }
         available = { always = yes }
@@ -554,7 +554,7 @@ AOEIW24_GRE_national_schism = {
 
 AOEIW24_monarchic_institutions = {
     AOEIW24_seek_vote_of_confidence = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 60 fire_only_once = yes
         visible = { has_government = constitutional_monarchism }
         available = { always = yes }
@@ -562,7 +562,7 @@ AOEIW24_monarchic_institutions = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_convene_federal_council = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { has_government = constitutional_monarchism }
         available = { always = yes }
@@ -573,7 +573,7 @@ AOEIW24_monarchic_institutions = {
 
 AOEIW24_autocratic_institutions = {
     AOEIW24_issue_imperial_decrees = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { has_government = autocratic_imperialism }
         available = { always = yes }
@@ -581,7 +581,7 @@ AOEIW24_autocratic_institutions = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_review_provincial_governors = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 55 fire_only_once = yes
         visible = { has_government = autocratic_imperialism }
         available = { always = yes }
@@ -592,7 +592,7 @@ AOEIW24_autocratic_institutions = {
 
 AOEIW24_UKR_national_programmes = {
     AOEIW24_UKR_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = UKR }
         available = { always = yes }
@@ -600,7 +600,7 @@ AOEIW24_UKR_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_UKR_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = UKR }
         available = { always = yes }
@@ -608,7 +608,7 @@ AOEIW24_UKR_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_UKR_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = UKR }
         available = { always = yes }
@@ -619,7 +619,7 @@ AOEIW24_UKR_national_programmes = {
 
 AOEIW24_EST_national_programmes = {
     AOEIW24_EST_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = EST }
         available = { always = yes }
@@ -627,7 +627,7 @@ AOEIW24_EST_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_EST_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = EST }
         available = { always = yes }
@@ -635,7 +635,7 @@ AOEIW24_EST_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_EST_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = EST }
         available = { always = yes }
@@ -646,7 +646,7 @@ AOEIW24_EST_national_programmes = {
 
 AOEIW24_GEO_national_programmes = {
     AOEIW24_GEO_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = GEO }
         available = { always = yes }
@@ -654,7 +654,7 @@ AOEIW24_GEO_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_GEO_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = GEO }
         available = { always = yes }
@@ -662,7 +662,7 @@ AOEIW24_GEO_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_GEO_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = GEO }
         available = { always = yes }
@@ -673,7 +673,7 @@ AOEIW24_GEO_national_programmes = {
 
 AOEIW24_KAZ_national_programmes = {
     AOEIW24_KAZ_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = KAZ }
         available = { always = yes }
@@ -681,7 +681,7 @@ AOEIW24_KAZ_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_KAZ_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = KAZ }
         available = { always = yes }
@@ -689,7 +689,7 @@ AOEIW24_KAZ_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_KAZ_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = KAZ }
         available = { always = yes }
@@ -700,7 +700,7 @@ AOEIW24_KAZ_national_programmes = {
 
 AOEIW24_SIK_national_programmes = {
     AOEIW24_SIK_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = SIK }
         available = { always = yes }
@@ -708,7 +708,7 @@ AOEIW24_SIK_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SIK_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = SIK }
         available = { always = yes }
@@ -716,7 +716,7 @@ AOEIW24_SIK_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SIK_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = SIK }
         available = { always = yes }
@@ -727,7 +727,7 @@ AOEIW24_SIK_national_programmes = {
 
 AOEIW24_TIB_national_programmes = {
     AOEIW24_TIB_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = TIB }
         available = { always = yes }
@@ -735,7 +735,7 @@ AOEIW24_TIB_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_TIB_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = TIB }
         available = { always = yes }
@@ -743,7 +743,7 @@ AOEIW24_TIB_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_TIB_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = TIB }
         available = { always = yes }
@@ -754,7 +754,7 @@ AOEIW24_TIB_national_programmes = {
 
 AOEIW24_SAU_national_programmes = {
     AOEIW24_SAU_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = SAU }
         available = { always = yes }
@@ -762,7 +762,7 @@ AOEIW24_SAU_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SAU_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = SAU }
         available = { always = yes }
@@ -770,7 +770,7 @@ AOEIW24_SAU_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_SAU_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = SAU }
         available = { always = yes }
@@ -781,7 +781,7 @@ AOEIW24_SAU_national_programmes = {
 
 AOEIW24_YEM_national_programmes = {
     AOEIW24_YEM_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = YEM }
         available = { always = yes }
@@ -789,7 +789,7 @@ AOEIW24_YEM_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_YEM_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = YEM }
         available = { always = yes }
@@ -797,7 +797,7 @@ AOEIW24_YEM_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_YEM_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = YEM }
         available = { always = yes }
@@ -808,7 +808,7 @@ AOEIW24_YEM_national_programmes = {
 
 AOEIW24_OMA_national_programmes = {
     AOEIW24_OMA_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = OMA }
         available = { always = yes }
@@ -816,7 +816,7 @@ AOEIW24_OMA_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_OMA_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = OMA }
         available = { always = yes }
@@ -824,7 +824,7 @@ AOEIW24_OMA_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_OMA_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = OMA }
         available = { always = yes }
@@ -835,7 +835,7 @@ AOEIW24_OMA_national_programmes = {
 
 AOEIW24_MAL_national_programmes = {
     AOEIW24_MAL_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = MAL }
         available = { always = yes }
@@ -843,7 +843,7 @@ AOEIW24_MAL_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_MAL_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = MAL }
         available = { always = yes }
@@ -851,7 +851,7 @@ AOEIW24_MAL_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_MAL_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = MAL }
         available = { always = yes }
@@ -862,7 +862,7 @@ AOEIW24_MAL_national_programmes = {
 
 AOEIW24_VIN_national_programmes = {
     AOEIW24_VIN_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = VIN }
         available = { always = yes }
@@ -870,7 +870,7 @@ AOEIW24_VIN_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_VIN_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = VIN }
         available = { always = yes }
@@ -878,7 +878,7 @@ AOEIW24_VIN_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_VIN_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = VIN }
         available = { always = yes }
@@ -889,7 +889,7 @@ AOEIW24_VIN_national_programmes = {
 
 AOEIW24_ARG_national_programmes = {
     AOEIW24_ARG_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = ARG }
         available = { always = yes }
@@ -897,7 +897,7 @@ AOEIW24_ARG_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ARG_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = ARG }
         available = { always = yes }
@@ -905,7 +905,7 @@ AOEIW24_ARG_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_ARG_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = ARG }
         available = { always = yes }
@@ -916,7 +916,7 @@ AOEIW24_ARG_national_programmes = {
 
 AOEIW24_PRU_national_programmes = {
     AOEIW24_PRU_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = PRU }
         available = { always = yes }
@@ -924,7 +924,7 @@ AOEIW24_PRU_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_PRU_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = PRU }
         available = { always = yes }
@@ -932,7 +932,7 @@ AOEIW24_PRU_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_PRU_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = PRU }
         available = { always = yes }
@@ -943,7 +943,7 @@ AOEIW24_PRU_national_programmes = {
 
 AOEIW24_HAI_national_programmes = {
     AOEIW24_HAI_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = HAI }
         available = { always = yes }
@@ -951,7 +951,7 @@ AOEIW24_HAI_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_HAI_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = HAI }
         available = { always = yes }
@@ -959,7 +959,7 @@ AOEIW24_HAI_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_HAI_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = HAI }
         available = { always = yes }
@@ -970,7 +970,7 @@ AOEIW24_HAI_national_programmes = {
 
 AOEIW24_CSA_national_programmes = {
     AOEIW24_CSA_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = CSA }
         available = { always = yes }
@@ -978,7 +978,7 @@ AOEIW24_CSA_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_CSA_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = CSA }
         available = { always = yes }
@@ -986,7 +986,7 @@ AOEIW24_CSA_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_CSA_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = CSA }
         available = { always = yes }
@@ -997,7 +997,7 @@ AOEIW24_CSA_national_programmes = {
 
 AOEIW24_QUE_national_programmes = {
     AOEIW24_QUE_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = QUE }
         available = { always = yes }
@@ -1005,7 +1005,7 @@ AOEIW24_QUE_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_QUE_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = QUE }
         available = { always = yes }
@@ -1013,7 +1013,7 @@ AOEIW24_QUE_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_QUE_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = QUE }
         available = { always = yes }
@@ -1024,7 +1024,7 @@ AOEIW24_QUE_national_programmes = {
 
 AOEIW24_MLI_national_programmes = {
     AOEIW24_MLI_public_works = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = MLI }
         available = { always = yes }
@@ -1032,7 +1032,7 @@ AOEIW24_MLI_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_MLI_staff_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 45 fire_only_once = yes
         visible = { original_tag = MLI }
         available = { always = yes }
@@ -1040,7 +1040,7 @@ AOEIW24_MLI_national_programmes = {
         ai_will_do = { factor = 1 modifier = { factor = 2 has_political_power > 150 } }
     }
     AOEIW24_MLI_trade_mission = {
-        icon = generic_political_reform
+        icon = generic_political_discourse
         cost = 50 fire_only_once = yes
         visible = { original_tag = MLI }
         available = { always = yes }

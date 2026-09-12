@@ -2037,6 +2037,45 @@ focus_tree = {
         prerequisite = { focus = AOEIW9_CAN_dip_b_6 }
     }
 
+    focus = {
+        id = AOEIW38_CAN_arsenal_and_parliament
+        icon = GFX_goal_generic_production
+        x = 0
+        y = 2
+        relative_position_id = AOEIW9_CAN_dip_final
+        cost = 5
+        prerequisite = { focus = AOEIW9_CAN_dip_final }
+        prerequisite = { focus = AOEIW9_CAN_mil_final }
+        available = { date > 1939.1.1 }
+        completion_reward = { set_country_flag = AOEIW38_regional_programme_open add_ideas = AOEIW38_CAN_arsenal_burden country_event = { id = AOEIW38_aa.2 hours = 6 } }
+        ai_will_do = { factor = 16 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_CAN_two_ocean_lifeline
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_CAN_arsenal_and_parliament
+        cost = 6
+        prerequisite = { focus = AOEIW38_CAN_arsenal_and_parliament }
+        completion_reward = { remove_ideas = AOEIW38_CAN_arsenal_burden add_ideas = AOEIW38_CAN_two_ocean_lifeline_spirit navy_experience = 15 }
+        ai_will_do = { factor = 16 modifier = { factor = 2 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_CAN_peace_dividend
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_CAN_two_ocean_lifeline
+        cost = 6
+        prerequisite = { focus = AOEIW38_CAN_two_ocean_lifeline }
+        available = { has_war = no }
+        completion_reward = { remove_ideas = AOEIW38_CAN_two_ocean_lifeline_spirit add_ideas = AOEIW38_CAN_postwar_conversion add_stability = 0.03 add_political_power = 35 }
+        ai_will_do = { factor = 15 modifier = { factor = 1.5 has_war = no } }
+    }
+
 
 
 }

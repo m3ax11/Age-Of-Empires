@@ -2036,6 +2036,44 @@ focus_tree = {
         prerequisite = { focus = AOEIW9_MEX_dip_b_6 }
     }
 
+    focus = {
+        id = AOEIW38_MEX_workers_and_wells
+        icon = GFX_goal_generic_oil_refinery
+        x = 0
+        y = 2
+        relative_position_id = AOEIW9_MEX_dip_final
+        cost = 5
+        prerequisite = { focus = AOEIW9_MEX_dip_final }
+        prerequisite = { focus = AOEIW9_MEX_mil_final }
+        available = { date > 1939.1.1 }
+        completion_reward = { set_country_flag = AOEIW38_regional_programme_open add_ideas = AOEIW38_MEX_oil_compact country_event = { id = AOEIW38_aa.3 hours = 6 } }
+        ai_will_do = { factor = 16 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW38_MEX_sovereign_refineries
+        icon = GFX_goal_generic_oil_refinery
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_MEX_workers_and_wells
+        cost = 6
+        prerequisite = { focus = AOEIW38_MEX_workers_and_wells }
+        completion_reward = { remove_ideas = AOEIW38_MEX_oil_compact add_ideas = AOEIW38_MEX_sovereign_refineries_spirit add_tech_bonus = { name = AOEIW38_MEX_refinery_bonus bonus = 0.5 uses = 1 category = industry } }
+        ai_will_do = { factor = 16 }
+    }
+
+    focus = {
+        id = AOEIW38_MEX_republic_of_workers
+        icon = GFX_goal_generic_demand_territory
+        x = 0
+        y = 1
+        relative_position_id = AOEIW38_MEX_sovereign_refineries
+        cost = 6
+        prerequisite = { focus = AOEIW38_MEX_sovereign_refineries }
+        completion_reward = { add_ideas = AOEIW38_MEX_workers_republic add_manpower = 30000 add_stability = 0.03 }
+        ai_will_do = { factor = 15 }
+    }
+
 
 
 }

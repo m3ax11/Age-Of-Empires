@@ -1,6 +1,6 @@
 AOEIW14_GER_reichspakt_category = {
     AOEIW14_GER_offer_polish_autonomy = {
-        icon = generic_foreign_policy
+        icon = generic_political_discourse
         cost = 75
         fire_only_once = yes
         available = { POL = { exists = yes is_subject_of = GER } }
@@ -12,7 +12,7 @@ AOEIW14_GER_reichspakt_category = {
         ai_will_do = { base = 6 }
     }
     AOEIW14_GER_guarantee_dutch_charter = {
-        icon = generic_foreign_policy
+        icon = generic_political_discourse
         cost = 50
         fire_only_once = yes
         available = { HOL = { exists = yes } }
@@ -24,7 +24,7 @@ AOEIW14_GER_reichspakt_category = {
         ai_will_do = { base = 5 }
     }
     AOEIW14_GER_open_paris_channel = {
-        icon = generic_foreign_policy
+        icon = generic_political_discourse
         cost = 60
         fire_only_once = yes
         available = { FRA = { exists = yes NOT = { has_war_with = GER } } }
@@ -36,7 +36,7 @@ AOEIW14_GER_reichspakt_category = {
         ai_will_do = { base = 4 }
     }
     AOEIW14_GER_invite_vienna_consultation = {
-        icon = generic_foreign_policy
+        icon = generic_political_discourse
         cost = 55
         fire_only_once = yes
         available = { AUS = { exists = yes NOT = { has_war_with = GER } } }
@@ -58,14 +58,14 @@ AOEIW14_USA_emergency_category = {
         ai_will_do = { base = 4 }
     }
     AOEIW14_USA_governors_liaison = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 35
         fire_only_once = yes
         complete_effect = { add_stability = 0.015 set_country_flag = AOEIW14_USA_governors_liaison_done }
         ai_will_do = { base = 4 }
     }
     AOEIW14_USA_congressional_continuity = {
-        icon = generic_political_actions
+        icon = generic_political_address
         cost = 45
         fire_only_once = yes
         complete_effect = { add_political_power = 20 add_stability = 0.01 set_country_flag = AOEIW14_USA_congressional_continuity_done }

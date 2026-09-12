@@ -171,7 +171,7 @@ AOEIW32_TUR_armour_programme = {
 
 AOEIW32_GER_implementation = {
 AOEIW32_GER_spd_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW28_GER_spd_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -179,7 +179,7 @@ AOEIW32_GER_spd_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_zentrum_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW28_GER_zentrum_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -187,7 +187,7 @@ AOEIW32_GER_zentrum_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_liberal_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW28_GER_liberal_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -195,7 +195,7 @@ AOEIW32_GER_liberal_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_conservative_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW28_GER_conservative_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -203,7 +203,7 @@ AOEIW32_GER_conservative_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_cdu_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW30_GER_cdu_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -211,7 +211,7 @@ AOEIW32_GER_cdu_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_dstp_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW30_GER_dstp_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }
@@ -219,7 +219,7 @@ AOEIW32_GER_dstp_bill = {
  ai_will_do = { factor = 1 }
 }
 AOEIW32_GER_kpd_bill = {
- icon = generic_political_actions
+ icon = generic_political_address
  cost = 75
  visible = { has_country_flag = AOEIW30_GER_kpd_government }
  available = { NOT = { has_country_flag = AOEIW32_GER_legislative_budget } NOT = { has_country_flag = AOEIW28_GER_election_pending } }

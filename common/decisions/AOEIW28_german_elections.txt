@@ -1,6 +1,6 @@
 AOEIW28_GER_parliament_category = {
     AOEIW31_GER_spd_coalition_talks = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 120
         cost = 5
         visible = {
@@ -19,7 +19,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_zentrum_coalition_talks = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 120
         cost = 5
         visible = {
@@ -39,7 +39,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_dnvp_coalition_talks = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 120
         cost = 5
         visible = {
@@ -59,7 +59,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_cdu_coalition_talks = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 120
         cost = 5
         visible = {
@@ -136,7 +136,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_spd = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -154,7 +154,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_zentrum = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -172,7 +172,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_lvp = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -189,7 +189,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_dnvp = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -207,7 +207,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_cdu = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -225,7 +225,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_dstp = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -242,7 +242,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW31_GER_invite_kpd = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 110
         cost = 0
         visible = {
@@ -259,7 +259,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW30_GER_confirm_coalition = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 100
         cost = 5
         visible = { has_country_flag = AOEIW28_GER_election_pending check_variable = { AOEIW30_GER_chosen_gov_leader > 0 } }
@@ -269,7 +269,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW30_GER_reset_coalition_talks = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 99
         cost = 0
         visible = { has_country_flag = AOEIW28_GER_election_pending check_variable = { AOEIW30_GER_chosen_gov_leader > 0 } }
@@ -278,7 +278,7 @@ AOEIW28_GER_parliament_category = {
     }
 
     AOEIW28_GER_early_election = {
-        icon = generic_political_actions
+        icon = generic_political_address
         priority = 90
         cost = 150
         visible = { has_country_flag = AOEIW28_GER_parliament_enabled NOT = { OR = { has_government = fascism has_government = communism } } }

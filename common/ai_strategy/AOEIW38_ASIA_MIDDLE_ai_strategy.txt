@@ -1,0 +1,77 @@
+AOEIW38_ASIA_MIDDLE_MON_solidarity_policy = {
+    allowed = { original_tag = MON }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_solidarity_policy }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = CHI value = 90 }
+    ai_strategy = { type = befriend id = SOV value = 60 }
+    ai_strategy = { type = protect id = CHI value = 40 }
+}
+AOEIW38_ASIA_MIDDLE_MON_neutrality_policy = {
+    allowed = { original_tag = MON }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_MON_neutrality_policy }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = SOV value = 40 }
+    ai_strategy = { type = antagonize id = JAP value = -50 }
+    ai_strategy = { type = antagonize id = CHI value = -40 }
+}
+AOEIW38_ASIA_MIDDLE_YEM_open_straits_policy = {
+    allowed = { original_tag = YEM }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_open_straits }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = SAU value = 70 }
+    ai_strategy = { type = befriend id = ETH value = 50 }
+    ai_strategy = { type = befriend id = EGY value = 50 }
+}
+AOEIW38_ASIA_MIDDLE_YEM_guarded_straits_policy = {
+    allowed = { original_tag = YEM }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_YEM_guarded_straits }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = ITA value = 40 }
+    ai_strategy = { type = antagonize id = ENG value = 30 }
+    ai_strategy = { type = befriend id = SAU value = 40 }
+}
+AOEIW38_ASIA_MIDDLE_CHI_reconstruction_policy = {
+    allowed = { original_tag = CHI }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = MON value = 50 }
+    ai_strategy = { type = befriend id = MON value = 50 }
+}
+AOEIW38_ASIA_MIDDLE_JAP_settlement_policy = {
+    allowed = { original_tag = JAP }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = MAN value = 70 }
+    ai_strategy = { type = befriend id = MAN value = 60 }
+}
+AOEIW38_ASIA_MIDDLE_PER_corridor_policy = {
+    allowed = { original_tag = PER }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = SOV value = -30 }
+    ai_strategy = { type = antagonize id = ENG value = -30 }
+    ai_strategy = { type = befriend id = TUR value = 40 }
+}
+AOEIW38_ASIA_MIDDLE_RAJ_service_policy = {
+    allowed = { original_tag = RAJ }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = ENG value = 50 }
+    ai_strategy = { type = protect id = BUR value = 40 }
+}
+AOEIW38_ASIA_MIDDLE_SIA_balance_policy = {
+    allowed = { original_tag = SIA }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = JAP value = -30 }
+    ai_strategy = { type = antagonize id = ENG value = -30 }
+    ai_strategy = { type = befriend id = RAJ value = 35 }
+}
+AOEIW38_ASIA_MIDDLE_TUR_straits_policy = {
+    allowed = { original_tag = TUR }
+    enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = SOV value = -35 }
+    ai_strategy = { type = antagonize id = ENG value = -35 }
+    ai_strategy = { type = befriend id = PER value = 35 }
+}
