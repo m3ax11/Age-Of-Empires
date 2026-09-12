@@ -64,3 +64,71 @@ USA,The hemisphere,AOEIW22_USA_defense_council,The Hemispheric Defense Council,T
 USA,Constitutional breakdown,AOEIW22_USA_break_with_washington,A Pacific Constitutional Settlement,Sacramento Takes the Oath,"Old title relies on Settlement; replacement identifies a documented agency, place, speech, constitutional actor or political action."
 USA,Constitutional breakdown,AOEIW35_USA_institutional_settlement,Make the Settlement Govern,The Constitution Collects Its Taxes,"Old title relies on Settlement; replacement identifies a documented agency, place, speech, constitutional actor or political action."
 USA,Constitutional breakdown,AOEIW35_USA_institutional_left,The Governors' Compact,The Governors Come to Washington,"Old title relies on Compact; replacement identifies a documented agency, place, speech, constitutional actor or political action."
+SWE,Defence and the constitution,AOEIW9_SWE_politics_root,The Swedish Defence Settlement,The 1936 Defence Act,An invented settlement hid the real parliamentary defence debate.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p1_1,The Crown’s Strategic Council,The King at Drottningholm,The old council was generic; Drottningholm gives the royal path a place and actor.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p2_5,Entrust the Defence Commission,The Defence Commission Reports,The new title turns a vague transfer of authority into a public political event.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p2_6,A New Charter for Kingdom of Sweden,The Riksdag Writes the Terms,A generic charter became a concrete act by Sweden's legislature.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p3_1,The National Mobilisation Directorate,Orders from Stockholm,The old directorate named an invented institution rather than the authoritarian turn.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p3_4,Replace the Swedish Defence Commission,Dismiss the Defence Commission,The focus now states the conflict and consequence directly.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_p3_6,The National Mobilisation Settlement in Kingdom of Sweden,Sweden Under Orders,The long settlement formula obscured the path's authoritarian result.
+SWE,Defence and the constitution,AOEIW9_SWE_politics_settlement,The Stockholm Settlement,A Government Ready to Mobilise,Stockholm Settlement was vague and did not describe the gameplay outcome.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_civ_1,The Swedish Defence Settlement: Industrial Accounts,Guns or the Folkhem?,The old accounting label lacked Sweden's central welfare-versus-rearmament conflict.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_civ_4,The Bofors Procurement Board,Bofors Signs the Orders,The real firm is retained while the generic procurement board is removed.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_civ_5,The Hydroelectric Board Expansion,Harness the Northern Rivers,The replacement names the physical programme instead of an invented board.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_war_2,War Orders for Hydroelectric Board,Power for the Armament Plants,The title now explains why hydroelectric investment matters in wartime.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_science_3,Applied Research at Swedish Research Council,KTH Opens Its Workshops,A named Swedish institution replaces the generic research-council phrasing.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_science_6,Research Grants for Swedish Research Council,Grants for Swedish Engineers,The new title identifies the beneficiaries and purpose without another council.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_infra_3,Workers' Housing at Hydroelectric Board,Homes Beside the Dams,The old wording treated a technology programme as an employer; the new one describes the actual work.
+SWE,"Iron, power and the people's home",AOEIW9_SWE_eco_final,The Swedish Industrial Compact,"Iron, Power and Workshops",The abstract compact became a concrete description of Sweden's industrial system.
+SWE,Armed neutrality,AOEIW9_SWE_mil_army_1,The Swedish Defence Settlement: Staff Review,The General Staff Faces the Riksdag,The old staff-review formula repeated the root title and concealed the civil-military dispute.
+SWE,Armed neutrality,AOEIW9_SWE_mil_army_9,Doctrine at the Armoured Brigade Board,Tanks at Skövde,A real garrison town replaces an invented armoured brigade board.
+SWE,Armed neutrality,AOEIW9_SWE_dip_a_1,The Swedish Defence Settlement: External Commitments,Stockholm Looks to Finland,The generic external-commitments label became the specific Finnish dilemma developed by the branch.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p1_1,The Traditionalist State Council,The Whites Still Remember,The generic state council obscured the White veteran constituency.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p1_2,Reconcile the Presidential Office,The President Calls the Parties,The new title presents a political action rather than an office.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p1_5,Balance the Industrial Council,Tampere's Owners at the Table,A named industrial city replaces the interchangeable industrial council.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p2_4,Broaden the Industrial Council,Bring the Employers into Parliament,The title now describes how business enters the parliamentary path.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p2_6,A New Charter for Finland,The Eduskunta Sets the Rules,A generic charter became a concrete assertion of parliamentary sovereignty.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p3_1,The Greater Finland Directorate,Greater Finland Now,The slogan-like title suits the expansionist faction better than a bureaucratic directorate.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p3_3,Break the Industrial Council,Seize the Tampere Mills,The focus now shows the coercive act behind 'break the council'.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_p3_6,The Greater Finland Settlement,From the Gulf to the White Sea,The abstract settlement became the expansionist path's concrete end state.
+FIN,The republic after Mantsala,AOEIW9_FIN_politics_settlement,The Helsinki Settlement,Helsinki Chooses Its Republic,The old city settlement did not name the constitutional choice.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_civ_2,Rails to Finnish Forestry Board,Timber Trains to Kotka,The title replaces a fictional board with a real export route.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_civ_6,Renew Hydroelectric Programme,Harness the Imatra Rapids,Imatra is a concrete Finnish hydroelectric anchor.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_civ_8,Public Works at Finnish Forestry Board,Roads into the Forests,The old title attached public works to an invented forestry board.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_war_3,Precision Tools for Hydroelectric Programme,Turbines for the War Economy,The new title states the wartime purpose of the machinery.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_war_5,Standardise Finnish Forestry Board,Measure Every Log,A physical production instruction replaces a generic board.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_science_3,Applied Research at Finnish Research Council,Research at the State Aircraft Factory,The title adds a Finnish industrial institution and a clear research purpose.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_science_6,Research Grants for Finnish Research Council,Fund Finland's Inventors,The beneficiaries replace another generic research council.
+FIN,"Forest, rapids and workshops",AOEIW9_FIN_eco_infra_4,Logistics through Hydroelectric Programme,Power Lines from Imatra,The title connects logistics to a real generating centre.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p1_5,Balance the Lusophone Council,Lisbon's Envoys at the Palace,The generic Lusophone council became a diplomatic scene with actors and a place.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p2_4,Broaden the Lusophone Council,A Chamber for the Portuguese World,The title gives the parliamentary branch a recognisable institution and purpose.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p2_6,A New Charter for Brazilian Empire,The Constitution of 1934,A real Brazilian constitutional reference replaces the generic new charter.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p3_1,The Central National Directorate,The Catete Palace Rules Alone,The authoritarian turn is expressed through Vargas's seat of power rather than a fictional directorate.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p3_3,Break the Lusophone Council,Rio Will Speak for Itself,The new title states the nationalist conflict behind breaking the council.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_p3_6,The Brazilian National State Settlement,Estado Novo,The real regime name replaces an invented national-state settlement.
+BRA,"Coffee states, Crown and Estado Novo",AOEIW9_BRA_politics_settlement,The Rio Imperial Settlement,The Crown Returns to Sao Cristovao,The old Rio settlement was abstract; the replacement gives the alternate monarchy a concrete seat.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_civ_4,The National Steel-Arms Compact,Build the Works at Volta Redonda,A real Brazilian steel project replaces the abstract steel-arms compact.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_civ_6,Renew Amazon Development Office,Survey the Amazon,The focus now names the first concrete act instead of an invented office.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_war_1,The Brazilian Coffee Export Board Armaments Audit,Coffee Pays for Guns,The replacement connects the coffee economy directly to rearmament.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_war_3,Precision Tools for Amazon Development Office,Machine Tools up the Amazon,The title turns the vague development office into a physical supply programme.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_war_7,Long-Term Contracts for Coffee Export Board,The Coffee Contracts Hold,A contractual consequence replaces the recurring coffee board.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_infra_2,Brazilian Freight Capacity at Coffee Export Board,Clear the Coffee at Santos,The real port and bottleneck replace a generic export board.
+BRA,"Coffee, steel and the interior",AOEIW9_BRA_eco_infra_4,Logistics through Amazon Development Office,River Depots beyond Manaus,A named city and material outcome replace the generic office.
+BRA,Army and South Atlantic,AOEIW9_BRA_mil_army_9,Brazilian Doctrine at the Artillery Directorate,Guns from the Realengo Arsenal,A real Brazilian arsenal replaces the generic artillery directorate.
+BRA,Army and South Atlantic,AOEIW9_BRA_dip_a_4,The Rio–Lisbon Investment Board,Escudos across the Atlantic,The title replaces an invented investment board with the transaction it enables.
+BRA,Army and South Atlantic,AOEIW9_BRA_dip_a_6,Ratify the Imperial Compact,"One Crown, Two Oceans",The slogan gives the alternate imperial compact a distinct identity.
+BRA,Army and South Atlantic,AOEIW38_BRA_south_atlantic_settlement,A South Atlantic Settlement,Rio Commands the South Atlantic,The generic settlement did not deliver the branch's regional payoff.
+ITA,"Crown, corporations and communes",AOEIW9_ITA_politics_p2_7,A New Charter for Kingdom of Italy,Rewrite the Carta del Lavoro,A real Fascist document replaces the generic charter while fitting the corporate path.
+ITA,"Crown, corporations and communes",AOEIW18_ITA_council_of_communes,Seat the Council of Communes,Deputies from Every Commune,The replacement foregrounds representation instead of merely seating another council.
+ITA,"Crown, corporations and communes",AOEIW18_ITA_peoples_army_commission,The People's Army Commission,"Arm the People, Discipline the Ranks",The slogan expresses the revolutionary army's actual tension.
+ITA,"Crown, corporations and communes",AOEIW18_ITA_caproni_under_council_control,Caproni under Council Control,Red Flags over Caproni,The new title sounds like a contemporary headline and preserves the real company.
+ITA,"Crown, corporations and communes",AOEIW18_ITA_mediterranean_workers_compact,Mediterranean Workers' Compact,Workers of Both Shores,The abstract compact became an international labour appeal with consequences.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_civ_5,The Autostrada Programme Expansion,Extend the Autostrada dei Laghi,A named historic motorway replaces the generic programme expansion.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_war_2,War Orders for Autostrada Programme,Military Traffic on the Autostrade,The title explains the military conversion in concrete terms.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_war_8,Mobilise Autostrada Programme for Full Production,March the Army down the Autostrade,The new title provides an active wartime payoff for the motorway investment.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_science_3,Applied Research at Italian Research Council,Marconi and the CNR,The real CNR and its president replace the generic research council.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_science_6,Research Grants for Italian Research Council,Fund the CNR Laboratories,The Italian acronym makes a legitimate institution country-specific.
+ITA,IRI and industrial mobilisation,AOEIW9_ITA_eco_infra_3,Workers' Housing at Autostrada Programme,Case Popolari beside the Motorways,The old phrase incorrectly treated a road programme as a workplace.
+ITA,The services and Mediterranean ambition,AOEIW9_ITA_mil_army_1,The Army Training Commission,The Grandi Manovre,A period military phrase replaces a generic training commission.
+ITA,The services and Mediterranean ambition,AOEIW_IMM_ITA_root,The Council of Roman Ambition,Rome Claims Its Destiny,The old council was another invented container; the new title states the imperial claim.
+ITA,The services and Mediterranean ambition,AOEIW_IMM_ITA_corporate_3,The Roman Directorate,Orders from Palazzo Venezia,The dictator's seat replaces the generic Roman directorate.
