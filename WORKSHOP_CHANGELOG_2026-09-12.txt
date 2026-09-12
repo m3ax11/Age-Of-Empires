@@ -1,0 +1,13 @@
+Age of Empires – RT56 Edition Release Candidate
+
+- Integrated the standalone Age of Empires and Road to 56 build for HOI4 1.19.x.
+- Expanded Germany, Spain and regional countries with connected late-game, diplomatic, subject and post-war content.
+- Added bilateral imperial aftermath systems for major overlords and their subjects.
+- Reworked problematic Russian and German focus-tree layouts and cleaned focus icon repetition across AOE trees.
+- Added an enabled-by-default Imperial World map mode rule with an Off option.
+- Added visible +4.50 daily army, navy and air experience for accelerated doctrine development.
+- Added new Age of Empires main-menu, loading-screen and Workshop branding.
+- Fixed structural errors, duplicate triggers, missing references, invalid decision/idea icons and English localisation gaps.
+- Updated Spanish South America, China/Manchuria stability logic, German elections and multiple 1940–42 regional paths.
+
+Start a new 1936 Time of Upheaval campaign. Enable only this standalone edition.
