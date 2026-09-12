@@ -1787,7 +1787,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,18
         id = AOEIW9_DEN_dip_final
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 20
         y = 17
         cost = 7

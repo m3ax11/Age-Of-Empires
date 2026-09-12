@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_GRE_politics_p1_1
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_court
         x = 1
         y = 1
         cost = 5

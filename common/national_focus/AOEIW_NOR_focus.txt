@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_NOR_politics_p1_1
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_monarchy_2
         x = 1
         y = 1
         cost = 7
@@ -220,7 +220,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,4
         id = AOEIW9_NOR_politics_p2_4
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_public_meetings
         x = 4
         y = 4
         cost = 7
@@ -1556,7 +1556,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,11
         id = AOEIW9_NOR_dip_root
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_goal_generic_navy_doctrines_tactics
         x = 19
         y = 10
         cost = 5

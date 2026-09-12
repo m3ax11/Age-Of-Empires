@@ -55,7 +55,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 17,2
         id = AOEIW9_SWI_politics_p1_2
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_public_meetings
         x = 14
         y = 2
         cost = 5
@@ -123,7 +123,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 17,5
         id = AOEIW9_SWI_politics_p1_5
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_goal_generic_national_unity
         x = 14
         y = 5
         cost = 7
@@ -171,7 +171,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,2
         id = AOEIW9_SWI_politics_p2_2
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_election
         x = 18
         y = 2
         cost = 5
@@ -1815,7 +1815,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 35,8
         id = AOEIW9_SWI_dip_final
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_national_security
         x = 25
         y = 8
         cost = 7

@@ -1808,7 +1808,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,18
         id = AOEIW9_SIA_dip_final
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 19
         y = 17
         cost = 7

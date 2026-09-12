@@ -57,7 +57,7 @@ focus_tree = {
         # AOEIW visual-layout base: 2,2
         # AOEIW expansion-space base: 2,2
         id = AOEIW9_JAP_politics_p1_2
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_court
         x = 1
         y = 1
         cost = 5

@@ -336,7 +336,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 15,4
         id = AOEIW9_BEL_politics_p3_4
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_goal_generic_political_pressure
         x = 7
         y = 4
         cost = 5
@@ -1733,7 +1733,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 42,12
         id = AOEIW9_BEL_dip_b_1
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_goal_generic_alliance
         x = 21
         y = 11
         cost = 7

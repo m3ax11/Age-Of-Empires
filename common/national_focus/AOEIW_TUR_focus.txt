@@ -2285,7 +2285,7 @@ focus_tree = {
         # AOEIW visual-layout base: 4,19
         # AOEIW expansion-space base: 5,19
         id = AOEIW9_TUR_dip_final
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_goal_generic_major_alliance
         x = 2
         y = 19
         cost = 7

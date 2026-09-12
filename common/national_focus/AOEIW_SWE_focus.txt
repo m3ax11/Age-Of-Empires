@@ -125,7 +125,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,5
         id = AOEIW9_SWE_politics_p1_5
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_focus_generic_public_meetings
         x = 1
         y = 5
         cost = 4
@@ -2013,7 +2013,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,19
         id = AOEIW9_SWE_dip_final
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_goal_generic_major_alliance
         x = 19
         y = 18
         cost = 7

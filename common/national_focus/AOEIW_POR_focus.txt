@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_POR_politics_p1_1
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_improve_the_administration
         x = 1
         y = 1
         cost = 5
@@ -2127,7 +2127,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,19
         id = AOEIW9_POR_dip_final
-        icon = GFX_focus_BEL_king_of_the_belgians
+        icon = GFX_focus_generic_monarchy_1
         x = 18
         y = 18
         cost = 7

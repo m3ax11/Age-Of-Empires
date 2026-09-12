@@ -103,7 +103,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,4
         id = AOEIW9_EGY_politics_p1_4
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_public_meetings
         x = 1
         y = 4
         cost = 6
@@ -293,7 +293,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 15,2
         id = AOEIW9_EGY_politics_p3_2
-        icon = GFX_focus_FIN_strengthen_military_administration
+        icon = GFX_focus_generic_military_mission
         x = 7
         y = 2
         cost = 6

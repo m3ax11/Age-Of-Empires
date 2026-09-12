@@ -200,7 +200,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,6
         id = AOEIW9_SOV_politics_p1_6
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_monarchy_2
         x = 2
         y = 6
         cost = 5
@@ -3362,7 +3362,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
     focus = {
         # AOEIW visual-layout base: 1,12
         id = AOEIW_STRUCT_SOV_crown_arsenals
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_military_industry
         x = 0
         y = 12
         cost = 5
@@ -4659,7 +4659,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
     focus = {
         # AOEIW visual-layout base: 45,3
         id = AOEIW22_SOV_persian_overture
-        icon = GFX_focus_PER_imperial_expansionism
+        icon = GFX_goal_generic_improve_relations
         x = 34
         y = 4
         cost = 5

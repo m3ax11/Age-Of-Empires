@@ -272,7 +272,7 @@ focus_tree = {
         # AOEIW visual-layout base: 16,3
         # AOEIW expansion-space base: 27,3
         id = AOEIW9_USA_politics_p2_3
-        icon = GFX_focus_YUG_pan_slavic_congress
+        icon = GFX_focus_generic_public_meetings
         x = 20
         y = 2
         cost = 5
@@ -2061,7 +2061,7 @@ focus_tree = {
         # AOEIW visual-layout base: 26,10
         # AOEIW expansion-space base: 33,10
         id = AOEIW9_USA_dip_root
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_goal_generic_navy_doctrines_tactics
         x = 29
         y = 10
         cost = 7
@@ -3267,7 +3267,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 0,27
         id = AOEIW22_USA_corporate_republic
-        icon = GFX_SOV_russian_corporate_state_ccp_2d_sov_compatibility
+        icon = GFX_focus_generic_industrialists
         x = 35
         y = 5
         cost = 5
@@ -3577,7 +3577,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 18,25
         id = AOEIW22_USA_functional_directorates
-        icon = GFX_SOV_leningrad_polytechnical_institute_ccp_2d_sov_compatibility
+        icon = GFX_focus_generic_commission
         x = 48
         y = 3
         cost = 5
@@ -3597,7 +3597,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 18,26
         id = AOEIW22_USA_scientific_state
-        icon = GFX_focus_PER_imperial_funded_universities
+        icon = GFX_focus_generic_university_2
         x = 48
         y = 4
         cost = 10
@@ -3616,7 +3616,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 18,27
         id = AOEIW22_USA_technate_of_america
-        icon = GFX_SOV_national_academies_of_sciences_ccp_2d_sov_compatibility
+        icon = GFX_focus_generic_university_1
         x = 48
         y = 5
         cost = 10
@@ -3654,7 +3654,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,24
         id = AOEIW22_USA_sovereign_state_convention
-        icon = GFX_focus_POL_complete_april_constitution
+        icon = GFX_focus_generic_democratic_europe
         x = 53
         y = 2
         cost = 7
@@ -4296,7 +4296,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 31,32
         id = AOEIW22_USA_break_with_washington
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_focus_generic_democratic_europe
         x = 61
         y = 9
         cost = 7
@@ -4334,7 +4334,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,34
         id = AOEIW22_USA_reunify_union
-        icon = GFX_SOV_national_unification_ccp_2d_sov_compatibility
+        icon = GFX_goal_generic_national_unity
         x = 59
         y = 11
         cost = 10
@@ -4471,7 +4471,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 38,34
         id = AOEIW22_USA_original_colonies
-        icon = GFX_focus_RAJ_the_crown_and_the_world
+        icon = GFX_focus_generic_monarchy_1
         x = 67
         y = 11
         cost = 7

@@ -95,7 +95,7 @@ focus = {
 }
 focus = {
         # AOEIW visual-layout base: 16,3
-    id = AOEIW_FRONTIER_MAN_court icon = GFX_focus_RAJ_the_crown_and_the_world x = 7 y = 3 cost = 5
+    id = AOEIW_FRONTIER_MAN_court icon = GFX_focus_generic_court x = 7 y = 3 cost = 5
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     prerequisite = { focus = AOEIW_FRONTIER_MAN_northern_arsenals }
     completion_reward = { add_political_power = 60 }

@@ -82,7 +82,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,3
         id = AOEIW9_ETH_politics_p1_3
-        icon = GFX_focus_BEL_king_of_the_belgians
+        icon = GFX_focus_generic_court
         x = 1
         y = 3
         cost = 6
@@ -155,7 +155,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,1
         id = AOEIW9_ETH_politics_p2_1
-        icon = GFX_focus_RAJ_the_crown_and_the_world
+        icon = GFX_focus_generic_public_meetings
         x = 4
         y = 1
         cost = 5
@@ -940,7 +940,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,1
         id = AOEIW9_ETH_eco_infra_1
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_generic_railroad
         x = 11
         y = 1
         cost = 6
@@ -1583,7 +1583,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 32,12
         id = AOEIW9_ETH_dip_a_1
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_monarchy_2
         x = 16
         y = 11
         cost = 6
@@ -1788,7 +1788,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,18
         id = AOEIW9_ETH_dip_final
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 18
         y = 17
         cost = 7

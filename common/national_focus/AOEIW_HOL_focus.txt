@@ -82,7 +82,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,3
         id = AOEIW9_HOL_politics_p1_3
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_focus_generic_improve_the_administration
         x = 1
         y = 3
         cost = 7

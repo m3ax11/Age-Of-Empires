@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_FIN_politics_p1_1
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_court
         x = 1
         y = 1
         cost = 4
@@ -125,7 +125,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,5
         id = AOEIW9_FIN_politics_p1_5
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_industrial_experts
         x = 1
         y = 5
         cost = 4
@@ -357,7 +357,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 15,3
         id = AOEIW9_FIN_politics_p3_3
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_goal_generic_political_pressure
         x = 7
         y = 3
         cost = 4

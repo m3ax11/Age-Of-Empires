@@ -1334,7 +1334,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,17
         id = AOEIW9_ROM_mil_army_8
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 16
         cost = 4
@@ -2103,7 +2103,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,19
         id = AOEIW9_ROM_dip_final
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_goal_generic_alliance
         x = 18
         y = 18
         cost = 7

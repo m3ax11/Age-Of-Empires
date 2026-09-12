@@ -60,7 +60,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,2
         id = AOEIW9_CAN_politics_p1_2
-        icon = GFX_focus_BRA_greater_federalism
+        icon = GFX_focus_generic_improve_the_administration
         x = 1
         y = 2
         cost = 4
@@ -103,7 +103,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,4
         id = AOEIW9_CAN_politics_p1_4
-        icon = GFX_focus_RAJ_the_crown_and_the_world
+        icon = GFX_focus_generic_public_meetings
         x = 1
         y = 4
         cost = 6
@@ -335,7 +335,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 15,2
         id = AOEIW9_CAN_politics_p3_2
-        icon = GFX_focus_FIN_strengthen_military_administration
+        icon = GFX_focus_generic_military_mission
         x = 7
         y = 2
         cost = 6
@@ -873,7 +873,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,2
         id = AOEIW9_CAN_eco_science_1
-        icon = GFX_focus_PER_imperial_funded_universities
+        icon = GFX_focus_generic_university_2
         x = 12
         y = 2
         cost = 4

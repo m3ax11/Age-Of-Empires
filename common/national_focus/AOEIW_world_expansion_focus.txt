@@ -1260,7 +1260,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,0
         id = AOEIW_world_CAF_military_root
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_defensive_reorganization
         x = 9
         y = 0
         cost = 7
@@ -1594,7 +1594,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,5
         id = AOEIW_UNIQUE_GEO_settlement
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_monarchy_1
         x = 16
         y = 5
         cost = 6
@@ -3096,7 +3096,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,1
         id = AOEIW_UNIQUE_TIB_identity
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_public_meetings
         x = 16
         y = 1
         cost = 7
@@ -3232,7 +3232,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_SAU_government
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_court
         x = 0
         y = 1
         cost = 10
@@ -3871,7 +3871,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,0
         id = AOEIW_world_YEM_military_root
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_focus_generic_defensive_reorganization
         x = 9
         y = 0
         cost = 7
@@ -4300,7 +4300,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_HEJ_government
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_public_meetings
         x = 0
         y = 1
         cost = 10
@@ -4674,7 +4674,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 27,2
         id = AOEIW_UNIQUE_OMA_right_1
-        icon = GFX_focus_AUS_diplomatic_effort
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 17
         y = 2
         cost = 6
@@ -4789,7 +4789,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_INA_government
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_democratic_europe
         x = 0
         y = 1
         cost = 10
@@ -5297,7 +5297,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_FWA_government
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_democratic_europe
         x = 0
         y = 1
         cost = 10
@@ -5689,7 +5689,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 23,4
         id = AOEIW_UNIQUE_MLI_left_1
-        icon = GFX_focus_YUG_pan_slavic_congress
+        icon = GFX_focus_generic_democratic_europe
         x = 14
         y = 4
         cost = 7

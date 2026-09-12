@@ -13,7 +13,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,0
         id = AOEIW9_BUL_politics_root
-        icon = GFX_focus_AUS_diplomatic_effort
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 4
         y = 0
         cost = 5
