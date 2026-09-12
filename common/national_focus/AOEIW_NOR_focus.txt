@@ -54,7 +54,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_politics_root }
-        mutually_exclusive = { focus = AOEIW9_NOR_politics_p2_1 focus = AOEIW9_NOR_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_NOR_politics_p2_1 has_completed_focus = AOEIW9_NOR_politics_p3_1 } } }
     }
 
@@ -288,7 +287,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_politics_root }
-        mutually_exclusive = { focus = AOEIW9_NOR_politics_p1_1 focus = AOEIW9_NOR_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_NOR_politics_p1_1 has_completed_focus = AOEIW9_NOR_politics_p2_1 } } }
     }
 
@@ -858,7 +856,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 26,3
         id = AOEIW9_NOR_eco_science_3
-        icon = GFX_focus_generic_university_2
+        icon = GFX_focus_generic_university_3
         x = 13
         y = 3
         cost = 6
@@ -907,7 +905,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,5
         id = AOEIW9_NOR_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_radio_communication
         x = 12
         y = 5
         cost = 4
@@ -1101,7 +1099,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,13
         id = AOEIW9_NOR_mil_army_2
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_focus_generic_army_tanks2
         x = 1
         y = 12
         cost = 7

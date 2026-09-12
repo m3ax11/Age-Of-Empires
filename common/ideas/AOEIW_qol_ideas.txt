@@ -1,0 +1,15 @@
+ideas = {
+    country = {
+        AOEIW_qol_accelerated_doctrine_development = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+                experience_gain_army = 4.50
+                experience_gain_navy = 4.50
+                experience_gain_air = 4.50
+            }
+        }
+    }
+}

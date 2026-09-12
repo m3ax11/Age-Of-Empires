@@ -79,7 +79,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_AUS_politics_root }
-        mutually_exclusive = { focus = AOEIW9_AUS_politics_p2_1 focus = AOEIW9_AUS_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_politics_p2_1 has_completed_focus = AOEIW9_AUS_politics_p3_1 } } }
     }
 
@@ -218,7 +217,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_AUS_politics_root }
-        mutually_exclusive = { focus = AOEIW9_AUS_politics_p1_1 focus = AOEIW9_AUS_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_politics_p1_1 has_completed_focus = AOEIW9_AUS_politics_p3_1 } } }
     }
 
@@ -357,7 +355,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_AUS_politics_root }
-        mutually_exclusive = { focus = AOEIW9_AUS_politics_p1_1 focus = AOEIW9_AUS_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_politics_p1_1 has_completed_focus = AOEIW9_AUS_politics_p2_1 } } }
     }
 
@@ -567,7 +564,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_AUS_eco_root }
-        mutually_exclusive = { focus = AOEIW9_AUS_eco_war_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_eco_war_1 } } }
     }
 
@@ -642,7 +638,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,4
         id = AOEIW9_AUS_eco_civ_5
-        icon = GFX_focus_generic_industry_investment
+        icon = GFX_focus_generic_modernize_industry
         x = 16
         y = 4
         cost = 4
@@ -672,7 +668,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,5
         id = AOEIW9_AUS_eco_civ_6
-        icon = GFX_focus_generic_modernize_industry
+        icon = GFX_focus_generic_industry_3
         x = 16
         y = 5
         cost = 5
@@ -762,7 +758,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_AUS_eco_root }
-        mutually_exclusive = { focus = AOEIW9_AUS_eco_civ_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_eco_civ_1 } } }
     }
 
@@ -977,7 +972,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 18,2
         id = AOEIW9_AUS_eco_science_3
-        icon = GFX_focus_generic_university_2
+        icon = GFX_focus_generic_university_1
         x = 22
         y = 2
         cost = 4
@@ -1243,7 +1238,6 @@ focus_tree = {
         completion_reward = { add_ideas = AOEIW28_AUS_infantry1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = infantry_weapons }  mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_AUS_mil_army_1 }
-        mutually_exclusive = { focus = AOEIW9_AUS_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_mil_army_5 } } }
     }
 
@@ -1298,7 +1292,6 @@ focus_tree = {
         completion_reward = { add_ideas = AOEIW28_AUS_armour1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = armor }  mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_AUS_mil_army_1 }
-        mutually_exclusive = { focus = AOEIW9_AUS_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_AUS_mil_army_2 } } }
     }
 
@@ -2143,7 +2136,7 @@ focus = {
     }
 focus = {
         id = AOEIW28_AUS_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_social_democracy
         x = 30
         y = 6
         cost = 5

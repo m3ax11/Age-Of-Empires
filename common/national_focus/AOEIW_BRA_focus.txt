@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_BRA_politics_p1_1
-        icon = GFX_focus_generic_monarchy_1
+        icon = GFX_focus_generic_improve_the_administration
         x = 1
         y = 1
         cost = 6
@@ -54,7 +54,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_BRA_politics_root }
-        mutually_exclusive = { focus = AOEIW9_BRA_politics_p2_1 focus = AOEIW9_BRA_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_BRA_politics_p2_1 has_completed_focus = AOEIW9_BRA_politics_p3_1 } } }
     }
 
@@ -336,7 +335,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_BRA_politics_root }
-        mutually_exclusive = { focus = AOEIW9_BRA_politics_p1_1 focus = AOEIW9_BRA_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_BRA_politics_p1_1 has_completed_focus = AOEIW9_BRA_politics_p2_1 } } }
     }
 
@@ -453,7 +451,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,7
         id = AOEIW9_BRA_politics_settlement
-        icon = GFX_goal_generic_propaganda
+        icon = GFX_focus_generic_monarchy_1
         x = 4
         y = 7
         cost = 5
@@ -982,7 +980,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 42,6
         id = AOEIW9_BRA_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_2
         x = 22
         y = 6
         cost = 7
@@ -1095,7 +1093,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,3
         id = AOEIW9_BRA_eco_infra_4
-        icon = GFX_focus_generic_reinforcing_the_supply_network
+        icon = GFX_focus_generic_railroad
         x = 15
         y = 3
         cost = 7
@@ -1198,7 +1196,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,12
         id = AOEIW9_BRA_mil_army_2
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_focus_generic_army_tanks2
         x = 1
         y = 11
         cost = 6
@@ -2076,7 +2074,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW38_BRA_continental_arteries
-        icon = GFX_goal_generic_construct_infrastructure
+        icon = GFX_focus_generic_industry_2
         x = 0
         y = 1
         relative_position_id = AOEIW38_BRA_amazon_reckoning

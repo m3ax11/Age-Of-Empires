@@ -38,7 +38,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SWI_politics_root }
-        mutually_exclusive = { focus = AOEIW9_SWI_politics_p2_1 focus = AOEIW9_SWI_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -79,7 +78,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 19,3
         id = AOEIW9_SWI_politics_p1_3
-        icon = GFX_focus_CHI_restore_the_old_republic
+        icon = GFX_focus_generic_election
         x = 15
         y = 3
         cost = 5
@@ -270,7 +269,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SWI_politics_root }
-        mutually_exclusive = { focus = AOEIW9_SWI_politics_p1_1 focus = AOEIW9_SWI_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -930,7 +928,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW9_SWI_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_2
         x = 8
         y = 6
         cost = 5
@@ -1095,7 +1093,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 11,11
         id = AOEIW9_SWI_mil_army_1
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_focus_generic_army_tanks2
         x = 10
         y = 11
         cost = 5
@@ -1486,7 +1484,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 22,13
         id = AOEIW9_SWI_mil_special_3
-        icon = GFX_focus_generic_home_defense
+        icon = GFX_focus_generic_truck
         x = 17
         y = 13
         cost = 5

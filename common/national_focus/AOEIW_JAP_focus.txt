@@ -36,7 +36,6 @@ focus_tree = {
         x = 0
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_JAP_politics_p2_1 focus = AOEIW9_JAP_politics_p3_1 }
         available = {
             has_country_flag = AOEIW_JAP_path_historical
         }
@@ -203,7 +202,6 @@ focus_tree = {
         x = 5
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_JAP_politics_p1_1 focus = AOEIW9_JAP_politics_p3_1 }
         available = {
             has_country_flag = AOEIW_JAP_path_kodoha
         }
@@ -378,7 +376,6 @@ focus_tree = {
         x = 8
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_JAP_politics_p1_1 focus = AOEIW9_JAP_politics_p2_1 }
         available = {
             has_country_flag = AOEIW_JAP_path_antimilitary
         }
@@ -1232,7 +1229,7 @@ focus_tree = {
         # AOEIW visual-layout base: 22,5
         # AOEIW expansion-space base: 27,5
         id = AOEIW9_JAP_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_3
         x = 22
         y = 5
         cost = 5
@@ -1258,7 +1255,7 @@ focus_tree = {
         # AOEIW visual-layout base: 19,6
         # AOEIW expansion-space base: 25,6
         id = AOEIW9_JAP_eco_science_6
-        icon = GFX_focus_generic_university_3
+        icon = GFX_focus_generic_radio_communication
         x = 18
         y = 6
         cost = 5
@@ -1488,7 +1485,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_JAP_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_JAP_mil_army_5 } } }
     }
 
@@ -1549,7 +1545,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_JAP_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_JAP_mil_army_2 } } }
     }
 
@@ -2752,7 +2747,6 @@ focus_tree = {
         y = 11
         cost = 5
         prerequisite = { focus = AOEIW_IMM_JAP_root }
-        mutually_exclusive = { focus = AOEIW_IMM_JAP_navy_1 focus = AOEIW_IMM_JAP_court_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2769,7 +2763,7 @@ focus_tree = {
         # AOEIW visual-layout base: 32,3
         # AOEIW expansion-space base: 40,2
         id = AOEIW_IMM_JAP_army_2
-        icon = GFX_goal_generic_major_war
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 12
         cost = 5
@@ -2815,7 +2809,6 @@ focus_tree = {
         y = 11
         cost = 5
         prerequisite = { focus = AOEIW_IMM_JAP_root }
-        mutually_exclusive = { focus = AOEIW_IMM_JAP_army_1 focus = AOEIW_IMM_JAP_court_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2832,7 +2825,7 @@ focus_tree = {
         # AOEIW visual-layout base: 34,3
         # AOEIW expansion-space base: 44,2
         id = AOEIW_IMM_JAP_navy_2
-        icon = GFX_goal_generic_navy_doctrines_tactics
+        icon = GFX_focus_generic_cruiser2
         x = 5
         y = 12
         cost = 5
@@ -2878,7 +2871,6 @@ focus_tree = {
         y = 11
         cost = 5
         prerequisite = { focus = AOEIW_IMM_JAP_root }
-        mutually_exclusive = { focus = AOEIW_IMM_JAP_army_1 focus = AOEIW_IMM_JAP_navy_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2916,7 +2908,7 @@ focus_tree = {
         # AOEIW visual-layout base: 36,4
         # AOEIW expansion-space base: 48,3
         id = AOEIW_IMM_JAP_court_3
-        icon = GFX_goal_generic_construct_civ_factory
+        icon = GFX_focus_generic_military_industry
         x = 8
         y = 13
         cost = 6
@@ -2957,7 +2949,7 @@ focus_tree = {
 
 focus = {
         id = AOEIW28_JAP_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_election
         x = 11
         y = 16
         cost = 5
@@ -2981,7 +2973,7 @@ focus = {
     focus = {
         id = AOEIW35_JAP_institutional_settlement
         icon = GFX_focus_generic_diplomatic_treaty
-        x = 13
+        x = 5
         y = 15
         cost = 5
         prerequisite = { focus = AOEIW_IMM_JAP_national_destiny }
@@ -2997,7 +2989,7 @@ focus = {
     focus = {
         id = AOEIW35_JAP_institutional_left
         icon = GFX_focus_generic_navy_battleship2
-        x = 12
+        x = 3
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW35_JAP_institutional_settlement }
@@ -3012,7 +3004,7 @@ focus = {
     focus = {
         id = AOEIW35_JAP_institutional_right
         icon = GFX_focus_generic_military_academy
-        x = 14
+        x = 7
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW35_JAP_institutional_settlement }
@@ -3027,7 +3019,7 @@ focus = {
     focus = {
         id = AOEIW35_JAP_institutional_capstone
         icon = GFX_focus_generic_combined_arms
-        x = 13
+        x = 5
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW35_JAP_institutional_left focus = AOEIW35_JAP_institutional_right }

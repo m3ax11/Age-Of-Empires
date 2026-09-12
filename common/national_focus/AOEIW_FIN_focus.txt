@@ -54,7 +54,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_FIN_politics_root }
-        mutually_exclusive = { focus = AOEIW9_FIN_politics_p2_1 focus = AOEIW9_FIN_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FIN_politics_p2_1 has_completed_focus = AOEIW9_FIN_politics_p3_1 } } }
     }
 
@@ -171,7 +170,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,1
         id = AOEIW9_FIN_politics_p2_1
-        icon = GFX_focus_generic_election
+        icon = GFX_goal_generic_political_pressure
         x = 4
         y = 1
         cost = 5
@@ -199,7 +198,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,2
         id = AOEIW9_FIN_politics_p2_2
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_commission
         x = 4
         y = 2
         cost = 6
@@ -330,7 +329,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_FIN_politics_root }
-        mutually_exclusive = { focus = AOEIW9_FIN_politics_p1_1 focus = AOEIW9_FIN_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FIN_politics_p1_1 has_completed_focus = AOEIW9_FIN_politics_p2_1 } } }
     }
 
@@ -968,7 +966,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,6
         id = AOEIW9_FIN_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_3
         x = 15
         y = 6
         cost = 5
@@ -993,7 +991,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,7
         id = AOEIW9_FIN_eco_science_6
-        icon = GFX_focus_generic_university_3
+        icon = GFX_focus_generic_radio_communication
         x = 15
         y = 7
         cost = 6
@@ -1082,7 +1080,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,3
         id = AOEIW9_FIN_eco_infra_4
-        icon = GFX_focus_generic_reinforcing_the_supply_network
+        icon = GFX_focus_generic_industry_investment
         x = 12
         y = 3
         cost = 5

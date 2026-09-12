@@ -36,7 +36,6 @@ focus_tree = {
         x = 0
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_ENG_politics_p2_1 focus = AOEIW9_ENG_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -200,7 +199,6 @@ focus_tree = {
         x = 5
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_ENG_politics_p1_1 focus = AOEIW9_ENG_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -372,7 +370,6 @@ focus_tree = {
         x = 8
         y = 0
         cost = 5
-        mutually_exclusive = { focus = AOEIW9_ENG_politics_p1_1 focus = AOEIW9_ENG_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -1230,7 +1227,7 @@ focus_tree = {
         # AOEIW visual-layout base: 22,5
         # AOEIW expansion-space base: 27,5
         id = AOEIW9_ENG_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_3
         x = 22
         y = 5
         cost = 5
@@ -1256,7 +1253,7 @@ focus_tree = {
         # AOEIW visual-layout base: 19,6
         # AOEIW expansion-space base: 25,6
         id = AOEIW9_ENG_eco_science_6
-        icon = GFX_focus_generic_university_3
+        icon = GFX_focus_generic_university_1
         x = 18
         y = 6
         cost = 5
@@ -1490,7 +1487,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_ENG_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ENG_mil_army_5 } } }
     }
 
@@ -1551,7 +1547,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_ENG_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ENG_mil_army_2 } } }
     }
 
@@ -2554,7 +2549,6 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ENG_root }
         prerequisite = { focus = AOEIW26_ENG_crown_in_parliament }
-        mutually_exclusive = { focus = AOEIW_IMM_ENG_federation_1 focus = AOEIW_IMM_ENG_commons_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2571,7 +2565,7 @@ focus_tree = {
         # AOEIW visual-layout base: 30,3
         # AOEIW expansion-space base: 36,2
         id = AOEIW_IMM_ENG_crown_2
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_goal_generic_political_pressure
         x = 1
         y = 12
         cost = 5
@@ -2618,7 +2612,6 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ENG_root }
         prerequisite = { focus = AOEIW26_ENG_common_defence_treasury }
-        mutually_exclusive = { focus = AOEIW_IMM_ENG_crown_1 focus = AOEIW_IMM_ENG_commons_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2682,7 +2675,6 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ENG_root }
         prerequisite = { focus = AOEIW26_ENG_socialise_commanding_heights }
-        mutually_exclusive = { focus = AOEIW_IMM_ENG_crown_1 focus = AOEIW_IMM_ENG_federation_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2720,7 +2712,7 @@ focus_tree = {
         # AOEIW visual-layout base: 34,4
         # AOEIW expansion-space base: 44,3
         id = AOEIW_IMM_ENG_commons_3
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_generic_industry_investment
         x = 8
         y = 13
         cost = 6
@@ -2761,7 +2753,7 @@ focus_tree = {
 
 focus = {
         id = AOEIW28_ENG_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_social_democracy
         x = 11
         y = 16
         cost = 5
@@ -2785,7 +2777,7 @@ focus = {
     focus = {
         id = AOEIW35_ENG_institutional_settlement
         icon = GFX_goal_generic_major_alliance
-        x = 13
+        x = 5
         y = 15
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ENG_national_destiny }
@@ -2801,7 +2793,7 @@ focus = {
     focus = {
         id = AOEIW35_ENG_institutional_left
         icon = GFX_focus_chi_british_cooperation
-        x = 12
+        x = 3
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW35_ENG_institutional_settlement }
@@ -2816,7 +2808,7 @@ focus = {
     focus = {
         id = AOEIW35_ENG_institutional_right
         icon = GFX_focus_generic_diplomatic_treaty
-        x = 14
+        x = 7
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW35_ENG_institutional_settlement }
@@ -2831,7 +2823,7 @@ focus = {
     focus = {
         id = AOEIW35_ENG_institutional_capstone
         icon = GFX_focus_generic_the_giant_wakes
-        x = 13
+        x = 5
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW35_ENG_institutional_left focus = AOEIW35_ENG_institutional_right }

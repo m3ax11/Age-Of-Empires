@@ -36,12 +36,11 @@ focus_tree = {
         # AOEIW visual-layout base: 18,1
         # AOEIW expansion-space base: 21,1
         id = AOEIW9_ITA_politics_p1_1
-        icon = GFX_focus_ITA_king_vittorio
+        icon = GFX_focus_generic_court
         x = 20
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_ITA_politics_root }
-        mutually_exclusive = { focus = AOEIW9_ITA_politics_p2_1 focus = AOEIW9_ITA_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -84,7 +83,7 @@ focus_tree = {
         # AOEIW visual-layout base: 17,3
         # AOEIW expansion-space base: 20,3
         id = AOEIW9_ITA_politics_p1_3
-        icon = GFX_focus_ITA_democratic_leadership
+        icon = GFX_focus_generic_public_meetings
         x = 19
         y = 3
         cost = 5
@@ -160,7 +159,7 @@ focus_tree = {
         # AOEIW visual-layout base: 18,5
         # AOEIW expansion-space base: 20,6
         id = AOEIW9_ITA_politics_p1_6
-        icon = GFX_focus_ITA_imperial_recognition
+        icon = GFX_goal_generic_more_territorial_claims
         x = 20
         y = 5
         cost = 5
@@ -215,7 +214,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_ITA_politics_root }
-        mutually_exclusive = { focus = AOEIW9_ITA_politics_p1_1 focus = AOEIW9_ITA_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -389,7 +387,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_ITA_politics_root }
-        mutually_exclusive = { focus = AOEIW9_ITA_politics_p1_1 focus = AOEIW9_ITA_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -869,7 +866,6 @@ focus_tree = {
         y = 15
         cost = 7
         prerequisite = { focus = AOEIW18_ITA_adriatic_congress }
-        mutually_exclusive = { focus = AOEIW18_ITA_fortress_peninsula }
         available = {
             OR = {
                 ROM = { exists = yes has_country_flag = AOEIW18_ROM_workers_dialogue }
@@ -900,7 +896,6 @@ focus_tree = {
         y = 15
         cost = 7
         prerequisite = { focus = AOEIW18_ITA_adriatic_congress }
-        mutually_exclusive = { focus = AOEIW18_ITA_mediterranean_workers_compact }
         search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
         completion_reward = { add_ideas = AOEIW18_ITA_fortress_peninsula_spirit  mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 4 }
@@ -935,7 +930,7 @@ focus_tree = {
         # AOEIW visual-layout base: 24,8
         # AOEIW expansion-space base: 26,9
         id = AOEIW9_ITA_politics_settlement
-        icon = GFX_focus_ITA_the_italian_republic
+        icon = GFX_focus_generic_election
         x = 25
         y = 15
         cost = 7
@@ -1305,7 +1300,7 @@ focus_tree = {
         # AOEIW visual-layout base: 13,4
         # AOEIW expansion-space base: 11,5
         id = AOEIW9_ITA_eco_war_5
-        icon = GFX_focus_generic_modernize_industry
+        icon = GFX_focus_generic_industry_2
         x = 15
         y = 4
         cost = 5
@@ -1398,7 +1393,7 @@ focus_tree = {
         # AOEIW visual-layout base: 13,6
         # AOEIW expansion-space base: 13,8
         id = AOEIW9_ITA_eco_war_8
-        icon = GFX_focus_generic_mass_production
+        icon = GFX_focus_generic_industry_investment
         x = 15
         y = 6
         cost = 5
@@ -1529,7 +1524,7 @@ focus_tree = {
         # AOEIW visual-layout base: 7,4
         # AOEIW expansion-space base: 8,5
         id = AOEIW9_ITA_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_radio_communication
         x = 11
         y = 4
         cost = 5
@@ -1812,7 +1807,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_0 add_idea = AOEI
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_ITA_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ITA_mil_army_5 } } }
     }
 
@@ -1873,7 +1867,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_0 add_idea = AOEI
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_ITA_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ITA_mil_army_2 } } }
     }
 
@@ -1965,7 +1958,7 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_1 add_idea = AOEI
         # AOEIW visual-layout base: 2,18
         # AOEIW expansion-space base: 4,20
         id = AOEIW9_ITA_mil_army_10
-        icon = GFX_focus_ITA_to_live_as_a_lion
+        icon = GFX_focus_generic_combined_arms
         x = 4
         y = 18
         cost = 5
@@ -2962,7 +2955,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ITA_root }
-        mutually_exclusive = { focus = AOEIW_IMM_ITA_mediterranean_1 focus = AOEIW_IMM_ITA_monarchy_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3025,7 +3017,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ITA_root }
-        mutually_exclusive = { focus = AOEIW_IMM_ITA_corporate_1 focus = AOEIW_IMM_ITA_monarchy_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3088,7 +3079,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ITA_root }
-        mutually_exclusive = { focus = AOEIW_IMM_ITA_corporate_1 focus = AOEIW_IMM_ITA_mediterranean_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3228,7 +3218,7 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
     focus = {
         # AOEIW visual-layout base: 40,2
         id = AOEIW22_ITA_choose_foreign_course
-        icon = GFX_focus_ITA_italian_hegemony
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 25
         y = 9
         cost = 5
@@ -3253,7 +3243,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
         y = 10
         cost = 5
         prerequisite = { focus = AOEIW22_ITA_choose_foreign_course }
-        mutually_exclusive = { focus = AOEIW22_ITA_mediterranean_bloc focus = AOEIW22_ITA_diplomatic_opportunism }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3293,7 +3282,6 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
         y = 10
         cost = 5
         prerequisite = { focus = AOEIW22_ITA_choose_foreign_course }
-        mutually_exclusive = { focus = AOEIW22_ITA_axis_with_berlin focus = AOEIW22_ITA_mediterranean_bloc }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3541,7 +3529,7 @@ swap_ideas = { remove_idea = AOEIW6_ITA_military_modernisation_2 add_idea = AOEI
 
 focus = {
         id = AOEIW28_ITA_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_improve_the_administration
         x = 1
         y = 16
         cost = 5
@@ -3565,8 +3553,8 @@ focus = {
     focus = {
         id = AOEIW35_ITA_institutional_settlement
         icon = GFX_focus_generic_conspiracy
-        x = 35
-        y = 11
+        x = 25
+        y = 21
         cost = 5
         prerequisite = { focus = AOEIW_IMM_ITA_national_destiny }
         dynamic = yes
@@ -3581,8 +3569,8 @@ focus = {
     focus = {
         id = AOEIW35_ITA_institutional_left
         icon = GFX_focus_generic_support_the_left_right
-        x = 34
-        y = 12
+        x = 23
+        y = 22
         cost = 5
         prerequisite = { focus = AOEIW35_ITA_institutional_settlement }
         mutually_exclusive = { focus = AOEIW35_ITA_institutional_right }
@@ -3596,8 +3584,8 @@ focus = {
     focus = {
         id = AOEIW35_ITA_institutional_right
         icon = GFX_goal_generic_propaganda
-        x = 36
-        y = 12
+        x = 27
+        y = 22
         cost = 5
         prerequisite = { focus = AOEIW35_ITA_institutional_settlement }
         mutually_exclusive = { focus = AOEIW35_ITA_institutional_left }
@@ -3611,8 +3599,8 @@ focus = {
     focus = {
         id = AOEIW35_ITA_institutional_capstone
         icon = GFX_focus_generic_combined_arms
-        x = 35
-        y = 13
+        x = 25
+        y = 23
         cost = 5
         prerequisite = { focus = AOEIW35_ITA_institutional_left focus = AOEIW35_ITA_institutional_right }
         available_if_capitulated = no

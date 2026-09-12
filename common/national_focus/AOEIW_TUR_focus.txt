@@ -40,7 +40,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_TUR_politics_root }
-        mutually_exclusive = { focus = AOEIW9_TUR_politics_p2_1 focus = AOEIW9_TUR_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -213,7 +212,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_TUR_politics_root }
-        mutually_exclusive = { focus = AOEIW9_TUR_politics_p1_1 focus = AOEIW9_TUR_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -380,7 +378,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_TUR_politics_root }
-        mutually_exclusive = { focus = AOEIW9_TUR_politics_p1_1 focus = AOEIW9_TUR_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -1370,7 +1367,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_TUR_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_TUR_mil_army_5 } } }
     }
 
@@ -1431,7 +1427,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_TUR_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_TUR_mil_army_2 } } }
     }
 
@@ -2312,7 +2307,7 @@ focus_tree = {
 
 focus = {
         id = AOEIW28_TUR_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_improve_the_administration
         x = 9
         y = 16
         cost = 5

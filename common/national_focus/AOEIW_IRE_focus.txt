@@ -54,7 +54,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_politics_root }
-        mutually_exclusive = { focus = AOEIW9_IRE_politics_p2_1 focus = AOEIW9_IRE_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_IRE_politics_p2_1 has_completed_focus = AOEIW9_IRE_politics_p3_1 } } }
     }
 
@@ -288,7 +287,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_politics_root }
-        mutually_exclusive = { focus = AOEIW9_IRE_politics_p1_1 focus = AOEIW9_IRE_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_IRE_politics_p1_1 has_completed_focus = AOEIW9_IRE_politics_p2_1 } } }
     }
 
@@ -916,7 +914,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 36,6
         id = AOEIW9_IRE_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_2
         x = 18
         y = 6
         cost = 7
@@ -1107,7 +1105,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,13
         id = AOEIW9_IRE_mil_army_2
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_army_doctrines
         x = 1
         y = 12
         cost = 6

@@ -98,6 +98,24 @@ scripted_map_modes = {
                         set_temp_variable = { thickness = 5.0 }
                         set_temp_variable = { highlighted = 1.0 }
                     }
+
+                    # Scripted map-mode buttons are registered while the game is
+                    # loading, so the game rule disables the custom presentation
+                    # by replacing it with a single unobtrusive neutral layer.
+                    if = {
+                        limit = {
+                            has_game_rule = {
+                                rule = AOEIW_imperial_world_map_mode_rule
+                                option = AOEIW_MAP_MODE_DISABLED
+                            }
+                        }
+                        set_temp_variable = { red = 0.27 }
+                        set_temp_variable = { green = 0.27 }
+                        set_temp_variable = { blue = 0.27 }
+                        set_temp_variable = { alpha = 0.45 }
+                        set_temp_variable = { thickness = 1.0 }
+                        set_temp_variable = { highlighted = 0.0 }
+                    }
                 }
             }
             thickness = yes

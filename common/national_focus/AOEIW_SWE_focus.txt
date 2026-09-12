@@ -54,7 +54,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_SWE_politics_root }
-        mutually_exclusive = { focus = AOEIW9_SWE_politics_p2_1 focus = AOEIW9_SWE_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWE_politics_p2_1 has_completed_focus = AOEIW9_SWE_politics_p3_1 } } }
     }
 
@@ -171,7 +170,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,1
         id = AOEIW9_SWE_politics_p2_1
-        icon = GFX_focus_generic_monarchy_1
+        icon = GFX_focus_generic_improve_the_administration
         x = 4
         y = 1
         cost = 5
@@ -330,7 +329,6 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_SWE_politics_root }
-        mutually_exclusive = { focus = AOEIW9_SWE_politics_p1_1 focus = AOEIW9_SWE_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWE_politics_p1_1 has_completed_focus = AOEIW9_SWE_politics_p2_1 } } }
     }
 
@@ -603,7 +601,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,4
         id = AOEIW9_SWE_eco_civ_5
-        icon = GFX_focus_generic_industry_investment
+        icon = GFX_focus_generic_industry_3
         x = 16
         y = 4
         cost = 7
@@ -768,7 +766,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 36,3
         id = AOEIW9_SWE_eco_war_4
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_generic_industry_2
         x = 19
         y = 3
         cost = 7
@@ -1189,7 +1187,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,12
         id = AOEIW9_SWE_mil_army_2
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_small_arms
         x = 1
         y = 11
         cost = 4

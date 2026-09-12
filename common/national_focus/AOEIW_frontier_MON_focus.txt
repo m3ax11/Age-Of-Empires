@@ -217,7 +217,6 @@ focus = {
     icon = GFX_focus_generic_arms_trade
     x = 3 y = 11 cost = 6
     prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
-    mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_MON_guarded_neutrality }
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     completion_reward = {
         set_country_flag = AOEIW38_ASIA_MIDDLE_MON_solidarity_policy
@@ -236,7 +235,6 @@ focus = {
     icon = GFX_focus_generic_concessions
     x = 7 y = 11 cost = 6
     prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
-    mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_MON_eastern_solidarity }
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     completion_reward = {
         set_country_flag = AOEIW38_ASIA_MIDDLE_MON_neutrality_policy

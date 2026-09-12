@@ -43,12 +43,11 @@ focus_tree = {
         # AOEIW visual-layout base: 16,1
         # AOEIW expansion-space base: 18,1
         id = AOEIW9_CHI_politics_p1_1
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_court
         x = 16
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_CHI_politics_root }
-        mutually_exclusive = { focus = AOEIW9_CHI_politics_p2_1 focus = AOEIW9_CHI_politics_p3_1 }
         available = {
             OR = {
                 is_ai = no
@@ -419,7 +418,6 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_CHI_politics_root }
-        mutually_exclusive = { focus = AOEIW9_CHI_politics_p1_1 focus = AOEIW9_CHI_politics_p2_1 }
         available = {
             OR = {
                 is_ai = no
@@ -649,7 +647,7 @@ focus_tree = {
         # AOEIW visual-layout base: 1,2
         # AOEIW expansion-space base: 2,2
         id = AOEIW9_CHI_eco_civ_1
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_generic_mass_production
         x = 0
         y = 2
         cost = 5
@@ -1185,7 +1183,7 @@ focus_tree = {
         # AOEIW visual-layout base: 9,6
         # AOEIW expansion-space base: 8,6
         id = AOEIW9_CHI_eco_science_5
-        icon = GFX_focus_generic_industrial_experts
+        icon = GFX_focus_generic_university_1
         x = 8
         y = 6
         cost = 5
@@ -1443,7 +1441,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_CHI_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_CHI_mil_army_5 } } }
     }
 
@@ -1504,7 +1501,6 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        mutually_exclusive = { focus = AOEIW9_CHI_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_CHI_mil_army_2 } } }
     }
 
@@ -1590,7 +1586,7 @@ focus_tree = {
         # AOEIW visual-layout base: 10,20
         # AOEIW expansion-space base: 10,20
         id = AOEIW9_CHI_mil_army_10
-        icon = GFX_focus_chi_army_reform
+        icon = GFX_focus_generic_army_doctrines_2
         x = 10
         y = 18
         cost = 5
@@ -2481,7 +2477,7 @@ focus_tree = {
         # AOEIW visual-layout base: 37,1
         # AOEIW expansion-space base: 45,0
         id = AOEIW_IMM_CHI_root
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_improve_the_administration
         x = 33
         y = 1
         cost = 5
@@ -2506,7 +2502,6 @@ focus_tree = {
         y = 2
         cost = 5
         prerequisite = { focus = AOEIW_IMM_CHI_root }
-        mutually_exclusive = { focus = AOEIW_IMM_CHI_salvation_1 focus = AOEIW_IMM_CHI_charter_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2544,7 +2539,7 @@ focus_tree = {
         # AOEIW visual-layout base: 35,4
         # AOEIW expansion-space base: 41,3
         id = AOEIW_IMM_CHI_court_3
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_focus_generic_public_meetings
         x = 31
         y = 4
         cost = 6
@@ -2586,7 +2581,7 @@ focus_tree = {
         # AOEIW visual-layout base: 37,3
         # AOEIW expansion-space base: 45,2
         id = AOEIW_IMM_CHI_salvation_2
-        icon = GFX_goal_generic_forceful_treaty
+        icon = GFX_goal_generic_alliance
         x = 33
         y = 3
         cost = 5
@@ -2632,7 +2627,6 @@ focus_tree = {
         y = 2
         cost = 5
         prerequisite = { focus = AOEIW_IMM_CHI_root }
-        mutually_exclusive = { focus = AOEIW_IMM_CHI_court_1 focus = AOEIW_IMM_CHI_salvation_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2711,7 +2705,7 @@ focus_tree = {
 
 focus = {
         id = AOEIW28_CHI_field_workshops
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_election
         x = 8
         y = 16
         cost = 5

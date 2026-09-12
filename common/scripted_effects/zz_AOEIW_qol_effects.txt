@@ -24,3 +24,14 @@ AOEIW_qol_grant_initial_doctrine_choices = {
         }
     }
 }
+
+# The Imperial World reaches its decisive conflicts early. This visible global
+# programme lets players and AI finish their doctrine development by 1939.
+AOEIW_qol_grant_accelerated_doctrine_development = {
+    if = {
+        limit = {
+            NOT = { has_idea = AOEIW_qol_accelerated_doctrine_development }
+        }
+        add_ideas = AOEIW_qol_accelerated_doctrine_development
+    }
+}
