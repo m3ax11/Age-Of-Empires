@@ -31,6 +31,8 @@ The regional authored-content passes under `AOEIW38_AMERICAS_AFRICA`, `AOEIW38_E
 
 Runtime status: this exact post-change working tree reached HOI4 1.19.2's main-menu reset with only this edition enabled. The raw `error.log` contained three warnings from stale disabled Workshop descriptors and no AOE/RT56 parser errors. The temporary playset descriptor was removed and the user's prior `dlc_load.json` was restored byte-for-byte. A country was not selected in this automated pass, so the remaining release gate is a fresh **Time of Upheaval** 1936 start followed by targeted gameplay checks of GER, SPR/ARG/PRU, CHI/MAN, USA, British succession, Mongolia/Yemen convergence, regional restoration and one imperial-aftermath chain.
 
+The authoritative final-patch backlog is now `FINAL_RELEASE_AUDIT.md`. Its reproducible inventory covers all 4,107 AOE focuses and confirms two major editorial debts: 1,136 English AOE localisation keys do not yet have German counterparts (including 64 focus names plus their descriptions), and 3,121 descriptions belong to text groups repeated at least four times. The current post-layout/post-branding HEAD still needs a fresh 1936 runtime start; the earlier main-menu smoke test predates commits `339888ab` and `d611a3c3`.
+
 ## Authoritative input and working copy
 
 - User-selected source: `C:\Users\Stack\Documents\Codex\2026-08-20\files-mentioned-by-the-user-agentic\r6\Age Of Empires - RT56 Edition.zip`.
