@@ -214,13 +214,13 @@ ideas = {
             picture = generic_king_handled
             allowed = { always = no }
             removal_cost = -1
-            modifier = { political_power_factor = 0.08 stability_factor = 0.08 consumer_goods_factor = 0.02 }
+            modifier = { political_power_factor = 0.06 stability_factor = 0.10 trade_opinion_factor = 0.12 consumer_goods_factor = 0.01 }
         }
         AOEIW22_USA_aristocratic_republic_spirit = {
             picture = generic_democratic_drift_bonus
             allowed = { always = no }
             removal_cost = -1
-            modifier = { political_power_factor = 0.08 stability_factor = 0.08 consumer_goods_factor = 0.02 }
+            modifier = { political_power_factor = 0.10 stability_factor = 0.05 research_speed_factor = 0.04 industrial_capacity_factory = 0.03 }
         }
         AOEIW22_USA_business_concessions_spirit = {
             picture = generic_foreign_capital
@@ -401,6 +401,12 @@ ideas = {
             allowed = { always = no }
             removal_cost = -1
             modifier = { industrial_capacity_dockyard = 0.18 naval_speed_factor = 0.06 navy_org_factor = 0.08 }
+        }
+        AOEIW22_USA_federal_reconciliation_spirit = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.06 political_power_factor = 0.06 consumer_goods_factor = -0.01 }
         }
         AOEIW22_USA_pacific_mandate_spirit = {
             picture = generic_democratic_opposition

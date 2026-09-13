@@ -1312,6 +1312,7 @@ focus_tree = {
         cost = 5
         prerequisite = { focus = AOEIW9_USA_eco_infra_2 }
         prerequisite = { focus = AOEIW9_USA_eco_infra_3 }
+        prerequisite = { focus = AOEIW9_USA_eco_infra_1 }
         
         
         
@@ -2127,10 +2128,13 @@ focus_tree = {
             }
             add_war_support = 0.02
             add_command_power = 5
+            add_ideas = AOEIW_STRUCT_USA_atlantic_mission
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
         }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_a_3 }
     }
 
     focus = {
@@ -2138,10 +2142,11 @@ focus_tree = {
         # AOEIW expansion-space base: 31,13
         id = AOEIW9_USA_dip_a_3
         icon = GFX_focus_generic_concessions
-        x = 26
-        y = 13
+        x = 29
+        y = 12
         cost = 7
-        prerequisite = { focus = AOEIW9_USA_dip_a_2 }
+        prerequisite = { focus = AOEIW9_USA_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_a_2 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2149,6 +2154,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_USA_atlantic_commercial_pressure
             add_tech_bonus = {
                 name = AOEIW11_USA_dip_a_3_industry
                 bonus = 0.50
@@ -2157,7 +2163,9 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.50 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
         }
     }
 
@@ -2166,10 +2174,10 @@ focus_tree = {
         # AOEIW expansion-space base: 29,14
         id = AOEIW9_USA_dip_a_4
         icon = GFX_goal_generic_army_doctrines
-        x = 26
-        y = 14
+        x = 27
+        y = 13
         cost = 7
-        prerequisite = { focus = AOEIW9_USA_dip_a_3 }
+        prerequisite = { focus = AOEIW9_USA_dip_a_2 focus = AOEIW9_USA_dip_a_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2196,8 +2204,8 @@ focus_tree = {
         # AOEIW expansion-space base: 31,15
         id = AOEIW9_USA_dip_a_5
         icon = GFX_goal_generic_forceful_treaty
-        x = 26
-        y = 15
+        x = 27
+        y = 14
         cost = 5
         prerequisite = { focus = AOEIW9_USA_dip_a_4 }
         cancel_if_invalid = yes
@@ -2224,8 +2232,8 @@ focus_tree = {
         # AOEIW expansion-space base: 29,16
         id = AOEIW9_USA_dip_a_6
         icon = GFX_focus_generic_diplomatic_treaty
-        x = 26
-        y = 16
+        x = 27
+        y = 15
         cost = 5
         prerequisite = { focus = AOEIW9_USA_dip_a_5 }
         cancel_if_invalid = yes
@@ -2253,8 +2261,8 @@ focus_tree = {
         # AOEIW expansion-space base: 31,17
         id = AOEIW9_USA_dip_a_7
         icon = GFX_goal_generic_political_pressure
-        x = 26
-        y = 17
+        x = 27
+        y = 16
         cost = 7
         prerequisite = { focus = AOEIW9_USA_dip_a_6 }
         cancel_if_invalid = yes
@@ -2304,7 +2312,7 @@ focus_tree = {
         # AOEIW expansion-space base: 36,12
         id = AOEIW9_USA_dip_b_2
         icon = GFX_focus_generic_military_mission
-        x = 33
+        x = 31
         y = 12
         cost = 5
         prerequisite = { focus = AOEIW9_USA_dip_b_1 }
@@ -2322,10 +2330,13 @@ focus_tree = {
             }
             add_war_support = 0.02
             add_command_power = 5
+            add_ideas = AOEIW_STRUCT_USA_pacific_mission
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
         }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_b_3 }
     }
 
     focus = {
@@ -2333,10 +2344,11 @@ focus_tree = {
         # AOEIW expansion-space base: 35,13
         id = AOEIW9_USA_dip_b_3
         icon = GFX_focus_generic_concessions
-        x = 33
-        y = 13
+        x = 34
+        y = 12
         cost = 5
-        prerequisite = { focus = AOEIW9_USA_dip_b_2 }
+        prerequisite = { focus = AOEIW9_USA_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_b_2 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2344,6 +2356,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_USA_pacific_commercial_pressure
             add_tech_bonus = {
                 name = AOEIW11_USA_dip_b_3_industry
                 bonus = 0.50
@@ -2352,7 +2365,9 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.50 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
         }
     }
 
@@ -2362,9 +2377,9 @@ focus_tree = {
         id = AOEIW9_USA_dip_b_4
         icon = GFX_goal_generic_army_doctrines
         x = 33
-        y = 14
+        y = 13
         cost = 5
-        prerequisite = { focus = AOEIW9_USA_dip_b_3 }
+        prerequisite = { focus = AOEIW9_USA_dip_b_2 focus = AOEIW9_USA_dip_b_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2392,7 +2407,7 @@ focus_tree = {
         id = AOEIW9_USA_dip_b_5
         icon = GFX_goal_generic_forceful_treaty
         x = 33
-        y = 15
+        y = 14
         cost = 5
         prerequisite = { focus = AOEIW9_USA_dip_b_4 }
         cancel_if_invalid = yes
@@ -2420,7 +2435,7 @@ focus_tree = {
         id = AOEIW9_USA_dip_b_6
         icon = GFX_focus_generic_diplomatic_treaty
         x = 33
-        y = 16
+        y = 15
         cost = 5
         prerequisite = { focus = AOEIW9_USA_dip_b_5 }
         cancel_if_invalid = yes
@@ -2449,7 +2464,7 @@ focus_tree = {
         id = AOEIW9_USA_dip_b_7
         icon = GFX_goal_generic_political_pressure
         x = 33
-        y = 17
+        y = 16
         cost = 7
         prerequisite = { focus = AOEIW9_USA_dip_b_6 }
         cancel_if_invalid = yes
@@ -2697,12 +2712,14 @@ focus_tree = {
         y = 17
         cost = 5
         prerequisite = { focus = AOEIW9_USA_special_7 }
+        prerequisite = { focus = AOEIW9_USA_eco_final }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
         completion_reward = {
             army_experience = 10
+            add_ideas = AOEIW_STRUCT_USA_arsenal_of_the_republic
         }
         ai_will_do = {
             factor = 10
@@ -4345,9 +4362,13 @@ focus_tree = {
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_stability = 0.10 set_country_flag = AOEIW22_USA_reunification_claim
+            add_stability = 0.10
+            set_country_flag = AOEIW22_USA_reunification_claim
+            remove_ideas = AOEIW22_USA_pacific_republic_spirit
+            drop_cosmetic_tag = yes
+            add_ideas = AOEIW22_USA_federal_reconciliation_spirit
          mark_focus_tree_layout_dirty = yes }
-        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.75 has_stability < 0.60 } }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_pacific_power has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
     }
 
@@ -4367,7 +4388,7 @@ focus_tree = {
         completion_reward = {
             add_ideas = AOEIW22_USA_oceanic_power_spirit navy_experience = 40
          mark_focus_tree_layout_dirty = yes }
-        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.75 has_war = yes } }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
     }
 
@@ -4444,7 +4465,7 @@ focus_tree = {
         completion_reward = {
             set_politics = { ruling_party = constitutional_monarchism elections_allowed = yes } set_country_leader_ideology = federal_monarchism set_cosmetic_tag = AOEIW22_USA_NEW_ENGLAND add_ideas = AOEIW22_USA_aristocratic_republic_spirit
          mark_focus_tree_layout_dirty = yes }
-        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.50 ENG = { exists = no } } }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_anglo_monarchy has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
     }
 
@@ -4464,7 +4485,7 @@ focus_tree = {
         completion_reward = {
             set_politics = { ruling_party = constitutional_monarchism elections_allowed = yes } set_country_leader_ideology = constitutional_monarchism_type set_cosmetic_tag = AOEIW22_USA_NEW_ENGLAND_MONARCHY add_ideas = AOEIW22_USA_anglo_monarchy_spirit
          mark_focus_tree_layout_dirty = yes }
-        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.50 ENG = { exists = yes } } }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_aristocratic_republic has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
     }
 
@@ -4594,7 +4615,8 @@ focus = {
         prerequisite = { focus = AOEIW9_USA_mil_army_8 }
         available_if_capitulated = no
         completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
-        ai_will_do = { factor = 5 }
+        mutually_exclusive = { focus = AOEIW28_USA_signals }
+        ai_will_do = { factor = 5 modifier = { factor = 1.50 has_war = no } }
     }
 focus = {
         id = AOEIW28_USA_signals
@@ -4605,7 +4627,8 @@ focus = {
         prerequisite = { focus = AOEIW9_USA_mil_army_8 }
         available_if_capitulated = no
         completion_reward = { army_experience = 20 add_command_power = 20 }
-        ai_will_do = { factor = 5 }
+        mutually_exclusive = { focus = AOEIW28_USA_field_workshops }
+        ai_will_do = { factor = 5 modifier = { factor = 1.50 has_war = yes } }
     }
 
     focus = {

@@ -311,7 +311,7 @@ Russia is a continental major with enough strategic depth to pursue policy again
 - The industrial capstone requires the Ural logistics spine, and the industrial-colossus payoff requires the capstone without creating a prerequisite cycle.
 - No political route, depth programme or existing capstone is orphaned; no missing reference or cycle is introduced.
 
-## United States — pre-edit structural report (awaiting approval)
+## United States — structural report and implementation
 
 ### Major-power theatre assumption
 
@@ -365,7 +365,7 @@ The United States is a two-ocean major power. Atlantic and Pacific policy must r
 - The Anglo-American monarchy and aristocratic republic use different regime/cosmetic outcomes but their permanent spirits have identical modifiers: political power +8%, stability +8% and consumer goods +2%.
 - Other endpoints such as *Continental Hegemony*, *Federation of the Americas*, *Wake Only When Struck*, *Integrated War Planning* and *The Continental Arsenal* have substantial ideas, faction changes or events and should remain unchanged.
 
-### Proposed structural changes — no implementation without approval
+### Approved structural changes
 
 1. Branch `AOEIW9_USA_dip_a_2` (Atlantic military mission) and `AOEIW9_USA_dip_a_3` (Atlantic economic leverage) directly from `AOEIW9_USA_dip_a_1`, make them mutex, and reconverge through OR at `AOEIW9_USA_dip_a_4`.
 2. Apply the same method choice to the Pacific: `dip_b_2` versus `dip_b_3`, with OR reconvergence at `dip_b_4`.
@@ -406,5 +406,104 @@ The United States is a two-ocean major power. Atlantic and Pacific policy must r
 - Rejoining the Union removes the Pacific political identity and produces a functioning federal outcome; no new write-only flag is introduced.
 - Boston Congress spirits no longer have identical modifier sets.
 - No existing political route, war goal or capstone is orphaned; the graph has no missing references or cycles.
+
+### Post-edit result
+
+- Atlantic and Pacific policy remain compatible, and the Two-Ocean capstone still requires both completed theatres.
+- Each theatre now presents a visible mission-versus-economic-leverage diamond and OR reconvergence. The nodes were repositioned locally so the new choices do not appear as overlapping vertical chains.
+- Five new permanent profiles implement the four diplomatic outcomes and the Arsenal endgame. The Atlantic mission emphasizes escort readiness; Atlantic leverage civilian commerce; the Pacific mission naval aviation; Pacific leverage shipbuilding/resources; and the Arsenal national production and supply.
+- Field Workshops and Signals are mutex and retain their original research-versus-command rewards.
+- The TVA focus feeds the final defence-road programme. *Arsenal of the Republic* requires both its existing chain and the industrial capstone.
+- *Rejoin the Union* now removes the Pacific Republic spirit, drops its cosmetic tag and grants federal reconciliation while preserving the existing flag and stability.
+- Boston Congress outcomes now have distinct Atlantic-monarchical and research/administrative-republican modifiers.
+- Static validation passes. The graph reports 201 focuses, eight explicit mutex loci, 28 reconvergences, no missing references and no cycles.
+
+## United Kingdom — pre-edit structural report (awaiting approval)
+
+### Major-power theatre assumption
+
+Britain is a global major power whose security doctrine necessarily spans the Atlantic and continental Europe. The Atlantic rivalry with the United States and continental commitments against Germany should remain compatible. Mutex belongs between competing methods inside each theatre and between incompatible constitutional settlements; it should not force Britain to abandon one strategic region.
+
+### Structural baseline
+
+- 115 focuses, 14 graph branch points, 11 multi-parent reconvergences, one explicit mutex locus and eight endpoints.
+- The audit reports three long political chains, each containing nine focuses. Manual inspection also finds two seven-focus diplomatic lines that the conservative chain heuristic does not classify because they share the diplomatic root.
+- There are no missing prerequisite or mutex references and no prerequisite cycles.
+
+### Current true forks
+
+- Britain's opening political choice is implemented through mutually protective `allow_branch` conditions: Crown in Parliament, Imperial Federation or the People's Commonwealth. Their capstones grant distinct crown/stability, federation/service-experience and socialist/industrial outcomes.
+- The late institutional settlement explicitly chooses *Consult the Dominions* or *Centralise the War Cabinet*. These move the governance balance in opposite directions and trade stability for war support.
+- Infantry doctrine and independent armoured divisions are protected alternatives and reconverge at *One Supply Service*.
+- Field Workshops and Signals visually branch and feed an OR prerequisite, but are not mutex; the player can still complete both.
+
+### Current reconvergence points
+
+- The three political settlements reconverge through OR at *The Machinery of Empire* and then continue into distinct crown, federation or Commons national-destiny branches.
+- *The Imperial Production System* currently uses one OR block containing civilian industry, war industry and science. It can therefore be completed after only one of the three programmes and ignores all four infrastructure endpoints.
+- *British Combined-Arms Doctrine* likewise uses one OR block containing army, air and navy. Despite its title, completing any single service opens it.
+- *The Empire's Global Commitments* accepts either the Atlantic or German theatre through OR. Both theatres remain independently available, so Britain may still complete both.
+- Field Workshops and Signals reconverge through OR at *All Arms Staff Exercises*.
+
+### Current cross-branch links
+
+- Each political capstone both reaches the shared machinery-of-government settlement and unlocks its matching national-destiny branch.
+- The selected political settlement combines with *The Conference of the Realm* to open Crown, Dominion or Commons follow-up content.
+- Civilian industry spawns four infrastructure leaves, but none of those leaves currently contributes to the industrial capstone.
+- Army, air and navy each lead toward the military capstone, although its current OR logic does not require combined development.
+- The diplomatic tree remains detached from domestic politics, which is acceptable for a shared imperial grand-strategy programme and does not require an artificial connector.
+
+### Long unbranched chains
+
+- The parliamentary, federation and People's Commonwealth routes each run through nine consecutive focuses. They follow an explicit regime choice, build toward distinct settlements and then open dedicated follow-up branches; adding arbitrary internal mutex choices would dilute those political narratives.
+- Atlantic policy is a seven-focus straight progression from rivalry through mission, economic pressure, staff talks and ultimatum to an annexation war goal against the USA.
+- Continental policy repeats the seven-stage sequence against Germany. Mission and economic pressure are presented as separate acts but are currently both mandatory.
+
+### Undercooked or contradictory endpoints
+
+- All four infrastructure focuses are terminal leaves. Manchester energy, Liverpool freight, Welsh housing and London logistics never contribute to *The Imperial Production System*.
+- The industrial capstone may be taken after only civilian industry, only war industry or only science. This contradicts the claimed imperial production system.
+- The combined-arms capstone may be taken after only army, only air or only navy reform. Its reward grants experience to all three services regardless of which one was completed.
+- Atlantic and continental mission/economic stages are mandatory linear work queues rather than strategic choices.
+- The diplomatic capstone's OR requirement is not itself a defect: it gives Britain a payoff after one completed theatre while leaving the second available for a longer global campaign.
+- The political and institutional capstones already grant distinct spirits, balance changes and follow-up content and should not be rebuilt.
+
+### Proposed structural changes — no implementation without approval
+
+1. Branch `AOEIW9_ENG_dip_a_2` (Atlantic mission) and `AOEIW9_ENG_dip_a_3` (Atlantic economic pressure) directly from `AOEIW9_ENG_dip_a_1`, make them mutex and reconverge through OR at `AOEIW9_ENG_dip_a_4`.
+2. Apply the equivalent choice to continental policy: `dip_b_2` versus `dip_b_3`, with OR reconvergence at `dip_b_4`.
+3. Keep Atlantic and continental theatres compatible and preserve the OR prerequisite at `AOEIW9_ENG_dip_final`. Britain can earn the global-commitments payoff after one complete strategy and may pursue the other later.
+4. Add four distinct permanent method profiles to the existing focuses:
+   - Atlantic mission: convoy escort, naval organisation and Atlantic naval-base construction.
+   - Atlantic economic pressure: trade influence, dockyard throughput and reduced import/consumer pressure.
+   - Continental mission: army organisation, supply preparation and land-fort construction.
+   - Continental economic pressure: factory-efficiency growth, intelligence-network development and continental trade influence.
+   Existing immediate rewards remain attached to their IDs. The Atlantic and continental profiles deliberately use different military and economic categories rather than target-swapped copies.
+5. Make `AOEIW28_ENG_field_workshops` and `AOEIW28_ENG_signals` mutex. Preserve their existing support-research versus army-experience/command-power rewards and the OR reconvergence at `AOEIW9_ENG_mil_army_9`.
+6. Make `AOEIW9_ENG_eco_infra_4` require Manchester energy (`eco_infra_1`), Liverpool freight (`eco_infra_2`) and Welsh housing (`eco_infra_3`) as separate AND prerequisites in addition to its existing civilian-industry prerequisite.
+7. Change `AOEIW9_ENG_eco_final` to require either the civilian or war-industry capstone, plus science and the completed infrastructure/logistics focus as separate AND prerequisites. This preserves an industrial orientation choice without allowing one programme to substitute for the whole economy.
+8. Change `AOEIW9_ENG_mil_final` to three separate AND prerequisites for army, air and navy. *British Combined-Arms Doctrine* should follow actual reform of all three services.
+9. Adjust AI weights only at the four diplomatic method nodes and the workshops/signals choice. Peace and economic strength favour commercial pressure/workshops; war and immediate continental or naval danger favour missions/signals.
+10. Preserve every political route, `allow_branch` safeguard, focus ID, target, annexation war goal, existing reward and institutional capstone effect. Do not alter the Victoria/George succession setting during this structural pass.
+
+### Outcome-divergence audit
+
+| Choice | Before | Proposed outcome | Assessment |
+|---|---|---|---|
+| Atlantic mission vs economic pressure | Sequential; immediate command resources followed by generic economic pressure | Escort/base readiness versus maritime commerce and dockyard economy | **Insufficient structure**, corrected with mutex and persistent distinct categories. |
+| Continental mission vs economic pressure | Sequential copy of the Atlantic pattern with Germany as target | Army/supply/frontier preparation versus factory/intelligence/trade pressure | **Insufficient structure**, corrected without copying the Atlantic reward profiles. |
+| Field Workshops vs Signals | Different support research versus experience/command rewards, but both collectible | Same rewards made mutually exclusive | **Genuine rewards**, mutex needed to make the displayed choice real. |
+| Crown, Federation and People's Commonwealth | Different political identities, spirits and follow-up branches | Unchanged | **Genuine**. |
+| Consult Dominions vs Centralise War Cabinet | Opposite governance movement and stability versus war-support trade-off | Unchanged | **Genuine**. |
+
+### Post-edit acceptance checks
+
+- Atlantic and continental strategies remain compatible; one method is selectable inside each theatre.
+- The global-commitments capstone remains reachable after either complete theatre.
+- The four method spirits use distinct maritime, commercial, army, supply, fort, industrial and intelligence categories.
+- Field Workshops and Signals are mutually exclusive and both open *All Arms Staff Exercises*.
+- All four infrastructure projects feed London logistics; the industrial capstone requires logistics, science and one industrial orientation.
+- The combined-arms capstone requires completed army, air and navy programmes.
+- No political route, imperial follow-up or existing capstone is orphaned; no missing reference or cycle is introduced.
 
 Die Dateien wurden noch nicht verändert. Der Vorschlag wartet auf deine ausdrückliche Freigabe.

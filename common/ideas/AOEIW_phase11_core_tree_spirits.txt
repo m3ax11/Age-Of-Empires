@@ -68,6 +68,56 @@ ideas = {
                 production_speed_naval_base_factor = 0.1000
             }
         }
+        AOEIW_STRUCT_USA_atlantic_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                convoy_escort_efficiency = 0.0800
+                navy_org_factor = 0.0300
+                production_speed_naval_base_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_atlantic_commercial_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                trade_opinion_factor = 0.1000
+                production_factory_efficiency_gain_factor = 0.0500
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW_STRUCT_USA_pacific_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                air_mission_efficiency = 0.0400
+                navy_org_factor = 0.0300
+                production_speed_air_base_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_pacific_commercial_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_dockyard = 0.0600
+                local_resources_factor = 0.0600
+                trade_opinion_factor = 0.0600
+            }
+        }
+        AOEIW_STRUCT_USA_arsenal_of_the_republic = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0500
+                production_factory_max_efficiency_factor = 0.0500
+                supply_consumption_factor = -0.0300
+            }
+        }
         AOEIW11_cooperative_security = {
             allowed = { always = no }
             allowed_civil_war = { always = yes }
