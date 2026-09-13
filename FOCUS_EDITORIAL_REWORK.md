@@ -6,7 +6,21 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil and Italy are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy and France are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## France — branch stories
+
+### The Second Empire and the street
+
+Napoleon IV faces Bonapartist administrators, parliamentary opponents, leagues, Communards and an army that regards itself as the final guardian of order. Constitutional government must turn imperial legitimacy into budgets and law; emergency government instead gathers ministries around Weygand; the council path carries factory occupation into political power. A sénatus-consulte gives the imperial branch language inherited from the Bonapartes without pretending that this alternate empire followed the Third Republic's exact institutions. Every victory still has to feed Paris, command the provinces and keep public services functioning.
+
+### Arsenals and the industrial basin
+
+Billancourt, Bourges, Saint-Étienne, Toulouse and Bordeaux turn French mobilisation into a contest over real workshops and transport routes. Council rule arms a citizen army through quotas and standard rifles, while imperial management coordinates metropolitan arsenals and suppliers. Common gauges and fewer chassis address the fragmentation that leaves aircraft and vehicles waiting for parts. The branch ends in workshops producing for a recognisable Second Empire rather than an abstract production board.
+
+### The frontier and the rear
+
+The Maginot system buys time only if trained reserves, trains and a coherent high command use it. Manoeuvres at Mailly expose paper readiness before an enemy reaches the Meuse, while rail priorities connect arsenals to the front. Parisian shelters, municipal grain lists and marked hospital beds make civil defence a lived obligation of government. Weygand's emergency path is judged by whether authority can deliver these services, not by the creation of another directorate.
 
 ## Sweden — branch stories
 
@@ -128,3 +142,6 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [Brazilian Electoral Court: the 1937 Estado Novo](https://www.tre-rj.jus.br/institucional/memoria/eventos-eleitorais/contexto-historico/1930-1945)
 - [CSN: the Volta Redonda steelworks](https://www.csn.com.br/quem-somos/historico/)
 - [Italian Central State Archive: foundation and purpose of IRI](https://search.acs.beniculturali.it/OpacACS/authority/IT-ACS-SP00001-00000436)
+- [Chemins de mémoire: the Popular Front, Matignon reforms and Maginot strategy](https://www.cheminsdememoire.gouv.fr/sites/default/files/editeur/1919-1939-007.pdf)
+- [Chemins de mémoire: French armament centres and the purpose of the Maginot Line](https://www.cheminsdememoire.gouv.fr/sites/default/files/2023-10/LES_ARMEES_ET_LES_TERRITOIRES_ENJEUX_IMPLANTATIONS_RESTRUCTURATIONS.pdf)
+- [Chemins de mémoire: training, command and production failures in 1940](https://www.cheminsdememoire.gouv.fr/fr/enseigner-1940-1)
