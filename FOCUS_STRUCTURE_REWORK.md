@@ -165,7 +165,7 @@ The shared reconvergence focuses retain their existing rewards. Divergence persi
 
 Implementation preserves every focus ID, target, original reward and shared capstone effect. The new benefits are additions to the selected existing focuses, and the unselected theatre spirit cannot be acquired in the same campaign.
 
-## France — pre-edit structural report (awaiting approval)
+## France — structural report and implementation
 
 ### Structural baseline
 
@@ -216,7 +216,7 @@ Implementation preserves every focus ID, target, original reward and shared caps
 | Methodical vs mobile reserve | Artillery versus armour research, different operation unlocks, artillery stockpile versus armour research/army experience in their follow-ups | Genuine; preserve rewards and make the distinct follow-up mandatory before reconvergence. |
 | Chamber vs Weygand ministries | Opposite governance-balance movement; stability versus war support with a stability cost; later event reads the institutional state | Genuine; preserve unchanged. |
 
-### Proposed structural changes — no implementation without approval
+### Approved structural changes
 
 1. In the Rhine branch, make the economic-coercion sequence (`dip_a_2` → `dip_a_3`) mutex with the military-escalation sequence (`dip_a_4` → `dip_a_5`). Change *Terms for the Rhine Rivalry* from an AND gate to OR reconvergence at `dip_a_3`/`dip_a_5`.
 2. Apply the equivalent structural choice to Mediterranean policy and reconverge at *Terms for Mediterranean Ambitions*. Do **not** make Rhine policy mutex with Mediterranean policy: a French major-power campaign can contest both theatres, and the final focus already accepts either completed theatre.
@@ -230,3 +230,83 @@ Implementation preserves every focus ID, target, original reward and shared caps
 5. Add *French Logistics through the National Railways* as a separate AND prerequisite for *The Workshops of the Second Empire*. The industrial capstone should require its railway spine as well as production and research.
 6. Add one OR prerequisite to *One Imperial Supply System*: either *Overseas Maintenance Manuals* or *Accept the Algerian Deliveries*. This connects two currently detached colonial-supply outcomes without falsely declaring them mutually exclusive.
 7. Adjust AI weights only at the four proposed diplomatic method openings so wartime/frontier pressure favours military escalation and peacetime industrial strain favours economic pressure. Preserve all focus IDs, country targets, existing regime guards and current capstone effects.
+
+### Post-edit outcome-divergence and acceptance checks
+
+| Choice | Result A | Result B | Assessment |
+|---|---|---|---|
+| Rhine commercial pressure vs military escalation | **The Rhine Commercial System** improves trade influence, factory-efficiency growth and infrastructure construction | **The Rhine Military Posture** improves army organisation, supply consumption and fort construction | Different economic/rail and army/frontier modifier categories; neither profile subsumes the other. |
+| Mediterranean commercial pressure vs military escalation | **The Mediterranean Commercial System** improves dockyard output, trade influence and consumer-goods demand | **The Mediterranean War Plan** improves naval organisation, air-mission efficiency and naval-base construction | Different commercial/industrial and joint naval-air categories; neither is a strictly stronger copy. |
+| Methodical reserve vs mobile reserve | Existing artillery and prepared-fire rewards | Existing armour and counterstroke rewards | Existing genuine divergence preserved; the selected operational follow-up is now required before common logistics. |
+
+- Rhine and Mediterranean policy remain compatible. France is a major power able to sustain both theatres; only the method inside each theatre is exclusive.
+- The industrial capstone now requires the national railway programme as a separate AND prerequisite.
+- The imperial logistics programme now requires either overseas maintenance or Algerian deliveries in addition to dockyards and colonial transport.
+- The audit reports 182 focuses, six explicit mutex loci, no missing prerequisite or mutex references, and no prerequisite cycles.
+
+## Russia — pre-edit structural report (awaiting approval)
+
+### Major-power theatre assumption
+
+Russia is a continental major with enough strategic depth to pursue policy against Germany and the Ottoman Empire during the same campaign. The German-frontier and Ottoman/Straits theatres should therefore remain compatible. Only competing methods within a theatre, incompatible constitutional settlements, and genuinely exclusive operational doctrines should use mutex links.
+
+### Structural baseline
+
+- 224 focuses, 49 graph branch points, 30 multi-parent reconvergences, five explicit mutex loci, one pure five-focus chain, and 22 endpoints.
+- The tree contains several distinct political Russias: imperial restoration/reform, Soviet revolution, Eurasian empire, republican settlement and Denikin/Stavka rule. These are setting-defining alternatives and must retain their existing IDs, selectors, flags, cosmetic tags and `allow_branch` safeguards.
+- The graph audit finds no missing prerequisite or mutex references and no prerequisite cycles.
+
+### Current true forks and outcome divergence
+
+| Existing choice | Current outcome difference | Disposition |
+|---|---|---|
+| Federal Constitution vs Strong Presidency | Federalism grants stability, consumer-goods relief and a balanced political-power modifier; presidentialism grants immediate and sustained political power with less stability | Genuine constitutional choice; preserve. |
+| Republic Facing Asia vs European Great Power | Asia grants infrastructure, dockyard and supply bonuses; Europe grants trade influence, research and stability | Genuine theatre orientation for the republican path; preserve as mutex because it defines the republic's diplomatic identity rather than Russia's general military capacity. |
+| Return Authority to the Duma vs Stavka Rules Russia | Parliamentary restoration changes regime and grants stability; the directorate changes regime/leader ideology and grants army organisation, planning and political power at a stability cost | Genuine regime settlement; preserve. |
+| Congress of Republics vs Central Transport Direction | Opposite governance-balance movement; stability versus war support with a stability cost | Genuine institutional direction; preserve. |
+| Field Workshops vs Signals after One Supply Service | Support-technology research versus army experience and command power | Rewards differ, but there is no mutex, so the player can take both before the OR reconvergence. Convert this displayed operational choice into an actual choice. |
+
+### Current reconvergence and false choices
+
+- The imperial and reformist opening routes reconverge at *The Imperial State Reconstituted*. The revolutionary, Eurasian, republican and Denikin settlements enter the later governance system through an OR prerequisite at *Govern the Continental State*.
+- The German-frontier diplomatic theatre branches into economic pressure and military doctrine, then requires both at *A Formal Warning over the German Frontier*. The Ottoman theatre repeats the same false choice at *A Formal Warning over the Ottoman Question*.
+- The final foreign-policy focus already accepts either completed theatre. Both theatres remain available, which is appropriate for a major power and should be preserved.
+- Infantry and armour development use established `allow_branch` protection. *One Supply Service* accepts either completed doctrine. This is a real force-structure commitment and should not be rewritten during the narrower operational-choice fix.
+- The Trans-Siberian and heavy-industry programme uses AND gates for complementary railway, fuel and industrial projects; these are programme-completion requirements rather than pretend choices.
+
+### Long or over-mandatory sequences
+
+- The only pure five-focus chain runs from *The Imperial State Reconstituted* through *Lessons of the Great Retreat*, *The Stavka Ascendant* and *The Iron Frontier* to *The Mobilisation Registers*. It is the escalating common command narrative after the imperial settlement and has attached depth branches; inserting a cosmetic choice would weaken its logic.
+- Both non-revolutionary foreign-policy theatres require the economic and military methods in sequence before escalation. These should become method choices without making the two theatres exclusive.
+
+### Undercooked or detached endpoints
+
+- *Logistics through Ural Foundries* ends outside *The Imperial Industrial Mobilisation System*. As the terminal infrastructure focus, it should be a separate AND prerequisite for the industrial capstone.
+- *Russia as an Industrial Colossus* is a late industrial endpoint whose only reward is 10 army experience. Its title and position promise an economic endgame payoff that the current reward does not deliver.
+- Several depth endpoints marked weak by the heuristic audit actually finish scripted programme chains, set flags, remove temporary ideas or unlock later decisions. They should remain detached unless runtime testing identifies a concrete problem.
+- *Deep Battle*, *The Frontiers of the Russian Empire*, *An Empire from Baltic to Pacific* and the major regime capstones already provide substantial systemic rewards or events.
+
+### Proposed structural changes — no implementation without approval
+
+1. In the German-frontier theatre, make economic pressure (`AOEIW9_SOV_dip_a_3`) mutex with military preparation (`AOEIW9_SOV_dip_a_4`) and change `AOEIW9_SOV_dip_a_5` to OR reconvergence.
+2. Apply the equivalent method choice to the Ottoman theatre (`dip_b_3` versus `dip_b_4`) and change `dip_b_5` to OR reconvergence.
+3. Keep the German and Ottoman theatres compatible. Russia may complete both; the mutex decisions govern how each confrontation is prepared.
+4. Add four distinct permanent profiles to the existing method endpoints so the new choices retain consequences after reconvergence:
+   - German economic pressure: continental trade influence, railway/infrastructure construction and factory-efficiency growth.
+   - German military preparation: army organisation, supply consumption and land-fort construction.
+   - Ottoman economic pressure: resource extraction, trade influence and infrastructure construction in the southern commercial corridor.
+   - Ottoman military preparation: Black Sea naval organisation, air support and naval-base construction.
+   These categories are deliberately different; no option is a target-swapped clone or a strictly stronger version of its rival.
+5. Make *Field Workshops* (`AOEIW28_SOV_field_workshops`) and *Signals* (`AOEIW28_SOV_signals`) mutex. Keep their current different rewards and the existing OR reconvergence at *All Arms Staff Exercises*.
+6. Add `AOEIW9_SOV_eco_infra_4` as a separate AND prerequisite for `AOEIW9_SOV_eco_final`, connecting the Ural logistics spine to the imperial industrial capstone.
+7. Make *Russia as an Industrial Colossus* require both its existing heavy-industry chain and the industrial capstone. Replace its token endpoint payoff with a restrained permanent industrial-colossus spirit focused on factory output, strategic-resource extraction and supply throughput; retain the existing army experience rather than deleting it.
+8. Adjust AI weights only at the four diplomatic method nodes and the workshops/signals choice: peace and industrial strength favour economic/logistical preparation; war, frontier tension and command needs favour military/signals preparation.
+9. Preserve the imperial/reform, Soviet, Eurasian, republican and Denikin architecture, all existing political mutex choices, focus IDs, country targets, regime guards, war goals and capstone effects.
+
+### Required outcome-divergence checks after approval
+
+- Each diplomatic theatre permits exactly one preparation method, while both theatres remain completable in one major-power campaign.
+- The four method outcomes use different commercial, industrial, army, supply, naval and air modifier categories as specified above.
+- Field Workshops and Signals remain comparable alternatives: research acceleration versus immediate command resources, with neither reward copied or silently removed.
+- The industrial capstone requires the Ural logistics spine, and the industrial-colossus payoff requires the capstone without creating a prerequisite cycle.
+- No political route, depth programme or existing capstone is orphaned; no missing reference or cycle is introduced.

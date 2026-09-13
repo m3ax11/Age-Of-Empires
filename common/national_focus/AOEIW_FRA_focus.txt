@@ -1643,6 +1643,7 @@ focus_tree = {
         cost = 7
         prerequisite = { focus = AOEIW9_FRA_eco_civ_7 focus = AOEIW9_FRA_eco_war_8 }
         prerequisite = { focus = AOEIW9_FRA_eco_science_7 }
+        prerequisite = { focus = AOEIW9_FRA_eco_infra_4 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2362,8 +2363,11 @@ focus_tree = {
             add_command_power = 5
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.5 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
         }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_a_4 }
     }
 
     focus = {
@@ -2382,6 +2386,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_FRA_rhine_commercial_system
             add_tech_bonus = {
                 name = AOEIW11_FRA_dip_a_3_industry
                 bonus = 0.50
@@ -2420,8 +2425,10 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
         }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_a_2 }
     }
 
     focus = {
@@ -2441,6 +2448,7 @@ focus_tree = {
             add_political_power = 25
             add_war_support = 0.02
             army_experience = 10
+            add_ideas = AOEIW_STRUCT_FRA_rhine_military_posture
             if = {
                 limit = { GER = { exists = yes } }
                 add_opinion_modifier = { target = GER modifier = AOEIW11_formal_warning_opinion }
@@ -2459,8 +2467,7 @@ focus_tree = {
         x = 2
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_FRA_dip_a_3 }
-        prerequisite = { focus = AOEIW9_FRA_dip_a_5 }
+        prerequisite = { focus = AOEIW9_FRA_dip_a_3 focus = AOEIW9_FRA_dip_a_5 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
@@ -2558,8 +2565,11 @@ focus_tree = {
             add_command_power = 5
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.5 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
         }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_b_4 }
     }
 
     focus = {
@@ -2578,6 +2588,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_FRA_mediterranean_commercial_system
             add_tech_bonus = {
                 name = AOEIW11_FRA_dip_b_3_industry
                 bonus = 0.50
@@ -2616,8 +2627,10 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
         }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_b_2 }
     }
 
     focus = {
@@ -2637,6 +2650,7 @@ focus_tree = {
             add_political_power = 25
             add_war_support = 0.02
             army_experience = 10
+            add_ideas = AOEIW_STRUCT_FRA_mediterranean_military_posture
             if = {
                 limit = { ITA = { exists = yes } }
                 add_opinion_modifier = { target = ITA modifier = AOEIW11_formal_warning_opinion }
@@ -2655,8 +2669,7 @@ focus_tree = {
         x = 12
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_FRA_dip_b_3 }
-        prerequisite = { focus = AOEIW9_FRA_dip_b_5 }
+        prerequisite = { focus = AOEIW9_FRA_dip_b_3 focus = AOEIW9_FRA_dip_b_5 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
@@ -3060,7 +3073,7 @@ focus_tree = {
             add_equipment_to_stockpile = { type = train_equipment_1 amount = 80 producer = FRA }
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
-        prerequisite = { focus = AOEIW_STRUCT_FRA_methodical_reserve focus = AOEIW_STRUCT_FRA_mobile_reserve }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_fire_plan focus = AOEIW_STRUCT_FRA_DEPTH_counterstroke }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
     }
 
@@ -3134,6 +3147,7 @@ focus_tree = {
         ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
         prerequisite = { focus = AOEIW_STRUCT_FRA_imperial_dockyards }
         prerequisite = { focus = AOEIW_STRUCT_FRA_colonial_transport }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_overseas_maintenance focus = AOEIW_STRUCT_FRA_DEPTH_algerian_handover }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
     }
 
