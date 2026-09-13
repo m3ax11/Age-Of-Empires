@@ -59,13 +59,31 @@ The four implemented American theatre-method profiles were compared pairwise bef
 
 No gameplay change in this section is authorized. Each conflict requires a separate user decision before implementation.
 
+### Revised proposal for pair 5 — awaiting approval
+
+The earlier suggestion of naval detection, convoy escort and radar construction is withdrawn. It would remove the Danish overlap but share convoy escort and naval detection with Britain's later-registered Admiralty profile, creating a new 2-of-3 conflict.
+
+The revised American profile is **convoy escort, radar-station construction and decryption**. It represents the United States Navy's Neutrality Patrol, a continental coastal-warning network and American signals intelligence. Radar construction is treated as a construction category, distinct from Britain's permanent naval-detection bonus; decryption is an intelligence category, distinct from British naval coordination.
+
+| Current registered maritime profile checked | Shared categories with revised USA Atlantic mission | Result |
+|---|---|---|
+| Denmark — Baltic Sound | Convoy escort (1/3) | No conflict; Denmark retains naval organisation and speed for control of enclosed straits. |
+| Norway — Atlantic Lifeline | None (0/3) | No conflict. |
+| Ireland — Atlantic Republic | Convoy escort (1/3) | No conflict. |
+| France — Mediterranean military posture | None (0/3) | No conflict. |
+| USA — Pacific mission | None (0/3) | No internal conflict. |
+| United Kingdom — Admiralty Atlantic mission | Convoy escort (1/3) | No conflict; British detection and coordination remain distinct. |
+| Russia — proposed maritime military method | None (0/3) | No conflict with the currently registered, still-unapproved Russian draft. |
+
+This is a proposal only. No USA idea, focus or localisation file has been changed.
+
 | Pair | Shared categories | Finding | Narrow correction proposed |
 |---|---|---|---|
 | Denmark Baltic Sound ↔ Norway Atlantic Lifeline | Naval organisation, naval speed | **Conflict (2/3)** | Change Norway to naval speed, navy fuel consumption and dockyard construction speed, representing long coastal distances and austere Norwegian basing. Denmark retains command of enclosed straits. |
 | Denmark Continental Mobilisation ↔ Ireland Border Emergency | Arms-factory construction, recruitable population | **Conflict (2/3)** | Change Ireland to army defence, mobilisation speed and stability, representing border security and emergency institutions rather than continental mass mobilisation. |
 | Norway Scandinavian Field Command ↔ Ireland Border Emergency | Army organisation, recruitable population | **Conflict (2/3)** | The same proposed Ireland correction resolves this pair while Norway retains planning for Scandinavian field operations. This remains a separate approval item because it is a separate conflict pair. |
 | Ireland Atlantic Republic ↔ France Mediterranean Commerce | Dockyard output, trade influence | **Conflict (2/3)** | Change Ireland to convoy escort, trade influence and political-power growth, representing diaspora shipping and neutral brokerage rather than dockyard-led imperial commerce. |
-| Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort, naval organisation | **Conflict (2/3)** | Change the USA Atlantic mission to naval detection, convoy escort and radar-station construction, representing hemispheric surveillance rather than control of narrow seas. |
+| Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort, naval organisation | **Conflict (2/3)** | Change the USA Atlantic mission to convoy escort, radar-station construction and decryption. This represents the Neutrality Patrol, continental coastal warning and signals intelligence; the revised proposal was checked against the complete post-UK register and creates no new 2/3 conflict. |
 | France Mediterranean Military ↔ USA Atlantic Mission | Naval organisation, naval-base construction | **Conflict (2/3)** | The proposed USA Atlantic surveillance correction also resolves this pair; France retains fleet organisation and Mediterranean bases. Separate approval is still required for this pair. |
 | France Mediterranean Military ↔ USA Pacific Mission | Naval organisation, air-mission efficiency | **Conflict (2/3)** | Change the USA Pacific mission to sortie efficiency, air-mission efficiency and air-base construction, making carrier aviation and island airfields its identity. |
 | France Mediterranean Commerce ↔ USA Atlantic Commercial Pressure | Trade influence, consumer-goods demand | **Conflict (2/3)** | Change the USA Atlantic commercial profile to trade influence, factory-efficiency growth and political-power growth, representing Wall Street credit and federal purchasing. |
@@ -75,3 +93,5 @@ No gameplay change in this section is authorized. Each conflict requires a separ
 ## Register maintenance rule
 
 Every future structural proposal must add its permanent profiles here before approval. The proposal must name the nearest existing profile in the same decision type and count shared principal categories. A 2/3-or-greater match must be redesigned around the country's geography, economy, imperial relationships or military institutions before implementation.
+
+Retrospective corrections must be rechecked against the **entire current register**, including profiles added after the original conflict was recorded and unapproved profiles that are still active proposals. Passing the original pairwise comparison is not sufficient. If a later profile creates a new 2/3 match, the correction must be redesigned and presented again before any gameplay implementation.
