@@ -77,6 +77,24 @@ The revised American profile is **convoy escort, radar-station construction and 
 
 This profile was approved and implemented. The focus ID and its existing immediate rewards remain unchanged.
 
+### Full-register proposal for pair 7 — awaiting approval
+
+Change the USA Pacific mission to **sortie efficiency, air-mission efficiency and air-base construction**. This represents carrier-deck tempo, naval aviation coordination and the island airfield chain. It removes naval organisation, the category shared with France, while retaining one deliberately shared air-mission category.
+
+| Current registered maritime profile checked | Shared categories with proposed USA Pacific mission | Result |
+|---|---|---|
+| Denmark — Baltic Sound | None (0/3) | No conflict. |
+| Norway — Atlantic Lifeline | None (0/3) | No conflict. |
+| Ireland — Atlantic Republic | None (0/3) | No conflict. |
+| France — Mediterranean military posture | Air-mission efficiency (1/3) | No conflict; France retains naval organisation and naval-base construction. |
+| USA — corrected Atlantic mission | None (0/3) | No internal conflict. |
+| USA — Atlantic commercial pressure | None (0/3) | No internal conflict. |
+| USA — Pacific commercial pressure | None (0/3) | No internal conflict. |
+| United Kingdom — Admiralty Atlantic mission | None (0/3) | No conflict. |
+| Russia — proposed maritime military method | Air-mission efficiency (1/3) | No conflict with the currently registered, still-unapproved Russian draft. |
+
+This is a proposal only. No USA gameplay or localisation file has been changed for pair 7.
+
 | Pair | Shared categories | Finding | Narrow correction proposed |
 |---|---|---|---|
 | Denmark Baltic Sound ↔ Norway Atlantic Lifeline | Naval organisation, naval speed | **Conflict (2/3)** | Change Norway to naval speed, navy fuel consumption and dockyard construction speed, representing long coastal distances and austere Norwegian basing. Denmark retains command of enclosed straits. |
@@ -84,8 +102,8 @@ This profile was approved and implemented. The focus ID and its existing immedia
 | Norway Scandinavian Field Command ↔ Ireland Border Emergency | Army organisation, recruitable population | **Conflict (2/3)** | The same proposed Ireland correction resolves this pair while Norway retains planning for Scandinavian field operations. This remains a separate approval item because it is a separate conflict pair. |
 | Ireland Atlantic Republic ↔ France Mediterranean Commerce | Dockyard output, trade influence | **Conflict (2/3)** | Change Ireland to convoy escort, trade influence and political-power growth, representing diaspora shipping and neutral brokerage rather than dockyard-led imperial commerce. |
 | Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort only after correction | **Resolved (1/3)** | The approved USA Atlantic mission now uses convoy escort, radar-station construction and decryption. Denmark retains naval organisation and speed; the corrected American profile creates no new 2/3 conflict in the complete post-UK register. |
-| France Mediterranean Military ↔ USA Atlantic Mission | Naval organisation, naval-base construction | **Conflict (2/3)** | The proposed USA Atlantic surveillance correction also resolves this pair; France retains fleet organisation and Mediterranean bases. Separate approval is still required for this pair. |
-| France Mediterranean Military ↔ USA Pacific Mission | Naval organisation, air-mission efficiency | **Conflict (2/3)** | Change the USA Pacific mission to sortie efficiency, air-mission efficiency and air-base construction, making carrier aviation and island airfields its identity. |
+| France Mediterranean Military ↔ USA Atlantic Mission | None after the pair 5 correction | **Resolved (0/3)** | Closed with separate approval and no further gameplay change. France retains naval organisation, air-mission efficiency and naval-base construction; the USA Atlantic mission now uses convoy escort, radar-station construction and decryption. |
+| France Mediterranean Military ↔ USA Pacific Mission | Naval organisation, air-mission efficiency | **Conflict (2/3)** | Change the USA Pacific mission to sortie efficiency, air-mission efficiency and air-base construction, making carrier aviation and island airfields its identity. Full-register review found no resulting 2/3 conflict. |
 | France Mediterranean Commerce ↔ USA Atlantic Commercial Pressure | Trade influence, consumer-goods demand | **Conflict (2/3)** | Change the USA Atlantic commercial profile to trade influence, factory-efficiency growth and political-power growth, representing Wall Street credit and federal purchasing. |
 | Ireland Atlantic Republic ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | Change the USA Pacific profile to dockyard output, resource extraction and dockyard construction speed. Ireland's separately proposed correction would also remove the overlap, but this pair retains its own approval gate. |
 | France Mediterranean Commerce ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | The proposed USA Pacific shipbuilding/resource correction resolves this pair while France keeps Mediterranean trade and consumer relief. Separate approval is still required for this pair. |
