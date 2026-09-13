@@ -165,3 +165,27 @@ JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_settlement,The Tokyo Set
 JAP,Zaibatsu and total war,AOEIW9_JAP_eco_final,The Zaibatsu-State Compact,Orders for Mitsubishi and Mitsui,Named zaibatsu replace an abstract state compact.
 JAP,Zaibatsu and total war,AOEIW9_JAP_mil_army_1,The Army Training Commission,The Kwantung Army Manoeuvres,A real command and strategic problem replace the generic commission.
 JAP,"Throne, Diet and the services",AOEIW_IMM_JAP_court_1,The Court Planning Board,Conference before the Throne,The real court procedure replaces an invented planning board.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p1_3,Reform the Army Directorate,Officers before the Cortes,A parliamentary confrontation replaces the generic directorate reform.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p2_1,A Representative Imperial Charter,The Cortes Claims the Empire,The political claim replaces an abstract representative charter.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p2_2,Open the Army Directorate,Open the Officers’ Promotions,The concrete reform replaces opening an invented directorate.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p2_6,A New Charter for Spanish Empire,A Constitution under Alfonso XIII,The monarch and bargain replace a generic new charter.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p3_1,The Central Imperial Directorate,Orders from the Royal Palace,The seat and action replace an invented central directorate.
+SPR,"King, Cortes and Falange",AOEIW9_SPR_politics_p3_6,The National Syndicalists Settlement,The Twenty-Seven Points,The real Falangist programme replaces the generic settlement.
+SPR,"Arsenals, science and the army",AOEIW9_SPR_eco_science_3,Applied Research at Spanish Research Council,Experiments at the Instituto Nacional de Física,A named Spanish institute replaces the generic research council.
+SPR,"Arsenals, science and the army",AOEIW9_SPR_eco_science_6,Research Grants for Spanish Research Council,Keep Madrid’s Laboratories Open,The material objective replaces another council grant title.
+SPR,"Arsenals, science and the army",AOEIW9_SPR_mil_army_9,Spanish Doctrine at the Artillery Directorate,Gunnery at Segovia,A real academy replaces an invented artillery directorate.
+SPR,"King, Cortes and Falange",AOEIW35_SPR_institutional_settlement,The Reconstruction Settlement,Spain Governs Again,The outcome replaces a vague reconstruction settlement.
+SPR,The Spains and the overseas realms,AOEIW37_SPR_viceroyal_directorate,The Viceroyal Directorate,The Viceroys Answer to Madrid,The relationship replaces an invented directorate.
+SPR,The Spains and the overseas realms,AOEIW37_SPR_imperial_defence_board,The Imperial Defence Board,Every Realm Sends a Staff Mission,The reciprocal action replaces a generic defence board.
+SPR,The Spains and the overseas realms,AOEIW37_SPR_test_the_imperial_compact,Test the Imperial Compact,Will the Realms Answer?,The question dramatizes the existing compact’s practical test.
+SOV,"Throne, Duma and zemstvos",AOEIW9_SOV_politics_p2_7,A New Charter for Russian Empire,The Fundamental Laws Revised,A real imperial legal framework replaces a generic charter.
+SOV,The revolutionary contest,AOEIW19_SOV_red_army_commission,The Red Army Commission,Who Commands the Red Army?,The central command conflict replaces a generic commission.
+SOV,The revolutionary contest,AOEIW19_SOV_tukhachevsky_militarisation_directorate,The Militarization Directorate,Tukhachevsky's Army State,The named actor and consequence replace an invented directorate.
+SOV,"Railways, oil and continental power",AOEIW9_SOV_mil_army_1,The Army Training Commission,The Kiev Manoeuvres,A major real exercise replaces the generic training commission.
+SOV,"Railways, oil and continental power",AOEIW9_SOV_special_3,Baku Fuel Programme,Oil Trains from Baku,The supply chain replaces a generic fuel programme.
+SOV,"Throne, Duma and zemstvos",AOEIW_IMM_SOV_zemstvo_2,A Charter for the Empire,Zemstvos Demand Guarantees,The political demand replaces a generic imperial charter.
+SOV,"Throne, Duma and zemstvos",AOEIW_STRUCT_SOV_federal_compact,Ratify the Provincial Compact,The Governors Sign at Tauride Palace,A place and signatories replace the generic compact.
+SOV,"Railways, oil and continental power",AOEIW_STRUCT_SOV_DEPTH_land_register,The Imperial Land Register,Finish Stolypin's Survey,The Stolypin legacy and physical survey replace an abstract register.
+SOV,"Railways, oil and continental power",AOEIW_STRUCT_SOV_DEPTH_volga_acceptance,Commission the Volga Deliveries,Grain Barges Reach Nizhny Novgorod,A real Volga hub replaces generic commissioning language.
+SOV,"Throne, Duma and zemstvos",AOEIW22_SOV_military_directorate,The Russian Military Directorate,The Stavka Rules Russia,The real command institution replaces a generic military directorate.
+SOV,"Railways, oil and continental power",AOEIW35_SOV_institutional_capstone,The Continental Programme,An Empire from Baltic to Pacific,A geographic endgame replaces the vague continental programme.

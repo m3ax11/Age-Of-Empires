@@ -6,7 +6,35 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain and Japan are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain and Russia are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Spain — branch stories
+
+### King, Cortes and Falange
+
+Alfonso XIII, the Cortes, senior officers, regional representatives and National Syndicalists compete to define an empire that survived the crisis of the monarchy. The representative route borrows the parliamentary and regional questions debated in 1931 without turning this alternate Spain into the historical republic. The authoritarian route places command in the Royal Palace; the Falangist route adopts the language of the Twenty-Seven Points and national syndicalism. A victory must still reconstruct lawful administration after the political confrontation.
+
+### The Spains and the overseas realms
+
+The Council of the Spains, Charter of Equal Realms and Imperial Social Charter are setting-specific institutions with a clear role, so their names remain. Viceroys, colonial governments and Madrid argue over representation, taxes and common defence. The branch develops from negotiated equality to the practical test of whether every realm contributes troops and receives a voice. Its payoff is an empire whose constitution produces reciprocal obligations.
+
+### Arsenals, science and the army
+
+Madrid laboratories, the Trubia works and the Artillery Academy at Segovia connect research to the army Spain can field. Officers must choose whether political reliability or professional command controls training. Rebuilding after crisis requires roads, workshops and provincial government as well as declarations from the capital. The army branch ends with weapons and doctrine tied to named Spanish institutions.
+
+## Russia — branch stories
+
+### Throne, Duma and zemstvos
+
+The imperial court, Duma, provincial governors and zemstvos bargain over whether reform can preserve the empire. Federalists demand provincial consent and a working constitution; military reactionaries concentrate authority in the Stavka and ministries. Land records and Volga deliveries test whether either system can govern beyond Petrograd. The constitutional outcome must decide who can tax, requisition and command across the empire.
+
+### The revolutionary contest
+
+Factory committees, soldiers' soviets, Trotsky's Left Opposition and Tukhachevsky's officers do not share one vision of revolution. The published Platform of the Joint Opposition remains because it is a real factional document. Other focuses move from agitation and congresses into control of the Red Army, industrialisation and military discipline. The victorious faction must supply the army it claims to lead instead of ending at the seizure of power.
+
+### Railways, oil and continental power
+
+Baku fuel, Volga freight and the Trans-Siberian system determine whether Russia's size is an asset or an excuse. Army manoeuvres expose failures in mobilisation while land surveys connect taxation, settlement and agricultural supply. Provincial compacts become meaningful only when trains and requisitions follow their terms. The endgame turns continental ambition into a functioning network of oil, rails and commands.
 
 ## Britain — branch stories
 
@@ -168,3 +196,6 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [UK National Archives: the Defence Requirements Committee and rearmament](https://www.nationalarchives.gov.uk/education/resources/thirties-britain/slowness-rearmament/)
 - [UK National Archives: air-raid precautions and the 1938 crisis](https://www.nationalarchives.gov.uk/education/resources/home-front-1939-1945-part-one/civil-defence-measures/)
 - [National Diet Library of Japan: the Privy Council, Diet and divided responsibility](https://www.ndl.go.jp/constitution/e/shiryo/03/059/059tx.html)
+- [Congress of Deputies: the 1931 constitution, regional autonomy and parliamentary authority](https://www.congreso.es/es/cem/const1931)
+- [PARES: the Falange's Twenty-Seven Points and the 1937 unification decree](https://pares.mcu.es/ParesBusquedas20/catalogo/autoridad/134137)
+- [Platform of the Joint Opposition: industrialisation and the Red Army](https://www.marxists.org/archive/trotsky/1927/opposition/ch10.htm)
