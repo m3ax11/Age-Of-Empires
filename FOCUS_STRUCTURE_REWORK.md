@@ -310,3 +310,101 @@ Russia is a continental major with enough strategic depth to pursue policy again
 - Field Workshops and Signals remain comparable alternatives: research acceleration versus immediate command resources, with neither reward copied or silently removed.
 - The industrial capstone requires the Ural logistics spine, and the industrial-colossus payoff requires the capstone without creating a prerequisite cycle.
 - No political route, depth programme or existing capstone is orphaned; no missing reference or cycle is introduced.
+
+## United States — pre-edit structural report (awaiting approval)
+
+### Major-power theatre assumption
+
+The United States is a two-ocean major power. Atlantic and Pacific policy must remain compatible, and *A Two-Ocean Strategy* may deliberately require completed planning in both theatres. Mutex is appropriate for the method used inside each theatre and for incompatible political settlements, not for choosing one ocean at the expense of the other.
+
+### Structural baseline
+
+- 201 focuses, 32 graph branch points, 25 multi-parent reconvergences, five explicit mutex loci and 13 endpoints.
+- The automated pure-chain heuristic reports no chain of five or more, but manual prerequisite inspection finds three clear straight programmes: seven Atlantic focuses, seven Pacific focuses and eight Arsenal focuses. The discrepancy comes from the heuristic's conservative handling of attached branch roots and does not change the manual finding.
+- The graph audit finds no missing prerequisite or mutex references and no prerequisite cycles.
+- The normal scenario already starts with the former American breakaways integrated into the USA. Alternative fragmentation and restoration content must be interpreted as new political breakdown inside the campaign, not as evidence that the scenario should begin divided.
+
+### Current true forks
+
+- *Guardian of the Republic* has three mutually exclusive settlements: restored congressional rule, permanent military government and the American Caesar. They change government and grant distinct democratic, staff-government and Caesarist spirits.
+- Huey Long's settlement chooses democratic populism or personal rule. Stability/consumer relief and authoritarian political control are mechanically distinct.
+- The Pacific Republic chooses *A Pacific Great Power* or *Rejoin the Union*. The first grants a strong naval spirit and experience; the second currently grants stability and a write-only flag.
+- The Boston Congress chooses an Anglo-American monarchy or an aristocratic republic. Government labels and cosmetic tags differ, but both spirits currently use exactly the same modifiers.
+- The late institutional settlement chooses governors' authority or an emergency federal mandate and moves the governance balance in opposite directions.
+- Infantry and armoured force development are already protected by `allow_branch` checks and reconverge at *One Supply Service*.
+
+### Current reconvergence points
+
+- The three main political routes reconverge through OR at *Washington Governs Again*.
+- Nine alternative political outcomes reconverge through OR at *Settle the American Question*, which then opens the external-strategy layer.
+- Industrial production, war industry, research and the main infrastructure chain meet through separate AND prerequisites at *The Continental Production Machine*.
+- Army, air and navy are all required at *Industrial Warfare*.
+- Atlantic and Pacific policy are both required at *A Two-Ocean Strategy*. This is an intentional major-power programme-completion gate and should remain AND.
+- Field workshops and signals use OR at *All Arms Staff Exercises*, although the siblings are not mutex and can both be collected.
+
+### Current cross-branch links
+
+- *Washington Governs Again* opens emergency executive/arsenal/convention responses, governance and general-staff government.
+- Political settlement plus national destiny jointly open *General Staff Government*.
+- *Settle the American Question* opens mutually different continental expansion, Pan-American cooperation and Fortress America strategies.
+- Military-industrial coordination feeds air defence, laboratories, atomic research, rocketry and integrated war planning.
+- The special Arsenal chain branches from the war-industry programme but never requires or returns to the national industrial capstone.
+
+### Long unbranched chains
+
+- Atlantic policy is a seven-focus line from *The Atlantic Question* through mission, economic leverage, staff talks, warning and terms to a total-war decision against Britain.
+- Pacific policy repeats the same seven-stage line against Japan.
+- *The Arsenal of Democracy* through *Arsenal of the Republic* is an eight-focus line. The gradual mobilisation story is coherent, but its final node does not pay off the time invested.
+- The political alternatives are broad rather than excessively linear. They should not receive artificial diamonds merely to increase choice counts.
+
+### Undercooked or contradictory endpoints
+
+- *Energy for Tennessee Valley Authority* is an early infrastructure leaf that builds one infrastructure level and contributes to no later infrastructure or industrial gate.
+- *Arsenal of the Republic* grants only 10 army experience and has no relation to *The Continental Production Machine* despite presenting itself as the conclusion of American mass production.
+- *Rejoin the Union* sets `AOEIW22_USA_reunification_claim`, but that flag is never read by any event, decision, effect or focus. It also leaves the Pacific Republic cosmetic tag and spirit in place, so its stated political outcome does not occur.
+- The Anglo-American monarchy and aristocratic republic use different regime/cosmetic outcomes but their permanent spirits have identical modifiers: political power +8%, stability +8% and consumer goods +2%.
+- Other endpoints such as *Continental Hegemony*, *Federation of the Americas*, *Wake Only When Struck*, *Integrated War Planning* and *The Continental Arsenal* have substantial ideas, faction changes or events and should remain unchanged.
+
+### Proposed structural changes — no implementation without approval
+
+1. Branch `AOEIW9_USA_dip_a_2` (Atlantic military mission) and `AOEIW9_USA_dip_a_3` (Atlantic economic leverage) directly from `AOEIW9_USA_dip_a_1`, make them mutex, and reconverge through OR at `AOEIW9_USA_dip_a_4`.
+2. Apply the same method choice to the Pacific: `dip_b_2` versus `dip_b_3`, with OR reconvergence at `dip_b_4`.
+3. Keep Atlantic and Pacific policy compatible and preserve the separate AND requirements at `AOEIW9_USA_dip_final`. The Two-Ocean capstone deliberately represents preparation in both theatres.
+4. Add four method-specific permanent profiles to the existing method focuses:
+   - Atlantic mission: convoy escort, naval organisation and Atlantic base construction.
+   - Atlantic economic leverage: trade influence, civilian industrial efficiency and consumer-goods relief.
+   - Pacific mission: carrier/naval-air coordination, naval organisation and Pacific base construction.
+   - Pacific economic leverage: dockyard output, strategic-resource access and trade influence.
+   Existing immediate political power, experience, doctrine and opinion effects remain attached to their current IDs. The four profiles use different modifier categories rather than cloned bonuses with different targets.
+5. Make `AOEIW28_USA_field_workshops` and `AOEIW28_USA_signals` mutex. Preserve the existing genuine choice between support-technology research and immediate army experience/command power, and retain OR reconvergence at `AOEIW9_USA_mil_army_9`.
+6. Add `AOEIW9_USA_eco_infra_1` as a separate AND prerequisite for `AOEIW9_USA_eco_infra_4`, making the TVA power project part of the completed national defence-road network. The industrial capstone already requires `eco_infra_4`.
+7. Make `AOEIW9_USA_special_8` require both its existing Arsenal chain and `AOEIW9_USA_eco_final`. Retain its army experience and add a restrained permanent Arsenal spirit focused on factory output, production-efficiency retention and military supply throughput.
+8. Differentiate the Boston Congress outcomes without changing their IDs or governments: the Anglo-American monarchy keeps stability but gains British/Atlantic trade and diplomatic benefits; the aristocratic republic shifts toward research, political power and domestic industrial administration. Remove their current identical modifier sets.
+9. Complete the existing `AOEIW22_USA_reunify_union` outcome: preserve its flag and stability, remove the Pacific Republic spirit, drop the Pacific cosmetic tag, and add a restrained federal-reconciliation spirit. *A Pacific Great Power* remains the alternative naval-power outcome.
+10. Adjust AI weights only at the four diplomatic method nodes, the workshops/signals choice and the two corrected political choices. Peace/economic strength favours leverage and workshops; war/naval pressure favours missions and signals. Political AI should distinguish reunion, oceanic independence, monarchy and aristocratic republicanism according to the selected path rather than random equal weights.
+11. Preserve all regime selectors, war goals, alternative-America `allow_branch` safeguards, existing focus IDs, country targets, flags and capstone effects. Do not restore a divided 1936 starting map.
+
+### Outcome-divergence audit
+
+| Choice | Before | Proposed outcome | Assessment |
+|---|---|---|---|
+| Atlantic mission vs economic leverage | Currently sequential; mission gives rivalry/command resources, leverage gives a generic economic spirit and research | Maritime readiness versus civilian-commercial pressure, followed by common staff talks | **Insufficient structure**, corrected with mutex plus different permanent categories. |
+| Pacific mission vs economic leverage | Currently sequential with the same generic pattern | Carrier/naval-air readiness versus dockyard/resource/trade pressure | **Insufficient structure**, corrected without copying the Atlantic profiles. |
+| Field Workshops vs Signals | Different support-research versus XP/command rewards, but both remain collectible | Same rewards, now one operational preparation choice | **Genuine rewards**, structural mutex needed. |
+| Anglo-American Monarchy vs Aristocratic Republic | Different labels/tags but identical spirit modifiers | Atlantic dynastic diplomacy versus elite republican research/administration | **Insufficient**, modifier profiles must diverge. |
+| Pacific Great Power vs Rejoin the Union | Strong naval identity versus stability plus an unused flag; reunion does not clear Pacific identity | Oceanic naval state versus actual federal reunion and reconciliation | **Insufficient implementation**, corrected outcome and different permanent categories required. |
+| Governors vs Emergency Federal Mandate | Stability/decentralisation versus war support, stability cost and opposite balance movement | Unchanged | **Genuine**. |
+| Congress, military government and American Caesar | Different governments and distinct civilian/military/Caesarist spirits | Unchanged | **Genuine**. |
+
+### Post-edit acceptance checks
+
+- Atlantic and Pacific policy both remain completable in one campaign; exactly one method is selectable inside each theatre.
+- *A Two-Ocean Strategy* still requires both completed theatres.
+- All four diplomatic profiles use the promised distinct commercial, industrial, convoy, naval, air, base and resource categories.
+- Field Workshops and Signals are each reachable, mutually exclusive and both open *All Arms Staff Exercises*.
+- The TVA focus is required by the final defence-road focus, and the Arsenal capstone requires the national industrial programme without forming a cycle.
+- Rejoining the Union removes the Pacific political identity and produces a functioning federal outcome; no new write-only flag is introduced.
+- Boston Congress spirits no longer have identical modifier sets.
+- No existing political route, war goal or capstone is orphaned; the graph has no missing references or cycles.
+
+Die Dateien wurden noch nicht verändert. Der Vorschlag wartet auf deine ausdrückliche Freigabe.
