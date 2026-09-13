@@ -246,7 +246,7 @@ Implementation preserves every focus ID, target, original reward and shared caps
 - The imperial logistics programme now requires either overseas maintenance or Algerian deliveries in addition to dockyards and colonial transport.
 - The audit reports 182 focuses, six explicit mutex loci, no missing prerequisite or mutex references, and no prerequisite cycles.
 
-## Russia — revised structural report (included in consolidated approval gate)
+## Russia — structural report and implementation record
 
 ### Major-power theatre assumption
 
@@ -288,7 +288,7 @@ Russia is a continental major with enough strategic depth to pursue policy again
 - Several depth endpoints marked weak by the heuristic audit actually finish scripted programme chains, set flags, remove temporary ideas or unlock later decisions. They should remain detached unless runtime testing identifies a concrete problem.
 - *Deep Battle*, *The Frontiers of the Russian Empire*, *An Empire from Baltic to Pacific* and the major regime capstones already provide substantial systemic rewards or events.
 
-### Consolidated structural changes awaiting approval
+### Approved structural changes — implemented 13 September 2026
 
 1. In the German-frontier theatre, make economic pressure (`AOEIW9_SOV_dip_a_3`) mutex with military preparation (`AOEIW9_SOV_dip_a_4`) and change `AOEIW9_SOV_dip_a_5` to OR reconvergence.
 2. Apply the equivalent method choice to the Ottoman theatre (`dip_b_3` versus `dip_b_4`) and change `dip_b_5` to OR reconvergence.
@@ -298,20 +298,24 @@ Russia is a continental major with enough strategic depth to pursue policy again
    - German military preparation: reduced winter attrition, army speed and reduced organisation loss while moving, representing cohesion across a vast winter frontier.
    - Ottoman economic pressure: resource extraction, trade influence and railway construction, representing the Black Sea grain, oil and rail-export corridor.
    - Ottoman military preparation: naval minelaying, lower navy fuel consumption and repair speed, representing Sevastopol, mine warfare and an austere Black Sea fleet.
-   These profiles were checked against the complete post-UK and post-pair-5 register. Each shares at most one principal category with any current or simultaneously proposed profile.
+   These profiles were checked against the complete post-UK and post-pair-5 register. Each shares at most one principal category with any other implemented profile.
 5. Make *Field Workshops* (`AOEIW28_SOV_field_workshops`) and *Signals* (`AOEIW28_SOV_signals`) mutex. Keep their current different rewards and the existing OR reconvergence at *All Arms Staff Exercises*.
 6. Add `AOEIW9_SOV_eco_infra_4` as a separate AND prerequisite for `AOEIW9_SOV_eco_final`, connecting the Ural logistics spine to the imperial industrial capstone.
 7. Make *Russia as an Industrial Colossus* require both its existing heavy-industry chain and the industrial capstone. Replace its token endpoint payoff with a restrained permanent industrial-colossus spirit focused on military-factory output, strategic-resource extraction and railway construction; retain the existing army experience rather than deleting it. This shares only military-factory output with the USA industrial endgame.
 8. Adjust AI weights only at the four diplomatic method nodes and the workshops/signals choice: peace and industrial strength favour economic/logistical preparation; war, frontier tension and command needs favour military/signals preparation.
 9. Preserve the imperial/reform, Soviet, Eurasian, republican and Denikin architecture, all existing political mutex choices, focus IDs, country targets, regime guards, war goals and capstone effects.
 
-### Required outcome-divergence checks after approval
+### Outcome-divergence validation
 
 - Each diplomatic theatre permits exactly one preparation method, while both theatres remain completable in one major-power campaign.
 - The four method outcomes use different commercial, industrial, army, supply, naval and air modifier categories as specified above.
 - Field Workshops and Signals remain comparable alternatives: research acceleration versus immediate command resources, with neither reward copied or silently removed.
 - The industrial capstone requires the Ural logistics spine, and the industrial-colossus payoff requires the capstone without creating a prerequisite cycle.
 - No political route, depth programme or existing capstone is orphaned; no missing reference or cycle is introduced.
+
+### Implementation result
+
+The approved Russian package is implemented without changing existing focus IDs, political routes, targets, regime guards, war goals or immediate rewards. Each compatible theatre now contains a mutex preparation choice followed by OR reconvergence. Field Workshops and Signals are exclusive; the Ural logistics spine feeds the industrial capstone; and *Russia as an Industrial Colossus* requires that capstone and grants its permanent industrial profile. The four method profiles and the industrial endgame were rechecked against the complete register and create no 2/3 conflict. The static validator parses 5,279 script files with no proven structural, AOE-reference, localisation, map or scenario-contract finding. The post-change graph audit reports 224 focuses, eight true mutex loci, 31 reconvergences, no missing prerequisite or mutex references, and no cycles.
 
 ## United States — structural report and implementation
 
@@ -470,7 +474,7 @@ Britain is a global major power whose security doctrine necessarily spans the At
 - The diplomatic capstone's OR requirement is not itself a defect: it gives Britain a payoff after one completed theatre while leaving the second available for a longer global campaign.
 - The political and institutional capstones already grant distinct spirits, balance changes and follow-up content and should not be rebuilt.
 
-### Proposed structural changes — no implementation without approval
+### Approved structural changes — implemented
 
 1. Branch `AOEIW9_ENG_dip_a_2` (Atlantic mission) and `AOEIW9_ENG_dip_a_3` (Atlantic economic pressure) directly from `AOEIW9_ENG_dip_a_1`, make them mutex and reconverge through OR at `AOEIW9_ENG_dip_a_4`.
 2. Apply the equivalent choice to continental policy: `dip_b_2` versus `dip_b_3`, with OR reconvergence at `dip_b_4`.

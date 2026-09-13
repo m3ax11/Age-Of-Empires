@@ -1845,6 +1845,7 @@ focus_tree = {
         y = 20
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_civ_7 focus = AOEIW9_SOV_eco_war_8 }
+        prerequisite = { focus = AOEIW9_SOV_eco_infra_4 }
         prerequisite = { focus = AOEIW9_SOV_eco_science_7 }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2582,12 +2583,14 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_dip_a_2 }
+        mutually_exclusive = { focus = AOEIW9_SOV_dip_a_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_SOV_german_railway_mobilisation
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2597,8 +2600,13 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = industry
             }
         }
+
         ai_will_do = {
-            factor = 10
+            factor = 5
+            modifier = {
+                factor = 2
+                has_war = no
+            }
         }
     }
 
@@ -2610,12 +2618,14 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_dip_a_2 }
+        mutually_exclusive = { focus = AOEIW9_SOV_dip_a_3 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_SOV_winter_frontier_staff
             add_political_power = 25
             add_war_support = 0.03
             army_experience = 15
@@ -2627,8 +2637,13 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = land_doctrine
             }
         }
+
         ai_will_do = {
-            factor = 10
+            factor = 5
+            modifier = {
+                factor = 2
+                has_war = yes
+            }
         }
     }
 
@@ -2639,8 +2654,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         x = 2
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_SOV_dip_a_3 }
-        prerequisite = { focus = AOEIW9_SOV_dip_a_4 }
+        prerequisite = { focus = AOEIW9_SOV_dip_a_3 focus = AOEIW9_SOV_dip_a_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2778,12 +2792,14 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_dip_b_2 }
+        mutually_exclusive = { focus = AOEIW9_SOV_dip_b_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_SOV_black_sea_export_corridor
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2793,8 +2809,13 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = industry
             }
         }
+
         ai_will_do = {
-            factor = 10
+            factor = 5
+            modifier = {
+                factor = 2
+                has_war = no
+            }
         }
     }
 
@@ -2806,12 +2827,14 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_dip_b_2 }
+        mutually_exclusive = { focus = AOEIW9_SOV_dip_b_3 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_SOV_sevastopol_mine_command
             add_political_power = 25
             add_war_support = 0.03
             army_experience = 15
@@ -2823,8 +2846,13 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = land_doctrine
             }
         }
+
         ai_will_do = {
-            factor = 10
+            factor = 5
+            modifier = {
+                factor = 2
+                has_war = yes
+            }
         }
     }
 
@@ -2835,8 +2863,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         x = 12
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_SOV_dip_b_3 }
-        prerequisite = { focus = AOEIW9_SOV_dip_b_4 }
+        prerequisite = { focus = AOEIW9_SOV_dip_b_3 focus = AOEIW9_SOV_dip_b_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -3125,12 +3152,14 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 21
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_7 }
+        prerequisite = { focus = AOEIW9_SOV_eco_final }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
         completion_reward = {
             army_experience = 10
+            add_ideas = AOEIW_STRUCT_SOV_industrial_colossus
         }
         ai_will_do = {
             factor = 10
@@ -5016,9 +5045,10 @@ focus = {
         y = 29
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_8 }
+        mutually_exclusive = { focus = AOEIW28_SOV_signals }
         available_if_capitulated = no
         completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
-        ai_will_do = { factor = 5 }
+        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = no } }
     }
 focus = {
         id = AOEIW28_SOV_signals
@@ -5027,9 +5057,10 @@ focus = {
         y = 29
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_8 }
+        mutually_exclusive = { focus = AOEIW28_SOV_field_workshops }
         available_if_capitulated = no
         completion_reward = { army_experience = 20 add_command_power = 20 }
-        ai_will_do = { factor = 5 }
+        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = yes } }
     }
 
     focus = {
