@@ -596,7 +596,7 @@ focus_tree = {
         # AOEIW visual-layout base: 36,6
         id = AOEIW9_NOR_eco_civ_7
         icon = GFX_focus_generic_mass_production
-        x = 18
+        x = 17
         y = 6
         cost = 4
         
@@ -614,14 +614,15 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_eco_civ_6 }
+        mutually_exclusive = { focus = AOEIW9_NOR_eco_civ_8 }
     }
 
     focus = {
         # AOEIW visual-layout base: 36,7
         id = AOEIW9_NOR_eco_civ_8
         icon = GFX_focus_generic_industry_2
-        x = 18
-        y = 7
+        x = 19
+        y = 6
         cost = 5
         
         cancel_if_invalid = yes
@@ -636,7 +637,8 @@ focus_tree = {
             add_tech_bonus = { name = AOEIW21_NOR_industrial_modernisation bonus = 0.50 uses = 1 category = industry }
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
-        prerequisite = { focus = AOEIW9_NOR_eco_civ_7 }
+        prerequisite = { focus = AOEIW9_NOR_eco_civ_6 }
+        mutually_exclusive = { focus = AOEIW9_NOR_eco_civ_7 }
     }
 
     focus = {
@@ -644,7 +646,7 @@ focus_tree = {
         id = AOEIW9_NOR_eco_civ_9
         icon = GFX_focus_generic_merchant_fleet
         x = 18
-        y = 8
+        y = 7
         cost = 6
         
         cancel_if_invalid = yes
@@ -655,7 +657,7 @@ focus_tree = {
             add_ideas = AOEIW9_NOR_spirit_civilian_engine
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
-        prerequisite = { focus = AOEIW9_NOR_eco_civ_8 }
+        prerequisite = { focus = AOEIW9_NOR_eco_civ_7 focus = AOEIW9_NOR_eco_civ_8 }
     }
 
     focus = {
@@ -1598,13 +1600,14 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_dip_root }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_b_1 }
     }
 
     focus = {
         # AOEIW visual-layout base: 32,13
         id = AOEIW9_NOR_dip_a_2
         icon = GFX_focus_generic_military_mission
-        x = 16
+        x = 15
         y = 12
         cost = 6
         
@@ -1618,14 +1621,15 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_a_3 }
     }
 
     focus = {
         # AOEIW visual-layout base: 32,14
         id = AOEIW9_NOR_dip_a_3
         icon = GFX_focus_generic_concessions
-        x = 16
-        y = 13
+        x = 17
+        y = 12
         cost = 7
         
         cancel_if_invalid = yes
@@ -1636,7 +1640,8 @@ focus_tree = {
             add_political_power = 25
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_NOR_dip_a_2 }
+        prerequisite = { focus = AOEIW9_NOR_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_a_2 }
     }
 
     focus = {
@@ -1644,7 +1649,7 @@ focus_tree = {
         id = AOEIW9_NOR_dip_a_4
         icon = GFX_goal_generic_army_doctrines
         x = 16
-        y = 14
+        y = 13
         cost = 4
         
         cancel_if_invalid = yes
@@ -1656,7 +1661,7 @@ focus_tree = {
             add_war_support = 0.03
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_NOR_dip_a_3 }
+        prerequisite = { focus = AOEIW9_NOR_dip_a_2 focus = AOEIW9_NOR_dip_a_3 }
     }
 
     focus = {
@@ -1664,7 +1669,7 @@ focus_tree = {
         id = AOEIW9_NOR_dip_a_5
         icon = GFX_goal_generic_forceful_treaty
         x = 16
-        y = 15
+        y = 14
         cost = 5
         
         cancel_if_invalid = yes
@@ -1697,6 +1702,7 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_root }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_a_1 }
     }
 
     focus = {
@@ -1717,6 +1723,7 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_b_3 }
     }
 
     focus = {
@@ -1736,6 +1743,7 @@ focus_tree = {
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_NOR_dip_b_2 }
     }
 
     focus = {
@@ -1755,8 +1763,7 @@ focus_tree = {
             add_war_support = 0.03
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
-        prerequisite = { focus = AOEIW9_NOR_dip_b_2 }
-        prerequisite = { focus = AOEIW9_NOR_dip_b_3 }
+        prerequisite = { focus = AOEIW9_NOR_dip_b_2 focus = AOEIW9_NOR_dip_b_3 }
     }
 
     focus = {
@@ -1799,8 +1806,7 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        prerequisite = { focus = AOEIW9_NOR_dip_a_5 }
-        prerequisite = { focus = AOEIW9_NOR_dip_b_5 }
+        prerequisite = { focus = AOEIW9_NOR_dip_a_5 focus = AOEIW9_NOR_dip_b_5 }
     }
 
 
