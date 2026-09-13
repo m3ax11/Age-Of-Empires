@@ -18,7 +18,7 @@ A conflict exists when profiles in the same decision type share at least two of 
 | Major continental military method | France — `AOEIW9_FRA_dip_a_5` | Army organisation, supply consumption, land-fort construction | Implemented |
 | Major maritime economic method | France — `AOEIW9_FRA_dip_b_3` | Dockyard output, trade influence, consumer-goods demand | Implemented |
 | Major maritime military method | France — `AOEIW9_FRA_dip_b_5` | Naval organisation, air-mission efficiency, naval-base construction | Implemented |
-| Major maritime military method | USA — `AOEIW9_USA_dip_a_2` | Convoy escort, naval organisation, naval-base construction | Implemented |
+| Major maritime military method | USA — `AOEIW9_USA_dip_a_2` | Convoy escort, radar-station construction, decryption | Implemented; pair 5 correction |
 | Major maritime economic method | USA — `AOEIW9_USA_dip_a_3` | Trade influence, factory-efficiency growth, consumer-goods demand | Implemented |
 | Major maritime military method | USA — `AOEIW9_USA_dip_b_2` | Air-mission efficiency, naval organisation, air-base construction | Implemented |
 | Major maritime economic method | USA — `AOEIW9_USA_dip_b_3` | Dockyard output, resource extraction, trade influence | Implemented |
@@ -48,7 +48,7 @@ The four implemented American theatre-method profiles were compared pairwise bef
 
 | USA profile pair | Shared principal categories | Result |
 |---|---|---|
-| Atlantic mission ↔ Pacific mission | Naval organisation (1/3) | No internal conflict |
+| Atlantic mission ↔ Pacific mission | None (0/3) | No internal conflict |
 | Atlantic mission ↔ Atlantic commercial pressure | None (0/3) | No internal conflict |
 | Atlantic mission ↔ Pacific commercial pressure | None (0/3) | No internal conflict |
 | Pacific mission ↔ Atlantic commercial pressure | None (0/3) | No internal conflict |
@@ -75,7 +75,7 @@ The revised American profile is **convoy escort, radar-station construction and 
 | United Kingdom — Admiralty Atlantic mission | Convoy escort (1/3) | No conflict; British detection and coordination remain distinct. |
 | Russia — proposed maritime military method | None (0/3) | No conflict with the currently registered, still-unapproved Russian draft. |
 
-This is a proposal only. No USA idea, focus or localisation file has been changed.
+This profile was approved and implemented. The focus ID and its existing immediate rewards remain unchanged.
 
 | Pair | Shared categories | Finding | Narrow correction proposed |
 |---|---|---|---|
@@ -83,7 +83,7 @@ This is a proposal only. No USA idea, focus or localisation file has been change
 | Denmark Continental Mobilisation ↔ Ireland Border Emergency | Arms-factory construction, recruitable population | **Conflict (2/3)** | Change Ireland to army defence, mobilisation speed and stability, representing border security and emergency institutions rather than continental mass mobilisation. |
 | Norway Scandinavian Field Command ↔ Ireland Border Emergency | Army organisation, recruitable population | **Conflict (2/3)** | The same proposed Ireland correction resolves this pair while Norway retains planning for Scandinavian field operations. This remains a separate approval item because it is a separate conflict pair. |
 | Ireland Atlantic Republic ↔ France Mediterranean Commerce | Dockyard output, trade influence | **Conflict (2/3)** | Change Ireland to convoy escort, trade influence and political-power growth, representing diaspora shipping and neutral brokerage rather than dockyard-led imperial commerce. |
-| Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort, naval organisation | **Conflict (2/3)** | Change the USA Atlantic mission to convoy escort, radar-station construction and decryption. This represents the Neutrality Patrol, continental coastal warning and signals intelligence; the revised proposal was checked against the complete post-UK register and creates no new 2/3 conflict. |
+| Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort only after correction | **Resolved (1/3)** | The approved USA Atlantic mission now uses convoy escort, radar-station construction and decryption. Denmark retains naval organisation and speed; the corrected American profile creates no new 2/3 conflict in the complete post-UK register. |
 | France Mediterranean Military ↔ USA Atlantic Mission | Naval organisation, naval-base construction | **Conflict (2/3)** | The proposed USA Atlantic surveillance correction also resolves this pair; France retains fleet organisation and Mediterranean bases. Separate approval is still required for this pair. |
 | France Mediterranean Military ↔ USA Pacific Mission | Naval organisation, air-mission efficiency | **Conflict (2/3)** | Change the USA Pacific mission to sortie efficiency, air-mission efficiency and air-base construction, making carrier aviation and island airfields its identity. |
 | France Mediterranean Commerce ↔ USA Atlantic Commercial Pressure | Trade influence, consumer-goods demand | **Conflict (2/3)** | Change the USA Atlantic commercial profile to trade influence, factory-efficiency growth and political-power growth, representing Wall Street credit and federal purchasing. |

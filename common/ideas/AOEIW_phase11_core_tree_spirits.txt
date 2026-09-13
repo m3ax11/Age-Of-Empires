@@ -74,8 +74,8 @@ ideas = {
             removal_cost = -1
             modifier = {
                 convoy_escort_efficiency = 0.0800
-                navy_org_factor = 0.0300
-                production_speed_naval_base_factor = 0.1000
+                production_speed_radar_station_factor = 0.1500
+                decryption_factor = 0.1000
             }
         }
         AOEIW_STRUCT_USA_atlantic_commercial_pressure = {
