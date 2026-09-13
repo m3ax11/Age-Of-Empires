@@ -147,3 +147,21 @@ FRA,The frontier and the rear,AOEIW_STRUCT_FRA_DEPTH_grain_register,The Municipa
 FRA,Arsenals and the industrial basin,AOEIW_STRUCT_FRA_DEPTH_aviation_tools,The Aviation Tooling Board,One Gauge from Toulouse to Bordeaux,Named aviation centres replace an invented tooling board.
 FRA,Arsenals and the industrial basin,AOEIW_STRUCT_FRA_DEPTH_standard_chassis,The Standard Chassis Commission,"Fewer Chassis, More Spares",The title expresses the production problem and remedy directly.
 FRA,The Second Empire and the street,AOEIW35_FRA_institutional_right,Empower the Directorate,Weygand Takes the Ministries,The named takeover replaces the generic directorate command.
+ENG,"Crown, Parliament and the Dominions",AOEIW9_ENG_politics_p1_5,Balance the Dominion Office,The Dominions Secretary at No. 10,A cabinet scene replaces the generic balancing formula.
+ENG,"Crown, Parliament and the Dominions",AOEIW9_ENG_politics_p2_4,Broaden the Dominion Office,Invite the Dominion Premiers,The action and actors replace a generic office expansion.
+ENG,"Crown, Parliament and the Dominions",AOEIW9_ENG_politics_p2_7,A New Charter for British Empire,Westminster Governs by Consent,The title uses Westminster and the autonomy conflict instead of a generic charter.
+ENG,"Crown, Parliament and the Dominions",AOEIW9_ENG_politics_p3_3,Break the Dominion Office,Shut the Dominions Office,The revolutionary action is now explicit.
+ENG,"Crown, Parliament and the Dominions",AOEIW9_ENG_politics_p3_7,The People's Commonwealth Settlement,Britain Belongs to Its People,A political declaration replaces an abstract settlement.
+ENG,Preference and preparedness,AOEIW9_ENG_eco_civ_4,Power for Imperial Preference Board,Ottawa Tariffs at Work,The real Ottawa system replaces an invented board.
+ENG,Preference and preparedness,AOEIW9_ENG_eco_war_1,The Imperial Preference Board Armaments Audit,"Sterling, Steel and Shells",Concrete inputs replace a board audit.
+ENG,Preference and preparedness,AOEIW9_ENG_eco_war_7,Long-Term Contracts for Imperial Preference Board,Contracts across the Empire,The title names the imperial transaction directly.
+ENG,Preference and preparedness,AOEIW9_ENG_eco_infra_2,Freight Capacity at Imperial Preference Board,Clear the Goods through Liverpool,A real port and bottleneck replace the generic board.
+ENG,Preference and preparedness,AOEIW9_ENG_mil_army_1,The Army Training Commission,The Salisbury Plain Exercises,A real training area replaces the generic commission.
+JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_p1_2,Reconcile the Japanese Privy Council,The Elder Statesmen Bend,The title identifies the political struggle around the real Privy Council.
+JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_p2_7,A New Charter for Japanese Empire,Government under the Meiji Constitution,The real constitutional framework replaces a generic new charter.
+JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_p3_6,Reshape the Privy Council,Strip the Privy Council of Its Veto,The title states the civilian path’s concrete reform.
+JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_p3_7,The Civilian Ascendancy Settlement,The Diet Commands the Cabinet,The institutional result replaces an abstract settlement.
+JAP,"Throne, Diet and the services",AOEIW9_JAP_politics_settlement,The Tokyo Settlement,The Emperor Names His Government,The constitutional act replaces the vague Tokyo settlement.
+JAP,Zaibatsu and total war,AOEIW9_JAP_eco_final,The Zaibatsu-State Compact,Orders for Mitsubishi and Mitsui,Named zaibatsu replace an abstract state compact.
+JAP,Zaibatsu and total war,AOEIW9_JAP_mil_army_1,The Army Training Commission,The Kwantung Army Manoeuvres,A real command and strategic problem replace the generic commission.
+JAP,"Throne, Diet and the services",AOEIW_IMM_JAP_court_1,The Court Planning Board,Conference before the Throne,The real court procedure replaces an invented planning board.

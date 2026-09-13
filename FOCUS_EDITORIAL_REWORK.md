@@ -6,7 +6,27 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy and France are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain and Japan are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Britain — branch stories
+
+### Crown, Parliament and the Dominions
+
+The Crown, Cabinet, Privy Council, Labour movement and Dominion premiers contest who can bind an empire to war. Constitutional paths bring the premiers to London and make Parliament own the decision; the revolutionary path closes imperial offices whose authority rests on hierarchy. The Statute of Westminster and the Ottawa system supply real language for autonomy and trade. The result must tell the player whether Britain leads partners, commands subjects or becomes a people's commonwealth.
+
+### Preference and preparedness
+
+Ottawa tariffs, sterling finance, Liverpool freight and contracts across the empire turn preference into material mobilisation. Rearmament also passes through the Defence Requirements Committee, Salisbury Plain exercises and the air-raid precautions exposed by the 1938 crisis. The armed forces cannot treat imperial access as an unlimited warehouse. This path ends when trade promises, shipping and training support the same strategy.
+
+## Japan — branch stories
+
+### Throne, Diet and the services
+
+The Emperor, Privy Council, Diet, civilian cabinets and rival services share powers without a dependable chain of responsibility. Court conferences can force compromise, while civilian ascendancy strips unelected advisers of vetoes and makes the cabinet answer to the Diet. Military victory instead lets field commands dictate policy through access to the Throne. Every route ends by naming who can turn an imperial decision into an order.
+
+### Zaibatsu and total war
+
+Mitsubishi and Mitsui connect shipyards, banks and heavy industry, but their interests do not automatically match the army's timetable. State contracts can harness those combines only by committing steel, shipping and credit to defined orders. Large manoeuvres expose the distance between plans drafted in Tokyo and armies supplied on the continent. Industrial consolidation therefore carries a political price rather than appearing as a neutral compact.
 
 ## France — branch stories
 
@@ -145,3 +165,6 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [Chemins de mémoire: the Popular Front, Matignon reforms and Maginot strategy](https://www.cheminsdememoire.gouv.fr/sites/default/files/editeur/1919-1939-007.pdf)
 - [Chemins de mémoire: French armament centres and the purpose of the Maginot Line](https://www.cheminsdememoire.gouv.fr/sites/default/files/2023-10/LES_ARMEES_ET_LES_TERRITOIRES_ENJEUX_IMPLANTATIONS_RESTRUCTURATIONS.pdf)
 - [Chemins de mémoire: training, command and production failures in 1940](https://www.cheminsdememoire.gouv.fr/fr/enseigner-1940-1)
+- [UK National Archives: the Defence Requirements Committee and rearmament](https://www.nationalarchives.gov.uk/education/resources/thirties-britain/slowness-rearmament/)
+- [UK National Archives: air-raid precautions and the 1938 crisis](https://www.nationalarchives.gov.uk/education/resources/home-front-1939-1945-part-one/civil-defence-measures/)
+- [National Diet Library of Japan: the Privy Council, Diet and divided responsibility](https://www.ndl.go.jp/constitution/e/shiryo/03/059/059tx.html)
