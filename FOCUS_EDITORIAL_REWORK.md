@@ -6,7 +6,37 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland, Romania, Yugoslavia, Greece and Bulgaria are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland, Romania, Yugoslavia, Greece, Bulgaria, Belgium, the Netherlands and Portugal are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Belgium — branch stories
+
+### Leopold, Parliament and neutrality
+
+Leopold III, parliament, provincial interests and corporatists argue over who may commit Belgium after the return to independent neutrality in 1936. Parliamentary government makes colonial revenue and defence appropriations visible; authoritarian government concentrates them around the Crown. The constitutional result must settle ministerial responsibility before a frontier crisis divides King and cabinet. Belgian neutrality becomes a policy with costs rather than a passive label.
+
+### Congo, Liège and the Albert Canal
+
+Congo trade supplies revenue and raw materials, while Liège workshops and Antwerp routes turn them into industrial strength. Colonial offices are replaced by named ports, cargoes and contracts so the subject relationship has visible economic consequences. Worker housing belongs near mines and factories rather than inside a trade office. The branch ends when metropolitan steel, colonial freight and defence orders form one working system.
+
+## Netherlands — branch stories
+
+### Wilhelmina, Colijn and the overseas kingdom
+
+Wilhelmina, Colijn's cabinet, the States General and colonial governments dispute how far The Hague may rule overseas by instruction. The 1922 constitutional revision and the 1937 regulations give autonomy a real legal vocabulary. Parliament can bring governors before the Binnenhof; imperial nationalists instead turn Plein ministries into a command chain. The settlement ends by stating who speaks for the whole kingdom.
+
+### Shipping and imperial defence
+
+Rotterdam, Amsterdam yards and the route to the East Indies tie Dutch prosperity to vulnerable sea lanes. Shipbuilding expansion must produce merchant hulls, escorts and repair capacity rather than another programme title. Colijn's 1936 Defence Fund gives rearmament a named fiscal decision. The result connects colonial policy to ships and budgets the Netherlands can actually provide.
+
+## Portugal — branch stories
+
+### Constitution, Estado Novo and empire
+
+Salazar, Carmona, the National Assembly, corporatist bodies and republican opponents contest the state created after the 1926 coup. The 1933 Constitution and Colonial Act are retained as real foundations of the Estado Novo, while alternate parliamentary and republican paths must say which powers they reverse. Imperial politics culminate in negotiations with Brazil over representation, investment and defence. Lisbon's authority is judged by what happens in ports and colonies, not by the number of councils it creates.
+
+### Atlantic ports and colonial trade
+
+Lisbon, Porto, Luanda and Lourenço Marques form an Atlantic and Indian Ocean network whose ledgers must become cargo, cranes and convoy capacity. Colonial revenues finance arsenals and research only when contracts reach named institutions and workshops. Brazilian investment can deepen that network while also limiting Lisbon's freedom of action. The economic payoff is an empire connected by ships, warehouses and reciprocal obligations.
 
 ## Yugoslavia — branch stories
 
@@ -268,3 +298,8 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [Foundation of the Hellenic Parliament: constitutional history of modern Greece](https://foundation.parliament.gr/sites/default/files/2020-06/Introduction%20to%20the%20Constitutional%20History%20of%20Modern%20of%20Greece.pdf)
 - [Bulgarian National Assembly: the Tarnovo Constitution and parliamentary responsibility](https://old.parliament.bg/en/news/ID/3083)
 - [Bulgarian National Assembly: suspension under the 19 May 1934 regime](https://old.parliament.bg/bg/plenaryst/ns/52/ID/6816)
+- [Belgian federal portal: Leopold III, industrial Belgium and the 1936 return to neutrality](https://www.belgium.be/en/about_belgium/country/history/belgium_from_1830)
+- [Parlement.com: Colijn, the 1936 Defence Fund and colonial administration](https://parlement.com/biografie/dr-h-colijn)
+- [Parlement.com: the 1922 and 1937 constitutional changes within the Dutch kingdom](https://parlement.com/geschiedenis-statuut-voor-het-koninkrijk)
+- [Portuguese Parliament: the 1933 Constitution and Colonial Act](https://www.parlamento.pt/Parlamento/Documents/CRP-1933-Indice.pdf)
+- [Portuguese Parliament: the Estado Novo constitution and corporative chamber](https://www.parlamento.pt/Parlamento/Paginas/dias-ditadura.aspx)
