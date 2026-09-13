@@ -6,7 +6,17 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary and Poland are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland and Romania are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Romania — branch stories
+
+### Crown, parties and the Legion
+
+Carol II's court camarilla, parliamentary parties, oil interests and the Iron Guard compete for control of Bucharest. Constitutional government defends the 1923 settlement and makes oil revenue visible to parliament; royal dictatorship gathers authority at the palace; Legionary victory brings Codreanu's movement into the capital. The politics draw on Romania's real struggle between flawed parliamentary government, Carol's personal regime and an indigenous fascist movement. The branch ends by naming who actually rules from Calea Victoriei.
+
+### Oil, villages and the army
+
+Ploiești oil can finance modernisation only if royalties, pumps, rail tanks and export contracts work together. Village cooperatives need credit while CFR depots connect grain and fuel to the army. Malaxa's works provide a named centre for artillery and heavy industry. Foreign guarantees from Rome matter only when they protect these routes and resources.
 
 ## Austria-Hungary — branch stories
 
@@ -222,3 +232,5 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [House of Austrian History: Dollfuß–Schuschnigg rule, Heimwehr, Schutzbund and the May Constitution](https://hdgoe.at/dsd_topic_en)
 - [House of Austrian History: the July Agreement and Schuschnigg's strategy](https://hdgoe.at/juliabkommen)
 - [Museum of the Second World War: Polish modernisation and the Narew–Vistula–San line](https://muzeum1939.pl/sites/default/files/plik/49a4dbb8f6914c346e000c02fc46863324091.pdf)
+- [Romanian Cultural Institute: Carol II's royal dictatorship and the National Renaissance Front](https://www.icr.ro/pagini/king-carol-ii-and-the-myth-of-eternal-romania/en)
+- [Romanian Cultural Institute: the Iron Guard in interwar political culture](https://www.icr.ro/pagini/ideas-and-ideology-in-interwar-romania/en)
