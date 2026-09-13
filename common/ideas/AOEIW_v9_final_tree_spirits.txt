@@ -1156,6 +1156,26 @@ ideas = {
                 army_morale_factor = 0.0300
             }
         }
+        AOEIW9_IRE_spirit_border_emergency = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                production_speed_arms_factory_factor = 0.0800
+                recruitable_population_factor = 0.0050
+            }
+        }
+        AOEIW9_IRE_spirit_atlantic_republic = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                convoy_escort_efficiency = 0.0800
+                industrial_capacity_dockyard = 0.0500
+                trade_opinion_factor = 0.1000
+            }
+        }
         AOEIW9_ITA_spirit_civilian_engine = {
             allowed = { always = no }
             allowed_civil_war = { always = yes }

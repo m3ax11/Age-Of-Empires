@@ -116,7 +116,7 @@ This audit covers every mutex/reconvergence conversion introduced in commit `b9e
 
 The shared reconvergence focuses retain their existing rewards. Divergence persists because the selected theatre spirit is permanent and the unselected focus cannot be completed. Method choices trade military preparation for domestic political capital and instability rather than granting cloned bonuses.
 
-## Ireland — pre-edit structural report (awaiting approval)
+## Ireland — structural report and implementation
 
 ### Current true forks
 
@@ -145,7 +145,7 @@ The shared reconvergence focuses retain their existing rewards. Divergence persi
 - The economic and military capstones require broad programmes and apply established consolidation rewards.
 - The diplomatic capstone requires Ireland to finish both a war-goal route against Britain and a war-goal route against the United States. This contradicts the tree's own British-relationship versus Atlantic-neutrality framing and leaves no distinct post-choice identity.
 
-### Proposed structural changes — no implementation without approval
+### Approved structural changes
 
 1. After renewing the Limerick workshops, make the Dublin industrial second shift and Shannon public works alternative investments, with OR reconvergence at the Cork Harbour development focus. Preserve their different existing rewards.
 2. Make the British-relationship route and Atlantic-neutrality route mutex at their opening nodes; let *Ireland and the Atlantic Balance* accept either completed route through OR.
@@ -153,3 +153,80 @@ The shared reconvergence focuses retain their existing rewards. Divergence persi
 4. On the Atlantic route, branch diplomatic mission and economic leverage directly from *Atlantic Neutrality*, make them mutex, and reconverge them at staff talks.
 5. Add persistent, Ireland-specific outcome divergence if approved: the British confrontation would strengthen border mobilisation and domestic arms capacity; the transatlantic route would strengthen convoy protection, ports and overseas trade. Military missions would grant service experience/command power, while economic pressure would grant more political power at a stability or trade cost.
 6. Keep all existing focus IDs and country targets. Review the extreme annexation war goals separately as content/balance questions rather than silently changing them during this structure pass.
+
+### Outcome-divergence check
+
+| Choice | Result A | Result B | Assessment |
+|---|---|---|---|
+| Dublin second shift vs Shannon public works | A civilian factory and infrastructure in state 113 | A capital civilian factory, building slot and industry research bonus | Genuine existing regional-versus-capital investment choice; rewards preserved. |
+| British relationship vs Atlantic neutrality | **The Border Emergency**: army organisation, arms-factory construction and manpower | **The Atlantic Republic**: convoy escort, dockyard output and overseas trade opinion | Distinct land/industrial and maritime/commercial end states. |
+| British mission vs economic leverage | Army experience and command power | Greater political power at a larger stability cost | Different preparation, risk and immediate resource categories. |
+| Atlantic mission vs economic leverage | Navy experience and command power | Greater political power at a stability cost | Different preparation, risk and immediate resource categories. |
+
+Implementation preserves every focus ID, target, original reward and shared capstone effect. The new benefits are additions to the selected existing focuses, and the unselected theatre spirit cannot be acquired in the same campaign.
+
+## France — pre-edit structural report (awaiting approval)
+
+### Structural baseline
+
+- 182 focuses, 44 graph branch points, 27 multi-parent reconvergences, four explicit mutex loci, no pure prerequisite chain of five or more focuses, and 22 endpoints.
+- France is already substantially more interconnected than the regional V9 trees. The pass should refine specific false choices and detached endpoints rather than impose a new template.
+
+### Current true forks
+
+- The crisis of state has four protected political outcomes: liberal empire, Bonapartist authority, the workers' alternative/French Commune, and Weygand's Marshalate. Much of this exclusivity uses established `allow_branch` checks rather than visible mutex lines; replacing that working system would be risky and unnecessary.
+- Revolutionary diplomacy has a genuine choice between founding the Workers' International and building a Fortress Commune.
+- The Marshalate military programme has a genuine methodical-reserve versus mobile-reserve choice.
+- The late institutional settlement chooses between Chamber supremacy and Weygand taking the ministries.
+- Rhine and Mediterranean policy each display two parallel tracks, but both tracks are mandatory before their respective decision focus. They are work queues, not strategic choices.
+
+### Current reconvergence points
+
+- The Workers' International/Fortress Commune choice reconverges at *Arsenal of the Commune* after the economic, army, air and naval revolutionary programmes.
+- Methodical and mobile reserves reconverge at *Every Train to the Front*, although their unique follow-up focuses (*The Prepared Fire Plan* and *The Counterstroke Exercise*) are optional dead ends and are bypassed by that reconvergence.
+- Imperial transport/dockyards, civic defence, and the consolidated Marshalate reconverge through OR at *A French State Reconciled*.
+- Industrial, combined-arms and diplomatic capstones already combine several major programmes. The Rhine/Italian diplomatic branches reconverge through OR at *Guardians of the Old Order*, so France can finish after one theatre while retaining the option to pursue both.
+- Chamber and Weygand institutional outcomes reconverge at *France Mobilised*.
+
+### Current cross-branch links
+
+- Political outcomes select the applicable imperial, revolutionary or Marshalate institutional content through prerequisites, flags and `allow_branch` guards.
+- *The State in Practice* accepts either the imperial national settlement or the revolutionary arsenal, bringing both regimes into the governance balance system.
+- Industrial science feeds the national industrial capstone; army, air and navy feed *Methodical Battle*.
+- Non-Communist political settlement opens the continental diplomatic doctrine, while the Commune uses its separate revolutionary-diplomacy branch.
+
+### Long or over-mandatory sequences
+
+- There are no five-node pure chains according to the graph audit.
+- Each foreign-policy theatre nevertheless requires both economic coercion and military escalation before its decision. The visual split therefore promises a choice the prerequisite logic does not provide.
+- The methodical/mobile reserve choice reconverges one step too early, allowing the player to skip the doctrine-specific operational payoff.
+
+### Undercooked or detached endpoints
+
+- *French Logistics through the National Railways* ends separately with one infrastructure placement and political power; the industrial capstone does not require France's national railway programme.
+- *Overseas Maintenance Manuals* and *Accept the Algerian Deliveries* are low-impact terminal leaves. Both describe supply systems that should feed *One Imperial Supply System*.
+- Several other depth endpoints set flags, remove temporary ideas or unlock operations through tooltips. Those are functioning side payoffs and should not be connected merely because the graph labels them endpoints.
+- *Workshops of the Second Empire*, *Methodical Battle*, *Guardians of the Old Order*, *Arsenal of the Commune*, *A French State Reconciled*, and *France Mobilised* already have substantial effects or systemic follow-up.
+
+### Existing outcome-divergence audit
+
+| Existing choice | Divergence | Disposition |
+|---|---|---|
+| Workers' International vs Fortress Commune | Faction creation and international revolutionary policy versus a stability/home-defence spirit and revolutionary neutrality | Genuine; preserve unchanged. |
+| Methodical vs mobile reserve | Artillery versus armour research, different operation unlocks, artillery stockpile versus armour research/army experience in their follow-ups | Genuine; preserve rewards and make the distinct follow-up mandatory before reconvergence. |
+| Chamber vs Weygand ministries | Opposite governance-balance movement; stability versus war support with a stability cost; later event reads the institutional state | Genuine; preserve unchanged. |
+
+### Proposed structural changes — no implementation without approval
+
+1. In the Rhine branch, make the economic-coercion sequence (`dip_a_2` → `dip_a_3`) mutex with the military-escalation sequence (`dip_a_4` → `dip_a_5`). Change *Terms for the Rhine Rivalry* from an AND gate to OR reconvergence at `dip_a_3`/`dip_a_5`.
+2. Apply the equivalent structural choice to Mediterranean policy and reconverge at *Terms for Mediterranean Ambitions*. Do **not** make Rhine policy mutex with Mediterranean policy: a French major-power campaign can contest both theatres, and the final focus already accepts either completed theatre.
+3. Guarantee real outcome divergence with theatre-specific permanent modifiers added to the existing method endpoints:
+   - Rhine economic pressure: continental trade, civilian/industrial throughput and rail-linked production.
+   - Rhine military escalation: army organisation, supply preparation and frontier-fort construction.
+   - Mediterranean economic pressure: dockyard/port output, commerce and lower import pressure.
+   - Mediterranean military escalation: naval organisation, air mission support and naval-base construction.
+   These four profiles will use different modifier categories; neither method will be a strictly stronger copy of the other. Existing immediate rewards remain attached to their focuses.
+4. Change *Every Train to the Front* to require either *The Prepared Fire Plan* or *The Counterstroke Exercise* instead of reconverging immediately after the reserve choice. This preserves the already genuine artillery/mobile outcome difference and makes the selected doctrine develop before the common logistics programme.
+5. Add *French Logistics through the National Railways* as a separate AND prerequisite for *The Workshops of the Second Empire*. The industrial capstone should require its railway spine as well as production and research.
+6. Add one OR prerequisite to *One Imperial Supply System*: either *Overseas Maintenance Manuals* or *Accept the Algerian Deliveries*. This connects two currently detached colonial-supply outcomes without falsely declaring them mutually exclusive.
+7. Adjust AI weights only at the four proposed diplomatic method openings so wartime/frontier pressure favours military escalation and peacetime industrial strain favours economic pressure. Preserve all focus IDs, country targets, existing regime guards and current capstone effects.
