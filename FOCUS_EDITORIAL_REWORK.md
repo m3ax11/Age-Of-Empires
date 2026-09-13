@@ -6,7 +6,37 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland and Romania are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland, Romania, Yugoslavia, Greece and Bulgaria are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Yugoslavia — branch stories
+
+### The kingdom after Alexander
+
+The royal court, Serbian officers, Croatian deputies, Slovene councils and banovina administrations contest the state left after Alexander's assassination. Centralists issue decrees from Belgrade, while federalists revise the Vidovdan order and distribute authority among the peoples. Industrial and military policy reveal whether those guarantees survive contact with taxes, factories and mobilisation. The political payoff is a kingdom that has chosen how its regions belong together.
+
+### Macedonia, the Adriatic and the Balkan Pact
+
+Italy, Bulgaria and the unresolved Macedonian claims force Belgrade to connect internal autonomy with foreign policy. Border surveys and frozen claims make the Sofia negotiations concrete, while staff missions test the value of wider alignments. The Balkan Pact must respect the banovinas if it expects their troops and railways. Yugoslavia therefore reacts to diplomacy through its domestic settlement instead of treating the two as separate trees.
+
+## Greece — branch stories
+
+### The National Schism
+
+George II, Venizelists, parliament, the officer corps and Metaxas inherit a country still divided over Crown and foreign alignment. Parliament can restore constitutional limits; Metaxas takes the ministries and turns the Fourth of August into a governing order. Athens must then prove that whichever side wins can appoint prefects, fund defence and hold the state together. Political titles use the language of the schism rather than anonymous councils.
+
+### Aegean industry and Balkan security
+
+Pyrkal, the Athens Polytechnic and the Salonika–Florina road give Greek preparation physical centres. The Balkan Pact develops through named capitals, trade, staff maps and explicit red lines. The Aegean question remains distinct from continental cooperation, forcing Greece to choose where scarce forces matter. The branch ends with commitments backed by shells, roads and mobilisation plans.
+
+## Bulgaria — branch stories
+
+### Tarnovo or rule by decree
+
+Boris III, the National Assembly, agrarians and revisionist officers struggle over the suspended Tarnovo Constitution after the 1934 coup. Parliament can restore ministerial responsibility; royal rule dissolves party competition and governs through Sofia. Both paths face the same demands over Macedonia and Dobruja. The constitutional choice therefore changes who negotiates Bulgaria's revision rather than merely renaming the cabinet.
+
+### Railways, Varna and the borders
+
+BDZ workshops and timetables connect the Sofia Arsenal with Black Sea warehouses at Varna. Mobilisation requires coal, wagons and repair tools before border claims become useful. Talks with Belgrade and Bucharest move from surveys and bridge meetings to minority guarantees and frozen claims. Bulgaria's economic and diplomatic branches converge on whether the state can support the borders it seeks to revise.
 
 ## Romania — branch stories
 
@@ -234,3 +264,7 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [Museum of the Second World War: Polish modernisation and the Narew–Vistula–San line](https://muzeum1939.pl/sites/default/files/plik/49a4dbb8f6914c346e000c02fc46863324091.pdf)
 - [Romanian Cultural Institute: Carol II's royal dictatorship and the National Renaissance Front](https://www.icr.ro/pagini/king-carol-ii-and-the-myth-of-eternal-romania/en)
 - [Romanian Cultural Institute: the Iron Guard in interwar political culture](https://www.icr.ro/pagini/ideas-and-ideology-in-interwar-romania/en)
+- [1914–1918 Online: Ante Trumbić, the Vidovdan order and Croatian autonomy](https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-trumbic_ante-2016-06-24.pdf)
+- [Foundation of the Hellenic Parliament: constitutional history of modern Greece](https://foundation.parliament.gr/sites/default/files/2020-06/Introduction%20to%20the%20Constitutional%20History%20of%20Modern%20of%20Greece.pdf)
+- [Bulgarian National Assembly: the Tarnovo Constitution and parliamentary responsibility](https://old.parliament.bg/en/news/ID/3083)
+- [Bulgarian National Assembly: suspension under the 19 May 1934 regime](https://old.parliament.bg/bg/plenaryst/ns/52/ID/6816)
