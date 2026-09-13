@@ -1618,6 +1618,8 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_opinion_modifier = { target = SWE modifier = AOEIW_geopolitical_rivalry }
+            army_experience = 15
+            add_command_power = 10
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_dip_a_1 }
@@ -1638,6 +1640,8 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             add_political_power = 25
+            add_political_power = 40
+            add_stability = -0.02
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_dip_a_1 }
@@ -1679,6 +1683,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             if = { limit = { SWE = { exists = yes } NOT = { has_war_with = SWE } } create_wargoal = { type = annex_everything target = SWE } }
+            add_ideas = AOEIW9_NOR_spirit_scandinavian_field_command
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_NOR_dip_a_4 }
@@ -1720,6 +1725,8 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_opinion_modifier = { target = ENG modifier = AOEIW_geopolitical_rivalry }
+            navy_experience = 15
+            add_command_power = 10
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_b_1 }
@@ -1740,6 +1747,8 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             add_political_power = 25
+            add_political_power = 40
+            add_stability = -0.03
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_b_1 }
@@ -1781,6 +1790,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             if = { limit = { ENG = { exists = yes } NOT = { has_war_with = ENG } } create_wargoal = { type = annex_everything target = ENG } }
+            add_ideas = AOEIW9_NOR_spirit_atlantic_lifeline
         }
         ai_will_do = { factor = 5 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_NOR_dip_b_4 }

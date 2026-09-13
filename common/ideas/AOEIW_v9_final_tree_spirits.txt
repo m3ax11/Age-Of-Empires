@@ -497,6 +497,26 @@ ideas = {
                 army_morale_factor = 0.0300
             }
         }
+        AOEIW9_DEN_spirit_baltic_sound_command = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.0500
+                naval_speed_factor = 0.0500
+                convoy_escort_efficiency = 0.0500
+            }
+        }
+        AOEIW9_DEN_spirit_continental_mobilisation = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0500
+                production_speed_arms_factory_factor = 0.0750
+                recruitable_population_factor = 0.0050
+            }
+        }
         AOEIW9_EGY_spirit_civilian_engine = {
             allowed = { always = no }
             allowed_civil_war = { always = yes }
@@ -1418,6 +1438,26 @@ ideas = {
                 planning_speed = 0.0800
                 land_reinforce_rate = 0.0200
                 army_morale_factor = 0.0300
+            }
+        }
+        AOEIW9_NOR_spirit_scandinavian_field_command = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0500
+                max_planning_factor = 0.0500
+                recruitable_population_factor = 0.0050
+            }
+        }
+        AOEIW9_NOR_spirit_atlantic_lifeline = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.0500
+                naval_speed_factor = 0.0500
+                industrial_capacity_dockyard = 0.0500
             }
         }
         AOEIW9_PER_spirit_civilian_engine = {
