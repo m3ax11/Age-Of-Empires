@@ -246,7 +246,7 @@ Implementation preserves every focus ID, target, original reward and shared caps
 - The imperial logistics programme now requires either overseas maintenance or Algerian deliveries in addition to dockyards and colonial transport.
 - The audit reports 182 focuses, six explicit mutex loci, no missing prerequisite or mutex references, and no prerequisite cycles.
 
-## Russia — pre-edit structural report (awaiting approval)
+## Russia — revised structural report (included in consolidated approval gate)
 
 ### Major-power theatre assumption
 
@@ -288,20 +288,20 @@ Russia is a continental major with enough strategic depth to pursue policy again
 - Several depth endpoints marked weak by the heuristic audit actually finish scripted programme chains, set flags, remove temporary ideas or unlock later decisions. They should remain detached unless runtime testing identifies a concrete problem.
 - *Deep Battle*, *The Frontiers of the Russian Empire*, *An Empire from Baltic to Pacific* and the major regime capstones already provide substantial systemic rewards or events.
 
-### Approved structural changes
+### Consolidated structural changes awaiting approval
 
 1. In the German-frontier theatre, make economic pressure (`AOEIW9_SOV_dip_a_3`) mutex with military preparation (`AOEIW9_SOV_dip_a_4`) and change `AOEIW9_SOV_dip_a_5` to OR reconvergence.
 2. Apply the equivalent method choice to the Ottoman theatre (`dip_b_3` versus `dip_b_4`) and change `dip_b_5` to OR reconvergence.
 3. Keep the German and Ottoman theatres compatible. Russia may complete both; the mutex decisions govern how each confrontation is prepared.
 4. Add four distinct permanent profiles to the existing method endpoints so the new choices retain consequences after reconvergence:
-   - German economic pressure: continental trade influence, railway/infrastructure construction and factory-efficiency growth.
-   - German military preparation: army organisation, supply consumption and land-fort construction.
-   - Ottoman economic pressure: resource extraction, trade influence and infrastructure construction in the southern commercial corridor.
-   - Ottoman military preparation: Black Sea naval organisation, air support and naval-base construction.
-   These categories are deliberately different; no option is a target-swapped clone or a strictly stronger version of its rival.
+   - German economic pressure: railway construction, reduced production penalties from resource shortages and fuel gain, representing broad-gauge mobilisation and strategic reserves.
+   - German military preparation: reduced winter attrition, army speed and reduced organisation loss while moving, representing cohesion across a vast winter frontier.
+   - Ottoman economic pressure: resource extraction, trade influence and railway construction, representing the Black Sea grain, oil and rail-export corridor.
+   - Ottoman military preparation: naval minelaying, lower navy fuel consumption and repair speed, representing Sevastopol, mine warfare and an austere Black Sea fleet.
+   These profiles were checked against the complete post-UK and post-pair-5 register. Each shares at most one principal category with any current or simultaneously proposed profile.
 5. Make *Field Workshops* (`AOEIW28_SOV_field_workshops`) and *Signals* (`AOEIW28_SOV_signals`) mutex. Keep their current different rewards and the existing OR reconvergence at *All Arms Staff Exercises*.
 6. Add `AOEIW9_SOV_eco_infra_4` as a separate AND prerequisite for `AOEIW9_SOV_eco_final`, connecting the Ural logistics spine to the imperial industrial capstone.
-7. Make *Russia as an Industrial Colossus* require both its existing heavy-industry chain and the industrial capstone. Replace its token endpoint payoff with a restrained permanent industrial-colossus spirit focused on factory output, strategic-resource extraction and supply throughput; retain the existing army experience rather than deleting it.
+7. Make *Russia as an Industrial Colossus* require both its existing heavy-industry chain and the industrial capstone. Replace its token endpoint payoff with a restrained permanent industrial-colossus spirit focused on military-factory output, strategic-resource extraction and railway construction; retain the existing army experience rather than deleting it. This shares only military-factory output with the USA industrial endgame.
 8. Adjust AI weights only at the four diplomatic method nodes and the workshops/signals choice: peace and industrial strength favour economic/logistical preparation; war, frontier tension and command needs favour military/signals preparation.
 9. Preserve the imperial/reform, Soviet, Eurasian, republican and Denikin architecture, all existing political mutex choices, focus IDs, country targets, regime guards, war goals and capstone effects.
 

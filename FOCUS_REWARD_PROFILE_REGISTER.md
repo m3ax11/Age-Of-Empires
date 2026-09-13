@@ -37,10 +37,33 @@ The apparent `military-factory output` label in this register refers to `industr
 
 | Decision type | Country and focus | Proposed profile | Register result |
 |---|---|---|---|
-| Major continental economic method | Russia — `AOEIW9_SOV_dip_a_3` | Trade influence, factory-efficiency growth, infrastructure construction | **Conflict:** exact France Rhine economic profile. Russia proposal must be rewritten before approval. |
-| Major continental military method | Russia — `AOEIW9_SOV_dip_a_4` | Army organisation, supply consumption, land-fort construction | **Conflict:** exact France Rhine military profile. Russia proposal must be rewritten before approval. |
-| Major continental economic method | Russia — `AOEIW9_SOV_dip_b_3` | Resource extraction, trade influence, infrastructure construction | **Conflict:** 2/3 overlap with France Rhine economic profile. Russia proposal must be rewritten before approval. |
-| Major maritime military method | Russia — `AOEIW9_SOV_dip_b_4` | Naval organisation, air-mission support, naval-base construction | **Conflict:** exact France Mediterranean military profile. Russia proposal must be rewritten before approval. |
+| Major continental economic method | Russia — `AOEIW9_SOV_dip_a_3` | Railway construction, resource-penalty reduction, fuel gain | No conflict; broad-gauge mobilisation and reserves are specifically Russian. |
+| Major continental military method | Russia — `AOEIW9_SOV_dip_a_4` | Winter-attrition reduction, army speed, reduced organisation loss while moving | No conflict; this represents movement and cohesion across Russia's winter frontier. |
+| Major maritime economic method | Russia — `AOEIW9_SOV_dip_b_3` | Resource extraction, trade influence, railway construction | No conflict; the Black Sea export corridor shares at most one category with any registered profile. |
+| Major maritime military method | Russia — `AOEIW9_SOV_dip_b_4` | Naval minelaying, navy fuel consumption, repair speed | No conflict; this represents an austere Black Sea fleet based at Sevastopol. |
+| Industrial endgame | Russia — `AOEIW9_SOV_special_8` | Military-factory output, resource extraction, railway construction | No conflict; only military-factory output overlaps the USA industrial endgame. |
+
+## Consolidated closure proposal — awaiting one approval
+
+The repository still records conflict pairs 1–4 as open. They are included here because the register cannot truthfully be declared conflict-free by addressing only Russia and pairs 7–10. Pair 3 is closed by the same Irish Border Emergency change as pair 2; pair 10 is closed by the same USA Pacific commerce change as pair 9.
+
+| Country/focus | Current or withdrawn profile | Proposed final profile | Conflict pair(s) | Full-register result |
+|---|---|---|---|---|
+| Norway — `AOEIW9_NOR_dip_b_5` | Naval organisation, naval speed, dockyard output | Naval speed, navy fuel consumption, dockyard construction | 1 | Maximum overlap 1/3; one Norwegian gameplay change. |
+| Ireland — `AOEIW9_IRE_dip_a_5` | Army organisation, arms-factory construction, recruitable population | Army defence, mobilisation speed, stability | 2 and 3 | Maximum overlap 1/3; pair 3 closes as a cascade without a second gameplay change. |
+| Ireland — `AOEIW9_IRE_dip_b_5` | Convoy escort, dockyard output, trade influence | Convoy escort, trade influence, stability | 4 | Maximum overlap 1/3, including the revised USA Atlantic commerce profile. |
+| Russia — `AOEIW9_SOV_dip_a_3` | Withdrawn France-copy: trade, factory-efficiency growth, infrastructure | Railway construction, resource-penalty reduction, fuel gain | Russia/France register conflict | Maximum overlap 1/3; broad-gauge economic mobilisation. |
+| Russia — `AOEIW9_SOV_dip_a_4` | Withdrawn France-copy: army organisation, supply, forts | Winter-attrition reduction, army speed, reduced organisation loss while moving | Russia/France register conflict | Maximum overlap 0/3; winter-front movement and cohesion. |
+| Russia — `AOEIW9_SOV_dip_b_3` | Resource extraction, trade, infrastructure | Resource extraction, trade influence, railway construction | Russia/France register conflict | Maximum overlap 1/3; Black Sea grain, oil and rail exports. |
+| Russia — `AOEIW9_SOV_dip_b_4` | Withdrawn France-copy: naval organisation, air support, naval bases | Naval minelaying, navy fuel consumption, repair speed | Russia/France register conflict | Maximum overlap 1/3; Sevastopol mine warfare and austere fleet maintenance. |
+| Russia — `AOEIW9_SOV_special_8` | Token endpoint: 10 army experience | Military-factory output, resource extraction, railway construction | Industrial-endgame cross-check | Maximum overlap 1/3 with the USA Arsenal; no new conflict. |
+| USA — `AOEIW9_USA_dip_b_2` | Air-mission efficiency, naval organisation, air-base construction | Sortie efficiency, air-mission efficiency, air-base construction | 7 | Maximum overlap 1/3; carrier-deck tempo replaces generic fleet organisation. |
+| USA — `AOEIW9_USA_dip_a_3` | Trade influence, factory-efficiency growth, consumer-goods relief | Factory-efficiency growth, political-power growth, civilian-factory construction | 8 | Maximum overlap 1/3; revised from the earlier draft because trade plus factory efficiency would conflict with France's Rhine profile. |
+| USA — `AOEIW9_USA_dip_b_3` | Dockyard output, resource extraction, trade influence | Dockyard output, resource extraction, dockyard construction | 9 and 10 | Maximum overlap 1/3; pair 10 closes as a cascade without a second gameplay change. |
+
+Russia's accompanying structural package remains the one already documented in `FOCUS_STRUCTURE_REWORK.md`: mutex methods with OR reconvergence inside both compatible theatres; mutex Field Workshops/Signals; the Ural logistics prerequisite for the industrial capstone; the industrial-colossus prerequisite and permanent spirit; and targeted AI weights. Existing IDs, political architectures, targets, war goals and immediate rewards remain preserved.
+
+The proposed final-state matrix contains **zero 2/3 conflicts** within either the maritime or continental profile groups. All six pairwise comparisons among the four final USA method profiles are 0/3. Among Russia's four method profiles, only the two economic methods share railway construction (1/3); every other Russian pair is 0/3.
 
 ## USA internal divergence check
 
@@ -57,9 +80,9 @@ The four implemented American theatre-method profiles were compared pairwise bef
 
 ## Retrospective implemented-country conflicts
 
-No gameplay change in this section is authorized. Each conflict requires a separate user decision before implementation.
+No gameplay change in this section is authorized yet. The earlier separate-pair gates have been replaced by the single consolidated approval table above.
 
-### Revised proposal for pair 5 — awaiting approval
+### Pair 5 implementation record
 
 The earlier suggestion of naval detection, convoy escort and radar construction is withdrawn. It would remove the Danish overlap but share convoy escort and naval detection with Britain's later-registered Admiralty profile, creating a new 2-of-3 conflict.
 
@@ -77,7 +100,7 @@ The revised American profile is **convoy escort, radar-station construction and 
 
 This profile was approved and implemented. The focus ID and its existing immediate rewards remain unchanged.
 
-### Full-register proposal for pair 7 — awaiting approval
+### Pair 7 detail — included in the consolidated closure proposal
 
 Change the USA Pacific mission to **sortie efficiency, air-mission efficiency and air-base construction**. This represents carrier-deck tempo, naval aviation coordination and the island airfield chain. It removes naval organisation, the category shared with France, while retaining one deliberately shared air-mission category.
 
@@ -91,22 +114,22 @@ Change the USA Pacific mission to **sortie efficiency, air-mission efficiency an
 | USA — Atlantic commercial pressure | None (0/3) | No internal conflict. |
 | USA — Pacific commercial pressure | None (0/3) | No internal conflict. |
 | United Kingdom — Admiralty Atlantic mission | None (0/3) | No conflict. |
-| Russia — proposed maritime military method | Air-mission efficiency (1/3) | No conflict with the currently registered, still-unapproved Russian draft. |
+| Russia — proposed Black Sea military method | None (0/3) | No conflict with the rewritten Russian proposal. |
 
 This is a proposal only. No USA gameplay or localisation file has been changed for pair 7.
 
 | Pair | Shared categories | Finding | Narrow correction proposed |
 |---|---|---|---|
-| Denmark Baltic Sound ↔ Norway Atlantic Lifeline | Naval organisation, naval speed | **Conflict (2/3)** | Change Norway to naval speed, navy fuel consumption and dockyard construction speed, representing long coastal distances and austere Norwegian basing. Denmark retains command of enclosed straits. |
-| Denmark Continental Mobilisation ↔ Ireland Border Emergency | Arms-factory construction, recruitable population | **Conflict (2/3)** | Change Ireland to army defence, mobilisation speed and stability, representing border security and emergency institutions rather than continental mass mobilisation. |
-| Norway Scandinavian Field Command ↔ Ireland Border Emergency | Army organisation, recruitable population | **Conflict (2/3)** | The same proposed Ireland correction resolves this pair while Norway retains planning for Scandinavian field operations. This remains a separate approval item because it is a separate conflict pair. |
-| Ireland Atlantic Republic ↔ France Mediterranean Commerce | Dockyard output, trade influence | **Conflict (2/3)** | Change Ireland to convoy escort, trade influence and political-power growth, representing diaspora shipping and neutral brokerage rather than dockyard-led imperial commerce. |
+| Denmark Baltic Sound ↔ Norway Atlantic Lifeline | Naval organisation, naval speed | **Conflict (2/3)** | Change Norway to naval speed, navy fuel consumption and dockyard construction speed, representing long coastal distances and austere Norwegian basing. Denmark retains command of enclosed straits. Included in the consolidated closure proposal. |
+| Denmark Continental Mobilisation ↔ Ireland Border Emergency | Arms-factory construction, recruitable population | **Conflict (2/3)** | Change Ireland to army defence, mobilisation speed and stability, representing border security and emergency institutions rather than continental mass mobilisation. Included in the consolidated closure proposal. |
+| Norway Scandinavian Field Command ↔ Ireland Border Emergency | Army organisation, recruitable population | **Conflict (2/3)** | The pair-2 Irish correction also resolves this pair; no second gameplay change is required. Included as a cascade in the consolidated closure proposal. |
+| Ireland Atlantic Republic ↔ France Mediterranean Commerce | Dockyard output, trade influence | **Conflict (2/3)** | Change Ireland to convoy escort, trade influence and stability, representing diaspora shipping and the credibility of armed neutrality. Included in the consolidated closure proposal. |
 | Denmark Baltic Sound ↔ USA Atlantic Mission | Convoy escort only after correction | **Resolved (1/3)** | The approved USA Atlantic mission now uses convoy escort, radar-station construction and decryption. Denmark retains naval organisation and speed; the corrected American profile creates no new 2/3 conflict in the complete post-UK register. |
 | France Mediterranean Military ↔ USA Atlantic Mission | None after the pair 5 correction | **Resolved (0/3)** | Closed with separate approval and no further gameplay change. France retains naval organisation, air-mission efficiency and naval-base construction; the USA Atlantic mission now uses convoy escort, radar-station construction and decryption. |
 | France Mediterranean Military ↔ USA Pacific Mission | Naval organisation, air-mission efficiency | **Conflict (2/3)** | Change the USA Pacific mission to sortie efficiency, air-mission efficiency and air-base construction, making carrier aviation and island airfields its identity. Full-register review found no resulting 2/3 conflict. |
-| France Mediterranean Commerce ↔ USA Atlantic Commercial Pressure | Trade influence, consumer-goods demand | **Conflict (2/3)** | Change the USA Atlantic commercial profile to trade influence, factory-efficiency growth and political-power growth, representing Wall Street credit and federal purchasing. |
-| Ireland Atlantic Republic ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | Change the USA Pacific profile to dockyard output, resource extraction and dockyard construction speed. Ireland's separately proposed correction would also remove the overlap, but this pair retains its own approval gate. |
-| France Mediterranean Commerce ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | The proposed USA Pacific shipbuilding/resource correction resolves this pair while France keeps Mediterranean trade and consumer relief. Separate approval is still required for this pair. |
+| France Mediterranean Commerce ↔ USA Atlantic Commercial Pressure | Trade influence, consumer-goods demand | **Conflict (2/3)** | Change the USA Atlantic profile to factory-efficiency growth, political-power growth and civilian-factory construction. Removing trade avoids a new 2/3 overlap with France's Rhine profile. Included in the consolidated closure proposal. |
+| Ireland Atlantic Republic ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | Change the USA Pacific profile to dockyard output, resource extraction and dockyard construction speed. The revised Irish Atlantic profile leaves only dockyard output in common. Included in the consolidated closure proposal. |
+| France Mediterranean Commerce ↔ USA Pacific Commercial Pressure | Dockyard output, trade influence | **Conflict (2/3)** | The pair-9 USA Pacific correction removes trade and resolves this pair; no second gameplay change is required. Included as a cascade in the consolidated closure proposal. |
 
 ## Register maintenance rule
 
