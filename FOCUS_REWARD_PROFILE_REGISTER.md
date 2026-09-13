@@ -26,6 +26,10 @@ A conflict exists when profiles in the same decision type share at least two of 
 | Secession settlement | USA — `AOEIW22_USA_reunify_union` | Stability, political power, consumer-goods demand | Implemented |
 | Constitutional settlement | USA — `AOEIW22_USA_anglo_monarchy` | Political power, stability, trade influence, consumer-goods demand | Implemented |
 | Constitutional settlement | USA — `AOEIW22_USA_aristocratic_republic` | Political power, stability, research speed, military-factory output | Implemented |
+| Major maritime military method | United Kingdom — `AOEIW9_ENG_dip_a_2` | Convoy escort, naval detection, naval coordination | Implemented |
+| Major maritime economic method | United Kingdom — `AOEIW9_ENG_dip_a_3` | Dockyard construction speed, subjects' autonomy gain reduction, trade influence | Implemented |
+| Major continental military method | United Kingdom — `AOEIW9_ENG_dip_b_2` | Planning speed, reinforcement rate, army defence | Implemented |
+| Major continental economic method | United Kingdom — `AOEIW9_ENG_dip_b_3` | Intelligence-network growth, military-factory output, war support | Implemented |
 
 The apparent `military-factory output` label in this register refers to `industrial_capacity_factory`; arms-factory construction is recorded separately as `production_speed_arms_factory_factor`.
 
@@ -37,10 +41,19 @@ The apparent `military-factory output` label in this register refers to `industr
 | Major continental military method | Russia — `AOEIW9_SOV_dip_a_4` | Army organisation, supply consumption, land-fort construction | **Conflict:** exact France Rhine military profile. Russia proposal must be rewritten before approval. |
 | Major continental economic method | Russia — `AOEIW9_SOV_dip_b_3` | Resource extraction, trade influence, infrastructure construction | **Conflict:** 2/3 overlap with France Rhine economic profile. Russia proposal must be rewritten before approval. |
 | Major maritime military method | Russia — `AOEIW9_SOV_dip_b_4` | Naval organisation, air-mission support, naval-base construction | **Conflict:** exact France Mediterranean military profile. Russia proposal must be rewritten before approval. |
-| Major maritime military method | United Kingdom — `AOEIW9_ENG_dip_a_2` | Convoy escort, naval detection, naval coordination | No conflict; Admiralty intelligence and escort command are specifically British. |
-| Major maritime economic method | United Kingdom — `AOEIW9_ENG_dip_a_3` | Dockyard construction speed, subjects' autonomy gain reduction, trade influence | No conflict; Imperial Preference and the sterling network are specifically British. |
-| Major continental military method | United Kingdom — `AOEIW9_ENG_dip_b_2` | Planning speed, reinforcement rate, army defence | No conflict; this is an expeditionary-army profile rather than frontier fortification. |
-| Major continental economic method | United Kingdom — `AOEIW9_ENG_dip_b_3` | Intelligence-network growth, military-factory output, war support | No conflict; this represents the Ministry of Economic Warfare and blockade mobilisation. |
+
+## USA internal divergence check
+
+The four implemented American theatre-method profiles were compared pairwise before any retrospective correction to conflict pairs 5–10. No pair currently reaches the 2-of-3 conflict threshold. Any later approved correction must be checked against all three other American profiles again.
+
+| USA profile pair | Shared principal categories | Result |
+|---|---|---|
+| Atlantic mission ↔ Pacific mission | Naval organisation (1/3) | No internal conflict |
+| Atlantic mission ↔ Atlantic commercial pressure | None (0/3) | No internal conflict |
+| Atlantic mission ↔ Pacific commercial pressure | None (0/3) | No internal conflict |
+| Pacific mission ↔ Atlantic commercial pressure | None (0/3) | No internal conflict |
+| Pacific mission ↔ Pacific commercial pressure | None (0/3) | No internal conflict |
+| Atlantic commercial pressure ↔ Pacific commercial pressure | Trade influence (1/3) | No internal conflict |
 
 ## Retrospective implemented-country conflicts
 

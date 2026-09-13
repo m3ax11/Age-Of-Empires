@@ -118,6 +118,46 @@ ideas = {
                 supply_consumption_factor = -0.0300
             }
         }
+        AOEIW_STRUCT_ENG_atlantic_admiralty_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                convoy_escort_efficiency = 0.0800
+                naval_detection = 0.0600
+                naval_coordination = 0.0500
+            }
+        }
+        AOEIW_STRUCT_ENG_imperial_preference = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_dockyard_factor = 0.1000
+                subjects_autonomy_gain = -0.1000
+                trade_opinion_factor = 0.0800
+            }
+        }
+        AOEIW_STRUCT_ENG_continental_expedition = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.0600
+                land_reinforce_rate = 0.0100
+                army_defence_factor = 0.0400
+            }
+        }
+        AOEIW_STRUCT_ENG_ministry_of_economic_warfare = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                intel_network_gain_factor = 0.0800
+                industrial_capacity_factory = 0.0500
+                war_support_factor = 0.0400
+            }
+        }
         AOEIW11_cooperative_security = {
             allowed = { always = no }
             allowed_civil_war = { always = yes }

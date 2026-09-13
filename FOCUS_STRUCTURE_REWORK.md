@@ -288,7 +288,7 @@ Russia is a continental major with enough strategic depth to pursue policy again
 - Several depth endpoints marked weak by the heuristic audit actually finish scripted programme chains, set flags, remove temporary ideas or unlock later decisions. They should remain detached unless runtime testing identifies a concrete problem.
 - *Deep Battle*, *The Frontiers of the Russian Empire*, *An Empire from Baltic to Pacific* and the major regime capstones already provide substantial systemic rewards or events.
 
-### Proposed structural changes — no implementation without approval
+### Approved structural changes
 
 1. In the German-frontier theatre, make economic pressure (`AOEIW9_SOV_dip_a_3`) mutex with military preparation (`AOEIW9_SOV_dip_a_4`) and change `AOEIW9_SOV_dip_a_5` to OR reconvergence.
 2. Apply the equivalent method choice to the Ottoman theatre (`dip_b_3` versus `dip_b_4`) and change `dip_b_5` to OR reconvergence.
@@ -420,7 +420,7 @@ The United States is a two-ocean major power. Atlantic and Pacific policy must r
 - Boston Congress outcomes now have distinct Atlantic-monarchical and research/administrative-republican modifiers.
 - Static validation passes. The graph reports 201 focuses, eight explicit mutex loci, 28 reconvergences, no missing references and no cycles.
 
-## United Kingdom — pre-edit structural report (awaiting approval)
+## United Kingdom — structural report and implementation record (implemented 13 September 2026)
 
 ### Major-power theatre assumption
 
@@ -517,6 +517,8 @@ Britain is a global major power whose security doctrine necessarily spans the At
 | Continental mission: planning, reinforcement, defence | France Rhine military posture: organisation, supply, forts | No shared category (0/3) | **No conflict**. The profile describes an expeditionary field army rather than a fortified frontier. |
 | Continental economic pressure: intelligence, arms output, war support | France Rhine commercial system: trade, factory-efficiency growth, infrastructure | No shared category (0/3) | **No conflict**. The profile describes blockade administration and the Ministry of Economic Warfare. |
 
-The earlier UK draft failed this check: its Atlantic mission duplicated the USA profile, its Atlantic economic profile overlapped French and American commerce, and its continental mission duplicated France's Rhine posture. Those combinations have been replaced in the proposal above. No British gameplay file has been changed.
+The earlier UK draft failed this check: its Atlantic mission duplicated the USA profile, its Atlantic economic profile overlapped French and American commerce, and its continental mission duplicated France's Rhine posture. Those combinations were replaced before approval.
 
-Die Dateien wurden noch nicht verändert. Der Vorschlag wartet auf deine ausdrückliche Freigabe.
+### Implementation result
+
+The approved changes are implemented without changing any focus ID, political route, target or annexation war goal. Both diplomatic theatres remain compatible; each now contains one mutex method choice and an OR reconvergence. Field Workshops and Signals are mutually exclusive, the infrastructure leaves feed London logistics, and the economic and combined-arms capstones now require the programmes named by their text. The four registered British method profiles and targeted AI weights are active. Static validation passes with no proven structural, reference, localisation, map or scenario-contract finding.

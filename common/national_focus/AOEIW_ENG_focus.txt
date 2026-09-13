@@ -1389,6 +1389,9 @@ focus_tree = {
         y = 8
         cost = 5
         prerequisite = { focus = AOEIW9_ENG_eco_civ_7 }
+        prerequisite = { focus = AOEIW9_ENG_eco_infra_1 }
+        prerequisite = { focus = AOEIW9_ENG_eco_infra_2 }
+        prerequisite = { focus = AOEIW9_ENG_eco_infra_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -1415,7 +1418,9 @@ focus_tree = {
         x = 20
         y = 10
         cost = 7
-        prerequisite = { focus = AOEIW9_ENG_eco_civ_7 focus = AOEIW9_ENG_eco_war_8 focus = AOEIW9_ENG_eco_science_7 }
+        prerequisite = { focus = AOEIW9_ENG_eco_civ_7 focus = AOEIW9_ENG_eco_war_8 }
+        prerequisite = { focus = AOEIW9_ENG_eco_science_7 }
+        prerequisite = { focus = AOEIW9_ENG_eco_infra_4 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2064,7 +2069,9 @@ focus_tree = {
         x = 23
         y = 21
         cost = 7
-        prerequisite = { focus = AOEIW9_ENG_mil_army_10 focus = AOEIW9_ENG_mil_air_7 focus = AOEIW9_ENG_mil_sea_7 }
+        prerequisite = { focus = AOEIW9_ENG_mil_army_10 }
+        prerequisite = { focus = AOEIW9_ENG_mil_air_7 }
+        prerequisite = { focus = AOEIW9_ENG_mil_sea_7 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2135,15 +2142,17 @@ focus_tree = {
         # AOEIW expansion-space base: 4,13
         id = AOEIW9_ENG_dip_a_2
         icon = GFX_focus_generic_military_mission
-        x = 30
+        x = 29
         y = 13
         cost = 5
         prerequisite = { focus = AOEIW9_ENG_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_ENG_dip_a_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_ENG_atlantic_admiralty_mission
             add_political_power = 25
             add_opinion_modifier = { target = USA modifier = AOEIW_geopolitical_rivalry }
             if = {
@@ -2155,7 +2164,9 @@ focus_tree = {
             add_command_power = 5
         }
         ai_will_do = {
-            factor = 10
+            factor = 6
+            modifier = { factor = 2.0 has_war_with = USA }
+            modifier = { factor = 1.5 has_war = yes }
         }
     }
 
@@ -2164,15 +2175,17 @@ focus_tree = {
         # AOEIW expansion-space base: 5,14
         id = AOEIW9_ENG_dip_a_3
         icon = GFX_focus_generic_concessions
-        x = 31
-        y = 14
+        x = 32
+        y = 13
         cost = 5
-        prerequisite = { focus = AOEIW9_ENG_dip_a_2 }
+        prerequisite = { focus = AOEIW9_ENG_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_ENG_dip_a_2 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_ENG_imperial_preference
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2183,7 +2196,8 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 0.40 has_war = yes }
         }
     }
 
@@ -2193,9 +2207,9 @@ focus_tree = {
         id = AOEIW9_ENG_dip_a_4
         icon = GFX_goal_generic_army_doctrines
         x = 30
-        y = 15
+        y = 14
         cost = 5
-        prerequisite = { focus = AOEIW9_ENG_dip_a_3 }
+        prerequisite = { focus = AOEIW9_ENG_dip_a_2 focus = AOEIW9_ENG_dip_a_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2330,15 +2344,17 @@ focus_tree = {
         # AOEIW expansion-space base: 10,13
         id = AOEIW9_ENG_dip_b_2
         icon = GFX_focus_generic_military_mission
-        x = 37
+        x = 36
         y = 13
         cost = 5
         prerequisite = { focus = AOEIW9_ENG_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_ENG_dip_b_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_ENG_continental_expedition
             add_political_power = 25
             add_opinion_modifier = { target = GER modifier = AOEIW_geopolitical_rivalry }
             if = {
@@ -2350,7 +2366,9 @@ focus_tree = {
             add_command_power = 5
         }
         ai_will_do = {
-            factor = 10
+            factor = 6
+            modifier = { factor = 2.0 has_war_with = GER }
+            modifier = { factor = 1.5 has_war = yes }
         }
     }
 
@@ -2359,15 +2377,17 @@ focus_tree = {
         # AOEIW expansion-space base: 9,14
         id = AOEIW9_ENG_dip_b_3
         icon = GFX_focus_generic_concessions
-        x = 36
-        y = 14
+        x = 39
+        y = 13
         cost = 5
-        prerequisite = { focus = AOEIW9_ENG_dip_b_2 }
+        prerequisite = { focus = AOEIW9_ENG_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_ENG_dip_b_2 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
+            add_ideas = AOEIW_STRUCT_ENG_ministry_of_economic_warfare
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2378,7 +2398,8 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            factor = 10
+            factor = 8
+            modifier = { factor = 0.40 has_war = yes }
         }
     }
 
@@ -2388,9 +2409,9 @@ focus_tree = {
         id = AOEIW9_ENG_dip_b_4
         icon = GFX_goal_generic_army_doctrines
         x = 37
-        y = 15
+        y = 14
         cost = 5
-        prerequisite = { focus = AOEIW9_ENG_dip_b_3 }
+        prerequisite = { focus = AOEIW9_ENG_dip_b_2 focus = AOEIW9_ENG_dip_b_3 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -2758,9 +2779,10 @@ focus = {
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW9_ENG_mil_army_8 }
+        mutually_exclusive = { focus = AOEIW28_ENG_signals }
         available_if_capitulated = no
         completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
-        ai_will_do = { factor = 5 }
+        ai_will_do = { factor = 7 modifier = { factor = 1.5 has_war = no } }
     }
 focus = {
         id = AOEIW28_ENG_signals
@@ -2769,9 +2791,10 @@ focus = {
         y = 16
         cost = 5
         prerequisite = { focus = AOEIW9_ENG_mil_army_8 }
+        mutually_exclusive = { focus = AOEIW28_ENG_field_workshops }
         available_if_capitulated = no
         completion_reward = { army_experience = 20 add_command_power = 20 }
-        ai_will_do = { factor = 5 }
+        ai_will_do = { factor = 5 modifier = { factor = 2.0 has_war = yes } }
     }
 
     focus = {
