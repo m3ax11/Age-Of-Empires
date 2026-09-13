@@ -189,3 +189,25 @@ SOV,"Railways, oil and continental power",AOEIW_STRUCT_SOV_DEPTH_land_register,T
 SOV,"Railways, oil and continental power",AOEIW_STRUCT_SOV_DEPTH_volga_acceptance,Commission the Volga Deliveries,Grain Barges Reach Nizhny Novgorod,A real Volga hub replaces generic commissioning language.
 SOV,"Throne, Duma and zemstvos",AOEIW22_SOV_military_directorate,The Russian Military Directorate,The Stavka Rules Russia,The real command institution replaces a generic military directorate.
 SOV,"Railways, oil and continental power",AOEIW35_SOV_institutional_capstone,The Continental Programme,An Empire from Baltic to Pacific,A geographic endgame replaces the vague continental programme.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p1_1,The Federal Crown Compact,The Crownlands Come to Schönbrunn,A place and political actors replace the abstract compact.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p1_6,Imperial Council and Nation,The Reichsrat Faces the Crownlands,The real legislature and conflict replace a generic nation formula.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p2_1,A Danubian Parliamentary Charter,Restore the December Constitution,A historical constitutional framework replaces a generic charter.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p2_6,A New Charter for Austria-Hungary,A Basic Law for the Danube,Period legal language replaces the generic new charter.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p3_5,Command the Imperial Council,Close the Reichsrat,The authoritarian act replaces generic command language.
+AUS,Crownlands or command,AOEIW9_AUS_politics_p3_6,The German National Question Settlement,Vienna Rejects Anschluss,The concrete German-national question replaces an abstract settlement.
+AUS,Crownlands or command,AOEIW9_AUS_politics_settlement,The Danubian Settlement,An Empire of Crownlands,The constitutional result replaces the vague Danubian settlement.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_eco_civ_6,Renew Imperial Rail Board,Timetables from Vienna to Lemberg,A named route replaces the generic rail board.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_eco_war_3,Precision Tools for Imperial Rail Board,Machine Tools along the Südbahn,A real railway corridor replaces the board phrasing.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_eco_science_3,Applied Research at Danubian Research Council,The Vienna Academy Opens Its Laboratories,A named institution replaces a fictional Danubian council.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_eco_science_6,Research Grants for Danubian Research Council,Grants from the Ringstraße,The capital and recipients replace another generic council.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_eco_infra_4,Logistics through Imperial Rail Board,One Freight Plan for the Monarchy,The system’s function replaces the generic board.
+AUS,"Rails, workshops and the common army",AOEIW9_AUS_mil_army_1,The Army Training Commission,The Bruck Manoeuvres,A real training area replaces the generic commission.
+AUS,Crownlands or command,AOEIW35_AUS_institutional_settlement,The Crownland Settlement,The Crownlands Send Their Taxes,A measurable consequence replaces the abstract settlement.
+POL,Poland after Piłsudski,AOEIW9_POL_politics_p1_1,The Sanation State Council,The Colonels after Piłsudski,A real Sanacja faction replaces the generic state council.
+POL,Poland after Piłsudski,AOEIW9_POL_politics_p2_1,The Parliamentary National Compact,The Sejm Takes Back the Budget,The concrete parliamentary power replaces a generic compact.
+POL,Industry between two frontiers,AOEIW9_POL_politics_p2_3,A National Procurement Board,Orders for the Central Industrial Region,The real COP project replaces an invented procurement board.
+POL,Poland after Piłsudski,AOEIW9_POL_politics_p2_6,The Berlin–Warsaw Compact,Renew the 1934 Declaration,The historical agreement replaces a vague bilateral compact.
+POL,Poland after Piłsudski,AOEIW9_POL_politics_p3_1,The National Military Directorate,Rydz-Śmigły Commands,The named leader replaces the generic military directorate.
+POL,Industry between two frontiers,AOEIW9_POL_politics_p3_4,Secure the Rail Directorate,Guard the PKP Junctions,Real railway operations replace the generic directorate.
+POL,Poland after Piłsudski,AOEIW9_POL_politics_settlement,The Warsaw Settlement,Poland after the Marshal,The succession outcome replaces the vague Warsaw settlement.
+POL,Industry between two frontiers,AOEIW9_POL_dip_a_5,The Vistula Defence Programme,Hold the Narew–Vistula–San Line,The real defensive geography replaces a generic programme.

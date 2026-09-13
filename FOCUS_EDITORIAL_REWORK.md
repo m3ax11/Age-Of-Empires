@@ -6,7 +6,27 @@ This pass applies to every playable country. It changes visible titles and descr
 
 The repository contains 4,107 AOE focus assignments across 56 country/shared selectors. A first lexical screen found 506 titles using the recurrent vocabulary `Commission`, `Directorate`, `Office`, `Board`, `Register`, `Timetable`, `Cadre`, `Quota`, `Ledger`, `Committee`, `Council`, `Compact`, `Charter`, `Programme`, `Framework` or `Settlement`. These are review candidates rather than automatic errors: a real institution or law may retain such a word when it is specific to the branch.
 
-Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain and Russia are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+Status: Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary and Poland are complete. Every other tag remains queued; the visual redesign must wait until the country pass is complete.
+
+## Austria-Hungary — branch stories
+
+### Crownlands or command
+
+The Habsburg court, Reichsrat, crownland governments, German nationalists and armed political leagues dispute whether the Danubian state can still bargain as an empire. Federalists revive the language of crownland rights and constitutional basic laws; authoritarians close parliament and turn the Hofburg into a command centre. Vienna's answer to German nationalism culminates in an explicit rejection of Anschluss. The settlement is complete only when taxes, appointments and mobilisation work across the crownlands.
+
+### Rails, workshops and the common army
+
+Imperial railways must connect Vienna, Prague, Budapest, Trieste and Lemberg despite rival budgets and languages. The Academy of Sciences and named railway workshops tie research to the industries expected to arm the common army. Manoeuvres at Bruck an der Leitha test whether orders and supplies cross internal borders. Economic integration therefore appears through timetables, gauges and deliveries rather than invented boards.
+
+## Poland — branch stories
+
+### Poland after Piłsudski
+
+After Piłsudski, the Sanacja colonels, President, Sejm and Marshal Rydz-Śmigły compete to inherit authority. Parliament can reclaim the budget, while military rule places appointments and rail security under the Marshal. The German-Polish Declaration of 1934 becomes a concrete diplomatic wager instead of an eternal friendship formula. The branch ends when Warsaw has a government able to command without borrowing the Marshal's memory.
+
+### Industry between two frontiers
+
+The Central Industrial Region moves armament production away from exposed borders and gives procurement a named destination. PKP junctions and the Narew–Vistula–San line connect industry, mobilisation and defence. Contracts have to produce guns and ammunition before pressure from Berlin or Moscow becomes war. Poland's payoff is preparation visible in factories, guarded railheads and field positions.
 
 ## Spain — branch stories
 
@@ -199,3 +219,6 @@ Forty-three German focus title/description pairs were rewritten in English and G
 - [Congress of Deputies: the 1931 constitution, regional autonomy and parliamentary authority](https://www.congreso.es/es/cem/const1931)
 - [PARES: the Falange's Twenty-Seven Points and the 1937 unification decree](https://pares.mcu.es/ParesBusquedas20/catalogo/autoridad/134137)
 - [Platform of the Joint Opposition: industrialisation and the Red Army](https://www.marxists.org/archive/trotsky/1927/opposition/ch10.htm)
+- [House of Austrian History: Dollfuß–Schuschnigg rule, Heimwehr, Schutzbund and the May Constitution](https://hdgoe.at/dsd_topic_en)
+- [House of Austrian History: the July Agreement and Schuschnigg's strategy](https://hdgoe.at/juliabkommen)
+- [Museum of the Second World War: Polish modernisation and the Narew–Vistula–San line](https://muzeum1939.pl/sites/default/files/plik/49a4dbb8f6914c346e000c02fc46863324091.pdf)
