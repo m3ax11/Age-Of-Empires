@@ -238,3 +238,7 @@ Nach diesem Pass verdienen folgende Regionen später eine reine Roster-Prüfung:
 - Karibik und britische Inselstützpunkte: eher Interaktions-/Autonomiecontent als viele winzige Tags.
 
 Keine dieser Regionen gehört zum freigegebenen Implementierungsumfang.
+
+### Runtime gate — 14 September 2026
+
+The exact installed local descriptor was launched directly after synchronization. The first engine run exposed one new schema error: the Dominion decision category had been placed inside the decision file instead of being registered under `common/decisions/categories`. Commit `7f5a9244` adds the category registration and leaves only decision entries in the decision file. After a clean restart, the fresh runtime error log contained zero matches for `AOEIW`, `Age_Of_Empires`, `map_roster`, either disabled custom map mode, or the removed AOE map-mode rule. HOI4 remained responsive. The remaining log noise is inherited RT56 aircraft GFX/entity output and was not altered in this map pass.
