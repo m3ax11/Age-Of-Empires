@@ -201,6 +201,8 @@ The separate map/roster workstream is documented in `MAP_ROSTER_PASS.md`. Step 0
 
 Steps 1–5 are reports only and require separate user approval before gameplay implementation. The proposals cover AST/NZL Dominion restoration, an independent Dutch-Boer SAF, the concrete gap between China's advertised roster and its current CHI-versus-MAN crisis, a five-actor Ottoman fragmentation using existing tags where possible, and an AUS/YUG lore-and-reaction integration built on the already functioning nationality system. Do not implement any of these scopes until the user approves the relevant step.
 
+A direct engine launch on 14 September exposed missing `opinion_modifiers = { ... }` root wrappers in the two new AOEIW38 Americas/Africa and Europe opinion-modifier files. Both wrappers were restored and the installed build was restarted. The remaining startup log contains substantial inherited RT56 asset/entity warnings; distinguish these from AOE-owned parser errors before changing them.
+
 ## Audit limitations and reproducibility
 
 No game was launched, no saved campaign was loaded, and no external RT56/vanilla installation was used to complete the reference database. All binary assets were inventoried and CRC-checked but not visually reviewed. This is a repository-level structural/reference audit, not an exhaustive engine schema validator or a full gameplay QA pass.
