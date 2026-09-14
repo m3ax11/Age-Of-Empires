@@ -78,3 +78,9 @@ Bei der Umsetzung werden die ENG-Cores entfernt. Australien erhaelt auf den beid
 ## Umsetzungsstand nach Freigabe
 
 Der Shader-Override mit permanenter Daemmerung wurde vollstaendig entfernt. Die Dark-Atlas-Helligkeits-, Saettigungs- und Grenz-Overrides wurden entfernt; die Mod erbt nun die aktuellen Vanilla-Werte. Die sechs Pazifik-States wurden exakt wie oben beschrieben uebertragen. Im selben konsistenten Roster-Fix wurden die noch verbliebenen ENG-Cores aus den bereits wiederhergestellten australischen, neuseelaendischen und suedafrikanischen Gebieten sowie aus Maan entfernt. Osmanische Cores auf den arabischen Staaten bleiben als bewusste Rueckgewinnungsansprueche erhalten.
+
+## Runtime-Nachweis nach Installation
+
+Der Repository-Stand wurde in den lokalen HOI4-Modordner synchronisiert und mit genau `mod/Age_Of_Empires_RT56_Edition.mod` gestartet. `setup.log` weist geladene `zz_AOEIW...`-Dateien nach; `game.log` meldet 4.469 geladene Defines, 13.535 Provinzen und die Ausfuehrung der History bis `1936.1.1.12`. HOI4 blieb responsiv. Die frische `error.log` enthielt keine Treffer fuer `AOEIW`, `Age_Of_Empires`, `map_roster` oder die sechs geaenderten Pazifik-State-Dateien.
+
+Im installierten Build existiert kein `gfx/FX/standardfuncsgfx.fxh` mehr. Unter `common/map_modes` sind die beiden Spieldefinitionen weiterhin auf `.disabled` gesetzt. Die einzige verbleibende `.txt`-Datei dort ist Paradox' vollstaendig auskommentierte `documentation.txt`; sie registriert keinen Kartenmodus. Ein automatischer Ingame-Screenshot war nicht moeglich, weil das laufende HOI4-Fenster der verfuegbaren App-Steuerung nicht als erfassbare native Oberflaeche angeboten wurde. Der visuelle A/B-Vergleich bleibt deshalb die einzige noch offene manuelle Kontrolle.
