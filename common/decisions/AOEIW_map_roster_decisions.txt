@@ -1,12 +1,4 @@
 AOEIW_dominion_relations_category = {
-    allowed = { original_tag = ENG }
-    visible = {
-        OR = {
-            AST = { is_subject_of = ENG }
-            NZL = { is_subject_of = ENG }
-        }
-    }
-
     AOEIW_consult_australian_cabinet = {
         icon = generic_prepare_civil_war
         cost = 50
