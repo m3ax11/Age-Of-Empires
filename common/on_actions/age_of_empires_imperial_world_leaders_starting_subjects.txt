@@ -15,7 +15,19 @@ on_actions = {
                     target = CAN
                     autonomy_state = autonomy_free
                 }
+                set_autonomy = {
+                    target = AST
+                    autonomy_state = autonomy_dominion
+                    freedom_level = 0.15
+                }
+                set_autonomy = {
+                    target = NZL
+                    autonomy_state = autonomy_dominion
+                    freedom_level = 0.15
+                }
             }
+            AUS = { country_event = { id = AOEIW_map_roster.1 hours = 6 } }
+            YUG = { country_event = { id = AOEIW_map_roster.2 hours = 8 } }
         }
     }
 }

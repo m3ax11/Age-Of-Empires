@@ -15,7 +15,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-        owner = TUR
+        owner = SAU
+        add_core_of = SAU
         add_core_of = TUR
     }
 	manpower=1736

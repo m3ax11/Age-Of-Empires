@@ -5,8 +5,6 @@ oob = "SAF_1936"
 set_stability = 0.6
 set_war_support = 0.1
 
-add_to_tech_sharing_group = commonwealth_research
-
 
 set_convoys = 25
 set_politics = {
@@ -15,8 +13,6 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = yes
 }
-
-set_cosmetic_tag = SAF_ENG
 
 set_popularities = {
 	democratic = 20

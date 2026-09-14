@@ -18,7 +18,8 @@ state={
 		victory_points = {
 			12702 3
 		}
-        owner = TUR
+        owner = SAU
+        add_core_of = SAU
         add_core_of = TUR
     }
 	manpower=514256

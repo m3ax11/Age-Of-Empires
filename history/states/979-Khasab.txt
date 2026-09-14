@@ -15,7 +15,8 @@ state={
 				naval_base = 1
 			}
 		}
-        owner = TUR
+        owner = ENG
+        add_core_of = ENG
         add_core_of = TUR
     }
 	

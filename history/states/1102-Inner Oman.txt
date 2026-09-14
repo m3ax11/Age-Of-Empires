@@ -18,7 +18,8 @@ state = {
 		victory_points = {
 			5049 1 # Nizwa
 		}
-        owner = TUR
+        owner = ENG
+        add_core_of = ENG
         add_core_of = TUR
     }
 

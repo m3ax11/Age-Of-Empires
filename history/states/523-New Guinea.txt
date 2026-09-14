@@ -32,7 +32,7 @@ state = {
 		victory_points = {
 			10260 1 # Alotau
 		}
-        owner = ENG
+        owner = AST
         add_core_of = ENG
     }
 

@@ -34,7 +34,7 @@ state={
 		victory_points = {
 			13462 1
 		}
-        owner = ENG
+        owner = NZL
         add_core_of = ENG
     }
 	provinces={

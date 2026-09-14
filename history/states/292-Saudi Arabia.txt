@@ -15,10 +15,10 @@ state={
 		}
 
 		add_to_array = { state_victory_points = 12727 }
-        owner = TUR
+        owner = SAU
         add_core_of = SAU
         add_core_of = TUR
-        controller = TUR
+        controller = SAU
     }
 
 	provinces={

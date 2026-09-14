@@ -1,5 +1,15 @@
 # Map and Roster Pass
 
+## Umsetzungsstand — 14. September 2026
+
+Die bisherigen Freigabesperren sind durch die ausdrueckliche Gesamtfreigabe des Benutzers aufgehoben. Der jetzt umgesetzte Kartenstand ersetzt den frueheren Vorschlag einer osmanischen Fragmentierung: Das Osmanische Reich bleibt als zusammenhaengender Block in Anatolien, der Levante und Mesopotamien bestehen. Eigenstaendig sind das Emirat Zentralarabien (`SAU`) und das Koenigreich Hedschas (`OMA`); Oman, Khasab und Dhofar stehen unter britischer Kontrolle.
+
+Australien (`AST`) und Neuseeland (`NZL`) starten mit ihren Kerngebieten und Mandaten als britische Dominions. Die Dominion-Kabinettsentscheidungen verbinden Konsultation beziehungsweise Verteidigungskoordination mit Autonomie, Stabilitaet, Kriegsmoral und Beziehungen. Die Suedafrikanische Republik (`SAF`) startet unabhaengig auf Transvaal, Cape, Natal und Orange Free State ohne Commonwealth-Forschungsgruppe oder britisches Cosmetic Tag. Der Belgrade Settlement wird durch spiegelnde AUS-/YUG-Startevents und Beziehungen sichtbar erklaert.
+
+Alle 299 Laenderfarbbloecke wurden auf eine hellere, besser unterscheidbare Palette umgestellt; 29 wichtige Tags besitzen bewusst gesetzte Ankerfarben. Sowohl der AOE-Imperial-World-Map-Mode und seine Spielregel als auch der mitgelieferte RT56-Custom-Map-Mode liegen nur noch als `.disabled` vor und werden von HOI4 nicht registriert. Die reproduzierbaren Werkzeuge sind `tools/apply_map_roster_state_ownership.py` und `tools/rebalance_country_colors.py`. Der statische Validator parst 5.279 Scriptdateien ohne bestaetigten Fehler.
+
+Die China-Neuordnung wurde in diesem Kartenpaket nicht erzwungen, weil die bestehende Qing-/United-Front-Krise pauschale State-Transfers enthaelt und eine ungetestete Clique-Aufteilung diese funktionierende Kette beschaedigen wuerde. Sie bleibt ein eigener Content-Pass.
+
 Stand: 14. September 2026. Dieser Bericht ist ein eigener Arbeitsstrang. Er verändert weder den Reward-Register-Abschluss noch den Großmächte-Strukturpass noch den späteren Farbkontrast-Pass. Die Zahlen stammen aus dem aktuellen Repository und beziehen sich auf den 1936-Start.
 
 ## Schritt 0 — Custom Map Mode vorübergehend deaktiviert
@@ -147,7 +157,10 @@ Damit würde der Start sofort die alternative Ordnung zeigen, während die Chine
 
 **Konzept wartet auf Freigabe, keine Dateien verändert.**
 
-## Schritt 4 — Osmanische Fraktionierung
+## Schritt 4 — Verworfener Altvorschlag: Osmanische Fraktionierung
+
+> Dieser Vorschlag wurde ausdruecklich verworfen und nicht implementiert. Verbindlich ist der Umsetzungsstand am Dokumentanfang: TUR bleibt zusammenhaengend; nur Zentralarabien und Hedschas sind unabhaengig, waehrend Oman/Dhofar britisch sind.
+
 
 ### Aktueller Zustand
 
