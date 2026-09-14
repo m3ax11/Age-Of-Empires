@@ -195,6 +195,12 @@ A user-supplied Age of Empires title image is now preserved at `gfx/loadingscree
 
 The bundled `errorlog_cleaner.py` rewrites the installed game's log to suppress some entries; it was not run. Keep raw logs for validation.
 
+### Map and roster pass (14 September 2026)
+
+The separate map/roster workstream is documented in `MAP_ROSTER_PASS.md`. Step 0 is complete: the Imperial World custom map mode was temporarily removed from active registration by renaming its definition to `common/map_modes/zz_AOEIW_imperial_world_map_mode.txt.disabled`; commit `d6e17564` is synchronized to the installed mod. Restore it by renaming the file back to `.txt`.
+
+Steps 1–5 are reports only and require separate user approval before gameplay implementation. The proposals cover AST/NZL Dominion restoration, an independent Dutch-Boer SAF, the concrete gap between China's advertised roster and its current CHI-versus-MAN crisis, a five-actor Ottoman fragmentation using existing tags where possible, and an AUS/YUG lore-and-reaction integration built on the already functioning nationality system. Do not implement any of these scopes until the user approves the relevant step.
+
 ## Audit limitations and reproducibility
 
 No game was launched, no saved campaign was loaded, and no external RT56/vanilla installation was used to complete the reference database. All binary assets were inventoried and CRC-checked but not visually reviewed. This is a repository-level structural/reference audit, not an exhaustive engine schema validator or a full gameplay QA pass.
