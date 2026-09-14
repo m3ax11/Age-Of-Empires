@@ -57,7 +57,7 @@ AOEIW38_ASIA_MIDDLE_RAJ_service_policy = {
     enable = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning }
     abort_when_not_enabled = yes
     ai_strategy = { type = befriend id = ENG value = 50 }
-    ai_strategy = { type = protect id = BUR value = 40 }
+    ai_strategy = { type = protect id = BRM value = 40 }
 }
 AOEIW38_ASIA_MIDDLE_SIA_balance_policy = {
     allowed = { original_tag = SIA }

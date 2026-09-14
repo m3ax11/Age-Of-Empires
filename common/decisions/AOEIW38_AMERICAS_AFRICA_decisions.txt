@@ -149,7 +149,7 @@ AOEIW38_regional_programmes_category = {
         allowed = { OR = { original_tag = ARG original_tag = PRU } }
         visible = { is_subject_of = SPR SPR = { has_war = yes } }
         available = { has_war = yes has_capitulated = no }
-        modifier = { division_recovery_rate = 0.04 command_power_gain_mult = 0.05 }
+        modifier = { army_morale_factor = 0.04 command_power_gain_mult = 0.05 }
         remove_effect = { add_timed_idea = { idea = AOEIW38_hispanic_defence_quota days = 365 } add_autonomy_ratio = { value = 0.03 localization = AOEIW38_defence_service_autonomy } army_experience = 8 }
         ai_will_do = { base = 20 }
     }

@@ -380,7 +380,7 @@ country_event = {
         ai_chance = {
             base = 5
             modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_accommodation }
-            modifier = { factor = 2 stability > 0.65 }
+            modifier = { factor = 2 has_stability > 0.65 }
         }
         set_country_flag = AOEIW37_GER_wartime_directorates_closed
         remove_ideas = AOEIW37_GER_fortress_europe_spirit
@@ -444,7 +444,7 @@ country_event = {
     }
     option = {
         name = AOEIW37_ger.22.b
-        ai_chance = { base = 3 modifier = { factor = 2 stability > 0.60 } }
+        ai_chance = { base = 3 modifier = { factor = 2 has_stability > 0.60 } }
         add_autonomy_ratio = { value = 0.02 localization = AOEIW37_GER_forced_levies_autonomy }
         add_stability = -0.01
         add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }

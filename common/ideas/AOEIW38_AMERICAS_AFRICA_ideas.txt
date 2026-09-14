@@ -23,7 +23,7 @@ ideas = {
 
         AOEIW38_ARG_federal_export_compact = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.07 industrial_capacity_factory = 0.04 autonomy_gain_global_factor = 0.08 } }
         AOEIW38_PRU_andean_logistics_mission = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.05 acclimatization_cold_climate_gain_factor = 0.10 autonomy_gain_global_factor = 0.08 } }
-        AOEIW38_hispanic_defence_quota = { picture = generic_manpower_bonus allowed = { always = no } removal_cost = -1 modifier = { division_recovery_rate = 0.04 war_support_factor = 0.04 autonomy_gain_global_factor = 0.05 } }
+        AOEIW38_hispanic_defence_quota = { picture = generic_manpower_bonus allowed = { always = no } removal_cost = -1 modifier = { army_morale_factor = 0.04 war_support_factor = 0.04 autonomy_gain_global_factor = 0.05 } }
         AOEIW38_imperial_requisition = { picture = generic_disjointed_gov allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = 0.03 stability_factor = -0.04 autonomy_gain_global_factor = -0.05 } }
 
         AOEIW38_regional_war_cabinet = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.10 war_support_factor = 0.04 supply_consumption_factor = -0.03 } }
