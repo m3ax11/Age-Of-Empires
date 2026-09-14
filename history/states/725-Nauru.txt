@@ -19,7 +19,6 @@ state={
 			13038 1 
 		}
         owner = AST
-        add_core_of = ENG
     }
 	
 	provinces={

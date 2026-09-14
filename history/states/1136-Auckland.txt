@@ -38,8 +38,8 @@ state = {
 		add_to_array = { state_victory_points = 4543 }
 		add_to_array = { state_victory_points = 8778 }
 		add_to_array = { state_victory_points = 4718 }
-        owner = ENG
-        add_core_of = ENG
+        owner = NZL
+        add_core_of = NZL
     }
 
 	provinces = {

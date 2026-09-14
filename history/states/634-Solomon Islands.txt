@@ -38,8 +38,7 @@ state={
 		strategic_state_location = {
 			favorable_approach = 10291
 		}
-        owner = ENG
-        add_core_of = ENG
+        owner = AST
     }
 
 	provinces={

@@ -27,7 +27,6 @@ state={
 		add_to_array = { state_victory_points = 1652 }
         owner = AST
         add_core_of = AST
-        add_core_of = ENG
     }
 
 	provinces={

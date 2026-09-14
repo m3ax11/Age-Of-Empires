@@ -1,6 +1,6 @@
 # Kartenoptik- und Konturblocker
 
-Stand: 14. September 2026. Dieser Bericht klaert die beiden vom Benutzer gesetzten Blocker. Er nimmt keine State-Umverteilung und keine Rendering-Aenderung vor.
+Stand: 14. September 2026. Dieser Bericht klaert die beiden vom Benutzer gesetzten Blocker. Die vorgeschlagene Rendering-Korrektur und die sechs Pazifik-Uebertragungen wurden anschliessend freigegeben.
 
 ## 1. Custom Map Mode und sichtbarer Kartenlook
 
@@ -34,7 +34,7 @@ Die Mod liefert ausserdem eigene Terrain-Assets. Der staerkste Bildunterschied g
 
 ### Empfohlener, enger Rendering-Fix
 
-1. In `gfx/FX/standardfuncsgfx.fxh` die feste Daemmerung entfernen und die aktuelle Vanilla-Funktion `DayNightFactor(vGlobeNormal, FEATHER_MIN, FEATHER_MAX)` wiederherstellen.
+1. Den mod-eigenen Override `gfx/FX/standardfuncsgfx.fxh` entfernen. Bis auf die feste Daemmerung war er bereits inhaltsgleich mit der aktuellen Vanilla-Datei; der Rueckfall auf Vanilla stellt `DayNightFactor(vGlobeNormal, FEATHER_MIN, FEATHER_MAX)` wieder her und vermeidet kuenftige Versionsabweichungen.
 2. In `common/defines/zz_AOEIW_graphics.lua` die erzwungenen Helligkeits-, Saettigungs- und Grenzwerte entfernen, damit Vanilla-Werte gelten. `CITY_SPRAWL_SHRINK_DISTANCE` kann getrennt bewertet werden.
 3. Danach einen A/B-Screenshot im normalen politischen Kartenmodus anfertigen. Nur falls der Look danach noch zu gemalt ist, `mud_diffuse_rgb_gloss_a_0.dds` und gegebenenfalls `atlas0.dds` auf aktuelle Vanilla-Assets zurueckfallen lassen.
 4. `terrain.bmp` und `world_normal.bmp` nicht durch Vanilla ersetzen; sie gehoeren zur RT56-Kartengeometrie und sind kein sicherer kosmetischer Tausch.
@@ -62,7 +62,7 @@ Das Entfernen von 675/854 oder 1022 wuerde lediglich Al Hajara/Jawf beziehungswe
 
 ## 3. Verbindlich genannte Pazifik-States
 
-Diese sechs Uebertragungen sind klar und bilden zusammenhaengende Gebiete. Sie sind noch nicht umgesetzt, damit die geforderte Vorher/Nachher-Uebersicht zuerst geprueft werden kann.
+Diese sechs Uebertragungen sind klar und bilden zusammenhaengende Gebiete. Sie wurden nach Pruefung dieser Vorher/Nachher-Uebersicht freigegeben und umgesetzt.
 
 | State | Vorher | Vorgeschlagenes Nachher | Core-Status |
 |---|---|---|---|
@@ -74,3 +74,7 @@ Diese sechs Uebertragungen sind klar und bilden zusammenhaengende Gebiete. Sie s
 | 1140 Otago | ENG Owner/Core | NZL Owner/Controller/Core | neuseelaendisches Kernland; grenzt an 723 |
 
 Bei der Umsetzung werden die ENG-Cores entfernt. Australien erhaelt auf den beiden Mandats-/Verwaltungsgebieten bewusst keine Cores; Neuseeland erhaelt auf seinen vier Heimatstates Cores.
+
+## Umsetzungsstand nach Freigabe
+
+Der Shader-Override mit permanenter Daemmerung wurde vollstaendig entfernt. Die Dark-Atlas-Helligkeits-, Saettigungs- und Grenz-Overrides wurden entfernt; die Mod erbt nun die aktuellen Vanilla-Werte. Die sechs Pazifik-States wurden exakt wie oben beschrieben uebertragen. Im selben konsistenten Roster-Fix wurden die noch verbliebenen ENG-Cores aus den bereits wiederhergestellten australischen, neuseelaendischen und suedafrikanischen Gebieten sowie aus Maan entfernt. Osmanische Cores auf den arabischen Staaten bleiben als bewusste Rueckgewinnungsansprueche erhalten.

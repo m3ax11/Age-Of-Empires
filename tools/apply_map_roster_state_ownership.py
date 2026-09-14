@@ -10,7 +10,7 @@ STATE_DIR = ROOT / "history" / "states"
 # State ownership approved for the 1936 Imperial World roster.
 CORE_ASSIGNMENTS = {
     "AST": [285, 517, 518, 519, 520, 521, 522, 674, 870, 871, 872, 873],
-    "NZL": [284],
+    "NZL": [284, 723, 1136, 1139, 1140],
     "SAF": [275, 681, 719, 940],
     "SAU": [292, 675, 678, 854, 857, 858, 859],
     "OMA": [679, 855, 856, 1022],  # OMA is the AOE Kingdom of Hejaz.
@@ -18,15 +18,29 @@ CORE_ASSIGNMENTS = {
 }
 
 NON_CORE_ASSIGNMENTS = {
-    "AST": [523, 725],  # New Guinea and Nauru.
+    "AST": [523, 634, 725, 1096],  # New Guinea, Solomons, Nauru and Kaiser Wilhelmsland.
     "NZL": [726],  # Samoa mandate.
+}
+
+# Former British homeland/colonial cores must not survive the Dominion and
+# independent-republic roster restoration. Ottoman cores remain as deliberate
+# claims on the newly independent Arabian states.
+REMOVE_CORES = {
+    "ENG": {
+        275, 284, 285, 517, 518, 519, 520, 521, 522, 523, 634, 674, 681,
+        719, 723, 725, 726, 870, 871, 872, 873, 940, 1022, 1096, 1136, 1139,
+        1140,
+    }
 }
 
 
 def state_path(state_id: int) -> Path:
-    matches = list(STATE_DIR.glob(f"{state_id}-*.txt"))
+    matches = list(STATE_DIR.glob(f"{state_id}*.txt"))
     if len(matches) != 1:
         raise RuntimeError(f"Expected one file for state {state_id}, found {matches}")
+    text = matches[0].read_text(encoding="utf-8-sig", errors="replace")
+    if re.search(rf"(?m)^\s*id\s*=\s*{state_id}\s*$", text) is None:
+        raise RuntimeError(f"State id mismatch in {matches[0]}")
     return matches[0]
 
 
@@ -61,6 +75,14 @@ def rewrite_state(state_id: int, owner: str, core: bool) -> None:
         text = text[: owner_line.end()] + insertion + text[owner_line.end() :]
     elif not core and has_target_core:
         text = target_core_pattern.sub("", text)
+
+    for old_core, state_ids in REMOVE_CORES.items():
+        if state_id not in state_ids:
+            continue
+        old_core_pattern = re.compile(
+            rf"(?m)^[ \t]*add_core_of\s*=\s*{re.escape(old_core)}[ \t]*\r?\n?"
+        )
+        text = old_core_pattern.sub("", text)
 
     encoded = text.encode("utf-8")
     if has_bom:

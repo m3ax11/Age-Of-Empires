@@ -25,7 +25,6 @@ state={
 		add_to_array = { state_victory_points = 4115 }
         owner = OMA
         add_core_of = OMA
-        add_core_of = ENG
         controller = OMA
     }
 

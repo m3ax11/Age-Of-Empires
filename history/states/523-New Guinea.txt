@@ -33,7 +33,6 @@ state = {
 			10260 1 # Alotau
 		}
         owner = AST
-        add_core_of = ENG
     }
 
 	provinces = {

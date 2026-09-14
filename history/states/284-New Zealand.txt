@@ -32,7 +32,6 @@ state={
 		}
         owner = NZL
         add_core_of = NZL
-        add_core_of = ENG
     }
 
 	provinces = {

@@ -27,8 +27,8 @@ state = {
 		}
 		add_to_array = { state_victory_points = 2211 }
 		add_to_array = { state_victory_points = 8241 }
-        owner = ENG
-        add_core_of = ENG
+        owner = NZL
+        add_core_of = NZL
     }
 	provinces = {
 		2211 8232 8241 12988 12980 

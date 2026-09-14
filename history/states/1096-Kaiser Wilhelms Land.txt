@@ -40,8 +40,7 @@ state = {
 		victory_points = {
 			12237 3 # Lae
 		}
-        owner = ENG
-        add_core_of = ENG
+        owner = AST
     }
 
 	provinces = {
