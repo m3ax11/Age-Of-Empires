@@ -1,0 +1,38 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            CHI = {
+                # Vanilla WTT decisions evaluate this global target every hour even
+                # when the mod does not use the WTT China mechanics.  Keeping it
+                # valid prevents the engine from dereferencing an empty country.
+                save_global_event_target_as = WTT_communist_china
+                if = {
+                    limit = { NOT = { has_country_flag = AOEIW20_UF_joined } }
+                    country_event = { id = aoeiw_phase20_chi.300 hours = 6 }
+                    country_event = { id = aoeiw_phase20_chi.100 days = 1 }
+                }
+            }
+        }
+    }
+    on_daily_CHI = {
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = AOEIW20_UF_war_started
+                    NOT = { has_country_flag = AOEIW20_UF_victory_processing }
+                    MAN = { exists = yes surrender_progress > 0.90 }
+                }
+                country_event = { id = aoeiw_phase20_chi.200 }
+            }
+        }
+    }
+    on_daily_MAN = {
+        effect = {
+            if = {
+                limit = { has_country_flag = AOEIW20_MAN_restoration_established NOT = { has_country_flag = AOEIW20_MAN_restoration_event_seen } }
+                set_country_flag = AOEIW20_MAN_restoration_event_seen
+                country_event = { id = aoeiw_phase20_chi.210 }
+            }
+        }
+    }
+}

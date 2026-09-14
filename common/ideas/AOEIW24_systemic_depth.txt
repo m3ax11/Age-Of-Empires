@@ -1,0 +1,226 @@
+ideas = {
+    country = {
+        AOEIW24_industrial_synthesis = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.06 production_factory_efficiency_gain_factor = 0.05 }
+        }
+        AOEIW24_military_synthesis = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 planning_speed = 0.05 }
+        }
+        AOEIW24_naval_synthesis = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { navy_org_factor = 0.05 convoy_escort_efficiency = 0.08 }
+        }
+        AOEIW24_scientific_synthesis = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { research_speed_factor = 0.025 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW24_social_synthesis = {
+            picture = generic_democratic_opposition
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 political_power_factor = 0.04 }
+        }
+        AOEIW24_frontier_synthesis = {
+            picture = generic_war_preparation
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.04 army_defence_factor = 0.04 }
+        }
+        AOEIW24_USA_corporate_contracts = {
+            picture = generic_fascism_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.12 production_factory_efficiency_gain_factor = 0.08 stability_factor = -0.04 }
+        }
+        AOEIW24_USA_labor_settlement = {
+            picture = generic_communism_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 consumer_goods_factor = 0.02 industrial_capacity_factory = -0.03 }
+        }
+        AOEIW24_USA_general_staff_authority = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.07 planning_speed = 0.08 political_power_factor = -0.04 }
+        }
+        AOEIW24_USA_technate_grid = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { research_speed_factor = 0.06 production_factory_efficiency_gain_factor = 0.08 political_power_factor = -0.06 }
+        }
+        AOEIW24_USA_state_compacts = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.06 supply_consumption_factor = -0.03 recruitable_population_factor = -0.01 }
+        }
+        AOEIW24_USA_emergency_executive = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = 0.16 war_support_factor = 0.08 stability_factor = -0.07 }
+        }
+        AOEIW24_SOV_revolutionary_committees = {
+            picture = generic_communism_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { recruitable_population_factor = 0.02 army_defence_factor = 0.05 stability_factor = -0.06 }
+        }
+        AOEIW24_SOV_reconstruction_authority = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { production_speed_buildings_factor = 0.12 consumer_goods_factor = 0.03 stability_factor = 0.05 }
+        }
+        AOEIW24_SOV_eurasian_council = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = 0.08 trade_opinion_factor = 0.15 supply_consumption_factor = -0.04 }
+        }
+        AOEIW24_SOV_duma_coalition = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 political_power_factor = -0.03 research_speed_factor = 0.02 }
+        }
+        AOEIW24_SOV_denikin_directorate = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.08 army_attack_factor = 0.05 political_power_factor = -0.06 }
+        }
+        AOEIW24_ITA_grand_council_compromise = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 political_power_factor = 0.06 army_org_factor = 0.03 }
+        }
+        AOEIW24_ITA_workers_congress = {
+            picture = generic_communism_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.08 consumer_goods_factor = -0.03 stability_factor = 0.04 }
+        }
+        AOEIW24_ITA_imperial_overstretch = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = 0.08 stability_factor = -0.05 war_support_factor = 0.05 }
+        }
+        AOEIW24_ITA_provincial_integration = {
+            picture = generic_central_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { resistance_target = -0.08 compliance_growth = 0.05 consumer_goods_factor = 0.02 }
+        }
+        AOEIW24_AUS_crownland_compromise = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.07 political_power_factor = -0.04 resistance_target = -0.04 }
+        }
+        AOEIW24_AUS_imperial_ordinances = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = 0.12 stability_factor = -0.06 resistance_target = 0.06 }
+        }
+        AOEIW24_ENG_imperial_cabinet = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { navy_org_factor = 0.05 trade_opinion_factor = 0.10 political_power_factor = 0.04 }
+        }
+        AOEIW24_JAP_service_compromise = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 navy_org_factor = 0.04 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW24_CHI_provincial_compact = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.07 supply_consumption_factor = -0.04 political_power_factor = -0.03 }
+        }
+        AOEIW24_RAJ_princely_settlement = {
+            picture = generic_democratic_opposition
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.06 recruitable_population_factor = 0.01 consumer_goods_factor = 0.02 }
+        }
+        AOEIW24_TUR_assembly_mandate = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = 0.08 stability_factor = 0.04 justify_war_goal_time = -0.08 }
+        }
+        AOEIW24_BRA_federal_development_pact = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { industrial_capacity_factory = 0.07 production_speed_buildings_factor = 0.06 stability_factor = 0.03 }
+        }
+        AOEIW24_MEX_social_compact = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.06 recruitable_population_factor = 0.01 consumer_goods_factor = 0.01 }
+        }
+        AOEIW24_BUL_crown_committee_balance = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.04 political_power_factor = 0.05 stability_factor = 0.02 }
+        }
+        AOEIW24_GRE_national_reconciliation = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 war_support_factor = 0.03 political_power_factor = -0.02 }
+        }
+        AOEIW24_constitutional_legitimacy = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.08 political_power_factor = 0.04 war_support_factor = -0.03 }
+        }
+        AOEIW24_autocratic_decree_state = {
+            picture = generic_central_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = 0.14 war_support_factor = 0.06 stability_factor = -0.05 }
+        }
+        AOEIW24_frontier_public_works = {
+            picture = generic_foreign_capital
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { production_speed_buildings_factor = 0.10 local_resources_factor = 0.05 }
+        }
+        AOEIW24_frontier_staff_mission = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { planning_speed = 0.06 army_org_factor = 0.03 }
+        }
+        AOEIW24_frontier_trade_mission = {
+            picture = generic_foreign_capital
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { trade_opinion_factor = 0.15 political_power_factor = 0.05 }
+        }
+    }
+}

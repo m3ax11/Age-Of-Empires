@@ -1,0 +1,56 @@
+guiTypes = {
+    containerWindowType = {
+        name = "AOEIW_phase21_super_events"
+        size = { width = 680 height = 452 }
+        position = { x = 0 y = 0 }
+        orientation = center
+        origo = center
+        clipping = no
+        moveable = no
+
+        iconType = {
+            name = "super_event_bg"
+            spriteType = "GFX_AOEIW21_super_bg"
+            position = { x = 0 y = 0 }
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "super_event_image"
+            spriteType = "GFX_AOEIW21_super_china_start"
+            position = { x = 20 y = 42 }
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "super_event_title"
+            position = { x = 20 y = 10 }
+            font = "hoi_18mbs"
+            text = "[GetAOEIW21SuperEventTitle]"
+            maxWidth = 640
+            maxHeight = 24
+            format = center
+        }
+
+        instantTextBoxType = {
+            name = "super_event_quote"
+            position = { x = 360 y = 252 }
+            font = "hoi_16mbs"
+            text = "[GetAOEIW21SuperEventQuote]"
+            maxWidth = 255
+            maxHeight = 55
+            format = center
+        }
+
+        buttonType = {
+            name = "super_event_close"
+            position = { x = 170 y = 408 }
+            quadTextureSprite = "GFX_main_lobby_button"
+            buttonText = AOEIW21_super_event_close
+            pdx_tooltip = AOEIW21_super_event_close_tt
+            buttonFont = "hoi_20bs"
+            clicksound = click_close
+            oversound = ui_menu_over
+        }
+    }
+}

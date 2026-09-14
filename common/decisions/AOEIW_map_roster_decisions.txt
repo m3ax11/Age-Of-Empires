@@ -1,0 +1,67 @@
+AOEIW_dominion_relations_category = {
+    AOEIW_consult_australian_cabinet = {
+        icon = generic_prepare_civil_war
+        cost = 50
+        visible = { AST = { is_subject_of = ENG } }
+        available = { AST = { is_subject_of = ENG } }
+        days_re_enable = 180
+        complete_effect = {
+            AST = {
+                add_autonomy_ratio = { value = 0.05 localization = AOEIW_dominion_consultation_autonomy }
+                add_stability = 0.01
+                add_opinion_modifier = { target = ENG modifier = AOEIW_dominion_consulted }
+            }
+        }
+        ai_will_do = { base = 4 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW_coordinate_australian_defence = {
+        icon = generic_operation
+        cost = 65
+        visible = { AST = { is_subject_of = ENG } }
+        available = { AST = { is_subject_of = ENG } }
+        days_re_enable = 180
+        complete_effect = {
+            AST = {
+                add_autonomy_ratio = { value = -0.04 localization = AOEIW_dominion_coordination_autonomy }
+                add_war_support = 0.02
+                add_opinion_modifier = { target = ENG modifier = AOEIW_dominion_directed }
+            }
+            add_command_power = 10
+        }
+        ai_will_do = { base = 3 modifier = { factor = 3 has_war = yes } }
+    }
+
+    AOEIW_consult_new_zealand_cabinet = {
+        icon = generic_prepare_civil_war
+        cost = 40
+        visible = { NZL = { is_subject_of = ENG } }
+        available = { NZL = { is_subject_of = ENG } }
+        days_re_enable = 180
+        complete_effect = {
+            NZL = {
+                add_autonomy_ratio = { value = 0.05 localization = AOEIW_dominion_consultation_autonomy }
+                add_stability = 0.01
+                add_opinion_modifier = { target = ENG modifier = AOEIW_dominion_consulted }
+            }
+        }
+        ai_will_do = { base = 4 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW_coordinate_new_zealand_defence = {
+        icon = generic_operation
+        cost = 55
+        visible = { NZL = { is_subject_of = ENG } }
+        available = { NZL = { is_subject_of = ENG } }
+        days_re_enable = 180
+        complete_effect = {
+            NZL = {
+                add_autonomy_ratio = { value = -0.04 localization = AOEIW_dominion_coordination_autonomy }
+                add_war_support = 0.02
+                add_opinion_modifier = { target = ENG modifier = AOEIW_dominion_directed }
+            }
+            add_command_power = 8
+        }
+        ai_will_do = { base = 3 modifier = { factor = 3 has_war = yes } }
+    }
+}

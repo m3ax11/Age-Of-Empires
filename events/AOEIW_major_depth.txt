@@ -1,0 +1,183 @@
+add_namespace = aoeiw_depth
+
+country_event = {
+    id = aoeiw_depth.1
+    title = aoeiw_depth.1.t
+    desc = aoeiw_depth.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = GER NOT = { has_country_flag = AOEIW_DEPTH_GER_federal_finance_settled } }
+    option = { name = aoeiw_depth.1.a
+                ai_chance = { factor = 55 }
+                set_country_flag = AOEIW_DEPTH_GER_federal_finance_settled
+                add_ideas = AOEIW_DEPTH_GER_federal_credit
+                add_political_power = -25
+            } option = { name = aoeiw_depth.1.b
+                ai_chance = { factor = 45 }
+                set_country_flag = AOEIW_DEPTH_GER_federal_finance_settled
+                add_ideas = AOEIW_DEPTH_GER_treasury_control
+                add_stability = -0.01
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.2
+    title = aoeiw_depth.2.t
+    desc = aoeiw_depth.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = GER NOT = { has_country_flag = AOEIW_DEPTH_GER_armament_credit_settled } }
+    option = { name = aoeiw_depth.2.a
+                ai_chance = { factor = 60 }
+                set_country_flag = AOEIW_DEPTH_GER_armament_credit_settled
+                add_ideas = AOEIW_DEPTH_GER_rearmament_credit
+                add_political_power = -30
+            } option = { name = aoeiw_depth.2.b
+                ai_chance = { factor = 40 }
+                set_country_flag = AOEIW_DEPTH_GER_armament_credit_settled
+                add_ideas = AOEIW_DEPTH_GER_balanced_orders
+                add_political_power = -15
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.100 title = aoeiw_depth.100.t desc = aoeiw_depth.100.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.100.a }
+}
+
+country_event = {
+    id = aoeiw_depth.101 title = aoeiw_depth.101.t desc = aoeiw_depth.101.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.101.a }
+}
+
+country_event = {
+    id = aoeiw_depth.21
+    title = aoeiw_depth.21.t
+    desc = aoeiw_depth.21.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SOV NOT = { has_country_flag = AOEIW_DEPTH_SOV_land_settled } }
+    option = { name = aoeiw_depth.21.a
+                ai_chance = { factor = 55 }
+                set_country_flag = AOEIW_DEPTH_SOV_land_settled
+                add_ideas = AOEIW_DEPTH_SOV_estate_compromise
+                add_political_power = -20
+            } option = { name = aoeiw_depth.21.b
+                ai_chance = { factor = 45 }
+                set_country_flag = AOEIW_DEPTH_SOV_land_settled
+                add_ideas = AOEIW_DEPTH_SOV_land_ministry
+                add_stability = -0.01
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.22
+    title = aoeiw_depth.22.t
+    desc = aoeiw_depth.22.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SOV NOT = { has_country_flag = AOEIW_DEPTH_SOV_grain_settled } }
+    option = { name = aoeiw_depth.22.a
+                ai_chance = { factor = 55 }
+                set_country_flag = AOEIW_DEPTH_SOV_grain_settled
+                add_ideas = AOEIW_DEPTH_SOV_grain_cooperatives
+                add_political_power = -20
+            } option = { name = aoeiw_depth.22.b
+                ai_chance = { factor = 45 }
+                set_country_flag = AOEIW_DEPTH_SOV_grain_settled
+                add_ideas = AOEIW_DEPTH_SOV_central_grain
+                add_war_support = 0.01
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.120 title = aoeiw_depth.120.t desc = aoeiw_depth.120.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.120.a }
+}
+
+country_event = {
+    id = aoeiw_depth.121 title = aoeiw_depth.121.t desc = aoeiw_depth.121.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.121.a }
+}
+
+country_event = {
+    id = aoeiw_depth.11
+    title = aoeiw_depth.11.t
+    desc = aoeiw_depth.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = FRA NOT = { has_country_flag = AOEIW_DEPTH_FRA_municipal_settled } }
+    option = { name = aoeiw_depth.11.a
+                ai_chance = { factor = 65 }
+                set_country_flag = AOEIW_DEPTH_FRA_municipal_settled
+                add_ideas = AOEIW_DEPTH_FRA_municipal_compact
+                add_political_power = -20
+            } option = { name = aoeiw_depth.11.b
+                ai_chance = { factor = 35 }
+                set_country_flag = AOEIW_DEPTH_FRA_municipal_settled
+                add_ideas = AOEIW_DEPTH_FRA_prefectural_budget
+                add_political_power = 10
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.110 title = aoeiw_depth.110.t desc = aoeiw_depth.110.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.110.a }
+}
+
+country_event = {
+    id = aoeiw_depth.12
+    title = aoeiw_depth.12.t
+    desc = aoeiw_depth.12.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = FRA NOT = { has_country_flag = AOEIW_DEPTH_FRA_directorate_settled } }
+    option = { name = aoeiw_depth.12.a
+                ai_chance = { factor = 55 }
+                set_country_flag = AOEIW_DEPTH_FRA_directorate_settled
+                add_ideas = AOEIW_DEPTH_FRA_civilian_ministers
+                add_political_power = -20
+            } option = { name = aoeiw_depth.12.b
+                ai_chance = { factor = 45 }
+                set_country_flag = AOEIW_DEPTH_FRA_directorate_settled
+                add_ideas = AOEIW_DEPTH_FRA_staff_direct_rule
+                add_stability = -0.02
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.13
+    title = aoeiw_depth.13.t
+    desc = aoeiw_depth.13.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = FRA NOT = { has_country_flag = AOEIW_DEPTH_FRA_commune_food_settled } }
+    option = { name = aoeiw_depth.13.a
+                ai_chance = { factor = 60 }
+                set_country_flag = AOEIW_DEPTH_FRA_commune_food_settled
+                add_ideas = AOEIW_DEPTH_FRA_communal_supply
+                add_political_power = -15
+            } option = { name = aoeiw_depth.13.b
+                ai_chance = { factor = 40 }
+                set_country_flag = AOEIW_DEPTH_FRA_commune_food_settled
+                add_ideas = AOEIW_DEPTH_FRA_emergency_requisition
+                add_stability = -0.01
+            }
+}
+
+country_event = {
+    id = aoeiw_depth.111 title = aoeiw_depth.111.t desc = aoeiw_depth.111.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = aoeiw_depth.111.a }
+}

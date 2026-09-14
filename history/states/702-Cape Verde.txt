@@ -1,0 +1,31 @@
+state={
+	id=702
+	name="STATE_702"
+	manpower = 150600
+	
+	state_category = small_island
+
+	history = {
+
+
+		add_claim_by = GNB
+		add_to_array = { state_victory_points = 13014 }
+		buildings = {
+			infrastructure = 2
+			13014 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13014 1
+		}
+        owner = POR
+        add_core_of = POR
+    }
+
+	provinces={
+		13014 
+	}
+
+	local_supplies=0.0 
+}

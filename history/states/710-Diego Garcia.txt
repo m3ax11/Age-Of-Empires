@@ -1,0 +1,33 @@
+state={
+	id=710
+	name="STATE_710"
+	manpower=2147	
+	state_category = tiny_island
+	
+	history = {
+
+		buildings = {
+			infrastructure = 1
+			13019 = {
+				naval_base = 1
+			}
+		}
+		strategic_state_location = {
+			favorable_approach = 13019
+		}
+		victory_points = {
+			13019 1
+		}
+
+		add_claim_by = MAU # claimed by Mauritius
+		add_to_array = { state_victory_points = 13019 }
+        owner = ENG
+        add_core_of = ENG
+    }
+	
+	provinces={
+		13019
+	}
+
+	local_supplies=0.0 
+}

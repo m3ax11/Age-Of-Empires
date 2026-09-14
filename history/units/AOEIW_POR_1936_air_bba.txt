@@ -1,0 +1,19 @@
+air_wings = {
+    112 = {
+        small_plane_airframe_0 = {
+            owner = "POR"
+            amount = 105
+            version_name = "AOEIW POR Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "POR"
+            amount = 35
+            version_name = "AOEIW POR Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "POR"
+            amount = 15
+            version_name = "AOEIW POR Medium Bomber"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+leader_traits = {
+    AOEIW19_SOV_stalin_forced_industrialiser = {
+        random = no
+        political_power_factor = 0.10
+        industrial_capacity_factory = 0.05
+        production_speed_buildings_factor = 0.05
+        stability_factor = -0.05
+    }
+
+    AOEIW19_SOV_trotsky_revolutionary_tribune = {
+        random = no
+        political_power_factor = -0.05
+        war_support_factor = 0.10
+        max_command_power = 25
+        experience_gain_army = 0.05
+        army_morale_factor = 0.05
+    }
+
+    AOEIW19_SOV_tukhachevsky_red_militarist = {
+        random = no
+        political_power_factor = -0.10
+        war_support_factor = 0.12
+        land_doctrine_cost_factor = -0.10
+        experience_gain_army = 0.08
+        army_org_factor = 0.05
+    }
+}

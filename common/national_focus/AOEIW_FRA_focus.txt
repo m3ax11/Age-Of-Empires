@@ -1,0 +1,4197 @@
+focus_tree = {
+	# AOEIW36 wide modular layout
+    id = AOEIW9_FRA_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10000
+            tag = FRA
+        }
+    }
+    continuous_focus_position = { x = 50 y = 3510 }
+    reset_on_civilwar = no
+
+    # Vanilla-style political path selectors: the national state and the Commune
+    # are chosen at the top instead of being buried in one four-way split.
+    initial_show_position = { x = 20 y = 0 }
+    shortcut = {
+        name = AOEIW_FRA_national_path_shortcut
+        target = AOEIW9_FRA_politics_root
+        scroll_wheel_factor = 0.70
+    }
+    shortcut = {
+        name = AOEIW_FRA_communist_path_shortcut
+        target = AOEIW25_FRA_workers_alternative
+        scroll_wheel_factor = 0.70
+    }
+    shortcut = {
+        name = AOEIW_FRA_armed_forces_shortcut
+        target = AOEIW9_FRA_mil_root
+        scroll_wheel_factor = 0.80
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,0
+        id = AOEIW9_FRA_politics_root
+        icon = GFX_focus_fra_french_union
+        x = 16
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.02
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative } } }
+    }
+
+    focus = {
+        id = AOEIW25_FRA_workers_alternative
+        icon = GFX_focus_generic_communist
+        x = 32
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.04 }
+            add_political_power = 35
+            add_stability = -0.01
+            set_country_flag = AOEIW25_FRA_revolutionary_path_chosen
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 0.15 is_historical_focus_on = yes }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_root } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,2
+        id = AOEIW9_FRA_politics_p1_1
+        icon = GFX_focus_generic_monarchy_1
+        x = 2
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,3
+        id = AOEIW9_FRA_politics_p1_2
+        icon = GFX_focus_generic_court
+        x = 2
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_0 add_idea = AOEIW_FRA_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,4
+        id = AOEIW9_FRA_politics_p1_3
+        icon = GFX_focus_generic_improve_the_administration
+        x = 0
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,5
+        id = AOEIW9_FRA_politics_p1_4
+        icon = GFX_focus_generic_monarchist_sentiment
+        x = 0
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_1 add_idea = AOEIW_FRA_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,4
+        id = AOEIW9_FRA_politics_p1_5
+        icon = GFX_focus_generic_self_management
+        x = 5
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,5
+        id = AOEIW9_FRA_politics_p1_6
+        icon = GFX_focus_generic_monarchist_workers
+        x = 5
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,6
+        id = AOEIW9_FRA_politics_p1_7
+        icon = GFX_focus_generic_democratic_europe
+        x = 2
+        y = 6
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_4 }
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = imperialism popularity = 0.06 }
+            AOEIW9_install_imperial_government = yes
+            add_country_leader_role = {
+                character = AOEIW_FRA_napoleon_iv
+                promote_leader = yes
+                country_leader = { ideology = imperialism_type expire = "1965.1.1.1" }
+            }
+            set_country_flag = AOEIW_phase19_imperial_leader_hotfix_applied
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_2 add_idea = AOEIW_FRA_legacy_3 }
+            add_ideas = AOEIW9_FRA_spirit_statecraft
+            add_political_power = 75
+            add_ideas = AOEIW23_FRA_liberal_imperial_army
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,2
+        id = AOEIW9_FRA_politics_p2_1
+        icon = GFX_focus_generic_monarchy_2
+        x = 12
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,3
+        id = AOEIW9_FRA_politics_p2_2
+        icon = GFX_focus_generic_public_meetings
+        x = 10
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_0 add_idea = AOEIW_FRA_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,3
+        id = AOEIW9_FRA_politics_p2_3
+        icon = GFX_focus_generic_court
+        x = 14
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,4
+        id = AOEIW9_FRA_politics_p2_4
+        icon = GFX_focus_generic_improve_the_administration
+        x = 10
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_1 add_idea = AOEIW_FRA_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,4
+        id = AOEIW9_FRA_politics_p2_5
+        icon = GFX_focus_generic_worker_administration
+        x = 14
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,5
+        id = AOEIW9_FRA_politics_p2_6
+        icon = GFX_focus_AFG_parliamentary_democracy
+        x = 12
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_4 }
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,6
+        id = AOEIW9_FRA_politics_p2_7
+        icon = GFX_focus_generic_military_dictatorship
+        x = 12
+        y = 6
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.06 }
+            AOEIW9_install_non_aligned_government = yes
+            swap_ideas = { remove_idea = AOEIW_FRA_legacy_2 add_idea = AOEIW_FRA_legacy_3 }
+            add_ideas = AOEIW9_FRA_spirit_constitutional
+            add_political_power = 75
+            add_ideas = AOEIW23_FRA_napoleonic_army
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,2
+        id = AOEIW9_FRA_politics_p3_1
+        icon = GFX_focus_generic_military_industry
+        x = 30
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW25_FRA_workers_alternative }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_stability = -0.03
+            add_ideas = AOEIW16_FRA_strike_wave
+            add_political_power = -20
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 12
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,3
+        id = AOEIW9_FRA_politics_p3_2
+        icon = GFX_focus_generic_red_flags
+        x = 30
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            custom_effect_tooltip = AOEIW_QOL_TT_REVOLUTION_EVENT
+            country_event = { id = aoeiw_phase16_fra.1 }
+        }
+        ai_will_do = {
+            factor = 30
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,4
+        id = AOEIW9_FRA_politics_p3_3
+        icon = GFX_focus_generic_workers
+        x = 30
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.05 }
+            add_war_support = 0.03
+            add_political_power = -30
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 600 producer = FRA }
+        }
+        ai_will_do = {
+            factor = 30
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,5
+        id = AOEIW9_FRA_politics_p3_4
+        icon = GFX_focus_generic_crush_the_military
+        x = 30
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.05 }
+            remove_ideas = AOEIW16_FRA_strike_wave
+            add_ideas = AOEIW16_FRA_revolutionary_command_crisis
+            add_stability = -0.035
+            army_experience = -5
+        }
+        ai_will_do = {
+            factor = 30
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,6
+        id = AOEIW9_FRA_politics_p3_5
+        icon = GFX_focus_generic_soldier_salute
+        x = 30
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.05 }
+            custom_effect_tooltip = AOEIW_QOL_TT_REVOLUTION_EVENT
+            country_event = { id = aoeiw_phase16_fra.2 }
+        }
+        ai_will_do = {
+            factor = 30
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,7
+        id = AOEIW9_FRA_politics_p3_6
+        icon = GFX_focus_generic_improve_the_administration_2
+        x = 30
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_stability = -0.04
+            add_political_power = -50
+        }
+        ai_will_do = {
+            factor = 30
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,8
+        id = AOEIW9_FRA_politics_p3_7
+        icon = GFX_focus_generic_communist
+        x = 30
+        y = 8
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            custom_effect_tooltip = AOEIW_QOL_TT_REVOLUTION_EVENT
+            country_event = { id = aoeiw_phase16_fra.3 }
+        }
+        ai_will_do = {
+            factor = 40
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    # PHASE 16: FRENCH COMMUNE — post-revolutionary consolidation
+    focus = {
+        # AOEIW visual-layout base: 29,9
+        id = AOEIW16_FRA_stabilise_factory_committees
+        icon = GFX_focus_generic_military_industry
+        x = 28
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_7 }
+        available = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            remove_ideas = AOEIW16_FRA_postrevolution_industry_disruption
+            add_stability = 0.04
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 30 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,10
+        id = AOEIW16_FRA_council_production_quotas
+        icon = GFX_focus_generic_central_planning
+        x = 28
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW16_FRA_stabilise_factory_committees }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 21 controls_state = 21 }
+                21 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = { factor = 30 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,11
+        id = AOEIW16_FRA_mass_rifle_programme
+        icon = GFX_goal_generic_small_arms
+        x = 25
+        y = 11
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_council_production_quotas }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_mass_rifle_production
+            add_tech_bonus = { name = AOEIW16_FRA_mass_rifle_bonus bonus = 0.75 uses = 2 category = infantry_weapons }
+        }
+        ai_will_do = { factor = 45 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,11
+        id = AOEIW16_FRA_communal_arsenals
+        icon = GFX_focus_generic_military_industry
+        x = 29
+        y = 11
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_council_production_quotas }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_communal_arsenals_spirit
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRA }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = FRA }
+        }
+        ai_will_do = { factor = 35 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,12
+        id = AOEIW16_FRA_national_factory_congress
+        icon = GFX_focus_generic_worker_administration
+        x = 28
+        y = 12
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_mass_rifle_programme }
+        prerequisite = { focus = AOEIW16_FRA_communal_arsenals }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_factory_councils
+            add_political_power = 50
+        }
+        ai_will_do = { factor = 40 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,13
+        id = AOEIW16_FRA_maximum_efficiency_directive
+        icon = GFX_focus_generic_mass_production
+        x = 28
+        y = 13
+        cost = 7
+        prerequisite = { focus = AOEIW16_FRA_national_factory_congress }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_maximum_efficiency_directive_spirit
+        }
+        ai_will_do = { factor = 50 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,9
+        id = AOEIW16_FRA_citizen_army
+        icon = GFX_focus_generic_limited_social_mobilization
+        x = 31
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_7 }
+        available = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        search_filters = { FOCUS_FILTER_ARMY FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            remove_ideas = AOEIW16_FRA_postrevolution_command_disruption
+            add_ideas = AOEIW16_FRA_citizen_army_spirit
+            add_stability = 0.03
+        }
+        ai_will_do = { factor = 35 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,10
+        id = AOEIW16_FRA_militias_into_line_divisions
+        icon = GFX_focus_generic_soldier_salute
+        x = 31
+        y = 10
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_citizen_army }
+        search_filters = { FOCUS_FILTER_ARMY }
+        completion_reward = {
+            army_experience = 25
+            add_tech_bonus = { name = AOEIW16_FRA_line_divisions_bonus bonus = 0.5 uses = 1 category = infantry_weapons }
+            add_tech_bonus = { name = AOEIW16_FRA_support_bonus bonus = 0.5 uses = 1 category = support_tech }
+        }
+        ai_will_do = { factor = 35 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,11
+        id = AOEIW16_FRA_mass_war_staff
+        icon = GFX_goal_generic_army_doctrines
+        x = 31
+        y = 11
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_militias_into_line_divisions }
+        search_filters = { FOCUS_FILTER_ARMY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_mass_war_staff_spirit
+            add_tech_bonus = { name = AOEIW16_FRA_mass_war_doctrine bonus = 0.5 uses = 2 category = land_doctrine }
+        }
+        ai_will_do = { factor = 40 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,9
+        id = AOEIW16_FRA_workers_aviation
+        icon = GFX_focus_generic_aircraft_production
+        x = 34
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_7 }
+        available = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        search_filters = { FOCUS_FILTER_AIR FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+            }
+            air_experience = 15
+        }
+        ai_will_do = { factor = 25 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,10
+        id = AOEIW16_FRA_replacement_airframes
+        icon = GFX_focus_generic_multi_role_aircraft
+        x = 34
+        y = 10
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_workers_aviation }
+        search_filters = { FOCUS_FILTER_AIR FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_workers_air_production
+            add_tech_bonus = { name = AOEIW16_FRA_worker_fighters bonus = 0.5 uses = 2 category = light_air }
+            add_tech_bonus = { name = AOEIW16_FRA_worker_cas bonus = 0.5 uses = 1 category = cas_bomber }
+        }
+        ai_will_do = { factor = 30 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,11
+        id = AOEIW16_FRA_naval_loyalty_convention
+        icon = GFX_focus_generic_naval_discipline
+        x = 34
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW16_FRA_replacement_airframes }
+        search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            remove_ideas = { AOEIW16_FRA_admirals_compromise AOEIW16_FRA_sailors_committees }
+            navy_experience = 25
+            add_stability = 0.02
+        }
+        ai_will_do = { factor = 30 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,12
+        id = AOEIW16_FRA_red_fleets
+        icon = GFX_focus_generic_large_navy
+        x = 34
+        y = 12
+        cost = 6
+        prerequisite = { focus = AOEIW16_FRA_naval_loyalty_convention }
+        search_filters = { FOCUS_FILTER_NAVY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_red_fleets_spirit
+            add_tech_bonus = { name = AOEIW16_FRA_red_fleet_doctrine bonus = 0.5 uses = 2 category = naval_doctrine }
+        }
+        ai_will_do = { factor = 35 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,14
+        id = AOEIW16_FRA_revolutionary_diplomacy
+        icon = GFX_focus_generic_communism_anti_fascism
+        x = 31
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW16_FRA_mass_war_staff }
+        prerequisite = { focus = AOEIW16_FRA_red_fleets }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75
+            add_ideas = AOEIW16_FRA_revolutionary_diplomacy_spirit
+        }
+        ai_will_do = { factor = 35 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,15
+        id = AOEIW16_FRA_workers_international
+        icon = GFX_focus_generic_join_comintern
+        x = 30
+        y = 15
+        cost = 7
+        prerequisite = { focus = AOEIW16_FRA_revolutionary_diplomacy }
+        mutually_exclusive = { focus = AOEIW16_FRA_fortress_commune }
+        available = { is_in_faction = no }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            custom_effect_tooltip = AOEIW_QOL_TT_FRA_WORKERS_INTERNATIONAL
+            set_rule = { can_create_factions = yes }
+            create_faction = AOEIW16_workers_international
+            set_country_flag = AOEIW16_FRA_founded_workers_international
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 7 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW16_FRA_fortress_commune has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,15
+        id = AOEIW16_FRA_fortress_commune
+        icon = GFX_focus_generic_home_defense
+        x = 32
+        y = 15
+        cost = 7
+        prerequisite = { focus = AOEIW16_FRA_revolutionary_diplomacy }
+        mutually_exclusive = { focus = AOEIW16_FRA_workers_international }
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_fortress_commune_spirit
+            add_stability = 0.04
+            set_country_flag = AOEIW16_FRA_revolutionary_neutrality
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW16_FRA_workers_international has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,17
+        id = AOEIW16_FRA_arsenal_of_the_commune
+        icon = GFX_focus_generic_industry_3
+        x = 30
+        y = 17
+        cost = 8
+        prerequisite = { focus = AOEIW16_FRA_maximum_efficiency_directive }
+        prerequisite = { focus = AOEIW16_FRA_mass_war_staff }
+        prerequisite = { focus = AOEIW16_FRA_replacement_airframes }
+        prerequisite = { focus = AOEIW16_FRA_red_fleets }
+        prerequisite = { focus = AOEIW16_FRA_workers_international focus = AOEIW16_FRA_fortress_commune }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY }
+        completion_reward = {
+            add_ideas = AOEIW16_FRA_arsenal_of_the_commune_spirit
+            add_war_support = 0.05
+            add_stability = 0.03
+        }
+        ai_will_do = { factor = 60 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 8,14
+        id = AOEIW9_FRA_politics_settlement
+        icon = GFX_focus_fra_french_union
+        x = 7
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW_STRUCT_FRA_civic_defence focus = AOEIW_STRUCT_FRA_imperial_logistics focus = AOEIW_STRUCT_FRA_military_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_political_settlement = yes
+            add_stability = 0.04
+            add_war_support = 0.03
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 50,0
+        id = AOEIW9_FRA_eco_root
+        icon = GFX_focus_generic_military_industry
+        x = 43
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 17 controls_state = 17 }
+                17 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,1
+        id = AOEIW9_FRA_eco_civ_1
+        icon = GFX_focus_generic_railroad
+        x = 38
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 17 controls_state = 17 }
+                17 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 17 controls_state = 17 }
+                17 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,2
+        id = AOEIW9_FRA_eco_civ_2
+        icon = GFX_focus_generic_modernize_industry
+        x = 38
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_civ_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 44,3
+        id = AOEIW9_FRA_eco_civ_3
+        icon = GFX_focus_generic_industry_investment
+        x = 37
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 48,3
+        id = AOEIW9_FRA_eco_civ_4
+        icon = GFX_focus_generic_electrification
+        x = 41
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 26 controls_state = 26 }
+                26 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 26 controls_state = 26 }
+                26 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 48,4
+        id = AOEIW9_FRA_eco_civ_5
+        icon = GFX_focus_generic_industry_investment
+        x = 41
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_civ_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 44,4
+        id = AOEIW9_FRA_eco_civ_6
+        icon = GFX_focus_generic_railroad
+        x = 37
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            capital_scope = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = { name = AOEIW21_FRA_industrial_modernisation bonus = 0.50 uses = 1 category = industry }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,5
+        id = AOEIW9_FRA_eco_civ_7
+        icon = GFX_focus_generic_military_industry
+        x = 38
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_5 }
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 17 controls_state = 17 }
+                17 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_ideas = AOEIW9_FRA_spirit_civilian_engine
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 56,1
+        id = AOEIW9_FRA_eco_war_1
+        icon = GFX_focus_generic_commission
+        x = 48
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_war_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            swap_ideas = { remove_idea = AOEIW6_FRA_procurement_0 add_idea = AOEIW6_FRA_procurement_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 54,2
+        id = AOEIW9_FRA_eco_war_2
+        icon = GFX_focus_generic_military_industry
+        x = 47
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 21 controls_state = 21 }
+                21 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 58,2
+        id = AOEIW9_FRA_eco_war_3
+        icon = GFX_focus_generic_modernize_industry
+        x = 49
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 58,3
+        id = AOEIW9_FRA_eco_war_4
+        icon = GFX_focus_generic_military_industry
+        x = 49
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 17 controls_state = 17 }
+                17 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_war_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 56,4
+        id = AOEIW9_FRA_eco_war_5
+        icon = GFX_focus_generic_modernize_industry
+        x = 48
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_2 }
+        prerequisite = { focus = AOEIW9_FRA_eco_war_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            swap_ideas = { remove_idea = AOEIW6_FRA_procurement_1 add_idea = AOEIW6_FRA_procurement_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 54,5
+        id = AOEIW9_FRA_eco_war_6
+        icon = GFX_focus_generic_mass_production
+        x = 47
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 58,5
+        id = AOEIW9_FRA_eco_war_7
+        icon = GFX_focus_generic_military_industry
+        x = 49
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 26 controls_state = 26 }
+                26 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_war_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 56,6
+        id = AOEIW9_FRA_eco_war_8
+        icon = GFX_focus_generic_industry_investment
+        x = 48
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_war_6 }
+        prerequisite = { focus = AOEIW9_FRA_eco_war_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_ideas = AOEIW9_FRA_spirit_war_industry
+            army_experience = 15
+            swap_ideas = { remove_idea = AOEIW6_FRA_procurement_2 add_idea = AOEIW6_FRA_procurement_3 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,1
+        id = AOEIW9_FRA_eco_science_1
+        icon = GFX_focus_generic_university_1
+        x = 44
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,2
+        id = AOEIW9_FRA_eco_science_2
+        icon = GFX_focus_generic_university_3
+        x = 44
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,3
+        id = AOEIW9_FRA_eco_science_3
+        icon = GFX_focus_generic_university_2
+        x = 44
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 50,4
+        id = AOEIW9_FRA_eco_science_4
+        icon = GFX_focus_generic_industrial_experts
+        x = 43
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,4
+        id = AOEIW9_FRA_eco_science_5
+        icon = GFX_focus_generic_industrial_experts
+        x = 46
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,5
+        id = AOEIW9_FRA_eco_science_6
+        icon = GFX_focus_generic_university_3
+        x = 44
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_4 }
+        prerequisite = { focus = AOEIW9_FRA_eco_science_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_research_slot = 1
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,6
+        id = AOEIW9_FRA_eco_science_7
+        icon = GFX_focus_generic_university_1
+        x = 44
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_science_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_FRA_sci_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_ideas = AOEIW9_FRA_spirit_research_network
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,8
+        id = AOEIW9_FRA_eco_infra_1
+        icon = GFX_focus_generic_electrification
+        x = 38
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 16 controls_state = 16 }
+                16 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,9
+        id = AOEIW9_FRA_eco_infra_2
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 38
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_infra_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 26 controls_state = 26 }
+                26 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,10
+        id = AOEIW9_FRA_eco_infra_3
+        icon = GFX_focus_generic_low_cost_housing
+        x = 38
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_infra_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 21 controls_state = 21 }
+                21 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 46,11
+        id = AOEIW9_FRA_eco_infra_4
+        icon = GFX_focus_generic_railroad
+        x = 38
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_eco_infra_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 51,12
+        id = AOEIW9_FRA_eco_final
+        icon = GFX_focus_generic_commission
+        x = 44
+        y = 12
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_7 focus = AOEIW9_FRA_eco_war_8 }
+        prerequisite = { focus = AOEIW9_FRA_eco_science_7 }
+        prerequisite = { focus = AOEIW9_FRA_eco_infra_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            AOEIW_consolidation_apply_industrial_programme = yes
+            add_political_power = 50
+            add_stability = 0.02
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 50,15
+        id = AOEIW9_FRA_mil_root
+        icon = GFX_goal_generic_army_doctrines
+        x = 43
+        y = 15
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_command_power = 20
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 45,16
+        id = AOEIW9_FRA_mil_army_1
+        icon = GFX_focus_generic_military_academy
+        x = 37
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { army_experience = 20 }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 45,17
+        id = AOEIW9_FRA_mil_army_2
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 35
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_FRA_infantry1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = infantry_weapons }  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 43,18
+        id = AOEIW9_FRA_mil_army_3
+        icon = GFX_goal_generic_army_artillery2
+        x = 35
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = artillery } army_experience = 15 }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 47,18
+        id = AOEIW9_FRA_mil_army_4
+        icon = GFX_goal_generic_small_arms
+        x = 35
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { swap_ideas = { remove_idea = AOEIW28_FRA_infantry1_spirit add_idea = AOEIW28_FRA_infantry2_spirit } }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 43,19
+        id = AOEIW9_FRA_mil_army_5
+        icon = GFX_focus_generic_tank_assault
+        x = 40
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_FRA_armour1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = armor }  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 47,19
+        id = AOEIW9_FRA_mil_army_6
+        icon = GFX_goal_generic_army_tanks
+        x = 40
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = motorized_equipment } army_experience = 15 }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 43,20
+        id = AOEIW9_FRA_mil_army_7
+        icon = GFX_focus_generic_army_tanks2
+        x = 40
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { swap_ideas = { remove_idea = AOEIW28_FRA_armour1_spirit add_idea = AOEIW28_FRA_armour2_spirit } }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 47,20
+        id = AOEIW9_FRA_mil_army_8
+        icon = GFX_focus_generic_railroad
+        x = 37
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_4 focus = AOEIW9_FRA_mil_army_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = logistics_tech } }
+        ai_will_do = {
+            factor = 10
+        }
+        
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 45,21
+        id = AOEIW9_FRA_mil_army_9
+        icon = GFX_focus_generic_mechanized
+        x = 37
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW28_FRA_field_workshops focus = AOEIW28_FRA_signals }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { army_experience = 30 add_doctrine_cost_reduction = { cost_reduction = 0.50 uses = 1 category = land_doctrine } }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 45,22
+        id = AOEIW9_FRA_mil_army_10
+        icon = GFX_focus_generic_military_academy
+        x = 37
+        y = 23
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_9 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_FRA_support_spirit }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,16
+        id = AOEIW9_FRA_mil_air_1
+        icon = GFX_goal_generic_build_airforce
+        x = 46
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 50,17
+        id = AOEIW9_FRA_mil_air_2
+        icon = GFX_focus_generic_pilot_training
+        x = 43
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 50,18
+        id = AOEIW9_FRA_mil_air_3
+        icon = GFX_focus_generic_air_defense
+        x = 43
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_doc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 54,17
+        id = AOEIW9_FRA_mil_air_4
+        icon = GFX_focus_generic_long_range_aircraft
+        x = 47
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 54,18
+        id = AOEIW9_FRA_mil_air_5
+        icon = GFX_goal_generic_radar
+        x = 47
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,19
+        id = AOEIW9_FRA_mil_air_6
+        icon = GFX_focus_generic_long_range_aircraft
+        x = 46
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_3 }
+        prerequisite = { focus = AOEIW9_FRA_mil_air_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,20
+        id = AOEIW9_FRA_mil_air_7
+        icon = GFX_focus_generic_aircraft_production
+        x = 46
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_air_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 22
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_air_doc_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 59,16
+        id = AOEIW9_FRA_mil_sea_1
+        icon = GFX_goal_generic_build_navy
+        x = 50
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 59,17
+        id = AOEIW9_FRA_mil_sea_2
+        icon = GFX_focus_generic_military_industry
+        x = 50
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            if = {
+                limit = { owns_state = 14 controls_state = 14 }
+                14 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = dockyard level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 57,18
+        id = AOEIW9_FRA_mil_sea_3
+        icon = GFX_focus_generic_cruiser2
+        x = 49
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navydoc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 61,18
+        id = AOEIW9_FRA_mil_sea_4
+        icon = GFX_focus_generic_escort_efficiency
+        x = 52
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 59,20
+        id = AOEIW9_FRA_mil_sea_5
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 50
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 59,19
+        id = AOEIW9_FRA_mil_sea_6
+        icon = GFX_focus_generic_navy_battleship2
+        x = 50
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_3 }
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 59,21
+        id = AOEIW9_FRA_mil_sea_7
+        icon = GFX_focus_generic_naval_discipline
+        x = 50
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 22
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navy_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_FRA_navydoc_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,24
+        id = AOEIW9_FRA_mil_final
+        icon = GFX_focus_generic_defensive_reorganization
+        x = 46
+        y = 24
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_mil_army_10 focus = AOEIW9_FRA_mil_air_7 focus = AOEIW9_FRA_mil_sea_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            AOEIW_consolidation_apply_military_reform = yes
+            army_experience = 25
+            air_experience = 15
+            navy_experience = 10
+            add_war_support = 0.04
+            
+            
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 8,19
+        id = AOEIW9_FRA_dip_root
+        icon = GFX_focus_generic_mediterranean_sea_focus
+        allow_branch = {
+            NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed }
+        }
+        x = 7
+        y = 19
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+            add_ideas = AOEIW11_strategic_foreign_office
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,20
+        id = AOEIW9_FRA_dip_a_1
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { GER = { exists = yes } }
+                add_opinion_modifier = { target = GER modifier = AOEIW11_strategic_pressure_opinion }
+                GER = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,21
+        id = AOEIW9_FRA_dip_a_2
+        icon = GFX_focus_generic_military_mission
+        x = 0
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_a_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = GER modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { GER = { exists = yes } }
+                add_opinion_modifier = { target = GER modifier = AOEIW11_strategic_pressure_opinion }
+                GER = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.5 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
+        }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_a_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,22
+        id = AOEIW9_FRA_dip_a_3
+        icon = GFX_focus_generic_concessions
+        x = 0
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_a_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_FRA_rhine_commercial_system
+            add_tech_bonus = {
+                name = AOEIW11_FRA_dip_a_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,21
+        id = AOEIW9_FRA_dip_a_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 5
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_a_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_FRA_dip_a_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
+        }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_a_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,22
+        id = AOEIW9_FRA_dip_a_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 5
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_a_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW_STRUCT_FRA_rhine_military_posture
+            if = {
+                limit = { GER = { exists = yes } }
+                add_opinion_modifier = { target = GER modifier = AOEIW11_formal_warning_opinion }
+                GER = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,23
+        id = AOEIW9_FRA_dip_a_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 2
+        y = 23
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_a_3 focus = AOEIW9_FRA_dip_a_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { GER = { exists = yes } }
+                add_opinion_modifier = { target = GER modifier = AOEIW11_ultimatum_opinion }
+                GER = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,24
+        id = AOEIW9_FRA_dip_a_7
+        icon = GFX_goal_generic_political_pressure
+        x = 2
+        y = 24
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_dip_a_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { GER = { exists = yes } NOT = { has_war_with = GER } } create_wargoal = { type = annex_everything target = GER } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,20
+        id = AOEIW9_FRA_dip_b_1
+        icon = GFX_goal_generic_alliance
+        x = 12
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { ITA = { exists = yes } }
+                add_opinion_modifier = { target = ITA modifier = AOEIW11_strategic_pressure_opinion }
+                ITA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,21
+        id = AOEIW9_FRA_dip_b_2
+        icon = GFX_focus_generic_military_mission
+        x = 10
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_b_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = ITA modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { ITA = { exists = yes } }
+                add_opinion_modifier = { target = ITA modifier = AOEIW11_strategic_pressure_opinion }
+                ITA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.5 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
+        }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_b_4 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,22
+        id = AOEIW9_FRA_dip_b_3
+        icon = GFX_focus_generic_concessions
+        x = 10
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_b_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_FRA_mediterranean_commercial_system
+            add_tech_bonus = {
+                name = AOEIW11_FRA_dip_b_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,21
+        id = AOEIW9_FRA_dip_b_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 14
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_b_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_FRA_dip_b_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
+        }
+        mutually_exclusive = { focus = AOEIW9_FRA_dip_b_2 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,22
+        id = AOEIW9_FRA_dip_b_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 14
+        y = 22
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_b_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW_STRUCT_FRA_mediterranean_military_posture
+            if = {
+                limit = { ITA = { exists = yes } }
+                add_opinion_modifier = { target = ITA modifier = AOEIW11_formal_warning_opinion }
+                ITA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,23
+        id = AOEIW9_FRA_dip_b_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 12
+        y = 23
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_dip_b_3 focus = AOEIW9_FRA_dip_b_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { ITA = { exists = yes } }
+                add_opinion_modifier = { target = ITA modifier = AOEIW11_ultimatum_opinion }
+                ITA = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,24
+        id = AOEIW9_FRA_dip_b_7
+        icon = GFX_goal_generic_political_pressure
+        x = 12
+        y = 24
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_dip_b_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { ITA = { exists = yes } NOT = { has_war_with = ITA } } create_wargoal = { type = annex_everything target = ITA } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 8,26
+        id = AOEIW9_FRA_dip_final
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 7
+        y = 25
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_dip_a_7 focus = AOEIW9_FRA_dip_b_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available = { NOT = { has_country_flag = AOEIW16_FRA_commune_proclaimed } }
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_diplomatic_charter = yes
+            add_political_power = 75
+            add_war_support = 0.05
+            add_ideas = AOEIW11_grand_strategy
+            add_ideas = AOEIW11_faction_leadership
+            if = {
+                limit = { AUS = { exists = yes is_in_faction_with = FRA } }
+                AUS = {
+                    add_ideas = AOEIW11_faction_coordination
+                    add_opinion_modifier = { target = FRA modifier = AOEIW11_diplomatic_mission }
+                }
+            }
+            if = {
+                limit = { BEL = { exists = yes is_in_faction_with = FRA } }
+                BEL = {
+                    add_ideas = AOEIW11_faction_coordination
+                    add_opinion_modifier = { target = FRA modifier = AOEIW11_diplomatic_mission }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+# AOEIW MAJOR IMMERSION BEGIN
+    focus = {
+        # AOEIW visual-layout base: 16,1
+        id = AOEIW_IMM_FRA_root
+        icon = GFX_focus_CHL_endorse_the_constitution
+        x = 16
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+            add_stability = 0.01
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,2
+        id = AOEIW_IMM_FRA_marshalate_1
+        icon = GFX_goal_generic_army_doctrines
+        x = 22
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 20
+                        add_war_support = 0.02
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,3
+        id = AOEIW_IMM_FRA_marshalate_2
+        icon = GFX_focus_generic_national_security
+        x = 22
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_marshalate_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_command_power = 20
+            country_event = { id = aoeiw_major_immersion.4 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,4
+        id = AOEIW_IMM_FRA_marshalate_3
+        icon = GFX_focus_generic_military_dictatorship
+        x = 22
+        y = 4
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_FRA_marshalate_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_FRA_marshalate_spirit
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+            add_country_leader_role = {
+                character = FRA_maxime_weygand
+                promote_leader = yes
+                country_leader = { ideology = despotism expire = "1965.1.1.1" traits = { } }
+            }
+            set_country_flag = AOEIW_FRA_marshalate_established
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,7
+        id = AOEIW_IMM_FRA_grandeur_1
+        icon = GFX_focus_generic_monarchist_sentiment
+        x = 12
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            army_experience = 15
+                        add_war_support = 0.03
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,8
+        id = AOEIW_IMM_FRA_grandeur_2
+        icon = GFX_focus_generic_africa_defense
+        x = 12
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            add_command_power = 20
+            country_event = { id = aoeiw_major_immersion.5 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,9
+        id = AOEIW_IMM_FRA_grandeur_3
+        icon = GFX_focus_generic_monarchy_2
+        x = 12
+        y = 9
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_FRA_grandeur_spirit
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,7
+        id = AOEIW_IMM_FRA_union_1
+        icon = GFX_focus_fra_french_union
+        x = 2
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.03
+                        add_political_power = 30
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,8
+        id = AOEIW_IMM_FRA_union_2
+        icon = GFX_focus_generic_limited_social_mobilization
+        x = 2
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_union_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            country_event = { id = aoeiw_major_immersion.6 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,9
+        id = AOEIW_IMM_FRA_union_3
+        icon = GFX_focus_generic_full_social_mobilization
+        x = 2
+        y = 9
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_FRA_union_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_FRA_union_spirit
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,16
+        id = AOEIW_IMM_FRA_national_destiny
+        icon = GFX_goal_generic_national_unity
+        x = 16
+        y = 16
+        cost = 7
+        prerequisite = { focus = AOEIW9_FRA_politics_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.04
+            add_war_support = 0.05
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+# AOEIW MAJOR IMMERSION END
+
+    focus = {
+        # AOEIW visual-layout base: 20,5
+        id = AOEIW_STRUCT_FRA_military_prefects
+        icon = GFX_goal_generic_small_arms
+        x = 20
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 35 add_stability = 0.02
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_marshalate_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,5
+        id = AOEIW_STRUCT_FRA_metropolitan_arsenals
+        icon = GFX_focus_generic_military_industry
+        x = 23
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT is_on_continent = europe } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_marshalate_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 20,7
+        id = AOEIW_STRUCT_FRA_methodical_reserve
+        icon = GFX_focus_generic_defensive_reorganization
+        x = 20
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_STRUCT_FRA_methodical_reserve bonus = 0.5 uses = 1 category = artillery }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_military_prefects }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_metropolitan_arsenals }
+        mutually_exclusive = { focus = AOEIW_STRUCT_FRA_mobile_reserve }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_STRUCT_FRA_mobile_reserve } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,7
+        id = AOEIW_STRUCT_FRA_mobile_reserve
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 23
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_STRUCT_FRA_mobile_reserve bonus = 0.5 uses = 1 category = armor }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_military_prefects }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_metropolitan_arsenals }
+        mutually_exclusive = { focus = AOEIW_STRUCT_FRA_methodical_reserve }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_STRUCT_FRA_methodical_reserve } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,9
+        id = AOEIW_STRUCT_FRA_military_logistics
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 22
+        y = 9
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = train_equipment_1 amount = 80 producer = FRA }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_fire_plan focus = AOEIW_STRUCT_FRA_DEPTH_counterstroke }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,12
+        id = AOEIW_STRUCT_FRA_military_settlement
+        icon = GFX_goal_generic_army_doctrines
+        x = 22
+        y = 12
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.04 army_experience = 25
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_military_logistics }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,10
+        id = AOEIW_STRUCT_FRA_imperial_dockyards
+        icon = GFX_goal_generic_build_navy
+        x = 10
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,10
+        id = AOEIW_STRUCT_FRA_colonial_transport
+        icon = GFX_focus_generic_africa_naval
+        x = 14
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = convoy amount = 40 producer = FRA }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,12
+        id = AOEIW_STRUCT_FRA_imperial_logistics
+        icon = GFX_focus_generic_supply_line
+        x = 12
+        y = 12
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            navy_experience = 20 add_command_power = 15
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_imperial_dockyards }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_colonial_transport }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_overseas_maintenance focus = AOEIW_STRUCT_FRA_DEPTH_algerian_handover }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,10
+        id = AOEIW_STRUCT_FRA_communal_credit
+        icon = GFX_focus_generic_currency_reforms
+        x = 0
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_union_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,10
+        id = AOEIW_STRUCT_FRA_citizen_officers
+        icon = GFX_focus_generic_military_academy
+        x = 5
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 25 add_command_power = 10
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_union_3 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,12
+        id = AOEIW_STRUCT_FRA_civic_defence
+        icon = GFX_focus_generic_home_defense
+        x = 2
+        y = 12
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = 0.03 add_war_support = 0.03
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_communal_credit }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_citizen_officers }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,3
+        id = AOEIW_STRUCT_FRA_DEPTH_mayors_petition
+        icon = GFX_focus_generic_social_democracy
+        x = 7
+        y = 3
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            country_event = { id = aoeiw_depth.11 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,4
+        id = AOEIW_STRUCT_FRA_DEPTH_mayoral_congress
+        icon = GFX_focus_fra_french_union
+        x = 7
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_municipal_compact_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_municipal_compact_1 AOEIW_DEPTH_FRA_municipal_compact_2 AOEIW_DEPTH_FRA_municipal_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civil_appeals } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civic_register } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_mayoral_congress } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_mayors_petition }
+        available = { has_country_flag = AOEIW_DEPTH_FRA_municipal_settled }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,5
+        id = AOEIW_STRUCT_FRA_DEPTH_civic_register
+        icon = GFX_focus_generic_democratic_europe
+        x = 7
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 120 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_municipal_compact_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_municipal_compact_1 AOEIW_DEPTH_FRA_municipal_compact_2 AOEIW_DEPTH_FRA_municipal_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civil_appeals } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civic_register } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_mayoral_congress } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_mayoral_congress }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,6
+        id = AOEIW_STRUCT_FRA_DEPTH_prefect_limits
+        icon = GFX_focus_generic_sympathetic_judges
+        x = 7
+        y = 6
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = -20 add_stability = 0.03
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_civic_register }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,7
+        id = AOEIW_STRUCT_FRA_DEPTH_civil_appeals
+        icon = GFX_focus_generic_social_democracy
+        x = 7
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.015 add_political_power = 20
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_municipal_compact_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_municipal_compact_1 AOEIW_DEPTH_FRA_municipal_compact_2 AOEIW_DEPTH_FRA_municipal_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civil_appeals } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_civic_register } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_municipal_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_mayoral_congress } } add_ideas = AOEIW_DEPTH_FRA_municipal_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_prefect_limits }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,7
+        id = AOEIW_STRUCT_FRA_DEPTH_collective_contracts
+        icon = GFX_focus_generic_workers
+        x = 0
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_contracts bonus = 0.5 uses = 1 category = industry }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_labour_compact_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_labour_compact_1 AOEIW_DEPTH_FRA_labour_compact_2 AOEIW_DEPTH_FRA_labour_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_municipal_clinics } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_union_representatives } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_collective_contracts } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_politics_p1_7 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,8
+        id = AOEIW_STRUCT_FRA_DEPTH_union_representatives
+        icon = GFX_focus_generic_public_meetings
+        x = 0
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.02
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_labour_compact_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_labour_compact_1 AOEIW_DEPTH_FRA_labour_compact_2 AOEIW_DEPTH_FRA_labour_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_municipal_clinics } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_union_representatives } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_collective_contracts } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_collective_contracts }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,8
+        id = AOEIW_STRUCT_FRA_DEPTH_municipal_clinics
+        icon = GFX_focus_generic_welfare
+        x = 5
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_medicine bonus = 0.5 uses = 1 category = support_tech }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_labour_compact_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_labour_compact_1 AOEIW_DEPTH_FRA_labour_compact_2 AOEIW_DEPTH_FRA_labour_compact_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_municipal_clinics } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_union_representatives } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_labour_compact_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_collective_contracts } } add_ideas = AOEIW_DEPTH_FRA_labour_compact_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_union_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,5
+        id = AOEIW_STRUCT_FRA_DEPTH_corps_archives
+        icon = GFX_focus_generic_advanced_military_studies
+        x = 16
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 10
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_imperial_service_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_imperial_service_1 AOEIW_DEPTH_FRA_imperial_service_2 AOEIW_DEPTH_FRA_imperial_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_service_obligation } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_corps_archives } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_politics_p2_5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,6
+        id = AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors
+        icon = GFX_focus_generic_industrial_experts
+        x = 16
+        y = 6
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_inspectors bonus = 0.5 uses = 1 category = support_tech }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_imperial_service_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_imperial_service_1 AOEIW_DEPTH_FRA_imperial_service_2 AOEIW_DEPTH_FRA_imperial_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_service_obligation } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_corps_archives } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_corps_archives }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,7
+        id = AOEIW_STRUCT_FRA_DEPTH_service_obligation
+        icon = GFX_focus_generic_full_social_mobilization
+        x = 16
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 400 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_imperial_service_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_imperial_service_1 AOEIW_DEPTH_FRA_imperial_service_2 AOEIW_DEPTH_FRA_imperial_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_service_obligation } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_imperial_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_corps_archives } } add_ideas = AOEIW_DEPTH_FRA_imperial_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,8
+        id = AOEIW_STRUCT_FRA_DEPTH_reserve_depots
+        icon = GFX_focus_generic_supply_line
+        x = 10
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = convoy amount = 30 producer = FRA }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,8
+        id = AOEIW_STRUCT_FRA_DEPTH_interpreter_corps
+        icon = GFX_focus_generic_education
+        x = 14
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 15 add_command_power = 10
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_grandeur_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,9
+        id = AOEIW_STRUCT_FRA_DEPTH_algerian_contract
+        icon = GFX_focus_generic_africa_factory
+        x = 10
+        y = 9
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 15
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_reserve_depots }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,9
+        id = AOEIW_STRUCT_FRA_DEPTH_overseas_maintenance
+        icon = GFX_focus_generic_africa_naval
+        x = 14
+        y = 9
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_overseas bonus = 0.5 uses = 1 category = support_tech }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_interpreter_corps }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,10
+        id = AOEIW_STRUCT_FRA_DEPTH_algerian_handover
+        icon = GFX_focus_generic_railroad
+        x = 18
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            army_experience = 15
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_algerian_contract }
+        available = { has_country_flag = AOEIW_DEPTH_FRA_algerian_arsenal_done }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,3
+        id = AOEIW_STRUCT_FRA_DEPTH_directorate_charter
+        icon = GFX_focus_generic_court
+        x = 18
+        y = 3
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            country_event = { id = aoeiw_depth.12 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_IMM_FRA_marshalate_1 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,4
+        id = AOEIW_STRUCT_FRA_DEPTH_judicial_review
+        icon = GFX_focus_generic_government_in_exile
+        x = 18
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_directorate_charter }
+        available = { has_country_flag = AOEIW_DEPTH_FRA_directorate_settled }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,5
+        id = AOEIW_STRUCT_FRA_DEPTH_military_inspection
+        icon = GFX_focus_generic_commission
+        x = 18
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 15
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_judicial_review }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,6
+        id = AOEIW_STRUCT_FRA_DEPTH_reserve_contracts
+        icon = GFX_focus_generic_arms_trade
+        x = 25
+        y = 6
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 180 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_reserve_transport_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_reserve_transport_1 AOEIW_DEPTH_FRA_reserve_transport_2 AOEIW_DEPTH_FRA_reserve_transport_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_staff } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_lorries } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_contracts } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_metropolitan_arsenals }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,7
+        id = AOEIW_STRUCT_FRA_DEPTH_reserve_lorries
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 25
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_reserve_transport_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_reserve_transport_1 AOEIW_DEPTH_FRA_reserve_transport_2 AOEIW_DEPTH_FRA_reserve_transport_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_staff } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_lorries } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_contracts } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_reserve_contracts }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,8
+        id = AOEIW_STRUCT_FRA_DEPTH_fire_plan
+        icon = GFX_focus_generic_coastal_fort
+        x = 18
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 90 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_methodical_operation_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_methodical_reserve }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_STRUCT_FRA_mobile_reserve } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,8
+        id = AOEIW_STRUCT_FRA_DEPTH_counterstroke
+        icon = GFX_focus_generic_army_tanks2
+        x = 25
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_counterstroke bonus = 0.5 uses = 1 category = armor } army_experience = 10
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_mobile_counterstroke_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_mobile_reserve }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 has_completed_focus = AOEIW_STRUCT_FRA_methodical_reserve } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,10
+        id = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables
+        icon = GFX_focus_generic_supply_line
+        x = 23
+        y = 10
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = train_equipment_1 amount = 45 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_medical_service_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_medical_service_1 AOEIW_DEPTH_FRA_medical_service_2 AOEIW_DEPTH_FRA_medical_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_directorate_service } } add_ideas = AOEIW_DEPTH_FRA_medical_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_medical_columns } } add_ideas = AOEIW_DEPTH_FRA_medical_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables } } add_ideas = AOEIW_DEPTH_FRA_medical_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_military_logistics }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 20,11
+        id = AOEIW_STRUCT_FRA_DEPTH_medical_columns
+        icon = GFX_focus_generic_welfare
+        x = 20
+        y = 11
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_medical bonus = 0.5 uses = 1 category = support_tech }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_medical_service_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_medical_service_1 AOEIW_DEPTH_FRA_medical_service_2 AOEIW_DEPTH_FRA_medical_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_directorate_service } } add_ideas = AOEIW_DEPTH_FRA_medical_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_medical_columns } } add_ideas = AOEIW_DEPTH_FRA_medical_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables } } add_ideas = AOEIW_DEPTH_FRA_medical_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,11
+        id = AOEIW_STRUCT_FRA_DEPTH_reserve_staff
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 23
+        y = 11
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            army_experience = 15 add_command_power = 10
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_reserve_transport_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_reserve_transport_1 AOEIW_DEPTH_FRA_reserve_transport_2 AOEIW_DEPTH_FRA_reserve_transport_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_staff } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_lorries } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_reserve_transport_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_reserve_contracts } } add_ideas = AOEIW_DEPTH_FRA_reserve_transport_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,13
+        id = AOEIW_STRUCT_FRA_DEPTH_directorate_service
+        icon = GFX_focus_fra_french_union
+        x = 23
+        y = 13
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.02 add_political_power = 30
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_medical_service_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_medical_service_1 AOEIW_DEPTH_FRA_medical_service_2 AOEIW_DEPTH_FRA_medical_service_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_directorate_service } } add_ideas = AOEIW_DEPTH_FRA_medical_service_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_medical_columns } } add_ideas = AOEIW_DEPTH_FRA_medical_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_medical_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_evacuation_tables } } add_ideas = AOEIW_DEPTH_FRA_medical_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_military_settlement }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_medical_columns }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_reserve_staff }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_FRA_workers_alternative has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,4
+        id = AOEIW_STRUCT_FRA_DEPTH_bakery_councils
+        icon = GFX_focus_generic_farmland
+        x = 28
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.015
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_communal_distribution_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_communal_distribution_1 AOEIW_DEPTH_FRA_communal_distribution_2 AOEIW_DEPTH_FRA_communal_distribution_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_communal_transport } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_grain_register } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_bakery_councils } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_2 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,5
+        id = AOEIW_STRUCT_FRA_DEPTH_grain_register
+        icon = GFX_focus_generic_commission
+        x = 28
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = train_equipment_1 amount = 30 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_communal_distribution_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_communal_distribution_1 AOEIW_DEPTH_FRA_communal_distribution_2 AOEIW_DEPTH_FRA_communal_distribution_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_communal_transport } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_grain_register } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_bakery_councils } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_bakery_councils }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,4
+        id = AOEIW_STRUCT_FRA_DEPTH_delegate_schools
+        icon = GFX_focus_generic_education
+        x = 32
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_delegates bonus = 0.5 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_politics_p3_2 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,5
+        id = AOEIW_STRUCT_FRA_DEPTH_food_congress
+        icon = GFX_focus_generic_workers_and_farmers_rise
+        x = 32
+        y = 5
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            country_event = { id = aoeiw_depth.13 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_delegate_schools }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,6
+        id = AOEIW_STRUCT_FRA_DEPTH_ration_cards
+        icon = GFX_focus_generic_agricultural_subsidies
+        x = 32
+        y = 6
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_food_congress }
+        available = { has_country_flag = AOEIW_DEPTH_FRA_commune_food_settled }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,7
+        id = AOEIW_STRUCT_FRA_DEPTH_communal_transport
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 28
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 120 producer = FRA }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_communal_distribution_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_communal_distribution_1 AOEIW_DEPTH_FRA_communal_distribution_2 AOEIW_DEPTH_FRA_communal_distribution_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_communal_transport } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_grain_register } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_communal_distribution_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_bakery_councils } } add_ideas = AOEIW_DEPTH_FRA_communal_distribution_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_grain_register }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_FRA_politics_p1_1 has_completed_focus = AOEIW9_FRA_politics_p2_1 has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW_IMM_FRA_marshalate_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 48,6
+        id = AOEIW_STRUCT_FRA_DEPTH_paris_workshops
+        icon = GFX_focus_generic_industry_1
+        x = 41
+        y = 6
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 15
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_supplier_standards_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_supplier_standards_1 AOEIW_DEPTH_FRA_supplier_standards_2 AOEIW_DEPTH_FRA_supplier_standards_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_standard_chassis } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_technical_lycees } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_paris_workshops } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_eco_civ_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 48,7
+        id = AOEIW_STRUCT_FRA_DEPTH_paris_contract
+        icon = GFX_focus_fra_devalue_the_franc
+        x = 41
+        y = 7
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 10
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_paris_workshops }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,8
+        id = AOEIW_STRUCT_FRA_DEPTH_technical_lycees
+        icon = GFX_focus_generic_university_2
+        x = 46
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_lycees bonus = 0.5 uses = 1 category = industry }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_supplier_standards_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_supplier_standards_1 AOEIW_DEPTH_FRA_supplier_standards_2 AOEIW_DEPTH_FRA_supplier_standards_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_standard_chassis } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_technical_lycees } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_paris_workshops } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_eco_science_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 52,9
+        id = AOEIW_STRUCT_FRA_DEPTH_aviation_tools
+        icon = GFX_focus_generic_aircraft_production
+        x = 46
+        y = 9
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_aviation_tools bonus = 0.5 uses = 1 category = light_air }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_air_coordination_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_air_coordination_1 AOEIW_DEPTH_FRA_air_coordination_2 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_alpine_radio } } add_ideas = AOEIW_DEPTH_FRA_air_coordination_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_aviation_tools } } add_ideas = AOEIW_DEPTH_FRA_air_coordination_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_technical_lycees }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 58,8
+        id = AOEIW_STRUCT_FRA_DEPTH_alpine_radio
+        icon = GFX_focus_generic_radio_communication
+        x = 49
+        y = 8
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_alpine_radio bonus = 0.5 uses = 1 category = electronics }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_air_coordination_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_air_coordination_1 AOEIW_DEPTH_FRA_air_coordination_2 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_alpine_radio } } add_ideas = AOEIW_DEPTH_FRA_air_coordination_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_air_coordination_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_aviation_tools } } add_ideas = AOEIW_DEPTH_FRA_air_coordination_1 }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_air_liaison_exercise_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_eco_war_8 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 58,9
+        id = AOEIW_STRUCT_FRA_DEPTH_standard_chassis
+        icon = GFX_focus_generic_army_tanks2
+        x = 49
+        y = 9
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_chassis bonus = 0.5 uses = 1 category = armor }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_supplier_standards_stage_3_tt
+set_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_3
+remove_ideas = { AOEIW_DEPTH_FRA_supplier_standards_1 AOEIW_DEPTH_FRA_supplier_standards_2 AOEIW_DEPTH_FRA_supplier_standards_3 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_3 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_standard_chassis } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_3 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_technical_lycees } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_supplier_standards_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_paris_workshops } } add_ideas = AOEIW_DEPTH_FRA_supplier_standards_1 }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_supplier_conversion_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_alpine_radio }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 48,13
+        id = AOEIW_STRUCT_FRA_DEPTH_supplier_acceptance
+        icon = GFX_focus_generic_modernize_industry
+        x = 41
+        y = 13
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.02
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_municipal_contract_drive_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_paris_contract }
+        available = { has_country_flag = AOEIW_DEPTH_FRA_paris_reconstruction_done }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 56,22
+        id = AOEIW_STRUCT_FRA_DEPTH_naval_rescue
+        icon = GFX_focus_generic_refit_civilian_ships
+        x = 48
+        y = 22
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = {
+            navy_experience = 15 add_command_power = 10
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_maritime_service_stage_1_tt
+set_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_1
+remove_ideas = { AOEIW_DEPTH_FRA_maritime_service_1 AOEIW_DEPTH_FRA_maritime_service_2 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_maritime_patrols } } add_ideas = AOEIW_DEPTH_FRA_maritime_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_naval_rescue } } add_ideas = AOEIW_DEPTH_FRA_maritime_service_1 }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW9_FRA_mil_sea_7 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 56,23
+        id = AOEIW_STRUCT_FRA_DEPTH_maritime_patrols
+        icon = GFX_focus_generic_multi_role_aircraft
+        x = 48
+        y = 23
+        cost = 5
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_NAVY_XP }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW_DEPTH_FRA_patrols bonus = 0.5 uses = 1 category = naval_equipment }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_maritime_service_stage_2_tt
+set_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_2
+remove_ideas = { AOEIW_DEPTH_FRA_maritime_service_1 AOEIW_DEPTH_FRA_maritime_service_2 }
+if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_2 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_maritime_patrols } } add_ideas = AOEIW_DEPTH_FRA_maritime_service_2 }
+else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_FRA_maritime_service_stage_1 has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_naval_rescue } } add_ideas = AOEIW_DEPTH_FRA_maritime_service_1 }
+        custom_effect_tooltip = AOEIW_DEPTH_FRA_maritime_watch_unlock_tt
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
+        prerequisite = { focus = AOEIW_STRUCT_FRA_DEPTH_naval_rescue }
+    }
+
+focus = {
+        id = AOEIW28_FRA_field_workshops
+        icon = GFX_focus_generic_military_industry
+        x = 35
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_8 }
+        available_if_capitulated = no
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
+        ai_will_do = { factor = 5 }
+    }
+focus = {
+        id = AOEIW28_FRA_signals
+        icon = GFX_focus_generic_radio_communication
+        x = 40
+        y = 21
+        cost = 5
+        prerequisite = { focus = AOEIW9_FRA_mil_army_8 }
+        available_if_capitulated = no
+        completion_reward = { army_experience = 20 add_command_power = 20 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_FRA_institutional_settlement
+        icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+        x = 23
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_FRA_national_destiny focus = AOEIW16_FRA_arsenal_of_the_commune }
+        dynamic = yes
+        allow_branch = { OR = { has_completed_focus = AOEIW_IMM_FRA_national_destiny has_completed_focus = AOEIW16_FRA_arsenal_of_the_commune } }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { if = { limit = { has_any_power_balance = no } set_power_balance = { id = AOEIW35_FRA_governance_balance left_side = AOEIW35_FRA_left_side right_side = AOEIW35_FRA_right_side set_value = 0 } } country_event = { id = AOEIW35_fra.1 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_FRA_institutional_left
+        icon = GFX_focus_fra_french_union
+        x = 21
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW35_FRA_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_FRA_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = -0.15 } add_stability = 0.02 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_FRA_institutional_right
+        icon = GFX_focus_focus_fra_third_empire
+        x = 25
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW35_FRA_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_FRA_institutional_left }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = 0.15 } add_war_support = 0.02 add_stability = -0.01 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_FRA_institutional_capstone
+        icon = GFX_focus_generic_combined_arms
+        x = 23
+        y = 20
+        cost = 5
+        prerequisite = { focus = AOEIW35_FRA_institutional_left focus = AOEIW35_FRA_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_ideas = AOEIW35_FRA_institutional_capstone_idea country_event = { id = AOEIW35_fra.2 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+}

@@ -1,0 +1,108 @@
+division_template = {
+ name = "German Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "German Empire Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "GER Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "49. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "50. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "51. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "52. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "53. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "54. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "55. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "56. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "57. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "58. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "59. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "60. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "61. German Empire Infantry Division" location = 9388 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "62. German Empire Infantry Division" location = 3258 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "63. German Empire Infantry Division" location = 6521 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "64. German Empire Infantry Division" location = 3522 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "65. German Empire Infantry Division" location = 9496 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "66. German Empire Infantry Division" location = 3473 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "67. German Empire Infantry Division" location = 514 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "68. German Empire Infantry Division" location = 3535 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "69. German Empire Infantry Division" location = 9471 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "70. German Empire Infantry Division" location = 6375 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "71. German Empire Infantry Division" location = 495 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "72. German Empire Infantry Division" location = 6389 division_template = "German Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. German Empire Mobile Division" location = 9388 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. German Empire Mobile Division" location = 3258 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. German Empire Mobile Division" location = 6521 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. German Empire Mobile Division" location = 3522 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "5. German Empire Mobile Division" location = 9496 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "6. German Empire Mobile Division" location = 3473 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "7. German Empire Mobile Division" location = 514 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "8. German Empire Mobile Division" location = 3535 division_template = "German Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. GER Rapid Division" location = 9388 division_template = "GER Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. GER Rapid Division" location = 9388 division_template = "GER Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. GER Rapid Division" location = 9388 division_template = "GER Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+}

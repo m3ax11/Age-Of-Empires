@@ -1,0 +1,39 @@
+
+state={
+	id=489
+	name="STATE_489" # Zulia
+	manpower = 1576373
+	
+	state_category = town
+	
+	resources={
+		oil = 35
+		coal = 1 # initial distribution = with infra 1.4 / 1 total
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 2 #was 4
+			industrial_complex = 2
+			dockyard = 1
+			1944 = {
+				naval_base = 5
+			}
+		}
+
+		add_to_array = { state_victory_points = 1944 }
+		victory_points = {
+			1944 3
+		}
+        owner = PRU
+        add_core_of = PRU
+        add_core_of = SPR
+    }
+
+	provinces={
+		1944 1997 2052 4526 5088 10855 12772 
+	}
+
+	local_supplies=6.0 
+}

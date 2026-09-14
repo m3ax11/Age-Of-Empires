@@ -1,0 +1,22 @@
+units = {
+    fleet = {
+        name = "POL National Fleet"
+        naval_base = 362
+        task_force = {
+            name = "POL Main Fleet"
+            location = 362
+            ship = { name = "POL Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "AOEIW POL Cruiser Class" } } }
+            ship = { name = "POL Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "AOEIW POL Destroyer Class" } } }
+            ship = { name = "POL Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "AOEIW POL Submarine Class" } } }
+            ship = { name = "POL Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "AOEIW POL Submarine Class" } } }
+            ship = { name = "POL Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "AOEIW POL Submarine Class" } } }
+            ship = { name = "POL Submarine 04" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "AOEIW POL Submarine Class" } } }
+        }
+    }
+}

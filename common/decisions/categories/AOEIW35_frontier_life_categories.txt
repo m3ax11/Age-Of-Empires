@@ -1,0 +1,20 @@
+AOEIW35_MON_frontier_category = {
+    icon = GFX_decision_category_power_struggle
+    allowed = { original_tag = MON }
+    visible = { has_completed_focus = AOEIW_FRONTIER_MON_khural }
+    priority = 82
+}
+
+AOEIW35_MAN_frontier_category = {
+    icon = GFX_decision_category_power_struggle
+    allowed = { original_tag = MAN }
+    visible = { has_completed_focus = AOEIW_FRONTIER_MAN_survival }
+    priority = 82
+}
+
+AOEIW35_XIC_frontier_category = {
+    icon = GFX_decision_category_power_struggle
+    allowed = { original_tag = XIC }
+    visible = { has_completed_focus = AOEIW_FRONTIER_XIC_conference }
+    priority = 82
+}

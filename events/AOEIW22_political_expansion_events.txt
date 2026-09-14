@@ -1,0 +1,31 @@
+add_namespace = AOEIW22_usa
+country_event = { id = AOEIW22_usa.1 title = AOEIW22_usa.1.t desc = AOEIW22_usa.1.d picture = GFX_report_event_usa_election_roosevelt_macarthur is_triggered_only = yes
+    option = { name = AOEIW22_usa.1.a remove_ideas = AOEIW22_USA_business_strikes_spirit add_ideas = AOEIW22_USA_business_concessions_spirit add_stability = 0.04 }
+    option = { name = AOEIW22_usa.1.b remove_ideas = AOEIW22_USA_business_strikes_spirit add_ideas = AOEIW22_USA_corporate_crackdown_spirit add_stability = -0.04 }
+}
+country_event = { id = AOEIW22_usa.2 title = AOEIW22_usa.2.t desc = AOEIW22_usa.2.d picture = GFX_report_event_usa_macarthur_speech is_triggered_only = yes
+    option = { name = AOEIW22_usa.2.a promote_character = AOEIW22_USA_douglas_macarthur set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } }
+}
+country_event = { id = AOEIW22_usa.3 title = AOEIW22_usa.3.t desc = AOEIW22_usa.3.d picture = GFX_report_event_usa_macarthur_speech is_triggered_only = yes
+    option = { name = AOEIW22_usa.3.a set_cosmetic_tag = AOEIW22_USA_PACIFIC set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = 0.03 }
+}
+
+add_namespace = AOEIW22_russia
+country_event = { id = AOEIW22_russia.1 title = AOEIW22_russia.1.t desc = AOEIW22_russia.1.d picture = GFX_report_event_SOV_military_offensive is_triggered_only = yes
+    option = { name = AOEIW22_russia.1.a promote_character = AOEIW22_SOV_anton_denikin set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_cosmetic_tag = AOEIW22_SOV_DENIKIN start_civil_war = { ruling_party = autocratic_imperialism ideology = communism size = 0.42 } }
+}
+
+add_namespace = AOEIW22_italy
+country_event = { id = AOEIW22_italy.1 title = AOEIW22_italy.1.t desc = AOEIW22_italy.1.d picture = GFX_report_event_generic_mussolini is_triggered_only = yes
+    option = { name = AOEIW22_italy.1.a promote_character = AOEIW22_ITA_benito_mussolini set_politics = { ruling_party = fascism elections_allowed = no } }
+}
+
+add_namespace = AOEIW22_austria
+country_event = { id = AOEIW22_austria.1 title = AOEIW22_austria.1.t desc = AOEIW22_austria.1.d picture = GFX_report_event_AUS_military_march is_triggered_only = yes
+    option = { name = AOEIW22_austria.1.a subtract_from_variable = { AOEIW22_AUS_nationality_tension = 2 } add_stability = 0.03 }
+    option = { name = AOEIW22_austria.1.b add_to_variable = { AOEIW22_AUS_nationality_tension = 2 } add_ideas = AOEIW22_AUS_national_unrest_spirit add_political_power = 75 }
+}
+country_event = { id = AOEIW22_austria.2 title = AOEIW22_austria.2.t desc = AOEIW22_austria.2.d picture = GFX_report_event_AUS_military_march is_triggered_only = yes
+    option = { name = AOEIW22_austria.2.a subtract_from_variable = { AOEIW22_AUS_nationality_tension = 3 } add_stability = 0.05 add_political_power = -75 }
+    option = { name = AOEIW22_austria.2.b add_to_variable = { AOEIW22_AUS_nationality_tension = 2 } add_ideas = AOEIW22_AUS_severe_national_unrest_spirit add_ideas = AOEIW22_AUS_gendarmerie_spirit }
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=542
+	name="STATE_542"
+	manpower = 234000
+	
+	state_category = wasteland
+	
+	resources={
+		chromium = 3 # moved to Rhodesia
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_to_array = { state_victory_points = 8214 }
+		victory_points = {
+			8214 1
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		1580 8214 10525 12940 12963 13529
+	}
+
+	local_supplies=2.0 
+}

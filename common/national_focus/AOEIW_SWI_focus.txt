@@ -1,0 +1,2044 @@
+focus_tree = {
+    id = AOEIW9_SWI_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10000
+            tag = SWI
+        }
+    }
+    continuous_focus_position = { x = 50 y = 2600 }
+    reset_on_civilwar = no
+
+    focus = {
+        # AOEIW visual-layout base: 23,0
+        id = AOEIW9_SWI_politics_root
+        icon = GFX_focus_generic_election
+        x = 17
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.02
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,1
+        id = AOEIW9_SWI_politics_p1_1
+        icon = GFX_focus_generic_welfare
+        x = 15
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p2_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,2
+        id = AOEIW9_SWI_politics_p1_2
+        icon = GFX_focus_generic_public_meetings
+        x = 14
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p1_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_0 add_idea = AOEIW_SWI_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p2_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 19,3
+        id = AOEIW9_SWI_politics_p1_3
+        icon = GFX_focus_generic_election
+        x = 15
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p1_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p2_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 19,4
+        id = AOEIW9_SWI_politics_p1_4
+        icon = GFX_goal_generic_political_pressure
+        x = 15
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p1_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_1 add_idea = AOEIW_SWI_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p2_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,5
+        id = AOEIW9_SWI_politics_p1_5
+        icon = GFX_goal_generic_national_unity
+        x = 14
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_politics_p1_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.06 }
+            AOEIW9_install_democratic_government = yes
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_2 add_idea = AOEIW_SWI_legacy_3 }
+            add_ideas = AOEIW9_SWI_spirit_statecraft
+            add_political_power = 75
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p2_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,1
+        id = AOEIW9_SWI_politics_p2_1
+        icon = GFX_focus_generic_welfare
+        x = 17
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_root }
+        mutually_exclusive = { focus = AOEIW9_SWI_politics_p1_1 focus = AOEIW9_SWI_politics_p3_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,2
+        id = AOEIW9_SWI_politics_p2_2
+        icon = GFX_focus_generic_election
+        x = 18
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p2_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_0 add_idea = AOEIW_SWI_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,3
+        id = AOEIW9_SWI_politics_p2_3
+        icon = GFX_goal_generic_propaganda
+        x = 18
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p2_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,4
+        id = AOEIW9_SWI_politics_p2_4
+        icon = GFX_focus_generic_monarchy_2
+        x = 17
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p2_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_1 add_idea = AOEIW_SWI_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,5
+        id = AOEIW9_SWI_politics_p2_5
+        icon = GFX_focus_generic_social_democracy
+        x = 18
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_politics_p2_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.06 }
+            AOEIW9_install_non_aligned_government = yes
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_2 add_idea = AOEIW_SWI_legacy_3 }
+            add_ideas = AOEIW9_SWI_spirit_constitutional
+            add_political_power = 75
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 28,1
+        id = AOEIW9_SWI_politics_p3_1
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 20
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,2
+        id = AOEIW9_SWI_politics_p3_2
+        icon = GFX_focus_generic_spread_fascism
+        x = 21
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p3_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_0 add_idea = AOEIW_SWI_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,3
+        id = AOEIW9_SWI_politics_p3_3
+        icon = GFX_focus_generic_military_industry
+        x = 20
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p3_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,4
+        id = AOEIW9_SWI_politics_p3_4
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 21
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p3_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_1 add_idea = AOEIW_SWI_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,5
+        id = AOEIW9_SWI_politics_p3_5
+        icon = GFX_focus_generic_spread_fascism
+        x = 21
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_politics_p3_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.06 }
+            AOEIW9_install_nationalist_government = yes
+            swap_ideas = { remove_idea = AOEIW_SWI_legacy_2 add_idea = AOEIW_SWI_legacy_3 }
+            add_ideas = AOEIW9_SWI_spirit_mobilised_society
+            add_political_power = 75
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SWI_politics_p1_1 has_completed_focus = AOEIW9_SWI_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,7
+        id = AOEIW9_SWI_politics_settlement
+        icon = GFX_focus_generic_welfare
+        x = 17
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_politics_p1_5 focus = AOEIW9_SWI_politics_p2_5 focus = AOEIW9_SWI_politics_p3_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_political_settlement = yes
+            add_stability = 0.04
+            add_war_support = 0.03
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_root
+        icon = GFX_focus_generic_industrial_experts
+        x = 7
+        y = 1
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,2
+        id = AOEIW9_SWI_eco_civ_1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,3
+        id = AOEIW9_SWI_eco_civ_2
+        icon = GFX_focus_generic_railroad
+        x = 0
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_civ_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,4
+        id = AOEIW9_SWI_eco_civ_3
+        icon = GFX_focus_generic_industry_investment
+        x = 1
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 151 controls_state = 151 }
+                151 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 151 controls_state = 151 }
+                151 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,5
+        id = AOEIW9_SWI_eco_civ_4
+        icon = GFX_focus_generic_electrification
+        x = 0
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,6
+        id = AOEIW9_SWI_eco_civ_5
+        icon = GFX_focus_generic_industry_1
+        x = 1
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_civ_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,7
+        id = AOEIW9_SWI_eco_civ_6
+        icon = GFX_focus_generic_currency_reforms
+        x = 0
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,8
+        id = AOEIW9_SWI_eco_civ_7
+        icon = GFX_focus_generic_mass_production
+        x = 1
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,9
+        id = AOEIW9_SWI_eco_civ_8
+        icon = GFX_focus_generic_railroad
+        x = 0
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            capital_scope = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = { name = AOEIW21_SWI_industrial_modernisation bonus = 0.50 uses = 1 category = industry }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,10
+        id = AOEIW9_SWI_eco_civ_9
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_8 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW9_SWI_spirit_civilian_engine
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,2
+        id = AOEIW9_SWI_eco_war_1
+        icon = GFX_focus_generic_commission
+        x = 11
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_war_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,3
+        id = AOEIW9_SWI_eco_war_2
+        icon = GFX_focus_generic_industry_1
+        x = 11
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_war_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,4
+        id = AOEIW9_SWI_eco_war_3
+        icon = GFX_focus_generic_currency_reforms
+        x = 10
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_war_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,5
+        id = AOEIW9_SWI_eco_war_4
+        icon = GFX_focus_generic_military_industry
+        x = 11
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_war_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_war_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,6
+        id = AOEIW9_SWI_eco_war_5
+        icon = GFX_focus_generic_modernize_industry
+        x = 10
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_war_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,7
+        id = AOEIW9_SWI_eco_war_6
+        icon = GFX_focus_generic_mass_production
+        x = 11
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_war_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_ideas = AOEIW9_SWI_spirit_war_industry
+            army_experience = 15
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_science_1
+        icon = GFX_focus_research
+        x = 7
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_sci_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_science_2
+        icon = GFX_focus_generic_university_1
+        x = 8
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_science_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_sci_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,4
+        id = AOEIW9_SWI_eco_science_3
+        icon = GFX_focus_generic_university_2
+        x = 5
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_science_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_sci_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_science_4
+        icon = GFX_focus_generic_industrial_experts
+        x = 7
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_science_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_sci_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_research_slot = 1
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_science_5
+        icon = GFX_focus_generic_university_2
+        x = 8
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_science_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_sci_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_ideas = AOEIW9_SWI_spirit_research_network
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,4
+        id = AOEIW9_SWI_eco_infra_1
+        icon = GFX_focus_generic_electrification
+        x = 3
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 151 controls_state = 151 }
+                151 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,5
+        id = AOEIW9_SWI_eco_infra_2
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 5
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 3 controls_state = 3 }
+                3 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,6
+        id = AOEIW9_SWI_eco_infra_3
+        icon = GFX_focus_generic_low_cost_housing
+        x = 3
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,7
+        id = AOEIW9_SWI_eco_infra_4
+        icon = GFX_focus_generic_currency_reforms
+        x = 5
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = AOEIW9_SWI_eco_final
+        icon = GFX_focus_generic_industry_3
+        x = 7
+        y = 12
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_eco_civ_9 focus = AOEIW9_SWI_eco_war_6 focus = AOEIW9_SWI_eco_science_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            AOEIW_consolidation_apply_industrial_programme = yes
+            add_political_power = 50
+            add_stability = 0.02
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,10
+        id = AOEIW9_SWI_mil_root
+        icon = GFX_goal_generic_army_doctrines
+        x = 13
+        y = 10
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_command_power = 20
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,11
+        id = AOEIW9_SWI_mil_army_1
+        icon = GFX_focus_generic_army_tanks2
+        x = 10
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = infantry_weapons
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,12
+        id = AOEIW9_SWI_mil_army_2
+        icon = GFX_focus_generic_military_academy
+        x = 10
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,13
+        id = AOEIW9_SWI_mil_army_3
+        icon = GFX_goal_generic_small_arms
+        x = 11
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,14
+        id = AOEIW9_SWI_mil_army_4
+        icon = GFX_goal_generic_army_artillery2
+        x = 8
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = artillery
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,15
+        id = AOEIW9_SWI_mil_army_5
+        icon = GFX_focus_generic_truck
+        x = 11
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = motorized_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,16
+        id = AOEIW9_SWI_mil_army_6
+        icon = GFX_goal_generic_army_doctrines
+        x = 11
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,17
+        id = AOEIW9_SWI_mil_army_7
+        icon = GFX_focus_generic_army_tanks2
+        x = 8
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_army_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SWI_army_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = armor
+            }
+            add_ideas = AOEIW9_SWI_spirit_military_reform
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,11
+        id = AOEIW9_SWI_mil_air_1
+        icon = GFX_goal_generic_build_airforce
+        x = 13
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,12
+        id = AOEIW9_SWI_mil_air_2
+        icon = GFX_focus_generic_pilot_training
+        x = 14
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_air_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,13
+        id = AOEIW9_SWI_mil_air_3
+        icon = GFX_focus_generic_air_defense
+        x = 13
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_air_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_doc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,14
+        id = AOEIW9_SWI_mil_air_4
+        icon = GFX_focus_generic_long_range_aircraft
+        x = 14
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_air_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,15
+        id = AOEIW9_SWI_mil_air_5
+        icon = GFX_goal_generic_radar
+        x = 13
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_air_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_air_doc_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,11
+        id = AOEIW9_SWI_mil_special_1
+        icon = GFX_focus_generic_railroad
+        x = 16
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,12
+        id = AOEIW9_SWI_mil_special_2
+        icon = GFX_focus_generic_home_defense
+        x = 16
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_special_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            army_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,13
+        id = AOEIW9_SWI_mil_special_3
+        icon = GFX_focus_generic_truck
+        x = 17
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_special_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            army_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 20,14
+        id = AOEIW9_SWI_mil_special_4
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+        x = 16
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_special_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            army_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,15
+        id = AOEIW9_SWI_mil_special_5
+        icon = GFX_focus_generic_army_doctrines_2
+        x = 17
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_mil_special_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            army_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = support_tech
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,19
+        id = AOEIW9_SWI_mil_final
+        icon = GFX_focus_generic_home_defense
+        x = 13
+        y = 18
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_mil_army_7 focus = AOEIW9_SWI_mil_air_5 focus = AOEIW9_SWI_mil_special_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            AOEIW_consolidation_apply_military_reform = yes
+            army_experience = 25
+            air_experience = 15
+            navy_experience = 10
+            add_war_support = 0.04
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,1
+        id = AOEIW9_SWI_dip_root
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 25
+        y = 1
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,2
+        id = AOEIW9_SWI_dip_a_1
+        icon = GFX_goal_generic_alliance
+        x = 23
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,3
+        id = AOEIW9_SWI_dip_a_2
+        icon = GFX_focus_generic_military_mission
+        x = 23
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_a_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = GER modifier = AOEIW_geopolitical_rivalry }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,4
+        id = AOEIW9_SWI_dip_a_3
+        icon = GFX_focus_generic_concessions
+        x = 24
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_a_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,5
+        id = AOEIW9_SWI_dip_a_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 23
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_a_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 33,6
+        id = AOEIW9_SWI_dip_a_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 24
+        y = 6
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_dip_a_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { GER = { exists = yes } NOT = { has_war_with = GER } } create_wargoal = { type = annex_everything target = GER } }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,2
+        id = AOEIW9_SWI_dip_b_1
+        icon = GFX_goal_generic_alliance
+        x = 27
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,3
+        id = AOEIW9_SWI_dip_b_2
+        icon = GFX_focus_generic_military_mission
+        x = 27
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_b_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = FRA modifier = AOEIW_geopolitical_rivalry }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,4
+        id = AOEIW9_SWI_dip_b_3
+        icon = GFX_focus_generic_concessions
+        x = 26
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_b_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,5
+        id = AOEIW9_SWI_dip_b_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 27
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_dip_b_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,6
+        id = AOEIW9_SWI_dip_b_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 26
+        y = 6
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_dip_b_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { FRA = { exists = yes } NOT = { has_war_with = FRA } } create_wargoal = { type = annex_everything target = FRA } }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 35,8
+        id = AOEIW9_SWI_dip_final
+        icon = GFX_focus_generic_national_security
+        x = 25
+        y = 8
+        cost = 7
+        prerequisite = { focus = AOEIW9_SWI_dip_a_5 focus = AOEIW9_SWI_dip_b_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_diplomatic_charter = yes
+            add_political_power = 75
+            add_war_support = 0.05
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,8
+        id = AOEIW9_SWI_special_1
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 19
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,9
+        id = AOEIW9_SWI_special_2
+        icon = GFX_goal_generic_navy_battleship
+        x = 20
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,10
+        id = AOEIW9_SWI_special_3
+        icon = GFX_focus_generic_military_industry
+        x = 19
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,11
+        id = AOEIW9_SWI_special_4
+        icon = GFX_focus_generic_monarchy_2
+        x = 20
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,12
+        id = AOEIW9_SWI_special_5
+        icon = GFX_focus_generic_supply_line
+        x = 19
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,13
+        id = AOEIW9_SWI_special_6
+        icon = GFX_goal_generic_political_pressure
+        x = 20
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,14
+        id = AOEIW9_SWI_special_7
+        icon = GFX_goal_generic_propaganda
+        x = 19
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_SWI_special_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_SWI_special_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,15
+        id = AOEIW9_SWI_special_8
+        icon = GFX_focus_generic_monarchy_2
+        x = 20
+        y = 15
+        cost = 3
+        prerequisite = { focus = AOEIW9_SWI_special_7 }
+        available = {
+            has_war = yes
+            any_enemy_country = { is_major = yes }
+            OR = {
+                has_defensive_war = yes
+                surrender_progress > 0.05
+            }
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_ideas = AOEIW_SWI_they_shall_not_pass
+            every_owned_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 40
+                add_building_construction = { type = bunker level = 10 instant_build = yes }
+                add_building_construction = { type = anti_air_building level = 5 instant_build = yes }
+                add_building_construction = { type = infrastructure level = 5 instant_build = yes }
+            }
+            add_war_support = 0.10
+            army_experience = 30
+        }
+        ai_will_do = {
+            factor = 25
+        }
+    }
+
+}

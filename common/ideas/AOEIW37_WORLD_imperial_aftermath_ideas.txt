@@ -1,0 +1,88 @@
+ideas = {
+    country = {
+        AOEIW37_WORLD_wartime_imperial_commission = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { political_power_factor = -0.03 war_support_factor = 0.04 }
+        }
+        AOEIW37_WORLD_expeditionary_commitment = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.03 army_morale_factor = 0.03 war_support_factor = 0.04 training_time_army_factor = -0.05 }
+        }
+        AOEIW37_WORLD_home_defence_mandate = {
+            picture = generic_fortify_the_borders
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_defence_factor = 0.04 max_dig_in = 1 stability_factor = 0.03 }
+        }
+        AOEIW37_WORLD_metropolitan_collapse = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = -0.06 political_power_factor = -0.08 supply_consumption_factor = 0.04 }
+        }
+        AOEIW37_WORLD_emergency_command = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.05 army_morale_factor = 0.05 surrender_limit = 0.05 }
+        }
+        AOEIW37_WORLD_provisional_civil_council = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.05 political_power_factor = 0.05 war_support_factor = -0.03 }
+        }
+        AOEIW37_WORLD_reconstruction_secretariat = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.15 production_speed_buildings_factor = 0.05 political_power_factor = -0.02 }
+        }
+        AOEIW37_WORLD_federal_charter = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.06 political_power_factor = 0.05 trade_opinion_factor = 0.10 }
+        }
+        AOEIW37_WORLD_directed_compact = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = -0.03 war_support_factor = 0.05 production_factory_efficiency_gain_factor = 0.03 }
+        }
+        AOEIW37_WORLD_reformed_imperial_union = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.03 political_power_factor = 0.04 trade_opinion_factor = 0.08 }
+        }
+        AOEIW37_WORLD_central_administration_burden = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.02 political_power_factor = -0.04 war_support_factor = 0.03 }
+        }
+        AOEIW37_WORLD_joint_supply_board = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { supply_consumption_factor = -0.05 repair_speed_factor = 0.10 production_factory_efficiency_gain_factor = 0.04 }
+        }
+        AOEIW37_WORLD_relief_mission = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { improve_relations_maintain_cost_factor = -0.10 trade_opinion_factor = 0.05 consumer_goods_factor = 0.01 }
+        }
+        AOEIW37_WORLD_strategic_watch = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { intel_from_operatives_factor = 0.05 enemy_justify_war_goal_time = 0.05 war_support_factor = 0.02 }
+        }
+    }
+}

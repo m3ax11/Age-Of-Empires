@@ -1,0 +1,39 @@
+ideologies = {
+    imperialism = {
+        types = { imperialism_type = { } }
+        color = { 110 110 110 }
+        war_impact_on_world_tension = 1
+        faction_impact_on_world_tension = 1
+        can_host_government_in_exile = yes
+        can_collaborate = yes
+        rules = { can_force_government = yes can_send_volunteers = yes can_puppet = yes }
+    }
+    constitutional_monarchism = {
+        types = { constitutional_monarchism_type = { } federal_monarchism = { } }
+        color = { 71 101 156 }
+        dynamic_faction_names = yes
+        can_host_government_in_exile = yes
+        can_be_exiled = yes
+        can_lower_tension = yes
+        can_only_justify_war_on_threat_country = yes
+        war_impact_on_world_tension = 0.45
+        faction_impact_on_world_tension = 0.35
+        rules = { can_force_government = no can_send_volunteers = no can_puppet = no }
+        ai_democratic = yes
+    }
+    autocratic_imperialism = {
+        types = {
+            autocratic_imperialism_type = { }
+            corporate_republicanism = { }
+            military_cesarism = { }
+            technocratic_regime = { }
+        }
+        color = { 96 63 44 }
+        dynamic_faction_names = yes
+        can_collaborate = yes
+        war_impact_on_world_tension = 1
+        faction_impact_on_world_tension = 1
+        rules = { can_force_government = yes can_send_volunteers = yes can_puppet = yes }
+        ai_fascist = yes
+    }
+}

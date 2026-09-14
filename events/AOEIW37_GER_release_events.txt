@@ -1,0 +1,545 @@
+add_namespace = AOEIW37_ger
+
+country_event = {
+    id = AOEIW37_ger.1
+    title = AOEIW37_ger.1.t
+    desc = AOEIW37_ger.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.1.a
+        trigger = { has_completed_focus = AOEIW35_GER_imperial_institutions }
+        add_stability = 0.02
+        add_political_power = 25
+    }
+    option = {
+        name = AOEIW37_ger.1.b
+        trigger = { has_completed_focus = AOEIW35_GER_imperial_executive }
+        add_war_support = 0.02
+        add_command_power = 10
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.2
+    title = AOEIW37_ger.2.t
+    desc = AOEIW37_ger.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.2.a
+        add_stability = 0.03
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.3
+    title = AOEIW37_ger.3.t
+    desc = AOEIW37_ger.3.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.3.a
+        add_stability = 0.02
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.4
+    title = AOEIW37_ger.4.t
+    desc = AOEIW37_ger.4.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.4.a
+        add_war_support = 0.03
+        add_political_power = 35
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.5
+    title = AOEIW37_ger.5.t
+    desc = AOEIW37_ger.5.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.5.a
+        ai_chance = {
+            base = 6
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_democratic_order }
+            modifier = { factor = 1.5 has_country_flag = AOEIW37_GER_imperial_order }
+        }
+        set_country_flag = AOEIW37_GER_diplomatic_accommodation
+        clr_country_flag = AOEIW37_GER_diplomatic_vigilance
+        add_stability = 0.02
+        add_timed_idea = { idea = AOEIW37_GER_development_credit days = 240 }
+        every_other_country = {
+            limit = { is_in_faction_with = ROOT }
+            add_opinion_modifier = { target = GER modifier = AOEIW14_constitutional_dialogue }
+        }
+    }
+    option = {
+        name = AOEIW37_ger.5.b
+        ai_chance = {
+            base = 4
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_nationalist_order }
+        }
+        set_country_flag = AOEIW37_GER_diplomatic_vigilance
+        clr_country_flag = AOEIW37_GER_diplomatic_accommodation
+        add_war_support = 0.03
+        add_timed_idea = { idea = AOEIW37_GER_coordinated_procurement days = 240 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.7
+    title = AOEIW37_ger.7.t
+    desc = AOEIW37_ger.7.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.7.a
+        ai_chance = {
+            base = 6
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_acceptances > 3 } }
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_accommodation }
+        }
+        add_ideas = AOEIW37_GER_chartered_empire
+        set_country_flag = AOEIW37_GER_diplomatic_accommodation
+        clr_country_flag = AOEIW37_GER_diplomatic_vigilance
+        every_subject_country = {
+            add_autonomy_ratio = { value = 0.03 localization = AOEIW37_GER_subject_charter_autonomy }
+            add_timed_idea = { idea = AOEIW37_GER_development_credit days = 240 }
+        }
+        add_stability = 0.03
+    }
+    option = {
+        name = AOEIW37_ger.7.b
+        ai_chance = {
+            base = 4
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_resistance > 3 } }
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_vigilance }
+        }
+        add_ideas = AOEIW37_GER_imperial_prerogative
+        set_country_flag = AOEIW37_GER_diplomatic_vigilance
+        clr_country_flag = AOEIW37_GER_diplomatic_accommodation
+        add_command_power = 20
+        add_war_support = 0.03
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.8
+    title = AOEIW37_ger.8.t
+    desc = AOEIW37_ger.8.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.8.a
+        ai_chance = {
+            base = 7
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_acceptances > 3 } }
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_accommodation }
+        }
+        add_ideas = AOEIW37_GER_civic_commonwealth
+        set_country_flag = AOEIW37_GER_diplomatic_accommodation
+        clr_country_flag = AOEIW37_GER_diplomatic_vigilance
+        add_stability = 0.03
+        add_political_power = 50
+    }
+    option = {
+        name = AOEIW37_ger.8.b
+        ai_chance = {
+            base = 3
+            modifier = { factor = 3 has_war = yes }
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_resistance > 3 } }
+        }
+        add_ideas = AOEIW37_GER_security_commonwealth
+        set_country_flag = AOEIW37_GER_diplomatic_vigilance
+        clr_country_flag = AOEIW37_GER_diplomatic_accommodation
+        army_experience = 20
+        add_command_power = 15
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.9
+    title = AOEIW37_ger.9.t
+    desc = AOEIW37_ger.9.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.9.a
+        ai_chance = {
+            base = 6
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_acceptances > 3 } }
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_accommodation }
+        }
+        add_ideas = AOEIW37_GER_federal_socialism
+        set_country_flag = AOEIW37_GER_diplomatic_accommodation
+        clr_country_flag = AOEIW37_GER_diplomatic_vigilance
+        every_other_country = {
+            limit = { is_in_faction_with = ROOT }
+            add_timed_idea = { idea = AOEIW37_GER_workers_exchange days = 180 }
+        }
+        add_stability = 0.03
+    }
+    option = {
+        name = AOEIW37_ger.9.b
+        ai_chance = {
+            base = 4
+            modifier = { factor = 2 has_war = yes }
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_vigilance }
+        }
+        add_ideas = AOEIW37_GER_directed_common_plan
+        set_country_flag = AOEIW37_GER_diplomatic_vigilance
+        clr_country_flag = AOEIW37_GER_diplomatic_accommodation
+        add_political_power = 50
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.6
+    title = AOEIW37_ger.6.t
+    desc = AOEIW37_ger.6.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.6.a
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.10
+    title = AOEIW37_ger.10.t
+    desc = AOEIW37_ger.10.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.10.a
+        ai_chance = {
+            base = 5
+            modifier = { factor = 4 is_in_faction_with = FROM }
+            modifier = { factor = 3 is_subject_of = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_constitutional_dialogue }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW14_constitutional_dialogue } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_acceptances = 1 } }
+        add_political_power = 25
+        add_ai_strategy = { type = befriend id = FROM value = 40 }
+    }
+    option = {
+        name = AOEIW37_ger.10.b
+        ai_chance = {
+            base = 3
+            modifier = { factor = 0 is_subject_of = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW14_treaty_rejected } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_resistance = 1 } }
+        add_war_support = 0.02
+        add_ai_strategy = { type = antagonize id = FROM value = 30 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.11
+    title = AOEIW37_ger.11.t
+    desc = AOEIW37_ger.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.11.a
+        ai_chance = {
+            base = 6
+            modifier = { factor = 3 has_government = democratic }
+            modifier = { factor = 3 is_in_faction_with = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_constitutional_dialogue }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW14_constitutional_dialogue } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_acceptances = 1 } }
+        add_stability = 0.01
+        add_ai_strategy = { type = befriend id = FROM value = 50 }
+    }
+    option = {
+        name = AOEIW37_ger.11.b
+        ai_chance = { base = 3 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW14_treaty_rejected } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_resistance = 1 } }
+        add_war_support = 0.02
+        add_ai_strategy = { type = contain id = FROM value = 30 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.12
+    title = AOEIW37_ger.12.t
+    desc = AOEIW37_ger.12.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.12.a
+        ai_chance = {
+            base = 5
+            modifier = { factor = 4 has_government = communism }
+            modifier = { factor = 3 is_in_faction_with = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_diplomatic_mission }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_diplomatic_mission } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_acceptances = 1 } }
+        add_timed_idea = { idea = AOEIW37_GER_workers_exchange days = 120 }
+        add_ai_strategy = { type = befriend id = FROM value = 40 }
+    }
+    option = {
+        name = AOEIW37_ger.12.b
+        ai_chance = { base = 4 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW14_treaty_rejected } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_resistance = 1 } }
+        add_stability = 0.01
+        add_ai_strategy = { type = contain id = FROM value = 40 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.13
+    title = AOEIW37_ger.13.t
+    desc = AOEIW37_ger.13.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.13.a
+        ai_chance = {
+            base = 3
+            modifier = { factor = 6 is_subject_of = FROM }
+            modifier = { factor = 3 is_in_faction_with = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_diplomatic_mission }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_diplomatic_mission } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_acceptances = 1 } }
+        add_war_support = 0.01
+        add_ai_strategy = { type = befriend id = FROM value = 25 }
+    }
+    option = {
+        name = AOEIW37_ger.13.b
+        ai_chance = {
+            base = 7
+            modifier = { factor = 0 is_subject_of = FROM }
+        }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_strategic_pressure_opinion }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+        FROM = { add_to_variable = { AOEIW37_GER_order_resistance = 1 } }
+        add_war_support = 0.03
+        add_ai_strategy = { type = antagonize id = FROM value = 60 }
+        add_ai_strategy = { type = contain id = FROM value = 40 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.14
+    title = AOEIW37_ger.14.t
+    desc = AOEIW37_ger.14.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW37_ger.14.a
+        ai_chance = {
+            base = 5
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_accommodation }
+            modifier = { factor = 2 has_stability > 0.65 }
+        }
+        set_country_flag = AOEIW37_GER_wartime_directorates_closed
+        remove_ideas = AOEIW37_GER_fortress_europe_spirit
+        add_ideas = AOEIW37_GER_peace_dividend
+        add_stability = 0.05
+        add_war_support = -0.05
+    }
+    option = {
+        name = AOEIW37_ger.14.b
+        ai_chance = {
+            base = 5
+            modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_vigilance }
+            modifier = { factor = 2 check_variable = { AOEIW37_GER_order_resistance > 3 } }
+        }
+        add_ideas = AOEIW37_GER_permanent_victory_state
+        set_country_flag = AOEIW37_GER_diplomatic_vigilance
+        clr_country_flag = AOEIW37_GER_diplomatic_accommodation
+        add_war_support = 0.05
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.20
+    title = AOEIW37_ger.20.t
+    desc = AOEIW37_ger.20.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.20.a
+        ai_chance = { base = 7 }
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_GER_subject_charter_autonomy }
+        add_timed_idea = { idea = AOEIW37_GER_development_credit days = 240 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_autonomy_compromise }
+    }
+    option = {
+        name = AOEIW37_ger.20.b
+        ai_chance = { base = 3 }
+        add_autonomy_ratio = { value = 0.08 localization = AOEIW37_GER_subject_charter_autonomy }
+        add_timed_idea = { idea = AOEIW37_GER_development_credit days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_constitutional_dialogue }
+        FROM = { add_political_power = -10 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.22
+    title = AOEIW37_ger.22.t
+    desc = AOEIW37_ger.22.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.22.a
+        ai_chance = { base = 7 modifier = { factor = 2 has_war = yes } }
+        add_autonomy_ratio = { value = -0.03 localization = AOEIW37_GER_forced_levies_autonomy }
+        add_timed_idea = { idea = AOEIW37_GER_forced_levies days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_strategic_pressure_opinion }
+        FROM = { add_manpower = 10000 }
+    }
+    option = {
+        name = AOEIW37_ger.22.b
+        ai_chance = { base = 3 modifier = { factor = 2 has_stability > 0.60 } }
+        add_autonomy_ratio = { value = 0.02 localization = AOEIW37_GER_forced_levies_autonomy }
+        add_stability = -0.01
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+        FROM = { country_event = { id = AOEIW37_ger.23 hours = 6 } }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.23
+    title = AOEIW37_ger.23.t
+    desc = AOEIW37_ger.23.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.23.a
+        ai_chance = { base = 4 modifier = { factor = 2 has_country_flag = AOEIW37_GER_wartime_directorates_closed } }
+        FROM = {
+            add_autonomy_ratio = { value = 0.02 localization = AOEIW37_GER_subject_charter_autonomy }
+            add_opinion_modifier = { target = ROOT modifier = AOEIW14_autonomy_compromise }
+        }
+        add_war_support = -0.01
+    }
+    option = {
+        name = AOEIW37_ger.23.b
+        ai_chance = { base = 6 modifier = { factor = 2 has_country_flag = AOEIW37_GER_diplomatic_vigilance } }
+        FROM = {
+            add_autonomy_ratio = { value = -0.05 localization = AOEIW37_GER_forced_levies_autonomy }
+            add_timed_idea = { idea = AOEIW37_GER_forced_levies days = 180 }
+            add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion }
+        }
+        add_manpower = 20000
+        add_ai_strategy = { type = antagonize id = FROM value = 30 }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.24
+    title = AOEIW37_ger.24.t
+    desc = AOEIW37_ger.24.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.24.a
+        ai_chance = { base = 7 modifier = { factor = 2 is_in_faction_with = FROM } }
+        add_timed_idea = { idea = AOEIW37_GER_coordinated_procurement days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_diplomatic_mission }
+    }
+    option = {
+        name = AOEIW37_ger.24.b
+        ai_chance = { base = 3 }
+        add_political_power = 15
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.25
+    title = AOEIW37_ger.25.t
+    desc = AOEIW37_ger.25.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.25.a
+        ai_chance = { base = 7 modifier = { factor = 2 has_government = democratic } }
+        add_timed_idea = { idea = AOEIW37_GER_development_credit days = 240 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_constitutional_dialogue }
+    }
+    option = {
+        name = AOEIW37_ger.25.b
+        ai_chance = { base = 3 }
+        add_political_power = 20
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+    }
+}
+
+country_event = {
+    id = AOEIW37_ger.26
+    title = AOEIW37_ger.26.t
+    desc = AOEIW37_ger.26.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW37_ger.26.a
+        ai_chance = { base = 7 modifier = { factor = 3 has_government = communism } }
+        add_timed_idea = { idea = AOEIW37_GER_workers_exchange days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW11_diplomatic_mission }
+    }
+    option = {
+        name = AOEIW37_ger.26.b
+        ai_chance = { base = 3 modifier = { factor = 2 NOT = { has_government = communism } } }
+        add_stability = 0.01
+        add_opinion_modifier = { target = FROM modifier = AOEIW14_treaty_rejected }
+        add_ai_strategy = { type = contain id = FROM value = 20 }
+    }
+}

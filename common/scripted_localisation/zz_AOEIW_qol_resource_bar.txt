@@ -1,0 +1,41 @@
+defined_text = {
+    name = AOEIW_qol_oil_text
+    text = { trigger = { check_variable = { resource@oil < 0 } } localization_key = AOEIW_QOL_OIL_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_OIL_POS }
+}
+defined_text = {
+    name = AOEIW_qol_aluminium_text
+    text = { trigger = { check_variable = { resource@aluminium < 0 } } localization_key = AOEIW_QOL_ALUMINIUM_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_ALUMINIUM_POS }
+}
+defined_text = {
+    name = AOEIW_qol_rubber_text
+    text = { trigger = { check_variable = { resource@rubber < 0 } } localization_key = AOEIW_QOL_RUBBER_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_RUBBER_POS }
+}
+defined_text = {
+    name = AOEIW_qol_tungsten_text
+    text = { trigger = { check_variable = { resource@tungsten < 0 } } localization_key = AOEIW_QOL_TUNGSTEN_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_TUNGSTEN_POS }
+}
+defined_text = {
+    name = AOEIW_qol_steel_text
+    text = { trigger = { check_variable = { resource@steel < 0 } } localization_key = AOEIW_QOL_STEEL_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_STEEL_POS }
+}
+defined_text = {
+    name = AOEIW_qol_chromium_text
+    text = { trigger = { check_variable = { resource@chromium < 0 } } localization_key = AOEIW_QOL_CHROMIUM_NEG }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_CHROMIUM_POS }
+}
+
+defined_text = {
+    name = AOEIW_qol_resource_detail_text
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 1 } } localization_key = AOEIW_QOL_OIL_DETAIL }
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 2 } } localization_key = AOEIW_QOL_ALUMINIUM_DETAIL }
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 3 } } localization_key = AOEIW_QOL_RUBBER_DETAIL }
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 4 } } localization_key = AOEIW_QOL_TUNGSTEN_DETAIL }
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 5 } } localization_key = AOEIW_QOL_STEEL_DETAIL }
+    text = { trigger = { check_variable = { AOEIW_qol_resource_selection = 6 } } localization_key = AOEIW_QOL_CHROMIUM_DETAIL }
+    text = { trigger = { always = yes } localization_key = AOEIW_QOL_RESOURCE_DETAIL_DEFAULT }
+}

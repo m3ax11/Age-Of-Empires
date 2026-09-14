@@ -1,0 +1,53 @@
+capital = 371
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_FAM_leader
+recruit_character = AOEIW_world_FAM_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    mtg_transport = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+    gw_artillery = 1
+}
+add_ideas = { AOEIW_world_american_breakaway civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 14400 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 960 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 720 }
+oob = "AOEIW_world_FAM_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = HAI_stenio_vincent
+recruit_character = HAI_francois_duvalier
+recruit_character = HAI_jacques_roumain
+recruit_character = HAI_emilie_lescot
+recruit_character = HAI_pascale_b_g_guillaume
+recruit_character = HAI_charles_h_forbin
+recruit_character = HAI_andre_sainte_frederic
+recruit_character = HAI_paul_magloire
+recruit_character = HAI_georges_leger
+recruit_character = HAI_belmeau_max_pierre
+recruit_character = HAI_franck_lavaud
+recruit_character = HAI_andre_dumont
+recruit_character = HAI_antoine_levelt
+recruit_character = HAI_ernst_severe
+recruit_character = HAI_g_edouard_roy
+recruit_character = HAI_raymond_gassner
+recruit_character = HAI_luis_dabtes_bellegarde
+recruit_character = HAI_demosthenes_calixte
+recruit_character = HAI_louis_dejoie
+recruit_character = HAI_alix_pasquet

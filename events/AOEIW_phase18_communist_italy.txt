@@ -1,0 +1,277 @@
+add_namespace = aoeiw_phase18_ita
+
+# Italy only: Turin and Milan debate how authority should pass from factories
+# to the future national congress.
+country_event = {
+    id = aoeiw_phase18_ita.1
+    title = aoeiw_phase18_ita.1.t
+    desc = aoeiw_phase18_ita.1.d
+    picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = ITA }
+
+    option = {
+        name = aoeiw_phase18_ita.1.a
+        ai_chance = { factor = 6 }
+        add_political_power = -25
+        add_stability = 0.01
+        add_ideas = AOEIW18_ITA_syndical_coordination
+        set_country_flag = AOEIW18_ITA_syndical_coordination
+    }
+    option = {
+        name = aoeiw_phase18_ita.1.b
+        ai_chance = { factor = 4 }
+        add_stability = -0.01
+        add_war_support = 0.02
+        add_ideas = AOEIW18_ITA_municipal_communes
+        set_country_flag = AOEIW18_ITA_municipal_communes
+    }
+}
+
+# Italy only: the revolution must decide how to win the Mezzogiorno.
+country_event = {
+    id = aoeiw_phase18_ita.2
+    title = aoeiw_phase18_ita.2.t
+    desc = aoeiw_phase18_ita.2.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = ITA }
+
+    option = {
+        name = aoeiw_phase18_ita.2.a
+        ai_chance = { factor = 7 }
+        add_political_power = -35
+        add_stability = 0.01
+        add_ideas = AOEIW18_ITA_southern_cooperatives
+        set_country_flag = AOEIW18_ITA_southern_cooperatives
+    }
+    option = {
+        name = aoeiw_phase18_ita.2.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.03
+        add_war_support = 0.04
+        add_ideas = AOEIW18_ITA_forced_grain_levies
+        set_country_flag = AOEIW18_ITA_forced_grain_levies
+    }
+}
+
+# Italy only: abolish the monarchy and dissolve the Mediterranean League.
+country_event = {
+    id = aoeiw_phase18_ita.3
+    title = aoeiw_phase18_ita.3.t
+    desc = aoeiw_phase18_ita.3.d
+    picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = ITA }
+
+    option = {
+        name = aoeiw_phase18_ita.3.a
+
+        if = {
+            limit = { is_faction_leader = yes }
+            dismantle_faction = yes
+        }
+        else_if = {
+            limit = { is_in_faction = yes }
+            leave_faction = yes
+        }
+
+        remove_ideas = {
+            AOEIW_ITA_legacy_0
+            AOEIW_ITA_legacy_1
+            AOEIW_ITA_legacy_2
+            AOEIW_ITA_legacy_3
+            AOEIW9_ITA_spirit_mobilised_society
+            AOEIW11_faction_leadership
+            AOEIW18_ITA_factory_council_agitation
+            AOEIW18_ITA_po_valley_general_strike
+            AOEIW18_ITA_red_guard_militias
+        }
+        AOEIW9_install_workers_government = yes
+        set_cosmetic_tag = ITA_COMMUNES
+        set_party_name = {
+            ideology = communism
+            long_name = AOEIW18_ITA_council_congress_long
+            name = AOEIW18_ITA_council_congress
+        }
+        set_popularities = {
+            democratic = 10
+            fascism = 5
+            communism = 70
+            neutrality = 8
+            imperialism = 7
+        }
+        retire_character = ITA_vittorio_emanuele_iii
+        promote_character = { character = ITA_palmiro_togliatti ideology = marxism }
+        add_ideas = {
+            AOEIW18_ITA_postrevolution_industry_disruption
+            AOEIW18_ITA_postrevolution_command_disruption
+        }
+        add_political_power = -100
+        add_stability = -0.08
+        add_war_support = 0.08
+        set_country_flag = AOEIW18_ITA_federation_proclaimed
+
+        if = {
+            limit = { ROM = { exists = yes } }
+            ROM = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation }
+                remove_opinion_modifier = { target = ITA modifier = AOEIW11_diplomatic_mission }
+                country_event = { id = aoeiw_phase18_ita.5 days = 1 }
+            }
+        }
+        if = {
+            limit = { YUG = { exists = yes } }
+            YUG = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation }
+                remove_opinion_modifier = { target = ITA modifier = AOEIW11_diplomatic_mission }
+                country_event = { id = aoeiw_phase18_ita.6 days = 2 }
+            }
+        }
+        if = {
+            limit = { BUL = { exists = yes } }
+            BUL = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = ITA modifier = AOEIW_mediterranean_league_cooperation }
+                remove_opinion_modifier = { target = ITA modifier = AOEIW11_diplomatic_mission }
+                country_event = { id = aoeiw_phase18_ita.7 days = 3 }
+            }
+        }
+    }
+}
+
+# Italy only: preserve the fleet while determining who commands it.
+country_event = {
+    id = aoeiw_phase18_ita.4
+    title = aoeiw_phase18_ita.4.t
+    desc = aoeiw_phase18_ita.4.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = ITA
+        has_country_flag = AOEIW18_ITA_federation_proclaimed
+    }
+
+    option = {
+        name = aoeiw_phase18_ita.4.a
+        ai_chance = { factor = 7 }
+        add_political_power = -45
+        add_stability = 0.02
+        navy_experience = 15
+        add_ideas = AOEIW18_ITA_fleet_technical_commission
+        set_country_flag = AOEIW18_ITA_fleet_technical_commission
+    }
+    option = {
+        name = aoeiw_phase18_ita.4.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.02
+        add_war_support = 0.04
+        navy_experience = 10
+        add_ideas = AOEIW18_ITA_sailors_committees
+        set_country_flag = AOEIW18_ITA_sailors_committees
+    }
+}
+
+# Romania only: Bucharest decides whether to rebuild an anti-revolutionary bloc.
+country_event = {
+    id = aoeiw_phase18_ita.5
+    title = aoeiw_phase18_ita.5.t
+    desc = aoeiw_phase18_ita.5.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = ROM }
+
+    option = {
+        name = aoeiw_phase18_ita.5.a
+        ai_chance = { factor = 6 }
+        add_stability = 0.03
+        add_war_support = 0.04
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_revolutionary_betrayal }
+        set_rule = { can_create_factions = yes }
+        if = {
+            limit = { is_in_faction = no }
+            create_faction = AOEIW18_balkan_defence_compact
+        }
+        set_country_flag = AOEIW18_ROM_balkan_shield
+    }
+    option = {
+        name = aoeiw_phase18_ita.5.b
+        ai_chance = { factor = 4 }
+        add_political_power = 25
+        add_stability = 0.01
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_mediterranean_revolution }
+        diplomatic_relation = { country = ITA relation = non_aggression_pact active = yes }
+        set_country_flag = AOEIW18_ROM_workers_dialogue
+    }
+}
+
+# Yugoslavia only: Belgrade chooses between the Balkan shield and workers' dialogue.
+country_event = {
+    id = aoeiw_phase18_ita.6
+    title = aoeiw_phase18_ita.6.t
+    desc = aoeiw_phase18_ita.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = YUG }
+
+    option = {
+        name = aoeiw_phase18_ita.6.a
+        ai_chance = { factor = 6 }
+        add_stability = 0.03
+        add_war_support = 0.03
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_revolutionary_betrayal }
+        if = {
+            limit = { is_in_faction = no ROM = { exists = yes is_faction_leader = yes has_country_flag = AOEIW18_ROM_balkan_shield } }
+            ROM = { add_to_faction = YUG }
+        }
+        set_country_flag = AOEIW18_YUG_balkan_shield
+    }
+    option = {
+        name = aoeiw_phase18_ita.6.b
+        ai_chance = { factor = 4 }
+        add_political_power = 25
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_mediterranean_revolution }
+        diplomatic_relation = { country = ITA relation = non_aggression_pact active = yes }
+        set_country_flag = AOEIW18_YUG_workers_dialogue
+    }
+}
+
+# Bulgaria only: Sofia chooses the same post-League strategic question.
+country_event = {
+    id = aoeiw_phase18_ita.7
+    title = aoeiw_phase18_ita.7.t
+    desc = aoeiw_phase18_ita.7.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = BUL }
+
+    option = {
+        name = aoeiw_phase18_ita.7.a
+        ai_chance = { factor = 6 }
+        add_stability = 0.03
+        add_war_support = 0.03
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_revolutionary_betrayal }
+        if = {
+            limit = { is_in_faction = no ROM = { exists = yes is_faction_leader = yes has_country_flag = AOEIW18_ROM_balkan_shield } }
+            ROM = { add_to_faction = BUL }
+        }
+        set_country_flag = AOEIW18_BUL_balkan_shield
+    }
+    option = {
+        name = aoeiw_phase18_ita.7.b
+        ai_chance = { factor = 4 }
+        add_political_power = 25
+        add_opinion_modifier = { target = ITA modifier = AOEIW18_mediterranean_revolution }
+        diplomatic_relation = { country = ITA relation = non_aggression_pact active = yes }
+        set_country_flag = AOEIW18_BUL_workers_dialogue
+    }
+}

@@ -1,0 +1,109 @@
+AOEIW_consolidation_crisis_category = {
+    AOEIW_consolidation_partial_mobilization_decision = {
+        icon = generic_military
+        cost = 25
+        fire_only_once = yes
+        visible = { has_war = yes NOT = { has_country_flag = AOEIW_consolidation_partial_done } }
+        available = { has_war = yes }
+        complete_effect = {
+            set_country_flag = AOEIW_consolidation_partial_done
+            set_country_flag = AOEIW_consolidation_wartime_mobilized
+            add_ideas = AOEIW_consolidation_partial_mobilization
+            add_war_support = 0.03
+        }
+        ai_will_do = { base = 20 }
+    }
+    AOEIW_consolidation_total_mobilization_decision = {
+        icon = generic_military
+        cost = 50
+        fire_only_once = yes
+        visible = { has_country_flag = AOEIW_consolidation_partial_done NOT = { has_country_flag = AOEIW_consolidation_total_done } }
+        available = { has_war = yes has_war_support > 0.35 }
+        complete_effect = {
+            set_country_flag = AOEIW_consolidation_total_done
+            remove_ideas = AOEIW_consolidation_partial_mobilization
+            add_ideas = AOEIW_consolidation_total_mobilization
+        }
+        ai_will_do = { base = 12 modifier = { factor = 2 has_war_support > 0.55 } }
+    }
+    AOEIW_consolidation_emergency_mobilization_decision = {
+        icon = generic_military
+        cost = 75
+        fire_only_once = yes
+        visible = { has_country_flag = AOEIW_consolidation_total_done NOT = { has_country_flag = AOEIW_consolidation_emergency_done } }
+        available = { has_war = yes has_war_support > 0.55 }
+        complete_effect = {
+            set_country_flag = AOEIW_consolidation_emergency_done
+            remove_ideas = AOEIW_consolidation_total_mobilization
+            add_ideas = AOEIW_consolidation_emergency_mobilization
+        }
+        ai_will_do = { base = 4 modifier = { factor = 3 surrender_progress > 0.10 } }
+    }
+    AOEIW_consolidation_war_rationing_decision = {
+        icon = generic_industry
+        cost = 35
+        fire_only_once = yes
+        visible = { has_war = yes NOT = { has_idea = AOEIW_consolidation_war_rationing } }
+        available = { has_war = yes }
+        complete_effect = { add_ideas = AOEIW_consolidation_war_rationing }
+        ai_will_do = { base = 8 }
+    }
+    AOEIW_consolidation_demobilize_decision = {
+        icon = generic_political_discourse
+        cost = 25
+        fire_only_once = yes
+        visible = { has_country_flag = AOEIW_consolidation_wartime_mobilized has_war = no }
+        available = { has_war = no }
+        complete_effect = {
+            remove_ideas = AOEIW_consolidation_partial_mobilization
+            remove_ideas = AOEIW_consolidation_total_mobilization
+            remove_ideas = AOEIW_consolidation_emergency_mobilization
+            remove_ideas = AOEIW_consolidation_war_rationing
+            add_timed_idea = { idea = AOEIW_consolidation_postwar_exhaustion days = 240 }
+            clr_country_flag = AOEIW_consolidation_wartime_mobilized
+            add_stability = 0.03
+        }
+        ai_will_do = { base = 20 }
+    }
+}
+
+AOEIW20_UF_war_category = {
+    AOEIW_consolidation_integrate_regional_commands = {
+        icon = generic_military
+        cost = 35
+        fire_only_once = yes
+        visible = { original_tag = CHI has_country_flag = AOEIW20_UF_war_started }
+        available = { has_war = yes }
+        complete_effect = {
+            add_ideas = AOEIW_consolidation_chinese_coalition
+            add_command_power = 25
+            army_experience = 15
+        }
+        ai_will_do = { base = 12 }
+    }
+    AOEIW_consolidation_secure_grain_and_rail = {
+        icon = generic_industry
+        cost = 40
+        fire_only_once = yes
+        visible = { original_tag = CHI has_country_flag = AOEIW20_UF_war_started }
+        available = { has_war = yes }
+        complete_effect = {
+            add_ideas = AOEIW_consolidation_chinese_logistics
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 12000 }
+        }
+        ai_will_do = { base = 15 }
+    }
+    AOEIW_consolidation_wartime_political_council = {
+        icon = generic_political_discourse
+        cost = 45
+        fire_only_once = yes
+        visible = { original_tag = CHI has_country_flag = AOEIW20_UF_war_started }
+        available = { has_war = yes }
+        complete_effect = {
+            add_stability = 0.06
+            add_war_support = 0.08
+            add_political_power = 50
+        }
+        ai_will_do = { base = 10 }
+    }
+}

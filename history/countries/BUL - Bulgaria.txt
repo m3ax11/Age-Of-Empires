@@ -1,0 +1,269 @@
+capital = 48
+set_research_slots = 4
+set_convoys = 0
+set_stability = 0.7
+set_war_support = 0.65
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 12
+    fascism = 9
+    communism = 6
+    neutrality = 58
+    imperialism = 15
+}
+recruit_character = AOEIW_BUL_ferdinand_i
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_BUL_legacy_0
+    civilian_economy
+    export_focus
+    volunteer_only
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    basic_train = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    early_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_battery = 1
+    basic_torpedo = 1
+    basic_depth_charges = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_recon = 1
+    gw_artillery = 1
+}
+oob = "AOEIW_BUL_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_BUL_v7_advisor_1
+recruit_character = AOEIW_BUL_v7_advisor_2
+recruit_character = AOEIW_BUL_v7_advisor_3
+recruit_character = AOEIW_BUL_v7_advisor_4
+recruit_character = AOEIW_BUL_v7_advisor_5
+recruit_character = AOEIW_BUL_v7_advisor_6
+
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4840 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 396 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 440 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
+# AOEIW V8.8 SPECIALISED FORCE ACCESS
+
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 180 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW BUL Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW BUL Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW BUL Medium Bomber"
+        type = medium_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = medium_bomb_bay
+            engine_type_slot = engine_1_2x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_BUL_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+    }
+    set_air_oob = "AOEIW_BUL_1936_air_legacy"
+}
+
+# AOEIW V8.9 STARTING NAVY DESIGNS
+
+create_equipment_variant = {
+    name = "AOEIW BUL Destroyer Class"
+    type = ship_hull_light_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = light_ship_engine_1
+        fixed_ship_torpedo_slot = ship_torpedo_1
+        mid_1_custom_slot = empty
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW BUL Cruiser Class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = cruiser_ship_engine_1
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_light_battery_1
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW BUL Battleship Class"
+    type = ship_hull_heavy_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_heavy_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        front_1_custom_slot = empty
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_heavy_battery_1
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW BUL Submarine Class"
+    type = ship_hull_submarine_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_1
+        fixed_ship_engine_slot = sub_ship_engine_1
+        rear_1_custom_slot = empty
+    }
+}
+set_naval_oob = "AOEIW_BUL_1936_naval"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = BUL_boris_iii
+recruit_character = BUL_georgi_dimitrov
+recruit_character = BUL_hristo_lukov
+recruit_character = BUL_nikola_mushanov
+recruit_character = BUL_nikola_hadzipetkov
+recruit_character = BUL_konstantin_muraviev
+recruit_character = BUL_konstantin_muraviev_r56
+recruit_character = BUL_dobri_bozhilov
+recruit_character = BUL_dobri_bozhilov_r56
+recruit_character = BUL_georgi_popov
+recruit_character = BUL_vasil_boydev
+recruit_character = BUL_asen_nikolov
+recruit_character = BUL_georgi_petsov
+recruit_character = BUL_atanas_zhilkov
+recruit_character = BUL_kiril_dimitrov_yanchulev
+recruit_character = BUL_stoyan_stoyanov
+recruit_character = BUL_blagoi_ivanov
+recruit_character = BUL_ferdinand_kozovski
+recruit_character = BUL_nikola_nakov
+recruit_character = BUL_sava_ivanov
+recruit_character = BUL_ivan_sapundzhiev
+recruit_character = BUL_ivan_variklechkov
+recruit_character = BUL_vasil_kolarov_r56
+recruit_character = BUL_todor_pavlov_r56
+recruit_character = BUL_hristo_kabakchiev
+recruit_character = BUL_alexander_girginov
+recruit_character = BUL_hristu_patuhov
+recruit_character = BUL_stefan_stefanov_r56
+recruit_character = BUL_dimiter_gichev
+recruit_character = BUL_boris_iotsov
+recruit_character = BUL_aleksandar_tsankov_r56
+recruit_character = BUL_georgi_ivanov_kyoseivanov_r56
+recruit_character = BUL_bogdan_filov_r56
+recruit_character = BUL_theodosi_daskalov_r56
+recruit_character = BUL_petar_gabrovski
+recruit_character = BUL_alexander_belev
+recruit_character = BUL_valko_chervenkov
+recruit_character = BUL_christian_rakovsky
+recruit_character = BUL_kimon_georgiev_r56
+recruit_character = BUL_ivan_marinov
+recruit_character = BUL_konstantin_lukash_r56
+recruit_character = BUL_dimitr_ayryanov_r56
+recruit_character = BUL_stoyan_stoyanov_r56
+recruit_character = BUL_trifon_trifonov_r56
+recruit_character = BUL_georgii_isserson
+recruit_character = BUL_ivan_variklechkov_r56
+recruit_character = BUL_asen_toshev_r56
+recruit_character = BUL_nicho_georgiev
+recruit_character = BUL_ivan_dzhangozov
+recruit_character = BUL_shteryu_atanasov
+recruit_character = BUL_august_kabakchiev
+recruit_character = BUL_vladimir_zaimov
+recruit_character = BUL_dimitar_stanchev
+recruit_character = BUL_vasil_vulkov
+recruit_character = BUL_gancho_manchev_r56
+recruit_character = BUL_aleksendar_tsankov_staliyski
+recruit_character = BUL_traicho_kostov
+recruit_character = BUL_stoyan_bochev
+recruit_character = BUL_dimitar_vesov
+recruit_character = BUL_banko_bankov
+recruit_character = BUL_vladimir_avramov
+recruit_character = BUL_nikolay_nikolaev
+recruit_character = BUL_wangel_simow_rasumow
+recruit_character = BUL_mihail_kantardzhiev
+recruit_character = BUL_hristo_velchev
+recruit_character = BUL_georgi_handzhiev
+recruit_character = BUL_elizaveta_karamihailova
+recruit_character = BUL_tsvetan_lazarov
+recruit_character = BUL_protasius_pampulov
+recruit_character = BUL_gocho_dobrev
+recruit_character = BUL_nikola_petkov
+recruit_character = BUL_georgi_ivanov_kyoseivanov

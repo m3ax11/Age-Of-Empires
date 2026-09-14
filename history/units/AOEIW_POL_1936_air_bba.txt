@@ -1,0 +1,19 @@
+air_wings = {
+    10 = {
+        small_plane_airframe_0 = {
+            owner = "POL"
+            amount = 140
+            version_name = "AOEIW POL Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "POL"
+            amount = 45
+            version_name = "AOEIW POL Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "POL"
+            amount = 20
+            version_name = "AOEIW POL Medium Bomber"
+        }
+    }
+}

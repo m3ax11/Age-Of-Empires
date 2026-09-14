@@ -1,0 +1,38 @@
+
+state={
+	id=294
+	name="STATE_294"
+	manpower = 369000
+	
+	state_category = rural
+
+	history = {
+
+		buildings = {
+			infrastructure = 2 #was 3
+			arms_factory = 1
+			industrial_complex = 1 
+			10760 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			10760 5
+		}
+		victory_points = {
+			8020 1
+		}
+
+		add_to_array = { state_victory_points = 10760 }
+		add_to_array = { state_victory_points = 8020 }
+        owner = ENG
+        add_core_of = ENG
+        add_core_of = TUR
+    }
+
+	provinces={
+		1947 4993 8002 8020 10760 
+	}
+
+	local_supplies=0.0 
+}

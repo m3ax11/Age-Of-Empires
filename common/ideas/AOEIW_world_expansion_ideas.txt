@@ -1,0 +1,95 @@
+ideas = {
+    country = {
+        AOEIW_world_frontier_state = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.04
+                army_defence_factor = 0.06
+                supply_consumption_factor = -0.04
+                political_power_factor = -0.03
+            }
+        }
+        AOEIW_world_colonial_administration = {
+            picture = FRA_political_violence
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.04
+                resistance_target = 0.08
+                local_resources_factor = 0.10
+                production_speed_infrastructure_factor = 0.10
+            }
+        }
+        AOEIW_world_american_breakaway = {
+            picture = generic_communist_army
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.12
+                army_defence_factor = 0.08
+                army_core_attack_factor = 0.05
+                recruitable_population_factor = 0.03
+                consumer_goods_factor = 0.03
+            }
+        }
+        AOEIW_world_USA_fractured_republic = {
+            picture = generic_democratic_drift_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.12
+                war_support_factor = -0.06
+                consumer_goods_factor = 0.08
+                production_factory_efficiency_gain_factor = -0.12
+                political_power_factor = -0.10
+            }
+        }
+        AOEIW_world_USA_industrial_recovery = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.14
+                production_factory_efficiency_gain_factor = 0.12
+                industrial_capacity_factory = 0.06
+            }
+        }
+        AOEIW_world_USA_federal_mobilisation_spirit = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.06
+                training_time_factor = -0.12
+                army_org_factor = 0.05
+                planning_speed = 0.12
+                army_core_attack_factor = 0.08
+            }
+        }
+        AOEIW_world_USA_reunited = {
+            picture = generic_pp_unity_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+                political_power_factor = 0.08
+                production_factory_efficiency_gain_factor = 0.08
+                recruitable_population_factor = 0.03
+            }
+        }
+        AOEIW_world_FRA_metropolitan_command = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                surrender_limit = -0.35
+                max_planning_factor = 0.05
+                army_defence_factor = 0.03
+            }
+        }
+    }
+}

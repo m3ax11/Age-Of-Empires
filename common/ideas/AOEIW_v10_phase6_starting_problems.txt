@@ -1,0 +1,448 @@
+ideas = {
+    country = {
+        AOEIW6_FRA_procurement_0 = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.080
+                production_speed_arms_factory_factor = -0.060
+                consumer_goods_factor = 0.020
+            }
+        }
+
+        AOEIW6_FRA_procurement_1 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.050
+                production_speed_arms_factory_factor = -0.030
+                consumer_goods_factor = 0.010
+            }
+        }
+
+        AOEIW6_FRA_procurement_2 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.020
+                production_speed_arms_factory_factor = 0.000
+                consumer_goods_factor = 0.000
+            }
+        }
+
+        AOEIW6_FRA_procurement_3 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                production_speed_arms_factory_factor = 0.030
+            }
+        }
+
+        AOEIW6_SPR_regional_economy_0 = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.060
+                production_speed_industrial_complex_factor = -0.080
+                local_resources_factor = -0.050
+            }
+        }
+
+        AOEIW6_SPR_regional_economy_1 = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.040
+                production_speed_industrial_complex_factor = -0.040
+                local_resources_factor = -0.030
+            }
+        }
+
+        AOEIW6_SPR_regional_economy_2 = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.020
+                production_speed_industrial_complex_factor = 0.000
+                local_resources_factor = -0.010
+            }
+        }
+
+        AOEIW6_SPR_regional_economy_3 = {
+            picture = generic_local_self_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                production_speed_industrial_complex_factor = 0.030
+                local_resources_factor = 0.020
+            }
+        }
+
+        AOEIW6_POR_mainland_industry_0 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.080
+                production_speed_buildings_factor = -0.080
+                consumer_goods_factor = 0.030
+            }
+        }
+
+        AOEIW6_POR_mainland_industry_1 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.050
+                production_speed_buildings_factor = -0.050
+                consumer_goods_factor = 0.020
+            }
+        }
+
+        AOEIW6_POR_mainland_industry_2 = {
+            picture = generic_foreign_capital
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.020
+                production_speed_buildings_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+
+        AOEIW6_POR_mainland_industry_3 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                production_speed_buildings_factor = 0.030
+            }
+        }
+
+        AOEIW6_GER_rearmament_coordination_0 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.050
+                production_speed_arms_factory_factor = -0.040
+                consumer_goods_factor = 0.030
+            }
+        }
+
+        AOEIW6_GER_rearmament_coordination_1 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.030
+                production_speed_arms_factory_factor = -0.020
+                consumer_goods_factor = 0.020
+            }
+        }
+
+        AOEIW6_GER_rearmament_coordination_2 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.010
+                production_speed_arms_factory_factor = 0.000
+                consumer_goods_factor = 0.010
+            }
+        }
+
+        AOEIW6_GER_rearmament_coordination_3 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                production_speed_arms_factory_factor = 0.030
+            }
+        }
+
+        AOEIW6_AUS_joint_procurement_0 = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                army_org_factor = -0.030
+                consumer_goods_factor = 0.020
+            }
+        }
+
+        AOEIW6_AUS_joint_procurement_1 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.040
+                army_org_factor = -0.020
+                consumer_goods_factor = 0.010
+            }
+        }
+
+        AOEIW6_AUS_joint_procurement_2 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.020
+                army_org_factor = -0.010
+                consumer_goods_factor = 0.000
+            }
+        }
+
+        AOEIW6_AUS_joint_procurement_3 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                army_org_factor = 0.020
+            }
+        }
+
+        AOEIW6_ITA_military_modernisation_0 = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.040
+                planning_speed = -0.080
+                land_reinforce_rate = -0.010
+            }
+        }
+
+        AOEIW6_ITA_military_modernisation_1 = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.030
+                planning_speed = -0.050
+                land_reinforce_rate = -0.010
+            }
+        }
+
+        AOEIW6_ITA_military_modernisation_2 = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.010
+                planning_speed = -0.020
+                land_reinforce_rate = 0.000
+            }
+        }
+
+        AOEIW6_ITA_military_modernisation_3 = {
+            picture = generic_king_handled
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.020
+                planning_speed = 0.030
+                land_reinforce_rate = 0.010
+            }
+        }
+
+        AOEIW6_POL_reichspakt_dependency_0 = {
+            picture = gre_political_instability
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.060
+                war_support_factor = -0.040
+                mobilization_speed = -0.080
+            }
+        }
+
+        AOEIW6_POL_reichspakt_dependency_1 = {
+            picture = generic_central_management
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.040
+                war_support_factor = -0.020
+                mobilization_speed = -0.050
+            }
+        }
+
+        AOEIW6_POL_reichspakt_dependency_2 = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = -0.020
+                war_support_factor = 0.000
+                mobilization_speed = -0.020
+            }
+        }
+
+        AOEIW6_POL_reichspakt_dependency_3 = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.020
+                mobilization_speed = 0.030
+            }
+        }
+
+        AOEIW8_SOV_divided_politics_1 = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.030
+                stability_factor = -0.060
+                war_support_factor = -0.030
+            }
+        }
+
+        AOEIW8_SOV_divided_politics_2 = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.010
+                stability_factor = -0.030
+                war_support_factor = -0.010
+            }
+        }
+
+        AOEIW8_SOV_divided_politics_3 = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.020
+                stability_factor = 0.020
+            }
+        }
+
+        AOEIW8_SOV_backward_industry_1 = {
+            picture = generic_build_infrastructure
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.070
+                consumer_goods_factor = 0.080
+                production_speed_buildings_factor = -0.050
+                local_resources_factor = -0.060
+            }
+        }
+
+        AOEIW8_SOV_backward_industry_2 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = -0.040
+                consumer_goods_factor = 0.040
+                production_speed_buildings_factor = -0.020
+                local_resources_factor = -0.030
+            }
+        }
+
+        AOEIW8_SOV_backward_industry_3 = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.020
+                production_speed_buildings_factor = 0.020
+                local_resources_factor = 0.020
+            }
+        }
+
+        AOEIW8_SOV_weak_officer_corps_1 = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.040
+                planning_speed = -0.120
+                max_planning = -0.030
+                max_planning_factor = -0.030
+                max_dig_in_factor = -0.120
+            }
+        }
+
+        AOEIW8_SOV_weak_officer_corps_2 = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.020
+                planning_speed = -0.060
+                max_planning = -0.020
+                max_planning_factor = -0.020
+                max_dig_in_factor = -0.060
+            }
+        }
+
+        AOEIW8_SOV_weak_officer_corps_3 = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.010
+                planning_speed = 0.020
+                max_dig_in_factor = 0.030
+            }
+        }
+
+    }
+}

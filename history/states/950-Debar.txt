@@ -1,0 +1,28 @@
+state={
+	id=950
+	name="STATE_950"
+	provinces={
+		833 867 
+	}
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was 2
+		}
+		victory_points = {
+			867 1 
+		}
+
+
+		add_claim_by = SER
+		add_claim_by = ALB
+		add_to_array = { state_victory_points = 867 }
+        owner = YUG
+        add_core_of = YUG
+    }
+	manpower=242197
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies = 0.0 
+}

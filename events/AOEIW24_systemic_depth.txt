@@ -1,0 +1,60 @@
+add_namespace = AOEIW24_usa
+
+country_event = { id = AOEIW24_usa.1 title = AOEIW24_usa.1.t desc = AOEIW24_usa.1.d picture = GFX_report_event_generic_stock_traders is_triggered_only = yes
+ option = { name = AOEIW24_usa.1.a add_to_variable = { AOEIW24_USA_corporate_power = 2 } add_timed_idea = { idea = AOEIW24_USA_corporate_contracts days = 240 } }
+ option = { name = AOEIW24_usa.1.b subtract_from_variable = { AOEIW24_USA_corporate_power = 2 } add_timed_idea = { idea = AOEIW24_USA_labor_settlement days = 240 } }
+}
+country_event = { id = AOEIW24_usa.2 title = AOEIW24_usa.2.t desc = AOEIW24_usa.2.d picture = GFX_report_event_usa_macarthur_speech is_triggered_only = yes
+ option = { name = AOEIW24_usa.2.a subtract_from_variable = { AOEIW24_USA_military_authority = 3 } add_stability = 0.08 }
+ option = { name = AOEIW24_usa.2.b add_to_variable = { AOEIW24_USA_military_authority = 2 } add_timed_idea = { idea = AOEIW24_USA_general_staff_authority days = 360 } }
+}
+country_event = { id = AOEIW24_usa.3 title = AOEIW24_usa.3.t desc = AOEIW24_usa.3.d picture = GFX_report_event_election_vote is_triggered_only = yes
+ option = { name = AOEIW24_usa.3.a add_to_variable = { AOEIW24_USA_state_autonomy = 2 } add_stability = 0.04 }
+ option = { name = AOEIW24_usa.3.b subtract_from_variable = { AOEIW24_USA_state_autonomy = 2 } add_political_power = 100 add_stability = -0.03 }
+}
+
+add_namespace = AOEIW24_sov
+country_event = { id = AOEIW24_sov.1 title = AOEIW24_sov.1.t desc = AOEIW24_sov.1.d picture = GFX_report_event_generic_communist_congress is_triggered_only = yes fire_only_once = yes
+ option = { name = AOEIW24_sov.1.a set_country_flag = AOEIW24_SOV_revolutionary_crisis set_variable = { AOEIW24_SOV_revolutionary_control = 2 } add_ideas = AOEIW24_SOV_revolutionary_committees }
+}
+country_event = { id = AOEIW24_sov.2 title = AOEIW24_sov.2.t desc = AOEIW24_sov.2.d picture = GFX_report_event_ger_civil_war is_triggered_only = yes fire_only_once = yes
+ option = { name = AOEIW24_sov.2.a clr_country_flag = AOEIW24_SOV_revolutionary_crisis set_country_flag = AOEIW24_SOV_civil_war_active if = { limit = { check_variable = { AOEIW24_SOV_revolutionary_control > 5 } } start_civil_war = { ideology = neutrality size = 0.25 } } if = { limit = { NOT = { check_variable = { AOEIW24_SOV_revolutionary_control > 5 } } } start_civil_war = { ideology = neutrality size = 0.40 } } }
+}
+country_event = { id = AOEIW24_sov.3 title = AOEIW24_sov.3.t desc = AOEIW24_sov.3.d picture = GFX_report_event_communists_cheer is_triggered_only = yes fire_only_once = yes
+ option = { name = AOEIW24_sov.3.a clr_country_flag = AOEIW24_SOV_civil_war_active add_ideas = AOEIW24_SOV_reconstruction_authority add_stability = 0.08 add_war_support = 0.05 }
+}
+country_event = { id = AOEIW24_sov.4 title = AOEIW24_sov.4.t desc = AOEIW24_sov.4.d picture = GFX_report_event_generic_conference is_triggered_only = yes
+ option = { name = AOEIW24_sov.4.a add_to_variable = { AOEIW24_SOV_eurasian_cohesion = 2 } add_stability = 0.03 }
+ option = { name = AOEIW24_sov.4.b add_political_power = 100 subtract_from_variable = { AOEIW24_SOV_eurasian_cohesion = 1 } }
+}
+
+add_namespace = AOEIW24_ita
+country_event = { id = AOEIW24_ita.1 title = AOEIW24_ita.1.t desc = AOEIW24_ita.1.d picture = GFX_report_event_generic_mussolini is_triggered_only = yes
+ option = { name = AOEIW24_ita.1.a add_to_variable = { AOEIW24_ITA_duce_control = 2 } add_political_power = 100 add_stability = -0.03 }
+ option = { name = AOEIW24_ita.1.b subtract_from_variable = { AOEIW24_ITA_duce_control = 2 } add_ideas = AOEIW24_ITA_grand_council_compromise }
+}
+country_event = { id = AOEIW24_ita.2 title = AOEIW24_ita.2.t desc = AOEIW24_ita.2.d picture = GFX_report_event_generic_communist_congress is_triggered_only = yes
+ option = { name = AOEIW24_ita.2.a add_to_variable = { AOEIW24_ITA_union_cohesion = 2 } add_ideas = AOEIW24_ITA_workers_congress }
+ option = { name = AOEIW24_ita.2.b add_stability = 0.05 add_political_power = -50 }
+}
+country_event = { id = AOEIW24_ita.3 title = AOEIW24_ita.3.t desc = AOEIW24_ita.3.d picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+ option = { name = AOEIW24_ita.3.a add_to_variable = { AOEIW24_ITA_imperial_overstretch = 2 } army_experience = 25 }
+ option = { name = AOEIW24_ita.3.b subtract_from_variable = { AOEIW24_ITA_imperial_overstretch = 2 } add_ideas = AOEIW24_ITA_provincial_integration }
+}
+
+add_namespace = AOEIW24_aus
+country_event = { id = AOEIW24_aus.1 title = AOEIW24_aus.1.t desc = AOEIW24_aus.1.d picture = GFX_report_event_hungary_parliament is_triggered_only = yes
+ option = { name = AOEIW24_aus.1.a add_ideas = AOEIW24_AUS_crownland_compromise subtract_from_variable = { AOEIW22_AUS_nationality_tension = 2 } add_stability = 0.04 }
+ option = { name = AOEIW24_aus.1.b add_ideas = AOEIW24_AUS_imperial_ordinances add_to_variable = { AOEIW22_AUS_nationality_tension = 2 } add_political_power = 100 }
+}
+
+add_namespace = AOEIW24_secondary
+country_event = { id = AOEIW24_secondary.1 title = AOEIW24_secondary.1.t desc = AOEIW24_secondary.1.d picture = GFX_report_event_imperial_conference is_triggered_only = yes option = { name = AOEIW24_secondary.1.a add_ideas = AOEIW24_ENG_imperial_cabinet } option = { name = AOEIW24_secondary.1.b add_stability = 0.04 } }
+country_event = { id = AOEIW24_secondary.2 title = AOEIW24_secondary.2.t desc = AOEIW24_secondary.2.d picture = GFX_report_event_japanese_officers is_triggered_only = yes option = { name = AOEIW24_secondary.2.a add_ideas = AOEIW24_JAP_service_compromise } option = { name = AOEIW24_secondary.2.b army_experience = 20 navy_experience = 20 add_stability = -0.02 } }
+country_event = { id = AOEIW24_secondary.3 title = AOEIW24_secondary.3.t desc = AOEIW24_secondary.3.d picture = GFX_report_event_china_politicians_captured is_triggered_only = yes option = { name = AOEIW24_secondary.3.a add_ideas = AOEIW24_CHI_provincial_compact } option = { name = AOEIW24_secondary.3.b add_political_power = 100 add_stability = -0.03 } }
+country_event = { id = AOEIW24_secondary.4 title = AOEIW24_secondary.4.t desc = AOEIW24_secondary.4.d picture = GFX_report_event_indian_parade is_triggered_only = yes option = { name = AOEIW24_secondary.4.a add_ideas = AOEIW24_RAJ_princely_settlement } option = { name = AOEIW24_secondary.4.b add_stability = 0.05 } }
+country_event = { id = AOEIW24_secondary.5 title = AOEIW24_secondary.5.t desc = AOEIW24_secondary.5.d picture = GFX_report_event_tur_ataturk_inonu_parliament is_triggered_only = yes option = { name = AOEIW24_secondary.5.a add_ideas = AOEIW24_TUR_assembly_mandate } option = { name = AOEIW24_secondary.5.b add_political_power = 100 add_stability = -0.02 } }
+country_event = { id = AOEIW24_secondary.6 title = AOEIW24_secondary.6.t desc = AOEIW24_secondary.6.d picture = GFX_report_event_BRA_us_cooperation is_triggered_only = yes option = { name = AOEIW24_secondary.6.a add_ideas = AOEIW24_BRA_federal_development_pact } option = { name = AOEIW24_secondary.6.b add_political_power = 90 add_stability = -0.02 } }
+country_event = { id = AOEIW24_secondary.7 title = AOEIW24_secondary.7.t desc = AOEIW24_secondary.7.d picture = GFX_report_event_gathering_protest is_triggered_only = yes option = { name = AOEIW24_secondary.7.a add_ideas = AOEIW24_MEX_social_compact } option = { name = AOEIW24_secondary.7.b add_war_support = 0.04 add_stability = -0.02 } }
+country_event = { id = AOEIW24_secondary.8 title = AOEIW24_secondary.8.t desc = AOEIW24_secondary.8.d picture = GFX_report_event_bul_boris_military is_triggered_only = yes option = { name = AOEIW24_secondary.8.a add_ideas = AOEIW24_BUL_crown_committee_balance } option = { name = AOEIW24_secondary.8.b add_political_power = 90 add_stability = -0.02 } }
+country_event = { id = AOEIW24_secondary.9 title = AOEIW24_secondary.9.t desc = AOEIW24_secondary.9.d picture = GFX_report_event_gre_cabinet_meeting is_triggered_only = yes option = { name = AOEIW24_secondary.9.a add_ideas = AOEIW24_GRE_national_reconciliation } option = { name = AOEIW24_secondary.9.b add_war_support = 0.05 add_stability = -0.02 } }

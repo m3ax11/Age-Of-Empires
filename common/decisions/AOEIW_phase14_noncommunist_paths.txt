@@ -1,0 +1,81 @@
+AOEIW14_GER_reichspakt_category = {
+    AOEIW14_GER_offer_polish_autonomy = {
+        icon = generic_political_discourse
+        cost = 75
+        fire_only_once = yes
+        available = { POL = { exists = yes is_subject_of = GER } }
+        visible = { NOT = { has_country_flag = AOEIW14_GER_polish_offer_sent } }
+        complete_effect = {
+            set_country_flag = AOEIW14_GER_polish_offer_sent
+            POL = { country_event = { id = aoeiw_phase14_ger.3 } }
+        }
+        ai_will_do = { base = 6 }
+    }
+    AOEIW14_GER_guarantee_dutch_charter = {
+        icon = generic_political_discourse
+        cost = 50
+        fire_only_once = yes
+        available = { HOL = { exists = yes } }
+        visible = { NOT = { has_country_flag = AOEIW14_GER_dutch_offer_sent } }
+        complete_effect = {
+            set_country_flag = AOEIW14_GER_dutch_offer_sent
+            HOL = { country_event = { id = aoeiw_phase14_ger.4 } }
+        }
+        ai_will_do = { base = 5 }
+    }
+    AOEIW14_GER_open_paris_channel = {
+        icon = generic_political_discourse
+        cost = 60
+        fire_only_once = yes
+        available = { FRA = { exists = yes NOT = { has_war_with = GER } } }
+        visible = { NOT = { has_country_flag = AOEIW14_GER_french_offer_sent } }
+        complete_effect = {
+            set_country_flag = AOEIW14_GER_french_offer_sent
+            FRA = { country_event = { id = aoeiw_phase14_ger.5 } }
+        }
+        ai_will_do = { base = 4 }
+    }
+    AOEIW14_GER_invite_vienna_consultation = {
+        icon = generic_political_discourse
+        cost = 55
+        fire_only_once = yes
+        available = { AUS = { exists = yes NOT = { has_war_with = GER } } }
+        visible = { NOT = { has_country_flag = AOEIW14_GER_vienna_offer_sent } }
+        complete_effect = {
+            set_country_flag = AOEIW14_GER_vienna_offer_sent
+            AUS = { country_event = { id = aoeiw_phase14_ger.6 } }
+        }
+        ai_will_do = { base = 5 }
+    }
+}
+
+AOEIW14_USA_emergency_category = {
+    AOEIW14_USA_federal_relief_logistics = {
+        icon = generic_industry
+        cost = 40
+        fire_only_once = yes
+        complete_effect = { add_stability = 0.01 add_political_power = -10 set_country_flag = AOEIW14_USA_relief_logistics_done }
+        ai_will_do = { base = 4 }
+    }
+    AOEIW14_USA_governors_liaison = {
+        icon = generic_political_address
+        cost = 35
+        fire_only_once = yes
+        complete_effect = { add_stability = 0.015 set_country_flag = AOEIW14_USA_governors_liaison_done }
+        ai_will_do = { base = 4 }
+    }
+    AOEIW14_USA_congressional_continuity = {
+        icon = generic_political_address
+        cost = 45
+        fire_only_once = yes
+        complete_effect = { add_political_power = 20 add_stability = 0.01 set_country_flag = AOEIW14_USA_congressional_continuity_done }
+        ai_will_do = { base = 4 }
+    }
+    AOEIW14_USA_secure_continuity_sites = {
+        icon = generic_military
+        cost = 50
+        fire_only_once = yes
+        complete_effect = { add_war_support = 0.02 add_command_power = 10 set_country_flag = AOEIW14_USA_continuity_sites_done }
+        ai_will_do = { base = 3 }
+    }
+}

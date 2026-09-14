@@ -1,0 +1,27 @@
+state={
+	id=1020
+	name="STATE_1020"
+	manpower = 136860
+	state_category = town
+	provinces={
+		1296 1315 1385 1403 1417 4275 4293 4336 4408 7295 7441 10217 12125 12238 12292
+	}
+	resources={
+		tungsten = 132 
+	}
+	history = {
+
+
+		add_to_array = { state_victory_points = 1403 }
+		victory_points = {
+			1403 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+        owner = RAJ
+        add_core_of = RAJ
+    }
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

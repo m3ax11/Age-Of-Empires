@@ -1,0 +1,35 @@
+state={
+	id=1055
+	name="STATE_1055"
+	
+	state_category = small_island
+
+	resources = {
+		rubber = 1 
+	}
+	
+	history = {
+
+		victory_points = {
+			13237 2
+		}
+		buildings = {
+			infrastructure = 2 #was 3
+			13237 = {
+				naval_base = 1
+			}
+		}
+
+		add_to_array = { state_victory_points = 13237 }
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		13237
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

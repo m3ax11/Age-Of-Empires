@@ -1,0 +1,836 @@
+AOEIW24_ARG_focus_plan = {
+    name = AOEIW24_ARG_focus_plan
+    desc = AOEIW24_ARG_focus_plan
+    allowed = { original_tag = ARG }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_ARG_political_root
+        AOEIW_world_ARG_government
+        AOEIW_world_ARG_representation
+        AOEIW_world_ARG_security
+        AOEIW_world_ARG_settlement
+        AOEIW_world_ARG_economic_root
+        AOEIW_world_ARG_railways
+        AOEIW_world_ARG_industry
+        AOEIW_world_ARG_resources
+        AOEIW_world_ARG_economic_final
+        AOEIW_world_ARG_military_root
+        AOEIW_world_ARG_army
+        AOEIW_world_ARG_logistics
+        AOEIW_world_ARG_mobilisation
+        AOEIW_world_ARG_military_final
+        AOEIW_world_ARG_diplomatic_root
+        AOEIW_world_ARG_patron
+        AOEIW_world_ARG_regional
+        AOEIW_world_ARG_ambition
+        AOEIW_world_ARG_diplomatic_final
+        AOEIW_UNIQUE_ARG_identity
+        AOEIW_UNIQUE_ARG_pre_1
+        AOEIW_UNIQUE_ARG_left_1
+        AOEIW_UNIQUE_ARG_right_1
+        AOEIW_UNIQUE_ARG_left_2
+        AOEIW_UNIQUE_ARG_left_3
+        AOEIW_UNIQUE_ARG_settlement
+        AOEIW_UNIQUE_ARG_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_CSA_focus_plan = {
+    name = AOEIW24_CSA_focus_plan
+    desc = AOEIW24_CSA_focus_plan
+    allowed = { original_tag = CSA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_TCO_political_root
+        AOEIW_world_TCO_government
+        AOEIW_world_TCO_representation
+        AOEIW_world_TCO_security
+        AOEIW_world_TCO_settlement
+        AOEIW_world_TCO_economic_root
+        AOEIW_world_TCO_railways
+        AOEIW_world_TCO_industry
+        AOEIW_world_TCO_resources
+        AOEIW_world_TCO_economic_final
+        AOEIW_world_TCO_military_root
+        AOEIW_world_TCO_army
+        AOEIW_world_TCO_logistics
+        AOEIW_world_TCO_mobilisation
+        AOEIW_world_TCO_military_final
+        AOEIW_world_TCO_diplomatic_root
+        AOEIW_world_TCO_patron
+        AOEIW_world_TCO_regional
+        AOEIW_world_TCO_ambition
+        AOEIW_world_TCO_diplomatic_final
+        AOEIW_UNIQUE_CSA_identity
+        AOEIW_UNIQUE_CSA_pre_1
+        AOEIW_UNIQUE_CSA_left_1
+        AOEIW_UNIQUE_CSA_right_1
+        AOEIW_UNIQUE_CSA_right_2
+        AOEIW_UNIQUE_CSA_settlement
+        AOEIW_UNIQUE_CSA_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_EST_focus_plan = {
+    name = AOEIW24_EST_focus_plan
+    desc = AOEIW24_EST_focus_plan
+    allowed = { original_tag = EST }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_BTF_political_root
+        AOEIW_world_BTF_government
+        AOEIW_world_BTF_representation
+        AOEIW_world_BTF_security
+        AOEIW_world_BTF_settlement
+        AOEIW_world_BTF_economic_root
+        AOEIW_world_BTF_railways
+        AOEIW_world_BTF_industry
+        AOEIW_world_BTF_resources
+        AOEIW_world_BTF_economic_final
+        AOEIW_world_BTF_military_root
+        AOEIW_world_BTF_army
+        AOEIW_world_BTF_logistics
+        AOEIW_world_BTF_mobilisation
+        AOEIW_world_BTF_military_final
+        AOEIW_world_BTF_diplomatic_root
+        AOEIW_world_BTF_patron
+        AOEIW_world_BTF_regional
+        AOEIW_world_BTF_ambition
+        AOEIW_world_BTF_diplomatic_final
+        AOEIW_UNIQUE_EST_identity
+        AOEIW_UNIQUE_EST_pre_1
+        AOEIW_UNIQUE_EST_pre_2
+        AOEIW_UNIQUE_EST_left_1
+        AOEIW_UNIQUE_EST_right_1
+        AOEIW_UNIQUE_EST_left_2
+        AOEIW_UNIQUE_EST_right_2
+        AOEIW_UNIQUE_EST_right_3
+        AOEIW_UNIQUE_EST_settlement
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_GEO_focus_plan = {
+    name = AOEIW24_GEO_focus_plan
+    desc = AOEIW24_GEO_focus_plan
+    allowed = { original_tag = GEO }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_CAF_political_root
+        AOEIW_world_CAF_government
+        AOEIW_world_CAF_representation
+        AOEIW_world_CAF_security
+        AOEIW_world_CAF_settlement
+        AOEIW_world_CAF_economic_root
+        AOEIW_world_CAF_railways
+        AOEIW_world_CAF_industry
+        AOEIW_world_CAF_resources
+        AOEIW_world_CAF_economic_final
+        AOEIW_world_CAF_military_root
+        AOEIW_world_CAF_army
+        AOEIW_world_CAF_logistics
+        AOEIW_world_CAF_mobilisation
+        AOEIW_world_CAF_military_final
+        AOEIW_world_CAF_diplomatic_root
+        AOEIW_world_CAF_patron
+        AOEIW_world_CAF_regional
+        AOEIW_world_CAF_ambition
+        AOEIW_world_CAF_diplomatic_final
+        AOEIW_UNIQUE_GEO_identity
+        AOEIW_UNIQUE_GEO_left_1
+        AOEIW_UNIQUE_GEO_right_1
+        AOEIW_UNIQUE_GEO_left_2
+        AOEIW_UNIQUE_GEO_left_3
+        AOEIW_UNIQUE_GEO_right_2
+        AOEIW_UNIQUE_GEO_right_3
+        AOEIW_UNIQUE_GEO_settlement
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_HAI_focus_plan = {
+    name = AOEIW24_HAI_focus_plan
+    desc = AOEIW24_HAI_focus_plan
+    allowed = { original_tag = HAI }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_FAM_political_root
+        AOEIW_world_FAM_government
+        AOEIW_world_FAM_representation
+        AOEIW_world_FAM_security
+        AOEIW_world_FAM_settlement
+        AOEIW_world_FAM_economic_root
+        AOEIW_world_FAM_railways
+        AOEIW_world_FAM_industry
+        AOEIW_world_FAM_resources
+        AOEIW_world_FAM_economic_final
+        AOEIW_world_FAM_military_root
+        AOEIW_world_FAM_army
+        AOEIW_world_FAM_logistics
+        AOEIW_world_FAM_mobilisation
+        AOEIW_world_FAM_military_final
+        AOEIW_world_FAM_diplomatic_root
+        AOEIW_world_FAM_patron
+        AOEIW_world_FAM_regional
+        AOEIW_world_FAM_ambition
+        AOEIW_world_FAM_diplomatic_final
+        AOEIW_UNIQUE_HAI_identity
+        AOEIW_UNIQUE_HAI_pre_1
+        AOEIW_UNIQUE_HAI_pre_2
+        AOEIW_UNIQUE_HAI_left_1
+        AOEIW_UNIQUE_HAI_right_1
+        AOEIW_UNIQUE_HAI_right_2
+        AOEIW_UNIQUE_HAI_settlement
+        AOEIW_UNIQUE_HAI_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_KAZ_focus_plan = {
+    name = AOEIW24_KAZ_focus_plan
+    desc = AOEIW24_KAZ_focus_plan
+    allowed = { original_tag = KAZ }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_TRK_political_root
+        AOEIW_world_TRK_government
+        AOEIW_world_TRK_representation
+        AOEIW_world_TRK_security
+        AOEIW_world_TRK_settlement
+        AOEIW_world_TRK_economic_root
+        AOEIW_world_TRK_railways
+        AOEIW_world_TRK_industry
+        AOEIW_world_TRK_resources
+        AOEIW_world_TRK_economic_final
+        AOEIW_world_TRK_military_root
+        AOEIW_world_TRK_army
+        AOEIW_world_TRK_logistics
+        AOEIW_world_TRK_mobilisation
+        AOEIW_world_TRK_military_final
+        AOEIW_world_TRK_diplomatic_root
+        AOEIW_world_TRK_patron
+        AOEIW_world_TRK_regional
+        AOEIW_world_TRK_ambition
+        AOEIW_world_TRK_diplomatic_final
+        AOEIW_UNIQUE_KAZ_identity
+        AOEIW_UNIQUE_KAZ_pre_1
+        AOEIW_UNIQUE_KAZ_left_1
+        AOEIW_UNIQUE_KAZ_right_1
+        AOEIW_UNIQUE_KAZ_left_2
+        AOEIW_UNIQUE_KAZ_left_3
+        AOEIW_UNIQUE_KAZ_right_2
+        AOEIW_UNIQUE_KAZ_right_3
+        AOEIW_UNIQUE_KAZ_settlement
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_MAL_focus_plan = {
+    name = AOEIW24_MAL_focus_plan
+    desc = AOEIW24_MAL_focus_plan
+    allowed = { original_tag = MAL }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_GEA_political_root
+        AOEIW_world_GEA_government
+        AOEIW_world_GEA_representation
+        AOEIW_world_GEA_security
+        AOEIW_world_GEA_settlement
+        AOEIW_world_GEA_economic_root
+        AOEIW_world_GEA_railways
+        AOEIW_world_GEA_industry
+        AOEIW_world_GEA_resources
+        AOEIW_world_GEA_economic_final
+        AOEIW_world_GEA_military_root
+        AOEIW_world_GEA_army
+        AOEIW_world_GEA_logistics
+        AOEIW_world_GEA_mobilisation
+        AOEIW_world_GEA_military_final
+        AOEIW_world_GEA_diplomatic_root
+        AOEIW_world_GEA_patron
+        AOEIW_world_GEA_regional
+        AOEIW_world_GEA_ambition
+        AOEIW_world_GEA_diplomatic_final
+        AOEIW_UNIQUE_MAL_identity
+        AOEIW_UNIQUE_MAL_left_1
+        AOEIW_UNIQUE_MAL_right_1
+        AOEIW_UNIQUE_MAL_left_2
+        AOEIW_UNIQUE_MAL_left_3
+        AOEIW_UNIQUE_MAL_settlement
+        AOEIW_UNIQUE_MAL_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_MLI_focus_plan = {
+    name = AOEIW24_MLI_focus_plan
+    desc = AOEIW24_MLI_focus_plan
+    allowed = { original_tag = MLI }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_FWA_political_root
+        AOEIW_world_FWA_government
+        AOEIW_world_FWA_representation
+        AOEIW_world_FWA_security
+        AOEIW_world_FWA_settlement
+        AOEIW_world_FWA_economic_root
+        AOEIW_world_FWA_railways
+        AOEIW_world_FWA_industry
+        AOEIW_world_FWA_resources
+        AOEIW_world_FWA_economic_final
+        AOEIW_world_FWA_military_root
+        AOEIW_world_FWA_army
+        AOEIW_world_FWA_logistics
+        AOEIW_world_FWA_mobilisation
+        AOEIW_world_FWA_military_final
+        AOEIW_world_FWA_diplomatic_root
+        AOEIW_world_FWA_patron
+        AOEIW_world_FWA_regional
+        AOEIW_world_FWA_ambition
+        AOEIW_world_FWA_diplomatic_final
+        AOEIW_UNIQUE_MLI_identity
+        AOEIW_UNIQUE_MLI_pre_1
+        AOEIW_UNIQUE_MLI_pre_2
+        AOEIW_UNIQUE_MLI_left_1
+        AOEIW_UNIQUE_MLI_right_1
+        AOEIW_UNIQUE_MLI_left_2
+        AOEIW_UNIQUE_MLI_settlement
+        AOEIW_UNIQUE_MLI_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_OMA_focus_plan = {
+    name = AOEIW24_OMA_focus_plan
+    desc = AOEIW24_OMA_focus_plan
+    allowed = { original_tag = OMA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_HEJ_political_root
+        AOEIW_world_HEJ_government
+        AOEIW_world_HEJ_representation
+        AOEIW_world_HEJ_security
+        AOEIW_world_HEJ_settlement
+        AOEIW_world_HEJ_economic_root
+        AOEIW_world_HEJ_railways
+        AOEIW_world_HEJ_industry
+        AOEIW_world_HEJ_resources
+        AOEIW_world_HEJ_economic_final
+        AOEIW_world_HEJ_military_root
+        AOEIW_world_HEJ_army
+        AOEIW_world_HEJ_logistics
+        AOEIW_world_HEJ_mobilisation
+        AOEIW_world_HEJ_military_final
+        AOEIW_world_HEJ_diplomatic_root
+        AOEIW_world_HEJ_patron
+        AOEIW_world_HEJ_regional
+        AOEIW_world_HEJ_ambition
+        AOEIW_world_HEJ_diplomatic_final
+        AOEIW_UNIQUE_OMA_identity
+        AOEIW_UNIQUE_OMA_left_1
+        AOEIW_UNIQUE_OMA_right_1
+        AOEIW_UNIQUE_OMA_left_2
+        AOEIW_UNIQUE_OMA_settlement
+        AOEIW_UNIQUE_OMA_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_PRU_focus_plan = {
+    name = AOEIW24_PRU_focus_plan
+    desc = AOEIW24_PRU_focus_plan
+    allowed = { original_tag = PRU }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_PRU_political_root
+        AOEIW_world_PRU_government
+        AOEIW_world_PRU_representation
+        AOEIW_world_PRU_security
+        AOEIW_world_PRU_settlement
+        AOEIW_world_PRU_economic_root
+        AOEIW_world_PRU_railways
+        AOEIW_world_PRU_industry
+        AOEIW_world_PRU_resources
+        AOEIW_world_PRU_economic_final
+        AOEIW_world_PRU_military_root
+        AOEIW_world_PRU_army
+        AOEIW_world_PRU_logistics
+        AOEIW_world_PRU_mobilisation
+        AOEIW_world_PRU_military_final
+        AOEIW_world_PRU_diplomatic_root
+        AOEIW_world_PRU_patron
+        AOEIW_world_PRU_regional
+        AOEIW_world_PRU_ambition
+        AOEIW_world_PRU_diplomatic_final
+        AOEIW_UNIQUE_PRU_identity
+        AOEIW_UNIQUE_PRU_pre_1
+        AOEIW_UNIQUE_PRU_pre_2
+        AOEIW_UNIQUE_PRU_left_1
+        AOEIW_UNIQUE_PRU_right_1
+        AOEIW_UNIQUE_PRU_left_2
+        AOEIW_UNIQUE_PRU_left_3
+        AOEIW_UNIQUE_PRU_settlement
+        AOEIW_UNIQUE_PRU_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_QUE_focus_plan = {
+    name = AOEIW24_QUE_focus_plan
+    desc = AOEIW24_QUE_focus_plan
+    allowed = { original_tag = QUE }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_NEE_political_root
+        AOEIW_world_NEE_government
+        AOEIW_world_NEE_representation
+        AOEIW_world_NEE_security
+        AOEIW_world_NEE_settlement
+        AOEIW_world_NEE_economic_root
+        AOEIW_world_NEE_railways
+        AOEIW_world_NEE_industry
+        AOEIW_world_NEE_resources
+        AOEIW_world_NEE_economic_final
+        AOEIW_world_NEE_military_root
+        AOEIW_world_NEE_army
+        AOEIW_world_NEE_logistics
+        AOEIW_world_NEE_mobilisation
+        AOEIW_world_NEE_military_final
+        AOEIW_world_NEE_diplomatic_root
+        AOEIW_world_NEE_patron
+        AOEIW_world_NEE_regional
+        AOEIW_world_NEE_ambition
+        AOEIW_world_NEE_diplomatic_final
+        AOEIW_UNIQUE_QUE_identity
+        AOEIW_UNIQUE_QUE_left_1
+        AOEIW_UNIQUE_QUE_right_1
+        AOEIW_UNIQUE_QUE_right_2
+        AOEIW_UNIQUE_QUE_settlement
+        AOEIW_UNIQUE_QUE_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_SAU_focus_plan = {
+    name = AOEIW24_SAU_focus_plan
+    desc = AOEIW24_SAU_focus_plan
+    allowed = { original_tag = SAU }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_SAU_political_root
+        AOEIW_world_SAU_government
+        AOEIW_world_SAU_representation
+        AOEIW_world_SAU_security
+        AOEIW_world_SAU_settlement
+        AOEIW_world_SAU_economic_root
+        AOEIW_world_SAU_railways
+        AOEIW_world_SAU_industry
+        AOEIW_world_SAU_resources
+        AOEIW_world_SAU_economic_final
+        AOEIW_world_SAU_military_root
+        AOEIW_world_SAU_army
+        AOEIW_world_SAU_logistics
+        AOEIW_world_SAU_mobilisation
+        AOEIW_world_SAU_military_final
+        AOEIW_world_SAU_diplomatic_root
+        AOEIW_world_SAU_patron
+        AOEIW_world_SAU_regional
+        AOEIW_world_SAU_ambition
+        AOEIW_world_SAU_diplomatic_final
+        AOEIW_UNIQUE_SAU_identity
+        AOEIW_UNIQUE_SAU_pre_1
+        AOEIW_UNIQUE_SAU_left_1
+        AOEIW_UNIQUE_SAU_right_1
+        AOEIW_UNIQUE_SAU_settlement
+        AOEIW_UNIQUE_SAU_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_SIK_focus_plan = {
+    name = AOEIW24_SIK_focus_plan
+    desc = AOEIW24_SIK_focus_plan
+    allowed = { original_tag = SIK }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_SIK_political_root
+        AOEIW_world_SIK_government
+        AOEIW_world_SIK_representation
+        AOEIW_world_SIK_security
+        AOEIW_world_SIK_settlement
+        AOEIW_world_SIK_economic_root
+        AOEIW_world_SIK_railways
+        AOEIW_world_SIK_industry
+        AOEIW_world_SIK_resources
+        AOEIW_world_SIK_economic_final
+        AOEIW_world_SIK_military_root
+        AOEIW_world_SIK_army
+        AOEIW_world_SIK_logistics
+        AOEIW_world_SIK_mobilisation
+        AOEIW_world_SIK_military_final
+        AOEIW_world_SIK_diplomatic_root
+        AOEIW_world_SIK_patron
+        AOEIW_world_SIK_regional
+        AOEIW_world_SIK_ambition
+        AOEIW_world_SIK_diplomatic_final
+        AOEIW_UNIQUE_SIK_identity
+        AOEIW_UNIQUE_SIK_pre_1
+        AOEIW_UNIQUE_SIK_pre_2
+        AOEIW_UNIQUE_SIK_left_1
+        AOEIW_UNIQUE_SIK_right_1
+        AOEIW_UNIQUE_SIK_left_2
+        AOEIW_UNIQUE_SIK_left_3
+        AOEIW_UNIQUE_SIK_right_2
+        AOEIW_UNIQUE_SIK_right_3
+        AOEIW_UNIQUE_SIK_settlement
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_TIB_focus_plan = {
+    name = AOEIW24_TIB_focus_plan
+    desc = AOEIW24_TIB_focus_plan
+    allowed = { original_tag = TIB }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_TIB_political_root
+        AOEIW_world_TIB_government
+        AOEIW_world_TIB_representation
+        AOEIW_world_TIB_security
+        AOEIW_world_TIB_settlement
+        AOEIW_world_TIB_economic_root
+        AOEIW_world_TIB_railways
+        AOEIW_world_TIB_industry
+        AOEIW_world_TIB_resources
+        AOEIW_world_TIB_economic_final
+        AOEIW_world_TIB_military_root
+        AOEIW_world_TIB_army
+        AOEIW_world_TIB_logistics
+        AOEIW_world_TIB_mobilisation
+        AOEIW_world_TIB_military_final
+        AOEIW_world_TIB_diplomatic_root
+        AOEIW_world_TIB_patron
+        AOEIW_world_TIB_regional
+        AOEIW_world_TIB_ambition
+        AOEIW_world_TIB_diplomatic_final
+        AOEIW_UNIQUE_TIB_identity
+        AOEIW_UNIQUE_TIB_left_1
+        AOEIW_UNIQUE_TIB_right_1
+        AOEIW_UNIQUE_TIB_settlement
+        AOEIW_UNIQUE_TIB_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_UKR_focus_plan = {
+    name = AOEIW24_UKR_focus_plan
+    desc = AOEIW24_UKR_focus_plan
+    allowed = { original_tag = UKR }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_UKR_political_root
+        AOEIW_world_UKR_government
+        AOEIW_world_UKR_representation
+        AOEIW_world_UKR_security
+        AOEIW_world_UKR_settlement
+        AOEIW_world_UKR_economic_root
+        AOEIW_world_UKR_railways
+        AOEIW_world_UKR_industry
+        AOEIW_world_UKR_resources
+        AOEIW_world_UKR_economic_final
+        AOEIW_world_UKR_military_root
+        AOEIW_world_UKR_army
+        AOEIW_world_UKR_logistics
+        AOEIW_world_UKR_mobilisation
+        AOEIW_world_UKR_military_final
+        AOEIW_world_UKR_diplomatic_root
+        AOEIW_world_UKR_patron
+        AOEIW_world_UKR_regional
+        AOEIW_world_UKR_ambition
+        AOEIW_world_UKR_diplomatic_final
+        AOEIW_UNIQUE_UKR_identity
+        AOEIW_UNIQUE_UKR_pre_1
+        AOEIW_UNIQUE_UKR_left_1
+        AOEIW_UNIQUE_UKR_right_1
+        AOEIW_UNIQUE_UKR_left_2
+        AOEIW_UNIQUE_UKR_right_2
+        AOEIW_UNIQUE_UKR_right_3
+        AOEIW_UNIQUE_UKR_settlement
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_VIN_focus_plan = {
+    name = AOEIW24_VIN_focus_plan
+    desc = AOEIW24_VIN_focus_plan
+    allowed = { original_tag = VIN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_INA_political_root
+        AOEIW_world_INA_government
+        AOEIW_world_INA_representation
+        AOEIW_world_INA_security
+        AOEIW_world_INA_settlement
+        AOEIW_world_INA_economic_root
+        AOEIW_world_INA_railways
+        AOEIW_world_INA_industry
+        AOEIW_world_INA_resources
+        AOEIW_world_INA_economic_final
+        AOEIW_world_INA_military_root
+        AOEIW_world_INA_army
+        AOEIW_world_INA_logistics
+        AOEIW_world_INA_mobilisation
+        AOEIW_world_INA_military_final
+        AOEIW_world_INA_diplomatic_root
+        AOEIW_world_INA_patron
+        AOEIW_world_INA_regional
+        AOEIW_world_INA_ambition
+        AOEIW_world_INA_diplomatic_final
+        AOEIW_UNIQUE_VIN_identity
+        AOEIW_UNIQUE_VIN_pre_1
+        AOEIW_UNIQUE_VIN_left_1
+        AOEIW_UNIQUE_VIN_right_1
+        AOEIW_UNIQUE_VIN_left_2
+        AOEIW_UNIQUE_VIN_settlement
+        AOEIW_UNIQUE_VIN_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_YEM_focus_plan = {
+    name = AOEIW24_YEM_focus_plan
+    desc = AOEIW24_YEM_focus_plan
+    allowed = { original_tag = YEM }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_world_YEM_political_root
+        AOEIW_world_YEM_government
+        AOEIW_world_YEM_representation
+        AOEIW_world_YEM_security
+        AOEIW_world_YEM_settlement
+        AOEIW_world_YEM_economic_root
+        AOEIW_world_YEM_railways
+        AOEIW_world_YEM_industry
+        AOEIW_world_YEM_resources
+        AOEIW_world_YEM_economic_final
+        AOEIW_world_YEM_military_root
+        AOEIW_world_YEM_army
+        AOEIW_world_YEM_logistics
+        AOEIW_world_YEM_mobilisation
+        AOEIW_world_YEM_military_final
+        AOEIW_world_YEM_diplomatic_root
+        AOEIW_world_YEM_patron
+        AOEIW_world_YEM_regional
+        AOEIW_world_YEM_ambition
+        AOEIW_world_YEM_diplomatic_final
+        AOEIW_UNIQUE_YEM_identity
+        AOEIW_UNIQUE_YEM_pre_1
+        AOEIW_UNIQUE_YEM_pre_2
+        AOEIW_UNIQUE_YEM_left_1
+        AOEIW_UNIQUE_YEM_right_1
+        AOEIW_UNIQUE_YEM_settlement
+        AOEIW_UNIQUE_YEM_post_1
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_MAN_focus_plan = {
+    name = AOEIW24_MAN_focus_plan
+    desc = AOEIW24_MAN_focus_plan
+    allowed = { original_tag = MAN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_FRONTIER_MAN_survival
+        AOEIW_FRONTIER_MAN_hold_capital
+        AOEIW_FRONTIER_MAN_banner_armies
+        AOEIW_FRONTIER_MAN_northern_arsenals
+        AOEIW_FRONTIER_MAN_rail
+        AOEIW_FRONTIER_MAN_coal
+        AOEIW_FRONTIER_MAN_repair
+        AOEIW_FRONTIER_MAN_cadets
+        AOEIW_FRONTIER_MAN_garrison
+        AOEIW_FRONTIER_MAN_mobile
+        AOEIW_FRONTIER_MAN_staff
+        AOEIW_FRONTIER_MAN_court
+        AOEIW_FRONTIER_MAN_municipal
+        AOEIW_FRONTIER_MAN_emergency
+        AOEIW_FRONTIER_MAN_granaries
+        AOEIW_FRONTIER_MAN_signals
+        AOEIW_FRONTIER_MAN_air
+        AOEIW_FRONTIER_MAN_medical
+        AOEIW_FRONTIER_MAN_settlement
+        AOEIW_FRONTIER_MAN_credit
+        AOEIW_FRONTIER_MAN_autonomy
+        AOEIW_FRONTIER_MAN_commission
+        AOEIW_FRONTIER_MAN_standards
+        AOEIW_FRONTIER_MAN_recovery
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_MON_focus_plan = {
+    name = AOEIW24_MON_focus_plan
+    desc = AOEIW24_MON_focus_plan
+    allowed = { original_tag = MON }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_FRONTIER_MON_khural
+        AOEIW_FRONTIER_MON_herders
+        AOEIW_FRONTIER_MON_directorate
+        AOEIW_FRONTIER_MON_veterinary
+        AOEIW_FRONTIER_MON_registers
+        AOEIW_FRONTIER_MON_districts
+        AOEIW_FRONTIER_MON_caravans
+        AOEIW_FRONTIER_MON_workshops
+        AOEIW_FRONTIER_MON_depots
+        AOEIW_FRONTIER_MON_arsenal
+        AOEIW_FRONTIER_MON_roads
+        AOEIW_FRONTIER_MON_riders
+        AOEIW_FRONTIER_MON_signals
+        AOEIW_FRONTIER_MON_mobile
+        AOEIW_FRONTIER_MON_airfield
+        AOEIW_FRONTIER_MON_pilots
+        AOEIW_FRONTIER_MON_frontier
+        AOEIW_FRONTIER_MON_solidarity
+        AOEIW_FRONTIER_MON_neutral
+        AOEIW_FRONTIER_MON_liaison
+        AOEIW_FRONTIER_MON_academy
+        AOEIW_FRONTIER_MON_recovery
+        AOEIW_FRONTIER_MON_borderpeace
+        AOEIW_FRONTIER_MON_state
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_QIN_focus_plan = {
+    name = AOEIW24_QIN_focus_plan
+    desc = AOEIW24_QIN_focus_plan
+    allowed = { original_tag = QIN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_FRONTIER_QIN_council
+        AOEIW_FRONTIER_QIN_assembly
+        AOEIW_FRONTIER_QIN_command
+        AOEIW_FRONTIER_QIN_accounts
+        AOEIW_FRONTIER_QIN_charter
+        AOEIW_FRONTIER_QIN_rolls
+        AOEIW_FRONTIER_QIN_school
+        AOEIW_FRONTIER_QIN_compact
+        AOEIW_FRONTIER_QIN_granary
+        AOEIW_FRONTIER_QIN_workshop
+        AOEIW_FRONTIER_QIN_rifles
+        AOEIW_FRONTIER_QIN_signals
+        AOEIW_FRONTIER_QIN_foreign
+        AOEIW_FRONTIER_QIN_rail
+        AOEIW_FRONTIER_QIN_arsenal
+        AOEIW_FRONTIER_QIN_defence
+        AOEIW_FRONTIER_QIN_field
+        AOEIW_FRONTIER_QIN_liaison
+        AOEIW_FRONTIER_QIN_isolation
+        AOEIW_FRONTIER_QIN_observers
+        AOEIW_FRONTIER_QIN_service
+        AOEIW_FRONTIER_QIN_relief
+        AOEIW_FRONTIER_QIN_institute
+        AOEIW_FRONTIER_QIN_government
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}
+
+AOEIW24_XIC_focus_plan = {
+    name = AOEIW24_XIC_focus_plan
+    desc = AOEIW24_XIC_focus_plan
+    allowed = { original_tag = XIC }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW_FRONTIER_XIC_conference
+        AOEIW_FRONTIER_XIC_officers
+        AOEIW_FRONTIER_XIC_civic
+        AOEIW_FRONTIER_XIC_drill
+        AOEIW_FRONTIER_XIC_staff
+        AOEIW_FRONTIER_XIC_markets
+        AOEIW_FRONTIER_XIC_credit
+        AOEIW_FRONTIER_XIC_settlement
+        AOEIW_FRONTIER_XIC_roads
+        AOEIW_FRONTIER_XIC_workshop
+        AOEIW_FRONTIER_XIC_passes
+        AOEIW_FRONTIER_XIC_reserve
+        AOEIW_FRONTIER_XIC_envoys
+        AOEIW_FRONTIER_XIC_depots
+        AOEIW_FRONTIER_XIC_arsenal
+        AOEIW_FRONTIER_XIC_commission
+        AOEIW_FRONTIER_XIC_aid
+        AOEIW_FRONTIER_XIC_mediation
+        AOEIW_FRONTIER_XIC_relief
+        AOEIW_FRONTIER_XIC_airfield
+        AOEIW_FRONTIER_XIC_signals
+        AOEIW_FRONTIER_XIC_repair
+        AOEIW_FRONTIER_XIC_institute
+        AOEIW_FRONTIER_XIC_province
+    }
+    research = { industry = 3 infantry = 2 electronics = 1 land_doctrine = 1 }
+    ai_strategy = { type = prepare_for_war value = 20 }
+    weight = { factor = 100 }
+}

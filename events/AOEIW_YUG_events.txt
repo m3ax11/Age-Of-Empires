@@ -1,0 +1,329 @@
+add_namespace = aoeiw_yug
+
+country_event = {
+    id = aoeiw_yug.1
+    title = aoeiw_yug.1.t
+    desc = aoeiw_yug.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.1.a
+        # AOEIW24 direction 1
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_political_power = 75
+        add_stability = 0.03
+    }
+    option = {
+        name = aoeiw_yug.1.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_stability = 0.05
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.2
+    title = aoeiw_yug.2.t
+    desc = aoeiw_yug.2.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.2.a
+        # AOEIW24 direction 2
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_war_support = 0.03
+        add_command_power = 10
+    }
+    option = {
+        name = aoeiw_yug.2.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_stability = 0.04
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.3
+    title = aoeiw_yug.3.t
+    desc = aoeiw_yug.3.d
+    picture = GFX_report_event_generic_rally
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.3.a
+        # AOEIW24 direction 3
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_political_power = 75
+        add_stability = 0.02
+    }
+    option = {
+        name = aoeiw_yug.3.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_war_support = 0.03
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.6
+    title = aoeiw_yug.6.t
+    desc = aoeiw_yug.6.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.6.a
+        # AOEIW24 direction 6
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_stability = 0.05
+    }
+    option = {
+        name = aoeiw_yug.6.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_political_power = 100
+        add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.4
+    title = aoeiw_yug.4.t
+    desc = aoeiw_yug.4.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.4.a
+        # AOEIW24 direction 4
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_political_power = 75
+        add_stability = 0.02
+    }
+    option = {
+        name = aoeiw_yug.4.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_war_support = 0.03
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.7
+    title = aoeiw_yug.7.t
+    desc = aoeiw_yug.7.d
+    picture = GFX_report_event_generic_rally2
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.7.a
+        # AOEIW24 direction 7
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_stability = 0.05
+    }
+    option = {
+        name = aoeiw_yug.7.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_political_power = 100
+        add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.5
+    title = aoeiw_yug.5.t
+    desc = aoeiw_yug.5.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.5.a
+        # AOEIW24 direction 5
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_political_power = 75
+        add_stability = 0.02
+    }
+    option = {
+        name = aoeiw_yug.5.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_war_support = 0.03
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.8
+    title = aoeiw_yug.8.t
+    desc = aoeiw_yug.8.d
+    picture = GFX_report_event_generic_strike
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.8.a
+        # AOEIW24 direction 8
+        add_to_variable = { AOEIW24_YUG_state_direction = 1 }
+        add_stability = 0.05
+    }
+    option = {
+        name = aoeiw_yug.8.b
+        add_to_variable = { AOEIW24_YUG_state_direction = -1 }
+        add_political_power = 100
+        add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.10
+    title = aoeiw_yug.10.t
+    desc = aoeiw_yug.10.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.10.a
+        add_political_power = 50
+        random_owned_controlled_state = {
+            limit = { is_core_of = ROOT }
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+    }
+    option = {
+        name = aoeiw_yug.10.b
+        add_stability = 0.05
+        random_owned_controlled_state = {
+            limit = { is_core_of = ROOT }
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.11
+    title = aoeiw_yug.11.t
+    desc = aoeiw_yug.11.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.11.a
+        army_experience = 30
+        add_command_power = 15
+    }
+    option = {
+        name = aoeiw_yug.11.b
+        add_doctrine_cost_reduction = { name = AOEIW_event_land_doctrine cost_reduction = 0.40 uses = 1 category = land_doctrine }
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.12
+    title = aoeiw_yug.12.t
+    desc = aoeiw_yug.12.d
+    picture = GFX_report_event_fighters
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.12.a
+        air_experience = 30
+        add_tech_bonus = { name = AOEIW_YUG_event_air bonus = 0.75 uses = 1 category = air_equipment }
+    }
+    option = {
+        name = aoeiw_yug.12.b
+        navy_experience = 30
+        add_tech_bonus = { name = AOEIW_YUG_event_navy bonus = 0.75 uses = 1 category = naval_equipment }
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.13
+    title = aoeiw_yug.13.t
+    desc = aoeiw_yug.13.d
+    picture = GFX_report_event_generic_research_lab
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.13.a
+        add_political_power = -25
+        add_tech_bonus = { name = AOEIW_YUG_event_science bonus = 1.0 uses = 1 category = electronics }
+    }
+    option = {
+        name = aoeiw_yug.13.b
+        add_political_power = -25
+        add_tech_bonus = { name = AOEIW_YUG_event_industry bonus = 1.0 uses = 1 category = industry }
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.14
+    title = aoeiw_yug.14.t
+    desc = aoeiw_yug.14.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.14.a
+        add_stability = 0.03
+        add_political_power = 75
+    }
+    option = {
+        name = aoeiw_yug.14.b
+        add_war_support = 0.05
+        add_command_power = 15
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.15
+    title = aoeiw_yug.15.t
+    desc = aoeiw_yug.15.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.15.a
+        add_stability = 0.04
+        add_war_support = 0.04
+        add_political_power = 100
+    }
+    option = {
+        name = aoeiw_yug.15.b
+        add_stability = 0.07
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = aoeiw_yug.16
+    title = aoeiw_yug.16.t
+    desc = aoeiw_yug.16.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { tag = YUG }
+    fire_only_once = yes
+    option = {
+        name = aoeiw_yug.16.a
+        add_stability = 0.05
+        add_war_support = 0.05
+        add_command_power = 20
+        # AOEIW24 resolved national direction
+        if = { limit = { check_variable = { AOEIW24_YUG_state_direction > 0 } } add_ideas = AOEIW24_military_synthesis }
+        if = { limit = { NOT = { check_variable = { AOEIW24_YUG_state_direction > 0 } } } add_ideas = AOEIW24_social_synthesis }
+    }
+}
+

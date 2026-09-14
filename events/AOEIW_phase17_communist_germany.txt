@@ -1,0 +1,252 @@
+add_namespace = aoeiw_phase17_ger
+
+# Germany only: Berlin determines whether the revolutionary coalition is led by
+# industrial unions or by a looser congress of works councils.
+country_event = {
+    id = aoeiw_phase17_ger.1
+    title = aoeiw_phase17_ger.1.t
+    desc = aoeiw_phase17_ger.1.d
+    picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = GER }
+
+    option = {
+        name = aoeiw_phase17_ger.1.a
+        ai_chance = { factor = 6 }
+        add_political_power = -25
+        add_stability = 0.01
+        add_ideas = AOEIW17_GER_union_discipline
+        set_country_flag = AOEIW17_GER_union_discipline
+    }
+    option = {
+        name = aoeiw_phase17_ger.1.b
+        ai_chance = { factor = 4 }
+        add_stability = -0.01
+        add_war_support = 0.02
+        add_ideas = AOEIW17_GER_council_pluralism
+        set_country_flag = AOEIW17_GER_council_pluralism
+    }
+}
+
+# Germany only: the councils decide how much of the old technical officer corps
+# can be separated from Prussian political authority.
+country_event = {
+    id = aoeiw_phase17_ger.2
+    title = aoeiw_phase17_ger.2.t
+    desc = aoeiw_phase17_ger.2.d
+    picture = GFX_report_event_generic_soldiers_surrendering
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = GER }
+
+    option = {
+        name = aoeiw_phase17_ger.2.a
+        ai_chance = { factor = 7 }
+        add_political_power = -40
+        army_experience = 10
+        add_ideas = AOEIW17_GER_supervised_technical_officers
+        set_country_flag = AOEIW17_GER_technical_officers_retained
+    }
+    option = {
+        name = aoeiw_phase17_ger.2.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.03
+        add_war_support = 0.04
+        army_experience = 5
+        add_ideas = AOEIW17_GER_prussian_command_purged
+        set_country_flag = AOEIW17_GER_prussian_command_purged
+    }
+}
+
+# Germany only: the Imperial state and Reichspakt are formally dissolved.
+country_event = {
+    id = aoeiw_phase17_ger.3
+    title = aoeiw_phase17_ger.3.t
+    desc = aoeiw_phase17_ger.3.d
+    picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = GER }
+
+    option = {
+        name = aoeiw_phase17_ger.3.a
+
+        if = {
+            limit = { POL = { exists = yes is_subject_of = GER } }
+            set_autonomy = {
+                target = POL
+                autonomy_state = autonomy_free
+                end_wars = no
+                end_civil_wars = no
+            }
+        }
+
+        if = {
+            limit = { is_faction_leader = yes }
+            dismantle_faction = yes
+        }
+        else_if = {
+            limit = { is_in_faction = yes }
+            leave_faction = yes
+        }
+
+        remove_ideas = {
+            AOEIW_GER_legacy_0
+            AOEIW_GER_legacy_1
+            AOEIW_GER_legacy_2
+            AOEIW_GER_legacy_3
+            AOEIW_GER_legacy_4
+            AOEIW6_GER_rearmament_coordination_0
+            AOEIW6_GER_rearmament_coordination_1
+            AOEIW6_GER_rearmament_coordination_2
+            AOEIW6_GER_rearmament_coordination_3
+            AOEIW9_GER_spirit_mobilised_society
+            AOEIW11_faction_leadership
+            AOEIW17_GER_factory_unrest
+            AOEIW17_GER_general_strike
+            AOEIW17_GER_red_front_militias
+        }
+        AOEIW9_install_workers_government = yes
+        set_cosmetic_tag = GER_WORKERS_FEDERATION
+        set_party_name = {
+            ideology = communism
+            long_name = AOEIW17_GER_workers_council_congress_long
+            name = AOEIW17_GER_workers_council_congress
+        }
+        set_popularities = {
+            democratic = 12
+            fascism = 3
+            communism = 68
+            neutrality = 10
+            imperialism = 7
+        }
+        retire_character = AOEIW_GER_wilhelm_ii
+        promote_character = { character = GER_wilhelm_pieck ideology = stalinism }
+        add_ideas = {
+            AOEIW17_GER_postrevolution_industry_disruption
+            AOEIW17_GER_postrevolution_command_disruption
+        }
+        add_political_power = -100
+        add_stability = -0.08
+        add_war_support = 0.08
+        set_country_flag = AOEIW17_GER_workers_federation_proclaimed
+
+        if = {
+            limit = { POL = { exists = yes } }
+            POL = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = GER modifier = AOEIW_reichspakt_cooperation }
+                remove_opinion_modifier = { target = GER modifier = AOEIW11_diplomatic_mission }
+            }
+        }
+        if = {
+            limit = { HOL = { exists = yes } }
+            HOL = {
+                remove_ideas = AOEIW11_faction_coordination
+                remove_opinion_modifier = { target = GER modifier = AOEIW_reichspakt_cooperation }
+                remove_opinion_modifier = { target = GER modifier = AOEIW11_diplomatic_mission }
+            }
+        }
+
+        if = {
+            limit = { POL = { exists = yes } }
+            POL = { country_event = { id = aoeiw_phase17_ger.5 days = 1 } }
+        }
+        if = {
+            limit = { HOL = { exists = yes } }
+            HOL = { country_event = { id = aoeiw_phase17_ger.6 days = 1 } }
+        }
+    }
+}
+
+# Germany only: Kiel's sailors demand a voice without deleting or duplicating the fleet.
+country_event = {
+    id = aoeiw_phase17_ger.4
+    title = aoeiw_phase17_ger.4.t
+    desc = aoeiw_phase17_ger.4.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = GER
+        has_country_flag = AOEIW17_GER_workers_federation_proclaimed
+    }
+
+    option = {
+        name = aoeiw_phase17_ger.4.a
+        ai_chance = { factor = 7 }
+        add_political_power = -45
+        add_stability = 0.02
+        navy_experience = 15
+        add_ideas = AOEIW17_GER_fleet_technical_compromise
+        set_country_flag = AOEIW17_GER_fleet_technical_compromise
+    }
+    option = {
+        name = aoeiw_phase17_ger.4.b
+        ai_chance = { factor = 3 }
+        add_stability = -0.02
+        add_war_support = 0.04
+        navy_experience = 10
+        add_ideas = AOEIW17_GER_sailors_command
+        set_country_flag = AOEIW17_GER_sailors_command
+    }
+}
+
+# Poland only: Warsaw is independent before choosing its relationship with the new Germany.
+country_event = {
+    id = aoeiw_phase17_ger.5
+    title = aoeiw_phase17_ger.5.t
+    desc = aoeiw_phase17_ger.5.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = POL }
+
+    option = {
+        name = aoeiw_phase17_ger.5.a
+        ai_chance = { factor = 6 }
+        add_stability = 0.04
+        add_war_support = 0.03
+        add_opinion_modifier = { target = GER modifier = AOEIW17_revolutionary_betrayal }
+        set_country_flag = AOEIW17_POL_guarded_independence
+    }
+    option = {
+        name = aoeiw_phase17_ger.5.b
+        ai_chance = { factor = 4 }
+        add_political_power = 25
+        add_stability = 0.02
+        add_opinion_modifier = { target = GER modifier = AOEIW17_equal_republics }
+        diplomatic_relation = { country = GER relation = non_aggression_pact active = yes }
+        set_country_flag = AOEIW17_POL_equal_neighbour
+    }
+}
+
+# Netherlands only: The Hague decides whether Ruhr-Rotterdam trade can survive the rupture.
+country_event = {
+    id = aoeiw_phase17_ger.6
+    title = aoeiw_phase17_ger.6.t
+    desc = aoeiw_phase17_ger.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { original_tag = HOL }
+
+    option = {
+        name = aoeiw_phase17_ger.6.a
+        ai_chance = { factor = 6 }
+        add_stability = 0.03
+        add_war_support = 0.02
+        add_opinion_modifier = { target = GER modifier = AOEIW17_revolutionary_betrayal }
+        set_country_flag = AOEIW17_HOL_atlantic_neutrality
+    }
+    option = {
+        name = aoeiw_phase17_ger.6.b
+        ai_chance = { factor = 4 }
+        add_political_power = 25
+        add_stability = 0.01
+        add_opinion_modifier = { target = GER modifier = AOEIW17_pragmatic_industrial_relations }
+        diplomatic_relation = { country = GER relation = non_aggression_pact active = yes }
+        set_country_flag = AOEIW17_HOL_ruhr_rotterdam_accord
+    }
+}

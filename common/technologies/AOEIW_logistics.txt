@@ -1,0 +1,55 @@
+technologies = {
+AOEIW_depot_standards = {
+ supply_consumption_factor = -0.02
+ path = { leads_to_tech = AOEIW_field_maintenance research_cost_coeff = 1 }
+ path = { leads_to_tech = AOEIW24_integrated_staff_work research_cost_coeff = 1 }
+ path = { leads_to_tech = AOEIW24_national_radio_grid research_cost_coeff = 1 }
+ path = { leads_to_tech = AOEIW24_armoured_recovery_columns research_cost_coeff = 1 }
+ research_cost = 1.5 start_year = 1934
+ folder = { name = industry_folder position = { x = 0 y = 0 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes }  }
+}
+AOEIW_field_maintenance = {
+ army_org_regain = 0.02 path = { leads_to_tech = AOEIW_interchangeable_workshops research_cost_coeff = 1 } path = { leads_to_tech = AOEIW_reich_motor_pool research_cost_coeff = 1 } path = { leads_to_tech = AOEIW_entente_motor_pool research_cost_coeff = 1 } path = { leads_to_tech = AOEIW_eurasian_motor_pool research_cost_coeff = 1 } 
+ research_cost = 1.5 start_year = 1936
+ folder = { name = industry_folder position = { x = 0 y = 2 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes }  }
+}
+AOEIW_interchangeable_workshops = {
+ production_factory_efficiency_gain_factor = 0.04 path = { leads_to_tech = AOEIW_distributed_depots research_cost_coeff = 1 } 
+ research_cost = 1.5 start_year = 1938
+ folder = { name = industry_folder position = { x = 0 y = 6 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes }  }
+}
+AOEIW_distributed_depots = {
+ supply_consumption_factor = -0.02 army_org_regain = 0.02  
+ research_cost = 1.5 start_year = 1940
+ folder = { name = industry_folder position = { x = 0 y = 8 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes }  }
+}
+AOEIW_reich_motor_pool = {
+ enable_equipments = { AOEIW_reich_truck }  allow = { has_tech = motorised_infantry }
+ research_cost = 1.5 start_year = 1937
+ folder = { name = industry_folder position = { x = 4 y = 4 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } modifier = { factor = 4 OR = { original_tag = GER original_tag = AUS original_tag = POL } } }
+}
+AOEIW_entente_motor_pool = {
+ enable_equipments = { AOEIW_entente_truck }  allow = { has_tech = motorised_infantry }
+ research_cost = 1.5 start_year = 1937
+ folder = { name = industry_folder position = { x = 8 y = 4 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } modifier = { factor = 4 OR = { original_tag = ENG original_tag = FRA original_tag = USA original_tag = CAN } } }
+}
+AOEIW_eurasian_motor_pool = {
+ enable_equipments = { AOEIW_eurasian_truck }  allow = { has_tech = motorised_infantry }
+ research_cost = 1.5 start_year = 1937
+ folder = { name = industry_folder position = { x = 12 y = 4 } }
+ categories = { support_tech }
+ ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } modifier = { factor = 4 OR = { original_tag = SOV original_tag = CHI original_tag = MON } } }
+}
+}

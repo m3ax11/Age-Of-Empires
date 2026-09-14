@@ -1,0 +1,279 @@
+focus_tree = {
+ id = AOEIW_FRONTIER_MON_focus
+ country = { factor = 0 modifier = { add = 200000 tag = MON } }
+ continuous_focus_position = { x = 50 y = 1430 }
+ reset_on_civilwar = no
+ focus = {
+        # AOEIW visual-layout base: 8,0
+    id = AOEIW_FRONTIER_MON_khural icon = GFX_focus_generic_public_meetings x = 4 y = 0 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    
+    completion_reward = { add_political_power = 60 add_stability = 0.02 country_event = { id = AOEIW35_mon.1 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,1
+    id = AOEIW_FRONTIER_MON_herders icon = GFX_focus_generic_sheep x = 2 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_khural } mutually_exclusive = { focus = AOEIW_FRONTIER_MON_directorate }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MON_herders_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_directorate } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 12,1
+    id = AOEIW_FRONTIER_MON_directorate icon = GFX_focus_generic_limited_social_mobilization x = 6 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_khural } mutually_exclusive = { focus = AOEIW_FRONTIER_MON_herders }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MON_directorate_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_herders } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 2,2
+    id = AOEIW_FRONTIER_MON_veterinary icon = GFX_focus_generic_horse_studs x = 1 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_herders }
+    completion_reward = { army_experience = 15 add_manpower = 5000 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_directorate } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 14,2
+    id = AOEIW_FRONTIER_MON_registers icon = GFX_goal_generic_cavalry x = 7 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_directorate }
+    completion_reward = { army_experience = 20 add_command_power = 10 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_herders } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 8,3
+    id = AOEIW_FRONTIER_MON_districts icon = GFX_focus_generic_improve_the_administration x = 4 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_veterinary focus = AOEIW_FRONTIER_MON_registers }
+    completion_reward = { add_stability = 0.03 add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW_FRONTIER_MON_caravans icon = GFX_focus_generic_desert_training x = 0 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_districts }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,4
+    id = AOEIW_FRONTIER_MON_workshops icon = GFX_focus_generic_industry_1 x = 2 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_districts }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW_FRONTIER_MON_depots icon = GFX_focus_generic_winter_warfare x = 0 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_caravans }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MON_winter_spirit }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,5
+    id = AOEIW_FRONTIER_MON_arsenal icon = GFX_focus_generic_military_industry x = 2 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_workshops }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,6
+    id = AOEIW_FRONTIER_MON_roads icon = GFX_focus_generic_improve_roads x = 1 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_depots } prerequisite = { focus = AOEIW_FRONTIER_MON_arsenal }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,4
+    id = AOEIW_FRONTIER_MON_riders icon = GFX_goal_generic_cavalry x = 4 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_districts }
+    completion_reward = { army_experience = 25 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,5
+    id = AOEIW_FRONTIER_MON_signals icon = GFX_focus_generic_radio_communication x = 4 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_riders }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = electronics } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,6
+    id = AOEIW_FRONTIER_MON_mobile icon = GFX_focus_generic_army_doctrines_2 x = 4 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_signals }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MON_mobile_spirit }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,4
+    id = AOEIW_FRONTIER_MON_airfield icon = GFX_focus_generic_air_bases x = 6 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_districts }
+    completion_reward = { random_owned_controlled_state = { add_building_construction = { type = air_base level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,5
+    id = AOEIW_FRONTIER_MON_pilots icon = GFX_focus_generic_pilot_training x = 6 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_airfield }
+    completion_reward = { air_experience = 20 add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = light_air } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 18,4
+    id = AOEIW_FRONTIER_MON_frontier icon = GFX_focus_generic_commission x = 9 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_districts }
+    completion_reward = { add_political_power = 40 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 16,5
+    id = AOEIW_FRONTIER_MON_solidarity icon = GFX_focus_generic_arms_trade x = 8 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_frontier } mutually_exclusive = { focus = AOEIW_FRONTIER_MON_neutral } available = { CHI = { has_country_flag = AOEIW20_UF_war_started NOT = { has_country_flag = AOEIW20_UF_qing_defeated } } }
+    completion_reward = { set_country_flag = AOEIW_FRONTIER_MON_aid_unlocked  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_neutral } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 20,5
+    id = AOEIW_FRONTIER_MON_neutral icon = GFX_focus_generic_concessions x = 10 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_frontier } mutually_exclusive = { focus = AOEIW_FRONTIER_MON_solidarity }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MON_neutral_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MON_solidarity } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 18,6
+    id = AOEIW_FRONTIER_MON_liaison icon = GFX_focus_generic_diplomatic_treaty x = 9 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_solidarity focus = AOEIW_FRONTIER_MON_neutral }
+    completion_reward = { add_command_power = 15 add_stability = 0.02 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 10,7
+    id = AOEIW_FRONTIER_MON_academy icon = GFX_focus_generic_military_academy x = 5 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_mobile } prerequisite = { focus = AOEIW_FRONTIER_MON_pilots }
+    completion_reward = { army_experience = 25 add_command_power = 15 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,8
+    id = AOEIW_FRONTIER_MON_recovery icon = GFX_focus_generic_truck x = 2 y = 8 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_roads } prerequisite = { focus = AOEIW_FRONTIER_MON_academy }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 16,8
+    id = AOEIW_FRONTIER_MON_borderpeace icon = GFX_focus_generic_world_peace x = 8 y = 8 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_liaison } prerequisite = { focus = AOEIW_FRONTIER_MON_academy }
+    completion_reward = { add_stability = 0.05 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 10,9
+    id = AOEIW_FRONTIER_MON_state icon = GFX_focus_generic_economic_recovery x = 5 y = 9 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MON_recovery } prerequisite = { focus = AOEIW_FRONTIER_MON_borderpeace }
+    completion_reward = { add_research_slot = 1 country_event = { id = AOEIW35_mon.2 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW38_ASIA_MIDDLE_MON_frontier_council
+    icon = GFX_focus_generic_commission
+    x = 5 y = 10 cost = 6
+    prerequisite = { focus = AOEIW_FRONTIER_MON_state }
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    completion_reward = {
+        set_country_flag = AOEIW38_ASIA_MIDDLE_MON_frontier_council_open
+        add_ideas = AOEIW38_ASIA_MIDDLE_MON_watch_council
+        country_event = { id = AOEIW38_asia_middle.1 hours = 6 }
+    }
+    ai_will_do = { factor = 8 modifier = { factor = 2 date > 1940.1.1 } }
+}
+focus = {
+    id = AOEIW38_ASIA_MIDDLE_MON_eastern_solidarity
+    icon = GFX_focus_generic_arms_trade
+    x = 3 y = 11 cost = 6
+    prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    completion_reward = {
+        set_country_flag = AOEIW38_ASIA_MIDDLE_MON_solidarity_policy
+        country_event = { id = AOEIW38_asia_middle.2 hours = 6 }
+        mark_focus_tree_layout_dirty = yes
+    }
+    ai_will_do = {
+        factor = 6
+        modifier = { factor = 2 CHI = { exists = yes has_war = yes } }
+        modifier = { factor = 0.5 is_subject = yes }
+    }
+    allow_branch = { NOT = { has_completed_focus = AOEIW38_ASIA_MIDDLE_MON_guarded_neutrality } }
+}
+focus = {
+    id = AOEIW38_ASIA_MIDDLE_MON_guarded_neutrality
+    icon = GFX_focus_generic_concessions
+    x = 7 y = 11 cost = 6
+    prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    completion_reward = {
+        set_country_flag = AOEIW38_ASIA_MIDDLE_MON_neutrality_policy
+        country_event = { id = AOEIW38_asia_middle.3 hours = 6 }
+        mark_focus_tree_layout_dirty = yes
+    }
+    ai_will_do = {
+        factor = 6
+        modifier = { factor = 2 has_war = no has_stability < 0.55 }
+        modifier = { factor = 0.5 CHI = { has_war = yes } }
+    }
+    allow_branch = { NOT = { has_completed_focus = AOEIW38_ASIA_MIDDLE_MON_eastern_solidarity } }
+}
+focus = {
+    id = AOEIW38_ASIA_MIDDLE_MON_three_frontier_network
+    icon = GFX_focus_generic_radio_communication
+    x = 5 y = 12 cost = 6
+    prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_eastern_solidarity focus = AOEIW38_ASIA_MIDDLE_MON_guarded_neutrality }
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    completion_reward = {
+        set_country_flag = AOEIW38_ASIA_MIDDLE_MON_network_complete
+        add_ideas = AOEIW38_ASIA_MIDDLE_MON_steppe_signals
+        country_event = { id = AOEIW38_asia_middle.4 hours = 6 }
+    }
+    ai_will_do = { factor = 10 modifier = { factor = 1.5 has_war = yes } }
+}
+focus = {
+    id = AOEIW38_ASIA_MIDDLE_MON_postwar_steppe_compact
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 5 y = 13 cost = 7
+    prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_three_frontier_network }
+    available = { date > 1940.1.1 }
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    completion_reward = {
+        set_country_flag = AOEIW38_ASIA_MIDDLE_MON_steppe_compact
+        remove_ideas = AOEIW38_ASIA_MIDDLE_MON_watch_council
+        add_ideas = AOEIW38_ASIA_MIDDLE_MON_enduring_compact
+        country_event = { id = AOEIW38_asia_middle.5 hours = 6 }
+    }
+    ai_will_do = { factor = 12 modifier = { factor = 1.5 has_war = no } }
+}
+}

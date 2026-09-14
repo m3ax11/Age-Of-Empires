@@ -1,0 +1,150 @@
+AOEIW38_EUROPE_regional_reckoning_category = {
+    AOEIW38_EUROPE_convene_national_war_cabinet = {
+        icon = generic_political_discourse
+        cost = 50
+        fire_only_once = yes
+        visible = { NOT = { has_country_flag = AOEIW38_EUROPE_programme_adopted } }
+        available = { has_capitulated = no }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_programme_adopted
+            if = { limit = { original_tag = BEL } add_ideas = AOEIW38_EUROPE_BEL_albert_canal_command }
+            if = { limit = { original_tag = BUL } add_ideas = AOEIW38_EUROPE_BUL_revision_commission }
+            if = { limit = { original_tag = DEN } add_ideas = AOEIW38_EUROPE_DEN_belts_watch }
+            if = { limit = { original_tag = FIN } add_ideas = AOEIW38_EUROPE_FIN_motti_supply }
+            if = { limit = { original_tag = GRE } add_ideas = AOEIW38_EUROPE_GRE_pindus_lifeline }
+            if = { limit = { original_tag = HOL } add_ideas = AOEIW38_EUROPE_HOL_archipelago_lifeline }
+            if = { limit = { original_tag = IRE } add_ideas = AOEIW38_EUROPE_IRE_emergency_neutrality }
+            if = { limit = { original_tag = NOR } add_ideas = AOEIW38_EUROPE_NOR_merchant_fleet_board }
+            if = { limit = { original_tag = POL } add_ideas = AOEIW38_EUROPE_POL_continuity_state }
+            if = { limit = { original_tag = POR } add_ideas = AOEIW38_EUROPE_POR_atlantic_chain }
+            if = { limit = { original_tag = ROM } add_ideas = AOEIW38_EUROPE_ROM_oil_frontier_board }
+            if = { limit = { original_tag = SWE } add_ideas = AOEIW38_EUROPE_SWE_armed_trade }
+            if = { limit = { original_tag = SWI } add_ideas = AOEIW38_EUROPE_SWI_national_redoubt }
+            if = { limit = { original_tag = YUG } add_ideas = AOEIW38_EUROPE_YUG_federal_defence_councils }
+            country_event = { id = AOEIW38_europe.1 hours = 6 }
+        }
+        ai_will_do = { base = 25 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW38_EUROPE_low_countries_staff_convention = {
+        icon = generic_political_discourse
+        cost = 40
+        fire_only_once = yes
+        allowed = { OR = { original_tag = BEL original_tag = HOL } }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+        available = { date > 1939.6.1 has_capitulated = no OR = { BEL = { exists = yes NOT = { has_war_with = ROOT } } HOL = { exists = yes NOT = { has_war_with = ROOT } } } }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_regional_convention_called
+            if = { limit = { original_tag = BEL HOL = { exists = yes NOT = { has_war_with = ROOT } } } HOL = { country_event = { id = AOEIW38_europe.20 days = 2 } } }
+            if = { limit = { original_tag = HOL BEL = { exists = yes NOT = { has_war_with = ROOT } } } BEL = { country_event = { id = AOEIW38_europe.20 days = 2 } } }
+        }
+        ai_will_do = { base = 15 }
+    }
+
+    AOEIW38_EUROPE_northern_transit_conference = {
+        icon = generic_political_discourse
+        cost = 45
+        fire_only_once = yes
+        allowed = { OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+        available = { date > 1939.6.1 has_capitulated = no }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_regional_convention_called
+            every_country = { limit = { exists = yes OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } country_event = { id = AOEIW38_europe.20 days = 2 } }
+        }
+        ai_will_do = { base = 15 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    AOEIW38_EUROPE_balkan_frontier_conference = {
+        icon = generic_political_discourse
+        cost = 45
+        fire_only_once = yes
+        allowed = { OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+        available = { date > 1939.6.1 has_capitulated = no }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_regional_convention_called
+            every_country = { limit = { exists = yes OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } country_event = { id = AOEIW38_europe.20 days = 2 } }
+        }
+        ai_will_do = { base = 12 modifier = { factor = 2 any_neighbor_country = { has_war = yes } } }
+    }
+
+    AOEIW38_EUROPE_neutral_relief_channel = {
+        icon = generic_political_discourse
+        cost = 35
+        fire_only_once = yes
+        allowed = { OR = { original_tag = IRE original_tag = POR original_tag = SWI } }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+        available = { date > 1940.1.1 has_capitulated = no }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_regional_convention_called
+            every_country = { limit = { exists = yes OR = { original_tag = IRE original_tag = POR original_tag = SWI } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } country_event = { id = AOEIW38_europe.20 days = 2 } }
+        }
+        ai_will_do = { base = 15 modifier = { factor = 1.5 has_war = no } }
+    }
+
+    AOEIW38_EUROPE_activate_continuity_districts = {
+        icon = generic_political_discourse
+        cost = 40
+        fire_only_once = yes
+        allowed = { original_tag = POL }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted }
+        available = { date > 1939.6.1 has_capitulated = no OR = { has_war = yes any_neighbor_country = { has_war = yes } } }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_regional_convention_called
+            add_timed_idea = { idea = AOEIW38_EUROPE_regional_staff_links days = 540 }
+            country_event = { id = AOEIW38_europe.21 hours = 6 }
+        }
+        ai_will_do = { base = 25 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW38_EUROPE_negotiate_imperial_war_charter = {
+        icon = generic_political_discourse
+        cost = 60
+        fire_only_once = yes
+        allowed = { OR = { original_tag = HOL original_tag = POR } }
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted any_subject_country = { exists = yes } }
+        available = { date > 1940.1.1 has_capitulated = no any_subject_country = { exists = yes } }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_imperial_charter_convened
+            add_ideas = AOEIW38_EUROPE_imperial_war_charter
+            every_subject_country = { country_event = { id = AOEIW38_europe.30 days = 2 } }
+        }
+        ai_will_do = { base = 20 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW38_EUROPE_restore_the_public_authority = {
+        icon = generic_political_discourse
+        cost = 50
+        fire_only_once = no
+        visible = { has_country_flag = AOEIW38_EUROPE_homeland_lost }
+        available = { date > 1940.1.1 has_capitulated = no has_war = no }
+        complete_effect = {
+            clr_country_flag = AOEIW38_EUROPE_homeland_lost
+            set_country_flag = AOEIW38_EUROPE_public_authority_restored
+            remove_ideas = AOEIW38_EUROPE_government_in_exile_network
+            add_ideas = AOEIW38_EUROPE_restored_mandate
+            country_event = { id = AOEIW38_europe.40 hours = 6 }
+            every_country = {
+                limit = { exists = yes OR = { original_tag = BEL original_tag = BUL original_tag = DEN original_tag = FIN original_tag = GRE original_tag = HOL original_tag = IRE original_tag = NOR original_tag = POL original_tag = POR original_tag = ROM original_tag = SWE original_tag = SWI original_tag = YUG } NOT = { tag = ROOT } }
+                country_event = { id = AOEIW38_europe.41 days = 2 }
+            }
+        }
+        ai_will_do = { base = 30 }
+    }
+
+    AOEIW38_EUROPE_settle_the_wartime_accounts = {
+        icon = generic_industry
+        cost = 75
+        fire_only_once = yes
+        visible = { has_country_flag = AOEIW38_EUROPE_programme_adopted NOT = { has_country_flag = AOEIW38_EUROPE_wartime_accounts_settled } }
+        available = { date > 1942.1.1 has_war = no has_capitulated = no OR = { has_country_flag = AOEIW38_EUROPE_regional_convention_called has_country_flag = AOEIW38_EUROPE_public_authority_restored has_country_flag = AOEIW38_EUROPE_imperial_charter_convened } }
+        complete_effect = {
+            set_country_flag = AOEIW38_EUROPE_wartime_accounts_settled
+            add_ideas = AOEIW38_EUROPE_reconstruction_dividend
+            capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            country_event = { id = AOEIW38_europe.50 hours = 6 }
+        }
+        ai_will_do = { base = 25 }
+    }
+}

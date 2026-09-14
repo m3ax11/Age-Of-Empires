@@ -1,0 +1,18 @@
+units = {
+    fleet = {
+        name = "EGY National Fleet"
+        naval_base = 4076
+        task_force = {
+            name = "EGY Main Fleet"
+            location = 4076
+            ship = { name = "EGY Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Cruiser Class" } } }
+            ship = { name = "EGY Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Destroyer Class" } } }
+            ship = { name = "EGY Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Destroyer Class" } } }
+            ship = { name = "EGY Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Destroyer Class" } } }
+            ship = { name = "EGY Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Destroyer Class" } } }
+            ship = { name = "EGY Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Destroyer Class" } } }
+            ship = { name = "EGY Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Submarine Class" } } }
+            ship = { name = "EGY Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = EGY version_name = "AOEIW EGY Submarine Class" } } }
+        }
+    }
+}

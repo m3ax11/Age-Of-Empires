@@ -1,0 +1,8 @@
+opinion_modifiers = {
+    AOEIW38_ASIA_MIDDLE_frontier_consultation = { value = 20 decay = 1 }
+    AOEIW38_ASIA_MIDDLE_frontier_suspicion = { value = -15 decay = 1 }
+    AOEIW38_ASIA_MIDDLE_open_straits = { value = 25 decay = 1 }
+    AOEIW38_ASIA_MIDDLE_guarded_straits = { value = -15 decay = 1 }
+    AOEIW38_ASIA_MIDDLE_regional_conference = { value = 20 decay = 1 }
+    AOEIW38_ASIA_MIDDLE_competing_settlement = { value = -20 decay = 1 }
+}

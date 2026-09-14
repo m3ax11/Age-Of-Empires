@@ -1,0 +1,153 @@
+add_namespace = aoeiw_phase14_ger
+
+country_event = {
+    id = aoeiw_phase14_ger.1
+    title = aoeiw_phase14_ger.1.t
+    desc = aoeiw_phase14_ger.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.1.a
+        add_popularity = { ideology = democratic popularity = 0.03 }
+        add_political_power = -20
+        set_country_flag = AOEIW14_GER_networks_contacted
+    }
+    option = {
+        name = aoeiw_phase14_ger.1.b
+        add_stability = 0.01
+        add_popularity = { ideology = democratic popularity = 0.01 }
+        set_country_flag = AOEIW14_GER_networks_contacted
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_ger.2
+    title = aoeiw_phase14_ger.2.t
+    desc = aoeiw_phase14_ger.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.2.a
+        set_faction_name = AOEIW14_reformed_reichspakt
+        add_ideas = AOEIW14_GER_directed_reichspakt
+        add_political_power = 50
+        set_country_flag = AOEIW14_GER_reichspakt_reformed
+        set_country_flag = AOEIW14_GER_directed_alliance
+    }
+    option = {
+        name = aoeiw_phase14_ger.2.b
+        set_faction_name = AOEIW14_federal_european_league
+        add_ideas = AOEIW14_GER_federal_reichspakt
+        add_stability = 0.03
+        set_country_flag = AOEIW14_GER_reichspakt_reformed
+        set_country_flag = AOEIW14_GER_federal_alliance
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_ger.3
+    title = aoeiw_phase14_ger.3.t
+    desc = aoeiw_phase14_ger.3.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.3.a
+        ai_chance = { factor = 8 }
+        GER = {
+            set_autonomy = { target = POL autonomy_state = autonomy_dominion }
+            add_opinion_modifier = { target = POL modifier = AOEIW14_autonomy_compromise }
+            set_country_flag = AOEIW14_GER_polish_settlement_accepted
+        }
+        add_ideas = AOEIW14_POL_autonomy_settlement
+        add_opinion_modifier = { target = GER modifier = AOEIW14_autonomy_compromise }
+    }
+    option = {
+        name = aoeiw_phase14_ger.3.b
+        ai_chance = { factor = 2 }
+        GER = { add_opinion_modifier = { target = POL modifier = AOEIW14_treaty_rejected } }
+        add_opinion_modifier = { target = GER modifier = AOEIW14_treaty_rejected }
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_ger.4
+    title = aoeiw_phase14_ger.4.t
+    desc = aoeiw_phase14_ger.4.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.4.a
+        ai_chance = { factor = 8 }
+        GER = {
+            diplomatic_relation = { country = HOL relation = guarantee active = yes }
+            add_opinion_modifier = { target = HOL modifier = AOEIW14_constitutional_dialogue }
+            set_country_flag = AOEIW14_GER_dutch_charter_accepted
+        }
+        add_ideas = AOEIW14_HOL_constitutional_guarantee
+        add_opinion_modifier = { target = GER modifier = AOEIW14_constitutional_dialogue }
+    }
+    option = {
+        name = aoeiw_phase14_ger.4.b
+        ai_chance = { factor = 2 }
+        GER = { add_opinion_modifier = { target = HOL modifier = AOEIW14_treaty_rejected } }
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_ger.5
+    title = aoeiw_phase14_ger.5.t
+    desc = aoeiw_phase14_ger.5.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.5.a
+        ai_chance = { factor = 6 }
+        diplomatic_relation = { country = GER relation = non_aggression_pact active = yes }
+        add_ideas = AOEIW14_FRA_rhine_dialogue
+        add_opinion_modifier = { target = GER modifier = AOEIW14_rhine_rapprochement }
+        GER = {
+            add_opinion_modifier = { target = FRA modifier = AOEIW14_rhine_rapprochement }
+            set_country_flag = AOEIW14_GER_paris_channel_accepted
+        }
+    }
+    option = {
+        name = aoeiw_phase14_ger.5.b
+        ai_chance = { factor = 4 }
+        GER = { add_opinion_modifier = { target = FRA modifier = AOEIW14_treaty_rejected } }
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_ger.6
+    title = aoeiw_phase14_ger.6.t
+    desc = aoeiw_phase14_ger.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_ger.6.a
+        ai_chance = { factor = 8 }
+        add_ideas = AOEIW14_AUS_vienna_consultation
+        add_opinion_modifier = { target = GER modifier = AOEIW14_vienna_consultation }
+        GER = {
+            add_opinion_modifier = { target = AUS modifier = AOEIW14_vienna_consultation }
+            set_country_flag = AOEIW14_GER_vienna_consultation_accepted
+        }
+    }
+    option = {
+        name = aoeiw_phase14_ger.6.b
+        ai_chance = { factor = 2 }
+        GER = { add_opinion_modifier = { target = AUS modifier = AOEIW14_treaty_rejected } }
+    }
+}

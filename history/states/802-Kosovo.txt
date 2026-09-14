@@ -1,0 +1,30 @@
+state={
+	id=802
+	name="STATE_802"
+	provinces={
+		6940 9849 9874 
+	}
+	
+	history = {
+		victory_points = {
+			9874 3
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+
+
+		add_claim_by = ALB
+		add_to_array = { state_victory_points = 9874 }
+        owner = YUG
+        add_core_of = YUG
+    }
+	
+	manpower=414048
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,29 @@
+AOEIW37_WORLD_FRA_reformed_union_policy = {
+    allowed = { original_tag = FRA }
+    enable = { OR = { has_country_flag = AOEIW37_WORLD_reformed_compact has_country_flag = AOEIW37_WORLD_directed_compact_policy } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = MLI value = 80 }
+    ai_strategy = { type = protect id = VIN value = 80 }
+    ai_strategy = { type = befriend id = MLI value = 60 }
+    ai_strategy = { type = befriend id = VIN value = 60 }
+}
+
+AOEIW37_WORLD_SOV_reformed_union_policy = {
+    allowed = { original_tag = SOV }
+    enable = { OR = { has_country_flag = AOEIW37_WORLD_reformed_compact has_country_flag = AOEIW37_WORLD_directed_compact_policy } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = UKR value = 80 }
+    ai_strategy = { type = protect id = GEO value = 70 }
+    ai_strategy = { type = protect id = KAZ value = 70 }
+    ai_strategy = { type = befriend id = UKR value = 60 }
+    ai_strategy = { type = befriend id = GEO value = 50 }
+    ai_strategy = { type = befriend id = KAZ value = 50 }
+}
+
+AOEIW37_WORLD_POR_reformed_union_policy = {
+    allowed = { original_tag = POR }
+    enable = { OR = { has_country_flag = AOEIW37_WORLD_reformed_compact has_country_flag = AOEIW37_WORLD_directed_compact_policy } }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = protect id = BRA value = 90 }
+    ai_strategy = { type = befriend id = BRA value = 70 }
+}

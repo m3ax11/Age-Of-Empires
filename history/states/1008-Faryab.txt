@@ -1,0 +1,30 @@
+
+state={
+	id=1008
+	name="STATE_1008"
+	manpower = 1181935
+	
+	state_category = rural
+	
+	history = {
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7448 1
+		}
+
+		add_claim_by = TMS
+		add_claim_by = UZB
+		add_to_array = { state_victory_points = 7448 }
+        owner = PER
+        add_core_of = PER
+    }
+
+	provinces={
+		10476 7448 10896 12877 7584 
+	}
+
+	local_supplies=0.0
+}

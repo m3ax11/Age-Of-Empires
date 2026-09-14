@@ -1,0 +1,22 @@
+units = {
+    fleet = {
+        name = "ROM National Fleet"
+        naval_base = 657
+        task_force = {
+            name = "ROM Main Fleet"
+            location = 657
+            ship = { name = "ROM Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Cruiser Class" } } }
+            ship = { name = "ROM Cruiser 02" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Cruiser Class" } } }
+            ship = { name = "ROM Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Destroyer Class" } } }
+            ship = { name = "ROM Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Submarine Class" } } }
+            ship = { name = "ROM Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Submarine Class" } } }
+            ship = { name = "ROM Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ROM version_name = "AOEIW ROM Submarine Class" } } }
+        }
+    }
+}

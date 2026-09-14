@@ -1,0 +1,36 @@
+state={
+	id=902
+	name="STATE_902"
+	manpower = 8247392
+	state_category = town
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 4972 }
+		add_to_array = { state_victory_points = 2025 }
+		add_to_array = { state_victory_points = 1891 }
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4972 5
+		}
+		victory_points = {
+			2025 1
+		}
+		victory_points = {
+			1891 1 # Sokoto
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+
+	provinces={
+		1891 1932 1969 2025 4938 4972 8021 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

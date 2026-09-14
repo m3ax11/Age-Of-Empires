@@ -1,0 +1,64 @@
+ideas = {
+    country = {
+        AOEIW10_AUS_federal_compact = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0400
+                production_speed_buildings_factor = 0.0300
+                political_power_factor = -0.0300
+            }
+        }
+        AOEIW10_AUS_central_service = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0800
+                consumer_goods_factor = -0.0100
+                stability_factor = -0.0200
+            }
+        }
+        AOEIW10_BEL_social_compact = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0400
+                production_speed_industrial_complex_factor = 0.0400
+                industrial_capacity_factory = -0.0200
+            }
+        }
+        AOEIW10_BEL_industrial_discipline = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0500
+                production_factory_efficiency_gain_factor = 0.0400
+                stability_factor = -0.0300
+            }
+        }
+        AOEIW10_POL_parliamentary_credit = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0400
+                production_speed_industrial_complex_factor = 0.0350
+                consumer_goods_factor = 0.0100
+            }
+        }
+        AOEIW10_POL_royal_treasury = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0700
+                production_speed_arms_factory_factor = 0.0400
+                stability_factor = -0.0200
+            }
+        }
+    }
+}

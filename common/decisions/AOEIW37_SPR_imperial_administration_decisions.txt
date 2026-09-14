@@ -1,0 +1,229 @@
+AOEIW37_SPR_imperial_administration_category = {
+    AOEIW37_SPR_underwrite_buenos_aires_railways = {
+        icon = generic_industry
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = {
+            has_country_flag = AOEIW37_SPR_imperial_congress_opened
+            NOT = { has_country_flag = AOEIW37_SPR_buenos_aires_railways_done }
+        }
+        available = { ARG = { exists = yes is_subject_of = SPR } }
+        fire_only_once = yes
+        complete_effect = {
+            ARG = {
+                capital_scope = {
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+                add_stability = 0.01
+                add_autonomy_ratio = { value = 0.03 localization = AOEIW37_SPR_development_autonomy }
+            }
+            set_country_flag = AOEIW37_SPR_buenos_aires_railways_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    AOEIW37_SPR_fund_andean_mining_corps = {
+        icon = generic_industry
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = {
+            has_country_flag = AOEIW37_SPR_imperial_congress_opened
+            NOT = { has_country_flag = AOEIW37_SPR_andean_mining_done }
+        }
+        available = { PRU = { exists = yes is_subject_of = SPR } }
+        fire_only_once = yes
+        complete_effect = {
+            PRU = {
+                capital_scope = {
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+                add_stability = 0.01
+                add_autonomy_ratio = { value = 0.03 localization = AOEIW37_SPR_development_autonomy }
+            }
+            add_tech_bonus = { name = AOEIW37_SPR_imperial_mining bonus = 0.5 uses = 1 category = excavation_tech }
+            set_country_flag = AOEIW37_SPR_andean_mining_done
+        }
+        ai_will_do = { factor = 8 }
+    }
+
+    AOEIW37_SPR_convene_american_cabinet = {
+        icon = generic_political_discourse
+        cost = 40
+        days_re_enable = 180
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW37_SPR_american_cabinet_established }
+        available = {
+            has_war = no
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        complete_effect = { country_event = { id = AOEIW37_spr.5 hours = 6 } }
+        ai_will_do = { factor = 5 modifier = { factor = 1.5 has_stability < 0.60 } }
+    }
+
+    AOEIW37_SPR_hold_imperial_manoeuvres = {
+        icon = generic_army_support
+        cost = 25
+        days_re_enable = 180
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW37_SPR_imperial_defence_board_formed }
+        available = {
+            command_power > 14.9
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        complete_effect = {
+            add_command_power = -15
+            army_experience = 8
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { army_experience = 8 add_war_support = 0.01 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { army_experience = 8 add_war_support = 0.01 } }
+        }
+        ai_will_do = { factor = 6 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW37_SPR_mobilise_the_two_viceroyalties = {
+        icon = generic_army_support
+        cost = 50
+        allowed = { original_tag = SPR }
+        visible = {
+            has_country_flag = AOEIW37_SPR_imperial_defence_board_formed
+            NOT = { has_country_flag = AOEIW37_SPR_imperial_wartime_mobilised }
+        }
+        available = {
+            has_war = yes
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = AOEIW37_SPR_imperial_wartime_mobilised
+            add_dynamic_modifier = { modifier = AOEIW37_SPR_imperial_war_cabinet }
+            add_manpower = 50000
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.16 hours = 6 } } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.16 hours = 12 } } }
+        }
+        ai_will_do = { factor = 20 }
+    }
+
+    AOEIW37_SPR_issue_reconstruction_bonds = {
+        icon = generic_industry
+        cost = 45
+        days_re_enable = 365
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW37_SPR_postwar_concord_chosen }
+        available = {
+            has_war = no
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        complete_effect = {
+            add_stability = 0.01
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_political_power = 25 add_stability = 0.01 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_political_power = 25 add_stability = 0.01 } }
+        }
+        ai_will_do = { factor = 8 modifier = { factor = 1.5 has_stability < 0.65 } }
+    }
+
+    AOEIW37_SPR_rotate_imperial_staff_colleges = {
+        icon = generic_army_support
+        cost = 30
+        days_re_enable = 365
+        allowed = { original_tag = SPR }
+        visible = { has_country_flag = AOEIW37_SPR_permanent_staff_chosen }
+        available = {
+            command_power > 14.9
+            OR = {
+                ARG = { exists = yes is_subject_of = SPR }
+                PRU = { exists = yes is_subject_of = SPR }
+            }
+        }
+        complete_effect = {
+            add_command_power = -15
+            army_experience = 10
+            if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { army_experience = 10 add_war_support = 0.01 } }
+            if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { army_experience = 10 add_war_support = 0.01 } }
+        }
+        ai_will_do = { factor = 8 modifier = { factor = 1.5 has_war = yes } }
+    }
+
+    AOEIW37_SPR_convene_postwar_congress = {
+        icon = generic_political_discourse
+        cost = 35
+        allowed = { original_tag = SPR }
+        visible = {
+            has_country_flag = AOEIW37_SPR_imperial_wartime_mobilised
+            NOT = { has_country_flag = AOEIW37_SPR_postwar_congress_held }
+        }
+        available = { has_war = no }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = AOEIW37_SPR_postwar_congress_held
+            country_event = { id = AOEIW37_spr.6 hours = 6 }
+        }
+        ai_will_do = { factor = 20 }
+    }
+
+    AOEIW37_ARG_petition_the_crown = {
+        icon = generic_political_address
+        cost = 30
+        days_re_enable = 365
+        allowed = { original_tag = ARG }
+        visible = { has_country_flag = AOEIW37_SPR_cadiz_delegate }
+        available = { is_subject_of = SPR has_war = no }
+        complete_effect = { overlord = { country_event = { id = AOEIW37_spr.7 hours = 6 } } }
+        ai_will_do = { factor = 4 modifier = { factor = 1.5 has_stability < 0.60 } }
+    }
+
+    AOEIW37_PRU_petition_the_crown = {
+        icon = generic_political_address
+        cost = 30
+        days_re_enable = 365
+        allowed = { original_tag = PRU }
+        visible = { has_country_flag = AOEIW37_SPR_cadiz_delegate }
+        available = { is_subject_of = SPR has_war = no }
+        complete_effect = { overlord = { country_event = { id = AOEIW37_spr.8 hours = 6 } } }
+        ai_will_do = { factor = 4 modifier = { factor = 1.5 has_stability < 0.60 } }
+    }
+
+    AOEIW37_SPR_raise_imperial_regiments = {
+        icon = generic_army_support
+        cost = 25
+        days_re_enable = 180
+        allowed = { OR = { original_tag = ARG original_tag = PRU } }
+        visible = {
+            has_country_flag = AOEIW37_SPR_cadiz_delegate
+            overlord = { has_country_flag = AOEIW37_SPR_imperial_defence_board_formed }
+        }
+        available = { is_subject_of = SPR }
+        complete_effect = {
+            army_experience = 10
+            add_war_support = 0.02
+            add_stability = -0.01
+            add_autonomy_ratio = { value = -0.03 localization = AOEIW37_SPR_defence_contribution }
+        }
+        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = yes } }
+    }
+
+    AOEIW37_SPR_assert_local_procurement = {
+        icon = generic_industry
+        cost = 30
+        days_re_enable = 180
+        allowed = { OR = { original_tag = ARG original_tag = PRU } }
+        visible = { has_country_flag = AOEIW37_SPR_cadiz_delegate }
+        available = { is_subject_of = SPR }
+        complete_effect = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 200 producer = ROOT }
+            army_experience = 5
+            add_autonomy_ratio = { value = 0.03 localization = AOEIW37_SPR_local_procurement }
+        }
+        ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } }
+    }
+}

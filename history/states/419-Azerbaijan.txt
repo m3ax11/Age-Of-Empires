@@ -1,0 +1,30 @@
+
+state={
+	id=419
+	name="STATE_419"
+	resources = { # ported here from base game state 1000 east Azerbaijan as we don't have that one.
+		steel = 1 # base was 6 reduced to 1 for local activities but sources are poor.
+	}
+	history = {
+
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			1896 10 
+		}
+
+
+		add_to_array = { state_victory_points = 1896 }
+        owner = PER
+        add_core_of = PER
+    }
+
+	provinces={
+		1896 2071 4755 4825 12793 12861 13120 
+	}
+	manpower=931714
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=4.000
+}

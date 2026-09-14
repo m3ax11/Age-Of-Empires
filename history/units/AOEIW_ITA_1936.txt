@@ -1,0 +1,97 @@
+division_template = {
+ name = "Italy Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Italy Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "ITA Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "ITA Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "ITA Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Italy Infantry Division" location = 10007 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Italy Infantry Division" location = 6606 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Italy Infantry Division" location = 6793 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Italy Infantry Division" location = 9752 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Italy Infantry Division" location = 12766 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Italy Infantry Division" location = 13250 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Italy Infantry Division" location = 12723 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Italy Infantry Division" location = 925 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Italy Infantry Division" location = 9904 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Italy Infantry Division" location = 11846 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Italy Infantry Division" location = 13413 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Italy Infantry Division" location = 12991 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Italy Infantry Division" location = 10007 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Italy Infantry Division" location = 6606 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Italy Infantry Division" location = 6793 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Italy Infantry Division" location = 9752 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Italy Infantry Division" location = 12766 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Italy Infantry Division" location = 13250 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Italy Infantry Division" location = 12723 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Italy Infantry Division" location = 925 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Italy Infantry Division" location = 9904 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Italy Infantry Division" location = 11846 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Italy Infantry Division" location = 13413 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Italy Infantry Division" location = 12991 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Italy Infantry Division" location = 10007 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Italy Infantry Division" location = 6606 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Italy Infantry Division" location = 6793 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Italy Infantry Division" location = 9752 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Italy Infantry Division" location = 12766 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Italy Infantry Division" location = 13250 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Italy Infantry Division" location = 12723 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Italy Infantry Division" location = 925 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Italy Infantry Division" location = 9904 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Italy Infantry Division" location = 11846 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Italy Infantry Division" location = 13413 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Italy Infantry Division" location = 12991 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Italy Infantry Division" location = 10007 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Italy Infantry Division" location = 6606 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Italy Infantry Division" location = 6793 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Italy Infantry Division" location = 9752 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. Italy Infantry Division" location = 12766 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. Italy Infantry Division" location = 13250 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. Italy Infantry Division" location = 12723 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. Italy Infantry Division" location = 925 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. Italy Infantry Division" location = 9904 division_template = "Italy Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Italy Mobile Division" location = 11846 division_template = "Italy Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Italy Mobile Division" location = 13413 division_template = "Italy Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. Italy Mobile Division" location = 12991 division_template = "Italy Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. Italy Mobile Division" location = 10007 division_template = "Italy Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. ITA Rapid Division" location = 10007 division_template = "ITA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. ITA Rapid Division" location = 10007 division_template = "ITA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. ITA Rapid Division" location = 10007 division_template = "ITA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. ITA Mountain Division" location = 10007 division_template = "ITA Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+ division = { name = "1. ITA Marine Division" location = 10007 division_template = "ITA Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

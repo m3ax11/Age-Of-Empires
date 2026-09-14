@@ -1,0 +1,298 @@
+ideas = {
+    country = {
+        AOEIW11_strategic_foreign_office = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0300
+                trade_opinion_factor = 0.1000
+            }
+        }
+        AOEIW11_trade_protocols = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.0300
+                consumer_goods_factor = -0.0050
+            }
+        }
+        AOEIW11_economic_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0300
+                intel_network_gain_factor = 0.0500
+                trade_opinion_factor = -0.0500
+            }
+        }
+        AOEIW_STRUCT_FRA_rhine_commercial_system = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                trade_opinion_factor = 0.0800
+                production_factory_efficiency_gain_factor = 0.0500
+                production_speed_infrastructure_factor = 0.0800
+            }
+        }
+        AOEIW_STRUCT_FRA_rhine_military_posture = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.0400
+                supply_consumption_factor = -0.0400
+                production_speed_bunker_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_FRA_mediterranean_commercial_system = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_dockyard = 0.0600
+                trade_opinion_factor = 0.0800
+                consumer_goods_factor = -0.0100
+            }
+        }
+        AOEIW_STRUCT_FRA_mediterranean_military_posture = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                navy_org_factor = 0.0400
+                air_mission_efficiency = 0.0400
+                production_speed_naval_base_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_atlantic_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                convoy_escort_efficiency = 0.0800
+                production_speed_radar_station_factor = 0.1500
+                decryption_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_atlantic_commercial_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.0500
+                political_power_factor = 0.0300
+                production_speed_industrial_complex_factor = 0.0800
+            }
+        }
+        AOEIW_STRUCT_USA_pacific_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                sortie_efficiency = 0.0800
+                air_mission_efficiency = 0.0400
+                production_speed_air_base_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_pacific_commercial_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_dockyard = 0.0600
+                local_resources_factor = 0.0600
+                production_speed_dockyard_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_USA_arsenal_of_the_republic = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0500
+                production_factory_max_efficiency_factor = 0.0500
+                supply_consumption_factor = -0.0300
+            }
+        }
+        AOEIW_STRUCT_ENG_atlantic_admiralty_mission = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                convoy_escort_efficiency = 0.0800
+                naval_detection = 0.0600
+                naval_coordination = 0.0500
+            }
+        }
+        AOEIW_STRUCT_ENG_imperial_preference = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_dockyard_factor = 0.1000
+                subjects_autonomy_gain = -0.1000
+                trade_opinion_factor = 0.0800
+            }
+        }
+        AOEIW_STRUCT_ENG_continental_expedition = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.0600
+                land_reinforce_rate = 0.0100
+                army_defence_factor = 0.0400
+            }
+        }
+        AOEIW_STRUCT_ENG_ministry_of_economic_warfare = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                intel_network_gain_factor = 0.0800
+                industrial_capacity_factory = 0.0500
+                war_support_factor = 0.0400
+            }
+        }
+        AOEIW11_cooperative_security = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0150
+                planning_speed = 0.0300
+                army_org_factor = 0.0100
+            }
+        }
+        AOEIW11_strategic_pressure = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0200
+                planning_speed = 0.0400
+                intel_network_gain_factor = 0.0500
+            }
+        }
+        AOEIW11_arbitration_framework = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.0200
+                political_power_factor = 0.0200
+            }
+        }
+        AOEIW11_grand_strategy = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                max_command_power = 10
+                planning_speed = 0.0300
+            }
+        }
+        AOEIW11_faction_leadership = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                command_power_gain_mult = 0.0500
+                political_power_factor = 0.0300
+            }
+        }
+        AOEIW11_faction_coordination = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.0300
+                land_reinforce_rate = 0.0100
+            }
+        }
+        AOEIW11_POL_reichspakt_integration = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0300
+                army_org_factor = 0.0100
+                stability_factor = 0.0100
+            }
+        }
+        AOEIW11_POL_negotiated_autonomy = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.0500
+                research_speed_factor = 0.0200
+                consumer_goods_factor = 0.0050
+            }
+        }
+        AOEIW11_POL_sovereign_reconstruction = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.0400
+                political_power_factor = 0.0400
+                stability_factor = -0.0200
+            }
+        }
+        AOEIW_STRUCT_SOV_german_railway_mobilisation = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_rail_way_factor = 0.1500
+                production_lack_of_resource_penalty_factor = -0.0500
+                fuel_gain_factor = 0.0500
+            }
+        }
+        AOEIW_STRUCT_SOV_winter_frontier_staff = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                winter_attrition_factor = -0.1200
+                army_speed_factor = 0.0400
+                org_loss_when_moving = -0.0800
+            }
+        }
+        AOEIW_STRUCT_SOV_black_sea_export_corridor = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = 0.0600
+                trade_opinion_factor = 0.0800
+                production_speed_rail_way_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_SOV_sevastopol_mine_command = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                naval_mines_damage_factor = 0.1000
+                navy_fuel_consumption_factor = -0.0600
+                repair_speed_factor = 0.1000
+            }
+        }
+        AOEIW_STRUCT_SOV_industrial_colossus = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.0500
+                local_resources_factor = 0.0600
+                production_speed_rail_way_factor = 0.1000
+            }
+        }
+    }
+}

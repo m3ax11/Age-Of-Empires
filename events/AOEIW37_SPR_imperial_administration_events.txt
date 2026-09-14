@@ -1,0 +1,549 @@
+add_namespace = AOEIW37_spr
+
+country_event = {
+    id = AOEIW37_spr.1
+    title = AOEIW37_spr.1.t
+    desc = AOEIW37_spr.1.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { original_tag = SPR }
+
+    option = {
+        name = AOEIW37_spr.1.a
+        set_country_flag = AOEIW37_SPR_congress_funded_development
+        add_political_power = -25
+        add_stability = 0.02
+    }
+    option = {
+        name = AOEIW37_spr.1.b
+        set_country_flag = AOEIW37_SPR_congress_prioritised_defence
+        add_command_power = 15
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.2
+    title = AOEIW37_spr.2.t
+    desc = AOEIW37_spr.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = ARG is_subject_of = SPR }
+
+    option = {
+        name = AOEIW37_spr.2.a
+        ai_chance = { base = 70 modifier = { factor = 1.5 has_stability > 0.60 } }
+        set_country_flag = AOEIW37_SPR_cadiz_delegate
+        set_country_flag = AOEIW37_SPR_cooperative_delegation
+        add_stability = 0.02
+        add_political_power = 35
+    }
+    option = {
+        name = AOEIW37_spr.2.b
+        ai_chance = { base = 30 modifier = { factor = 2 has_stability < 0.45 } }
+        set_country_flag = AOEIW37_SPR_cadiz_delegate
+        set_country_flag = AOEIW37_SPR_guarded_delegation
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_guarded_delegation_autonomy }
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.3
+    title = AOEIW37_spr.3.t
+    desc = AOEIW37_spr.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = PRU is_subject_of = SPR }
+
+    option = {
+        name = AOEIW37_spr.3.a
+        ai_chance = { base = 70 modifier = { factor = 1.5 has_stability > 0.60 } }
+        set_country_flag = AOEIW37_SPR_cadiz_delegate
+        set_country_flag = AOEIW37_SPR_cooperative_delegation
+        add_stability = 0.02
+        add_political_power = 35
+    }
+    option = {
+        name = AOEIW37_spr.3.b
+        ai_chance = { base = 30 modifier = { factor = 2 has_stability < 0.45 } }
+        set_country_flag = AOEIW37_SPR_cadiz_delegate
+        set_country_flag = AOEIW37_SPR_guarded_delegation
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_guarded_delegation_autonomy }
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.4
+    title = AOEIW37_spr.4.t
+    desc = AOEIW37_spr.4.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    trigger = { original_tag = SPR }
+
+    option = {
+        name = AOEIW37_spr.4.a
+        trigger = { has_country_flag = AOEIW37_SPR_charter_policy }
+        ai_chance = { base = 90 }
+        set_country_flag = AOEIW37_SPR_partnership_settlement
+        add_stability = 0.04
+        if = {
+            limit = { ARG = { exists = yes is_subject_of = SPR } }
+            ARG = {
+                remove_ideas = AOEIW37_SPR_subject_directorate
+                add_ideas = AOEIW37_SPR_subject_charter
+                add_autonomy_ratio = { value = 0.08 localization = AOEIW37_SPR_ratified_charter_autonomy }
+                add_stability = 0.03
+            }
+        }
+        if = {
+            limit = { PRU = { exists = yes is_subject_of = SPR } }
+            PRU = {
+                remove_ideas = AOEIW37_SPR_subject_directorate
+                add_ideas = AOEIW37_SPR_subject_charter
+                add_autonomy_ratio = { value = 0.08 localization = AOEIW37_SPR_ratified_charter_autonomy }
+                add_stability = 0.03
+            }
+        }
+    }
+    option = {
+        name = AOEIW37_spr.4.b
+        trigger = { has_country_flag = AOEIW37_SPR_directorate_policy }
+        ai_chance = { base = 90 }
+        set_country_flag = AOEIW37_SPR_directed_settlement
+        add_war_support = 0.04
+        add_command_power = 20
+        if = {
+            limit = { ARG = { exists = yes is_subject_of = SPR } }
+            ARG = {
+                remove_ideas = AOEIW37_SPR_subject_charter
+                add_ideas = AOEIW37_SPR_subject_directorate
+                add_autonomy_ratio = { value = -0.05 localization = AOEIW37_SPR_directed_settlement_autonomy }
+                add_stability = -0.02
+            }
+        }
+        if = {
+            limit = { PRU = { exists = yes is_subject_of = SPR } }
+            PRU = {
+                remove_ideas = AOEIW37_SPR_subject_charter
+                add_ideas = AOEIW37_SPR_subject_directorate
+                add_autonomy_ratio = { value = -0.05 localization = AOEIW37_SPR_directed_settlement_autonomy }
+                add_stability = -0.02
+            }
+        }
+    }
+    option = {
+        name = AOEIW37_spr.4.c
+        trigger = {
+            OR = {
+                ARG = { has_country_flag = AOEIW37_SPR_guarded_delegation }
+                PRU = { has_country_flag = AOEIW37_SPR_guarded_delegation }
+            }
+        }
+        ai_chance = { base = 20 modifier = { factor = 2 has_stability < 0.55 } }
+        set_country_flag = AOEIW37_SPR_partnership_settlement
+        clr_country_flag = AOEIW37_SPR_directed_settlement
+        remove_ideas = AOEIW37_SPR_directed_empire
+        remove_ideas = AOEIW37_SPR_chartered_empire
+        add_ideas = AOEIW37_SPR_chartered_empire
+        add_political_power = -75
+        add_stability = 0.02
+        if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { remove_ideas = AOEIW37_SPR_subject_directorate add_ideas = AOEIW37_SPR_subject_charter add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_emergency_compromise_autonomy } } }
+        if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { remove_ideas = AOEIW37_SPR_subject_directorate add_ideas = AOEIW37_SPR_subject_charter add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_emergency_compromise_autonomy } } }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.5
+    title = AOEIW37_spr.5.t
+    desc = AOEIW37_spr.5.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { original_tag = SPR }
+
+    option = {
+        name = AOEIW37_spr.5.a
+        trigger = { ARG = { exists = yes is_subject_of = SPR } }
+        ARG = {
+            add_political_power = 40
+            add_stability = 0.015
+            capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+    option = {
+        name = AOEIW37_spr.5.b
+        trigger = { PRU = { exists = yes is_subject_of = SPR } }
+        PRU = {
+            add_political_power = 40
+            add_stability = 0.015
+            capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+    option = {
+        name = AOEIW37_spr.5.c
+        add_stability = 0.015
+        if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_stability = 0.01 } }
+        if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_stability = 0.01 } }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.6
+    title = AOEIW37_spr.6.t
+    desc = AOEIW37_spr.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { original_tag = SPR has_war = no }
+
+    immediate = {
+        remove_dynamic_modifier = { modifier = AOEIW37_SPR_imperial_war_cabinet }
+        if = { limit = { ARG = { exists = yes } } ARG = { remove_dynamic_modifier = { modifier = AOEIW37_SPR_subject_wartime_mobilisation } remove_dynamic_modifier = { modifier = AOEIW37_SPR_subject_negotiated_mobilisation } } }
+        if = { limit = { PRU = { exists = yes } } PRU = { remove_dynamic_modifier = { modifier = AOEIW37_SPR_subject_wartime_mobilisation } remove_dynamic_modifier = { modifier = AOEIW37_SPR_subject_negotiated_mobilisation } } }
+    }
+    option = {
+        name = AOEIW37_spr.6.a
+        ai_chance = { base = 60 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_commonwealth_proclaimed } }
+        set_country_flag = AOEIW37_SPR_postwar_concord_chosen
+        add_ideas = AOEIW37_SPR_postwar_concord
+        add_stability = 0.04
+        if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { add_stability = 0.03 add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_postwar_demobilisation_autonomy } country_event = { id = AOEIW37_spr.18 hours = 6 } } }
+        if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { add_stability = 0.03 add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_postwar_demobilisation_autonomy } country_event = { id = AOEIW37_spr.18 hours = 12 } } }
+    }
+    option = {
+        name = AOEIW37_spr.6.b
+        ai_chance = { base = 40 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed } }
+        set_country_flag = AOEIW37_SPR_permanent_staff_chosen
+        add_ideas = AOEIW37_SPR_permanent_imperial_staff
+        add_war_support = 0.03
+        if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { army_experience = 15 add_war_support = 0.02 country_event = { id = AOEIW37_spr.18 hours = 6 } } }
+        if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { army_experience = 15 add_war_support = 0.02 country_event = { id = AOEIW37_spr.18 hours = 12 } } }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.7
+    title = AOEIW37_spr.7.t
+    desc = AOEIW37_spr.7.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SPR ARG = { exists = yes is_subject_of = SPR } }
+
+    option = {
+        name = AOEIW37_spr.7.a
+        ai_chance = { base = 65 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_charter_policy } }
+        ARG = {
+            capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            add_opinion_modifier = { target = SPR modifier = AOEIW14_autonomy_compromise }
+            add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_petition_granted_autonomy }
+            add_stability = 0.02
+        }
+        add_political_power = -25
+    }
+    option = {
+        name = AOEIW37_spr.7.b
+        ai_chance = { base = 35 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_directorate_policy } }
+        ARG = {
+            add_opinion_modifier = { target = SPR modifier = AOEIW14_treaty_rejected }
+            add_autonomy_ratio = { value = 0.07 localization = AOEIW37_SPR_petition_refused_autonomy }
+            add_stability = -0.02
+        }
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.14
+    title = AOEIW37_spr.14.t
+    desc = AOEIW37_spr.14.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = ARG original_tag = PRU }
+        is_subject_of = SPR
+    }
+
+    option = {
+        name = AOEIW37_spr.14.a
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_charter_policy } }
+        ai_chance = { base = 100 }
+        remove_ideas = AOEIW37_SPR_subject_directorate
+        add_ideas = AOEIW37_SPR_subject_charter
+        add_stability = 0.02
+        add_autonomy_ratio = { value = 0.03 localization = AOEIW37_SPR_provisional_charter_autonomy }
+    }
+    option = {
+        name = AOEIW37_spr.14.b
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_directorate_policy } }
+        ai_chance = { base = 100 }
+        remove_ideas = AOEIW37_SPR_subject_charter
+        add_ideas = AOEIW37_SPR_subject_directorate
+        add_opinion_modifier = { target = SPR modifier = AOEIW14_treaty_rejected }
+        add_stability = -0.01
+        add_war_support = 0.02
+        add_autonomy_ratio = { value = -0.03 localization = AOEIW37_SPR_provisional_directorate_autonomy }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.15
+    title = AOEIW37_spr.15.t
+    desc = AOEIW37_spr.15.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = ARG original_tag = PRU }
+        is_subject_of = SPR
+    }
+
+    option = {
+        name = AOEIW37_spr.15.a
+        ai_chance = { base = 70 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 1.5 has_country_flag = AOEIW37_SPR_cooperative_delegation } }
+        set_country_flag = AOEIW37_SPR_defence_board_committed
+        add_war_support = 0.02
+        army_experience = 5
+        add_autonomy_ratio = { value = -0.02 localization = AOEIW37_SPR_defence_board_service_autonomy }
+    }
+    option = {
+        name = AOEIW37_spr.15.b
+        ai_chance = { base = 30 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_guarded_delegation } }
+        set_country_flag = AOEIW37_SPR_defence_board_reserved
+        add_political_power = 30
+        add_autonomy_ratio = { value = 0.02 localization = AOEIW37_SPR_local_liaison_autonomy }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.16
+    title = AOEIW37_spr.16.t
+    desc = AOEIW37_spr.16.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = ARG original_tag = PRU }
+        is_subject_of = SPR
+        has_war = yes
+    }
+
+    option = {
+        name = AOEIW37_spr.16.a
+        ai_chance = { base = 70 modifier = { factor = 1.5 has_country_flag = AOEIW37_SPR_defence_board_committed } }
+        set_country_flag = AOEIW37_SPR_full_quota_accepted
+        add_dynamic_modifier = { modifier = AOEIW37_SPR_subject_wartime_mobilisation }
+        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 350 producer = SPR }
+        add_war_support = 0.03
+        add_autonomy_ratio = { value = -0.03 localization = AOEIW37_SPR_full_wartime_quota_autonomy }
+        overlord = { country_event = { id = AOEIW37_spr.17 hours = 6 } }
+    }
+    option = {
+        name = AOEIW37_spr.16.b
+        ai_chance = { base = 30 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_defence_board_reserved } }
+        set_country_flag = AOEIW37_SPR_negotiated_quota_accepted
+        add_dynamic_modifier = { modifier = AOEIW37_SPR_subject_negotiated_mobilisation }
+        add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 250 producer = SPR }
+        add_stability = 0.02
+        add_autonomy_ratio = { value = 0.03 localization = AOEIW37_SPR_negotiated_wartime_quota_autonomy }
+        overlord = { country_event = { id = AOEIW37_spr.17 hours = 6 } }
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.17
+    title = AOEIW37_spr.17.t
+    desc = AOEIW37_spr.17.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    trigger = { original_tag = SPR }
+
+    option = {
+        name = AOEIW37_spr.17.a
+        trigger = { FROM = { has_country_flag = AOEIW37_SPR_full_quota_accepted } }
+        FROM = { add_opinion_modifier = { target = SPR modifier = AOEIW14_constitutional_dialogue } }
+        add_command_power = 5
+        add_war_support = 0.01
+    }
+    option = {
+        name = AOEIW37_spr.17.b
+        trigger = { FROM = { has_country_flag = AOEIW37_SPR_negotiated_quota_accepted } }
+        FROM = { add_opinion_modifier = { target = SPR modifier = AOEIW14_treaty_rejected } }
+        add_political_power = -10
+        add_stability = 0.01
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.18
+    title = AOEIW37_spr.18.t
+    desc = AOEIW37_spr.18.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = ARG original_tag = PRU }
+        is_subject_of = SPR
+    }
+
+    option = {
+        name = AOEIW37_spr.18.a
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_postwar_concord_chosen } }
+        add_political_power = 35
+        add_stability = 0.02
+    }
+    option = {
+        name = AOEIW37_spr.18.b
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_permanent_staff_chosen } }
+        army_experience = 10
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.8
+    title = AOEIW37_spr.8.t
+    desc = AOEIW37_spr.8.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = { original_tag = SPR PRU = { exists = yes is_subject_of = SPR } }
+
+    option = {
+        name = AOEIW37_spr.8.a
+        ai_chance = { base = 65 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_charter_policy } }
+        PRU = {
+            capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+            add_opinion_modifier = { target = SPR modifier = AOEIW14_autonomy_compromise }
+            add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_petition_granted_autonomy }
+            add_stability = 0.02
+        }
+        add_political_power = -25
+    }
+    option = {
+        name = AOEIW37_spr.8.b
+        ai_chance = { base = 35 modifier = { factor = 2 has_country_flag = AOEIW37_SPR_directorate_policy } }
+        PRU = {
+            add_opinion_modifier = { target = SPR modifier = AOEIW14_treaty_rejected }
+            add_autonomy_ratio = { value = 0.07 localization = AOEIW37_SPR_petition_refused_autonomy }
+            add_stability = -0.02
+        }
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.9
+    title = AOEIW37_spr.9.t
+    desc = AOEIW37_spr.9.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    trigger = { original_tag = SPR }
+
+    immediate = {
+        if = { limit = { ARG = { exists = yes is_subject_of = SPR } } ARG = { country_event = { id = AOEIW37_spr.13 hours = 6 } } }
+        if = { limit = { PRU = { exists = yes is_subject_of = SPR } } PRU = { country_event = { id = AOEIW37_spr.13 hours = 12 } } }
+        if = { limit = { USA = { exists = yes } } USA = { country_event = { id = AOEIW37_spr.10 days = 2 } } }
+        if = { limit = { POR = { exists = yes } } POR = { country_event = { id = AOEIW37_spr.11 days = 2 } } }
+        if = { limit = { FRA = { exists = yes } } FRA = { country_event = { id = AOEIW37_spr.12 days = 2 } } }
+    }
+    option = {
+        name = AOEIW37_spr.9.a
+        add_political_power = 75
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.10
+    title = AOEIW37_spr.10.t
+    desc = AOEIW37_spr.10.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { original_tag = USA SPR = { exists = yes } }
+
+    option = {
+        name = AOEIW37_spr.10.a
+        ai_chance = { base = 65 modifier = { factor = 1.5 has_government = democratic } }
+        add_opinion_modifier = { target = SPR modifier = AOEIW14_constitutional_dialogue }
+        SPR = { add_opinion_modifier = { target = USA modifier = AOEIW14_constitutional_dialogue } }
+        add_political_power = 25
+    }
+    option = {
+        name = AOEIW37_spr.10.b
+        ai_chance = { base = 35 modifier = { factor = 2 has_war = yes } }
+        add_opinion_modifier = { target = SPR modifier = AOEIW_geopolitical_rivalry }
+        add_war_support = 0.03
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.11
+    title = AOEIW37_spr.11.t
+    desc = AOEIW37_spr.11.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { original_tag = POR SPR = { exists = yes } }
+
+    option = {
+        name = AOEIW37_spr.11.a
+        ai_chance = { base = 70 }
+        add_opinion_modifier = { target = SPR modifier = AOEIW_mediterranean_arbitration }
+        SPR = { add_opinion_modifier = { target = POR modifier = AOEIW_mediterranean_arbitration } }
+        add_stability = 0.02
+    }
+    option = {
+        name = AOEIW37_spr.11.b
+        ai_chance = { base = 30 modifier = { factor = 2 SPR = { has_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed } } }
+        add_opinion_modifier = { target = SPR modifier = AOEIW11_strategic_pressure_opinion }
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.12
+    title = AOEIW37_spr.12.t
+    desc = AOEIW37_spr.12.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { original_tag = FRA SPR = { exists = yes } }
+
+    option = {
+        name = AOEIW37_spr.12.a
+        ai_chance = { base = 55 modifier = { factor = 1.5 SPR = { has_country_flag = AOEIW37_SPR_commonwealth_proclaimed } } }
+        add_opinion_modifier = { target = SPR modifier = AOEIW14_constitutional_dialogue }
+        SPR = { add_opinion_modifier = { target = FRA modifier = AOEIW14_constitutional_dialogue } }
+        add_political_power = 25
+    }
+    option = {
+        name = AOEIW37_spr.12.b
+        ai_chance = { base = 45 modifier = { factor = 1.5 SPR = { has_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed } } }
+        add_opinion_modifier = { target = SPR modifier = AOEIW_geopolitical_rivalry }
+        add_war_support = 0.02
+    }
+}
+
+country_event = {
+    id = AOEIW37_spr.13
+    title = AOEIW37_spr.13.t
+    desc = AOEIW37_spr.13.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = {
+        OR = { original_tag = ARG original_tag = PRU }
+        is_subject_of = SPR
+    }
+
+    option = {
+        name = AOEIW37_spr.13.a
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_commonwealth_proclaimed } }
+        remove_ideas = AOEIW37_SPR_subject_directorate
+        add_ideas = AOEIW37_SPR_subject_charter
+        add_stability = 0.04
+        add_autonomy_ratio = { value = 0.05 localization = AOEIW37_SPR_commonwealth_ratification_autonomy }
+    }
+    option = {
+        name = AOEIW37_spr.13.b
+        trigger = { SPR = { has_country_flag = AOEIW37_SPR_two_ocean_crown_proclaimed } }
+        remove_ideas = AOEIW37_SPR_subject_charter
+        add_ideas = AOEIW37_SPR_subject_directorate
+        add_war_support = 0.04
+        army_experience = 15
+        add_autonomy_ratio = { value = -0.05 localization = AOEIW37_SPR_crown_service_autonomy }
+    }
+}

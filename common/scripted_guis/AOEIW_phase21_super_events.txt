@@ -1,0 +1,24 @@
+scripted_gui = {
+    AOEIW_phase21_super_events = {
+        context_type = player_context
+        window_name = "AOEIW_phase21_super_events"
+
+        visible = {
+            has_country_flag = AOEIW_super_event_visible
+        }
+
+        effects = {
+            super_event_close_click = {
+                clr_country_flag = AOEIW_super_event_visible
+            }
+        }
+
+        properties = {
+            super_event_image = {
+                image = "[GetAOEIW21SuperEventImage]"
+            }
+        }
+
+        ai_enabled = { always = no }
+    }
+}

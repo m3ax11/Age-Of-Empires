@@ -1,0 +1,760 @@
+defined_text = {
+	name = GetAmanullahVisitCairo
+	text = {
+		trigger = {
+			AFG = {
+				has_country_leader = {
+					character = AFG_amanullah_khan
+					ruling_only = yes
+				}
+			}
+			EGY = {
+				has_country_leader = {
+					character = EGY_farouk_i
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = GFX_report_event_AFG_amnullah_visits_cairo_farouk
+	}	
+	text = {
+		localization_key = GFX_report_event_AFG_amnullah_visits_cairo
+	}	
+}
+
+defined_text = {
+	name = GetAmanullahVisitRome
+	text = {
+		trigger = {
+			AFG = {
+				has_country_leader = {
+					character = AFG_amanullah_khan
+					ruling_only = yes
+				}
+			}
+			ITA = {
+				OR = {
+					OR = {
+						has_idea = vittorio_emanuele
+						has_idea = vittorio_emanuele_emperor_of_ethiopia
+						has_idea = vittorio_emanuele_albania_ethiopia
+						has_idea = vittorio_emanuele_king_of_albania
+					}
+					has_country_leader = {
+						character = ITA_vittorio_emanuele_iii
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = GFX_report_event_AFG_amnullah_visits_rome_vittorio
+	}	
+	text = {
+		localization_key = GFX_report_event_AFG_amnullah_visits_rome
+	}	
+}
+
+defined_text = {
+	name = GetAmanullahVisitTurkey
+	text = {
+		trigger = {
+			AFG = {
+				has_country_leader = {
+					character = AFG_amanullah_khan
+					ruling_only = yes
+				}
+			}
+			TUR = {
+				OR = {
+					has_idea = TUR_mustafa_kemal_ataturk_figurehead
+					has_country_leader = {
+						character = TUR_mustafa_kemal_ataturk
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = GFX_report_event_AFG_amnullah_visits_turkey
+	}	
+	text = {
+		localization_key = GFX_report_event_AFG_amnullah_khan
+	}	
+}
+
+defined_text = {
+	name = GetAfghanArmyFocusName
+	text = {
+		trigger = {
+			AFG = {
+				has_government = neutrality
+				OR = {
+					has_country_leader = {
+						character = AFG_mohammed_zahir_shah
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_amanullah_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_hashim_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_sardar_shah_mahmud_khan
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = AFG_afghan_royal_army_army
+	}	
+	text = {
+		localization_key = AFG_afghan_army_focus
+	}	
+}
+
+defined_text = {
+	name = GetAfghanArmyFocusDesc
+	text = {
+		trigger = {
+			AFG = {
+				has_government = neutrality
+				OR = {
+					has_country_leader = {
+						character = AFG_mohammed_zahir_shah
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_amanullah_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_hashim_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_sardar_shah_mahmud_khan
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = AFG_afghan_royal_army_army_desc
+	}	
+	text = {
+		localization_key = AFG_afghan_army_focus_desc
+	}	
+}
+
+defined_text = {
+	name = GetAfghanAirFocusName
+	text = {
+		trigger = {
+			AFG = {
+				has_government = neutrality
+				OR = {
+					has_country_leader = {
+						character = AFG_mohammed_zahir_shah
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_amanullah_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_hashim_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_sardar_shah_mahmud_khan
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = AFG_royal_air_force_royal
+	}	
+	text = {
+		localization_key = AFG_air_force_focus
+	}	
+}
+
+defined_text = {
+	name = GetAfghanAirFocusDesc
+	text = {
+		trigger = {
+			AFG = {
+				has_government = neutrality
+				OR = {
+					has_country_leader = {
+						character = AFG_mohammed_zahir_shah
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_amanullah_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_hashim_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_sardar_shah_mahmud_khan
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = AFG_royal_air_force_royal_desc
+	}	
+	text = {
+		localization_key = AFG_air_force_focus_desc
+	}	
+}
+
+defined_text = {
+	name = GetAfghanNavyFocusName
+	text = {
+		trigger = {
+			AFG = {
+				has_government = neutrality
+				OR = {
+					has_country_leader = {
+						character = AFG_mohammed_zahir_shah
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_amanullah_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_hashim_khan
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = AFG_sardar_shah_mahmud_khan
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = "Royal [AFG.GetAdjective] Navy"
+	}	
+	text = {
+		localization_key = "[AFG.GetAdjective] Navy"
+	}	
+}
+
+defined_text = {
+	name = GetLoyaJirgaEventDesc
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					AFG_loya_jirga_good_var > AFG_loya_jirga_bad_var
+				}
+				AND = {
+					check_variable = {
+						AFG_loya_jirga_good_var = AFG_loya_jirga_bad_var
+					}
+					has_power_balance_modifier = {
+						id = AFG_power_balance
+						modifier = r56_AFG_bop_left
+					}
+				}
+			}
+		}
+		localization_key = AFG_loya_jirga_good
+	}	
+	text = {
+		localization_key = AFG_loya_jirga_bad
+	}	
+}
+
+defined_text = {
+	name = GetPahlaviAttitudeStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_pahlavi_attitude
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = AFG_pahlavi_attitude_status_peaceful
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_pahlavi_attitude
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = AFG_pahlavi_attitude_status_calm
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_pahlavi_attitude
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = AFG_pahlavi_attitude_status_steady
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_pahlavi_attitude
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = AFG_pahlavi_attitude_status_hostile
+	}
+}
+
+defined_text = {
+	name = GetTudehAttitudeStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_tudeh_attitude
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = AFG_tudeh_attitude_status_peaceful
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_tudeh_attitude
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = AFG_tudeh_attitude_status_calm
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_tudeh_attitude
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = AFG_tudeh_attitude_status_steady
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_tudeh_attitude
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = AFG_tudeh_attitude_status_hostile
+	}
+}
+
+defined_text = {
+	name = GetElectionFreedom
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_election_freedom
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = AFG_election_freedom_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_election_freedom
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = AFG_election_freedom_limited
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_election_freedom
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = AFG_election_freedom_high
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = AFG.AFG_election_freedom
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = AFG_election_freedom_free_and_fair
+	}
+}
+
+defined_text = {
+	name = GetElectionFreedom
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 0 }
+		}
+		localization_key = AFG_election_freedom_low
+	}
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 1 }
+		}
+		localization_key = AFG_election_freedom_limited
+	}
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 2 }
+		}
+		localization_key = AFG_election_freedom_high
+	}
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 3 }
+		}
+		localization_key = AFG_election_freedom_free_and_fair
+	}
+}
+
+defined_text = {
+	name = GetNextElectionFreedom
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 0 }
+		}
+		localization_key = AFG_election_freedom_limited
+	}
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 1 }
+		}
+		localization_key = AFG_election_freedom_high
+	}
+	text = {
+		trigger = {
+			check_variable = { AFG_election_freedom = 2 }
+		}
+		localization_key = AFG_election_freedom_free_and_fair
+	}
+}
+
+defined_text = {
+	name = GetElectionWinner
+	text = {
+		trigger = {
+			AFG = {
+				neutrality < AFG.party_popularity@democratic
+			}
+		}
+		localization_key = AFG_fatherland_party_victory
+	}
+	text = {
+		trigger = {
+			AFG = {
+				neutrality > AFG.party_popularity@democratic
+			}
+		}
+		localization_key = AFG_conservative_victory
+	}
+}
+
+defined_text = {
+	name = GetWarName
+	text = {
+		trigger = {
+			ENG = {
+				exists = yes
+				RAJ = {
+					is_ally_with = ENG
+				}
+			}
+			RAJ = {
+				OR = {
+					is_subject_of = ENG
+					has_cosmetic_tag = RAJ_UK
+				}
+				AND = {
+					owns_state = 442
+					owns_state = 444
+					owns_state = 445
+				}
+			}
+		}
+		localization_key = "4th Anglo-Afghan War"
+	}
+	text = {
+		localization_key = "[442.Owner.GetAdjective]-[AFG.GetAdjective] War"
+	}
+}
+
+defined_text = {
+	name = GetCorrectAdjective
+	text = {
+		trigger = {
+			AFG = {
+				has_completed_focus = AFG_approach_pakistani_resistance
+			}
+		}
+		localization_key = "[PAK.GetAdjective]"
+	}	
+	text = {
+		localization_key = "Pashtun"
+	}	
+}
+
+defined_text = {
+	name = GetIlliteracyVisibility
+	text = {
+		trigger = {
+			has_completed_focus = AFG_rural_schools
+		}
+		localization_key = "" #empty
+	}
+	text = {
+		localization_key = AFG_illiteracy_remove_tt
+	}
+}
+
+defined_text = {
+	name = GetSovAttitude
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance < 29 }
+		}
+		localization_key = AFG_ATTITUDE_HOSTILE
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 29 }
+			check_variable = { r56_SOV_opinion_balance < 60 }
+		}
+		localization_key = AFG_ATTITUDE_DISTRUSTFUL
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 59 }
+			check_variable = { r56_SOV_opinion_balance < 90 }
+		}
+		localization_key = AFG_ATTITUDE_CAUTIOUS
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 89 }
+			check_variable = { r56_SOV_opinion_balance < 110 }
+		}
+		localization_key = AFG_ATTITUDE_NEUTRAL
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 109 }
+			check_variable = { r56_SOV_opinion_balance < 140 }
+		}
+		localization_key = AFG_ATTITUDE_COOPERATIVE
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 139 }
+			check_variable = { r56_SOV_opinion_balance < 170 }
+		}
+		localization_key = AFG_ATTITUDE_FRIENDLY
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_opinion_balance > 169 }
+		}
+		localization_key = AFG_ATTITUDE_HARMONIOUS
+	}
+}
+
+defined_text = {
+	name = GetEngAttitude
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance < 29 }
+		}
+		localization_key = AFG_ATTITUDE_HOSTILE
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 29 }
+			check_variable = { r56_ENG_opinion_balance < 60 }
+		}
+		localization_key = AFG_ATTITUDE_DISTRUSTFUL
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 59 }
+			check_variable = { r56_ENG_opinion_balance < 90 }
+		}
+		localization_key = AFG_ATTITUDE_CAUTIOUS
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 89 }
+			check_variable = { r56_ENG_opinion_balance < 110 }
+		}
+		localization_key = AFG_ATTITUDE_NEUTRAL
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 109 }
+			check_variable = { r56_ENG_opinion_balance < 140 }
+		}
+		localization_key = AFG_ATTITUDE_COOPERATIVE
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 139 }
+			check_variable = { r56_ENG_opinion_balance < 170 }
+		}
+		localization_key = AFG_ATTITUDE_FRIENDLY
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_opinion_balance > 169 }
+		}
+		localization_key = AFG_ATTITUDE_HARMONIOUS
+	}
+}
+
+defined_text = {
+	name = GetSovUnion
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		localization_key = "the Soviet Union"
+	}
+	text = {
+		localization_key = "[SOV.GetNameDef]"
+	}
+}
+
+defined_text = {
+	name = GetEngKingdom
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+		}
+		localization_key = "the United Kingdom"
+	}
+	text = {
+		localization_key = "[ENG.GetNameDef]"
+	}
+}
+
+defined_text = {
+	name = GetEcoName
+	text = {
+		trigger = {
+			OR = {
+				has_idea = AFG_decentralized_economy
+				has_idea = AFG_decentralized_economy_1
+				has_idea = AFG_decentralized_economy_2
+			}
+		}
+		localization_key = "Neglected Economy"
+	}
+	text = {
+		localization_key = "Developing Economy"
+	}
+}
+
+defined_text = {
+	name = GetSovIntelPercentage
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_intel_prediction = 0 }
+		}
+		localization_key = AFG_intel_prediction_0
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_SOV_intel_prediction = 100 }
+		}
+		localization_key = AFG_intel_prediction_100
+	}
+	text = {
+		localization_key = AFG_SOV_intel_prediction_tt
+	}
+}
+
+defined_text = {
+	name = GetEngIntelPercentage
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_intel_prediction = 0 }
+		}
+		localization_key = AFG_intel_prediction_0
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_ENG_intel_prediction = 100 }
+		}
+		localization_key = AFG_intel_prediction_100
+	}
+	text = {
+		localization_key = AFG_ENG_intel_prediction_tt
+	}
+}
+
+defined_text = {
+	name = GetAfgIntelSov
+	text = {
+		trigger = {
+			check_variable = { r56_AFG_SOV_intel = 0 }
+		}
+		localization_key = AFG_intel_prediction_0
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_AFG_SOV_intel = 100 }
+		}
+		localization_key = AFG_intel_prediction_100
+	}
+	text = {
+		localization_key = AFG_intel_SOV_tt
+	}
+}
+
+defined_text = {
+	name = GetAfgIntelEng
+	text = {
+		trigger = {
+			check_variable = { r56_AFG_ENG_intel = 0 }
+		}
+		localization_key = AFG_intel_prediction_0
+	}
+	text = {
+		trigger = {
+			check_variable = { r56_AFG_ENG_intel = 100 }
+		}
+		localization_key = AFG_intel_prediction_100
+	}
+	text = {
+		localization_key = AFG_intel_ENG_tt
+	}
+}

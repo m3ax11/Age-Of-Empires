@@ -1,0 +1,19 @@
+air_wings = {
+    266 = {
+        small_plane_airframe_0 = {
+            owner = "PER"
+            amount = 95
+            version_name = "AOEIW PER Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "PER"
+            amount = 30
+            version_name = "AOEIW PER Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "PER"
+            amount = 15
+            version_name = "AOEIW PER Medium Bomber"
+        }
+    }
+}

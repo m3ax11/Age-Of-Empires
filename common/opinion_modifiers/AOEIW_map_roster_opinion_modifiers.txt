@@ -1,0 +1,5 @@
+opinion_modifiers = {
+    AOEIW_dominion_consulted = { value = 20 decay = 1 }
+    AOEIW_dominion_directed = { value = -15 decay = 1 }
+    AOEIW_belgrade_settlement = { value = 15 decay = 0 }
+}

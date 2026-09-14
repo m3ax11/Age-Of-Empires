@@ -1,0 +1,85 @@
+capital = 278
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_ARG_leader
+recruit_character = AOEIW_world_ARG_general
+set_technology = {
+    infantry_weapons = 1
+    tech_mountaineers = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    basic_train = 1
+    etax_doctrine = 1
+    camo = 1
+    basic_naval_mines = 1
+    early_ship_hull_light = 1
+    basic_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    basic_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_ship_hull_cruiser = 1
+    early_ship_hull_heavy = 1
+    basic_battery = 1
+    basic_cruiser_armor_scheme = 1
+    basic_torpedo = 1
+    basic_depth_charges = 1
+    coastal_defense_ships = 1
+    mtg_transport = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+}
+add_ideas = { AOEIW_world_colonial_administration civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 16200 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 1080 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 810 }
+oob = "AOEIW_world_ARG_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = ARG_agustin_pedro_justo
+recruit_character = ARG_edelmiro_farrell
+recruit_character = ARG_roberto_maria_ortiz
+recruit_character = ARG_marcelo_torcuato_de_alvear
+recruit_character = ARG_nimio_de_anquin
+recruit_character = ARG_victorio_codovilla
+recruit_character = ARG_arturo_rawson
+recruit_character = ARG_alberto_teisaire
+recruit_character = ARG_pedro_s_casal
+recruit_character = ARG_basilio_pertine
+recruit_character = ARG_antonio_parodi
+recruit_character = ARG_eleazar_videla
+recruit_character = ARG_manuel_maria_de_iriondo
+recruit_character = ARG_pedro_pablo_ramirez
+recruit_character = ARG_senor_hitler
+recruit_character = ARG_carlos_marquez
+recruit_character = ARG_benito_sueyro
+recruit_character = ARG_leon_scasso
+recruit_character = ARG_enrique_ruiz_guinazu
+recruit_character = ARG_juan_peron
+recruit_character = ARG_alfredo_aquiles_baisi
+recruit_character = ARG_raul_pateras_pescara
+recruit_character = ARG_juan_ignacio_san_martín
+recruit_character = ARG_manuel_fresco
+recruit_character = ARG_luis_franco
+recruit_character = ARG_orestes_tomas_ghioldi
+recruit_character = ARG_luis_victor_sommi
+recruit_character = ARG_juan_carulla
+recruit_character = ARG_manuel_galvez
+recruit_character = ARG_julio_meinvielle
+recruit_character = ARG_ernesto_alemann
+recruit_character = ARG_nicolas_repetto
+recruit_character = ARG_pedro_castex_lainfor
+recruit_character = ARG_angel_maria_zuloaga
+recruit_character = ARG_julian_fablet
+recruit_character = ARG_ramon_poch

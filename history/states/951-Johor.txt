@@ -1,0 +1,35 @@
+state={
+	id=951
+	name="STATE_951"
+	state_category = town
+	resources = {
+		rubber = 40 
+		steel = 2
+		aluminium = 2
+	}
+	history = {
+
+
+		add_to_array = { state_victory_points = 13531 }
+		add_to_array = { state_victory_points = 4424 }
+		buildings = {
+			infrastructure = 2 #was 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			13531 3 
+		}
+		victory_points = {
+			4424 1 
+		}
+        owner = JAP
+        add_core_of = JAP
+    }
+	provinces={
+		4424 7427 10313 13531
+	}
+	manpower=985473
+	buildings_max_level_factor=1.000
+
+	local_supplies = 0.0 
+}

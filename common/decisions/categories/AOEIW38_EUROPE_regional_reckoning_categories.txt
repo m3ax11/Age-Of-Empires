@@ -1,0 +1,5 @@
+AOEIW38_EUROPE_regional_reckoning_category = {
+    icon = GFX_decision_category_generic_political_actions
+    allowed = { OR = { original_tag = BEL original_tag = BUL original_tag = DEN original_tag = FIN original_tag = GRE original_tag = HOL original_tag = IRE original_tag = NOR original_tag = POL original_tag = POR original_tag = ROM original_tag = SWE original_tag = SWI original_tag = YUG } }
+    visible = { date > 1939.1.1 }
+}

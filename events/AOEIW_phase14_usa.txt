@@ -1,0 +1,122 @@
+add_namespace = aoeiw_phase14_usa
+
+country_event = {
+    id = aoeiw_phase14_usa.1
+    title = aoeiw_phase14_usa.1.t
+    desc = aoeiw_phase14_usa.1.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_usa.1.a
+        add_political_power = -30
+        add_stability = 0.01
+        set_country_flag = AOEIW14_USA_relief_first
+    }
+    option = {
+        name = aoeiw_phase14_usa.1.b
+        add_stability = -0.02
+        add_war_support = 0.02
+        set_country_flag = AOEIW14_USA_austerity_first
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_usa.2
+    title = aoeiw_phase14_usa.2.t
+    desc = aoeiw_phase14_usa.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_usa.2.a
+        add_political_power = -40
+        add_stability = 0.02
+        set_country_flag = AOEIW14_USA_negotiated_with_governors
+    }
+    option = {
+        name = aoeiw_phase14_usa.2.b
+        add_stability = -0.025
+        add_war_support = 0.03
+        set_country_flag = AOEIW14_USA_federal_enforcement
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_usa.3
+    title = aoeiw_phase14_usa.3.t
+    desc = aoeiw_phase14_usa.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_usa.3.a
+        add_political_power = -50
+        add_stability = 0.01
+        set_country_flag = AOEIW14_USA_congressional_transfer
+    }
+    option = {
+        name = aoeiw_phase14_usa.3.b
+        add_stability = -0.03
+        add_war_support = 0.04
+        set_country_flag = AOEIW14_USA_executive_emergency
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_usa.4
+    title = aoeiw_phase14_usa.4.t
+    desc = aoeiw_phase14_usa.4.d
+    picture = GFX_report_event_military_planning
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_usa.4.a
+        ai_chance = { factor = 7 }
+        remove_ideas = { AOEIW14_USA_economic_emergency AOEIW14_USA_political_paralysis AOEIW14_USA_federal_confrontation AOEIW14_USA_temporary_military_administration }
+        AOEIW9_install_democratic_government = yes
+        add_ideas = AOEIW14_USA_civilian_restoration
+        add_stability = 0.08
+        set_country_flag = AOEIW14_USA_civilian_restored
+        set_country_flag = AOEIW14_USA_crisis_resolved
+    }
+    option = {
+        name = aoeiw_phase14_usa.4.b
+        ai_chance = { factor = 3 }
+        remove_ideas = { AOEIW14_USA_economic_emergency AOEIW14_USA_political_paralysis AOEIW14_USA_federal_confrontation AOEIW14_USA_temporary_military_administration }
+        retire_character = AOEIW_USA_theodore_roosevelt
+        promote_character = { character = USA_dwight_d_eisenhower ideology = despotism }
+        set_politics = { ruling_party = neutrality elections_allowed = no }
+        set_party_name = { ideology = neutrality long_name = AOEIW14_USA_directorate_long name = AOEIW14_USA_directorate }
+        add_ideas = AOEIW14_USA_permanent_directorate
+        add_stability = -0.04
+        add_war_support = 0.08
+        set_country_flag = AOEIW14_USA_permanent_directorate
+        set_country_flag = AOEIW14_USA_crisis_resolved
+    }
+}
+
+country_event = {
+    id = aoeiw_phase14_usa.5
+    title = aoeiw_phase14_usa.5.t
+    desc = aoeiw_phase14_usa.5.d
+    picture = GFX_report_event_military_planning
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = aoeiw_phase14_usa.5.a
+        add_ideas = AOEIW14_USA_central_planning_board
+        add_political_power = -35
+    }
+    option = {
+        name = aoeiw_phase14_usa.5.b
+        add_ideas = AOEIW14_USA_staff_collegium
+        army_experience = 15
+        air_experience = 10
+    }
+}

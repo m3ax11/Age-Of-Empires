@@ -1,0 +1,204 @@
+focus_tree = {
+ id = AOEIW_FRONTIER_MAN_focus
+ country = { factor = 0 modifier = { add = 200000 tag = MAN } }
+ continuous_focus_position = { x = 50 y = 1690 }
+ reset_on_civilwar = no
+ focus = {
+        # AOEIW visual-layout base: 8,0
+    id = AOEIW_FRONTIER_MAN_survival icon = GFX_focus_generic_court x = 3 y = 0 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    
+    completion_reward = { add_stability = 0.04 add_political_power = 40 country_event = { id = AOEIW35_man.1 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,1
+    id = AOEIW_FRONTIER_MAN_hold_capital icon = GFX_focus_generic_home_defense x = 0 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_survival }
+    completion_reward = { if = { limit = { owns_state = 608 controls_state = 608 } 608 = { add_building_construction = { type = bunker level = 2 instant_build = yes } } } army_experience = 10 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,1
+    id = AOEIW_FRONTIER_MAN_banner_armies icon = GFX_focus_generic_manpower x = 4 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_survival }
+    completion_reward = { add_manpower = 20000 army_experience = 20 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,2
+    id = AOEIW_FRONTIER_MAN_northern_arsenals icon = GFX_focus_generic_military_industry x = 3 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_hold_capital } prerequisite = { focus = AOEIW_FRONTIER_MAN_banner_armies }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,3
+    id = AOEIW_FRONTIER_MAN_rail icon = GFX_focus_generic_railroad x = 0 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_northern_arsenals }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,4
+    id = AOEIW_FRONTIER_MAN_coal icon = GFX_focus_generic_coal_mining x = 0 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_rail }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,5
+    id = AOEIW_FRONTIER_MAN_repair icon = GFX_focus_generic_reinforcing_the_supply_network x = 0 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_coal }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,3
+    id = AOEIW_FRONTIER_MAN_cadets icon = GFX_focus_generic_military_academy x = 3 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_northern_arsenals }
+    completion_reward = { army_experience = 25 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 6,4
+    id = AOEIW_FRONTIER_MAN_garrison icon = GFX_focus_generic_urban_training x = 2 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_cadets } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_mobile }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_garrison_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_mobile } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 10,4
+    id = AOEIW_FRONTIER_MAN_mobile icon = GFX_goal_generic_cavalry x = 4 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_cadets } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_garrison }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_mobile_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_garrison } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 8,5
+    id = AOEIW_FRONTIER_MAN_staff icon = GFX_focus_MAN_reestablish_the_imperial_army x = 3 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_garrison focus = AOEIW_FRONTIER_MAN_mobile }
+    completion_reward = { add_command_power = 20 army_experience = 15 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 16,3
+    id = AOEIW_FRONTIER_MAN_court icon = GFX_focus_generic_court x = 7 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_northern_arsenals }
+    completion_reward = { add_political_power = 60 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 14,4
+    id = AOEIW_FRONTIER_MAN_municipal icon = GFX_focus_generic_currency_reforms x = 6 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_court } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_emergency }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_municipal_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_emergency } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 18,4
+    id = AOEIW_FRONTIER_MAN_emergency icon = GFX_focus_generic_reorient_production x = 8 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_court } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_municipal }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_emergency_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_municipal } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 16,5
+    id = AOEIW_FRONTIER_MAN_granaries icon = GFX_focus_generic_farmland x = 7 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_municipal focus = AOEIW_FRONTIER_MAN_emergency }
+    completion_reward = { add_stability = 0.03 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,6
+    id = AOEIW_FRONTIER_MAN_signals icon = GFX_focus_generic_radio_communication x = 3 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_staff } prerequisite = { focus = AOEIW_FRONTIER_MAN_repair }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = electronics } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,7
+    id = AOEIW_FRONTIER_MAN_air icon = GFX_focus_generic_multi_role_aircraft x = 0 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_signals }
+    completion_reward = { air_experience = 25 add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = light_air } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,7
+    id = AOEIW_FRONTIER_MAN_medical icon = GFX_focus_generic_field_hostpital x = 4 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_signals } prerequisite = { focus = AOEIW_FRONTIER_MAN_granaries }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_medical_spirit }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,8
+    id = AOEIW_FRONTIER_MAN_settlement icon = GFX_focus_generic_diplomatic_treaty x = 3 y = 8 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_air focus = AOEIW_FRONTIER_MAN_medical } available = { has_country_flag = AOEIW20_MAN_restoration_established }
+    completion_reward = { add_political_power = 60 country_event = { id = AOEIW35_man.2 hours = 6 } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,9
+    id = AOEIW_FRONTIER_MAN_credit icon = GFX_focus_generic_concessions x = 0 y = 9 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_settlement } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_autonomy }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } set_country_flag = AOEIW_FRONTIER_MAN_credit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_autonomy } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 12,9
+    id = AOEIW_FRONTIER_MAN_autonomy icon = GFX_focus_generic_industry_investment x = 4 y = 9 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_settlement } mutually_exclusive = { focus = AOEIW_FRONTIER_MAN_credit }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.03  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_MAN_credit } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 8,10
+    id = AOEIW_FRONTIER_MAN_commission icon = GFX_focus_generic_commission x = 3 y = 10 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_credit focus = AOEIW_FRONTIER_MAN_autonomy }
+    completion_reward = { set_country_flag = AOEIW_FRONTIER_MAN_liaison_unlocked }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,11
+    id = AOEIW_FRONTIER_MAN_standards icon = GFX_focus_generic_modernize_industry x = 0 y = 11 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_commission }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,11
+    id = AOEIW_FRONTIER_MAN_recovery icon = GFX_focus_generic_economic_recovery x = 4 y = 11 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_MAN_commission }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_MAN_recovery_spirit }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+}

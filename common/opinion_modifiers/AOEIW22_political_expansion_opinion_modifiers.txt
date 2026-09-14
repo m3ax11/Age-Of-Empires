@@ -1,0 +1,1 @@
+opinion_modifiers = { AOEIW22_diplomatic_overture = { value = 50 decay = 1 } }

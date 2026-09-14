@@ -1,0 +1,25 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = { exists = yes }
+                AOEIW_qol_grant_initial_doctrine_choices = yes
+                AOEIW_qol_grant_accelerated_doctrine_development = yes
+            }
+        }
+    }
+
+    # Covers released and dynamically created countries without a daily scan.
+    on_monthly = {
+        effect = {
+            every_country = {
+                limit = {
+                    exists = yes
+                    NOT = { has_idea = AOEIW_qol_accelerated_doctrine_development }
+                }
+                AOEIW_qol_grant_initial_doctrine_choices = yes
+                AOEIW_qol_grant_accelerated_doctrine_development = yes
+            }
+        }
+    }
+}

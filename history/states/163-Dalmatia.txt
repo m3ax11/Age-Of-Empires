@@ -1,0 +1,30 @@
+state= {
+	id=163
+	name="STATE_163"
+	manpower = 18000
+	
+	state_category = enclave
+	
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			3943 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			3943 1 
+		}
+
+
+		add_to_array = { state_victory_points = 3943 }
+        owner = ITA
+        add_core_of = ITA
+    } 
+	provinces={	
+		3943 
+	}
+
+	local_supplies=0.0 
+}

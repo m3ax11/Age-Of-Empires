@@ -1,0 +1,25 @@
+
+state={
+	id=847
+	name="STATE_847"
+	manpower = 178429
+	state_category = pastoral
+	history = {
+
+		buildings = {
+			infrastructure = 1 
+			industrial_complex = 1
+		}
+
+		add_to_array = { state_victory_points = 3612 }
+		victory_points = {
+			3612 1
+		}
+        owner = SWI
+        add_core_of = SWI
+    }
+	provinces={
+		636 9587 3612 9618  
+	}
+	local_supplies=0.0 
+}

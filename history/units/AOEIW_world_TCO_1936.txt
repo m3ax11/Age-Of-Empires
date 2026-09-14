@@ -1,0 +1,23 @@
+division_template = {
+    name = "Thirteen Colonies Field Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "2. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "3. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "4. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "5. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "6. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "7. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "8. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "9. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "10. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "11. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "12. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "13. Colonial American Division" location = 3957 division_template = "Thirteen Colonies Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+}

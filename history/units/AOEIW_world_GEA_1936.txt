@@ -1,0 +1,16 @@
+division_template = {
+    name = "German East Asian Colony Field Division"
+    regiments = {
+        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "2. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "3. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "4. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "5. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+    division = { name = "6. German East Asian Division" location = 10000 division_template = "German East Asian Colony Field Division" start_experience_factor = 0.20 start_equipment_factor = 1.0 }
+}

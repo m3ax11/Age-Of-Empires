@@ -1,0 +1,32 @@
+ideas = {
+    country = {
+        AOEIW38_BRA_frontier_bargain = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.12 local_resources_factor = 0.05 political_power_factor = -0.03 } }
+        AOEIW38_BRA_continental_arteries_spirit = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.05 production_speed_infrastructure_factor = 0.18 local_resources_factor = 0.08 } }
+        AOEIW38_BRA_south_atlantic_power = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { convoy_escort_efficiency = 0.10 naval_speed_factor = 0.05 trade_opinion_factor = 0.08 } }
+
+        AOEIW38_CAN_arsenal_burden = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.06 consumer_goods_factor = 0.02 war_support_factor = 0.03 } }
+        AOEIW38_CAN_two_ocean_lifeline_spirit = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { convoy_escort_efficiency = 0.12 naval_detection = 0.06 production_factory_efficiency_gain_factor = 0.06 } }
+        AOEIW38_CAN_postwar_conversion = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = -0.03 production_speed_industrial_complex_factor = 0.08 stability_factor = 0.04 } }
+
+        AOEIW38_MEX_oil_compact = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { fuel_gain_factor = 0.08 trade_opinion_factor = 0.05 political_power_factor = -0.03 } }
+        AOEIW38_MEX_sovereign_refineries_spirit = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { fuel_gain_factor = 0.14 production_speed_synthetic_refinery_factor = 0.15 industrial_capacity_factory = 0.03 } }
+        AOEIW38_MEX_workers_republic = { picture = generic_manpower_bonus allowed = { always = no } removal_cost = -1 modifier = { recruitable_population_factor = 0.04 production_factory_efficiency_gain_factor = 0.05 stability_factor = 0.03 } }
+
+        AOEIW38_EGY_canal_emergency = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { production_speed_naval_base_factor = 0.10 army_defence_factor = 0.04 consumer_goods_factor = 0.02 } }
+        AOEIW38_EGY_canal_authority_spirit = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { trade_opinion_factor = 0.10 convoy_escort_efficiency = 0.08 production_speed_infrastructure_factor = 0.10 } }
+        AOEIW38_EGY_nile_settlement = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.05 improve_relations_maintain_cost_factor = -0.15 local_resources_factor = 0.05 } }
+
+        AOEIW38_ETH_reconstruction_levy_spirit = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = 0.03 repair_speed_factor = 0.18 production_speed_infrastructure_factor = 0.12 } }
+        AOEIW38_ETH_highland_corridors_spirit = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.06 army_speed_factor = 0.04 production_speed_infrastructure_factor = 0.16 } }
+        AOEIW38_ETH_red_sea_crown = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { naval_invasion_capacity = 4 trade_opinion_factor = 0.08 war_support_factor = 0.04 } }
+        AOEIW38_ETH_nile_guarantee = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { improve_relations_maintain_cost_factor = -0.15 production_speed_infrastructure_factor = 0.08 stability_factor = 0.03 } }
+
+        AOEIW38_ARG_federal_export_compact = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.07 industrial_capacity_factory = 0.04 autonomy_gain_global_factor = 0.08 } }
+        AOEIW38_PRU_andean_logistics_mission = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.05 acclimatization_cold_climate_gain_factor = 0.10 autonomy_gain_global_factor = 0.08 } }
+        AOEIW38_hispanic_defence_quota = { picture = generic_manpower_bonus allowed = { always = no } removal_cost = -1 modifier = { army_morale_factor = 0.04 war_support_factor = 0.04 autonomy_gain_global_factor = 0.05 } }
+        AOEIW38_imperial_requisition = { picture = generic_disjointed_gov allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = 0.03 stability_factor = -0.04 autonomy_gain_global_factor = -0.05 } }
+
+        AOEIW38_regional_war_cabinet = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { mobilization_speed = 0.10 war_support_factor = 0.04 supply_consumption_factor = -0.03 } }
+        AOEIW38_veterans_reconstruction_board = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { repair_speed_factor = 0.12 production_speed_industrial_complex_factor = 0.06 stability_factor = 0.03 } }
+    }
+}

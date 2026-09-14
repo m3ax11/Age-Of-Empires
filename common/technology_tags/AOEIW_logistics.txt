@@ -1,0 +1,1 @@
+technology_categories = { AOEIW_logistics_technology }

@@ -1,0 +1,24 @@
+# AOEIW V8.11
+# Vanilla Spanish Civil War / La Resistance AI plan disabled for Imperial World.
+# The custom Spanish Empire uses the AOEIW_SPR_focus_plan instead.
+
+SPC_alternate_plan = {
+    name = "Disabled vanilla Spain plan"
+    desc = "Disabled by AOEIW V8.11"
+
+    allowed = {
+        always = no
+    }
+
+    enable = {
+        always = no
+    }
+
+    abort = {
+        always = yes
+    }
+
+    weight = {
+        factor = 0
+    }
+}

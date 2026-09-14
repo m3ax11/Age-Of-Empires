@@ -1,0 +1,35 @@
+AOEIW_DEPTH_GER_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = GER }
+    visible = { OR = { has_completed_focus = AOEIW9_GER_politics_root has_completed_focus = AOEIW9_GER_eco_root } }
+}
+
+AOEIW_DEPTH_GER_staff_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = GER }
+    visible = { OR = { has_completed_focus = AOEIW_STRUCT_GER_DEPTH_arsenal_inspection has_completed_focus = AOEIW_STRUCT_GER_DEPTH_convoy_school has_completed_focus = AOEIW_STRUCT_GER_DEPTH_maintenance_columns has_completed_focus = AOEIW_STRUCT_GER_DEPTH_naval_fuel has_completed_focus = AOEIW_STRUCT_GER_DEPTH_replacement_school has_completed_focus = AOEIW_STRUCT_GER_DEPTH_ruhr_deliveries } }
+}
+
+AOEIW_DEPTH_SOV_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { OR = { has_completed_focus = AOEIW9_SOV_politics_root has_completed_focus = AOEIW9_SOV_eco_root } }
+}
+
+AOEIW_DEPTH_SOV_staff_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { OR = { has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_arsenal_gauges has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_district_medicine has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_grain_dispatch has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_recovery_columns has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_second_echelon has_completed_focus = AOEIW_STRUCT_SOV_DEPTH_volga_acceptance } }
+}
+
+AOEIW_DEPTH_FRA_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = FRA }
+    visible = { OR = { has_completed_focus = AOEIW9_FRA_politics_root has_completed_focus = AOEIW9_FRA_eco_root } }
+}
+
+AOEIW_DEPTH_FRA_staff_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = FRA }
+    visible = { OR = { has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_alpine_radio has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_counterstroke has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_fire_plan has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_maritime_patrols has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_standard_chassis has_completed_focus = AOEIW_STRUCT_FRA_DEPTH_supplier_acceptance } }
+}

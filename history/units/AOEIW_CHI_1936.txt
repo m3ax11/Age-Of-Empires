@@ -1,0 +1,106 @@
+division_template = {
+ name = "Chinese Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "CHI Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "CHI Armored Division"
+ regiments = {
+  light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 }
+  light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 }
+  motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 }
+  motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Chinese Empire Infantry Division" location = 4431 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Chinese Empire Infantry Division" location = 7294 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Chinese Empire Infantry Division" location = 10841 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Chinese Empire Infantry Division" location = 6999 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Chinese Empire Infantry Division" location = 11972 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Chinese Empire Infantry Division" location = 1469 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Chinese Empire Infantry Division" location = 7101 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Chinese Empire Infantry Division" location = 4619 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Chinese Empire Infantry Division" location = 4896 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Chinese Empire Infantry Division" location = 1078 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Chinese Empire Infantry Division" location = 1023 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Chinese Empire Infantry Division" location = 1099 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Chinese Empire Infantry Division" location = 7137 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Chinese Empire Infantry Division" location = 10459 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Chinese Empire Infantry Division" location = 996 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Chinese Empire Infantry Division" location = 9974 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Chinese Empire Infantry Division" location = 7191 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Chinese Empire Infantry Division" location = 7174 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Chinese Empire Infantry Division" location = 4431 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Chinese Empire Infantry Division" location = 7294 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Chinese Empire Infantry Division" location = 10841 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Chinese Empire Infantry Division" location = 6999 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Chinese Empire Infantry Division" location = 11972 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Chinese Empire Infantry Division" location = 1469 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Chinese Empire Infantry Division" location = 7101 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Chinese Empire Infantry Division" location = 4619 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Chinese Empire Infantry Division" location = 4896 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Chinese Empire Infantry Division" location = 1078 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Chinese Empire Infantry Division" location = 1023 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Chinese Empire Infantry Division" location = 1099 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Chinese Empire Infantry Division" location = 7137 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Chinese Empire Infantry Division" location = 10459 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Chinese Empire Infantry Division" location = 996 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Chinese Empire Infantry Division" location = 9974 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Chinese Empire Infantry Division" location = 7191 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Chinese Empire Infantry Division" location = 7174 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. Chinese Empire Infantry Division" location = 4431 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. Chinese Empire Infantry Division" location = 7294 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. Chinese Empire Infantry Division" location = 10841 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. Chinese Empire Infantry Division" location = 6999 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. Chinese Empire Infantry Division" location = 11972 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. Chinese Empire Infantry Division" location = 1469 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. Chinese Empire Infantry Division" location = 7101 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. Chinese Empire Infantry Division" location = 4619 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "49. Chinese Empire Infantry Division" location = 4896 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "50. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "51. Chinese Empire Infantry Division" location = 1078 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "52. Chinese Empire Infantry Division" location = 1023 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "53. Chinese Empire Infantry Division" location = 1099 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "54. Chinese Empire Infantry Division" location = 7137 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "55. Chinese Empire Infantry Division" location = 10459 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "56. Chinese Empire Infantry Division" location = 996 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "57. Chinese Empire Infantry Division" location = 9974 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "58. Chinese Empire Infantry Division" location = 7191 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "59. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "60. Chinese Empire Infantry Division" location = 7174 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "61. Chinese Empire Infantry Division" location = 4431 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "62. Chinese Empire Infantry Division" location = 7294 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "63. Chinese Empire Infantry Division" location = 10841 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "64. Chinese Empire Infantry Division" location = 6999 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "65. Chinese Empire Infantry Division" location = 11972 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "66. Chinese Empire Infantry Division" location = 1469 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "67. Chinese Empire Infantry Division" location = 7101 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "68. Chinese Empire Infantry Division" location = 4619 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "69. Chinese Empire Infantry Division" location = 4896 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "70. Chinese Empire Infantry Division" location = 1055 division_template = "Chinese Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. CHI Rapid Division" location = 4431 division_template = "CHI Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. CHI Rapid Division" location = 4431 division_template = "CHI Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. CHI Rapid Division" location = 4431 division_template = "CHI Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. CHI Armored Division" location = 4431 division_template = "CHI Armored Division" start_experience_factor = 0.20 start_equipment_factor = 0.80 }
+ division = { name = "2. CHI Armored Division" location = 4431 division_template = "CHI Armored Division" start_experience_factor = 0.20 start_equipment_factor = 0.80 }
+}

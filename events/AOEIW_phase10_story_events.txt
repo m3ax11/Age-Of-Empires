@@ -1,0 +1,247 @@
+add_namespace = aoeiw10_story
+
+# Austria: the Danubian settlement must decide how the Crown Lands participate.
+country_event = {
+    id = aoeiw10_story.1
+    title = aoeiw10_story.1.t
+    desc = aoeiw10_story.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = AUS }
+
+    option = {
+        name = aoeiw10_story.1.a
+        ai_chance = { factor = 60 }
+        set_country_flag = AOEIW10_AUS_federal_delegations
+        clr_country_flag = AOEIW10_AUS_vienna_directive
+        add_political_power = -25
+        add_stability = 0.01
+        country_event = { id = aoeiw10_story.2 days = 70 }
+    }
+    option = {
+        name = aoeiw10_story.1.b
+        ai_chance = { factor = 40 }
+        set_country_flag = AOEIW10_AUS_vienna_directive
+        clr_country_flag = AOEIW10_AUS_federal_delegations
+        add_political_power = 25
+        add_stability = -0.03
+        country_event = { id = aoeiw10_story.3 days = 70 }
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.2
+    title = aoeiw10_story.2.t
+    desc = aoeiw10_story.2.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = AUS has_country_flag = AOEIW10_AUS_federal_delegations }
+
+    option = {
+        name = aoeiw10_story.2.a
+        ai_chance = { factor = 70 }
+        add_ideas = AOEIW10_AUS_federal_compact
+        add_political_power = -35
+        add_stability = 0.03
+        set_country_flag = AOEIW10_AUS_compact_ratified
+    }
+    option = {
+        name = aoeiw10_story.2.b
+        ai_chance = { factor = 30 }
+        add_political_power = 50
+        add_stability = -0.02
+        set_country_flag = AOEIW10_AUS_compact_deferred
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.3
+    title = aoeiw10_story.3.t
+    desc = aoeiw10_story.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = AUS has_country_flag = AOEIW10_AUS_vienna_directive }
+
+    option = {
+        name = aoeiw10_story.3.a
+        ai_chance = { factor = 65 }
+        add_ideas = AOEIW10_AUS_central_service
+        add_political_power = 35
+        add_stability = -0.02
+        set_country_flag = AOEIW10_AUS_directive_enforced
+    }
+    option = {
+        name = aoeiw10_story.3.b
+        ai_chance = { factor = 35 }
+        add_political_power = -25
+        add_stability = 0.03
+        set_country_flag = AOEIW10_AUS_provincial_vetoes
+    }
+}
+
+# Belgium: an industrial stoppage tests the constitutional settlement.
+country_event = {
+    id = aoeiw10_story.10
+    title = aoeiw10_story.10.t
+    desc = aoeiw10_story.10.d
+    picture = GFX_report_event_generic_strike
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = BEL }
+
+    option = {
+        name = aoeiw10_story.10.a
+        ai_chance = { factor = 55 }
+        set_country_flag = AOEIW10_BEL_labour_conference
+        clr_country_flag = AOEIW10_BEL_industrial_directorate
+        add_political_power = -30
+        add_stability = 0.01
+        country_event = { id = aoeiw10_story.11 days = 60 }
+    }
+    option = {
+        name = aoeiw10_story.10.b
+        ai_chance = { factor = 45 }
+        set_country_flag = AOEIW10_BEL_industrial_directorate
+        clr_country_flag = AOEIW10_BEL_labour_conference
+        add_war_support = 0.02
+        add_stability = -0.04
+        country_event = { id = aoeiw10_story.12 days = 60 }
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.11
+    title = aoeiw10_story.11.t
+    desc = aoeiw10_story.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = BEL has_country_flag = AOEIW10_BEL_labour_conference }
+
+    option = {
+        name = aoeiw10_story.11.a
+        ai_chance = { factor = 70 }
+        add_ideas = AOEIW10_BEL_social_compact
+        add_political_power = -40
+        add_stability = 0.03
+        set_country_flag = AOEIW10_BEL_charter_signed
+    }
+    option = {
+        name = aoeiw10_story.11.b
+        ai_chance = { factor = 30 }
+        add_political_power = 45
+        add_stability = -0.02
+        set_country_flag = AOEIW10_BEL_talks_narrowed
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.12
+    title = aoeiw10_story.12.t
+    desc = aoeiw10_story.12.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = BEL has_country_flag = AOEIW10_BEL_industrial_directorate }
+
+    option = {
+        name = aoeiw10_story.12.a
+        ai_chance = { factor = 60 }
+        add_ideas = AOEIW10_BEL_industrial_discipline
+        add_war_support = 0.03
+        add_stability = -0.02
+        set_country_flag = AOEIW10_BEL_directorate_confirmed
+    }
+    option = {
+        name = aoeiw10_story.12.b
+        ai_chance = { factor = 40 }
+        add_political_power = -20
+        add_stability = 0.03
+        set_country_flag = AOEIW10_BEL_local_bargaining
+    }
+}
+
+# Poland: control of the reconstruction budget becomes a Crown-Sejm crisis.
+country_event = {
+    id = aoeiw10_story.20
+    title = aoeiw10_story.20.t
+    desc = aoeiw10_story.20.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = POL }
+
+    option = {
+        name = aoeiw10_story.20.a
+        ai_chance = { factor = 55 }
+        set_country_flag = AOEIW10_POL_sejm_audit
+        clr_country_flag = AOEIW10_POL_royal_reserve
+        add_political_power = -25
+        add_stability = 0.02
+        country_event = { id = aoeiw10_story.21 days = 75 }
+    }
+    option = {
+        name = aoeiw10_story.20.b
+        ai_chance = { factor = 45 }
+        set_country_flag = AOEIW10_POL_royal_reserve
+        clr_country_flag = AOEIW10_POL_sejm_audit
+        add_political_power = 30
+        add_stability = -0.03
+        country_event = { id = aoeiw10_story.22 days = 75 }
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.21
+    title = aoeiw10_story.21.t
+    desc = aoeiw10_story.21.d
+    picture = GFX_report_event_election_vote
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = POL has_country_flag = AOEIW10_POL_sejm_audit }
+
+    option = {
+        name = aoeiw10_story.21.a
+        ai_chance = { factor = 65 }
+        add_ideas = AOEIW10_POL_parliamentary_credit
+        add_political_power = -35
+        add_stability = 0.03
+        set_country_flag = AOEIW10_POL_credit_act
+    }
+    option = {
+        name = aoeiw10_story.21.b
+        ai_chance = { factor = 35 }
+        add_political_power = 45
+        add_stability = -0.02
+        set_country_flag = AOEIW10_POL_audit_delayed
+    }
+}
+
+country_event = {
+    id = aoeiw10_story.22
+    title = aoeiw10_story.22.t
+    desc = aoeiw10_story.22.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = POL has_country_flag = AOEIW10_POL_royal_reserve }
+
+    option = {
+        name = aoeiw10_story.22.a
+        ai_chance = { factor = 60 }
+        add_ideas = AOEIW10_POL_royal_treasury
+        add_war_support = 0.03
+        add_stability = -0.02
+        set_country_flag = AOEIW10_POL_reserve_confirmed
+    }
+    option = {
+        name = aoeiw10_story.22.b
+        ai_chance = { factor = 40 }
+        add_political_power = -20
+        add_stability = 0.03
+        set_country_flag = AOEIW10_POL_joint_budget_board
+    }
+}

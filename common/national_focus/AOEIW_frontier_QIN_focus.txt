@@ -1,0 +1,207 @@
+focus_tree = {
+ id = AOEIW_FRONTIER_QIN_focus
+ country = { factor = 0 modifier = { add = 200000 tag = QIN } }
+ continuous_focus_position = { x = 50 y = 1430 }
+ reset_on_civilwar = no
+ focus = {
+        # AOEIW visual-layout base: 10,0
+    id = AOEIW_FRONTIER_QIN_council icon = GFX_focus_generic_public_meetings x = 5 y = 0 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    
+    completion_reward = { add_political_power = 60 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,1
+    id = AOEIW_FRONTIER_QIN_assembly icon = GFX_focus_chi_legislative_yuan x = 2 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_council } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_command }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_QIN_assembly_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_command } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 16,1
+    id = AOEIW_FRONTIER_QIN_command icon = GFX_focus_generic_military_dictatorship x = 8 y = 1 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_council } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_assembly }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_QIN_command_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_assembly } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 2,2
+    id = AOEIW_FRONTIER_QIN_accounts icon = GFX_focus_generic_stockpile_currency x = 1 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_assembly }
+    completion_reward = { add_political_power = 45 add_stability = 0.02 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_command } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 6,2
+    id = AOEIW_FRONTIER_QIN_charter icon = GFX_focus_generic_improve_the_administration x = 3 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_assembly }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_command } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 14,2
+    id = AOEIW_FRONTIER_QIN_rolls icon = GFX_focus_generic_manpower x = 7 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_command }
+    completion_reward = { army_experience = 20 add_manpower = 12000 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_assembly } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 18,2
+    id = AOEIW_FRONTIER_QIN_school icon = GFX_focus_generic_military_academy x = 9 y = 2 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_command }
+    completion_reward = { add_command_power = 20 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_assembly } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 10,3
+    id = AOEIW_FRONTIER_QIN_compact icon = GFX_focus_generic_court x = 5 y = 3 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_accounts focus = AOEIW_FRONTIER_QIN_rolls } prerequisite = { focus = AOEIW_FRONTIER_QIN_charter focus = AOEIW_FRONTIER_QIN_school }
+    completion_reward = { add_stability = 0.04 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+    id = AOEIW_FRONTIER_QIN_granary icon = GFX_focus_generic_farmland x = 0 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_compact }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 4,4
+    id = AOEIW_FRONTIER_QIN_workshop icon = GFX_focus_generic_industry_1 x = 2 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_compact }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,4
+    id = AOEIW_FRONTIER_QIN_rifles icon = GFX_goal_generic_small_arms x = 4 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_compact }
+    completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ROOT } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 12,4
+    id = AOEIW_FRONTIER_QIN_signals icon = GFX_focus_generic_radio_communication x = 6 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_compact }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = electronics } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 18,4
+    id = AOEIW_FRONTIER_QIN_foreign icon = GFX_focus_generic_diplomatic_treaty x = 9 y = 4 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_compact }
+    completion_reward = { add_political_power = 35 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,5
+    id = AOEIW_FRONTIER_QIN_rail icon = GFX_focus_generic_railroad x = 1 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_granary } prerequisite = { focus = AOEIW_FRONTIER_QIN_workshop }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 8,5
+    id = AOEIW_FRONTIER_QIN_arsenal icon = GFX_focus_generic_military_industry x = 4 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_rifles }
+    completion_reward = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 6,6
+    id = AOEIW_FRONTIER_QIN_defence icon = GFX_focus_generic_home_defense x = 3 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_arsenal } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_field }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_QIN_defence_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_field } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 10,6
+    id = AOEIW_FRONTIER_QIN_field icon = GFX_focus_generic_army_doctrines_2 x = 5 y = 6 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_arsenal } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_defence }
+    completion_reward = { add_ideas = AOEIW_FRONTIER_QIN_field_spirit  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_defence } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 16,5
+    id = AOEIW_FRONTIER_QIN_liaison icon = GFX_focus_chi_united_front x = 8 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_foreign } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_isolation } available = { CHI = { has_country_flag = AOEIW20_UF_government_formed } }
+    completion_reward = { set_country_flag = AOEIW_FRONTIER_QIN_liaison_unlocked  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_isolation } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 20,5
+    id = AOEIW_FRONTIER_QIN_isolation icon = GFX_focus_generic_national_security x = 10 y = 5 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_foreign } mutually_exclusive = { focus = AOEIW_FRONTIER_QIN_liaison }
+    completion_reward = { add_stability = 0.04 add_war_support = 0.03  mark_focus_tree_layout_dirty = yes }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW_FRONTIER_QIN_liaison } } }
+    }
+focus = {
+        # AOEIW visual-layout base: 12,7
+    id = AOEIW_FRONTIER_QIN_observers icon = GFX_focus_generic_pilot_training x = 6 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_signals } prerequisite = { focus = AOEIW_FRONTIER_QIN_defence focus = AOEIW_FRONTIER_QIN_field }
+    completion_reward = { army_experience = 15 air_experience = 15 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 2,7
+    id = AOEIW_FRONTIER_QIN_service icon = GFX_focus_generic_supply_line x = 1 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_rail }
+    completion_reward = { add_tech_bonus = { name = AOEIW_frontier_research bonus = 0.5 uses = 1 category = support_tech } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 18,7
+    id = AOEIW_FRONTIER_QIN_relief icon = GFX_focus_generic_welfare x = 9 y = 7 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_liaison focus = AOEIW_FRONTIER_QIN_isolation }
+    completion_reward = { add_stability = 0.04 random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 7,8
+    id = AOEIW_FRONTIER_QIN_institute icon = GFX_focus_generic_university_2 x = 3 y = 8 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_observers } prerequisite = { focus = AOEIW_FRONTIER_QIN_service }
+    completion_reward = { add_research_slot = 1 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+focus = {
+        # AOEIW visual-layout base: 15,9
+    id = AOEIW_FRONTIER_QIN_government icon = GFX_focus_generic_economic_recovery x = 7 y = 9 cost = 5
+    available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
+    prerequisite = { focus = AOEIW_FRONTIER_QIN_institute } prerequisite = { focus = AOEIW_FRONTIER_QIN_relief }
+    completion_reward = { add_political_power = 80 add_stability = 0.04 }
+    ai_will_do = { factor = 4 modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0.7 has_stability < 0.35 } }
+}
+}

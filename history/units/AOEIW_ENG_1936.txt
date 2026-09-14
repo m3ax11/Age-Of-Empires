@@ -1,0 +1,90 @@
+division_template = {
+ name = "British Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "British Empire Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "ENG Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "ENG Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. British Empire Infantry Division" location = 12725 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. British Empire Infantry Division" location = 2196 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. British Empire Infantry Division" location = 12240 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. British Empire Infantry Division" location = 12154 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. British Empire Infantry Division" location = 12237 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. British Empire Infantry Division" location = 7859 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. British Empire Infantry Division" location = 12406 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. British Empire Infantry Division" location = 7520 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. British Empire Infantry Division" location = 8051 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. British Empire Infantry Division" location = 4982 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. British Empire Infantry Division" location = 10254 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. British Empire Infantry Division" location = 10061 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. British Empire Infantry Division" location = 12725 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. British Empire Infantry Division" location = 2196 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. British Empire Infantry Division" location = 12240 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. British Empire Infantry Division" location = 12154 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. British Empire Infantry Division" location = 12237 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. British Empire Infantry Division" location = 7859 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. British Empire Infantry Division" location = 12406 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. British Empire Infantry Division" location = 7520 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. British Empire Infantry Division" location = 8051 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. British Empire Infantry Division" location = 4982 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. British Empire Infantry Division" location = 10254 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. British Empire Infantry Division" location = 10061 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. British Empire Infantry Division" location = 12725 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. British Empire Infantry Division" location = 2196 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. British Empire Infantry Division" location = 12240 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. British Empire Infantry Division" location = 12154 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. British Empire Infantry Division" location = 12237 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. British Empire Infantry Division" location = 7859 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. British Empire Infantry Division" location = 12406 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. British Empire Infantry Division" location = 7520 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. British Empire Infantry Division" location = 8051 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. British Empire Infantry Division" location = 4982 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. British Empire Infantry Division" location = 10254 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. British Empire Infantry Division" location = 10061 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. British Empire Infantry Division" location = 12725 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. British Empire Infantry Division" location = 2196 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. British Empire Infantry Division" location = 12240 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. British Empire Infantry Division" location = 12154 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. British Empire Infantry Division" location = 12237 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. British Empire Infantry Division" location = 7859 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. British Empire Infantry Division" location = 12406 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. British Empire Infantry Division" location = 7520 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. British Empire Infantry Division" location = 8051 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. British Empire Infantry Division" location = 4982 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. British Empire Infantry Division" location = 10254 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. British Empire Infantry Division" location = 10061 division_template = "British Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. British Empire Mobile Division" location = 12725 division_template = "British Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. British Empire Mobile Division" location = 2196 division_template = "British Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. British Empire Mobile Division" location = 12240 division_template = "British Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. British Empire Mobile Division" location = 12154 division_template = "British Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. ENG Rapid Division" location = 12725 division_template = "ENG Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. ENG Rapid Division" location = 12725 division_template = "ENG Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. ENG Rapid Division" location = 12725 division_template = "ENG Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. ENG Marine Division" location = 12725 division_template = "ENG Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

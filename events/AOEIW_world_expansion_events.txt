@@ -1,0 +1,33 @@
+add_namespace = AOEIW_world
+
+country_event = {
+    id = AOEIW_world.1
+    title = AOEIW_world.1.t
+    desc = AOEIW_world.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_for_sender = yes
+
+    option = {
+        name = AOEIW_world.1.a
+        add_political_power = 25
+    }
+}
+
+news_event = {
+    id = AOEIW_world.2
+    title = AOEIW_world.2.t
+    desc = AOEIW_world.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW_world.2.a
+        trigger = { original_tag = USA }
+        add_political_power = 100
+    }
+    option = {
+        name = AOEIW_world.2.b
+        trigger = { NOT = { original_tag = USA } }
+    }
+}

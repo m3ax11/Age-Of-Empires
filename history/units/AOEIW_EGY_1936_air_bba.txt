@@ -1,0 +1,19 @@
+air_wings = {
+    447 = {
+        small_plane_airframe_0 = {
+            owner = "EGY"
+            amount = 75
+            version_name = "AOEIW EGY Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "EGY"
+            amount = 25
+            version_name = "AOEIW EGY Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "EGY"
+            amount = 10
+            version_name = "AOEIW EGY Medium Bomber"
+        }
+    }
+}

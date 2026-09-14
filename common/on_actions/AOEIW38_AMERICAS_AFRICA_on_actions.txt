@@ -1,0 +1,30 @@
+on_actions = {
+    on_monthly_BRA = { effect = {
+        if = { limit = { has_country_flag = AOEIW38_regional_programme_open has_war = yes NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_CAN = { effect = {
+        if = { limit = { has_country_flag = AOEIW38_regional_programme_open has_war = yes NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_MEX = { effect = {
+        if = { limit = { has_country_flag = AOEIW38_regional_programme_open has_war = yes NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_EGY = { effect = {
+        if = { limit = { has_country_flag = AOEIW38_regional_programme_open has_war = yes NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_ETH = { effect = {
+        if = { limit = { has_country_flag = AOEIW38_regional_programme_open has_war = yes NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_ARG = { effect = {
+        if = { limit = { date > 1939.1.1 is_subject_of = SPR SPR = { has_war = yes } NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no OR = { NOT = { is_subject_of = SPR } SPR = { has_war = no } } NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+    on_monthly_PRU = { effect = {
+        if = { limit = { date > 1939.1.1 is_subject_of = SPR SPR = { has_war = yes } NOT = { has_country_flag = AOEIW38_war_service_record } } country_event = { id = AOEIW38_aa.20 hours = 6 } }
+        if = { limit = { has_country_flag = AOEIW38_war_service_record has_war = no OR = { NOT = { is_subject_of = SPR } SPR = { has_war = no } } NOT = { has_country_flag = AOEIW38_postwar_review_open } } country_event = { id = AOEIW38_aa.21 hours = 6 } }
+    } }
+}

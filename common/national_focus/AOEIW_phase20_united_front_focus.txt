@@ -1,0 +1,425 @@
+focus_tree = {
+    id = AOEIW20_CHI_holding_focus
+    country = {
+        factor = 0
+        modifier = { add = 200000 tag = CHI NOT = { has_country_flag = AOEIW20_UF_government_formed } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,0
+        id = AOEIW20_CHI_authority_collapses
+        icon = GFX_goal_generic_political_pressure
+        x = 0 y = 0 cost = 1
+        completion_reward = { add_stability = -0.02 add_war_support = 0.03 }
+    }
+}
+
+focus_tree = {
+    id = AOEIW20_UF_focus
+    country = {
+        factor = 0
+        modifier = { add = 100000 tag = CHI has_country_flag = AOEIW20_UF_government_formed }
+    }
+    continuous_focus_position = { x = 50 y = 2340 }
+
+    focus = {
+        # AOEIW visual-layout base: 5,0
+        # AOEIW expansion-space base: 10,0
+        id = AOEIW20_UF_convene_front
+        icon = GFX_focus_generic_self_management
+        x = 3 y = 0 cost = 5
+        completion_reward = { add_stability = 0.03 add_political_power = 50 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,1
+        # AOEIW expansion-space base: 10,1
+        id = AOEIW20_UF_enemy_beijing
+        icon = GFX_goal_generic_major_war
+        x = 3 y = 1 cost = 5
+        prerequisite = { focus = AOEIW20_UF_convene_front }
+        completion_reward = { add_war_support = 0.05 army_experience = 10 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 3,2
+        # AOEIW expansion-space base: 8,2
+        id = AOEIW20_UF_coordination
+        icon = GFX_focus_generic_military_mission
+        x = 2 y = 2 cost = 5
+        prerequisite = { focus = AOEIW20_UF_enemy_beijing }
+        completion_reward = { army_experience = 15 add_command_power = 15 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 6,2
+        # AOEIW expansion-space base: 12,2
+        id = AOEIW20_UF_joint_staff
+        icon = GFX_focus_generic_advanced_military_studies
+        x = 4 y = 2 cost = 5
+        prerequisite = { focus = AOEIW20_UF_enemy_beijing }
+        completion_reward = { add_ideas = AOEIW20_UF_joint_general_staff army_experience = 10 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 2,3
+        # AOEIW expansion-space base: 7,3
+        id = AOEIW20_UF_integrate_militias
+        icon = GFX_focus_generic_manpower
+        x = 1 y = 3 cost = 5
+        prerequisite = { focus = AOEIW20_UF_coordination }
+        completion_reward = { add_manpower = 300000 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 12000 } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 7,3
+        # AOEIW expansion-space base: 13,3
+        id = AOEIW20_UF_arms_workshops
+        icon = GFX_focus_generic_industry_1
+        x = 5 y = 3 cost = 5
+        prerequisite = { focus = AOEIW20_UF_joint_staff }
+        completion_reward = {
+            1115 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+        }
+    }
+    focus = {
+        # AOEIW visual-layout base: 3,4
+        # AOEIW expansion-space base: 8,4
+        id = AOEIW20_UF_secure_railways
+        icon = GFX_focus_generic_railroad
+        x = 2 y = 4 cost = 5
+        prerequisite = { focus = AOEIW20_UF_integrate_militias }
+        completion_reward = {
+            1114 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            1116 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+    focus = {
+        # AOEIW visual-layout base: 6,4
+        # AOEIW expansion-space base: 12,4
+        id = AOEIW20_UF_wartime_government
+        icon = GFX_goal_generic_political_pressure
+        x = 4 y = 4 cost = 5
+        prerequisite = { focus = AOEIW20_UF_arms_workshops }
+        completion_reward = { add_stability = 0.05 add_political_power = 75 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 2,5
+        # AOEIW expansion-space base: 7,5
+        id = AOEIW20_UF_salvation_propaganda
+        icon = GFX_goal_generic_propaganda
+        x = 1 y = 5 cost = 5
+        prerequisite = { focus = AOEIW20_UF_secure_railways }
+        completion_reward = { add_war_support = 0.08 add_stability = 0.02 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 7,5
+        # AOEIW expansion-space base: 13,5
+        id = AOEIW20_UF_land_bread
+        icon = GFX_focus_generic_farmland
+        x = 5 y = 5 cost = 5
+        prerequisite = { focus = AOEIW20_UF_wartime_government }
+        completion_reward = { add_manpower = 250000 add_stability = 0.02 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 3,6
+        # AOEIW expansion-space base: 8,6
+        id = AOEIW20_UF_discipline_officers
+        icon = GFX_focus_generic_military_academy
+        x = 2 y = 6 cost = 5
+        prerequisite = { focus = AOEIW20_UF_salvation_propaganda }
+        completion_reward = { army_experience = 20 add_command_power = 20 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 6,6
+        # AOEIW expansion-space base: 12,6
+        id = AOEIW20_UF_mobilise_interior
+        icon = GFX_focus_generic_manpower
+        x = 4 y = 6 cost = 5
+        prerequisite = { focus = AOEIW20_UF_land_bread }
+        completion_reward = { add_manpower = 350000 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 18000 } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 3,7
+        # AOEIW expansion-space base: 8,7
+        id = AOEIW20_UF_foreign_arms
+        icon = GFX_focus_generic_treaty
+        x = 2 y = 7 cost = 5
+        prerequisite = { focus = AOEIW20_UF_discipline_officers }
+        completion_reward = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1500 }
+        }
+    }
+    focus = {
+        # AOEIW visual-layout base: 6,7
+        # AOEIW expansion-space base: 12,7
+        id = AOEIW20_UF_national_salvation_economy_focus
+        icon = GFX_focus_generic_industry_2
+        x = 4 y = 7 cost = 5
+        prerequisite = { focus = AOEIW20_UF_mobilise_interior }
+        completion_reward = { add_ideas = AOEIW20_UF_national_salvation_economy }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,8
+        # AOEIW expansion-space base: 10,8
+        id = AOEIW20_UF_final_offensive_focus
+        icon = GFX_goal_generic_major_war
+        x = 3 y = 8 cost = 7
+        prerequisite = { focus = AOEIW20_UF_foreign_arms focus = AOEIW20_UF_national_salvation_economy_focus }
+        completion_reward = { add_ideas = AOEIW20_UF_final_offensive army_experience = 25 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,10
+        # AOEIW expansion-space base: 10,10
+        id = AOEIW20_UF_question_leadership
+        icon = GFX_focus_generic_self_management
+        x = 3 y = 9 cost = 5
+        prerequisite = { focus = AOEIW20_UF_final_offensive_focus }
+        available = { has_country_flag = AOEIW20_UF_qing_defeated }
+        completion_reward = { add_stability = -0.03 add_political_power = 100 }
+    }
+    focus = {
+        # AOEIW visual-layout base: 1,11
+        # AOEIW expansion-space base: 5,11
+        id = AOEIW20_UF_chiang_leads
+        icon = GFX_focus_generic_election
+        x = 1 y = 10 cost = 7
+        prerequisite = { focus = AOEIW20_UF_question_leadership }
+        completion_reward = {
+            custom_effect_tooltip = AOEIW_QOL_TT_CHIANG_LEADERSHIP
+            promote_character = { character = AOEIW20_UF_chiang_kaishek ideology = despotism }
+            set_cosmetic_tag = CHI_NRA
+            set_politics = { ruling_party = neutrality elections_allowed = no }
+            add_ideas = AOEIW20_UF_chiang_state
+            set_country_flag = AOEIW20_UF_chiang_victory
+            every_country = {
+                limit = { is_ai = no }
+                set_country_flag = { flag = AOEIW_super_event_visible value = 4 }
+                scoped_sound_effect = "AOEIW_nra_victory"
+            }
+         mark_focus_tree_layout_dirty = yes }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_council_endures has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,11
+        # AOEIW expansion-space base: 10,11
+        id = AOEIW20_UF_mao_leads
+        icon = GFX_focus_generic_communist
+        x = 3 y = 10 cost = 7
+        prerequisite = { focus = AOEIW20_UF_question_leadership }
+        mutually_exclusive = { focus = AOEIW20_UF_chiang_leads focus = AOEIW20_UF_council_endures }
+        completion_reward = {
+            custom_effect_tooltip = AOEIW_QOL_TT_MAO_LEADERSHIP
+            promote_character = { character = AOEIW20_UF_mao_zedong ideology = marxism }
+            set_cosmetic_tag = CHI_MAO
+            set_politics = { ruling_party = communism elections_allowed = no }
+            add_ideas = AOEIW20_UF_mao_state
+            set_country_flag = AOEIW20_UF_mao_victory
+            every_country = {
+                limit = { is_ai = no }
+                set_country_flag = { flag = AOEIW_super_event_visible value = 5 }
+                scoped_sound_effect = "AOEIW_ccp_victory"
+            }
+         mark_focus_tree_layout_dirty = yes }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_council_endures } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 8,11
+        # AOEIW expansion-space base: 15,11
+        id = AOEIW20_UF_council_endures
+        icon = GFX_focus_AFG_parliamentary_democracy
+        x = 5 y = 10 cost = 7
+        prerequisite = { focus = AOEIW20_UF_question_leadership }
+        completion_reward = {
+            custom_effect_tooltip = AOEIW_QOL_TT_COUNCIL_LEADERSHIP
+            add_ideas = AOEIW20_UF_council_state
+            set_country_flag = AOEIW20_UF_council_victory
+         mark_focus_tree_layout_dirty = yes }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 1,12
+        # AOEIW expansion-space base: 5,12
+        id = AOEIW20_UF_chiang_army
+        icon = GFX_focus_generic_military_academy
+        x = 1 y = 11 cost = 5
+        prerequisite = { focus = AOEIW20_UF_chiang_leads }
+        completion_reward = { army_experience = 35 add_doctrine_cost_reduction = { name = AOEIW20_UF_chiang_doctrine cost_reduction = 0.25 uses = 2 category = land_doctrine } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_council_endures has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,12
+        # AOEIW expansion-space base: 10,12
+        id = AOEIW20_UF_mao_industry
+        icon = GFX_focus_generic_industry_3
+        x = 3 y = 11 cost = 5
+        prerequisite = { focus = AOEIW20_UF_mao_leads }
+        completion_reward = {
+            1111 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+            add_tech_bonus = { name = AOEIW20_UF_mao_industry_bonus bonus = 0.50 uses = 2 category = industry }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_council_endures } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 8,12
+        # AOEIW expansion-space base: 15,12
+        id = AOEIW20_UF_council_compromise
+        icon = GFX_goal_generic_national_unity
+        x = 5 y = 11 cost = 5
+        prerequisite = { focus = AOEIW20_UF_council_endures }
+        completion_reward = { add_stability = 0.10 add_war_support = 0.05 add_political_power = 100 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+
+    # ACT II: the political settlement now develops into three distinct
+    # reconstruction programmes instead of ending immediately after the vote.
+    focus = {
+        # AOEIW visual-layout base: 0,13
+        # AOEIW expansion-space base: 4,13
+        id = AOEIW20_UF_chiang_constitutional_tutelage
+        icon = GFX_focus_generic_social_democracy
+        x = 0 y = 12 cost = 5
+        prerequisite = { focus = AOEIW20_UF_chiang_army }
+        completion_reward = { add_stability = 0.08 add_political_power = 100 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_council_endures has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 1,14
+        # AOEIW expansion-space base: 5,14
+        id = AOEIW20_UF_chiang_integrate_provincial_armies
+        icon = GFX_focus_generic_military_academy
+        x = 1 y = 13 cost = 5
+        prerequisite = { focus = AOEIW20_UF_chiang_constitutional_tutelage }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_nra_integration
+            army_experience = 30
+            add_command_power = 25
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_council_endures has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 1,15
+        # AOEIW expansion-space base: 5,15
+        id = AOEIW20_UF_chiang_national_reconstruction
+        icon = GFX_focus_generic_military_mission
+        x = 1 y = 14 cost = 7
+        prerequisite = { focus = AOEIW20_UF_chiang_integrate_provincial_armies }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_national_reconstruction
+            1115 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+            1116 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_council_endures has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,13
+        # AOEIW expansion-space base: 9,13
+        id = AOEIW20_UF_mao_land_to_the_tiller
+        icon = GFX_focus_generic_land_redistribution
+        x = 2 y = 12 cost = 5
+        prerequisite = { focus = AOEIW20_UF_mao_industry }
+        completion_reward = { add_stability = 0.06 add_manpower = 300000 add_political_power = 75 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_council_endures } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,14
+        # AOEIW expansion-space base: 10,14
+        id = AOEIW20_UF_mao_reconstruction_committees
+        icon = GFX_focus_generic_self_management
+        x = 3 y = 13 cost = 5
+        prerequisite = { focus = AOEIW20_UF_mao_land_to_the_tiller }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_national_reconstruction
+            add_tech_bonus = { name = AOEIW20_UF_collective_construction bonus = 0.50 uses = 2 category = construction_tech }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_council_endures } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,15
+        # AOEIW expansion-space base: 10,15
+        id = AOEIW20_UF_mao_rapid_industrialisation
+        icon = GFX_focus_generic_industry_3
+        x = 3 y = 14 cost = 7
+        prerequisite = { focus = AOEIW20_UF_mao_reconstruction_committees }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_mao_rapid_industrialisation_spirit
+            1111 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+            1114 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_council_endures } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,13
+        # AOEIW expansion-space base: 16,13
+        id = AOEIW20_UF_council_coalition_charter
+        icon = GFX_focus_generic_social_democracy
+        x = 6 y = 12 cost = 5
+        prerequisite = { focus = AOEIW20_UF_council_compromise }
+        completion_reward = { add_ideas = AOEIW20_UF_council_charter add_political_power = 100 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 8,14
+        # AOEIW expansion-space base: 15,14
+        id = AOEIW20_UF_council_regional_compromise
+        icon = GFX_goal_generic_national_unity
+        x = 5 y = 13 cost = 5
+        prerequisite = { focus = AOEIW20_UF_council_coalition_charter }
+        completion_reward = { add_stability = 0.10 add_war_support = 0.04 add_manpower = 150000 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 8,15
+        # AOEIW expansion-space base: 15,15
+        id = AOEIW20_UF_council_reconstruction_compact
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 5 y = 14 cost = 7
+        prerequisite = { focus = AOEIW20_UF_council_regional_compromise }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_national_reconstruction
+            1115 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            1114 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            1111 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW20_UF_chiang_leads has_completed_focus = AOEIW20_UF_mao_leads } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,17
+        # AOEIW expansion-space base: 10,17
+        id = AOEIW20_UF_prepare_the_coast
+        icon = GFX_goal_generic_fortify_city
+        x = 3 y = 15 cost = 7
+        prerequisite = {
+            focus = AOEIW20_UF_chiang_national_reconstruction
+            focus = AOEIW20_UF_mao_rapid_industrialisation
+            focus = AOEIW20_UF_council_reconstruction_compact
+        }
+        completion_reward = {
+            add_ideas = AOEIW20_UF_coastal_defence
+            add_war_support = 0.06
+            random_owned_controlled_state = {
+                limit = { is_coastal = yes }
+                add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+            }
+            random_owned_controlled_state = {
+                limit = { is_coastal = yes }
+                add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+            }
+        }
+    }
+    focus = {
+        # AOEIW visual-layout base: 5,18
+        # AOEIW expansion-space base: 10,18
+        id = AOEIW20_UF_china_stands_united
+        icon = GFX_goal_generic_national_unity
+        x = 3 y = 16 cost = 7
+        prerequisite = { focus = AOEIW20_UF_prepare_the_coast }
+        completion_reward = {
+            remove_ideas = AOEIW20_UF_uneasy_coalition
+            add_stability = 0.10
+            add_war_support = 0.08
+            add_political_power = 150
+        }
+    }
+}
+
+

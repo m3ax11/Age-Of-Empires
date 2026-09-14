@@ -1,0 +1,46 @@
+
+state={
+	id=369
+	name="STATE_369"
+	manpower = 2614588
+	
+	state_category = city
+	resources={
+		oil=1 #represents all small wells statewide
+		coal = 56 # initial distribution = with infra 99.2 / 1280 total
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 4
+		}
+
+		add_claim_by = CSA
+		add_to_array = { state_victory_points = 6696 }
+		add_to_array = { state_victory_points = 10727 }
+		add_to_array = { state_victory_points = 1445 }
+		victory_points = {
+			6696 2
+		}
+		victory_points = {
+			10727 1 
+		}
+		victory_points = {
+			1445 1 
+		}
+        owner = USA
+        add_core_of = HAI
+        add_core_of = USA
+        controller = USA
+    }
+
+	provinces={
+		1445 1582 4402 4452 4988 6696 6974 7547 9727 10586 10727 12568 12637 12709 
+	}
+
+	local_supplies=0.0 
+}

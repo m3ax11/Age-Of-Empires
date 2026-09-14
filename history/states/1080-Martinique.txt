@@ -1,0 +1,31 @@
+state={
+	id=1080
+	name="STATE_1080"
+
+	manpower = 213781
+	
+	state_category = rural
+
+	history = {
+
+
+		add_to_array = { state_victory_points = 177 }
+		victory_points = {
+			177 2
+		}
+		buildings = {
+			infrastructure = 2
+            177 = {
+                naval_base = 1
+            }
+		}
+        owner = FRA
+        add_core_of = FRA
+    }
+
+	provinces={
+		177
+	}
+	
+	local_supplies=0.0
+}

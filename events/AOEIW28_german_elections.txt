@@ -1,0 +1,31 @@
+add_namespace = AOEIW28_elections
+country_event = {
+    id = AOEIW28_elections.1
+    title = AOEIW28_elections.1.t
+    desc = AOEIW28_elections.1.d
+    is_triggered_only = yes
+    trigger = { has_country_flag = AOEIW28_GER_parliament_enabled NOT = { OR = { has_government = fascism has_government = communism } } }
+    option = {
+        name = AOEIW29_GER_open_parliament
+        if = {
+            limit = { is_ai = yes }
+            if = {
+                limit = { has_country_flag = AOEIW30_GER_bundestag }
+                random_list = {
+                    40 = { set_country_flag = AOEIW30_GER_spd_candidate set_country_flag = AOEIW30_GER_cdu_candidate }
+                    30 = { set_country_flag = AOEIW30_GER_cdu_candidate set_country_flag = AOEIW30_GER_lvp_candidate set_country_flag = AOEIW30_GER_dstp_candidate }
+                    30 = { set_country_flag = AOEIW30_GER_spd_candidate set_country_flag = AOEIW30_GER_lvp_candidate set_country_flag = AOEIW30_GER_dstp_candidate }
+                }
+            }
+            else = {
+                random_list = {
+                    40 = { set_country_flag = AOEIW30_GER_spd_candidate set_country_flag = AOEIW30_GER_zentrum_candidate set_country_flag = AOEIW30_GER_lvp_candidate }
+                    35 = { set_country_flag = AOEIW30_GER_zentrum_candidate set_country_flag = AOEIW30_GER_dnvp_candidate set_country_flag = AOEIW30_GER_lvp_candidate }
+                    25 = { set_country_flag = AOEIW30_GER_spd_candidate set_country_flag = AOEIW30_GER_zentrum_candidate set_country_flag = AOEIW30_GER_dstp_candidate }
+                }
+            }
+            AOEIW30_GER_recount_candidate_seats = yes
+            AOEIW30_GER_confirm_coalition = yes
+        }
+    }
+}

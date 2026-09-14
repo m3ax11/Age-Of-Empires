@@ -1,0 +1,10 @@
+opinion_modifiers = {
+    AOEIW18_revolutionary_betrayal = {
+        value = -75
+        decay = 1
+    }
+    AOEIW18_mediterranean_revolution = {
+        value = 35
+        decay = 1
+    }
+}

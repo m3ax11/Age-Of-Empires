@@ -1,0 +1,18 @@
+units = {
+    fleet = {
+        name = "YUG National Fleet"
+        naval_base = 3924
+        task_force = {
+            name = "YUG Main Fleet"
+            location = 3924
+            ship = { name = "YUG Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Cruiser Class" } } }
+            ship = { name = "YUG Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Destroyer Class" } } }
+            ship = { name = "YUG Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Destroyer Class" } } }
+            ship = { name = "YUG Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Destroyer Class" } } }
+            ship = { name = "YUG Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Destroyer Class" } } }
+            ship = { name = "YUG Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Destroyer Class" } } }
+            ship = { name = "YUG Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Submarine Class" } } }
+            ship = { name = "YUG Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = YUG version_name = "AOEIW YUG Submarine Class" } } }
+        }
+    }
+}

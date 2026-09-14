@@ -1,0 +1,41 @@
+add_namespace = AOEIW35_mon
+
+country_event = {
+    id = AOEIW35_mon.1 title = AOEIW35_mon.1.t desc = AOEIW35_mon.1.d picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_mon.1.a add_stability = 0.02 add_political_power = 35 }
+    option = { name = AOEIW35_mon.1.b add_war_support = 0.03 army_experience = 10 add_stability = -0.01 }
+}
+country_event = {
+    id = AOEIW35_mon.2 title = AOEIW35_mon.2.t desc = AOEIW35_mon.2.d picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_mon.2.a add_ideas = AOEIW35_MON_frontier_compact add_political_power = 50 }
+}
+
+add_namespace = AOEIW35_man
+
+country_event = {
+    id = AOEIW35_man.1 title = AOEIW35_man.1.t desc = AOEIW35_man.1.d picture = GFX_report_event_japanese_officers
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_man.1.a add_stability = 0.02 add_political_power = 35 }
+    option = { name = AOEIW35_man.1.b add_war_support = 0.03 army_experience = 10 add_stability = -0.01 }
+}
+country_event = {
+    id = AOEIW35_man.2 title = AOEIW35_man.2.t desc = AOEIW35_man.2.d picture = GFX_report_event_japanese_officers
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_man.2.a add_ideas = AOEIW35_MAN_frontier_compact add_political_power = 50 }
+}
+
+add_namespace = AOEIW35_xic
+
+country_event = {
+    id = AOEIW35_xic.1 title = AOEIW35_xic.1.t desc = AOEIW35_xic.1.d picture = GFX_report_event_generic_conference
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_xic.1.a add_stability = 0.02 add_political_power = 35 }
+    option = { name = AOEIW35_xic.1.b add_war_support = 0.03 army_experience = 10 add_stability = -0.01 }
+}
+country_event = {
+    id = AOEIW35_xic.2 title = AOEIW35_xic.2.t desc = AOEIW35_xic.2.d picture = GFX_report_event_generic_conference
+    is_triggered_only = yes fire_only_once = yes
+    option = { name = AOEIW35_xic.2.a add_ideas = AOEIW35_XIC_frontier_compact add_political_power = 50 }
+}

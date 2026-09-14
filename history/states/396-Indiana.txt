@@ -1,0 +1,44 @@
+
+state={
+	id=396
+	name="STATE_396"
+	manpower = 3238501
+	state_category = large_city
+	resources={
+		oil=1
+		coal = 14 #initial distribution = with infra 44.8 / 1280 total
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 5
+		}
+
+		add_to_array = { state_victory_points = 1595 }
+		add_to_array = { state_victory_points = 870 }
+		add_to_array = { state_victory_points = 9654 }
+		add_to_array = { state_victory_points = 11635 }
+		victory_points = {
+			1595 5 
+		}
+		victory_points = {
+			870 1 
+		}
+		victory_points = {
+			9654 1
+		}
+		victory_points = {
+			11635 1
+		}
+        owner = USA
+        add_core_of = USA
+    }
+
+	provinces={
+		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,85 @@
+division_template = {
+ name = "Indian Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "RAJ Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "RAJ Armored Division"
+ regiments = {
+  light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 }
+  light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 }
+  motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 }
+  motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "RAJ Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Indian Empire Infantry Division" location = 5105 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Indian Empire Infantry Division" location = 5074 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Indian Empire Infantry Division" location = 4987 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Indian Empire Infantry Division" location = 8098 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Indian Empire Infantry Division" location = 4516 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Indian Empire Infantry Division" location = 4950 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Indian Empire Infantry Division" location = 1908 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Indian Empire Infantry Division" location = 12763 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Indian Empire Infantry Division" location = 1321 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Indian Empire Infantry Division" location = 4106 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Indian Empire Infantry Division" location = 12295 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Indian Empire Infantry Division" location = 8087 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Indian Empire Infantry Division" location = 12114 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Indian Empire Infantry Division" location = 10311 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Indian Empire Infantry Division" location = 1377 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Indian Empire Infantry Division" location = 1910 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Indian Empire Infantry Division" location = 8011 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Indian Empire Infantry Division" location = 4315 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Indian Empire Infantry Division" location = 7244 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Indian Empire Infantry Division" location = 10729 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Indian Empire Infantry Division" location = 5105 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Indian Empire Infantry Division" location = 5074 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Indian Empire Infantry Division" location = 4987 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Indian Empire Infantry Division" location = 8098 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Indian Empire Infantry Division" location = 4516 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Indian Empire Infantry Division" location = 4950 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Indian Empire Infantry Division" location = 1908 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Indian Empire Infantry Division" location = 12763 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Indian Empire Infantry Division" location = 1321 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Indian Empire Infantry Division" location = 4106 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Indian Empire Infantry Division" location = 12295 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Indian Empire Infantry Division" location = 8087 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Indian Empire Infantry Division" location = 12114 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Indian Empire Infantry Division" location = 10311 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Indian Empire Infantry Division" location = 1377 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Indian Empire Infantry Division" location = 1910 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Indian Empire Infantry Division" location = 8011 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Indian Empire Infantry Division" location = 4315 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Indian Empire Infantry Division" location = 7244 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Indian Empire Infantry Division" location = 10729 division_template = "Indian Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. RAJ Rapid Division" location = 5105 division_template = "RAJ Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. RAJ Rapid Division" location = 5105 division_template = "RAJ Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. RAJ Armored Division" location = 5105 division_template = "RAJ Armored Division" start_experience_factor = 0.20 start_equipment_factor = 0.80 }
+ division = { name = "2. RAJ Armored Division" location = 5105 division_template = "RAJ Armored Division" start_experience_factor = 0.20 start_equipment_factor = 0.80 }
+ division = { name = "1. RAJ Marine Division" location = 5105 division_template = "RAJ Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

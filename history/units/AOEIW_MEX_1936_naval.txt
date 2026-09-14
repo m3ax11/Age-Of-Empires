@@ -1,0 +1,19 @@
+units = {
+    fleet = {
+        name = "MEX National Fleet"
+        naval_base = 12810
+        task_force = {
+            name = "MEX Main Fleet"
+            location = 12810
+            ship = { name = "MEX Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Cruiser Class" } } }
+            ship = { name = "MEX Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Destroyer Class" } } }
+            ship = { name = "MEX Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Submarine Class" } } }
+            ship = { name = "MEX Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MEX version_name = "AOEIW MEX Submarine Class" } } }
+        }
+    }
+}

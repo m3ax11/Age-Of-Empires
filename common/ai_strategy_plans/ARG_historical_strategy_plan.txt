@@ -1,0 +1,142 @@
+ARG_historical_plan = {
+	name = "Argentina Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = ARG
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = ARG_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = ARG_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = ARG_ai_behavior
+				option = NON_ALIGNED_HISTORICAL
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		has_war = no 
+	}
+
+	ai_national_focuses = {
+
+		#1936
+		#ARG_preparation_for_the_elections
+		SMB_army										#35
+		SMB_navy										#35
+		ARG_roberto_maria_ortiz							#70
+		ARG_defense_and_democracy						#70
+		ARG_banco_central_de_la_republica_argentina		#70
+		ARG_crack_down_on_corruption					#35		#r56: moved up since this squarely falls within 1937 with current focus durations
+
+		#1937
+		ARG_industrial_expansion						#70
+		ARG_british_cooperation							#70
+		ARG_rapid_urbanization							#70
+		ARG_import_substitution							#35
+		ARG_agricultural_improvements					#70
+		ARG_military_production_lines					#70		#r56: moved up since this squarely falls within 1937 with current focus durations
+
+		#1938
+		ARG_emphasis_on_public_works					#70
+		ARG_economic_reactivation_act					#35
+		ARG_towards_a_greater_argentina					#70
+		ARG_universidad_de_buenos_aires					#70
+		SMB_air_force									#35
+		SMB_construct_air_bases							#35		#r56: moved up since this squarely falls within 1938 with current focus durations
+		ARG_capitalize_the_beef_industry				#35		#idem
+
+		#1939
+		ARG_revisit_the_roca_runciman_treaty			#70
+		ARG_immigration_wave							#70
+		ARG_develop_civilian_economy					#70
+		ARG_the_argentinian_metropole					#70
+		ARG_economic_tax_reforms						#35
+		ARG_invest_in_the_roads							#35		#r56: moved up since this squarely falls within 1939 with current focus durations
+		ARG_invest_in_the_railways						#35		#idem
+
+		#1940
+		ARG_expand_steel_extraction						#70
+		SMB_military_facilities							#35		#r56 - note: swapped these 2 with SMB_regular_infantry and SMB_artillery because they are their prerequisites
+		SMB_army_academy								#70		#see above
+		SMB_construct_naval_bases						#70
+		SMB_naval_foreign_advisors						#35
+		ARG_expand_aluminum_extraction					#70		#r56: moved up since this squarely falls within 1940 with current focus durations
+
+		#1941
+		ARG_the_castillo_cabinet						#70
+		ARG_consolidating_power							#70
+		ARG_march_to_la_casa_rosada						#70
+		ARG_balancing_act								#70
+		SMB_regular_infantry							#70
+		SMB_artillery									#35
+		SMB_tank_warfare								#35
+
+		#1942
+		#r56: vanilla had multiple duplicates here
+		SMB_domestic_production							#35
+		SMB_tierra_del_fuego_training					#35
+		SMB_foreign_advisors							#35
+		SMB_purchase_destroyers_and_subs				#35
+		SMB_expand_repair_yards							#35
+		#r56: focuses below moved up to compensate for vanilla's duplicate focuses
+		SMB_enlarge_naval_facilities					#r56: unreachable in vanilla due to it requiring an ahistorical focus, loosened the prerequisites for us
+		SMB_air_academy									#35
+		SMB_license_designs								#35
+		
+		#1943
+		SMB_fortification_effort						#35
+		SMB_air_defense									#35
+		ARG_yacimientos_petroliferos_fiscales			#70
+		ARG_production_initiative						#70 - inserted r56 to fix historical timing
+		ARG_develop_the_electricity_sector				#35 - idem
+		SMB_logistics_department						#70 - idem
+		SMB_support_company								#35 - idem
+
+		#1944
+		ARG_the_american_push
+		SMB_establish_aircraft_industry
+		SMB_nimble_air_force
+		SMB_winning_the_air_war
+		SMB_air_modifier_boost_1
+
+		#1945
+		ARG_join_the_allies
+		ARG_align_with_the_monroe_doctrine
+		ARG_envoy_to_london
+		ARG_american_allyship
+		ARG_study_the_battle_of_the_river_plate
+		ARG_firmes_volamos
+
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

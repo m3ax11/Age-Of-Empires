@@ -1,0 +1,167 @@
+AOEIW38_regional_programmes_category = {
+    AOEIW38_BRA_map_the_interior_corridors = {
+        icon = generic_industry
+        cost = 60
+        fire_only_once = yes
+        allowed = { original_tag = BRA }
+        visible = { has_country_flag = AOEIW38_regional_programme_open }
+        available = { has_stability > 0.40 has_capitulated = no }
+        complete_effect = {
+            random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            add_command_power = 10
+        }
+        ai_will_do = { base = 12 modifier = { factor = 2 has_war = yes } }
+    }
+    AOEIW38_BRA_invite_south_atlantic_observers = {
+        icon = generic_political_discourse
+        cost = 50
+        fire_only_once = yes
+        allowed = { original_tag = BRA }
+        visible = { has_completed_focus = AOEIW38_BRA_south_atlantic_settlement }
+        available = { has_war = no date > 1940.1.1 }
+        complete_effect = {
+            if = { limit = { ARG = { exists = yes } } ARG = { country_event = { id = AOEIW38_aa.10 days = 2 } } }
+            if = { limit = { PRU = { exists = yes } } PRU = { country_event = { id = AOEIW38_aa.10 days = 3 } } }
+            add_political_power = 25
+        }
+        ai_will_do = { base = 15 }
+    }
+
+    AOEIW38_CAN_expand_the_escort_pool = {
+        icon = generic_naval
+        cost = 45
+        days_remove = 90
+        allowed = { original_tag = CAN }
+        visible = { has_country_flag = AOEIW38_regional_programme_open }
+        available = { has_war = yes has_capitulated = no }
+        modifier = { convoy_escort_efficiency = 0.06 naval_detection = 0.04 }
+        remove_effect = { navy_experience = 8 add_war_support = 0.01 }
+        ai_will_do = { base = 20 }
+    }
+    AOEIW38_CAN_convert_the_war_plants = {
+        icon = generic_industry
+        cost = 70
+        fire_only_once = yes
+        allowed = { original_tag = CAN }
+        visible = { has_country_flag = AOEIW38_war_service_record NOT = { has_idea = AOEIW38_CAN_postwar_conversion } }
+        available = { has_war = no date > 1940.1.1 NOT = { has_idea = AOEIW38_CAN_postwar_conversion } }
+        complete_effect = { remove_ideas = AOEIW38_CAN_two_ocean_lifeline_spirit add_ideas = AOEIW38_CAN_postwar_conversion add_stability = 0.03 }
+        ai_will_do = { base = 20 }
+    }
+
+    AOEIW38_MEX_issue_national_oil_contracts = {
+        icon = generic_industry
+        cost = 55
+        days_remove = 120
+        allowed = { original_tag = MEX }
+        visible = { has_country_flag = AOEIW38_regional_programme_open }
+        available = { has_stability > 0.35 has_capitulated = no }
+        modifier = { fuel_gain_factor = 0.06 production_factory_efficiency_gain_factor = 0.04 }
+        remove_effect = { add_political_power = 15 }
+        ai_will_do = { base = 16 }
+    }
+    AOEIW38_MEX_receive_displaced_engineers = {
+        icon = generic_industry
+        cost = 65
+        fire_only_once = yes
+        allowed = { original_tag = MEX }
+        visible = { has_completed_focus = AOEIW38_MEX_workers_and_wells }
+        available = {
+            has_war = no
+            OR = {
+                USA = { has_capitulated = yes }
+                BRA = { has_capitulated = yes }
+                ARG = { has_capitulated = yes }
+                PRU = { has_capitulated = yes }
+            }
+        }
+        complete_effect = { add_manpower = 25000 add_tech_bonus = { name = AOEIW38_MEX_engineering_bonus bonus = 0.5 uses = 1 category = industry } add_stability = 0.02 }
+        ai_will_do = { base = 12 }
+    }
+
+    AOEIW38_EGY_enforce_canal_passage_dues = {
+        icon = generic_naval
+        cost = 45
+        days_remove = 120
+        allowed = { original_tag = EGY }
+        visible = { has_country_flag = AOEIW38_regional_programme_open }
+        available = { has_war = no has_capitulated = no }
+        modifier = { political_power_gain = 0.10 trade_opinion_factor = -0.05 }
+        remove_effect = { add_political_power = 20 }
+        ai_will_do = { base = 15 }
+    }
+    AOEIW38_EGY_offer_the_nile_commission = {
+        icon = generic_political_discourse
+        cost = 55
+        fire_only_once = yes
+        allowed = { original_tag = EGY }
+        visible = { has_completed_focus = AOEIW38_EGY_canal_and_nile_settlement }
+        available = { ETH = { exists = yes has_war = no NOT = { has_war_with = ROOT } } has_war = no }
+        complete_effect = { ETH = { country_event = { id = AOEIW38_aa.30 days = 2 } } }
+        ai_will_do = { base = 18 modifier = { factor = 2 has_opinion = { target = ETH value > 0 } } }
+    }
+
+    AOEIW38_ETH_drive_the_highland_railway = {
+        icon = generic_industry
+        cost = 60
+        fire_only_once = yes
+        allowed = { original_tag = ETH }
+        visible = { has_country_flag = AOEIW38_regional_programme_open }
+        available = { has_capitulated = no }
+        complete_effect = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+        ai_will_do = { base = 16 }
+    }
+    AOEIW38_ETH_demand_a_nile_voice = {
+        icon = generic_political_discourse
+        cost = 55
+        fire_only_once = yes
+        allowed = { original_tag = ETH }
+        visible = { has_completed_focus = AOEIW38_ETH_red_sea_horizon }
+        available = { EGY = { exists = yes has_war = no NOT = { has_war_with = ROOT } } has_war = no }
+        complete_effect = { EGY = { country_event = { id = AOEIW38_aa.31 days = 2 } } }
+        ai_will_do = { base = 18 modifier = { factor = 2 has_opinion = { target = EGY value > 0 } } }
+    }
+
+    AOEIW38_ARG_negotiate_the_export_compact = {
+        icon = generic_political_discourse
+        cost = 60
+        fire_only_once = yes
+        allowed = { original_tag = ARG }
+        visible = { is_subject_of = SPR date > 1939.1.1 }
+        available = { SPR = { exists = yes has_capitulated = no } has_war = no }
+        complete_effect = { SPR = { country_event = { id = AOEIW38_aa.50 days = 2 } } }
+        ai_will_do = { base = 18 modifier = { factor = 2 compare_autonomy_state > autonomy_puppet } }
+    }
+    AOEIW38_PRU_request_an_andean_mandate = {
+        icon = generic_political_discourse
+        cost = 60
+        fire_only_once = yes
+        allowed = { original_tag = PRU }
+        visible = { is_subject_of = SPR date > 1939.1.1 }
+        available = { SPR = { exists = yes has_capitulated = no } has_war = no }
+        complete_effect = { SPR = { country_event = { id = AOEIW38_aa.51 days = 2 } } }
+        ai_will_do = { base = 18 modifier = { factor = 2 compare_autonomy_state > autonomy_puppet } }
+    }
+    AOEIW38_hispanic_defence_contribution = {
+        icon = generic_army_support
+        cost = 40
+        days_remove = 120
+        allowed = { OR = { original_tag = ARG original_tag = PRU } }
+        visible = { is_subject_of = SPR SPR = { has_war = yes } }
+        available = { has_war = yes has_capitulated = no }
+        modifier = { army_morale_factor = 0.04 command_power_gain_mult = 0.05 }
+        remove_effect = { add_timed_idea = { idea = AOEIW38_hispanic_defence_quota days = 365 } add_autonomy_ratio = { value = 0.03 localization = AOEIW38_defence_service_autonomy } army_experience = 8 }
+        ai_will_do = { base = 20 }
+    }
+
+    AOEIW38_found_the_veterans_reconstruction_board = {
+        icon = generic_industry
+        cost = 65
+        fire_only_once = yes
+        allowed = { OR = { original_tag = BRA original_tag = CAN original_tag = MEX original_tag = EGY original_tag = ETH original_tag = ARG original_tag = PRU } }
+        visible = { has_country_flag = AOEIW38_war_service_record }
+        available = { has_war = no date > 1940.1.1 has_capitulated = no }
+        complete_effect = { remove_ideas = AOEIW38_regional_war_cabinet add_ideas = AOEIW38_veterans_reconstruction_board add_stability = 0.02 }
+        ai_will_do = { base = 20 }
+    }
+}

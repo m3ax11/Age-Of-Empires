@@ -1,0 +1,305 @@
+add_namespace = AOEIW35_ger
+
+country_event = {
+    id = AOEIW35_ger.1
+    title = AOEIW35_ger.1.t
+    desc = AOEIW35_ger.1.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_ger.1.a add_power_balance_value = { id = AOEIW35_GER_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_ger.1.b add_power_balance_value = { id = AOEIW35_GER_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_ger.2
+    title = AOEIW35_ger.2.t
+    desc = AOEIW35_ger.2.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_ger.2.a add_power_balance_value = { id = AOEIW35_GER_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_ger.2.b add_power_balance_value = { id = AOEIW35_GER_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_ger.3
+    title = AOEIW35_ger.3.t
+    desc = AOEIW35_ger.3.d
+    picture = GFX_report_event_german_reichstag_gathering
+    is_triggered_only = yes
+    option = { name = AOEIW35_ger.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_ger.3.b remove_dynamic_modifier = { modifier = AOEIW35_GER_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_fra
+
+country_event = {
+    id = AOEIW35_fra.1
+    title = AOEIW35_fra.1.t
+    desc = AOEIW35_fra.1.d
+    picture = GFX_report_event_france_parade
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_fra.1.a add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_fra.1.b add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_fra.2
+    title = AOEIW35_fra.2.t
+    desc = AOEIW35_fra.2.d
+    picture = GFX_report_event_france_parade
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_fra.2.a add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_fra.2.b add_power_balance_value = { id = AOEIW35_FRA_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_fra.3
+    title = AOEIW35_fra.3.t
+    desc = AOEIW35_fra.3.d
+    picture = GFX_report_event_france_parade
+    is_triggered_only = yes
+    option = { name = AOEIW35_fra.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_fra.3.b remove_dynamic_modifier = { modifier = AOEIW35_FRA_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_eng
+
+country_event = {
+    id = AOEIW35_eng.1
+    title = AOEIW35_eng.1.t
+    desc = AOEIW35_eng.1.d
+    picture = GFX_report_event_chamberlain
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_eng.1.a add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_eng.1.b add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_eng.2
+    title = AOEIW35_eng.2.t
+    desc = AOEIW35_eng.2.d
+    picture = GFX_report_event_chamberlain
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_eng.2.a add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_eng.2.b add_power_balance_value = { id = AOEIW35_ENG_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_eng.3
+    title = AOEIW35_eng.3.t
+    desc = AOEIW35_eng.3.d
+    picture = GFX_report_event_chamberlain
+    is_triggered_only = yes
+    option = { name = AOEIW35_eng.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_eng.3.b remove_dynamic_modifier = { modifier = AOEIW35_ENG_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_ita
+
+country_event = {
+    id = AOEIW35_ita.1
+    title = AOEIW35_ita.1.t
+    desc = AOEIW35_ita.1.d
+    picture = GFX_report_event_generic_mussolini
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_ita.1.a add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_ita.1.b add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_ita.2
+    title = AOEIW35_ita.2.t
+    desc = AOEIW35_ita.2.d
+    picture = GFX_report_event_generic_mussolini
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_ita.2.a add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_ita.2.b add_power_balance_value = { id = AOEIW35_ITA_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_ita.3
+    title = AOEIW35_ita.3.t
+    desc = AOEIW35_ita.3.d
+    picture = GFX_report_event_generic_mussolini
+    is_triggered_only = yes
+    option = { name = AOEIW35_ita.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_ita.3.b remove_dynamic_modifier = { modifier = AOEIW35_ITA_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_jap
+
+country_event = {
+    id = AOEIW35_jap.1
+    title = AOEIW35_jap.1.t
+    desc = AOEIW35_jap.1.d
+    picture = GFX_report_event_JAP_diet_speech
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_jap.1.a add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_jap.1.b add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_jap.2
+    title = AOEIW35_jap.2.t
+    desc = AOEIW35_jap.2.d
+    picture = GFX_report_event_JAP_diet_speech
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_jap.2.a add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_jap.2.b add_power_balance_value = { id = AOEIW35_JAP_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_jap.3
+    title = AOEIW35_jap.3.t
+    desc = AOEIW35_jap.3.d
+    picture = GFX_report_event_JAP_diet_speech
+    is_triggered_only = yes
+    option = { name = AOEIW35_jap.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_jap.3.b remove_dynamic_modifier = { modifier = AOEIW35_JAP_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_usa
+
+country_event = {
+    id = AOEIW35_usa.1
+    title = AOEIW35_usa.1.t
+    desc = AOEIW35_usa.1.d
+    picture = GFX_report_event_FDR_speech
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_usa.1.a add_power_balance_value = { id = AOEIW35_USA_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_usa.1.b add_power_balance_value = { id = AOEIW35_USA_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_usa.2
+    title = AOEIW35_usa.2.t
+    desc = AOEIW35_usa.2.d
+    picture = GFX_report_event_FDR_speech
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_usa.2.a add_power_balance_value = { id = AOEIW35_USA_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_usa.2.b add_power_balance_value = { id = AOEIW35_USA_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_usa.3
+    title = AOEIW35_usa.3.t
+    desc = AOEIW35_usa.3.d
+    picture = GFX_report_event_FDR_speech
+    is_triggered_only = yes
+    option = { name = AOEIW35_usa.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_usa.3.b remove_dynamic_modifier = { modifier = AOEIW35_USA_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_sov
+
+country_event = {
+    id = AOEIW35_sov.1
+    title = AOEIW35_sov.1.t
+    desc = AOEIW35_sov.1.d
+    picture = GFX_report_event_soviet_purge_politicians
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_sov.1.a add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_sov.1.b add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_sov.2
+    title = AOEIW35_sov.2.t
+    desc = AOEIW35_sov.2.d
+    picture = GFX_report_event_soviet_purge_politicians
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_sov.2.a add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_sov.2.b add_power_balance_value = { id = AOEIW35_SOV_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_sov.3
+    title = AOEIW35_sov.3.t
+    desc = AOEIW35_sov.3.d
+    picture = GFX_report_event_soviet_purge_politicians
+    is_triggered_only = yes
+    option = { name = AOEIW35_sov.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_sov.3.b remove_dynamic_modifier = { modifier = AOEIW35_SOV_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_spr
+
+country_event = {
+    id = AOEIW35_spr.1
+    title = AOEIW35_spr.1.t
+    desc = AOEIW35_spr.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_spr.1.a add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_spr.1.b add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_spr.2
+    title = AOEIW35_spr.2.t
+    desc = AOEIW35_spr.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_spr.2.a add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_spr.2.b add_power_balance_value = { id = AOEIW35_SPR_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_spr.3
+    title = AOEIW35_spr.3.t
+    desc = AOEIW35_spr.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = AOEIW35_spr.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_spr.3.b remove_dynamic_modifier = { modifier = AOEIW35_SPR_national_programme } add_stability = 0.03 add_political_power = 35 }
+}
+
+add_namespace = AOEIW35_aus
+
+country_event = {
+    id = AOEIW35_aus.1
+    title = AOEIW35_aus.1.t
+    desc = AOEIW35_aus.1.d
+    picture = GFX_report_event_hungary_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_aus.1.a add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = -0.10 } add_stability = 0.02 }
+    option = { name = AOEIW35_aus.1.b add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = 0.10 } add_war_support = 0.02 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_aus.2
+    title = AOEIW35_aus.2.t
+    desc = AOEIW35_aus.2.d
+    picture = GFX_report_event_hungary_parliament
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW35_aus.2.a add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = -0.06 } add_political_power = 35 }
+    option = { name = AOEIW35_aus.2.b add_power_balance_value = { id = AOEIW35_AUS_governance_balance value = 0.06 } add_political_power = 50 add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW35_aus.3
+    title = AOEIW35_aus.3.t
+    desc = AOEIW35_aus.3.d
+    picture = GFX_report_event_hungary_parliament
+    is_triggered_only = yes
+    option = { name = AOEIW35_aus.3.a add_war_support = 0.02 }
+    option = { name = AOEIW35_aus.3.b remove_dynamic_modifier = { modifier = AOEIW35_AUS_national_programme } add_stability = 0.03 add_political_power = 35 }
+}

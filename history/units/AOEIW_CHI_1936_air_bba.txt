@@ -1,0 +1,19 @@
+air_wings = {
+    613 = {
+        small_plane_airframe_0 = {
+            owner = "CHI"
+            amount = 180
+            version_name = "AOEIW CHI Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "CHI"
+            amount = 60
+            version_name = "AOEIW CHI Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "CHI"
+            amount = 40
+            version_name = "AOEIW CHI Medium Bomber"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+capital = 322
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_TIB_leader
+recruit_character = AOEIW_world_TIB_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    TIB_mountainous_people_tech = 1
+    militia_tech = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+    gw_artillery = 1
+}
+add_ideas = { AOEIW_world_frontier_state civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7200 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 480 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 360 }
+oob = "AOEIW_world_TIB_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = TIB_jamphel_yeshe_gyaltsen
+recruit_character = TIB_namgang_dazang_damdu
+recruit_character = TIB_basil_gould
+recruit_character = TIB_sanggyai_yexe
+recruit_character = TIB_chikyak_khenpo_lobsang_geleg
+recruit_character = TIB_pandastang_rapga
+recruit_character = TIB_lungashar
+recruit_character = TIB_thubten_kunpela
+recruit_character = TIB_ngawang_sungrab_thutob
+recruit_character = TIB_the_dalai_lama
+recruit_character = TIB_changra_sapron
+recruit_character = TIB_phuntsog_rabgye
+recruit_character = TIB_ngabo_ngawang_jigme
+recruit_character = TIB_taring_jigme
+recruit_character = TIB_yutok_tashi_dondrub
+recruit_character = TIB_wangchen_geleg_surkhang
+recruit_character = TIB_tendong_shappe
+recruit_character = TIB_dorji_gyaltsen
+recruit_character = TIB_ENG_air_theorist
+recruit_character = TIB_philip_neame
+recruit_character = TIB_navy_devisive_battle
+recruit_character = TIB_rinzin_dorji
+recruit_character = TIB_trimon_shappe
+recruit_character = TIB_mondro
+recruit_character = TIB_huang_musong
+recruit_character = TIB_brooke_dolan
+recruit_character = TIB_doring_theji
+recruit_character = TIB_gyurme_gyatso
+recruit_character = TIB_fallen_tsongdu
+recruit_character = TIB_chao_kung

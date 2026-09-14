@@ -1,0 +1,195 @@
+add_namespace = AOEIW38_europe
+
+country_event = {
+    id = AOEIW38_europe.1
+    title = AOEIW38_europe.1.t
+    desc = { text = AOEIW38_europe.1.BEL.d trigger = { original_tag = BEL } }
+    desc = { text = AOEIW38_europe.1.BUL.d trigger = { original_tag = BUL } }
+    desc = { text = AOEIW38_europe.1.DEN.d trigger = { original_tag = DEN } }
+    desc = { text = AOEIW38_europe.1.FIN.d trigger = { original_tag = FIN } }
+    desc = { text = AOEIW38_europe.1.GRE.d trigger = { original_tag = GRE } }
+    desc = { text = AOEIW38_europe.1.HOL.d trigger = { original_tag = HOL } }
+    desc = { text = AOEIW38_europe.1.IRE.d trigger = { original_tag = IRE } }
+    desc = { text = AOEIW38_europe.1.NOR.d trigger = { original_tag = NOR } }
+    desc = { text = AOEIW38_europe.1.POL.d trigger = { original_tag = POL } }
+    desc = { text = AOEIW38_europe.1.POR.d trigger = { original_tag = POR } }
+    desc = { text = AOEIW38_europe.1.ROM.d trigger = { original_tag = ROM } }
+    desc = { text = AOEIW38_europe.1.SWE.d trigger = { original_tag = SWE } }
+    desc = { text = AOEIW38_europe.1.SWI.d trigger = { original_tag = SWI } }
+    desc = { text = AOEIW38_europe.1.YUG.d trigger = { original_tag = YUG } }
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = AOEIW38_europe.1.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_stability < 0.55 } }
+        add_timed_idea = { idea = AOEIW38_EUROPE_civil_resilience days = 540 }
+        add_stability = 0.02
+    }
+    option = {
+        name = AOEIW38_europe.1.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_war = yes } }
+        add_timed_idea = { idea = AOEIW38_EUROPE_operational_readiness days = 540 }
+        army_experience = 10
+    }
+}
+
+country_event = {
+    id = AOEIW38_europe.10
+    title = AOEIW38_europe.10.t
+    desc = AOEIW38_europe.10.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    option = { name = AOEIW38_europe.10.a add_war_support = 0.04 }
+}
+
+# FROM is the fallen regional country.
+country_event = {
+    id = AOEIW38_europe.11
+    title = AOEIW38_europe.11.t
+    desc = AOEIW38_europe.11.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    trigger = {
+        OR = {
+            AND = { OR = { original_tag = BEL original_tag = HOL } FROM = { OR = { original_tag = BEL original_tag = HOL } } }
+            AND = { OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } FROM = { OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } } }
+            AND = { OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } FROM = { OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } } }
+            AND = { original_tag = POL FROM = { OR = { original_tag = ROM original_tag = YUG } } }
+            AND = { OR = { original_tag = ROM original_tag = YUG } FROM = { original_tag = POL } }
+            AND = { OR = { original_tag = IRE original_tag = POR original_tag = SWI } FROM = { OR = { original_tag = IRE original_tag = POR original_tag = SWI } } }
+        }
+    }
+    option = {
+        name = AOEIW38_europe.11.a
+        ai_chance = { factor = 55 modifier = { factor = 1.5 has_stability > 0.55 } }
+        add_timed_idea = { idea = AOEIW38_EUROPE_civil_resilience days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_sheltered_exiles }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_EUROPE_sheltered_exiles } }
+    }
+    option = {
+        name = AOEIW38_europe.11.b
+        ai_chance = { factor = 45 modifier = { factor = 1.5 has_war = yes } }
+        add_timed_idea = { idea = AOEIW38_EUROPE_operational_readiness days = 180 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_guarded_frontier }
+    }
+}
+
+# FROM called a regional convention.
+country_event = {
+    id = AOEIW38_europe.20
+    title = AOEIW38_europe.20.t
+    desc = AOEIW38_europe.20.d
+    picture = GFX_report_event_generic_conference
+    is_triggered_only = yes
+    trigger = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+    option = {
+        name = AOEIW38_europe.20.a
+        ai_chance = { factor = 70 modifier = { factor = 1.5 has_war = yes } }
+        add_timed_idea = { idea = AOEIW38_EUROPE_regional_staff_links days = 540 }
+        set_country_flag = AOEIW38_EUROPE_regional_convention_joined
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_staff_convention }
+        FROM = { add_timed_idea = { idea = AOEIW38_EUROPE_regional_staff_links days = 540 } add_opinion_modifier = { target = ROOT modifier = AOEIW38_EUROPE_staff_convention } }
+    }
+    option = {
+        name = AOEIW38_europe.20.b
+        ai_chance = { factor = 30 modifier = { factor = 1.5 has_war = no } }
+        add_stability = 0.01
+    }
+}
+
+country_event = {
+    id = AOEIW38_europe.21
+    title = AOEIW38_europe.21.t
+    desc = AOEIW38_europe.21.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    trigger = { original_tag = POL }
+    option = { name = AOEIW38_europe.21.a add_war_support = 0.02 army_experience = 5 }
+}
+
+# A Dutch or Portuguese subject receives a wartime charter from FROM.
+country_event = {
+    id = AOEIW38_europe.30
+    title = AOEIW38_europe.30.t
+    desc = AOEIW38_europe.30.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = { is_subject = yes FROM = { OR = { original_tag = HOL original_tag = POR } } }
+    option = {
+        name = AOEIW38_europe.30.a
+        ai_chance = { factor = 65 modifier = { factor = 1.5 has_war = yes } }
+        add_ideas = AOEIW38_EUROPE_imperial_war_charter
+        add_autonomy_ratio = { value = 0.08 localization = AOEIW38_EUROPE_charter_autonomy }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_charter_concession }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_EUROPE_charter_concession } country_event = { id = AOEIW38_europe.31 hours = 6 } }
+    }
+    option = {
+        name = AOEIW38_europe.30.b
+        ai_chance = { factor = 35 modifier = { factor = 1.5 has_stability < 0.50 } }
+        add_stability = 0.03
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_charter_refused }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_EUROPE_charter_refused } country_event = { id = AOEIW38_europe.32 hours = 6 } }
+    }
+}
+
+country_event = {
+    id = AOEIW38_europe.31
+    title = AOEIW38_europe.31.t
+    desc = AOEIW38_europe.31.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    option = { name = AOEIW38_europe.31.a add_political_power = 15 }
+}
+
+country_event = {
+    id = AOEIW38_europe.32
+    title = AOEIW38_europe.32.t
+    desc = AOEIW38_europe.32.d
+    picture = GFX_report_event_generic_riot
+    is_triggered_only = yes
+    option = { name = AOEIW38_europe.32.a add_stability = -0.01 }
+}
+
+country_event = {
+    id = AOEIW38_europe.40
+    title = AOEIW38_europe.40.t
+    desc = AOEIW38_europe.40.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = AOEIW38_europe.40.a add_stability = 0.03 add_political_power = 25 }
+}
+
+# FROM has restored its public authority after occupation.
+country_event = {
+    id = AOEIW38_europe.41
+    title = AOEIW38_europe.41.t
+    desc = AOEIW38_europe.41.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    trigger = {
+        OR = {
+            AND = { OR = { original_tag = BEL original_tag = HOL } FROM = { OR = { original_tag = BEL original_tag = HOL } } }
+            AND = { OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } FROM = { OR = { original_tag = DEN original_tag = FIN original_tag = NOR original_tag = SWE } } }
+            AND = { OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } FROM = { OR = { original_tag = BUL original_tag = GRE original_tag = ROM original_tag = YUG } } }
+            AND = { original_tag = POL FROM = { OR = { original_tag = ROM original_tag = YUG } } }
+            AND = { OR = { original_tag = ROM original_tag = YUG } FROM = { original_tag = POL } }
+            AND = { OR = { original_tag = IRE original_tag = POR original_tag = SWI } FROM = { OR = { original_tag = IRE original_tag = POR original_tag = SWI } } }
+        }
+    }
+    option = {
+        name = AOEIW38_europe.41.a
+        ai_chance = { factor = 75 }
+        add_opinion_modifier = { target = FROM modifier = AOEIW38_EUROPE_staff_convention }
+        FROM = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_EUROPE_staff_convention } }
+    }
+    option = { name = AOEIW38_europe.41.b ai_chance = { factor = 25 } add_political_power = 10 }
+}
+
+country_event = {
+    id = AOEIW38_europe.50
+    title = AOEIW38_europe.50.t
+    desc = AOEIW38_europe.50.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    option = { name = AOEIW38_europe.50.a add_stability = 0.02 }
+}

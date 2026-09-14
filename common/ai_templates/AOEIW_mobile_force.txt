@@ -1,0 +1,22 @@
+AOEIW_mobile_force = {
+    available_for = {
+        AUS BEL BRA BUL CAN CHI DEN EGY ENG ETH FIN FRA GER GRE HOL IRE ITA JAP MEX NOR PER POL POR RAJ ROM SIA SOV SPR SWE SWI TUR USA YUG
+    }
+    role = AOEIW_mobile
+    upgrade_prio = { factor = 1 }
+
+    AOEIW_mobile_1936 = {
+        reinforce_prio = 1
+        upgrade_prio = { factor = 1 }
+        target_template = {
+            support = {
+                engineer = 1
+                artillery = 1
+                recon = 1
+            }
+            regiments = {
+                motorized = 6
+            }
+        }
+    }
+}

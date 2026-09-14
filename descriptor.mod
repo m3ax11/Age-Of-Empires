@@ -1,0 +1,16 @@
+name="Age Of Empires - RT56 Edition"
+replace_path="history/states"
+replace_path="map/strategicregions"
+tags={
+	"Alternative History"
+	"Balance"
+	"Events"
+	"Gameplay"
+	"Graphics"
+	"Historical"
+	"Ideologies"
+	"National Focuses"
+	"Technologies"
+}
+supported_version="1.19.*"
+remote_file_id="3796962392"

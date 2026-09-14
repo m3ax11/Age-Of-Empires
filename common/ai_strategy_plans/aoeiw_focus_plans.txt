@@ -1,0 +1,5130 @@
+AOEIW_AUS_focus_plan = {
+    name = "AOEIW AUS V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = AUS }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_AUS_politics_root
+        AOEIW9_AUS_politics_p1_1
+        AOEIW9_AUS_politics_p1_2
+        AOEIW9_AUS_politics_p1_3
+        AOEIW9_AUS_politics_p1_4
+        AOEIW9_AUS_politics_p1_5
+        AOEIW9_AUS_politics_p1_6
+        AOEIW9_AUS_politics_p2_1
+        AOEIW9_AUS_politics_p2_2
+        AOEIW9_AUS_politics_p2_3
+        AOEIW9_AUS_politics_p2_4
+        AOEIW9_AUS_politics_p2_5
+        AOEIW9_AUS_politics_p2_6
+        AOEIW9_AUS_politics_p3_1
+        AOEIW9_AUS_politics_p3_2
+        AOEIW9_AUS_politics_p3_3
+        AOEIW9_AUS_politics_p3_4
+        AOEIW9_AUS_politics_p3_5
+        AOEIW9_AUS_politics_p3_6
+        AOEIW9_AUS_politics_settlement
+        AOEIW9_AUS_eco_root
+        AOEIW9_AUS_eco_civ_1
+        AOEIW9_AUS_eco_civ_2
+        AOEIW9_AUS_eco_civ_3
+        AOEIW9_AUS_eco_civ_4
+        AOEIW9_AUS_eco_civ_5
+        AOEIW9_AUS_eco_civ_6
+        AOEIW9_AUS_eco_civ_7
+        AOEIW9_AUS_eco_civ_8
+        AOEIW9_AUS_eco_war_1
+        AOEIW9_AUS_eco_war_2
+        AOEIW9_AUS_eco_war_3
+        AOEIW9_AUS_eco_war_4
+        AOEIW9_AUS_eco_war_5
+        AOEIW9_AUS_eco_war_6
+        AOEIW9_AUS_eco_war_7
+        AOEIW9_AUS_eco_science_1
+        AOEIW9_AUS_eco_science_2
+        AOEIW9_AUS_eco_science_3
+        AOEIW9_AUS_eco_science_4
+        AOEIW9_AUS_eco_science_5
+        AOEIW9_AUS_eco_science_6
+        AOEIW9_AUS_eco_infra_1
+        AOEIW9_AUS_eco_infra_2
+        AOEIW9_AUS_eco_infra_3
+        AOEIW9_AUS_eco_infra_4
+        AOEIW9_AUS_eco_final
+        AOEIW9_AUS_mil_root
+        AOEIW9_AUS_mil_army_1
+        AOEIW9_AUS_mil_army_2
+        AOEIW9_AUS_mil_army_3
+        AOEIW9_AUS_mil_army_4
+        AOEIW9_AUS_mil_army_8
+        AOEIW28_AUS_field_workshops
+        AOEIW28_AUS_signals
+        AOEIW9_AUS_mil_army_9
+        AOEIW9_AUS_mil_army_10
+        AOEIW9_AUS_mil_air_1
+        AOEIW9_AUS_mil_air_2
+        AOEIW9_AUS_mil_air_3
+        AOEIW9_AUS_mil_air_4
+        AOEIW9_AUS_mil_air_5
+        AOEIW9_AUS_mil_air_6
+        AOEIW9_AUS_mil_sea_1
+        AOEIW9_AUS_mil_sea_2
+        AOEIW9_AUS_mil_sea_3
+        AOEIW9_AUS_mil_sea_4
+        AOEIW9_AUS_mil_sea_5
+        AOEIW9_AUS_mil_sea_6
+        AOEIW9_AUS_mil_final
+        AOEIW9_AUS_dip_root
+        AOEIW9_AUS_dip_a_1
+        AOEIW9_AUS_dip_a_2
+        AOEIW9_AUS_dip_a_3
+        AOEIW9_AUS_dip_a_4
+        AOEIW9_AUS_dip_a_5
+        AOEIW9_AUS_dip_a_6
+        AOEIW9_AUS_dip_b_1
+        AOEIW9_AUS_dip_b_2
+        AOEIW9_AUS_dip_b_3
+        AOEIW9_AUS_dip_b_4
+        AOEIW9_AUS_dip_b_5
+        AOEIW9_AUS_dip_b_6
+        AOEIW9_AUS_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 60
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 5
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_BEL_focus_plan = {
+    name = "AOEIW BEL V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = BEL }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_BEL_politics_root
+        AOEIW9_BEL_politics_p1_1
+        AOEIW9_BEL_politics_p1_5
+        AOEIW9_BEL_politics_settlement
+        AOEIW9_BEL_eco_root
+        AOEIW9_BEL_eco_civ_1
+        AOEIW9_BEL_eco_civ_3
+        AOEIW9_BEL_eco_war_1
+        AOEIW9_BEL_eco_war_6
+        AOEIW9_BEL_eco_science_5
+        AOEIW9_BEL_eco_final
+        AOEIW9_BEL_mil_root
+        AOEIW9_BEL_mil_army_1
+        AOEIW9_BEL_mil_army_4
+        AOEIW9_BEL_mil_final
+        AOEIW9_BEL_dip_root
+        AOEIW9_BEL_dip_a_2
+        AOEIW9_BEL_dip_b_2
+        AOEIW9_BEL_politics_p1_2
+        AOEIW9_BEL_politics_p1_3
+        AOEIW9_BEL_politics_p1_4
+        AOEIW9_BEL_politics_p2_1
+        AOEIW9_BEL_politics_p2_2
+        AOEIW9_BEL_politics_p2_3
+        AOEIW9_BEL_politics_p2_4
+        AOEIW9_BEL_politics_p2_5
+        AOEIW9_BEL_politics_p3_1
+        AOEIW9_BEL_politics_p3_2
+        AOEIW9_BEL_politics_p3_3
+        AOEIW9_BEL_politics_p3_4
+        AOEIW9_BEL_politics_p3_5
+        AOEIW9_BEL_eco_civ_2
+        AOEIW9_BEL_eco_civ_4
+        AOEIW9_BEL_eco_civ_5
+        AOEIW9_BEL_eco_civ_6
+        AOEIW9_BEL_eco_civ_7
+        AOEIW9_BEL_eco_civ_8
+        AOEIW9_BEL_eco_civ_9
+        AOEIW9_BEL_eco_war_2
+        AOEIW9_BEL_eco_war_3
+        AOEIW9_BEL_eco_war_4
+        AOEIW9_BEL_eco_war_5
+        AOEIW9_BEL_eco_science_1
+        AOEIW9_BEL_eco_science_2
+        AOEIW9_BEL_eco_science_3
+        AOEIW9_BEL_eco_science_4
+        AOEIW9_BEL_eco_infra_1
+        AOEIW9_BEL_eco_infra_2
+        AOEIW9_BEL_eco_infra_3
+        AOEIW9_BEL_eco_infra_4
+        AOEIW9_BEL_mil_army_2
+        AOEIW9_BEL_mil_army_3
+        AOEIW9_BEL_mil_army_5
+        AOEIW9_BEL_mil_army_6
+        AOEIW9_BEL_mil_army_7
+        AOEIW9_BEL_mil_air_1
+        AOEIW9_BEL_mil_air_2
+        AOEIW9_BEL_mil_air_3
+        AOEIW9_BEL_mil_air_4
+        AOEIW9_BEL_mil_air_5
+        AOEIW9_BEL_mil_sea_1
+        AOEIW9_BEL_mil_sea_2
+        AOEIW9_BEL_mil_sea_3
+        AOEIW9_BEL_mil_sea_4
+        AOEIW9_BEL_mil_sea_5
+        AOEIW9_BEL_dip_a_1
+        AOEIW9_BEL_dip_a_3
+        AOEIW9_BEL_dip_a_4
+        AOEIW9_BEL_dip_a_5
+        AOEIW9_BEL_dip_b_1
+        AOEIW9_BEL_dip_b_3
+        AOEIW9_BEL_dip_b_4
+        AOEIW9_BEL_dip_b_5
+        AOEIW9_BEL_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 35
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_BRA_focus_plan = {
+    name = "AOEIW BRA V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = BRA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_BRA_politics_root
+        AOEIW9_BRA_politics_p1_1
+        AOEIW9_BRA_politics_p1_6
+        AOEIW9_BRA_politics_settlement
+        AOEIW9_BRA_eco_root
+        AOEIW9_BRA_eco_civ_1
+        AOEIW9_BRA_eco_civ_3
+        AOEIW9_BRA_eco_war_1
+        AOEIW9_BRA_eco_war_7
+        AOEIW9_BRA_eco_science_6
+        AOEIW9_BRA_eco_final
+        AOEIW9_BRA_mil_root
+        AOEIW9_BRA_mil_army_1
+        AOEIW9_BRA_mil_army_4
+        AOEIW9_BRA_mil_final
+        AOEIW9_BRA_dip_root
+        AOEIW9_BRA_dip_a_2
+        AOEIW9_BRA_dip_b_2
+        AOEIW9_BRA_politics_p1_2
+        AOEIW9_BRA_politics_p1_3
+        AOEIW9_BRA_politics_p1_4
+        AOEIW9_BRA_politics_p1_5
+        AOEIW9_BRA_politics_p2_1
+        AOEIW9_BRA_politics_p2_2
+        AOEIW9_BRA_politics_p2_3
+        AOEIW9_BRA_politics_p2_4
+        AOEIW9_BRA_politics_p2_5
+        AOEIW9_BRA_politics_p2_6
+        AOEIW9_BRA_politics_p3_1
+        AOEIW9_BRA_politics_p3_2
+        AOEIW9_BRA_politics_p3_3
+        AOEIW9_BRA_politics_p3_4
+        AOEIW9_BRA_politics_p3_5
+        AOEIW9_BRA_politics_p3_6
+        AOEIW9_BRA_eco_civ_2
+        AOEIW9_BRA_eco_civ_4
+        AOEIW9_BRA_eco_civ_5
+        AOEIW9_BRA_eco_civ_6
+        AOEIW9_BRA_eco_civ_7
+        AOEIW9_BRA_eco_civ_8
+        AOEIW9_BRA_eco_war_2
+        AOEIW9_BRA_eco_war_3
+        AOEIW9_BRA_eco_war_4
+        AOEIW9_BRA_eco_war_5
+        AOEIW9_BRA_eco_war_6
+        AOEIW9_BRA_eco_science_1
+        AOEIW9_BRA_eco_science_2
+        AOEIW9_BRA_eco_science_3
+        AOEIW9_BRA_eco_science_4
+        AOEIW9_BRA_eco_science_5
+        AOEIW9_BRA_eco_infra_1
+        AOEIW9_BRA_eco_infra_2
+        AOEIW9_BRA_eco_infra_3
+        AOEIW9_BRA_eco_infra_4
+        AOEIW9_BRA_mil_army_2
+        AOEIW9_BRA_mil_army_3
+        AOEIW9_BRA_mil_army_5
+        AOEIW9_BRA_mil_army_6
+        AOEIW9_BRA_mil_army_7
+        AOEIW9_BRA_mil_army_8
+        AOEIW9_BRA_mil_army_9
+        AOEIW9_BRA_mil_air_1
+        AOEIW9_BRA_mil_air_2
+        AOEIW9_BRA_mil_air_3
+        AOEIW9_BRA_mil_air_4
+        AOEIW9_BRA_mil_air_5
+        AOEIW9_BRA_mil_air_6
+        AOEIW9_BRA_mil_sea_1
+        AOEIW9_BRA_mil_sea_2
+        AOEIW9_BRA_mil_sea_3
+        AOEIW9_BRA_mil_sea_4
+        AOEIW9_BRA_mil_sea_5
+        AOEIW9_BRA_mil_sea_6
+        AOEIW9_BRA_dip_a_1
+        AOEIW9_BRA_dip_a_3
+        AOEIW9_BRA_dip_a_4
+        AOEIW9_BRA_dip_a_5
+        AOEIW9_BRA_dip_a_6
+        AOEIW9_BRA_dip_b_1
+        AOEIW9_BRA_dip_b_3
+        AOEIW9_BRA_dip_b_4
+        AOEIW9_BRA_dip_b_5
+        AOEIW9_BRA_dip_b_6
+        AOEIW9_BRA_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 45
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_BUL_focus_plan = {
+    name = "AOEIW BUL V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = BUL }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_BUL_politics_root
+        AOEIW9_BUL_politics_p1_1
+        AOEIW9_BUL_politics_p1_5
+        AOEIW9_BUL_politics_settlement
+        AOEIW9_BUL_eco_root
+        AOEIW9_BUL_eco_civ_1
+        AOEIW9_BUL_eco_civ_3
+        AOEIW9_BUL_eco_war_1
+        AOEIW9_BUL_eco_war_6
+        AOEIW9_BUL_eco_science_5
+        AOEIW9_BUL_eco_final
+        AOEIW9_BUL_mil_root
+        AOEIW9_BUL_mil_army_1
+        AOEIW9_BUL_mil_army_4
+        AOEIW9_BUL_mil_final
+        AOEIW9_BUL_dip_root
+        AOEIW9_BUL_dip_a_2
+        AOEIW9_BUL_dip_b_2
+        AOEIW9_BUL_politics_p1_2
+        AOEIW9_BUL_politics_p1_3
+        AOEIW9_BUL_politics_p1_4
+        AOEIW9_BUL_politics_p2_1
+        AOEIW9_BUL_politics_p2_2
+        AOEIW9_BUL_politics_p2_3
+        AOEIW9_BUL_politics_p2_4
+        AOEIW9_BUL_politics_p2_5
+        AOEIW9_BUL_politics_p3_1
+        AOEIW9_BUL_politics_p3_2
+        AOEIW9_BUL_politics_p3_3
+        AOEIW9_BUL_politics_p3_4
+        AOEIW9_BUL_politics_p3_5
+        AOEIW9_BUL_eco_civ_2
+        AOEIW9_BUL_eco_civ_4
+        AOEIW9_BUL_eco_civ_5
+        AOEIW9_BUL_eco_civ_6
+        AOEIW9_BUL_eco_civ_7
+        AOEIW9_BUL_eco_civ_8
+        AOEIW9_BUL_eco_civ_9
+        AOEIW9_BUL_eco_war_2
+        AOEIW9_BUL_eco_war_3
+        AOEIW9_BUL_eco_war_4
+        AOEIW9_BUL_eco_war_5
+        AOEIW9_BUL_eco_science_1
+        AOEIW9_BUL_eco_science_2
+        AOEIW9_BUL_eco_science_3
+        AOEIW9_BUL_eco_science_4
+        AOEIW9_BUL_eco_infra_1
+        AOEIW9_BUL_eco_infra_2
+        AOEIW9_BUL_eco_infra_3
+        AOEIW9_BUL_eco_infra_4
+        AOEIW9_BUL_mil_army_2
+        AOEIW9_BUL_mil_army_3
+        AOEIW9_BUL_mil_army_5
+        AOEIW9_BUL_mil_army_6
+        AOEIW9_BUL_mil_army_7
+        AOEIW9_BUL_mil_air_1
+        AOEIW9_BUL_mil_air_2
+        AOEIW9_BUL_mil_air_3
+        AOEIW9_BUL_mil_air_4
+        AOEIW9_BUL_mil_air_5
+        AOEIW9_BUL_mil_sea_1
+        AOEIW9_BUL_mil_sea_2
+        AOEIW9_BUL_mil_sea_3
+        AOEIW9_BUL_mil_sea_4
+        AOEIW9_BUL_mil_sea_5
+        AOEIW9_BUL_dip_a_1
+        AOEIW9_BUL_dip_a_3
+        AOEIW9_BUL_dip_a_4
+        AOEIW9_BUL_dip_a_5
+        AOEIW9_BUL_dip_b_1
+        AOEIW9_BUL_dip_b_3
+        AOEIW9_BUL_dip_b_4
+        AOEIW9_BUL_dip_b_5
+        AOEIW9_BUL_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 38
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_CAN_focus_plan = {
+    name = "AOEIW CAN V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = CAN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_CAN_politics_root
+        AOEIW9_CAN_politics_p1_1
+        AOEIW9_CAN_politics_p1_6
+        AOEIW9_CAN_politics_settlement
+        AOEIW9_CAN_eco_root
+        AOEIW9_CAN_eco_civ_1
+        AOEIW9_CAN_eco_civ_3
+        AOEIW9_CAN_eco_war_1
+        AOEIW9_CAN_eco_war_7
+        AOEIW9_CAN_eco_science_6
+        AOEIW9_CAN_eco_final
+        AOEIW9_CAN_mil_root
+        AOEIW9_CAN_mil_army_1
+        AOEIW9_CAN_mil_army_4
+        AOEIW9_CAN_mil_final
+        AOEIW9_CAN_dip_root
+        AOEIW9_CAN_dip_a_2
+        AOEIW9_CAN_dip_b_2
+        AOEIW9_CAN_politics_p1_2
+        AOEIW9_CAN_politics_p1_3
+        AOEIW9_CAN_politics_p1_4
+        AOEIW9_CAN_politics_p1_5
+        AOEIW9_CAN_politics_p2_1
+        AOEIW9_CAN_politics_p2_2
+        AOEIW9_CAN_politics_p2_3
+        AOEIW9_CAN_politics_p2_4
+        AOEIW9_CAN_politics_p2_5
+        AOEIW9_CAN_politics_p2_6
+        AOEIW9_CAN_politics_p3_1
+        AOEIW9_CAN_politics_p3_2
+        AOEIW9_CAN_politics_p3_3
+        AOEIW9_CAN_politics_p3_4
+        AOEIW9_CAN_politics_p3_5
+        AOEIW9_CAN_politics_p3_6
+        AOEIW9_CAN_eco_civ_2
+        AOEIW9_CAN_eco_civ_4
+        AOEIW9_CAN_eco_civ_5
+        AOEIW9_CAN_eco_civ_6
+        AOEIW9_CAN_eco_civ_7
+        AOEIW9_CAN_eco_civ_8
+        AOEIW9_CAN_eco_war_2
+        AOEIW9_CAN_eco_war_3
+        AOEIW9_CAN_eco_war_4
+        AOEIW9_CAN_eco_war_5
+        AOEIW9_CAN_eco_war_6
+        AOEIW9_CAN_eco_science_1
+        AOEIW9_CAN_eco_science_2
+        AOEIW9_CAN_eco_science_3
+        AOEIW9_CAN_eco_science_4
+        AOEIW9_CAN_eco_science_5
+        AOEIW9_CAN_eco_infra_1
+        AOEIW9_CAN_eco_infra_2
+        AOEIW9_CAN_eco_infra_3
+        AOEIW9_CAN_eco_infra_4
+        AOEIW9_CAN_mil_army_2
+        AOEIW9_CAN_mil_army_3
+        AOEIW9_CAN_mil_army_5
+        AOEIW9_CAN_mil_army_6
+        AOEIW9_CAN_mil_army_7
+        AOEIW9_CAN_mil_army_8
+        AOEIW9_CAN_mil_army_9
+        AOEIW9_CAN_mil_air_1
+        AOEIW9_CAN_mil_air_2
+        AOEIW9_CAN_mil_air_3
+        AOEIW9_CAN_mil_air_4
+        AOEIW9_CAN_mil_air_5
+        AOEIW9_CAN_mil_air_6
+        AOEIW9_CAN_mil_sea_1
+        AOEIW9_CAN_mil_sea_2
+        AOEIW9_CAN_mil_sea_3
+        AOEIW9_CAN_mil_sea_4
+        AOEIW9_CAN_mil_sea_5
+        AOEIW9_CAN_mil_sea_6
+        AOEIW9_CAN_dip_a_1
+        AOEIW9_CAN_dip_a_3
+        AOEIW9_CAN_dip_a_4
+        AOEIW9_CAN_dip_a_5
+        AOEIW9_CAN_dip_a_6
+        AOEIW9_CAN_dip_b_1
+        AOEIW9_CAN_dip_b_3
+        AOEIW9_CAN_dip_b_4
+        AOEIW9_CAN_dip_b_5
+        AOEIW9_CAN_dip_b_6
+        AOEIW9_CAN_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 45
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 5
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_CHI_focus_plan = {
+    name = "AOEIW CHI V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = CHI }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_CHI_politics_root
+        AOEIW9_CHI_politics_p1_1
+        AOEIW9_CHI_politics_p1_7
+        AOEIW9_CHI_politics_settlement
+        AOEIW9_CHI_eco_root
+        AOEIW9_CHI_eco_civ_1
+        AOEIW9_CHI_eco_civ_3
+        AOEIW9_CHI_eco_war_1
+        AOEIW9_CHI_eco_war_8
+        AOEIW9_CHI_eco_science_7
+        AOEIW9_CHI_eco_final
+        AOEIW9_CHI_mil_root
+        AOEIW9_CHI_mil_army_1
+        AOEIW9_CHI_mil_army_2
+        AOEIW9_CHI_mil_army_3
+        AOEIW9_CHI_mil_army_4
+        AOEIW9_CHI_mil_final
+        AOEIW9_CHI_dip_root
+        AOEIW9_CHI_dip_a_2
+        AOEIW9_CHI_dip_b_2
+        AOEIW9_CHI_politics_p1_2
+        AOEIW9_CHI_politics_p1_3
+        AOEIW9_CHI_politics_p1_4
+        AOEIW9_CHI_politics_p1_5
+        AOEIW9_CHI_politics_p1_6
+        AOEIW9_CHI_politics_p2_1
+        AOEIW9_CHI_politics_p2_2
+        AOEIW9_CHI_politics_p2_3
+        AOEIW9_CHI_politics_p2_4
+        AOEIW9_CHI_politics_p2_5
+        AOEIW9_CHI_politics_p2_6
+        AOEIW9_CHI_politics_p2_7
+        AOEIW9_CHI_politics_p3_1
+        AOEIW9_CHI_politics_p3_2
+        AOEIW9_CHI_politics_p3_3
+        AOEIW9_CHI_politics_p3_4
+        AOEIW9_CHI_politics_p3_5
+        AOEIW9_CHI_politics_p3_6
+        AOEIW9_CHI_politics_p3_7
+        AOEIW9_CHI_eco_civ_2
+        AOEIW9_CHI_eco_civ_4
+        AOEIW9_CHI_eco_civ_5
+        AOEIW9_CHI_eco_civ_6
+        AOEIW9_CHI_eco_civ_7
+        AOEIW9_CHI_eco_war_2
+        AOEIW9_CHI_eco_war_3
+        AOEIW9_CHI_eco_war_4
+        AOEIW9_CHI_eco_war_5
+        AOEIW9_CHI_eco_war_6
+        AOEIW9_CHI_eco_war_7
+        AOEIW9_CHI_eco_science_1
+        AOEIW9_CHI_eco_science_2
+        AOEIW9_CHI_eco_science_3
+        AOEIW9_CHI_eco_science_4
+        AOEIW9_CHI_eco_science_5
+        AOEIW9_CHI_eco_science_6
+        AOEIW9_CHI_eco_infra_1
+        AOEIW9_CHI_eco_infra_2
+        AOEIW9_CHI_eco_infra_3
+        AOEIW9_CHI_eco_infra_4
+        AOEIW9_CHI_mil_army_8
+        AOEIW28_CHI_field_workshops
+        AOEIW28_CHI_signals
+        AOEIW9_CHI_mil_army_9
+        AOEIW9_CHI_mil_army_10
+        AOEIW9_CHI_mil_air_1
+        AOEIW9_CHI_mil_air_2
+        AOEIW9_CHI_mil_air_3
+        AOEIW9_CHI_mil_air_4
+        AOEIW9_CHI_mil_air_5
+        AOEIW9_CHI_mil_air_6
+        AOEIW9_CHI_mil_air_7
+        AOEIW9_CHI_mil_sea_1
+        AOEIW9_CHI_mil_sea_2
+        AOEIW9_CHI_mil_sea_3
+        AOEIW9_CHI_mil_sea_4
+        AOEIW9_CHI_mil_sea_5
+        AOEIW9_CHI_mil_sea_6
+        AOEIW9_CHI_mil_sea_7
+        AOEIW9_CHI_dip_a_1
+        AOEIW9_CHI_dip_a_3
+        AOEIW9_CHI_dip_a_4
+        AOEIW9_CHI_dip_a_5
+        AOEIW9_CHI_dip_a_6
+        AOEIW9_CHI_dip_a_7
+        AOEIW9_CHI_dip_b_1
+        AOEIW9_CHI_dip_b_3
+        AOEIW9_CHI_dip_b_4
+        AOEIW9_CHI_dip_b_5
+        AOEIW9_CHI_dip_b_6
+        AOEIW9_CHI_dip_b_7
+        AOEIW9_CHI_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 120
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 8
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 6
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_DEN_focus_plan = {
+    name = "AOEIW DEN V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = DEN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_DEN_politics_root
+        AOEIW9_DEN_politics_p1_1
+        AOEIW9_DEN_politics_p1_5
+        AOEIW9_DEN_politics_settlement
+        AOEIW9_DEN_eco_root
+        AOEIW9_DEN_eco_civ_1
+        AOEIW9_DEN_eco_civ_3
+        AOEIW9_DEN_eco_war_1
+        AOEIW9_DEN_eco_war_6
+        AOEIW9_DEN_eco_science_5
+        AOEIW9_DEN_eco_final
+        AOEIW9_DEN_mil_root
+        AOEIW9_DEN_mil_army_1
+        AOEIW9_DEN_mil_army_4
+        AOEIW9_DEN_mil_final
+        AOEIW9_DEN_dip_root
+        AOEIW9_DEN_dip_a_2
+        AOEIW9_DEN_dip_b_2
+        AOEIW9_DEN_politics_p1_2
+        AOEIW9_DEN_politics_p1_3
+        AOEIW9_DEN_politics_p1_4
+        AOEIW9_DEN_politics_p2_1
+        AOEIW9_DEN_politics_p2_2
+        AOEIW9_DEN_politics_p2_3
+        AOEIW9_DEN_politics_p2_4
+        AOEIW9_DEN_politics_p2_5
+        AOEIW9_DEN_politics_p3_1
+        AOEIW9_DEN_politics_p3_2
+        AOEIW9_DEN_politics_p3_3
+        AOEIW9_DEN_politics_p3_4
+        AOEIW9_DEN_politics_p3_5
+        AOEIW9_DEN_eco_civ_2
+        AOEIW9_DEN_eco_civ_4
+        AOEIW9_DEN_eco_civ_5
+        AOEIW9_DEN_eco_civ_6
+        AOEIW9_DEN_eco_civ_7
+        AOEIW9_DEN_eco_civ_8
+        AOEIW9_DEN_eco_civ_9
+        AOEIW9_DEN_eco_war_2
+        AOEIW9_DEN_eco_war_3
+        AOEIW9_DEN_eco_war_4
+        AOEIW9_DEN_eco_war_5
+        AOEIW9_DEN_eco_science_1
+        AOEIW9_DEN_eco_science_2
+        AOEIW9_DEN_eco_science_3
+        AOEIW9_DEN_eco_science_4
+        AOEIW9_DEN_eco_infra_1
+        AOEIW9_DEN_eco_infra_2
+        AOEIW9_DEN_eco_infra_3
+        AOEIW9_DEN_eco_infra_4
+        AOEIW9_DEN_mil_army_2
+        AOEIW9_DEN_mil_army_3
+        AOEIW9_DEN_mil_army_5
+        AOEIW9_DEN_mil_army_6
+        AOEIW9_DEN_mil_army_7
+        AOEIW9_DEN_mil_air_1
+        AOEIW9_DEN_mil_air_2
+        AOEIW9_DEN_mil_air_3
+        AOEIW9_DEN_mil_air_4
+        AOEIW9_DEN_mil_air_5
+        AOEIW9_DEN_mil_sea_1
+        AOEIW9_DEN_mil_sea_2
+        AOEIW9_DEN_mil_sea_3
+        AOEIW9_DEN_mil_sea_4
+        AOEIW9_DEN_mil_sea_5
+        AOEIW9_DEN_dip_a_1
+        AOEIW9_DEN_dip_a_3
+        AOEIW9_DEN_dip_a_4
+        AOEIW9_DEN_dip_a_5
+        AOEIW9_DEN_dip_b_1
+        AOEIW9_DEN_dip_b_3
+        AOEIW9_DEN_dip_b_4
+        AOEIW9_DEN_dip_b_5
+        AOEIW9_DEN_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 30
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_EGY_focus_plan = {
+    name = "AOEIW EGY V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = EGY }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_EGY_politics_root
+        AOEIW9_EGY_politics_p1_1
+        AOEIW9_EGY_politics_p1_5
+        AOEIW9_EGY_politics_settlement
+        AOEIW9_EGY_eco_root
+        AOEIW9_EGY_eco_civ_1
+        AOEIW9_EGY_eco_civ_3
+        AOEIW9_EGY_eco_war_1
+        AOEIW9_EGY_eco_war_6
+        AOEIW9_EGY_eco_science_5
+        AOEIW9_EGY_eco_final
+        AOEIW9_EGY_mil_root
+        AOEIW9_EGY_mil_army_1
+        AOEIW9_EGY_mil_army_4
+        AOEIW9_EGY_mil_final
+        AOEIW9_EGY_dip_root
+        AOEIW9_EGY_dip_a_2
+        AOEIW9_EGY_dip_b_2
+        AOEIW9_EGY_politics_p1_2
+        AOEIW9_EGY_politics_p1_3
+        AOEIW9_EGY_politics_p1_4
+        AOEIW9_EGY_politics_p2_1
+        AOEIW9_EGY_politics_p2_2
+        AOEIW9_EGY_politics_p2_3
+        AOEIW9_EGY_politics_p2_4
+        AOEIW9_EGY_politics_p2_5
+        AOEIW9_EGY_politics_p3_1
+        AOEIW9_EGY_politics_p3_2
+        AOEIW9_EGY_politics_p3_3
+        AOEIW9_EGY_politics_p3_4
+        AOEIW9_EGY_politics_p3_5
+        AOEIW9_EGY_eco_civ_2
+        AOEIW9_EGY_eco_civ_4
+        AOEIW9_EGY_eco_civ_5
+        AOEIW9_EGY_eco_civ_6
+        AOEIW9_EGY_eco_civ_7
+        AOEIW9_EGY_eco_civ_8
+        AOEIW9_EGY_eco_civ_9
+        AOEIW9_EGY_eco_war_2
+        AOEIW9_EGY_eco_war_3
+        AOEIW9_EGY_eco_war_4
+        AOEIW9_EGY_eco_war_5
+        AOEIW9_EGY_eco_science_1
+        AOEIW9_EGY_eco_science_2
+        AOEIW9_EGY_eco_science_3
+        AOEIW9_EGY_eco_science_4
+        AOEIW9_EGY_eco_infra_1
+        AOEIW9_EGY_eco_infra_2
+        AOEIW9_EGY_eco_infra_3
+        AOEIW9_EGY_eco_infra_4
+        AOEIW9_EGY_mil_army_2
+        AOEIW9_EGY_mil_army_3
+        AOEIW9_EGY_mil_army_5
+        AOEIW9_EGY_mil_army_6
+        AOEIW9_EGY_mil_army_7
+        AOEIW9_EGY_mil_air_1
+        AOEIW9_EGY_mil_air_2
+        AOEIW9_EGY_mil_air_3
+        AOEIW9_EGY_mil_air_4
+        AOEIW9_EGY_mil_air_5
+        AOEIW9_EGY_mil_sea_1
+        AOEIW9_EGY_mil_sea_2
+        AOEIW9_EGY_mil_sea_3
+        AOEIW9_EGY_mil_sea_4
+        AOEIW9_EGY_mil_sea_5
+        AOEIW9_EGY_dip_a_1
+        AOEIW9_EGY_dip_a_3
+        AOEIW9_EGY_dip_a_4
+        AOEIW9_EGY_dip_a_5
+        AOEIW9_EGY_dip_b_1
+        AOEIW9_EGY_dip_b_3
+        AOEIW9_EGY_dip_b_4
+        AOEIW9_EGY_dip_b_5
+        AOEIW9_EGY_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 30
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 2
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_ENG_focus_plan = {
+    name = "AOEIW ENG V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = ENG }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_ENG_politics_p1_1
+        AOEIW9_ENG_politics_p1_7
+        AOEIW26_ENG_cabinet_government_act
+        AOEIW26_ENG_crown_in_parliament
+        AOEIW9_ENG_politics_settlement
+        AOEIW9_ENG_eco_root
+        AOEIW9_ENG_eco_civ_1
+        AOEIW9_ENG_eco_civ_3
+        AOEIW9_ENG_eco_war_1
+        AOEIW9_ENG_eco_war_8
+        AOEIW9_ENG_eco_science_7
+        AOEIW9_ENG_eco_final
+        AOEIW9_ENG_mil_root
+        AOEIW9_ENG_mil_army_1
+        AOEIW9_ENG_mil_army_2
+        AOEIW9_ENG_mil_army_3
+        AOEIW9_ENG_mil_army_4
+        AOEIW9_ENG_mil_final
+        AOEIW9_ENG_dip_root
+        AOEIW9_ENG_dip_a_2
+        AOEIW9_ENG_dip_b_2
+        AOEIW9_ENG_politics_p1_2
+        AOEIW9_ENG_politics_p1_3
+        AOEIW9_ENG_politics_p1_4
+        AOEIW9_ENG_politics_p1_5
+        AOEIW9_ENG_politics_p1_6
+        AOEIW9_ENG_politics_p2_1
+        AOEIW9_ENG_politics_p2_2
+        AOEIW9_ENG_politics_p2_3
+        AOEIW9_ENG_politics_p2_4
+        AOEIW9_ENG_politics_p2_5
+        AOEIW9_ENG_politics_p2_6
+        AOEIW9_ENG_politics_p2_7
+        AOEIW9_ENG_politics_p3_1
+        AOEIW9_ENG_politics_p3_2
+        AOEIW9_ENG_politics_p3_3
+        AOEIW9_ENG_politics_p3_4
+        AOEIW9_ENG_politics_p3_5
+        AOEIW9_ENG_politics_p3_6
+        AOEIW9_ENG_politics_p3_7
+        AOEIW9_ENG_eco_civ_2
+        AOEIW9_ENG_eco_civ_4
+        AOEIW9_ENG_eco_civ_5
+        AOEIW9_ENG_eco_civ_6
+        AOEIW9_ENG_eco_civ_7
+        AOEIW9_ENG_eco_war_2
+        AOEIW9_ENG_eco_war_3
+        AOEIW9_ENG_eco_war_4
+        AOEIW9_ENG_eco_war_5
+        AOEIW9_ENG_eco_war_6
+        AOEIW9_ENG_eco_war_7
+        AOEIW9_ENG_eco_science_1
+        AOEIW9_ENG_eco_science_2
+        AOEIW9_ENG_eco_science_3
+        AOEIW9_ENG_eco_science_4
+        AOEIW9_ENG_eco_science_5
+        AOEIW9_ENG_eco_science_6
+        AOEIW9_ENG_eco_infra_1
+        AOEIW9_ENG_eco_infra_2
+        AOEIW9_ENG_eco_infra_3
+        AOEIW9_ENG_eco_infra_4
+        AOEIW9_ENG_mil_army_8
+        AOEIW28_ENG_field_workshops
+        AOEIW28_ENG_signals
+        AOEIW9_ENG_mil_army_9
+        AOEIW9_ENG_mil_army_10
+        AOEIW9_ENG_mil_air_1
+        AOEIW9_ENG_mil_air_2
+        AOEIW9_ENG_mil_air_3
+        AOEIW9_ENG_mil_air_4
+        AOEIW9_ENG_mil_air_5
+        AOEIW9_ENG_mil_air_6
+        AOEIW9_ENG_mil_air_7
+        AOEIW9_ENG_mil_sea_1
+        AOEIW9_ENG_mil_sea_2
+        AOEIW9_ENG_mil_sea_3
+        AOEIW9_ENG_mil_sea_4
+        AOEIW9_ENG_mil_sea_5
+        AOEIW9_ENG_mil_sea_6
+        AOEIW9_ENG_mil_sea_7
+        AOEIW9_ENG_dip_a_1
+        AOEIW9_ENG_dip_a_3
+        AOEIW9_ENG_dip_a_4
+        AOEIW9_ENG_dip_a_5
+        AOEIW9_ENG_dip_a_6
+        AOEIW9_ENG_dip_a_7
+        AOEIW9_ENG_dip_b_1
+        AOEIW9_ENG_dip_b_3
+        AOEIW9_ENG_dip_b_4
+        AOEIW9_ENG_dip_b_5
+        AOEIW9_ENG_dip_b_6
+        AOEIW9_ENG_dip_b_7
+        AOEIW9_ENG_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 90
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 8
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_ETH_focus_plan = {
+    name = "AOEIW ETH V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = ETH }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_ETH_politics_root
+        AOEIW9_ETH_politics_p1_1
+        AOEIW9_ETH_politics_p1_5
+        AOEIW9_ETH_politics_settlement
+        AOEIW9_ETH_eco_root
+        AOEIW9_ETH_eco_civ_1
+        AOEIW9_ETH_eco_civ_3
+        AOEIW9_ETH_eco_war_1
+        AOEIW9_ETH_eco_war_6
+        AOEIW9_ETH_eco_science_5
+        AOEIW9_ETH_eco_final
+        AOEIW9_ETH_mil_root
+        AOEIW9_ETH_mil_army_1
+        AOEIW9_ETH_mil_army_4
+        AOEIW9_ETH_mil_final
+        AOEIW9_ETH_dip_root
+        AOEIW9_ETH_dip_a_2
+        AOEIW9_ETH_dip_b_2
+        AOEIW9_ETH_politics_p1_2
+        AOEIW9_ETH_politics_p1_3
+        AOEIW9_ETH_politics_p1_4
+        AOEIW9_ETH_politics_p2_1
+        AOEIW9_ETH_politics_p2_2
+        AOEIW9_ETH_politics_p2_3
+        AOEIW9_ETH_politics_p2_4
+        AOEIW9_ETH_politics_p2_5
+        AOEIW9_ETH_politics_p3_1
+        AOEIW9_ETH_politics_p3_2
+        AOEIW9_ETH_politics_p3_3
+        AOEIW9_ETH_politics_p3_4
+        AOEIW9_ETH_politics_p3_5
+        AOEIW9_ETH_eco_civ_2
+        AOEIW9_ETH_eco_civ_4
+        AOEIW9_ETH_eco_civ_5
+        AOEIW9_ETH_eco_civ_6
+        AOEIW9_ETH_eco_civ_7
+        AOEIW9_ETH_eco_civ_8
+        AOEIW9_ETH_eco_civ_9
+        AOEIW9_ETH_eco_war_2
+        AOEIW9_ETH_eco_war_3
+        AOEIW9_ETH_eco_war_4
+        AOEIW9_ETH_eco_war_5
+        AOEIW9_ETH_eco_science_1
+        AOEIW9_ETH_eco_science_2
+        AOEIW9_ETH_eco_science_3
+        AOEIW9_ETH_eco_science_4
+        AOEIW9_ETH_eco_infra_1
+        AOEIW9_ETH_eco_infra_2
+        AOEIW9_ETH_eco_infra_3
+        AOEIW9_ETH_eco_infra_4
+        AOEIW9_ETH_mil_army_2
+        AOEIW9_ETH_mil_army_3
+        AOEIW9_ETH_mil_army_5
+        AOEIW9_ETH_mil_army_6
+        AOEIW9_ETH_mil_army_7
+        AOEIW9_ETH_mil_air_1
+        AOEIW9_ETH_mil_air_2
+        AOEIW9_ETH_mil_air_3
+        AOEIW9_ETH_mil_air_4
+        AOEIW9_ETH_mil_air_5
+        AOEIW9_ETH_mil_special_1
+        AOEIW9_ETH_mil_special_2
+        AOEIW9_ETH_mil_special_3
+        AOEIW9_ETH_mil_special_4
+        AOEIW9_ETH_mil_special_5
+        AOEIW9_ETH_dip_a_1
+        AOEIW9_ETH_dip_a_3
+        AOEIW9_ETH_dip_a_4
+        AOEIW9_ETH_dip_a_5
+        AOEIW9_ETH_dip_b_1
+        AOEIW9_ETH_dip_b_3
+        AOEIW9_ETH_dip_b_4
+        AOEIW9_ETH_dip_b_5
+        AOEIW9_ETH_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 28
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 2
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_FIN_focus_plan = {
+    name = "AOEIW FIN V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = FIN }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_FIN_politics_root
+        AOEIW9_FIN_politics_p1_1
+        AOEIW9_FIN_politics_p1_6
+        AOEIW9_FIN_politics_settlement
+        AOEIW9_FIN_eco_root
+        AOEIW9_FIN_eco_civ_1
+        AOEIW9_FIN_eco_civ_3
+        AOEIW9_FIN_eco_war_1
+        AOEIW9_FIN_eco_war_7
+        AOEIW9_FIN_eco_science_6
+        AOEIW9_FIN_eco_final
+        AOEIW9_FIN_mil_root
+        AOEIW9_FIN_mil_army_1
+        AOEIW9_FIN_mil_army_4
+        AOEIW9_FIN_mil_final
+        AOEIW9_FIN_dip_root
+        AOEIW9_FIN_dip_a_2
+        AOEIW9_FIN_dip_b_2
+        AOEIW9_FIN_politics_p1_2
+        AOEIW9_FIN_politics_p1_3
+        AOEIW9_FIN_politics_p1_4
+        AOEIW9_FIN_politics_p1_5
+        AOEIW9_FIN_politics_p2_1
+        AOEIW9_FIN_politics_p2_2
+        AOEIW9_FIN_politics_p2_3
+        AOEIW9_FIN_politics_p2_4
+        AOEIW9_FIN_politics_p2_5
+        AOEIW9_FIN_politics_p2_6
+        AOEIW9_FIN_politics_p3_1
+        AOEIW9_FIN_politics_p3_2
+        AOEIW9_FIN_politics_p3_3
+        AOEIW9_FIN_politics_p3_4
+        AOEIW9_FIN_politics_p3_5
+        AOEIW9_FIN_politics_p3_6
+        AOEIW9_FIN_eco_civ_2
+        AOEIW9_FIN_eco_civ_4
+        AOEIW9_FIN_eco_civ_5
+        AOEIW9_FIN_eco_civ_6
+        AOEIW9_FIN_eco_civ_7
+        AOEIW9_FIN_eco_civ_8
+        AOEIW9_FIN_eco_war_2
+        AOEIW9_FIN_eco_war_3
+        AOEIW9_FIN_eco_war_4
+        AOEIW9_FIN_eco_war_5
+        AOEIW9_FIN_eco_war_6
+        AOEIW9_FIN_eco_science_1
+        AOEIW9_FIN_eco_science_2
+        AOEIW9_FIN_eco_science_3
+        AOEIW9_FIN_eco_science_4
+        AOEIW9_FIN_eco_science_5
+        AOEIW9_FIN_eco_infra_1
+        AOEIW9_FIN_eco_infra_2
+        AOEIW9_FIN_eco_infra_3
+        AOEIW9_FIN_eco_infra_4
+        AOEIW9_FIN_mil_army_2
+        AOEIW9_FIN_mil_army_3
+        AOEIW9_FIN_mil_army_5
+        AOEIW9_FIN_mil_army_6
+        AOEIW9_FIN_mil_army_7
+        AOEIW9_FIN_mil_army_8
+        AOEIW9_FIN_mil_army_9
+        AOEIW9_FIN_mil_air_1
+        AOEIW9_FIN_mil_air_2
+        AOEIW9_FIN_mil_air_3
+        AOEIW9_FIN_mil_air_4
+        AOEIW9_FIN_mil_air_5
+        AOEIW9_FIN_mil_air_6
+        AOEIW9_FIN_mil_sea_1
+        AOEIW9_FIN_mil_sea_2
+        AOEIW9_FIN_mil_sea_3
+        AOEIW9_FIN_mil_sea_4
+        AOEIW9_FIN_mil_sea_5
+        AOEIW9_FIN_mil_sea_6
+        AOEIW9_FIN_dip_a_1
+        AOEIW9_FIN_dip_a_3
+        AOEIW9_FIN_dip_a_4
+        AOEIW9_FIN_dip_a_5
+        AOEIW9_FIN_dip_a_6
+        AOEIW9_FIN_dip_b_1
+        AOEIW9_FIN_dip_b_3
+        AOEIW9_FIN_dip_b_4
+        AOEIW9_FIN_dip_b_5
+        AOEIW9_FIN_dip_b_6
+        AOEIW9_FIN_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_FRA_focus_plan = {
+    name = "AOEIW FRA V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = FRA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_FRA_politics_root
+        AOEIW_IMM_FRA_root
+        AOEIW9_FRA_politics_p1_1
+        AOEIW_STRUCT_FRA_DEPTH_mayors_petition
+        AOEIW_STRUCT_FRA_DEPTH_mayoral_congress
+        AOEIW_STRUCT_FRA_DEPTH_civic_register
+        AOEIW_STRUCT_FRA_DEPTH_prefect_limits
+        AOEIW_STRUCT_FRA_DEPTH_civil_appeals
+        AOEIW9_FRA_politics_p1_7
+        AOEIW_STRUCT_FRA_DEPTH_collective_contracts
+        AOEIW_STRUCT_FRA_DEPTH_union_representatives
+        AOEIW9_FRA_politics_settlement
+        AOEIW9_FRA_eco_root
+        AOEIW9_FRA_eco_civ_1
+        AOEIW9_FRA_eco_civ_3
+        AOEIW9_FRA_eco_war_1
+        AOEIW9_FRA_eco_war_8
+        AOEIW_STRUCT_FRA_DEPTH_alpine_radio
+        AOEIW_STRUCT_FRA_DEPTH_standard_chassis
+        AOEIW9_FRA_eco_science_7
+        AOEIW_STRUCT_FRA_DEPTH_technical_lycees
+        AOEIW_STRUCT_FRA_DEPTH_aviation_tools
+        AOEIW9_FRA_eco_final
+        AOEIW9_FRA_mil_root
+        AOEIW9_FRA_mil_army_1
+        AOEIW9_FRA_mil_army_5
+        AOEIW9_FRA_mil_army_6
+        AOEIW9_FRA_mil_army_7
+        AOEIW9_FRA_mil_final
+        AOEIW9_FRA_dip_root
+        AOEIW9_FRA_dip_a_2
+        AOEIW9_FRA_dip_b_2
+        AOEIW9_FRA_politics_p1_2
+        AOEIW9_FRA_politics_p1_3
+        AOEIW9_FRA_politics_p1_4
+        AOEIW9_FRA_politics_p1_5
+        AOEIW9_FRA_politics_p1_6
+        AOEIW9_FRA_politics_p2_1
+        AOEIW9_FRA_politics_p2_2
+        AOEIW9_FRA_politics_p2_3
+        AOEIW9_FRA_politics_p2_4
+        AOEIW9_FRA_politics_p2_5
+        AOEIW_STRUCT_FRA_DEPTH_corps_archives
+        AOEIW_STRUCT_FRA_DEPTH_imperial_inspectors
+        AOEIW_STRUCT_FRA_DEPTH_service_obligation
+        AOEIW9_FRA_politics_p2_6
+        AOEIW9_FRA_politics_p2_7
+        AOEIW9_FRA_politics_p3_1
+        AOEIW9_FRA_politics_p3_2
+        AOEIW_STRUCT_FRA_DEPTH_delegate_schools
+        AOEIW_STRUCT_FRA_DEPTH_food_congress
+        AOEIW_STRUCT_FRA_DEPTH_ration_cards
+        AOEIW_STRUCT_FRA_DEPTH_bakery_councils
+        AOEIW_STRUCT_FRA_DEPTH_grain_register
+        AOEIW_STRUCT_FRA_DEPTH_communal_transport
+        AOEIW9_FRA_politics_p3_3
+        AOEIW9_FRA_politics_p3_4
+        AOEIW9_FRA_politics_p3_5
+        AOEIW9_FRA_politics_p3_6
+        AOEIW9_FRA_politics_p3_7
+        AOEIW9_FRA_eco_civ_2
+        AOEIW9_FRA_eco_civ_4
+        AOEIW9_FRA_eco_civ_5
+        AOEIW9_FRA_eco_civ_6
+        AOEIW9_FRA_eco_civ_7
+        AOEIW_STRUCT_FRA_DEPTH_paris_workshops
+        AOEIW_STRUCT_FRA_DEPTH_paris_contract
+        AOEIW_STRUCT_FRA_DEPTH_supplier_acceptance
+        AOEIW9_FRA_eco_war_2
+        AOEIW9_FRA_eco_war_3
+        AOEIW9_FRA_eco_war_4
+        AOEIW9_FRA_eco_war_5
+        AOEIW9_FRA_eco_war_6
+        AOEIW9_FRA_eco_war_7
+        AOEIW9_FRA_eco_science_1
+        AOEIW9_FRA_eco_science_2
+        AOEIW9_FRA_eco_science_3
+        AOEIW9_FRA_eco_science_4
+        AOEIW9_FRA_eco_science_5
+        AOEIW9_FRA_eco_science_6
+        AOEIW9_FRA_eco_infra_1
+        AOEIW9_FRA_eco_infra_2
+        AOEIW9_FRA_eco_infra_3
+        AOEIW9_FRA_eco_infra_4
+        AOEIW9_FRA_mil_army_8
+        AOEIW28_FRA_field_workshops
+        AOEIW28_FRA_signals
+        AOEIW9_FRA_mil_army_9
+        AOEIW9_FRA_mil_army_10
+        AOEIW9_FRA_mil_air_1
+        AOEIW9_FRA_mil_air_2
+        AOEIW9_FRA_mil_air_3
+        AOEIW9_FRA_mil_air_4
+        AOEIW9_FRA_mil_air_5
+        AOEIW9_FRA_mil_air_6
+        AOEIW9_FRA_mil_air_7
+        AOEIW9_FRA_mil_sea_1
+        AOEIW9_FRA_mil_sea_2
+        AOEIW9_FRA_mil_sea_3
+        AOEIW9_FRA_mil_sea_4
+        AOEIW9_FRA_mil_sea_5
+        AOEIW9_FRA_mil_sea_6
+        AOEIW9_FRA_mil_sea_7
+        AOEIW_STRUCT_FRA_DEPTH_naval_rescue
+        AOEIW_STRUCT_FRA_DEPTH_maritime_patrols
+        AOEIW9_FRA_dip_a_1
+        AOEIW9_FRA_dip_a_3
+        AOEIW9_FRA_dip_a_4
+        AOEIW9_FRA_dip_a_5
+        AOEIW9_FRA_dip_a_6
+        AOEIW9_FRA_dip_a_7
+        AOEIW9_FRA_dip_b_1
+        AOEIW9_FRA_dip_b_3
+        AOEIW9_FRA_dip_b_4
+        AOEIW9_FRA_dip_b_5
+        AOEIW9_FRA_dip_b_6
+        AOEIW9_FRA_dip_b_7
+        AOEIW9_FRA_dip_final
+        AOEIW16_FRA_stabilise_factory_committees
+        AOEIW16_FRA_council_production_quotas
+        AOEIW16_FRA_mass_rifle_programme
+        AOEIW16_FRA_communal_arsenals
+        AOEIW16_FRA_national_factory_congress
+        AOEIW16_FRA_maximum_efficiency_directive
+        AOEIW16_FRA_citizen_army
+        AOEIW16_FRA_militias_into_line_divisions
+        AOEIW16_FRA_mass_war_staff
+        AOEIW16_FRA_workers_aviation
+        AOEIW16_FRA_replacement_airframes
+        AOEIW16_FRA_naval_loyalty_convention
+        AOEIW16_FRA_red_fleets
+        AOEIW16_FRA_revolutionary_diplomacy
+        AOEIW16_FRA_workers_international
+        AOEIW16_FRA_fortress_commune
+        AOEIW16_FRA_arsenal_of_the_commune
+        AOEIW_IMM_FRA_marshalate_1
+        AOEIW_STRUCT_FRA_DEPTH_directorate_charter
+        AOEIW_STRUCT_FRA_DEPTH_judicial_review
+        AOEIW_STRUCT_FRA_DEPTH_military_inspection
+        AOEIW_IMM_FRA_marshalate_2
+        AOEIW_IMM_FRA_marshalate_3
+        AOEIW_IMM_FRA_grandeur_1
+        AOEIW_STRUCT_FRA_DEPTH_interpreter_corps
+        AOEIW_STRUCT_FRA_DEPTH_overseas_maintenance
+        AOEIW_STRUCT_FRA_DEPTH_reserve_depots
+        AOEIW_STRUCT_FRA_DEPTH_algerian_contract
+        AOEIW_STRUCT_FRA_DEPTH_algerian_handover
+        AOEIW_IMM_FRA_grandeur_2
+        AOEIW_IMM_FRA_grandeur_3
+        AOEIW_IMM_FRA_union_1
+        AOEIW_STRUCT_FRA_DEPTH_municipal_clinics
+        AOEIW_IMM_FRA_union_2
+        AOEIW_IMM_FRA_union_3
+        AOEIW_IMM_FRA_national_destiny
+        AOEIW_STRUCT_FRA_military_prefects
+        AOEIW_STRUCT_FRA_metropolitan_arsenals
+        AOEIW_STRUCT_FRA_DEPTH_reserve_contracts
+        AOEIW_STRUCT_FRA_DEPTH_reserve_lorries
+        AOEIW_STRUCT_FRA_methodical_reserve
+        AOEIW_STRUCT_FRA_DEPTH_fire_plan
+        AOEIW_STRUCT_FRA_mobile_reserve
+        AOEIW_STRUCT_FRA_DEPTH_counterstroke
+        AOEIW_STRUCT_FRA_military_logistics
+        AOEIW_STRUCT_FRA_DEPTH_evacuation_tables
+        AOEIW_STRUCT_FRA_DEPTH_reserve_staff
+        AOEIW_STRUCT_FRA_DEPTH_medical_columns
+        AOEIW_STRUCT_FRA_military_settlement
+        AOEIW_STRUCT_FRA_DEPTH_directorate_service
+        AOEIW_STRUCT_FRA_imperial_dockyards
+        AOEIW_STRUCT_FRA_colonial_transport
+        AOEIW_STRUCT_FRA_imperial_logistics
+        AOEIW_STRUCT_FRA_communal_credit
+        AOEIW_STRUCT_FRA_citizen_officers
+        AOEIW_STRUCT_FRA_civic_defence
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 95
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 8
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 8
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_GER_historical_focus_plan = {
+    name = "AOEIW Germany: historical Hitler route"
+    desc = "Historical AI follows the Vanilla-style dictatorship, rearmament and expansion sequence."
+    allowed = { original_tag = GER }
+    enable = { is_historical_focus_on = yes }
+    abort = { has_completed_focus = AOEIW9_GER_politics_root }
+    ai_national_focuses = {
+        AOEIW_HIST_GER_nationalist_opposition
+        AOEIW_HIST_GER_industrialist_contacts
+        AOEIW_HIST_GER_january_crisis
+        AOEIW_HIST_GER_appoint_hitler
+        AOEIW_HIST_GER_fire_decree
+        AOEIW_HIST_GER_enabling_act
+        AOEIW_HIST_GER_gleichschaltung
+        AOEIW_HIST_GER_night_long_knives
+        AOEIW_HIST_GER_fuhrer_state
+        AOEIW_HIST_GER_reich_labour_service
+        AOEIW_HIST_GER_four_year_plan
+        AOEIW_HIST_GER_autarky
+        AOEIW_HIST_GER_reichswerke
+        AOEIW_HIST_GER_war_economy
+        AOEIW_HIST_GER_secret_rearmament
+        AOEIW_HIST_GER_general_staff_pact
+        AOEIW_HIST_GER_panzerwaffe
+        AOEIW_HIST_GER_rebuild_luftwaffe
+        AOEIW_HIST_GER_close_air_support
+        AOEIW_HIST_GER_plan_z
+        AOEIW_HIST_GER_uboat_arm
+        AOEIW_HIST_GER_blitzkrieg_machine
+        AOEIW_HIST_GER_rhineland
+        AOEIW_HIST_GER_anschluss
+        AOEIW_HIST_GER_sudeten_crisis
+        AOEIW_HIST_GER_fate_czechoslovakia
+        AOEIW_HIST_GER_pact_with_moscow
+        AOEIW_HIST_GER_danzig_or_war
+        AOEIW_HIST_GER_around_maginot
+        AOEIW_HIST_GER_operation_barbarossa
+        AOEIW9_GER_eco_root
+        AOEIW9_GER_eco_civ_1
+        AOEIW9_GER_eco_civ_2
+        AOEIW9_GER_eco_civ_3
+        AOEIW9_GER_eco_civ_4
+        AOEIW9_GER_eco_civ_5
+        AOEIW9_GER_eco_civ_6
+        AOEIW9_GER_eco_civ_7
+        AOEIW9_GER_eco_war_1
+        AOEIW9_GER_eco_war_2
+        AOEIW9_GER_eco_war_3
+        AOEIW9_GER_eco_war_4
+        AOEIW9_GER_eco_war_5
+        AOEIW9_GER_eco_war_6
+        AOEIW9_GER_eco_war_7
+        AOEIW9_GER_eco_war_8
+        AOEIW9_GER_eco_science_1
+        AOEIW9_GER_eco_science_2
+        AOEIW9_GER_eco_science_3
+        AOEIW9_GER_eco_science_4
+        AOEIW9_GER_eco_science_5
+        AOEIW9_GER_eco_science_6
+        AOEIW9_GER_eco_science_7
+        AOEIW9_GER_eco_infra_1
+        AOEIW9_GER_eco_infra_2
+        AOEIW9_GER_eco_infra_3
+        AOEIW9_GER_eco_infra_4
+        AOEIW9_GER_eco_final
+        AOEIW9_GER_mil_root
+        AOEIW9_GER_mil_army_1
+        AOEIW9_GER_mil_army_5
+        AOEIW9_GER_mil_army_6
+        AOEIW9_GER_mil_army_7
+        AOEIW9_GER_mil_army_8
+        AOEIW28_GER_field_workshops
+        AOEIW28_GER_signals
+        AOEIW9_GER_mil_army_9
+        AOEIW9_GER_mil_army_10
+        AOEIW9_GER_mil_air_1
+        AOEIW9_GER_mil_air_2
+        AOEIW9_GER_mil_air_3
+        AOEIW9_GER_mil_air_4
+        AOEIW9_GER_mil_air_5
+        AOEIW9_GER_mil_air_6
+        AOEIW9_GER_mil_air_7
+        AOEIW9_GER_mil_sea_1
+        AOEIW9_GER_mil_sea_2
+        AOEIW9_GER_mil_sea_3
+        AOEIW9_GER_mil_sea_4
+        AOEIW9_GER_mil_sea_5
+        AOEIW9_GER_mil_sea_6
+        AOEIW9_GER_mil_sea_7
+        AOEIW9_GER_mil_final
+        AOEIW9_GER_special_1
+        AOEIW9_GER_special_2
+        AOEIW9_GER_special_3
+        AOEIW9_GER_special_4
+        AOEIW9_GER_special_5
+        AOEIW9_GER_special_6
+        AOEIW9_GER_special_7
+        AOEIW9_GER_special_8
+        AOEIW_STRUCT_GER_DEPTH_rearmament_ledger
+        AOEIW_STRUCT_GER_DEPTH_machine_contracts
+        AOEIW_STRUCT_GER_DEPTH_freight_priority
+        AOEIW_STRUCT_GER_DEPTH_exchange_board
+        AOEIW_STRUCT_GER_DEPTH_synthetic_trials
+        AOEIW_STRUCT_GER_DEPTH_staff_signals
+        AOEIW_STRUCT_GER_DEPTH_fuel_reserve
+        AOEIW_STRUCT_GER_DEPTH_maintenance_columns
+        AOEIW_STRUCT_GER_DEPTH_ruhr_water
+        AOEIW_STRUCT_GER_DEPTH_ruhr_contract
+        AOEIW_STRUCT_GER_DEPTH_apprentice_exchanges
+        AOEIW_STRUCT_GER_DEPTH_metrology
+        AOEIW_STRUCT_GER_DEPTH_diesel_lab
+        AOEIW_STRUCT_GER_DEPTH_steel_reserve
+        AOEIW_STRUCT_GER_DEPTH_arsenal_inspection
+        AOEIW_STRUCT_GER_DEPTH_ruhr_deliveries
+        AOEIW_STRUCT_GER_DEPTH_field_repair
+        AOEIW_STRUCT_GER_DEPTH_replacement_school
+        AOEIW_STRUCT_GER_DEPTH_convoy_school
+        AOEIW_STRUCT_GER_DEPTH_naval_fuel
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 115
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 12
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 12
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_GER_alternate_focus_plan = {
+    name = "AOEIW Germany: alternate imperial route"
+    desc = "Non-historical AI preserves the imperial order before choosing an alternative settlement."
+    allowed = { original_tag = GER }
+    enable = { is_historical_focus_on = no }
+    abort = { has_completed_focus = AOEIW_HIST_GER_nationalist_opposition }
+    ai_national_focuses = {
+        AOEIW9_GER_politics_root
+        AOEIW9_GER_politics_p1_1
+        AOEIW9_GER_politics_p1_2
+        AOEIW9_GER_politics_p1_3
+        AOEIW9_GER_politics_p1_4
+        AOEIW9_GER_politics_p1_5
+        AOEIW9_GER_politics_p1_6
+        AOEIW9_GER_politics_p1_7
+        AOEIW9_GER_politics_p2_1
+        AOEIW9_GER_politics_p2_2
+        AOEIW9_GER_politics_p2_3
+        AOEIW9_GER_politics_p2_4
+        AOEIW9_GER_politics_p2_5
+        AOEIW9_GER_politics_p2_6
+        AOEIW9_GER_politics_p2_7
+        AOEIW9_GER_politics_p3_1
+        AOEIW9_GER_politics_p3_2
+        AOEIW9_GER_politics_p3_3
+        AOEIW9_GER_politics_p3_4
+        AOEIW9_GER_politics_p3_5
+        AOEIW9_GER_politics_p3_6
+        AOEIW9_GER_politics_p3_7
+        AOEIW17_GER_revolutionary_council
+        AOEIW17_GER_ruhr_works_directorate
+        AOEIW17_GER_national_production_ledger
+        AOEIW17_GER_quota_tank_standardisation
+        AOEIW17_GER_mechanised_shift
+        AOEIW17_GER_red_general_staff
+        AOEIW17_GER_artillery_syndicates
+        AOEIW17_GER_rail_war_directorate
+        AOEIW17_GER_workers_armoured_corps
+        AOEIW17_GER_dessau_aviation_combine
+        AOEIW17_GER_battlefield_air_brigades
+        AOEIW17_GER_mass_airframes
+        AOEIW17_GER_equality_for_warsaw
+        AOEIW17_GER_rotterdam_protocol
+        AOEIW17_GER_kiel_sailors_councils
+        AOEIW17_GER_industrial_republics_league
+        AOEIW17_GER_fortress_of_labour
+        AOEIW17_GER_red_high_seas_fleet
+        AOEIW17_GER_machine_war_state
+        AOEIW9_GER_politics_settlement
+        AOEIW28_GER_parliament
+        AOEIW28_GER_zentrum
+        AOEIW28_GER_zentrum_policy_1
+        AOEIW28_GER_zentrum_policy_2
+        AOEIW28_GER_zentrum_settlement
+        AOEIW28_GER_spd
+        AOEIW28_GER_spd_policy_1
+        AOEIW28_GER_spd_policy_2
+        AOEIW28_GER_spd_settlement
+        AOEIW28_GER_liberal
+        AOEIW28_GER_liberal_policy_1
+        AOEIW28_GER_liberal_policy_2
+        AOEIW28_GER_liberal_settlement
+        AOEIW28_GER_conservative
+        AOEIW28_GER_conservative_policy_1
+        AOEIW28_GER_conservative_policy_2
+        AOEIW28_GER_conservative_settlement
+        AOEIW28_GER_confidence
+        AOEIW9_GER_eco_root
+        AOEIW9_GER_eco_civ_1
+        AOEIW9_GER_eco_civ_2
+        AOEIW9_GER_eco_civ_3
+        AOEIW9_GER_eco_civ_4
+        AOEIW9_GER_eco_civ_5
+        AOEIW9_GER_eco_civ_6
+        AOEIW9_GER_eco_civ_7
+        AOEIW9_GER_eco_war_1
+        AOEIW9_GER_eco_war_2
+        AOEIW9_GER_eco_war_3
+        AOEIW9_GER_eco_war_4
+        AOEIW9_GER_eco_war_5
+        AOEIW9_GER_eco_war_6
+        AOEIW9_GER_eco_war_7
+        AOEIW9_GER_eco_war_8
+        AOEIW9_GER_eco_science_1
+        AOEIW9_GER_eco_science_2
+        AOEIW9_GER_eco_science_3
+        AOEIW9_GER_eco_science_4
+        AOEIW9_GER_eco_science_5
+        AOEIW9_GER_eco_science_6
+        AOEIW9_GER_eco_science_7
+        AOEIW9_GER_eco_infra_1
+        AOEIW9_GER_eco_infra_2
+        AOEIW9_GER_eco_infra_3
+        AOEIW9_GER_eco_infra_4
+        AOEIW9_GER_eco_final
+        AOEIW9_GER_mil_root
+        AOEIW9_GER_mil_army_1
+        AOEIW9_GER_mil_army_2
+        AOEIW9_GER_mil_army_3
+        AOEIW9_GER_mil_army_4
+        AOEIW9_GER_mil_army_8
+        AOEIW28_GER_field_workshops
+        AOEIW28_GER_signals
+        AOEIW9_GER_mil_army_9
+        AOEIW9_GER_mil_army_10
+        AOEIW9_GER_mil_air_1
+        AOEIW9_GER_mil_air_2
+        AOEIW9_GER_mil_air_3
+        AOEIW9_GER_mil_air_4
+        AOEIW9_GER_mil_air_5
+        AOEIW9_GER_mil_air_6
+        AOEIW9_GER_mil_air_7
+        AOEIW9_GER_mil_sea_1
+        AOEIW9_GER_mil_sea_2
+        AOEIW9_GER_mil_sea_3
+        AOEIW9_GER_mil_sea_4
+        AOEIW9_GER_mil_sea_5
+        AOEIW9_GER_mil_sea_6
+        AOEIW9_GER_mil_sea_7
+        AOEIW9_GER_mil_final
+        AOEIW9_GER_dip_root
+        AOEIW9_GER_dip_a_1
+        AOEIW9_GER_dip_a_2
+        AOEIW9_GER_dip_a_3
+        AOEIW9_GER_dip_a_4
+        AOEIW9_GER_dip_a_5
+        AOEIW9_GER_dip_a_6
+        AOEIW9_GER_dip_a_7
+        AOEIW9_GER_dip_b_1
+        AOEIW9_GER_dip_b_2
+        AOEIW9_GER_dip_b_3
+        AOEIW9_GER_dip_b_4
+        AOEIW9_GER_dip_b_5
+        AOEIW9_GER_dip_b_6
+        AOEIW9_GER_dip_b_7
+        AOEIW9_GER_dip_final
+        AOEIW9_GER_special_1
+        AOEIW9_GER_special_2
+        AOEIW9_GER_special_3
+        AOEIW9_GER_special_4
+        AOEIW9_GER_special_5
+        AOEIW9_GER_special_6
+        AOEIW9_GER_special_7
+        AOEIW9_GER_special_8
+        AOEIW14_GER_constitutional_settlement
+        AOEIW14_GER_federal_economic_council
+        AOEIW14_GER_professional_reichswehr
+        AOEIW14_GER_rhineland_air_defence
+        AOEIW14_GER_advanced_equipment_commission
+        AOEIW14_GER_reichspakt_conference
+        AOEIW14_GER_european_settlement
+        AOEIW_IMM_GER_root
+        AOEIW_IMM_GER_federal_1
+        AOEIW_IMM_GER_federal_2
+        AOEIW_IMM_GER_federal_3
+        AOEIW_IMM_GER_continental_1
+        AOEIW_IMM_GER_continental_2
+        AOEIW_IMM_GER_continental_3
+        AOEIW_IMM_GER_weltpolitik_1
+        AOEIW_IMM_GER_weltpolitik_2
+        AOEIW_IMM_GER_weltpolitik_3
+        AOEIW_STRUCT_GER_federal_laboratories
+        AOEIW_STRUCT_GER_federal_workshops
+        AOEIW_STRUCT_GER_continental_rail_contracts
+        AOEIW_STRUCT_GER_continental_readiness
+        AOEIW_STRUCT_GER_oceanic_escorts
+        AOEIW_STRUCT_GER_overseas_stations
+        AOEIW_IMM_GER_national_destiny
+        AOEIW_STRUCT_GER_civilian_procurement
+        AOEIW_STRUCT_GER_emergency_procurement
+        AOEIW_STRUCT_GER_DEPTH_lands_treasury
+        AOEIW_STRUCT_GER_DEPTH_provincial_credit
+        AOEIW_STRUCT_GER_DEPTH_crown_audit
+        AOEIW_STRUCT_GER_DEPTH_social_bargain
+        AOEIW_STRUCT_GER_DEPTH_works_councils
+        AOEIW_STRUCT_GER_DEPTH_pension_funds
+        AOEIW_STRUCT_GER_DEPTH_industrial_peace
+        AOEIW_STRUCT_GER_DEPTH_colonial_census
+        AOEIW_STRUCT_GER_DEPTH_colonial_schools
+        AOEIW_STRUCT_GER_DEPTH_marine_post
+        AOEIW_STRUCT_GER_DEPTH_colonial_rescue
+        AOEIW_STRUCT_GER_DEPTH_constitutional_court
+        AOEIW_STRUCT_GER_DEPTH_press_statute
+        AOEIW_STRUCT_GER_DEPTH_budget_committee
+        AOEIW_STRUCT_GER_DEPTH_regional_housing
+        AOEIW_STRUCT_GER_DEPTH_civic_reserves
+        AOEIW_STRUCT_GER_DEPTH_legal_continuity
+        AOEIW_STRUCT_GER_DEPTH_rent_commission
+        AOEIW_STRUCT_GER_DEPTH_shopfloor_delegates
+        AOEIW_STRUCT_GER_DEPTH_technical_cadres
+        AOEIW_STRUCT_GER_DEPTH_council_autonomy
+        AOEIW_STRUCT_GER_DEPTH_quota_directorate
+        AOEIW_STRUCT_GER_DEPTH_workers_accounts
+        AOEIW_STRUCT_GER_DEPTH_ruhr_water
+        AOEIW_STRUCT_GER_DEPTH_ruhr_contract
+        AOEIW_STRUCT_GER_DEPTH_apprentice_exchanges
+        AOEIW_STRUCT_GER_DEPTH_metrology
+        AOEIW_STRUCT_GER_DEPTH_diesel_lab
+        AOEIW_STRUCT_GER_DEPTH_steel_reserve
+        AOEIW_STRUCT_GER_DEPTH_arsenal_inspection
+        AOEIW_STRUCT_GER_DEPTH_ruhr_deliveries
+        AOEIW_STRUCT_GER_DEPTH_field_repair
+        AOEIW_STRUCT_GER_DEPTH_replacement_school
+        AOEIW_STRUCT_GER_DEPTH_convoy_school
+        AOEIW_STRUCT_GER_DEPTH_naval_fuel
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 115
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 12
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 12
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+
+
+
+
+AOEIW_GRE_focus_plan = {
+    name = "AOEIW GRE V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = GRE }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_GRE_politics_root
+        AOEIW9_GRE_politics_p1_1
+        AOEIW9_GRE_politics_p1_5
+        AOEIW9_GRE_politics_settlement
+        AOEIW9_GRE_eco_root
+        AOEIW9_GRE_eco_civ_1
+        AOEIW9_GRE_eco_civ_3
+        AOEIW9_GRE_eco_war_1
+        AOEIW9_GRE_eco_war_6
+        AOEIW9_GRE_eco_science_5
+        AOEIW9_GRE_eco_final
+        AOEIW9_GRE_mil_root
+        AOEIW9_GRE_mil_army_1
+        AOEIW9_GRE_mil_army_4
+        AOEIW9_GRE_mil_final
+        AOEIW9_GRE_dip_root
+        AOEIW9_GRE_dip_a_2
+        AOEIW9_GRE_dip_b_2
+        AOEIW9_GRE_politics_p1_2
+        AOEIW9_GRE_politics_p1_3
+        AOEIW9_GRE_politics_p1_4
+        AOEIW9_GRE_politics_p2_1
+        AOEIW9_GRE_politics_p2_2
+        AOEIW9_GRE_politics_p2_3
+        AOEIW9_GRE_politics_p2_4
+        AOEIW9_GRE_politics_p2_5
+        AOEIW9_GRE_politics_p3_1
+        AOEIW9_GRE_politics_p3_2
+        AOEIW9_GRE_politics_p3_3
+        AOEIW9_GRE_politics_p3_4
+        AOEIW9_GRE_politics_p3_5
+        AOEIW9_GRE_eco_civ_2
+        AOEIW9_GRE_eco_civ_4
+        AOEIW9_GRE_eco_civ_5
+        AOEIW9_GRE_eco_civ_6
+        AOEIW9_GRE_eco_civ_7
+        AOEIW9_GRE_eco_civ_8
+        AOEIW9_GRE_eco_civ_9
+        AOEIW9_GRE_eco_war_2
+        AOEIW9_GRE_eco_war_3
+        AOEIW9_GRE_eco_war_4
+        AOEIW9_GRE_eco_war_5
+        AOEIW9_GRE_eco_science_1
+        AOEIW9_GRE_eco_science_2
+        AOEIW9_GRE_eco_science_3
+        AOEIW9_GRE_eco_science_4
+        AOEIW9_GRE_eco_infra_1
+        AOEIW9_GRE_eco_infra_2
+        AOEIW9_GRE_eco_infra_3
+        AOEIW9_GRE_eco_infra_4
+        AOEIW9_GRE_mil_army_2
+        AOEIW9_GRE_mil_army_3
+        AOEIW9_GRE_mil_army_5
+        AOEIW9_GRE_mil_army_6
+        AOEIW9_GRE_mil_army_7
+        AOEIW9_GRE_mil_air_1
+        AOEIW9_GRE_mil_air_2
+        AOEIW9_GRE_mil_air_3
+        AOEIW9_GRE_mil_air_4
+        AOEIW9_GRE_mil_air_5
+        AOEIW9_GRE_mil_sea_1
+        AOEIW9_GRE_mil_sea_2
+        AOEIW9_GRE_mil_sea_3
+        AOEIW9_GRE_mil_sea_4
+        AOEIW9_GRE_mil_sea_5
+        AOEIW9_GRE_dip_a_1
+        AOEIW9_GRE_dip_a_3
+        AOEIW9_GRE_dip_a_4
+        AOEIW9_GRE_dip_a_5
+        AOEIW9_GRE_dip_b_1
+        AOEIW9_GRE_dip_b_3
+        AOEIW9_GRE_dip_b_4
+        AOEIW9_GRE_dip_b_5
+        AOEIW9_GRE_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_HOL_focus_plan = {
+    name = "AOEIW HOL V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = HOL }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_HOL_politics_root
+        AOEIW9_HOL_politics_p1_1
+        AOEIW9_HOL_politics_p1_6
+        AOEIW9_HOL_politics_settlement
+        AOEIW9_HOL_eco_root
+        AOEIW9_HOL_eco_civ_1
+        AOEIW9_HOL_eco_civ_3
+        AOEIW9_HOL_eco_war_1
+        AOEIW9_HOL_eco_war_7
+        AOEIW9_HOL_eco_science_6
+        AOEIW9_HOL_eco_final
+        AOEIW9_HOL_mil_root
+        AOEIW9_HOL_mil_army_1
+        AOEIW9_HOL_mil_army_4
+        AOEIW9_HOL_mil_final
+        AOEIW9_HOL_dip_root
+        AOEIW9_HOL_dip_a_2
+        AOEIW9_HOL_dip_b_2
+        AOEIW9_HOL_politics_p1_2
+        AOEIW9_HOL_politics_p1_3
+        AOEIW9_HOL_politics_p1_4
+        AOEIW9_HOL_politics_p1_5
+        AOEIW9_HOL_politics_p2_1
+        AOEIW9_HOL_politics_p2_2
+        AOEIW9_HOL_politics_p2_3
+        AOEIW9_HOL_politics_p2_4
+        AOEIW9_HOL_politics_p2_5
+        AOEIW9_HOL_politics_p2_6
+        AOEIW9_HOL_politics_p3_1
+        AOEIW9_HOL_politics_p3_2
+        AOEIW9_HOL_politics_p3_3
+        AOEIW9_HOL_politics_p3_4
+        AOEIW9_HOL_politics_p3_5
+        AOEIW9_HOL_politics_p3_6
+        AOEIW9_HOL_eco_civ_2
+        AOEIW9_HOL_eco_civ_4
+        AOEIW9_HOL_eco_civ_5
+        AOEIW9_HOL_eco_civ_6
+        AOEIW9_HOL_eco_civ_7
+        AOEIW9_HOL_eco_civ_8
+        AOEIW9_HOL_eco_war_2
+        AOEIW9_HOL_eco_war_3
+        AOEIW9_HOL_eco_war_4
+        AOEIW9_HOL_eco_war_5
+        AOEIW9_HOL_eco_war_6
+        AOEIW9_HOL_eco_science_1
+        AOEIW9_HOL_eco_science_2
+        AOEIW9_HOL_eco_science_3
+        AOEIW9_HOL_eco_science_4
+        AOEIW9_HOL_eco_science_5
+        AOEIW9_HOL_eco_infra_1
+        AOEIW9_HOL_eco_infra_2
+        AOEIW9_HOL_eco_infra_3
+        AOEIW9_HOL_eco_infra_4
+        AOEIW9_HOL_mil_army_2
+        AOEIW9_HOL_mil_army_3
+        AOEIW9_HOL_mil_army_5
+        AOEIW9_HOL_mil_army_6
+        AOEIW9_HOL_mil_army_7
+        AOEIW9_HOL_mil_army_8
+        AOEIW9_HOL_mil_army_9
+        AOEIW9_HOL_mil_air_1
+        AOEIW9_HOL_mil_air_2
+        AOEIW9_HOL_mil_air_3
+        AOEIW9_HOL_mil_air_4
+        AOEIW9_HOL_mil_air_5
+        AOEIW9_HOL_mil_air_6
+        AOEIW9_HOL_mil_sea_1
+        AOEIW9_HOL_mil_sea_2
+        AOEIW9_HOL_mil_sea_3
+        AOEIW9_HOL_mil_sea_4
+        AOEIW9_HOL_mil_sea_5
+        AOEIW9_HOL_mil_sea_6
+        AOEIW9_HOL_dip_a_1
+        AOEIW9_HOL_dip_a_3
+        AOEIW9_HOL_dip_a_4
+        AOEIW9_HOL_dip_a_5
+        AOEIW9_HOL_dip_a_6
+        AOEIW9_HOL_dip_b_1
+        AOEIW9_HOL_dip_b_3
+        AOEIW9_HOL_dip_b_4
+        AOEIW9_HOL_dip_b_5
+        AOEIW9_HOL_dip_b_6
+        AOEIW9_HOL_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 35
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_IRE_focus_plan = {
+    name = "AOEIW IRE V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = IRE }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_IRE_politics_root
+        AOEIW9_IRE_politics_p1_1
+        AOEIW9_IRE_politics_p1_5
+        AOEIW9_IRE_politics_settlement
+        AOEIW9_IRE_eco_root
+        AOEIW9_IRE_eco_civ_1
+        AOEIW9_IRE_eco_civ_3
+        AOEIW9_IRE_eco_war_1
+        AOEIW9_IRE_eco_war_6
+        AOEIW9_IRE_eco_science_5
+        AOEIW9_IRE_eco_final
+        AOEIW9_IRE_mil_root
+        AOEIW9_IRE_mil_army_1
+        AOEIW9_IRE_mil_army_4
+        AOEIW9_IRE_mil_final
+        AOEIW9_IRE_dip_root
+        AOEIW9_IRE_dip_a_2
+        AOEIW9_IRE_dip_b_2
+        AOEIW9_IRE_politics_p1_2
+        AOEIW9_IRE_politics_p1_3
+        AOEIW9_IRE_politics_p1_4
+        AOEIW9_IRE_politics_p2_1
+        AOEIW9_IRE_politics_p2_2
+        AOEIW9_IRE_politics_p2_3
+        AOEIW9_IRE_politics_p2_4
+        AOEIW9_IRE_politics_p2_5
+        AOEIW9_IRE_politics_p3_1
+        AOEIW9_IRE_politics_p3_2
+        AOEIW9_IRE_politics_p3_3
+        AOEIW9_IRE_politics_p3_4
+        AOEIW9_IRE_politics_p3_5
+        AOEIW9_IRE_eco_civ_2
+        AOEIW9_IRE_eco_civ_4
+        AOEIW9_IRE_eco_civ_5
+        AOEIW9_IRE_eco_civ_6
+        AOEIW9_IRE_eco_civ_7
+        AOEIW9_IRE_eco_civ_8
+        AOEIW9_IRE_eco_civ_9
+        AOEIW9_IRE_eco_war_2
+        AOEIW9_IRE_eco_war_3
+        AOEIW9_IRE_eco_war_4
+        AOEIW9_IRE_eco_war_5
+        AOEIW9_IRE_eco_science_1
+        AOEIW9_IRE_eco_science_2
+        AOEIW9_IRE_eco_science_3
+        AOEIW9_IRE_eco_science_4
+        AOEIW9_IRE_eco_infra_1
+        AOEIW9_IRE_eco_infra_2
+        AOEIW9_IRE_eco_infra_3
+        AOEIW9_IRE_eco_infra_4
+        AOEIW9_IRE_mil_army_2
+        AOEIW9_IRE_mil_army_3
+        AOEIW9_IRE_mil_army_5
+        AOEIW9_IRE_mil_army_6
+        AOEIW9_IRE_mil_army_7
+        AOEIW9_IRE_mil_air_1
+        AOEIW9_IRE_mil_air_2
+        AOEIW9_IRE_mil_air_3
+        AOEIW9_IRE_mil_air_4
+        AOEIW9_IRE_mil_air_5
+        AOEIW9_IRE_mil_sea_1
+        AOEIW9_IRE_mil_sea_2
+        AOEIW9_IRE_mil_sea_3
+        AOEIW9_IRE_mil_sea_4
+        AOEIW9_IRE_mil_sea_5
+        AOEIW9_IRE_dip_a_1
+        AOEIW9_IRE_dip_a_3
+        AOEIW9_IRE_dip_a_4
+        AOEIW9_IRE_dip_a_5
+        AOEIW9_IRE_dip_b_1
+        AOEIW9_IRE_dip_b_3
+        AOEIW9_IRE_dip_b_4
+        AOEIW9_IRE_dip_b_5
+        AOEIW9_IRE_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 25
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 2
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_ITA_focus_plan = {
+    name = "AOEIW ITA V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = ITA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_ITA_politics_root
+        AOEIW9_ITA_politics_p2_1
+        AOEIW9_ITA_politics_p2_2
+        AOEIW9_ITA_politics_p2_3
+        AOEIW9_ITA_politics_p2_4
+        AOEIW9_ITA_politics_p2_5
+        AOEIW9_ITA_politics_p2_6
+        AOEIW9_ITA_politics_p2_7
+        AOEIW22_ITA_mussolini_remains
+        AOEIW22_ITA_rebuild_fascist_grand_council
+        AOEIW22_ITA_corporative_state
+        AOEIW22_ITA_choose_foreign_course
+        AOEIW22_ITA_axis_with_berlin
+        AOEIW22_ITA_duce_triumphant
+        AOEIW9_ITA_politics_p1_1
+        AOEIW9_ITA_politics_p1_2
+        AOEIW9_ITA_politics_p1_3
+        AOEIW9_ITA_politics_p1_4
+        AOEIW9_ITA_politics_p1_5
+        AOEIW9_ITA_politics_p1_6
+        AOEIW9_ITA_politics_p1_7
+        AOEIW9_ITA_politics_p3_1
+        AOEIW9_ITA_politics_p3_2
+        AOEIW9_ITA_politics_p3_3
+        AOEIW9_ITA_politics_p3_4
+        AOEIW9_ITA_politics_p3_5
+        AOEIW9_ITA_politics_p3_6
+        AOEIW9_ITA_politics_p3_7
+        AOEIW18_ITA_council_of_communes
+        AOEIW18_ITA_turin_national_workshops
+        AOEIW18_ITA_lombard_production_exchange
+        AOEIW18_ITA_reclaim_the_latifundia
+        AOEIW18_ITA_arsenal_of_the_po
+        AOEIW18_ITA_peoples_army_commission
+        AOEIW18_ITA_cooperative_artillery_foundries
+        AOEIW18_ITA_militias_into_divisions
+        AOEIW18_ITA_alpine_adriatic_staff
+        AOEIW18_ITA_caproni_under_council_control
+        AOEIW18_ITA_littoral_strike_groups
+        AOEIW18_ITA_aerodromes_of_the_peninsula
+        AOEIW18_ITA_la_spezia_sailors_congress
+        AOEIW18_ITA_fleet_of_the_communes
+        AOEIW18_ITA_control_the_central_sea
+        AOEIW18_ITA_adriatic_congress
+        AOEIW18_ITA_mediterranean_workers_compact
+        AOEIW18_ITA_fortress_peninsula
+        AOEIW18_ITA_two_italies_in_arms
+        AOEIW9_ITA_politics_settlement
+        AOEIW9_ITA_eco_root
+        AOEIW9_ITA_eco_civ_1
+        AOEIW9_ITA_eco_civ_2
+        AOEIW9_ITA_eco_civ_3
+        AOEIW9_ITA_eco_civ_4
+        AOEIW9_ITA_eco_civ_5
+        AOEIW9_ITA_eco_civ_6
+        AOEIW9_ITA_eco_civ_7
+        AOEIW9_ITA_eco_war_1
+        AOEIW9_ITA_eco_war_2
+        AOEIW9_ITA_eco_war_3
+        AOEIW9_ITA_eco_war_4
+        AOEIW9_ITA_eco_war_5
+        AOEIW9_ITA_eco_war_6
+        AOEIW9_ITA_eco_war_7
+        AOEIW9_ITA_eco_war_8
+        AOEIW9_ITA_eco_science_1
+        AOEIW9_ITA_eco_science_2
+        AOEIW9_ITA_eco_science_3
+        AOEIW9_ITA_eco_science_4
+        AOEIW9_ITA_eco_science_5
+        AOEIW9_ITA_eco_science_6
+        AOEIW9_ITA_eco_science_7
+        AOEIW9_ITA_eco_infra_1
+        AOEIW9_ITA_eco_infra_2
+        AOEIW9_ITA_eco_infra_3
+        AOEIW9_ITA_eco_infra_4
+        AOEIW9_ITA_eco_final
+        AOEIW9_ITA_mil_root
+        AOEIW9_ITA_mil_army_1
+        AOEIW9_ITA_mil_army_2
+        AOEIW9_ITA_mil_army_3
+        AOEIW9_ITA_mil_army_4
+        AOEIW9_ITA_mil_army_8
+        AOEIW28_ITA_field_workshops
+        AOEIW28_ITA_signals
+        AOEIW9_ITA_mil_army_9
+        AOEIW9_ITA_mil_army_10
+        AOEIW9_ITA_mil_air_1
+        AOEIW9_ITA_mil_air_2
+        AOEIW9_ITA_mil_air_3
+        AOEIW9_ITA_mil_air_4
+        AOEIW9_ITA_mil_air_5
+        AOEIW9_ITA_mil_air_6
+        AOEIW9_ITA_mil_air_7
+        AOEIW9_ITA_mil_sea_1
+        AOEIW9_ITA_mil_sea_2
+        AOEIW9_ITA_mil_sea_3
+        AOEIW9_ITA_mil_sea_4
+        AOEIW9_ITA_mil_sea_5
+        AOEIW9_ITA_mil_sea_6
+        AOEIW9_ITA_mil_sea_7
+        AOEIW9_ITA_mil_final
+        AOEIW9_ITA_dip_root
+        AOEIW9_ITA_dip_a_1
+        AOEIW9_ITA_dip_a_2
+        AOEIW9_ITA_dip_a_3
+        AOEIW9_ITA_dip_a_4
+        AOEIW9_ITA_dip_a_5
+        AOEIW9_ITA_dip_a_6
+        AOEIW9_ITA_dip_a_7
+        AOEIW9_ITA_dip_b_1
+        AOEIW9_ITA_dip_b_2
+        AOEIW9_ITA_dip_b_3
+        AOEIW9_ITA_dip_b_4
+        AOEIW9_ITA_dip_b_5
+        AOEIW9_ITA_dip_b_6
+        AOEIW9_ITA_dip_b_7
+        AOEIW9_ITA_dip_final
+        AOEIW_IMM_ITA_root
+        AOEIW_IMM_ITA_corporate_1
+        AOEIW_IMM_ITA_corporate_2
+        AOEIW_IMM_ITA_corporate_3
+        AOEIW_IMM_ITA_mediterranean_1
+        AOEIW_IMM_ITA_mediterranean_2
+        AOEIW_IMM_ITA_mediterranean_3
+        AOEIW_IMM_ITA_monarchy_1
+        AOEIW_IMM_ITA_monarchy_2
+        AOEIW_IMM_ITA_monarchy_3
+        AOEIW_IMM_ITA_national_destiny
+        AOEIW22_ITA_mediterranean_bloc
+        AOEIW22_ITA_diplomatic_opportunism
+        AOEIW22_ITA_syndicalist_italy
+        AOEIW22_ITA_factory_councils
+        AOEIW22_ITA_revolutionary_unions
+        AOEIW22_ITA_red_cooperatives
+        AOEIW22_ITA_armed_people
+        AOEIW22_ITA_union_of_communes
+        AOEIW22_ITA_restore_rome
+        AOEIW22_ITA_claim_mare_nostrum
+        AOEIW22_ITA_break_the_old_empires
+        AOEIW22_ITA_legions_of_new_rome
+        AOEIW22_ITA_roman_empire
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 80
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 8
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 8
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_JAP_focus_plan = {
+    name = "AOEIW JAP V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = JAP }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_JAP_politics_p1_1
+        AOEIW9_JAP_politics_p1_7
+        AOEIW26_JAP_imperial_conference
+        AOEIW26_JAP_cabinet_above_factions
+        AOEIW9_JAP_politics_settlement
+        AOEIW9_JAP_eco_root
+        AOEIW9_JAP_eco_civ_1
+        AOEIW9_JAP_eco_civ_3
+        AOEIW9_JAP_eco_war_1
+        AOEIW9_JAP_eco_war_8
+        AOEIW9_JAP_eco_science_7
+        AOEIW9_JAP_eco_final
+        AOEIW9_JAP_mil_root
+        AOEIW9_JAP_mil_army_1
+        AOEIW9_JAP_mil_army_2
+        AOEIW9_JAP_mil_army_3
+        AOEIW9_JAP_mil_army_4
+        AOEIW9_JAP_mil_final
+        AOEIW9_JAP_dip_root
+        AOEIW9_JAP_dip_a_2
+        AOEIW9_JAP_dip_b_2
+        AOEIW9_JAP_special_1
+        AOEIW9_JAP_special_2
+        AOEIW9_JAP_special_3
+        AOEIW9_JAP_politics_p1_2
+        AOEIW9_JAP_politics_p1_3
+        AOEIW9_JAP_politics_p1_4
+        AOEIW9_JAP_politics_p1_5
+        AOEIW9_JAP_politics_p1_6
+        AOEIW9_JAP_politics_p2_1
+        AOEIW9_JAP_politics_p2_2
+        AOEIW9_JAP_politics_p2_3
+        AOEIW9_JAP_politics_p2_4
+        AOEIW9_JAP_politics_p2_5
+        AOEIW9_JAP_politics_p2_6
+        AOEIW9_JAP_politics_p2_7
+        AOEIW9_JAP_politics_p3_1
+        AOEIW9_JAP_politics_p3_2
+        AOEIW9_JAP_politics_p3_3
+        AOEIW9_JAP_politics_p3_4
+        AOEIW9_JAP_politics_p3_5
+        AOEIW9_JAP_politics_p3_6
+        AOEIW9_JAP_politics_p3_7
+        AOEIW9_JAP_eco_civ_2
+        AOEIW9_JAP_eco_civ_4
+        AOEIW9_JAP_eco_civ_5
+        AOEIW9_JAP_eco_civ_6
+        AOEIW9_JAP_eco_civ_7
+        AOEIW9_JAP_eco_war_2
+        AOEIW9_JAP_eco_war_3
+        AOEIW9_JAP_eco_war_4
+        AOEIW9_JAP_eco_war_5
+        AOEIW9_JAP_eco_war_6
+        AOEIW9_JAP_eco_war_7
+        AOEIW9_JAP_eco_science_1
+        AOEIW9_JAP_eco_science_2
+        AOEIW9_JAP_eco_science_3
+        AOEIW9_JAP_eco_science_4
+        AOEIW9_JAP_eco_science_5
+        AOEIW9_JAP_eco_science_6
+        AOEIW9_JAP_eco_infra_1
+        AOEIW9_JAP_eco_infra_2
+        AOEIW9_JAP_eco_infra_3
+        AOEIW9_JAP_eco_infra_4
+        AOEIW9_JAP_mil_army_8
+        AOEIW28_JAP_field_workshops
+        AOEIW28_JAP_signals
+        AOEIW9_JAP_mil_army_9
+        AOEIW9_JAP_mil_army_10
+        AOEIW9_JAP_mil_air_1
+        AOEIW9_JAP_mil_air_2
+        AOEIW9_JAP_mil_air_3
+        AOEIW9_JAP_mil_air_4
+        AOEIW9_JAP_mil_air_5
+        AOEIW9_JAP_mil_air_6
+        AOEIW9_JAP_mil_air_7
+        AOEIW9_JAP_mil_sea_1
+        AOEIW9_JAP_mil_sea_2
+        AOEIW9_JAP_mil_sea_3
+        AOEIW9_JAP_mil_sea_4
+        AOEIW9_JAP_mil_sea_5
+        AOEIW9_JAP_mil_sea_6
+        AOEIW9_JAP_mil_sea_7
+        AOEIW9_JAP_dip_a_1
+        AOEIW9_JAP_dip_a_3
+        AOEIW9_JAP_dip_a_4
+        AOEIW9_JAP_dip_a_5
+        AOEIW9_JAP_dip_a_6
+        AOEIW9_JAP_dip_a_7
+        AOEIW9_JAP_dip_b_1
+        AOEIW9_JAP_dip_b_3
+        AOEIW9_JAP_dip_b_4
+        AOEIW9_JAP_dip_b_5
+        AOEIW9_JAP_dip_b_6
+        AOEIW9_JAP_dip_b_7
+        AOEIW9_JAP_dip_final
+        AOEIW9_JAP_special_4
+        AOEIW9_JAP_special_5
+        AOEIW9_JAP_special_6
+        AOEIW9_JAP_special_7
+        AOEIW9_JAP_special_8
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 90
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 8
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_MEX_focus_plan = {
+    name = "AOEIW MEX V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = MEX }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_MEX_politics_root
+        AOEIW9_MEX_politics_p1_1
+        AOEIW9_MEX_politics_p1_6
+        AOEIW9_MEX_politics_settlement
+        AOEIW9_MEX_eco_root
+        AOEIW9_MEX_eco_civ_1
+        AOEIW9_MEX_eco_civ_3
+        AOEIW9_MEX_eco_war_1
+        AOEIW9_MEX_eco_war_7
+        AOEIW9_MEX_eco_science_6
+        AOEIW9_MEX_eco_final
+        AOEIW9_MEX_mil_root
+        AOEIW9_MEX_mil_army_1
+        AOEIW9_MEX_mil_army_4
+        AOEIW9_MEX_mil_final
+        AOEIW9_MEX_dip_root
+        AOEIW9_MEX_dip_a_2
+        AOEIW9_MEX_dip_b_2
+        AOEIW9_MEX_politics_p1_2
+        AOEIW9_MEX_politics_p1_3
+        AOEIW9_MEX_politics_p1_4
+        AOEIW9_MEX_politics_p1_5
+        AOEIW9_MEX_politics_p2_1
+        AOEIW9_MEX_politics_p2_2
+        AOEIW9_MEX_politics_p2_3
+        AOEIW9_MEX_politics_p2_4
+        AOEIW9_MEX_politics_p2_5
+        AOEIW9_MEX_politics_p2_6
+        AOEIW9_MEX_politics_p3_1
+        AOEIW9_MEX_politics_p3_2
+        AOEIW9_MEX_politics_p3_3
+        AOEIW9_MEX_politics_p3_4
+        AOEIW9_MEX_politics_p3_5
+        AOEIW9_MEX_politics_p3_6
+        AOEIW9_MEX_eco_civ_2
+        AOEIW9_MEX_eco_civ_4
+        AOEIW9_MEX_eco_civ_5
+        AOEIW9_MEX_eco_civ_6
+        AOEIW9_MEX_eco_civ_7
+        AOEIW9_MEX_eco_civ_8
+        AOEIW9_MEX_eco_war_2
+        AOEIW9_MEX_eco_war_3
+        AOEIW9_MEX_eco_war_4
+        AOEIW9_MEX_eco_war_5
+        AOEIW9_MEX_eco_war_6
+        AOEIW9_MEX_eco_science_1
+        AOEIW9_MEX_eco_science_2
+        AOEIW9_MEX_eco_science_3
+        AOEIW9_MEX_eco_science_4
+        AOEIW9_MEX_eco_science_5
+        AOEIW9_MEX_eco_infra_1
+        AOEIW9_MEX_eco_infra_2
+        AOEIW9_MEX_eco_infra_3
+        AOEIW9_MEX_eco_infra_4
+        AOEIW9_MEX_mil_army_2
+        AOEIW9_MEX_mil_army_3
+        AOEIW9_MEX_mil_army_5
+        AOEIW9_MEX_mil_army_6
+        AOEIW9_MEX_mil_army_7
+        AOEIW9_MEX_mil_army_8
+        AOEIW9_MEX_mil_army_9
+        AOEIW9_MEX_mil_air_1
+        AOEIW9_MEX_mil_air_2
+        AOEIW9_MEX_mil_air_3
+        AOEIW9_MEX_mil_air_4
+        AOEIW9_MEX_mil_air_5
+        AOEIW9_MEX_mil_air_6
+        AOEIW9_MEX_mil_sea_1
+        AOEIW9_MEX_mil_sea_2
+        AOEIW9_MEX_mil_sea_3
+        AOEIW9_MEX_mil_sea_4
+        AOEIW9_MEX_mil_sea_5
+        AOEIW9_MEX_mil_sea_6
+        AOEIW9_MEX_dip_a_1
+        AOEIW9_MEX_dip_a_3
+        AOEIW9_MEX_dip_a_4
+        AOEIW9_MEX_dip_a_5
+        AOEIW9_MEX_dip_a_6
+        AOEIW9_MEX_dip_b_1
+        AOEIW9_MEX_dip_b_3
+        AOEIW9_MEX_dip_b_4
+        AOEIW9_MEX_dip_b_5
+        AOEIW9_MEX_dip_b_6
+        AOEIW9_MEX_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_NOR_focus_plan = {
+    name = "AOEIW NOR V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = NOR }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_NOR_politics_root
+        AOEIW9_NOR_politics_p1_1
+        AOEIW9_NOR_politics_p1_5
+        AOEIW9_NOR_politics_settlement
+        AOEIW9_NOR_eco_root
+        AOEIW9_NOR_eco_civ_1
+        AOEIW9_NOR_eco_civ_3
+        AOEIW9_NOR_eco_war_1
+        AOEIW9_NOR_eco_war_6
+        AOEIW9_NOR_eco_science_5
+        AOEIW9_NOR_eco_final
+        AOEIW9_NOR_mil_root
+        AOEIW9_NOR_mil_army_1
+        AOEIW9_NOR_mil_army_4
+        AOEIW9_NOR_mil_final
+        AOEIW9_NOR_dip_root
+        AOEIW9_NOR_dip_a_2
+        AOEIW9_NOR_dip_b_2
+        AOEIW9_NOR_politics_p1_2
+        AOEIW9_NOR_politics_p1_3
+        AOEIW9_NOR_politics_p1_4
+        AOEIW9_NOR_politics_p2_1
+        AOEIW9_NOR_politics_p2_2
+        AOEIW9_NOR_politics_p2_3
+        AOEIW9_NOR_politics_p2_4
+        AOEIW9_NOR_politics_p2_5
+        AOEIW9_NOR_politics_p3_1
+        AOEIW9_NOR_politics_p3_2
+        AOEIW9_NOR_politics_p3_3
+        AOEIW9_NOR_politics_p3_4
+        AOEIW9_NOR_politics_p3_5
+        AOEIW9_NOR_eco_civ_2
+        AOEIW9_NOR_eco_civ_4
+        AOEIW9_NOR_eco_civ_5
+        AOEIW9_NOR_eco_civ_6
+        AOEIW9_NOR_eco_civ_7
+        AOEIW9_NOR_eco_civ_8
+        AOEIW9_NOR_eco_civ_9
+        AOEIW9_NOR_eco_war_2
+        AOEIW9_NOR_eco_war_3
+        AOEIW9_NOR_eco_war_4
+        AOEIW9_NOR_eco_war_5
+        AOEIW9_NOR_eco_science_1
+        AOEIW9_NOR_eco_science_2
+        AOEIW9_NOR_eco_science_3
+        AOEIW9_NOR_eco_science_4
+        AOEIW9_NOR_eco_infra_1
+        AOEIW9_NOR_eco_infra_2
+        AOEIW9_NOR_eco_infra_3
+        AOEIW9_NOR_eco_infra_4
+        AOEIW9_NOR_mil_army_2
+        AOEIW9_NOR_mil_army_3
+        AOEIW9_NOR_mil_army_5
+        AOEIW9_NOR_mil_army_6
+        AOEIW9_NOR_mil_army_7
+        AOEIW9_NOR_mil_air_1
+        AOEIW9_NOR_mil_air_2
+        AOEIW9_NOR_mil_air_3
+        AOEIW9_NOR_mil_air_4
+        AOEIW9_NOR_mil_air_5
+        AOEIW9_NOR_mil_sea_1
+        AOEIW9_NOR_mil_sea_2
+        AOEIW9_NOR_mil_sea_3
+        AOEIW9_NOR_mil_sea_4
+        AOEIW9_NOR_mil_sea_5
+        AOEIW9_NOR_dip_a_1
+        AOEIW9_NOR_dip_a_3
+        AOEIW9_NOR_dip_a_4
+        AOEIW9_NOR_dip_a_5
+        AOEIW9_NOR_dip_b_1
+        AOEIW9_NOR_dip_b_3
+        AOEIW9_NOR_dip_b_4
+        AOEIW9_NOR_dip_b_5
+        AOEIW9_NOR_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 32
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_PER_focus_plan = {
+    name = "AOEIW PER V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = PER }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_PER_politics_root
+        AOEIW9_PER_politics_p1_1
+        AOEIW9_PER_politics_p1_6
+        AOEIW9_PER_politics_settlement
+        AOEIW9_PER_eco_root
+        AOEIW9_PER_eco_civ_1
+        AOEIW9_PER_eco_civ_3
+        AOEIW9_PER_eco_war_1
+        AOEIW9_PER_eco_war_7
+        AOEIW9_PER_eco_science_6
+        AOEIW9_PER_eco_final
+        AOEIW9_PER_mil_root
+        AOEIW9_PER_mil_army_1
+        AOEIW9_PER_mil_army_4
+        AOEIW9_PER_mil_final
+        AOEIW9_PER_dip_root
+        AOEIW9_PER_dip_a_2
+        AOEIW9_PER_dip_b_2
+        AOEIW9_PER_politics_p1_2
+        AOEIW9_PER_politics_p1_3
+        AOEIW9_PER_politics_p1_4
+        AOEIW9_PER_politics_p1_5
+        AOEIW9_PER_politics_p2_1
+        AOEIW9_PER_politics_p2_2
+        AOEIW9_PER_politics_p2_3
+        AOEIW9_PER_politics_p2_4
+        AOEIW9_PER_politics_p2_5
+        AOEIW9_PER_politics_p2_6
+        AOEIW9_PER_politics_p3_1
+        AOEIW9_PER_politics_p3_2
+        AOEIW9_PER_politics_p3_3
+        AOEIW9_PER_politics_p3_4
+        AOEIW9_PER_politics_p3_5
+        AOEIW9_PER_politics_p3_6
+        AOEIW9_PER_eco_civ_2
+        AOEIW9_PER_eco_civ_4
+        AOEIW9_PER_eco_civ_5
+        AOEIW9_PER_eco_civ_6
+        AOEIW9_PER_eco_civ_7
+        AOEIW9_PER_eco_civ_8
+        AOEIW9_PER_eco_war_2
+        AOEIW9_PER_eco_war_3
+        AOEIW9_PER_eco_war_4
+        AOEIW9_PER_eco_war_5
+        AOEIW9_PER_eco_war_6
+        AOEIW9_PER_eco_science_1
+        AOEIW9_PER_eco_science_2
+        AOEIW9_PER_eco_science_3
+        AOEIW9_PER_eco_science_4
+        AOEIW9_PER_eco_science_5
+        AOEIW9_PER_eco_infra_1
+        AOEIW9_PER_eco_infra_2
+        AOEIW9_PER_eco_infra_3
+        AOEIW9_PER_eco_infra_4
+        AOEIW9_PER_mil_army_2
+        AOEIW9_PER_mil_army_3
+        AOEIW9_PER_mil_army_5
+        AOEIW9_PER_mil_army_6
+        AOEIW9_PER_mil_army_7
+        AOEIW9_PER_mil_army_8
+        AOEIW9_PER_mil_army_9
+        AOEIW9_PER_mil_air_1
+        AOEIW9_PER_mil_air_2
+        AOEIW9_PER_mil_air_3
+        AOEIW9_PER_mil_air_4
+        AOEIW9_PER_mil_air_5
+        AOEIW9_PER_mil_air_6
+        AOEIW9_PER_mil_sea_1
+        AOEIW9_PER_mil_sea_2
+        AOEIW9_PER_mil_sea_3
+        AOEIW9_PER_mil_sea_4
+        AOEIW9_PER_mil_sea_5
+        AOEIW9_PER_mil_sea_6
+        AOEIW9_PER_dip_a_1
+        AOEIW9_PER_dip_a_3
+        AOEIW9_PER_dip_a_4
+        AOEIW9_PER_dip_a_5
+        AOEIW9_PER_dip_a_6
+        AOEIW9_PER_dip_b_1
+        AOEIW9_PER_dip_b_3
+        AOEIW9_PER_dip_b_4
+        AOEIW9_PER_dip_b_5
+        AOEIW9_PER_dip_b_6
+        AOEIW9_PER_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_POL_focus_plan = {
+    name = "AOEIW POL V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = POL }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_POL_politics_root
+        AOEIW9_POL_politics_p1_1
+        AOEIW9_POL_politics_p1_6
+        AOEIW9_POL_politics_settlement
+        AOEIW9_POL_eco_root
+        AOEIW9_POL_eco_civ_1
+        AOEIW9_POL_eco_civ_3
+        AOEIW9_POL_eco_war_1
+        AOEIW9_POL_eco_war_7
+        AOEIW9_POL_eco_science_6
+        AOEIW9_POL_eco_final
+        AOEIW9_POL_mil_root
+        AOEIW9_POL_mil_army_1
+        AOEIW9_POL_mil_army_4
+        AOEIW9_POL_mil_final
+        AOEIW9_POL_dip_root
+        AOEIW9_POL_dip_a_2
+        AOEIW9_POL_dip_b_2
+        AOEIW9_POL_politics_p1_2
+        AOEIW9_POL_politics_p1_3
+        AOEIW9_POL_politics_p1_4
+        AOEIW9_POL_politics_p1_5
+        AOEIW9_POL_politics_p2_1
+        AOEIW9_POL_politics_p2_2
+        AOEIW9_POL_politics_p2_3
+        AOEIW9_POL_politics_p2_4
+        AOEIW9_POL_politics_p2_5
+        AOEIW9_POL_politics_p2_6
+        AOEIW9_POL_politics_p3_1
+        AOEIW9_POL_politics_p3_2
+        AOEIW9_POL_politics_p3_3
+        AOEIW9_POL_politics_p3_4
+        AOEIW9_POL_politics_p3_5
+        AOEIW9_POL_politics_p3_6
+        AOEIW9_POL_eco_civ_2
+        AOEIW9_POL_eco_civ_4
+        AOEIW9_POL_eco_civ_5
+        AOEIW9_POL_eco_civ_6
+        AOEIW9_POL_eco_civ_7
+        AOEIW9_POL_eco_civ_8
+        AOEIW9_POL_eco_war_2
+        AOEIW9_POL_eco_war_3
+        AOEIW9_POL_eco_war_4
+        AOEIW9_POL_eco_war_5
+        AOEIW9_POL_eco_war_6
+        AOEIW9_POL_eco_science_1
+        AOEIW9_POL_eco_science_2
+        AOEIW9_POL_eco_science_3
+        AOEIW9_POL_eco_science_4
+        AOEIW9_POL_eco_science_5
+        AOEIW9_POL_eco_infra_1
+        AOEIW9_POL_eco_infra_2
+        AOEIW9_POL_eco_infra_3
+        AOEIW9_POL_eco_infra_4
+        AOEIW9_POL_mil_army_2
+        AOEIW9_POL_mil_army_3
+        AOEIW9_POL_mil_army_5
+        AOEIW9_POL_mil_army_6
+        AOEIW9_POL_mil_army_7
+        AOEIW9_POL_mil_army_8
+        AOEIW9_POL_mil_army_9
+        AOEIW9_POL_mil_air_1
+        AOEIW9_POL_mil_air_2
+        AOEIW9_POL_mil_air_3
+        AOEIW9_POL_mil_air_4
+        AOEIW9_POL_mil_air_5
+        AOEIW9_POL_mil_air_6
+        AOEIW9_POL_mil_sea_1
+        AOEIW9_POL_mil_sea_2
+        AOEIW9_POL_mil_sea_3
+        AOEIW9_POL_mil_sea_4
+        AOEIW9_POL_mil_sea_5
+        AOEIW9_POL_mil_sea_6
+        AOEIW9_POL_dip_a_1
+        AOEIW9_POL_dip_a_3
+        AOEIW9_POL_dip_a_4
+        AOEIW9_POL_dip_a_5
+        AOEIW9_POL_dip_a_6
+        AOEIW9_POL_dip_b_1
+        AOEIW9_POL_dip_b_3
+        AOEIW9_POL_dip_b_4
+        AOEIW9_POL_dip_b_5
+        AOEIW9_POL_dip_b_6
+        AOEIW9_POL_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 65
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 5
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_POR_focus_plan = {
+    name = "AOEIW POR V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = POR }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_POR_politics_root
+        AOEIW9_POR_politics_p1_1
+        AOEIW9_POR_politics_p1_6
+        AOEIW9_POR_politics_settlement
+        AOEIW9_POR_eco_root
+        AOEIW9_POR_eco_civ_1
+        AOEIW9_POR_eco_civ_3
+        AOEIW9_POR_eco_war_1
+        AOEIW9_POR_eco_war_7
+        AOEIW9_POR_eco_science_6
+        AOEIW9_POR_eco_final
+        AOEIW9_POR_mil_root
+        AOEIW9_POR_mil_army_1
+        AOEIW9_POR_mil_army_4
+        AOEIW9_POR_mil_final
+        AOEIW9_POR_dip_root
+        AOEIW9_POR_dip_a_2
+        AOEIW9_POR_dip_b_2
+        AOEIW9_POR_politics_p1_2
+        AOEIW9_POR_politics_p1_3
+        AOEIW9_POR_politics_p1_4
+        AOEIW9_POR_politics_p1_5
+        AOEIW9_POR_politics_p2_1
+        AOEIW9_POR_politics_p2_2
+        AOEIW9_POR_politics_p2_3
+        AOEIW9_POR_politics_p2_4
+        AOEIW9_POR_politics_p2_5
+        AOEIW9_POR_politics_p2_6
+        AOEIW9_POR_politics_p3_1
+        AOEIW9_POR_politics_p3_2
+        AOEIW9_POR_politics_p3_3
+        AOEIW9_POR_politics_p3_4
+        AOEIW9_POR_politics_p3_5
+        AOEIW9_POR_politics_p3_6
+        AOEIW9_POR_eco_civ_2
+        AOEIW9_POR_eco_civ_4
+        AOEIW9_POR_eco_civ_5
+        AOEIW9_POR_eco_civ_6
+        AOEIW9_POR_eco_civ_7
+        AOEIW9_POR_eco_civ_8
+        AOEIW9_POR_eco_war_2
+        AOEIW9_POR_eco_war_3
+        AOEIW9_POR_eco_war_4
+        AOEIW9_POR_eco_war_5
+        AOEIW9_POR_eco_war_6
+        AOEIW9_POR_eco_science_1
+        AOEIW9_POR_eco_science_2
+        AOEIW9_POR_eco_science_3
+        AOEIW9_POR_eco_science_4
+        AOEIW9_POR_eco_science_5
+        AOEIW9_POR_eco_infra_1
+        AOEIW9_POR_eco_infra_2
+        AOEIW9_POR_eco_infra_3
+        AOEIW9_POR_eco_infra_4
+        AOEIW9_POR_mil_army_2
+        AOEIW9_POR_mil_army_3
+        AOEIW9_POR_mil_army_5
+        AOEIW9_POR_mil_army_6
+        AOEIW9_POR_mil_army_7
+        AOEIW9_POR_mil_army_8
+        AOEIW9_POR_mil_army_9
+        AOEIW9_POR_mil_air_1
+        AOEIW9_POR_mil_air_2
+        AOEIW9_POR_mil_air_3
+        AOEIW9_POR_mil_air_4
+        AOEIW9_POR_mil_air_5
+        AOEIW9_POR_mil_air_6
+        AOEIW9_POR_mil_sea_1
+        AOEIW9_POR_mil_sea_2
+        AOEIW9_POR_mil_sea_3
+        AOEIW9_POR_mil_sea_4
+        AOEIW9_POR_mil_sea_5
+        AOEIW9_POR_mil_sea_6
+        AOEIW9_POR_dip_a_1
+        AOEIW9_POR_dip_a_3
+        AOEIW9_POR_dip_a_4
+        AOEIW9_POR_dip_a_5
+        AOEIW9_POR_dip_a_6
+        AOEIW9_POR_dip_b_1
+        AOEIW9_POR_dip_b_3
+        AOEIW9_POR_dip_b_4
+        AOEIW9_POR_dip_b_5
+        AOEIW9_POR_dip_b_6
+        AOEIW9_POR_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    # Phase 8: force structure, equipment reserve policy and factory mobilisation
+    # are handled by common/ai_strategy/AOEIW_POR_recruitment.txt in threat stages.
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        # Prefer this plan over vanilla Portugal plans whose focus IDs do not belong to this mod tree.
+        factor = 100.0
+    }
+}
+
+AOEIW_RAJ_focus_plan = {
+    name = "AOEIW RAJ V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = RAJ }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_RAJ_politics_root
+        AOEIW9_RAJ_politics_p1_1
+        AOEIW9_RAJ_politics_p1_7
+        AOEIW9_RAJ_politics_settlement
+        AOEIW9_RAJ_eco_root
+        AOEIW9_RAJ_eco_civ_1
+        AOEIW9_RAJ_eco_civ_3
+        AOEIW9_RAJ_eco_war_1
+        AOEIW9_RAJ_eco_war_8
+        AOEIW9_RAJ_eco_science_7
+        AOEIW9_RAJ_eco_final
+        AOEIW9_RAJ_mil_root
+        AOEIW9_RAJ_mil_army_1
+        AOEIW9_RAJ_mil_army_2
+        AOEIW9_RAJ_mil_army_3
+        AOEIW9_RAJ_mil_army_4
+        AOEIW9_RAJ_mil_final
+        AOEIW9_RAJ_dip_root
+        AOEIW9_RAJ_dip_a_2
+        AOEIW9_RAJ_dip_b_2
+        AOEIW9_RAJ_politics_p1_2
+        AOEIW9_RAJ_politics_p1_3
+        AOEIW9_RAJ_politics_p1_4
+        AOEIW9_RAJ_politics_p1_5
+        AOEIW9_RAJ_politics_p1_6
+        AOEIW9_RAJ_politics_p2_1
+        AOEIW9_RAJ_politics_p2_2
+        AOEIW9_RAJ_politics_p2_3
+        AOEIW9_RAJ_politics_p2_4
+        AOEIW9_RAJ_politics_p2_5
+        AOEIW9_RAJ_politics_p2_6
+        AOEIW9_RAJ_politics_p2_7
+        AOEIW9_RAJ_politics_p3_1
+        AOEIW9_RAJ_politics_p3_2
+        AOEIW9_RAJ_politics_p3_3
+        AOEIW9_RAJ_politics_p3_4
+        AOEIW9_RAJ_politics_p3_5
+        AOEIW9_RAJ_politics_p3_6
+        AOEIW9_RAJ_politics_p3_7
+        AOEIW9_RAJ_eco_civ_2
+        AOEIW9_RAJ_eco_civ_4
+        AOEIW9_RAJ_eco_civ_5
+        AOEIW9_RAJ_eco_civ_6
+        AOEIW9_RAJ_eco_civ_7
+        AOEIW9_RAJ_eco_war_2
+        AOEIW9_RAJ_eco_war_3
+        AOEIW9_RAJ_eco_war_4
+        AOEIW9_RAJ_eco_war_5
+        AOEIW9_RAJ_eco_war_6
+        AOEIW9_RAJ_eco_war_7
+        AOEIW9_RAJ_eco_science_1
+        AOEIW9_RAJ_eco_science_2
+        AOEIW9_RAJ_eco_science_3
+        AOEIW9_RAJ_eco_science_4
+        AOEIW9_RAJ_eco_science_5
+        AOEIW9_RAJ_eco_science_6
+        AOEIW9_RAJ_eco_infra_1
+        AOEIW9_RAJ_eco_infra_2
+        AOEIW9_RAJ_eco_infra_3
+        AOEIW9_RAJ_eco_infra_4
+        AOEIW9_RAJ_mil_army_8
+        AOEIW28_RAJ_field_workshops
+        AOEIW28_RAJ_signals
+        AOEIW9_RAJ_mil_army_9
+        AOEIW9_RAJ_mil_army_10
+        AOEIW9_RAJ_mil_air_1
+        AOEIW9_RAJ_mil_air_2
+        AOEIW9_RAJ_mil_air_3
+        AOEIW9_RAJ_mil_air_4
+        AOEIW9_RAJ_mil_air_5
+        AOEIW9_RAJ_mil_air_6
+        AOEIW9_RAJ_mil_air_7
+        AOEIW9_RAJ_mil_sea_1
+        AOEIW9_RAJ_mil_sea_2
+        AOEIW9_RAJ_mil_sea_3
+        AOEIW9_RAJ_mil_sea_4
+        AOEIW9_RAJ_mil_sea_5
+        AOEIW9_RAJ_mil_sea_6
+        AOEIW9_RAJ_mil_sea_7
+        AOEIW9_RAJ_dip_a_1
+        AOEIW9_RAJ_dip_a_3
+        AOEIW9_RAJ_dip_a_4
+        AOEIW9_RAJ_dip_a_5
+        AOEIW9_RAJ_dip_a_6
+        AOEIW9_RAJ_dip_a_7
+        AOEIW9_RAJ_dip_b_1
+        AOEIW9_RAJ_dip_b_3
+        AOEIW9_RAJ_dip_b_4
+        AOEIW9_RAJ_dip_b_5
+        AOEIW9_RAJ_dip_b_6
+        AOEIW9_RAJ_dip_b_7
+        AOEIW9_RAJ_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 80
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 6
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 5
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_ROM_focus_plan = {
+    name = "AOEIW ROM V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = ROM }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_ROM_politics_root
+        AOEIW9_ROM_politics_p1_1
+        AOEIW9_ROM_politics_p1_6
+        AOEIW9_ROM_politics_settlement
+        AOEIW9_ROM_eco_root
+        AOEIW9_ROM_eco_civ_1
+        AOEIW9_ROM_eco_civ_3
+        AOEIW9_ROM_eco_war_1
+        AOEIW9_ROM_eco_war_7
+        AOEIW9_ROM_eco_science_6
+        AOEIW9_ROM_eco_final
+        AOEIW9_ROM_mil_root
+        AOEIW9_ROM_mil_army_1
+        AOEIW9_ROM_mil_army_4
+        AOEIW9_ROM_mil_final
+        AOEIW9_ROM_dip_root
+        AOEIW9_ROM_dip_a_2
+        AOEIW9_ROM_dip_b_2
+        AOEIW9_ROM_politics_p1_2
+        AOEIW9_ROM_politics_p1_3
+        AOEIW9_ROM_politics_p1_4
+        AOEIW9_ROM_politics_p1_5
+        AOEIW9_ROM_politics_p2_1
+        AOEIW9_ROM_politics_p2_2
+        AOEIW9_ROM_politics_p2_3
+        AOEIW9_ROM_politics_p2_4
+        AOEIW9_ROM_politics_p2_5
+        AOEIW9_ROM_politics_p2_6
+        AOEIW9_ROM_politics_p3_1
+        AOEIW9_ROM_politics_p3_2
+        AOEIW9_ROM_politics_p3_3
+        AOEIW9_ROM_politics_p3_4
+        AOEIW9_ROM_politics_p3_5
+        AOEIW9_ROM_politics_p3_6
+        AOEIW9_ROM_eco_civ_2
+        AOEIW9_ROM_eco_civ_4
+        AOEIW9_ROM_eco_civ_5
+        AOEIW9_ROM_eco_civ_6
+        AOEIW9_ROM_eco_civ_7
+        AOEIW9_ROM_eco_civ_8
+        AOEIW9_ROM_eco_war_2
+        AOEIW9_ROM_eco_war_3
+        AOEIW9_ROM_eco_war_4
+        AOEIW9_ROM_eco_war_5
+        AOEIW9_ROM_eco_war_6
+        AOEIW9_ROM_eco_science_1
+        AOEIW9_ROM_eco_science_2
+        AOEIW9_ROM_eco_science_3
+        AOEIW9_ROM_eco_science_4
+        AOEIW9_ROM_eco_science_5
+        AOEIW9_ROM_eco_infra_1
+        AOEIW9_ROM_eco_infra_2
+        AOEIW9_ROM_eco_infra_3
+        AOEIW9_ROM_eco_infra_4
+        AOEIW9_ROM_mil_army_2
+        AOEIW9_ROM_mil_army_3
+        AOEIW9_ROM_mil_army_5
+        AOEIW9_ROM_mil_army_6
+        AOEIW9_ROM_mil_army_7
+        AOEIW9_ROM_mil_army_8
+        AOEIW9_ROM_mil_army_9
+        AOEIW9_ROM_mil_air_1
+        AOEIW9_ROM_mil_air_2
+        AOEIW9_ROM_mil_air_3
+        AOEIW9_ROM_mil_air_4
+        AOEIW9_ROM_mil_air_5
+        AOEIW9_ROM_mil_air_6
+        AOEIW9_ROM_mil_sea_1
+        AOEIW9_ROM_mil_sea_2
+        AOEIW9_ROM_mil_sea_3
+        AOEIW9_ROM_mil_sea_4
+        AOEIW9_ROM_mil_sea_5
+        AOEIW9_ROM_mil_sea_6
+        AOEIW9_ROM_dip_a_1
+        AOEIW9_ROM_dip_a_3
+        AOEIW9_ROM_dip_a_4
+        AOEIW9_ROM_dip_a_5
+        AOEIW9_ROM_dip_a_6
+        AOEIW9_ROM_dip_b_1
+        AOEIW9_ROM_dip_b_3
+        AOEIW9_ROM_dip_b_4
+        AOEIW9_ROM_dip_b_5
+        AOEIW9_ROM_dip_b_6
+        AOEIW9_ROM_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 50
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_SIA_focus_plan = {
+    name = "AOEIW SIA V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = SIA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_SIA_politics_root
+        AOEIW9_SIA_politics_p1_1
+        AOEIW9_SIA_politics_p1_5
+        AOEIW9_SIA_politics_settlement
+        AOEIW9_SIA_eco_root
+        AOEIW9_SIA_eco_civ_1
+        AOEIW9_SIA_eco_civ_3
+        AOEIW9_SIA_eco_war_1
+        AOEIW9_SIA_eco_war_6
+        AOEIW9_SIA_eco_science_5
+        AOEIW9_SIA_eco_final
+        AOEIW9_SIA_mil_root
+        AOEIW9_SIA_mil_army_1
+        AOEIW9_SIA_mil_army_4
+        AOEIW9_SIA_mil_final
+        AOEIW9_SIA_dip_root
+        AOEIW9_SIA_dip_a_2
+        AOEIW9_SIA_dip_b_2
+        AOEIW9_SIA_politics_p1_2
+        AOEIW9_SIA_politics_p1_3
+        AOEIW9_SIA_politics_p1_4
+        AOEIW9_SIA_politics_p2_1
+        AOEIW9_SIA_politics_p2_2
+        AOEIW9_SIA_politics_p2_3
+        AOEIW9_SIA_politics_p2_4
+        AOEIW9_SIA_politics_p2_5
+        AOEIW9_SIA_politics_p3_1
+        AOEIW9_SIA_politics_p3_2
+        AOEIW9_SIA_politics_p3_3
+        AOEIW9_SIA_politics_p3_4
+        AOEIW9_SIA_politics_p3_5
+        AOEIW9_SIA_eco_civ_2
+        AOEIW9_SIA_eco_civ_4
+        AOEIW9_SIA_eco_civ_5
+        AOEIW9_SIA_eco_civ_6
+        AOEIW9_SIA_eco_civ_7
+        AOEIW9_SIA_eco_civ_8
+        AOEIW9_SIA_eco_civ_9
+        AOEIW9_SIA_eco_war_2
+        AOEIW9_SIA_eco_war_3
+        AOEIW9_SIA_eco_war_4
+        AOEIW9_SIA_eco_war_5
+        AOEIW9_SIA_eco_science_1
+        AOEIW9_SIA_eco_science_2
+        AOEIW9_SIA_eco_science_3
+        AOEIW9_SIA_eco_science_4
+        AOEIW9_SIA_eco_infra_1
+        AOEIW9_SIA_eco_infra_2
+        AOEIW9_SIA_eco_infra_3
+        AOEIW9_SIA_eco_infra_4
+        AOEIW9_SIA_mil_army_2
+        AOEIW9_SIA_mil_army_3
+        AOEIW9_SIA_mil_army_5
+        AOEIW9_SIA_mil_army_6
+        AOEIW9_SIA_mil_army_7
+        AOEIW9_SIA_mil_air_1
+        AOEIW9_SIA_mil_air_2
+        AOEIW9_SIA_mil_air_3
+        AOEIW9_SIA_mil_air_4
+        AOEIW9_SIA_mil_air_5
+        AOEIW9_SIA_mil_sea_1
+        AOEIW9_SIA_mil_sea_2
+        AOEIW9_SIA_mil_sea_3
+        AOEIW9_SIA_mil_sea_4
+        AOEIW9_SIA_mil_sea_5
+        AOEIW9_SIA_dip_a_1
+        AOEIW9_SIA_dip_a_3
+        AOEIW9_SIA_dip_a_4
+        AOEIW9_SIA_dip_a_5
+        AOEIW9_SIA_dip_b_1
+        AOEIW9_SIA_dip_b_3
+        AOEIW9_SIA_dip_b_4
+        AOEIW9_SIA_dip_b_5
+        AOEIW9_SIA_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        naval_equipment = 3.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 32
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_SOV_focus_plan = {
+    name = "AOEIW SOV V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = SOV }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_SOV_politics_root
+        AOEIW9_SOV_politics_p3_1
+        AOEIW9_SOV_politics_p3_2
+        AOEIW9_SOV_politics_p3_3
+        AOEIW9_SOV_politics_p3_4
+        AOEIW9_SOV_politics_p3_5
+        AOEIW9_SOV_politics_p3_6
+        AOEIW9_SOV_politics_p3_7
+        AOEIW19_SOV_congress_of_soviets
+        AOEIW19_SOV_land_and_factory_decrees
+        AOEIW19_SOV_gosplan_under_the_soviets
+        AOEIW19_SOV_ural_industrial_combines
+        AOEIW19_SOV_railways_of_the_first_plan
+        AOEIW19_SOV_red_army_commission
+        AOEIW19_SOV_universal_military_records
+        AOEIW19_SOV_standardise_the_76mm
+        AOEIW19_SOV_supply_echelons
+        AOEIW19_SOV_workers_air_fleet
+        AOEIW19_SOV_rugged_frontline_airframes
+        AOEIW19_SOV_aviation_cities_beyond_the_volga
+        AOEIW19_SOV_union_of_revolutionary_republics
+        AOEIW19_SOV_stalin_centralise_the_party
+        AOEIW19_SOV_stalin_first_five_year_plan
+        AOEIW19_SOV_stalin_magnitogorsk_model
+        AOEIW19_SOV_stalin_socialism_in_one_country
+        AOEIW19_SOV_trotsky_restore_party_democracy
+        AOEIW19_SOV_trotsky_programme_of_the_left_opposition
+        AOEIW19_SOV_trotsky_permanent_revolution
+        AOEIW19_SOV_trotsky_international_red_army
+        AOEIW19_SOV_tukhachevsky_army_above_faction
+        AOEIW19_SOV_tukhachevsky_militarisation_directorate
+        AOEIW19_SOV_tukhachevsky_mechanise_deep_battle
+        AOEIW19_SOV_tukhachevsky_continental_war_plan
+        AOEIW19_SOV_the_army_that_endures
+        AOEIW9_SOV_eco_root
+        AOEIW9_SOV_eco_civ_1
+        AOEIW9_SOV_eco_civ_2
+        AOEIW9_SOV_eco_civ_3
+        AOEIW9_SOV_eco_civ_4
+        AOEIW9_SOV_eco_civ_5
+        AOEIW9_SOV_eco_civ_6
+        AOEIW9_SOV_eco_civ_7
+        AOEIW9_SOV_eco_war_1
+        AOEIW9_SOV_eco_war_2
+        AOEIW9_SOV_eco_war_3
+        AOEIW9_SOV_eco_war_4
+        AOEIW9_SOV_eco_war_5
+        AOEIW9_SOV_eco_war_6
+        AOEIW9_SOV_eco_war_7
+        AOEIW9_SOV_eco_war_8
+        AOEIW9_SOV_eco_science_1
+        AOEIW9_SOV_eco_science_2
+        AOEIW9_SOV_eco_science_3
+        AOEIW9_SOV_eco_science_4
+        AOEIW9_SOV_eco_science_5
+        AOEIW9_SOV_eco_science_6
+        AOEIW9_SOV_eco_science_7
+        AOEIW9_SOV_eco_infra_1
+        AOEIW9_SOV_eco_infra_2
+        AOEIW9_SOV_eco_infra_3
+        AOEIW9_SOV_eco_infra_4
+        AOEIW9_SOV_eco_final
+        AOEIW9_SOV_mil_root
+        AOEIW9_SOV_mil_army_1
+        AOEIW9_SOV_mil_army_5
+        AOEIW9_SOV_mil_army_6
+        AOEIW9_SOV_mil_army_7
+        AOEIW9_SOV_mil_army_8
+        AOEIW28_SOV_field_workshops
+        AOEIW28_SOV_signals
+        AOEIW9_SOV_mil_army_9
+        AOEIW9_SOV_mil_army_10
+        AOEIW9_SOV_mil_air_1
+        AOEIW9_SOV_mil_air_2
+        AOEIW9_SOV_mil_air_3
+        AOEIW9_SOV_mil_air_4
+        AOEIW9_SOV_mil_air_5
+        AOEIW9_SOV_mil_air_6
+        AOEIW9_SOV_mil_air_7
+        AOEIW9_SOV_mil_sea_1
+        AOEIW9_SOV_mil_sea_2
+        AOEIW9_SOV_mil_sea_3
+        AOEIW9_SOV_mil_sea_4
+        AOEIW9_SOV_mil_sea_5
+        AOEIW9_SOV_mil_sea_6
+        AOEIW9_SOV_mil_sea_7
+        AOEIW9_SOV_mil_final
+        AOEIW9_SOV_dip_root
+        AOEIW9_SOV_dip_a_1
+        AOEIW9_SOV_dip_a_2
+        AOEIW9_SOV_dip_a_3
+        AOEIW9_SOV_dip_a_4
+        AOEIW9_SOV_dip_a_5
+        AOEIW9_SOV_dip_a_6
+        AOEIW9_SOV_dip_a_7
+        AOEIW9_SOV_dip_b_1
+        AOEIW9_SOV_dip_b_2
+        AOEIW9_SOV_dip_b_3
+        AOEIW9_SOV_dip_b_4
+        AOEIW9_SOV_dip_b_5
+        AOEIW9_SOV_dip_b_6
+        AOEIW9_SOV_dip_b_7
+        AOEIW9_SOV_dip_final
+        AOEIW9_SOV_special_1
+        AOEIW9_SOV_special_2
+        AOEIW9_SOV_special_3
+        AOEIW9_SOV_special_4
+        AOEIW9_SOV_special_5
+        AOEIW9_SOV_special_6
+        AOEIW9_SOV_special_7
+        AOEIW9_SOV_special_8
+        AOEIW_IMM_SOV_root
+        AOEIW9_SOV_politics_p1_1
+        AOEIW9_SOV_politics_p1_2
+        AOEIW9_SOV_politics_p1_3
+        AOEIW9_SOV_politics_p1_4
+        AOEIW9_SOV_politics_p1_5
+        AOEIW9_SOV_politics_p1_6
+        AOEIW9_SOV_politics_p1_7
+        AOEIW9_SOV_politics_p2_1
+        AOEIW9_SOV_politics_p2_2
+        AOEIW9_SOV_politics_p2_3
+        AOEIW9_SOV_politics_p2_4
+        AOEIW9_SOV_politics_p2_5
+        AOEIW9_SOV_politics_p2_6
+        AOEIW9_SOV_politics_p2_7
+        AOEIW9_SOV_politics_settlement
+        AOEIW_IMM_SOV_autocracy_1
+        AOEIW_IMM_SOV_autocracy_2
+        AOEIW_IMM_SOV_autocracy_3
+        AOEIW_IMM_SOV_stavka_1
+        AOEIW_IMM_SOV_stavka_2
+        AOEIW_IMM_SOV_stavka_3
+        AOEIW_IMM_SOV_zemstvo_1
+        AOEIW_IMM_SOV_zemstvo_2
+        AOEIW_IMM_SOV_zemstvo_3
+        AOEIW_STRUCT_SOV_crown_arsenals
+        AOEIW_STRUCT_SOV_imperial_reserve
+        AOEIW_STRUCT_SOV_zemstvo_credit
+        AOEIW_STRUCT_SOV_duma_appropriations
+        AOEIW_STRUCT_SOV_provincial_universities
+        AOEIW_STRUCT_SOV_federal_compact
+        AOEIW_STRUCT_SOV_stavka_records
+        AOEIW_STRUCT_SOV_stavka_mobilisation
+        AOEIW_IMM_SOV_national_destiny
+        AOEIW_STRUCT_SOV_DEPTH_governors_harvest
+        AOEIW_STRUCT_SOV_DEPTH_land_register
+        AOEIW_STRUCT_SOV_DEPTH_rural_contracts
+        AOEIW_STRUCT_SOV_DEPTH_provincial_inspectors
+        AOEIW_STRUCT_SOV_DEPTH_recruitment_levies
+        AOEIW_STRUCT_SOV_DEPTH_cadastre_school
+        AOEIW_STRUCT_SOV_DEPTH_rural_depots
+        AOEIW_STRUCT_SOV_DEPTH_zemstvo_petitions
+        AOEIW_STRUCT_SOV_DEPTH_provincial_juries
+        AOEIW_STRUCT_SOV_DEPTH_village_census
+        AOEIW_STRUCT_SOV_DEPTH_rail_petitions
+        AOEIW_STRUCT_SOV_DEPTH_local_credit
+        AOEIW_STRUCT_SOV_DEPTH_teacher_exchange
+        AOEIW_STRUCT_SOV_DEPTH_regional_contracts
+        AOEIW_STRUCT_SOV_DEPTH_postal_roads
+        AOEIW_STRUCT_SOV_DEPTH_district_medicine
+        AOEIW_STRUCT_SOV_DEPTH_crown_orders
+        AOEIW_STRUCT_SOV_DEPTH_imperial_quartermasters
+        AOEIW_STRUCT_SOV_DEPTH_royal_inventories
+        AOEIW_STRUCT_SOV_DEPTH_staff_maps
+        AOEIW_STRUCT_SOV_DEPTH_winter_workshops
+        AOEIW_STRUCT_SOV_DEPTH_winter_stock
+        AOEIW_STRUCT_SOV_DEPTH_recovery_columns
+        AOEIW_STRUCT_SOV_DEPTH_provincial_exercise
+        AOEIW_STRUCT_SOV_DEPTH_grain_conference
+        AOEIW_STRUCT_SOV_DEPTH_grain_dispatch
+        AOEIW_STRUCT_SOV_DEPTH_cadre_literacy
+        AOEIW_STRUCT_SOV_DEPTH_translation_bureau
+        AOEIW_STRUCT_SOV_DEPTH_worker_inspection
+        AOEIW_STRUCT_SOV_DEPTH_republic_schools
+        AOEIW_STRUCT_SOV_DEPTH_statistical_inspection
+        AOEIW_STRUCT_SOV_DEPTH_reserve_machine_tools
+        AOEIW_STRUCT_SOV_DEPTH_plan_contingencies
+        AOEIW_STRUCT_SOV_DEPTH_international_manuals
+        AOEIW_STRUCT_SOV_DEPTH_delegate_missions
+        AOEIW_STRUCT_SOV_DEPTH_international_signals
+        AOEIW_STRUCT_SOV_DEPTH_operational_college
+        AOEIW_STRUCT_SOV_DEPTH_motorised_staff
+        AOEIW_STRUCT_SOV_DEPTH_second_echelon
+        AOEIW_STRUCT_SOV_DEPTH_volga_survey
+        AOEIW_STRUCT_SOV_DEPTH_volga_contract
+        AOEIW_STRUCT_SOV_DEPTH_technical_correspondence
+        AOEIW_STRUCT_SOV_DEPTH_diesel_workshops
+        AOEIW_STRUCT_SOV_DEPTH_spare_catalogue
+        AOEIW_STRUCT_SOV_DEPTH_volga_acceptance
+        AOEIW_STRUCT_SOV_DEPTH_capital_arsenal
+        AOEIW_STRUCT_SOV_DEPTH_arsenal_gauges
+        AOEIW_STRUCT_SOV_DEPTH_fleet_workshops
+        AOEIW_STRUCT_SOV_DEPTH_ice_navigation
+        AOEIW22_SOV_eurasian_idea
+        AOEIW22_SOV_steppe_compact
+        AOEIW22_SOV_congress_of_peoples
+        AOEIW22_SOV_caucasus_corridor
+        AOEIW22_SOV_persian_overture
+        AOEIW22_SOV_eurasian_general_staff
+        AOEIW22_SOV_proclaim_eurasian_empire
+        AOEIW22_SOV_russian_republic
+        AOEIW22_SOV_provisional_assembly
+        AOEIW22_SOV_constitutional_convention
+        AOEIW22_SOV_federal_constitution
+        AOEIW22_SOV_strong_presidency
+        AOEIW22_SOV_free_elections
+        AOEIW22_SOV_republic_faces_europe
+        AOEIW22_SOV_republic_faces_asia
+        AOEIW22_SOV_denikin_conspiracy
+        AOEIW22_SOV_restore_white_networks
+        AOEIW22_SOV_barracks_rise
+        AOEIW22_SOV_supreme_commander
+        AOEIW22_SOV_rebuild_national_army
+        AOEIW22_SOV_restore_duma
+        AOEIW22_SOV_military_directorate
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 150
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 12
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 14
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_SPR_focus_plan = {
+    name = "AOEIW SPR V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = SPR }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_SPR_politics_p1_1
+        AOEIW9_SPR_politics_p1_6
+        AOEIW26_SPR_council_of_the_spains
+        AOEIW27_SPR_foral_compromise
+        AOEIW9_SPR_politics_settlement
+        AOEIW9_SPR_eco_root
+        AOEIW9_SPR_eco_civ_1
+        AOEIW9_SPR_eco_civ_3
+        AOEIW9_SPR_eco_war_1
+        AOEIW9_SPR_eco_war_7
+        AOEIW9_SPR_eco_science_6
+        AOEIW9_SPR_eco_final
+        AOEIW9_SPR_mil_root
+        AOEIW9_SPR_mil_army_1
+        AOEIW9_SPR_mil_army_4
+        AOEIW9_SPR_mil_final
+        AOEIW9_SPR_dip_root
+        AOEIW9_SPR_dip_a_2
+        AOEIW9_SPR_dip_b_2
+        AOEIW9_SPR_politics_p1_2
+        AOEIW9_SPR_politics_p1_3
+        AOEIW9_SPR_politics_p1_4
+        AOEIW9_SPR_politics_p1_5
+        AOEIW9_SPR_politics_p2_1
+        AOEIW9_SPR_politics_p2_2
+        AOEIW9_SPR_politics_p2_3
+        AOEIW9_SPR_politics_p2_4
+        AOEIW9_SPR_politics_p2_5
+        AOEIW9_SPR_politics_p2_6
+        AOEIW9_SPR_politics_p3_1
+        AOEIW9_SPR_politics_p3_2
+        AOEIW9_SPR_politics_p3_3
+        AOEIW9_SPR_politics_p3_4
+        AOEIW9_SPR_politics_p3_5
+        AOEIW9_SPR_politics_p3_6
+        AOEIW9_SPR_eco_civ_2
+        AOEIW9_SPR_eco_civ_4
+        AOEIW9_SPR_eco_civ_5
+        AOEIW9_SPR_eco_civ_6
+        AOEIW9_SPR_eco_civ_7
+        AOEIW9_SPR_eco_civ_8
+        AOEIW9_SPR_eco_war_2
+        AOEIW9_SPR_eco_war_3
+        AOEIW9_SPR_eco_war_4
+        AOEIW9_SPR_eco_war_5
+        AOEIW9_SPR_eco_war_6
+        AOEIW9_SPR_eco_science_1
+        AOEIW9_SPR_eco_science_2
+        AOEIW9_SPR_eco_science_3
+        AOEIW9_SPR_eco_science_4
+        AOEIW9_SPR_eco_science_5
+        AOEIW9_SPR_eco_infra_1
+        AOEIW9_SPR_eco_infra_2
+        AOEIW9_SPR_eco_infra_3
+        AOEIW9_SPR_eco_infra_4
+        AOEIW9_SPR_mil_army_2
+        AOEIW9_SPR_mil_army_3
+        AOEIW9_SPR_mil_army_5
+        AOEIW9_SPR_mil_army_6
+        AOEIW9_SPR_mil_army_7
+        AOEIW9_SPR_mil_army_8
+        AOEIW9_SPR_mil_army_9
+        AOEIW9_SPR_mil_air_1
+        AOEIW9_SPR_mil_air_2
+        AOEIW9_SPR_mil_air_3
+        AOEIW9_SPR_mil_air_4
+        AOEIW9_SPR_mil_air_5
+        AOEIW9_SPR_mil_air_6
+        AOEIW9_SPR_mil_sea_1
+        AOEIW9_SPR_mil_sea_2
+        AOEIW9_SPR_mil_sea_3
+        AOEIW9_SPR_mil_sea_4
+        AOEIW9_SPR_mil_sea_5
+        AOEIW9_SPR_mil_sea_6
+        AOEIW9_SPR_dip_a_1
+        AOEIW9_SPR_dip_a_3
+        AOEIW9_SPR_dip_a_4
+        AOEIW9_SPR_dip_a_5
+        AOEIW9_SPR_dip_a_6
+        AOEIW9_SPR_dip_b_1
+        AOEIW9_SPR_dip_b_3
+        AOEIW9_SPR_dip_b_4
+        AOEIW9_SPR_dip_b_5
+        AOEIW9_SPR_dip_b_6
+        AOEIW9_SPR_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    # Phase 7: force structure, equipment reserve policy and factory mobilisation
+    # are handled by common/ai_strategy/AOEIW_SPR_recruitment.txt in threat stages.
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 100.0
+    }
+}
+
+AOEIW_SWE_focus_plan = {
+    name = "AOEIW SWE V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = SWE }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_SWE_politics_root
+        AOEIW9_SWE_politics_p1_1
+        AOEIW9_SWE_politics_p1_6
+        AOEIW9_SWE_politics_settlement
+        AOEIW9_SWE_eco_root
+        AOEIW9_SWE_eco_civ_1
+        AOEIW9_SWE_eco_civ_3
+        AOEIW9_SWE_eco_war_1
+        AOEIW9_SWE_eco_war_7
+        AOEIW9_SWE_eco_science_6
+        AOEIW9_SWE_eco_final
+        AOEIW9_SWE_mil_root
+        AOEIW9_SWE_mil_army_1
+        AOEIW9_SWE_mil_army_4
+        AOEIW9_SWE_mil_final
+        AOEIW9_SWE_dip_root
+        AOEIW9_SWE_dip_a_2
+        AOEIW9_SWE_dip_b_2
+        AOEIW9_SWE_politics_p1_2
+        AOEIW9_SWE_politics_p1_3
+        AOEIW9_SWE_politics_p1_4
+        AOEIW9_SWE_politics_p1_5
+        AOEIW9_SWE_politics_p2_1
+        AOEIW9_SWE_politics_p2_2
+        AOEIW9_SWE_politics_p2_3
+        AOEIW9_SWE_politics_p2_4
+        AOEIW9_SWE_politics_p2_5
+        AOEIW9_SWE_politics_p2_6
+        AOEIW9_SWE_politics_p3_1
+        AOEIW9_SWE_politics_p3_2
+        AOEIW9_SWE_politics_p3_3
+        AOEIW9_SWE_politics_p3_4
+        AOEIW9_SWE_politics_p3_5
+        AOEIW9_SWE_politics_p3_6
+        AOEIW9_SWE_eco_civ_2
+        AOEIW9_SWE_eco_civ_4
+        AOEIW9_SWE_eco_civ_5
+        AOEIW9_SWE_eco_civ_6
+        AOEIW9_SWE_eco_civ_7
+        AOEIW9_SWE_eco_civ_8
+        AOEIW9_SWE_eco_war_2
+        AOEIW9_SWE_eco_war_3
+        AOEIW9_SWE_eco_war_4
+        AOEIW9_SWE_eco_war_5
+        AOEIW9_SWE_eco_war_6
+        AOEIW9_SWE_eco_science_1
+        AOEIW9_SWE_eco_science_2
+        AOEIW9_SWE_eco_science_3
+        AOEIW9_SWE_eco_science_4
+        AOEIW9_SWE_eco_science_5
+        AOEIW9_SWE_eco_infra_1
+        AOEIW9_SWE_eco_infra_2
+        AOEIW9_SWE_eco_infra_3
+        AOEIW9_SWE_eco_infra_4
+        AOEIW9_SWE_mil_army_2
+        AOEIW9_SWE_mil_army_3
+        AOEIW9_SWE_mil_army_5
+        AOEIW9_SWE_mil_army_6
+        AOEIW9_SWE_mil_army_7
+        AOEIW9_SWE_mil_army_8
+        AOEIW9_SWE_mil_army_9
+        AOEIW9_SWE_mil_air_1
+        AOEIW9_SWE_mil_air_2
+        AOEIW9_SWE_mil_air_3
+        AOEIW9_SWE_mil_air_4
+        AOEIW9_SWE_mil_air_5
+        AOEIW9_SWE_mil_air_6
+        AOEIW9_SWE_mil_sea_1
+        AOEIW9_SWE_mil_sea_2
+        AOEIW9_SWE_mil_sea_3
+        AOEIW9_SWE_mil_sea_4
+        AOEIW9_SWE_mil_sea_5
+        AOEIW9_SWE_mil_sea_6
+        AOEIW9_SWE_dip_a_1
+        AOEIW9_SWE_dip_a_3
+        AOEIW9_SWE_dip_a_4
+        AOEIW9_SWE_dip_a_5
+        AOEIW9_SWE_dip_a_6
+        AOEIW9_SWE_dip_b_1
+        AOEIW9_SWE_dip_b_3
+        AOEIW9_SWE_dip_b_4
+        AOEIW9_SWE_dip_b_5
+        AOEIW9_SWE_dip_b_6
+        AOEIW9_SWE_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_SWI_focus_plan = {
+    name = "AOEIW SWI V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = SWI }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_SWI_politics_root
+        AOEIW9_SWI_politics_p1_1
+        AOEIW9_SWI_politics_p1_5
+        AOEIW9_SWI_politics_settlement
+        AOEIW9_SWI_eco_root
+        AOEIW9_SWI_eco_civ_1
+        AOEIW9_SWI_eco_civ_3
+        AOEIW9_SWI_eco_war_1
+        AOEIW9_SWI_eco_war_6
+        AOEIW9_SWI_eco_science_5
+        AOEIW9_SWI_eco_final
+        AOEIW9_SWI_mil_root
+        AOEIW9_SWI_mil_army_1
+        AOEIW9_SWI_mil_army_4
+        AOEIW9_SWI_mil_final
+        AOEIW9_SWI_dip_root
+        AOEIW9_SWI_dip_a_2
+        AOEIW9_SWI_dip_b_2
+        AOEIW9_SWI_special_1
+        AOEIW9_SWI_special_2
+        AOEIW9_SWI_special_3
+        AOEIW9_SWI_politics_p1_2
+        AOEIW9_SWI_politics_p1_3
+        AOEIW9_SWI_politics_p1_4
+        AOEIW9_SWI_politics_p2_1
+        AOEIW9_SWI_politics_p2_2
+        AOEIW9_SWI_politics_p2_3
+        AOEIW9_SWI_politics_p2_4
+        AOEIW9_SWI_politics_p2_5
+        AOEIW9_SWI_politics_p3_1
+        AOEIW9_SWI_politics_p3_2
+        AOEIW9_SWI_politics_p3_3
+        AOEIW9_SWI_politics_p3_4
+        AOEIW9_SWI_politics_p3_5
+        AOEIW9_SWI_eco_civ_2
+        AOEIW9_SWI_eco_civ_4
+        AOEIW9_SWI_eco_civ_5
+        AOEIW9_SWI_eco_civ_6
+        AOEIW9_SWI_eco_civ_7
+        AOEIW9_SWI_eco_civ_8
+        AOEIW9_SWI_eco_civ_9
+        AOEIW9_SWI_eco_war_2
+        AOEIW9_SWI_eco_war_3
+        AOEIW9_SWI_eco_war_4
+        AOEIW9_SWI_eco_war_5
+        AOEIW9_SWI_eco_science_1
+        AOEIW9_SWI_eco_science_2
+        AOEIW9_SWI_eco_science_3
+        AOEIW9_SWI_eco_science_4
+        AOEIW9_SWI_eco_infra_1
+        AOEIW9_SWI_eco_infra_2
+        AOEIW9_SWI_eco_infra_3
+        AOEIW9_SWI_eco_infra_4
+        AOEIW9_SWI_mil_army_2
+        AOEIW9_SWI_mil_army_3
+        AOEIW9_SWI_mil_army_5
+        AOEIW9_SWI_mil_army_6
+        AOEIW9_SWI_mil_army_7
+        AOEIW9_SWI_mil_air_1
+        AOEIW9_SWI_mil_air_2
+        AOEIW9_SWI_mil_air_3
+        AOEIW9_SWI_mil_air_4
+        AOEIW9_SWI_mil_air_5
+        AOEIW9_SWI_mil_special_1
+        AOEIW9_SWI_mil_special_2
+        AOEIW9_SWI_mil_special_3
+        AOEIW9_SWI_mil_special_4
+        AOEIW9_SWI_mil_special_5
+        AOEIW9_SWI_dip_a_1
+        AOEIW9_SWI_dip_a_3
+        AOEIW9_SWI_dip_a_4
+        AOEIW9_SWI_dip_a_5
+        AOEIW9_SWI_dip_b_1
+        AOEIW9_SWI_dip_b_3
+        AOEIW9_SWI_dip_b_4
+        AOEIW9_SWI_dip_b_5
+        AOEIW9_SWI_dip_final
+        AOEIW9_SWI_special_4
+        AOEIW9_SWI_special_5
+        AOEIW9_SWI_special_6
+        AOEIW9_SWI_special_7
+        AOEIW9_SWI_special_8
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 20
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 35
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 12
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -25
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_TUR_focus_plan = {
+    name = "AOEIW TUR V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = TUR }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_TUR_politics_root
+        AOEIW9_TUR_politics_p1_1
+        AOEIW9_TUR_politics_p1_7
+        AOEIW9_TUR_politics_settlement
+        AOEIW9_TUR_eco_root
+        AOEIW9_TUR_eco_civ_1
+        AOEIW9_TUR_eco_civ_3
+        AOEIW9_TUR_eco_war_1
+        AOEIW9_TUR_eco_war_8
+        AOEIW9_TUR_eco_science_7
+        AOEIW9_TUR_eco_final
+        AOEIW9_TUR_mil_root
+        AOEIW9_TUR_mil_army_1
+        AOEIW9_TUR_mil_army_2
+        AOEIW9_TUR_mil_army_3
+        AOEIW9_TUR_mil_army_4
+        AOEIW9_TUR_mil_final
+        AOEIW9_TUR_dip_root
+        AOEIW9_TUR_dip_a_2
+        AOEIW9_TUR_dip_b_2
+        AOEIW9_TUR_politics_p1_2
+        AOEIW9_TUR_politics_p1_3
+        AOEIW9_TUR_politics_p1_4
+        AOEIW9_TUR_politics_p1_5
+        AOEIW9_TUR_politics_p1_6
+        AOEIW9_TUR_politics_p2_1
+        AOEIW9_TUR_politics_p2_2
+        AOEIW9_TUR_politics_p2_3
+        AOEIW9_TUR_politics_p2_4
+        AOEIW9_TUR_politics_p2_5
+        AOEIW9_TUR_politics_p2_6
+        AOEIW9_TUR_politics_p2_7
+        AOEIW9_TUR_politics_p3_1
+        AOEIW9_TUR_politics_p3_2
+        AOEIW9_TUR_politics_p3_3
+        AOEIW9_TUR_politics_p3_4
+        AOEIW9_TUR_politics_p3_5
+        AOEIW9_TUR_politics_p3_6
+        AOEIW9_TUR_politics_p3_7
+        AOEIW9_TUR_eco_civ_2
+        AOEIW9_TUR_eco_civ_4
+        AOEIW9_TUR_eco_civ_5
+        AOEIW9_TUR_eco_civ_6
+        AOEIW9_TUR_eco_civ_7
+        AOEIW9_TUR_eco_war_2
+        AOEIW9_TUR_eco_war_3
+        AOEIW9_TUR_eco_war_4
+        AOEIW9_TUR_eco_war_5
+        AOEIW9_TUR_eco_war_6
+        AOEIW9_TUR_eco_war_7
+        AOEIW9_TUR_eco_science_1
+        AOEIW9_TUR_eco_science_2
+        AOEIW9_TUR_eco_science_3
+        AOEIW9_TUR_eco_science_4
+        AOEIW9_TUR_eco_science_5
+        AOEIW9_TUR_eco_science_6
+        AOEIW9_TUR_eco_infra_1
+        AOEIW9_TUR_eco_infra_2
+        AOEIW9_TUR_eco_infra_3
+        AOEIW9_TUR_eco_infra_4
+        AOEIW9_TUR_mil_army_8
+        AOEIW28_TUR_field_workshops
+        AOEIW28_TUR_signals
+        AOEIW9_TUR_mil_army_9
+        AOEIW9_TUR_mil_army_10
+        AOEIW9_TUR_mil_air_1
+        AOEIW9_TUR_mil_air_2
+        AOEIW9_TUR_mil_air_3
+        AOEIW9_TUR_mil_air_4
+        AOEIW9_TUR_mil_air_5
+        AOEIW9_TUR_mil_air_6
+        AOEIW9_TUR_mil_air_7
+        AOEIW9_TUR_mil_sea_1
+        AOEIW9_TUR_mil_sea_2
+        AOEIW9_TUR_mil_sea_3
+        AOEIW9_TUR_mil_sea_4
+        AOEIW9_TUR_mil_sea_5
+        AOEIW9_TUR_mil_sea_6
+        AOEIW9_TUR_mil_sea_7
+        AOEIW9_TUR_dip_a_1
+        AOEIW9_TUR_dip_a_3
+        AOEIW9_TUR_dip_a_4
+        AOEIW9_TUR_dip_a_5
+        AOEIW9_TUR_dip_a_6
+        AOEIW9_TUR_dip_a_7
+        AOEIW9_TUR_dip_b_1
+        AOEIW9_TUR_dip_b_3
+        AOEIW9_TUR_dip_b_4
+        AOEIW9_TUR_dip_b_5
+        AOEIW9_TUR_dip_b_6
+        AOEIW9_TUR_dip_b_7
+        AOEIW9_TUR_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 60
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 5
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 3
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_USA_focus_plan = {
+    name = "AOEIW USA V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = USA }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_USA_politics_p1_1
+        AOEIW9_USA_politics_p1_2
+        AOEIW9_USA_politics_p1_3
+        AOEIW9_USA_politics_p1_4
+        AOEIW9_USA_politics_p1_5
+        AOEIW9_USA_politics_p1_6
+        AOEIW9_USA_politics_p1_7
+        AOEIW9_USA_politics_p2_1
+        AOEIW9_USA_politics_p2_2
+        AOEIW9_USA_politics_p2_3
+        AOEIW9_USA_politics_p2_4
+        AOEIW9_USA_politics_p2_5
+        AOEIW9_USA_politics_p2_6
+        AOEIW9_USA_politics_p2_7
+        AOEIW9_USA_politics_p3_1
+        AOEIW9_USA_politics_p3_2
+        AOEIW9_USA_politics_p3_3
+        AOEIW9_USA_politics_p3_4
+        AOEIW9_USA_politics_p3_5
+        AOEIW9_USA_politics_p3_6
+        AOEIW9_USA_politics_p3_7
+        AOEIW9_USA_politics_settlement
+        AOEIW9_USA_eco_root
+        AOEIW9_USA_eco_civ_1
+        AOEIW9_USA_eco_civ_2
+        AOEIW9_USA_eco_civ_3
+        AOEIW9_USA_eco_civ_4
+        AOEIW9_USA_eco_civ_5
+        AOEIW9_USA_eco_civ_6
+        AOEIW9_USA_eco_civ_7
+        AOEIW9_USA_eco_war_1
+        AOEIW9_USA_eco_war_2
+        AOEIW9_USA_eco_war_3
+        AOEIW9_USA_eco_war_4
+        AOEIW9_USA_eco_war_5
+        AOEIW9_USA_eco_war_6
+        AOEIW9_USA_eco_war_7
+        AOEIW9_USA_eco_war_8
+        AOEIW9_USA_eco_science_1
+        AOEIW9_USA_eco_science_2
+        AOEIW9_USA_eco_science_3
+        AOEIW9_USA_eco_science_4
+        AOEIW9_USA_eco_science_5
+        AOEIW9_USA_eco_science_6
+        AOEIW9_USA_eco_science_7
+        AOEIW9_USA_eco_infra_1
+        AOEIW9_USA_eco_infra_2
+        AOEIW9_USA_eco_infra_3
+        AOEIW9_USA_eco_infra_4
+        AOEIW9_USA_eco_final
+        AOEIW9_USA_mil_root
+        AOEIW9_USA_mil_army_1
+        AOEIW9_USA_mil_army_5
+        AOEIW9_USA_mil_army_6
+        AOEIW9_USA_mil_army_7
+        AOEIW9_USA_mil_army_8
+        AOEIW28_USA_field_workshops
+        AOEIW28_USA_signals
+        AOEIW9_USA_mil_army_9
+        AOEIW9_USA_mil_army_10
+        AOEIW9_USA_mil_air_1
+        AOEIW9_USA_mil_air_2
+        AOEIW9_USA_mil_air_3
+        AOEIW9_USA_mil_air_4
+        AOEIW9_USA_mil_air_5
+        AOEIW9_USA_mil_air_6
+        AOEIW9_USA_mil_air_7
+        AOEIW9_USA_mil_sea_1
+        AOEIW9_USA_mil_sea_2
+        AOEIW9_USA_mil_sea_3
+        AOEIW9_USA_mil_sea_4
+        AOEIW9_USA_mil_sea_5
+        AOEIW9_USA_mil_sea_6
+        AOEIW9_USA_mil_sea_7
+        AOEIW9_USA_mil_final
+        AOEIW9_USA_dip_root
+        AOEIW9_USA_dip_a_1
+        AOEIW9_USA_dip_a_2
+        AOEIW9_USA_dip_a_3
+        AOEIW9_USA_dip_a_4
+        AOEIW9_USA_dip_a_5
+        AOEIW9_USA_dip_a_6
+        AOEIW9_USA_dip_a_7
+        AOEIW9_USA_dip_b_1
+        AOEIW9_USA_dip_b_2
+        AOEIW9_USA_dip_b_3
+        AOEIW9_USA_dip_b_4
+        AOEIW9_USA_dip_b_5
+        AOEIW9_USA_dip_b_6
+        AOEIW9_USA_dip_b_7
+        AOEIW9_USA_dip_final
+        AOEIW9_USA_special_1
+        AOEIW9_USA_special_2
+        AOEIW9_USA_special_3
+        AOEIW9_USA_special_4
+        AOEIW9_USA_special_5
+        AOEIW9_USA_special_6
+        AOEIW9_USA_special_7
+        AOEIW9_USA_special_8
+        AOEIW_IMM_USA_root
+        AOEIW_IMM_USA_executive_1
+        AOEIW_IMM_USA_executive_2
+        AOEIW_IMM_USA_executive_3
+        AOEIW_IMM_USA_arsenal_1
+        AOEIW_IMM_USA_arsenal_2
+        AOEIW_IMM_USA_arsenal_3
+        AOEIW_IMM_USA_convention_1
+        AOEIW_IMM_USA_convention_2
+        AOEIW_IMM_USA_convention_3
+        AOEIW_IMM_USA_national_destiny
+        AOEIW14_USA_general_staff_planning
+        AOEIW14_USA_continental_logistics_board
+        AOEIW14_USA_military_industrial_coordination
+        AOEIW14_USA_air_defence_grid
+        AOEIW14_USA_strategic_air_command
+        AOEIW14_USA_national_laboratories
+        AOEIW14_USA_rocketry_program
+        AOEIW14_USA_atomic_energy_commission
+        AOEIW14_USA_national_reactor_program
+        AOEIW14_USA_integrated_war_planning
+        AOEIW22_USA_alternative_americas
+        AOEIW22_USA_business_plot
+        AOEIW22_USA_industrial_liaison_committee
+        AOEIW22_USA_banks_behind_the_curtain
+        AOEIW22_USA_legion_networks
+        AOEIW22_USA_break_general_strike
+        AOEIW22_USA_corporate_republic
+        AOEIW22_USA_macarthur_republic
+        AOEIW22_USA_emergency_in_washington
+        AOEIW22_USA_guardian_of_republic
+        AOEIW22_USA_restore_ballot_box
+        AOEIW22_USA_permanent_general_staff
+        AOEIW22_USA_american_caesar
+        AOEIW22_USA_share_our_wealth
+        AOEIW22_USA_cap_fortunes
+        AOEIW22_USA_public_works_army
+        AOEIW22_USA_long_machine
+        AOEIW22_USA_democratic_populism
+        AOEIW22_USA_every_man_a_subject
+        AOEIW22_USA_technocracy
+        AOEIW22_USA_continental_energy_survey
+        AOEIW22_USA_abolish_price_system
+        AOEIW22_USA_functional_directorates
+        AOEIW22_USA_scientific_state
+        AOEIW22_USA_technate_of_america
+        AOEIW22_USA_return_to_articles
+        AOEIW22_USA_sovereign_state_convention
+        AOEIW22_USA_repeal_federal_supremacy
+        AOEIW22_USA_state_economies
+        AOEIW22_USA_militia_compacts
+        AOEIW22_USA_confederation_restored
+        AOEIW22_USA_imperial_presidency
+        AOEIW22_USA_permanent_emergency_act
+        AOEIW22_USA_pack_supreme_court
+        AOEIW22_USA_executive_budget
+        AOEIW22_USA_succession_statute
+        AOEIW22_USA_crowned_republic
+        AOEIW27_USA_domestic_settlement
+        AOEIW22_USA_manifest_destiny
+        AOEIW22_USA_continental_claim
+        AOEIW22_USA_northern_destiny
+        AOEIW22_USA_mexican_destiny
+        AOEIW22_USA_caribbean_destiny
+        AOEIW22_USA_pacific_destiny
+        AOEIW22_USA_continental_hegemony
+        AOEIW22_USA_pan_american_union
+        AOEIW22_USA_good_neighbor_charter
+        AOEIW22_USA_common_market
+        AOEIW22_USA_defense_council
+        AOEIW22_USA_continental_railway
+        AOEIW22_USA_federation_americas
+        AOEIW22_USA_fortress_america
+        AOEIW22_USA_absolute_neutrality
+        AOEIW22_USA_continental_redoubt
+        AOEIW22_USA_integrated_air_defense
+        AOEIW22_USA_two_ocean_wall
+        AOEIW22_USA_sleeping_giant
+        AOEIW22_USA_pacific_republic
+        AOEIW22_USA_governors_convention
+        AOEIW22_USA_break_with_washington
+        AOEIW22_USA_orient_across_pacific
+        AOEIW22_USA_reunify_union
+        AOEIW22_USA_pacific_power
+        AOEIW22_USA_new_england_restoration
+        AOEIW22_USA_mayflower_compact
+        AOEIW22_USA_boston_congress
+        AOEIW22_USA_aristocratic_republic
+        AOEIW22_USA_anglo_monarchy
+        AOEIW22_USA_original_colonies
+        AOEIW22_USA_nortonian_empire
+        AOEIW22_USA_norton_societies
+        AOEIW22_USA_imperial_decree_one
+        AOEIW22_USA_court_san_francisco
+        AOEIW22_USA_empire_united_states
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 12.0
+        motorized_equipment = 7.0
+        air_equipment = 12.0
+        armor = 10.0
+        naval_equipment = 8.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 10
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 100
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 12
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 12
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 25
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -40
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}
+
+AOEIW_YUG_focus_plan = {
+    name = "AOEIW YUG V9 national strategy"
+    desc = "Country-specific V9 focus order and force-development plan."
+    allowed = { original_tag = YUG }
+    enable = { always = yes }
+    abort = { always = no }
+    ai_national_focuses = {
+        AOEIW9_YUG_politics_root
+        AOEIW9_YUG_politics_p1_1
+        AOEIW9_YUG_politics_p1_6
+        AOEIW9_YUG_politics_settlement
+        AOEIW9_YUG_eco_root
+        AOEIW9_YUG_eco_civ_1
+        AOEIW9_YUG_eco_civ_3
+        AOEIW9_YUG_eco_war_1
+        AOEIW9_YUG_eco_war_7
+        AOEIW9_YUG_eco_science_6
+        AOEIW9_YUG_eco_final
+        AOEIW9_YUG_mil_root
+        AOEIW9_YUG_mil_army_1
+        AOEIW9_YUG_mil_army_4
+        AOEIW9_YUG_mil_final
+        AOEIW9_YUG_dip_root
+        AOEIW9_YUG_dip_a_2
+        AOEIW9_YUG_dip_b_2
+        AOEIW9_YUG_politics_p1_2
+        AOEIW9_YUG_politics_p1_3
+        AOEIW9_YUG_politics_p1_4
+        AOEIW9_YUG_politics_p1_5
+        AOEIW9_YUG_politics_p2_1
+        AOEIW9_YUG_politics_p2_2
+        AOEIW9_YUG_politics_p2_3
+        AOEIW9_YUG_politics_p2_4
+        AOEIW9_YUG_politics_p2_5
+        AOEIW9_YUG_politics_p2_6
+        AOEIW9_YUG_politics_p3_1
+        AOEIW9_YUG_politics_p3_2
+        AOEIW9_YUG_politics_p3_3
+        AOEIW9_YUG_politics_p3_4
+        AOEIW9_YUG_politics_p3_5
+        AOEIW9_YUG_politics_p3_6
+        AOEIW9_YUG_eco_civ_2
+        AOEIW9_YUG_eco_civ_4
+        AOEIW9_YUG_eco_civ_5
+        AOEIW9_YUG_eco_civ_6
+        AOEIW9_YUG_eco_civ_7
+        AOEIW9_YUG_eco_civ_8
+        AOEIW9_YUG_eco_war_2
+        AOEIW9_YUG_eco_war_3
+        AOEIW9_YUG_eco_war_4
+        AOEIW9_YUG_eco_war_5
+        AOEIW9_YUG_eco_war_6
+        AOEIW9_YUG_eco_science_1
+        AOEIW9_YUG_eco_science_2
+        AOEIW9_YUG_eco_science_3
+        AOEIW9_YUG_eco_science_4
+        AOEIW9_YUG_eco_science_5
+        AOEIW9_YUG_eco_infra_1
+        AOEIW9_YUG_eco_infra_2
+        AOEIW9_YUG_eco_infra_3
+        AOEIW9_YUG_eco_infra_4
+        AOEIW9_YUG_mil_army_2
+        AOEIW9_YUG_mil_army_3
+        AOEIW9_YUG_mil_army_5
+        AOEIW9_YUG_mil_army_6
+        AOEIW9_YUG_mil_army_7
+        AOEIW9_YUG_mil_army_8
+        AOEIW9_YUG_mil_army_9
+        AOEIW9_YUG_mil_air_1
+        AOEIW9_YUG_mil_air_2
+        AOEIW9_YUG_mil_air_3
+        AOEIW9_YUG_mil_air_4
+        AOEIW9_YUG_mil_air_5
+        AOEIW9_YUG_mil_air_6
+        AOEIW9_YUG_mil_sea_1
+        AOEIW9_YUG_mil_sea_2
+        AOEIW9_YUG_mil_sea_3
+        AOEIW9_YUG_mil_sea_4
+        AOEIW9_YUG_mil_sea_5
+        AOEIW9_YUG_mil_sea_6
+        AOEIW9_YUG_dip_a_1
+        AOEIW9_YUG_dip_a_3
+        AOEIW9_YUG_dip_a_4
+        AOEIW9_YUG_dip_a_5
+        AOEIW9_YUG_dip_a_6
+        AOEIW9_YUG_dip_b_1
+        AOEIW9_YUG_dip_b_3
+        AOEIW9_YUG_dip_b_4
+        AOEIW9_YUG_dip_b_5
+        AOEIW9_YUG_dip_b_6
+        AOEIW9_YUG_dip_final
+    }
+    research = {
+        industry = 30.0
+        infantry_weapons = 20.0
+        infantry_tech = 14.0
+        artillery = 12.0
+        support_tech = 12.0
+        electronics = 10.0
+        motorized_equipment = 7.0
+        air_equipment = 8.0
+        armor = 6.0
+        naval_equipment = 5.0
+    }
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 15
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 45
+    }
+    ai_strategy = {
+        type = build_army
+        id = AOEIW_mobile
+        value = 4
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 18
+    }
+    ai_strategy = {
+        type = equipment_stockpile_surplus_ratio
+        value = -35
+    }
+    ai_strategy = {
+        type = land_xp_spend_priority
+        id = division_template
+        value = 60
+    }
+    weight = {
+        factor = 1.0
+    }
+}

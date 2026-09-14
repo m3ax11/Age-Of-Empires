@@ -1,0 +1,48 @@
+division_template = {
+ name = "Mexican Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "MEX Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Mexican Empire Infantry Division" location = 1900 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Mexican Empire Infantry Division" location = 12835 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Mexican Empire Infantry Division" location = 10769 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Mexican Empire Infantry Division" location = 12811 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Mexican Empire Infantry Division" location = 8097 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Mexican Empire Infantry Division" location = 10830 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Mexican Empire Infantry Division" location = 10765 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Mexican Empire Infantry Division" location = 1965 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Mexican Empire Infantry Division" location = 2008 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Mexican Empire Infantry Division" location = 12461 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Mexican Empire Infantry Division" location = 4904 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Mexican Empire Infantry Division" location = 4965 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Mexican Empire Infantry Division" location = 1900 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Mexican Empire Infantry Division" location = 12835 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Mexican Empire Infantry Division" location = 10769 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Mexican Empire Infantry Division" location = 12811 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Mexican Empire Infantry Division" location = 8097 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Mexican Empire Infantry Division" location = 10830 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Mexican Empire Infantry Division" location = 10765 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Mexican Empire Infantry Division" location = 1965 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Mexican Empire Infantry Division" location = 2008 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Mexican Empire Infantry Division" location = 12461 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Mexican Empire Infantry Division" location = 4904 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Mexican Empire Infantry Division" location = 4965 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Mexican Empire Infantry Division" location = 1900 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Mexican Empire Infantry Division" location = 12835 division_template = "Mexican Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. MEX Rapid Division" location = 1900 division_template = "MEX Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. MEX Rapid Division" location = 1900 division_template = "MEX Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+}

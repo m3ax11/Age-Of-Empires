@@ -1,0 +1,44 @@
+AOEIW35_GER_national_programme = {
+    icon = GFX_idea_GER_mefo_bills
+    industrial_capacity_factory = 0.08 production_factory_efficiency_gain_factor = 0.08 consumer_goods_factor = 0.02 stability_factor = -0.03
+}
+
+AOEIW35_FRA_national_programme = {
+    icon = GFX_idea_FRA_factory_strikes
+    planning_speed = 0.10 army_org_factor = 0.04 production_speed_buildings_factor = 0.06 consumer_goods_factor = 0.02
+}
+
+AOEIW35_ENG_national_programme = {
+    icon = GFX_idea_eng_chiefs_of_staff_committee
+    navy_org_factor = 0.06 convoy_escort_efficiency = 0.10 industrial_capacity_dockyard = 0.08 consumer_goods_factor = 0.015
+}
+
+AOEIW35_ITA_national_programme = {
+    icon = GFX_idea_ITA_hardened_irregular_bands
+    army_org_factor = 0.05 industrial_capacity_factory = 0.08 supply_consumption_factor = 0.05 stability_factor = -0.03
+}
+
+AOEIW35_JAP_national_programme = {
+    icon = GFX_idea_jap_interservice_rivalry_navy_dominant
+    army_org_factor = 0.04 navy_org_factor = 0.04 production_factory_efficiency_gain_factor = 0.08 consumer_goods_factor = 0.02
+}
+
+AOEIW35_USA_national_programme = {
+    icon = GFX_idea_usa_great_depression_2
+    industrial_capacity_factory = 0.10 production_speed_buildings_factor = 0.08 consumer_goods_factor = 0.025 stability_factor = -0.04
+}
+
+AOEIW35_SOV_national_programme = {
+    icon = GFX_idea_SOV_third_five_year_plan_military
+    industrial_capacity_factory = 0.08 army_org_factor = 0.05 supply_consumption_factor = -0.04 consumer_goods_factor = 0.025
+}
+
+AOEIW35_SPR_national_programme = {
+    icon = GFX_idea_SPR_political_violence
+    army_org_factor = 0.05 production_speed_buildings_factor = 0.08 resistance_target = 0.02 stability_factor = -0.04
+}
+
+AOEIW35_AUS_national_programme = {
+    icon = GFX_idea_generic_constitutional_guarantees
+    production_speed_buildings_factor = 0.08 army_org_factor = 0.04 resistance_target = -0.02 consumer_goods_factor = 0.02
+}

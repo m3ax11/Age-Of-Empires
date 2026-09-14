@@ -1,0 +1,228 @@
+# Age of Empires — RT56 Edition: development handoff
+
+Reconstructed from the supplied archive on 2026-09-10 and advanced as a release-candidate working copy on 2026-09-11. The original archive remains the provenance baseline; this file records the current implementation state.
+
+## 2026-09-11 release-candidate status
+
+The working copy is now a Git repository. Commit `a29d19aa` is the untouched extracted archive plus the initial audit handoff. All later work is reviewable against that baseline. Do not discard the current working tree: it contains the integrated release pass.
+
+Completed in the current working tree:
+
+- Repaired the unmatched brace in `common/characters/KAL.txt`.
+- Restored four compatibility ideas used by the legacy China handlers without changing the CHI-player/MAN-Puyi architecture.
+- Removed thirteen duplicate scripted-trigger collisions by renaming the earlier redundant definitions with the `AOEIW_legacy_` prefix; the later RT56 definitions remain authoritative.
+- Completed all previously missing AOE English localization detected by the validator and replaced the visible USA mobilization placeholder.
+- Reorganized Spanish South America into two integrated subjects. ARG administers the Southern Cone; PRU administers the Andes and northern Spanish South America. Both retain local cores and Spain retains imperial cores. Central America and the Caribbean remain directly Spanish.
+- Added Spain's Cádiz imperial-governance lifecycle: 11 focuses, 12 decisions, 18 events, 11 spirits, 3 dynamic modifiers and 4 AI plans. It covers Argentine and Peruvian investment, petitions, wartime mobilization, foreign reactions and a postwar commonwealth/directorate payoff.
+- Added Germany's release-candidate continuation: 28 focuses, 7 decisions, 20 events, 20 ideas and 6 AI plans. The four political outcomes now lead into distinct continental orders, while economy, resource, armed-forces and postwar settlement branches provide 1940s play.
+- Added the `AOEIW37_WORLD` imperial-war and aftermath chain for FRA–MLI/VIN, SOV–UKR/GEO/KAZ and POR–BRA. War service, metropolitan collapse, subject memoranda, reconstruction policy, outside-power reactions and joint supply boards now form one sequence.
+- Added the `AOEIW38_AMERICAS_AFRICA` continuation: 15 late focuses across BRA/CAN/MEX/EGY/ETH, 14 decisions, 19 events, 22 spirits, 9 AI plans, and war/postwar hooks for BRA, CAN, MEX, EGY, ETH, ARG and PRU. Its connected diplomacy covers BRA–ARG/PRU, MEX–USA, EGY–ETH, CAN–ENG and the ARG/PRU–SPR subject relationship.
+- Added the `AOEIW38_ASIA_MIDDLE` continuation: 10 late focuses for MON and YEM, 15 decisions, 22 spirits, 23 events and 10 AI plans. Mongolia now carries its frontier council into a 1940s steppe settlement; Yemen carries control of Bab el-Mandeb through policy, regional reactions and reconstruction. MAN, CHI, JAP, PER, RAJ, SIA and TUR receive distinct 1940–42 choices and follow-up actions without changing the CHI/MAN tag architecture.
+- Added the `AOEIW38_EUROPE` regional-reckoning system for BEL, BUL, DEN, FIN, GRE, HOL, IRE, NOR, POL, POR, ROM, SWE, SWI and YUG: 9 decisions, 21 spirits, 11 events and 16 AI plans. It provides national war programmes, regional conventions, capitulation/exile reactions, repeatable restoration after liberation, 1942 reconstruction payoffs and HOL/POR subject charters.
+- Replaced all eleven broken icon identifiers in `AOEIW_historical_germany_ideas.txt`, supplied the existing large Choybalsan portrait, and resolved new Germany/Spain/world icon references against the installed game assets.
+- Replaced 167 invalid legacy AOE decision-icon aliases and 18 invalid major-governance balance icons with registered HOI4 sprites. The validator now checks direct AOE sprites, AOE idea pictures and AOE decision icons against both the mod and the installed game registry.
+- Corrected the regional semantic QA findings: registered European naval modifiers, a Japan–Manchuria reaction that previously displayed Mongolian prose, coastal selection for Yemen's dockyard, Canada's duplicate visible conversion, Mexico's unrelated global refugee trigger, and repeat-safe European restoration. Mongolia and Yemen intentionally use the vanilla focus-tree convention in which multiple focuses inside one `prerequisite` block form an OR convergence.
+- Reconciled the standalone installation instructions in `README.txt` and `AOE_RT56_EDITION_README.txt`.
+- Added `tools/validate_aoeiw.py`. With installed HOI4 1.19.2 as its reference, it currently parses 5,277 mod script files and reports no proven brace, duplicate AOE ID, AOE reference, AOE English-localization, sprite, province/strategic-region or Spanish-subject contract failures.
+
+The every-country inventory covers all 49 countries that directly own a state in the supported 1936 start. Forty-five have an AOE-selected tree. ADR, LIE, MNC and SAN rely on inherited/shared microstate content. The detailed tier table and risk assessment are in `work/world-release-audit.md` outside the packaged mod; `work/country-coverage.json` is its machine-readable source.
+
+The regional authored-content passes under `AOEIW38_AMERICAS_AFRICA`, `AOEIW38_EUROPE` and `AOEIW38_ASIA_MIDDLE` are complete and integrated. Static validation is clean. The next work should be driven by an exact-build runtime smoke test and gameplay observations rather than another broad content expansion.
+
+Runtime status: this exact post-change working tree reached HOI4 1.19.2's main-menu reset with only this edition enabled. The raw `error.log` contained three warnings from stale disabled Workshop descriptors and no AOE/RT56 parser errors. The temporary playset descriptor was removed and the user's prior `dlc_load.json` was restored byte-for-byte. A country was not selected in this automated pass, so the remaining release gate is a fresh **Time of Upheaval** 1936 start followed by targeted gameplay checks of GER, SPR/ARG/PRU, CHI/MAN, USA, British succession, Mongolia/Yemen convergence, regional restoration and one imperial-aftermath chain.
+
+The authoritative final-patch backlog is now `FINAL_RELEASE_AUDIT.md`. Its reproducible inventory covers all 4,107 AOE focuses and confirms two major editorial debts: 1,136 English AOE localisation keys do not yet have German counterparts (including 64 focus names plus their descriptions), and 3,121 descriptions belong to text groups repeated at least four times. The current post-layout/post-branding HEAD still needs a fresh 1936 runtime start; the earlier main-menu smoke test predates commits `339888ab` and `d611a3c3`.
+
+## Authoritative input and working copy
+
+- User-selected source: `C:\Users\Stack\Documents\Codex\2026-08-20\files-mentioned-by-the-user-agentic\r6\Age Of Empires - RT56 Edition.zip`.
+- ZIP SHA-256: `2b424e8ab25ef102eda864e4a9e553a6ec6eb90d96382e975b63252cee6a26e7`.
+- Extracted working copy: `C:\Users\Stack\Documents\Codex\2026-09-10\we-are-continuing-development-of-an\work\archive-audit\Age_Of_Empires_RT56_Edition`.
+- This handoff is also copied into that working copy as `HANDOFF.md`. The original ZIP remains unchanged. Other installed/Desktop copies were not treated as sources or merged into this copy.
+- No `AGENTS.md`, existing handoff, dedicated TODO file, or Git metadata was present in the archive. Git was initialized after extraction; `a29d19aa` records the archive baseline.
+
+All paths below are relative to the extracted mod root unless explicitly absolute.
+
+## Current state
+
+This is an extensive standalone, all-in-one merger of The Road to 56, Age of Empires, and their compatibility layer. `descriptor.mod` declares HOI4 `1.19.*` and replaces `history/states` and `map/strategicregions`. That is a declared target, not a verified runtime result.
+
+`AOE_RT56_EDITION_README.txt` and `README.txt` now consistently say to enable **only this edition**, without separate RT56/AOE/compatibility mods, and start a new game after updating. `README.md` is inherited RT56 contributor documentation, including attribution and contribution conventions, rather than an AOE design specification. `Credits.txt` and `Unique Commanders IDS.txt` should be retained.
+
+The archive contains 29,554 files. Principal counts:
+
+| Area | Files / definitions |
+|---|---|
+| National focuses | 251 files; 26,844 focus definitions across the merged content |
+| AOE focus content | 56 tree definitions; 4,043 AOE-prefixed focuses |
+| Events | 288 files; 11,427 event definitions |
+| Decisions | 322 files including categories |
+| Shared scripting | 34 on-action files, 50 scripted-effect files, 40 scripted-trigger files |
+| History | 409 country files, 614 unit/OOB files, 1,143 state files |
+| Map | 298 strategic regions; full province, terrain, railway, supply and other map assets |
+| Localisation | 350 files under English and 47 under German; additional language/replace folders |
+
+Content names span older V6–V10/phase systems through phase 35. `common/national_focus/AOEIW_GER_focus.txt:2` explicitly labels its layout `AOEIW36 wide modular layout`. These names establish that content exists, not a trustworthy chronological changelog.
+
+## Design and lore to preserve
+
+- The supported AOE scenario is **Time of Upheaval**, starting `1936.1.1.12`, in `common/bookmarks/the_gathering_storm.txt`. The canonical English bookmark text is in `localisation/english/zzzzzzzzzzzzzzzzzz_AOEIW_V83_canonical_l_english.yml:2–11`.
+- The imperial order survived into 1936: Germany is an empire and dominant continental military power; France is the Second French Empire under Napoleon IV; SOV represents the Russian Empire under threat of reform/reaction/revolution; Spain remains an empire under Alfonso XIII; the Ottoman state survives. Do not “correct” these to vanilla history.
+- `SOV` is deliberately reused for imperial Russia. British history recruits Queen Victoria and a King George alternative, and the succession decisions allow choosing between them. Historical longevity is a setting choice, not an audit bug.
+- The setting supports imperial, democratic, nationalist and revolutionary alternatives, including extensive communist routes for France, Germany, Italy and Russia. Preserve the existing branch choices.
+- Vanilla ideology groups coexist with `imperialism`, `constitutional_monarchism`, and `autocratic_imperialism`, defined in `common/ideologies/age_of_empires_imperial_world_leaders_ideologies.txt`. Their subtypes and character roles are cross-referenced by political transitions and repair hooks.
+- Country history plus startup hooks establish imperial subjects and factions. German history creates the Reichspakt. World-expansion startup makes UKR/GEO/KAZ Russian subjects, EST/MAL German subjects, MLI/VIN French subjects, and ARG/PRU Spanish subjects.
+- The **current edition begins with the former American breakaways already integrated into USA**. `common/on_actions/zzzzzz_AOEIW_world_expansion_on_actions.txt:22–29` explicitly says this and sets the reunited flag. Do not restore a divided America merely because old reclamation decisions remain.
+- **China stability constraint:** `common/scripted_effects/AOEIW_phase20_chinese_crisis_effects.txt:1–3` requires CHI to remain the player and become the United Front; MAN carries Puyi's Qing state from its Jehol bootstrap to its postwar settlement. No civil-war engine, tag swap, or landless-tag spawn in this chain. The startup hook also preserves global target `WTT_communist_china` to avoid an empty-country dereference in inherited WTT decisions.
+- `common/bookmarks/blitzkrieg.txt` is an explicitly unsupported inherited 1939 bookmark whose comments say to retain it because deletion breaks menu elements. Do not remove it to enforce the single AOE scenario.
+
+## Architecture and important paths
+
+| System | Entry points and responsibilities |
+|---|---|
+| Countries and characters | `common/country_tags/`, `common/countries/`, `common/characters/`, `history/countries/`; vanilla tag definitions may come from the base game |
+| Main country trees | `common/national_focus/AOEIW_<TAG>_focus.txt`; major AOE selectors commonly have weight 10,000, above inherited RT56 trees |
+| China/frontier trees | `AOEIW_phase20_united_front_focus.txt` has holding/UF selectors at 200,000/100,000; `AOEIW_frontier_{MAN,MON,QIN,XIC}_focus.txt` adds frontier content |
+| World expansion | `common/national_focus/AOEIW_world_expansion_focus.txt`, matching decisions/events/ideas/characters/localisation and `zzzzzz_AOEIW_world_expansion_on_actions.txt` |
+| Events and decisions | `events/AOEIW*`, `common/decisions/AOEIW*`, `common/decisions/categories/AOEIW*`; coexist with retained RT56/vanilla-derived content |
+| Shared effects/triggers | `common/scripted_effects/AOEIW*` handles political transitions, China, Russian revolution, consolidation, coalitions and QoL; AOE also uses inherited `common/scripted_triggers/` definitions |
+| Germany parliament | `common/scripted_effects/AOEIW28_german_coalitions.txt`, `events/AOEIW28_german_elections.txt`, matching on-actions/decisions, `AOEIW34_german_election_campaign.txt`, and `interface/AOEIW34_rt56_parliament_assets.gfx`; phase-34 polls feed phase-30 seat variables and phase-29 cabinet logic |
+| Systemic political depth | `AOEIW22_nationalities_on_actions.txt`, `AOEIW24_systemic_depth.txt` across on-actions/events/decisions; Austrian crownland tensions and USA/SOV/ITA political variables |
+| Governance/programmes | `common/bop/AOEIW35_major_governance.txt`, `common/dynamic_modifiers/AOEIW35_major_programmes.txt`, phase-35 focuses/events/decisions; phase-32 programmes and phase-35 frontier life also exist |
+| Consolidation/postwar | `common/scripted_effects/AOEIW_consolidation_effects.txt`, `common/decisions/AOEIW_consolidation_systems.txt`, final faction/Japan/postwar decisions and events |
+| Super-events/UI | phase-21 events/on-actions, `common/scripted_guis/AOEIW_phase21_super_events.txt`, scripted localisation, interface/GFX, `sound/AOEIW_phase21_super_events.asset`; hidden manual test hooks are intentional |
+| OOBs and map | `history/units/AOEIW*` has land/naval and BBA/legacy-air variants; `RT56_STATE_MERGE.csv` is the geographical mapping ledger |
+| Localisation | `localisation/english/`, `localisation/german/`, `localisation/replace/`; canonical/repair files have long `zz...` prefixes |
+
+The state merge ledger has 1,143 rows: 991 exact-label matches, 118 owner transitions, 29 stable-legacy-ID matches, and 5 retained RT56-owner states. There are **116 cross-numeric-ID mappings**. RT56 provides topology; AOE supplies scenario ownership/imperial cores. Never equate an old AOE state ID with an RT56 state ID without checking this ledger and the actual state file.
+
+World tree IDs also deliberately preserve old conceptual tags while their selectors use reused country slots: BTF→EST, CAF→GEO, TRK→KAZ, HEJ→OMA, INA→VIN, FWA→MLI, GEA→MAL, NEE→QUE, TCO→CSA, FAM→HAI. Preserve both the old content IDs and actual target tags.
+
+## Work already present and checks completed
+
+“Present” means implemented in files, not proven complete through gameplay. The build already contains the merged world, substantial country trees and political alternatives, China redesign and legacy compatibility handlers, German election/coalition mechanics, governance balances, national programmes, frontier content, initial army/doctrine support, super-events and UI work. These should be repaired narrowly rather than replaced.
+
+This audit indexed 5,242 script/interface/map definition files with a comment/string-aware structural scanner, followed by targeted manual inspection and reference checks. Results:
+
+- No duplicate event, focus, state, strategic-region or scripted-effect IDs found in the scanned archive definitions.
+- No duplicate AOE-related idea, character, decision-category, dynamic-modifier or balance-of-power definitions found in the checked structures.
+- No custom focus prerequisite cycles or empty custom focus reward blocks found.
+- No unresolved AOE event/focus/OOB references in the checked reference forms; custom effect/trigger calls, focus shortcut/relative-position references, and checked explicit state references resolved.
+- No duplicate province assignments across states or across strategic regions; all state provinces have a strategic region. This is not a complete terrain/adjacency/railway validation.
+- No missing referenced files among the 72 locally declared country tags. Base-game tags are not fully redeclared here.
+- Custom localisation files checked had BOMs and language headers. No duplicate AOE-prefixed English keys found by the key scan; keep naming conventions despite that clean result.
+- All extracted original files matched their ZIP CRCs before adding this handoff.
+
+## Initial audit findings and disposition
+
+### 1. Confirmed structural error — resolved
+
+`common/characters/KAL.txt` had one unmatched opening brace. The missing top-level closure has been restored, and the release validator now reports no structural imbalance.
+
+### 2. Confirmed English localisation gaps — resolved
+
+The following world-expansion gaps were present in the archive and have now been localized:
+
+- Seven spirit names in `common/ideas/AOEIW_world_expansion_ideas.txt`: `AOEIW_world_frontier_state`, `AOEIW_world_colonial_administration`, `AOEIW_world_american_breakaway`, `AOEIW_world_USA_fractured_republic`, `AOEIW_world_USA_industrial_recovery`, `AOEIW_world_USA_reunited`, `AOEIW_world_FRA_metropolitan_command`. Several are applied at startup, so this is not exclusively dormant content.
+- Both categories in `common/decisions/categories/AOEIW_world_expansion_categories.txt`: `AOEIW_world_american_reclamation_category` and `AOEIW_world_british_succession_category`.
+- All five decision names in `common/decisions/AOEIW_world_expansion_decisions.txt`: emergency reconstruction, federal mobilisation, reclamation, proclaim King George, confirm Queen Victoria (preserve their exact IDs).
+- Seven event strings in `events/AOEIW_world_expansion_events.txt`: `AOEIW_world.1.t/.d/.a` and `AOEIW_world.2.t/.d/.a/.b`.
+- The broader scan also found missing research/doctrine-bonus display names such as `AOEIW_event_land_doctrine` and `AOEIW_AUS_event_air` in country event files. These are bonus labels, not missing event titles; review their presentation separately.
+
+The added release content also has complete English names and descriptions under its own prefixes. Two character-ID lookup candidates remain intentional: `AOEIW20_QIN_puyi` and `AOEIW20_MAN_puyi` explicitly use the existing `AOEIW_CHI_puyi` name key.
+
+### 3. Legacy China compatibility debt — resolved
+
+`common/national_focus/AOEIW_CHI_focus.txt` referenced four undefined idea IDs: `AOEIW20_CHI_dynastic_crisis`, `AOEIW20_CHI_costly_dynastic_settlement`, `AOEIW20_CHI_nra_underground`, and `AOEIW20_CHI_mao_underground`. Compatibility definitions now exist in `common/ideas/AOEIW_phase20_chinese_crisis.txt`.
+
+The normal CHI selectors still prefer the newer holding/UF trees, and the compatibility definitions do not revive the superseded unstable China implementation.
+
+### 4. Inherited integration candidates needing runtime/base-game verification
+
+- Thirteen scripted-trigger IDs were defined more than once. Earlier redundant copies now use the `AOEIW_legacy_` prefix, preserving the source for review while leaving the later RT56 definitions authoritative.
+- Namespace case mismatches occur in inherited files: `BBA_Switzerland` is declared but 31 events use `BBA_switzerland`; `NSB_news.200` also differs from the declared lowercase namespace. Treat as candidates until checked against engine behavior; no such mismatch was found for AOE events.
+- The archive-only scan reports 301 unresolved event-reference occurrences, 8 focus-reference occurrences and 74 OOB-reference occurrences outside the AOE subset. Some can resolve from the base game/DLC or parameter substitution. These are **not 383 confirmed bugs**. Example candidates include `PRC_sea_soviet_advisors`, `GER_around_maginot_vanilla`, and `GER_weserubung`.
+- The USA reclamation chain remains alongside an already-reunited start. Its launch requires QUE/CSA/HAI to exist, so the normal start appears to block that old chain. Confirm intended visibility/release behavior before deleting it.
+- Phase-35 governance, phase-36 layout and German coalition transitions need in-game regression coverage. Static completeness does not prove correct scopes, UI behavior, reachable branches or balanced effects.
+
+### 5. Explicit AOE TODOs and documentation debt — resolved
+
+- The German transport aircraft are now documented as an intentional limited airborne capability.
+- The Russian transport brigade is explicitly abstracted into the logistics pool rather than left as an unfinished note.
+- The restored Choybalsan advisor now uses the existing RT56 large portrait.
+- Many other TODO/placeholder hits belong to inherited RT56 content, and “unfinished” also occurs in deliberate lore titles. They are not evidence of a half-completed previous-session edit.
+- Reconcile the old compatibility README with the standalone instructions. No archive-local test history or patch-by-patch completion log establishes what the previous session finished.
+
+## Conventions and next task
+
+Preserve all `AOEIW`, numbered phase prefixes, lower-/uppercase event namespaces, variables, country/global flags, cosmetic tags, event targets, and focus IDs. Filename age does not mean obsolete: phase-28 files contain phase-34 logic. Preserve selector weights, mutually exclusive branches, `allow_branch` visibility and existing layout-dirty calls unless a specific defect warrants changing them. Keep UTF-8 BOM/language headers in localisation and retain attribution. The inherited commander ID document reserves future legacy IDs starting at 5600; check existing allocations before adding legacy IDs.
+
+**Recommended next task:** perform the exact-build fresh-start/runtime gate described near the top of this handoff. Check the raw parser log first, then smoke-test the 1936 selectors, the new 1939–42 decisions/events, mutually exclusive Mongolia and Yemen convergence, subject charters, capitulation/restoration, and AI uptake. Prioritize engine errors that cite AOE-owned files; qualify inherited RT56 warnings rather than changing them blindly.
+
+### Current user-directed release pass (12 September 2026)
+
+The next authorized implementation series is documented in `FINISHED_FEEL_FIX_LIST.md`. The user supplied in-game screenshots confirming severe SOV focus-tree connector problems and a smaller GER layout problem. A static audit found SOV spans 59 columns with 24 unusually long connections (up to 51 columns), while GER spans 61 columns with 17 long connections and seven coordinate-collision candidates. The same audit found 4,107 icon assignments across 39 AOE focus files but only 364 distinct icons; the registered-sprite validator remains clean, so the requested icon work is principally a semantic, repetition, crop and runtime-rendering pass rather than a missing-reference repair.
+
+The authorized first implementation series is now complete in the repository: the SOV and GER trees were compacted; the confirmed GER imperial-endpoint collision was removed; the USA/FRA/ITA/JAP/ENG institutional blocks were regrouped; redundant long exclusivity connectors were removed only where existing `allow_branch` checks preserve the choice; and adjacent parent/child icon repetition was removed across all AOE focus files with valid existing sprites. The Imperial World map mode now has an enabled-by-default On/Off custom game rule. All existing and dynamically created countries receive a visible +4.50 daily army/navy/air experience idea in addition to the existing one-use free opening doctrines. Static validation passes; the exact installed build still requires the runtime main-menu/new-game and raw-log gate.
+
+The subsequent semantic focus-icon pass reviewed all 4,107 AOE focus assignments. Seventy-five focuses that displayed another country's political or national identity were moved to existing neutral sprites matching their subject, and four additional clear domain mismatches were corrected (maritime doctrine, diplomatic talks and road construction). The post-change audit reports zero explicit foreign-country icon assignments and zero identical icons on directly connected parent/child focuses. All 79 replacement sprites resolve through the validated HOI4/RT56 registry.
+
+The all-country focus editorial pass is in progress and is tracked in `FOCUS_EDITORIAL_REWORK.md` and `FOCUS_EDITORIAL_CHANGELOG.csv`. Germany, the United States, Sweden, Finland, Brazil, Italy, France, Britain, Japan, Spain, Russia, Austria-Hungary, Poland, Romania, Yugoslavia, Greece, Bulgaria, Belgium, the Netherlands and Portugal are complete: 298 focus title/description pairs have been rewritten in paired English and German localisation without changing focus IDs, effects, prerequisites or layout. Each completed country now has branch stories written before its title changes and uses documented people, institutions, laws, firms and places. Every other playable tag remains queued. The user-directed visual redesign must begin only after this country pass, and its attached prompt requires a Phase 0 UI audit checkpoint before any interface asset is changed.
+
+The separate all-country focus-structure pass is tracked in `FOCUS_STRUCTURE_REWORK.md`. Its reproducible graph audit covers 39 AOE tree files and 3,780 focus definitions, distinguishes OR prerequisites from separate AND prerequisite blocks, and records branch points, mutex choices, reconvergence, long chains, endpoints, missing references and cycles. Denmark and Norway are complete: their five-node civilian chains now contain a real investment choice and reconvergence; their previously mandatory dual-theatre expansion programmes now select one coherent external campaign, with a mission/economic-pressure choice inside it and OR reconvergence at the existing diplomatic capstone. Focus IDs, rewards and target countries were preserved. Static validation reports no missing prerequisite/mutex references and no cycles. Continue country by country and add each pre-edit report before touching its tree; do not mechanically copy these Nordic choices into countries whose politics do not support them.
+
+The Denmark/Norway outcome-divergence follow-up is complete. Existing economic alternatives already had different factory/infrastructure and research outcomes and were left intact. Newly split diplomatic methods now trade service experience and command power against greater political power plus a stability cost. Each external theatre also leaves a distinct permanent national spirit: Danish Baltic naval control versus continental mobilisation, and Norwegian Scandinavian field command versus the Atlantic maritime lifeline. The next queued country is Ireland; its pre-edit report and proposal are written in `FOCUS_STRUCTURE_REWORK.md`, but no Irish file may be changed until the user explicitly approves that country. This per-country approval gate remains mandatory until the user explicitly relaxes it after reviewing three or four countries.
+
+Ireland was subsequently approved and implemented. Its industrial chain now chooses Dublin expansion or Shannon public works; its British and transatlantic strategies are mutex and reconverge at the existing Atlantic capstone; and each theatre contains a military-mission versus economic-pressure choice. The British route leaves a land/arms/manpower Border Emergency spirit, while the transatlantic route leaves a convoy/dockyard/trade Atlantic Republic spirit. The graph has no missing references, cycles or five-focus pure chains.
+
+France was then approved and implemented. Economic versus military preparation is now a real choice within both Rhine and Mediterranean policy, with four distinct permanent commercial, industrial, army, supply, naval and air profiles. France can still pursue both theatres because it is a major power. The selected method reconverges before each theatre's escalation; operational doctrine now develops through the Prepared Fire Plan or Counterstroke Exercise before common logistics; the industrial capstone requires national rail logistics; and imperial logistics requires one of the colonial maintenance outcomes. Static validation and the graph audit are clean.
+
+The major-power standing rule became explicit: theatres remain compatible by default unless a specific political or logistical conflict makes simultaneous pursuit implausible. At that stage Russia's divergence-aware implementation was deferred while the USA pass was implemented: Atlantic/Pacific methods now diverge, the two theatres remain compatible and jointly feed the Two-Ocean capstone, Field Workshops/Signals are exclusive, TVA and the Arsenal are connected to their capstones, Boston Congress outcomes differ, and Pacific reunion now removes the secession identity. Static validation and the graph audit were clean, after which the queue moved to the United Kingdom under the then-active per-country approval gate.
+
+The cross-country divergence rule is mandatory and its central ledger is `FOCUS_REWARD_PROFILE_REGISTER.md`. Before British implementation, its proposal was revised: Admiralty detection/coordination, Imperial Preference and subject control, BEF reinforcement/defence, and Ministry of Economic Warfare intelligence/arms output replace the earlier profiles that duplicated France and the USA. The ledger recorded ten implemented-country conflict pairs across Denmark, Norway, Ireland, France and the USA. Those findings led to the subsequently approved consolidated closure, and Russia's conflicting first draft was rewritten before implementation.
+
+The revised United Kingdom proposal was approved and implemented on 13 September 2026. Atlantic and continental policy remain compatible, while each theatre now chooses between a mission and economic pressure. Four distinct permanent profiles cover Admiralty Atlantic control, Imperial Preference, the British Expeditionary Force and the Ministry of Economic Warfare. Field Workshops/Signals are mutex; London logistics now requires all three regional infrastructure projects; the industrial capstone requires logistics, science and either civilian or war industry; and Combined-Arms Doctrine requires all three services. The validator passes. The required USA internal divergence audit is recorded in `FOCUS_REWARD_PROFILE_REGISTER.md`: all six pairwise comparisons are below the 2-of-3 threshold. Retrospective conflict pairs 5–10 still require individual approval before any correction.
+
+Pair 5 was approved and implemented. Its first correction proposal was withdrawn because naval detection plus convoy escort would duplicate two categories from Britain's later-added Admiralty profile. The implemented USA Atlantic mission now grants convoy escort, radar-station construction and decryption, representing the Neutrality Patrol, coastal-warning network and signals intelligence. It was checked against every current maritime profile in the register, including the unapproved Russian draft, and shares at most one category with any of them. Register maintenance explicitly requires every retrospective correction to be rechecked against profiles added after the original finding.
+
+Pair 6 was separately approved for closure with no additional gameplay edit. The approved pair 5 profile reduced the France Mediterranean Military versus USA Atlantic Mission overlap from 2/3 to 0/3, so another modifier change would have been redundant. Pair 7 was then prepared for the consolidated approval gate. Its full-register profile uses sortie efficiency, air-mission efficiency and air-base construction for the USA Pacific mission and shares at most one category with every registered maritime profile.
+
+The consolidated reward-register closure was approved and implemented on 13 September 2026. Eleven permanent profiles were added or corrected: one Norwegian, two Irish, three American and five Russian. Russia also received the approved mutex method choices with OR reconvergence, exclusive Field Workshops/Signals, the Ural prerequisite for the industrial capstone and the connected Industrial Colossus endgame. Existing focus IDs, political architectures, targets, war goals and immediate rewards were preserved. `tools/validate_aoeiw.py` parsed 5,279 script files and passed with no proven structural, AOE-reference, localisation, map or scenario-contract finding. The post-change Russian graph has eight true mutex loci and 31 reconvergences with no missing references or cycles. Reward-Register vollständig konfliktfrei, Struktur-Pass-Workstream für DEN/NOR/IRE/FRA/SOV/USA/ENG abgeschlossen. No further country or content pass is queued from this workstream.
+
+The finished-feel source baseline is committed and synchronized to `Documents/Paradox Interactive/Hearts of Iron IV/mod/Age_Of_Empires_RT56_Edition`, and the release archive at `outputs/Age_Of_Empires_RT56_Edition_RC_2026-09-12.zip` passed a full ZIP CRC check. The duplicate Workshop descriptor for `Age Of Empires` (`ugc_3796962392.mod`) was moved to `Documents/Paradox Interactive/Hearts of Iron IV/Retired_Age_Of_Empires_Mods`; the standalone RT56 Edition is the only launcher-visible mod with that name. An unrelated running Millennium Dawn/Generic RP session was deliberately left untouched, so the refreshed AOE build has not yet received a post-sync engine launch.
+
+A user-supplied Age of Empires title image is now preserved at `gfx/loadingscreens/aoeiw_brand_source.png` and adapted to the 1920×1440/192×144 HOI4 frontend assets, the first AOE loading screen, `thumbnail.png`, and `box.jpg`. The inherited RT56 `load_10`–`load_19` entries are no longer registered in the standalone frontend, and the obsolete Road to 56 Discord button was removed. The supplied screenshot containing “The 1953 Elections” and “The Pella Government” does not match any focus ID or localisation in this repository or the retired Workshop AOE copy. The game was concurrently running Millennium Dawn plus Generic RP; identify the originating external mod before editing that tree rather than inventing AOE IDs.
+
+The bundled `errorlog_cleaner.py` rewrites the installed game's log to suppress some entries; it was not run. Keep raw logs for validation.
+
+### Map and roster pass (14 September 2026)
+
+The separate map/roster workstream is documented in `MAP_ROSTER_PASS.md`. Step 0 is complete: the Imperial World custom map mode was temporarily removed from active registration by renaming its definition to `common/map_modes/zz_AOEIW_imperial_world_map_mode.txt.disabled`; commit `d6e17564` is synchronized to the installed mod. Restore it by renaming the file back to `.txt`.
+
+The earlier step-by-step approval gate is superseded by the user's blanket authorization. AST/NZL Dominion restoration, independent Dutch-Boer SAF, brighter global colors and the AUS/YUG lore integration are implemented. The five-actor Ottoman fragmentation proposal was rejected and must remain rejected; China remains a separate high-risk content pass because its crisis scripts perform broad transfers.
+
+A direct engine launch on 14 September exposed missing `opinion_modifiers = { ... }` root wrappers in the two new AOEIW38 Americas/Africa and Europe opinion-modifier files. Both wrappers were restored. A second fresh log identified and corrected AOE-owned obsolete modifier keys, `BUR` instead of the valid `BRM` tag, and two `stability` conditions that required `has_stability`. The remaining startup log contains substantial inherited RT56 asset/entity warnings; distinguish these from AOE-owned parser errors before changing them.
+
+## Audit limitations and reproducibility
+
+No game was launched, no saved campaign was loaded, and no external RT56/vanilla installation was used to complete the reference database. All binary assets were inventoried and CRC-checked but not visually reviewed. This is a repository-level structural/reference audit, not an exhaustive engine schema validator or a full gameplay QA pass.
+
+Audit helpers live outside the mod in the task workspace: `work/audit_mod.py`, `work/deep_audit.py`, `work/final_checks.py`; machine results are in `work/audit-results/`. Run the helpers in that order from the task workspace. Candidate reports contain the intentionally qualified/false-positive cases discussed above; do not auto-fix their raw output. No mod scripts were executed by these helpers.
+
+### Implemented map presentation and roster correction (14 September 2026)
+
+The user lifted all earlier approval gates and replaced the proposed Ottoman fragmentation with a precise border requirement. TUR remains contiguous across Anatolia, the Levant and Mesopotamia. SAU now owns and cores Central Arabia; OMA, the existing AOE Kingdom of Hejaz tag, owns and cores Hejaz/Tabuk/Asir/Maan; ENG owns and cores Oman/Khasab/Dhofar. Do not revive the earlier KUR/SYR/ARM fragmentation proposal without a new explicit design request.
+
+AST and NZL now own their homeland states and mandates and start as British dominions through `common/on_actions/age_of_empires_imperial_world_leaders_starting_subjects.txt`. `common/decisions/AOEIW_map_roster_decisions.txt` provides recurring cabinet consultation and defence-coordination choices. SAF owns Transvaal/Cape/Natal/Orange Free State and starts independently without its British cosmetic tag or Commonwealth research membership. `events/AOEIW_map_roster_events.txt` supplies the paired AUS/YUG Belgrade Settlement explanation.
+
+`common/countries/colors.txt` now applies a brighter, globally rebalanced 299-tag palette with 29 manually anchored major/roster colors. Both scripted custom-map-mode definitions and the AOE game rule are disabled: `common/map_modes/rt56_custom_map_modes.txt.disabled`, `common/map_modes/zz_AOEIW_imperial_world_map_mode.txt.disabled`, and `common/game_rules/zz_AOEIW_game_rules.txt.disabled`. Re-enabling any of them would contradict the current user request. Static validation passes across 5,279 script files. Re-run `tools/apply_map_roster_state_ownership.py` and `tools/rebalance_country_colors.py` only from a clean baseline; both preserve source encoding and line endings.
+
+### Runtime gate — 14 September 2026
+
+The exact installed local descriptor was launched directly after synchronization. The first engine run exposed one new schema error: the Dominion decision category had been placed inside the decision file instead of being registered under `common/decisions/categories`. Commit `7f5a9244` adds the category registration and leaves only decision entries in the decision file. After a clean restart, the fresh runtime error log contained zero matches for `AOEIW`, `Age_Of_Empires`, `map_roster`, either disabled custom map mode, or the removed AOE map-mode rule. HOI4 remained responsive. The remaining log noise is inherited RT56 aircraft GFX/entity output and was not altered in this map pass.
+
+### Visual map blocker audit (14 September 2026)
+
+`MAP_VISUAL_BLOCKER_REPORT.md` proves that the textured screenshot is the normal political map, not either disabled scripted map mode. The audit traced the dark presentation to the hard-coded `return 0.42f` permanent dusk in the former `gfx/FX/standardfuncsgfx.fxh` override, reinforced by `common/defines/zz_AOEIW_graphics.lua` brightness/saturation/border overrides and a substantially different mud texture. The Arab roster is already graph-connected (SAU seven states in one component; OMA four states in one component), so no Arab state transfer is recommended. The report also records the requested Pacific transfers: 634/1096 to AST as non-core administrations and 1136/1139/723/1140 to NZL as cores.
+
+The user then approved the exact proposal. The mod-local `standardfuncsgfx.fxh` override was removed so the current vanilla day/night calculation is inherited; the dark brightness, saturation and oversized country-border defines were removed while retaining the city-clutter setting. States 634/1096 now belong to AST without cores, and 1136/1139/723/1140 belong to NZL with cores. Obsolete ENG cores were also removed from all restored AST/NZL/SAF areas and Maan. No Arab state was reassigned.

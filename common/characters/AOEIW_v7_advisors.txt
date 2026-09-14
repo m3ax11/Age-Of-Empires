@@ -1,0 +1,2180 @@
+characters = {
+ AOEIW_AUS_v7_advisor_1 = {
+  name = AOEIW_AUS_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_AUS_v7_advisor_1
+   allowed = { original_tag = AUS }
+   traits = { army_chief_organizational_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_AUS_v7_advisor_2 = {
+  name = AOEIW_AUS_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_AUS_v7_advisor_2
+   allowed = { original_tag = AUS }
+   traits = { navy_chief_old_guard }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_AUS_v7_advisor_3 = {
+  name = AOEIW_AUS_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_AUS_v7_advisor_3
+   allowed = { original_tag = AUS }
+   traits = { air_chief_all_weather_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_AUS_v7_advisor_4 = {
+  name = AOEIW_AUS_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_AUS_v7_advisor_4
+   allowed = { original_tag = AUS }
+   traits = { army_artillery_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_AUS_v7_advisor_5 = {
+  name = AOEIW_AUS_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_AUS_v7_advisor_5
+   allowed = { original_tag = AUS }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_AUS_v7_advisor_6 = {
+  name = AOEIW_AUS_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_AUS_v7_advisor_6
+   allowed = { original_tag = AUS }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_1 = {
+  name = AOEIW_BEL_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_BEL_v7_advisor_1
+   allowed = { original_tag = BEL }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_2 = {
+  name = AOEIW_BEL_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_BEL_v7_advisor_2
+   allowed = { original_tag = BEL }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_3 = {
+  name = AOEIW_BEL_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_BEL_v7_advisor_3
+   allowed = { original_tag = BEL }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_4 = {
+  name = AOEIW_BEL_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BEL_v7_advisor_4
+   allowed = { original_tag = BEL }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_5 = {
+  name = AOEIW_BEL_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BEL_v7_advisor_5
+   allowed = { original_tag = BEL }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BEL_v7_advisor_6 = {
+  name = AOEIW_BEL_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_BEL_v7_advisor_6
+   allowed = { original_tag = BEL }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_1 = {
+  name = AOEIW_BRA_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_BRA_v7_advisor_1
+   allowed = { original_tag = BRA }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_2 = {
+  name = AOEIW_BRA_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_BRA_v7_advisor_2
+   allowed = { original_tag = BRA }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_3 = {
+  name = AOEIW_BRA_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_BRA_v7_advisor_3
+   allowed = { original_tag = BRA }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_4 = {
+  name = AOEIW_BRA_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BRA_v7_advisor_4
+   allowed = { original_tag = BRA }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_5 = {
+  name = AOEIW_BRA_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BRA_v7_advisor_5
+   allowed = { original_tag = BRA }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BRA_v7_advisor_6 = {
+  name = AOEIW_BRA_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_BRA_v7_advisor_6
+   allowed = { original_tag = BRA }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_1 = {
+  name = AOEIW_BUL_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_BUL_v7_advisor_1
+   allowed = { original_tag = BUL }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_2 = {
+  name = AOEIW_BUL_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_BUL_v7_advisor_2
+   allowed = { original_tag = BUL }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_3 = {
+  name = AOEIW_BUL_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_BUL_v7_advisor_3
+   allowed = { original_tag = BUL }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_4 = {
+  name = AOEIW_BUL_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BUL_v7_advisor_4
+   allowed = { original_tag = BUL }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_5 = {
+  name = AOEIW_BUL_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_BUL_v7_advisor_5
+   allowed = { original_tag = BUL }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_BUL_v7_advisor_6 = {
+  name = AOEIW_BUL_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_BUL_v7_advisor_6
+   allowed = { original_tag = BUL }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_1 = {
+  name = AOEIW_CAN_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_CAN_v7_advisor_1
+   allowed = { original_tag = CAN }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_2 = {
+  name = AOEIW_CAN_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_CAN_v7_advisor_2
+   allowed = { original_tag = CAN }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_3 = {
+  name = AOEIW_CAN_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_CAN_v7_advisor_3
+   allowed = { original_tag = CAN }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_4 = {
+  name = AOEIW_CAN_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_CAN_v7_advisor_4
+   allowed = { original_tag = CAN }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_5 = {
+  name = AOEIW_CAN_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_CAN_v7_advisor_5
+   allowed = { original_tag = CAN }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CAN_v7_advisor_6 = {
+  name = AOEIW_CAN_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_CAN_v7_advisor_6
+   allowed = { original_tag = CAN }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_1 = {
+  name = AOEIW_CHI_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_CHI_v7_advisor_1
+   allowed = { original_tag = CHI }
+   traits = { army_chief_defensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_2 = {
+  name = AOEIW_CHI_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_CHI_v7_advisor_2
+   allowed = { original_tag = CHI }
+   traits = { navy_chief_maneuver_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_3 = {
+  name = AOEIW_CHI_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_CHI_v7_advisor_3
+   allowed = { original_tag = CHI }
+   traits = { air_chief_reform_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_4 = {
+  name = AOEIW_CHI_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_CHI_v7_advisor_4
+   allowed = { original_tag = CHI }
+   traits = { army_infantry_3 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_5 = {
+  name = AOEIW_CHI_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_CHI_v7_advisor_5
+   allowed = { original_tag = CHI }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_CHI_v7_advisor_6 = {
+  name = AOEIW_CHI_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_CHI_v7_advisor_6
+   allowed = { original_tag = CHI }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_1 = {
+  name = AOEIW_DEN_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_DEN_v7_advisor_1
+   allowed = { original_tag = DEN }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_2 = {
+  name = AOEIW_DEN_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_DEN_v7_advisor_2
+   allowed = { original_tag = DEN }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_3 = {
+  name = AOEIW_DEN_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_DEN_v7_advisor_3
+   allowed = { original_tag = DEN }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_4 = {
+  name = AOEIW_DEN_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_DEN_v7_advisor_4
+   allowed = { original_tag = DEN }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_5 = {
+  name = AOEIW_DEN_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_DEN_v7_advisor_5
+   allowed = { original_tag = DEN }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_DEN_v7_advisor_6 = {
+  name = AOEIW_DEN_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_DEN_v7_advisor_6
+   allowed = { original_tag = DEN }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_1 = {
+  name = AOEIW_EGY_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_EGY_v7_advisor_1
+   allowed = { original_tag = EGY }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_2 = {
+  name = AOEIW_EGY_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_EGY_v7_advisor_2
+   allowed = { original_tag = EGY }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_3 = {
+  name = AOEIW_EGY_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_EGY_v7_advisor_3
+   allowed = { original_tag = EGY }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_4 = {
+  name = AOEIW_EGY_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_EGY_v7_advisor_4
+   allowed = { original_tag = EGY }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_5 = {
+  name = AOEIW_EGY_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_EGY_v7_advisor_5
+   allowed = { original_tag = EGY }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_EGY_v7_advisor_6 = {
+  name = AOEIW_EGY_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_EGY_v7_advisor_6
+   allowed = { original_tag = EGY }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_1 = {
+  name = AOEIW_ENG_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_ENG_v7_advisor_1
+   allowed = { original_tag = ENG }
+   traits = { army_chief_organizational_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_2 = {
+  name = AOEIW_ENG_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_ENG_v7_advisor_2
+   allowed = { original_tag = ENG }
+   traits = { navy_chief_naval_aviation_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_3 = {
+  name = AOEIW_ENG_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_ENG_v7_advisor_3
+   allowed = { original_tag = ENG }
+   traits = { air_chief_all_weather_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_4 = {
+  name = AOEIW_ENG_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ENG_v7_advisor_4
+   allowed = { original_tag = ENG }
+   traits = { army_commando_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_5 = {
+  name = AOEIW_ENG_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ENG_v7_advisor_5
+   allowed = { original_tag = ENG }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ENG_v7_advisor_6 = {
+  name = AOEIW_ENG_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_ENG_v7_advisor_6
+   allowed = { original_tag = ENG }
+   traits = { captain_of_industry }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_1 = {
+  name = AOEIW_ETH_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_ETH_v7_advisor_1
+   allowed = { original_tag = ETH }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_2 = {
+  name = AOEIW_ETH_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_ETH_v7_advisor_2
+   allowed = { original_tag = ETH }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_3 = {
+  name = AOEIW_ETH_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_ETH_v7_advisor_3
+   allowed = { original_tag = ETH }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_4 = {
+  name = AOEIW_ETH_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ETH_v7_advisor_4
+   allowed = { original_tag = ETH }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_5 = {
+  name = AOEIW_ETH_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ETH_v7_advisor_5
+   allowed = { original_tag = ETH }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ETH_v7_advisor_6 = {
+  name = AOEIW_ETH_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_ETH_v7_advisor_6
+   allowed = { original_tag = ETH }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_1 = {
+  name = AOEIW_FIN_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_FIN_v7_advisor_1
+   allowed = { original_tag = FIN }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_2 = {
+  name = AOEIW_FIN_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_FIN_v7_advisor_2
+   allowed = { original_tag = FIN }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_3 = {
+  name = AOEIW_FIN_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_FIN_v7_advisor_3
+   allowed = { original_tag = FIN }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_4 = {
+  name = AOEIW_FIN_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_FIN_v7_advisor_4
+   allowed = { original_tag = FIN }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_5 = {
+  name = AOEIW_FIN_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_FIN_v7_advisor_5
+   allowed = { original_tag = FIN }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FIN_v7_advisor_6 = {
+  name = AOEIW_FIN_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_FIN_v7_advisor_6
+   allowed = { original_tag = FIN }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_1 = {
+  name = AOEIW_FRA_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_FRA_v7_advisor_1
+   allowed = { original_tag = FRA }
+   traits = { army_chief_defensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_2 = {
+  name = AOEIW_FRA_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_FRA_v7_advisor_2
+   allowed = { original_tag = FRA }
+   traits = { navy_chief_maneuver_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_3 = {
+  name = AOEIW_FRA_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_FRA_v7_advisor_3
+   allowed = { original_tag = FRA }
+   traits = { air_chief_safety_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_4 = {
+  name = AOEIW_FRA_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_FRA_v7_advisor_4
+   allowed = { original_tag = FRA }
+   traits = { army_artillery_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_5 = {
+  name = AOEIW_FRA_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_FRA_v7_advisor_5
+   allowed = { original_tag = FRA }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_FRA_v7_advisor_6 = {
+  name = AOEIW_FRA_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_FRA_v7_advisor_6
+   allowed = { original_tag = FRA }
+   traits = { captain_of_industry }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_1 = {
+  name = AOEIW_GER_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_GER_v7_advisor_1
+   allowed = { original_tag = GER }
+   traits = { army_chief_maneuver_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_2 = {
+  name = AOEIW_GER_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_GER_v7_advisor_2
+   allowed = { original_tag = GER }
+   traits = { navy_chief_decisive_battle_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_3 = {
+  name = AOEIW_GER_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_GER_v7_advisor_3
+   allowed = { original_tag = GER }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_4 = {
+  name = AOEIW_GER_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_GER_v7_advisor_4
+   allowed = { original_tag = GER }
+   traits = { army_armored_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_5 = {
+  name = AOEIW_GER_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_GER_v7_advisor_5
+   allowed = { original_tag = GER }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GER_v7_advisor_6 = {
+  name = AOEIW_GER_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_GER_v7_advisor_6
+   allowed = { original_tag = GER }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_1 = {
+  name = AOEIW_GRE_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_GRE_v7_advisor_1
+   allowed = { original_tag = GRE }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_2 = {
+  name = AOEIW_GRE_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_GRE_v7_advisor_2
+   allowed = { original_tag = GRE }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_3 = {
+  name = AOEIW_GRE_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_GRE_v7_advisor_3
+   allowed = { original_tag = GRE }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_4 = {
+  name = AOEIW_GRE_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_GRE_v7_advisor_4
+   allowed = { original_tag = GRE }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_5 = {
+  name = AOEIW_GRE_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_GRE_v7_advisor_5
+   allowed = { original_tag = GRE }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_GRE_v7_advisor_6 = {
+  name = AOEIW_GRE_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_GRE_v7_advisor_6
+   allowed = { original_tag = GRE }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_1 = {
+  name = AOEIW_HOL_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_HOL_v7_advisor_1
+   allowed = { original_tag = HOL }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_2 = {
+  name = AOEIW_HOL_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_HOL_v7_advisor_2
+   allowed = { original_tag = HOL }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_3 = {
+  name = AOEIW_HOL_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_HOL_v7_advisor_3
+   allowed = { original_tag = HOL }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_4 = {
+  name = AOEIW_HOL_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_HOL_v7_advisor_4
+   allowed = { original_tag = HOL }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_5 = {
+  name = AOEIW_HOL_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_HOL_v7_advisor_5
+   allowed = { original_tag = HOL }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_HOL_v7_advisor_6 = {
+  name = AOEIW_HOL_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_HOL_v7_advisor_6
+   allowed = { original_tag = HOL }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_1 = {
+  name = AOEIW_IRE_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_IRE_v7_advisor_1
+   allowed = { original_tag = IRE }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_2 = {
+  name = AOEIW_IRE_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_IRE_v7_advisor_2
+   allowed = { original_tag = IRE }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_3 = {
+  name = AOEIW_IRE_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_IRE_v7_advisor_3
+   allowed = { original_tag = IRE }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_4 = {
+  name = AOEIW_IRE_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_IRE_v7_advisor_4
+   allowed = { original_tag = IRE }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_5 = {
+  name = AOEIW_IRE_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_IRE_v7_advisor_5
+   allowed = { original_tag = IRE }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_IRE_v7_advisor_6 = {
+  name = AOEIW_IRE_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_IRE_v7_advisor_6
+   allowed = { original_tag = IRE }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_1 = {
+  name = AOEIW_ITA_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_ITA_v7_advisor_1
+   allowed = { original_tag = ITA }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_2 = {
+  name = AOEIW_ITA_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_ITA_v7_advisor_2
+   allowed = { original_tag = ITA }
+   traits = { navy_chief_naval_aviation_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_3 = {
+  name = AOEIW_ITA_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_ITA_v7_advisor_3
+   allowed = { original_tag = ITA }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_4 = {
+  name = AOEIW_ITA_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ITA_v7_advisor_4
+   allowed = { original_tag = ITA }
+   traits = { army_commando_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_5 = {
+  name = AOEIW_ITA_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ITA_v7_advisor_5
+   allowed = { original_tag = ITA }
+   traits = { army_artillery_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ITA_v7_advisor_6 = {
+  name = AOEIW_ITA_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_ITA_v7_advisor_6
+   allowed = { original_tag = ITA }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_1 = {
+  name = AOEIW_JAP_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_JAP_v7_advisor_1
+   allowed = { original_tag = JAP }
+   traits = { army_chief_offensive_3 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_2 = {
+  name = AOEIW_JAP_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_JAP_v7_advisor_2
+   allowed = { original_tag = JAP }
+   traits = { navy_chief_naval_aviation_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_3 = {
+  name = AOEIW_JAP_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_JAP_v7_advisor_3
+   allowed = { original_tag = JAP }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_4 = {
+  name = AOEIW_JAP_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_JAP_v7_advisor_4
+   allowed = { original_tag = JAP }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_5 = {
+  name = AOEIW_JAP_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_JAP_v7_advisor_5
+   allowed = { original_tag = JAP }
+   traits = { army_commando_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_JAP_v7_advisor_6 = {
+  name = AOEIW_JAP_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_JAP_v7_advisor_6
+   allowed = { original_tag = JAP }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_1 = {
+  name = AOEIW_MEX_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_MEX_v7_advisor_1
+   allowed = { original_tag = MEX }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_2 = {
+  name = AOEIW_MEX_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_MEX_v7_advisor_2
+   allowed = { original_tag = MEX }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_3 = {
+  name = AOEIW_MEX_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_MEX_v7_advisor_3
+   allowed = { original_tag = MEX }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_4 = {
+  name = AOEIW_MEX_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_MEX_v7_advisor_4
+   allowed = { original_tag = MEX }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_5 = {
+  name = AOEIW_MEX_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_MEX_v7_advisor_5
+   allowed = { original_tag = MEX }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_MEX_v7_advisor_6 = {
+  name = AOEIW_MEX_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_MEX_v7_advisor_6
+   allowed = { original_tag = MEX }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_1 = {
+  name = AOEIW_NOR_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_NOR_v7_advisor_1
+   allowed = { original_tag = NOR }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_2 = {
+  name = AOEIW_NOR_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_NOR_v7_advisor_2
+   allowed = { original_tag = NOR }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_3 = {
+  name = AOEIW_NOR_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_NOR_v7_advisor_3
+   allowed = { original_tag = NOR }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_4 = {
+  name = AOEIW_NOR_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_NOR_v7_advisor_4
+   allowed = { original_tag = NOR }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_5 = {
+  name = AOEIW_NOR_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_NOR_v7_advisor_5
+   allowed = { original_tag = NOR }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_NOR_v7_advisor_6 = {
+  name = AOEIW_NOR_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_NOR_v7_advisor_6
+   allowed = { original_tag = NOR }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_1 = {
+  name = AOEIW_PER_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_PER_v7_advisor_1
+   allowed = { original_tag = PER }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_2 = {
+  name = AOEIW_PER_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_PER_v7_advisor_2
+   allowed = { original_tag = PER }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_3 = {
+  name = AOEIW_PER_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_PER_v7_advisor_3
+   allowed = { original_tag = PER }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_4 = {
+  name = AOEIW_PER_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_PER_v7_advisor_4
+   allowed = { original_tag = PER }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_5 = {
+  name = AOEIW_PER_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_PER_v7_advisor_5
+   allowed = { original_tag = PER }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_PER_v7_advisor_6 = {
+  name = AOEIW_PER_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_PER_v7_advisor_6
+   allowed = { original_tag = PER }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_1 = {
+  name = AOEIW_POL_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_POL_v7_advisor_1
+   allowed = { original_tag = POL }
+   traits = { army_chief_defensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_2 = {
+  name = AOEIW_POL_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_POL_v7_advisor_2
+   allowed = { original_tag = POL }
+   traits = { navy_chief_old_guard }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_3 = {
+  name = AOEIW_POL_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_POL_v7_advisor_3
+   allowed = { original_tag = POL }
+   traits = { air_chief_reform_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_4 = {
+  name = AOEIW_POL_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_POL_v7_advisor_4
+   allowed = { original_tag = POL }
+   traits = { army_cavalry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_5 = {
+  name = AOEIW_POL_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_POL_v7_advisor_5
+   allowed = { original_tag = POL }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POL_v7_advisor_6 = {
+  name = AOEIW_POL_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_POL_v7_advisor_6
+   allowed = { original_tag = POL }
+   traits = { captain_of_industry }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_1 = {
+  name = AOEIW_POR_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_POR_v7_advisor_1
+   allowed = { original_tag = POR }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_2 = {
+  name = AOEIW_POR_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_POR_v7_advisor_2
+   allowed = { original_tag = POR }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_3 = {
+  name = AOEIW_POR_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_POR_v7_advisor_3
+   allowed = { original_tag = POR }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_4 = {
+  name = AOEIW_POR_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_POR_v7_advisor_4
+   allowed = { original_tag = POR }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_5 = {
+  name = AOEIW_POR_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_POR_v7_advisor_5
+   allowed = { original_tag = POR }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_POR_v7_advisor_6 = {
+  name = AOEIW_POR_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_POR_v7_advisor_6
+   allowed = { original_tag = POR }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_1 = {
+  name = AOEIW_RAJ_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_RAJ_v7_advisor_1
+   allowed = { original_tag = RAJ }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_2 = {
+  name = AOEIW_RAJ_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_RAJ_v7_advisor_2
+   allowed = { original_tag = RAJ }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_3 = {
+  name = AOEIW_RAJ_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_RAJ_v7_advisor_3
+   allowed = { original_tag = RAJ }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_4 = {
+  name = AOEIW_RAJ_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_RAJ_v7_advisor_4
+   allowed = { original_tag = RAJ }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_5 = {
+  name = AOEIW_RAJ_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_RAJ_v7_advisor_5
+   allowed = { original_tag = RAJ }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_RAJ_v7_advisor_6 = {
+  name = AOEIW_RAJ_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_RAJ_v7_advisor_6
+   allowed = { original_tag = RAJ }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_1 = {
+  name = AOEIW_ROM_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_ROM_v7_advisor_1
+   allowed = { original_tag = ROM }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_2 = {
+  name = AOEIW_ROM_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_ROM_v7_advisor_2
+   allowed = { original_tag = ROM }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_3 = {
+  name = AOEIW_ROM_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_ROM_v7_advisor_3
+   allowed = { original_tag = ROM }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_4 = {
+  name = AOEIW_ROM_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ROM_v7_advisor_4
+   allowed = { original_tag = ROM }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_5 = {
+  name = AOEIW_ROM_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_ROM_v7_advisor_5
+   allowed = { original_tag = ROM }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_ROM_v7_advisor_6 = {
+  name = AOEIW_ROM_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_ROM_v7_advisor_6
+   allowed = { original_tag = ROM }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_1 = {
+  name = AOEIW_SIA_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_SIA_v7_advisor_1
+   allowed = { original_tag = SIA }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_2 = {
+  name = AOEIW_SIA_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_SIA_v7_advisor_2
+   allowed = { original_tag = SIA }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_3 = {
+  name = AOEIW_SIA_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_SIA_v7_advisor_3
+   allowed = { original_tag = SIA }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_4 = {
+  name = AOEIW_SIA_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SIA_v7_advisor_4
+   allowed = { original_tag = SIA }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_5 = {
+  name = AOEIW_SIA_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SIA_v7_advisor_5
+   allowed = { original_tag = SIA }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SIA_v7_advisor_6 = {
+  name = AOEIW_SIA_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_SIA_v7_advisor_6
+   allowed = { original_tag = SIA }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_1 = {
+  name = AOEIW_SOV_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_SOV_v7_advisor_1
+   allowed = { original_tag = SOV }
+   traits = { army_chief_planning_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_2 = {
+  name = AOEIW_SOV_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_SOV_v7_advisor_2
+   allowed = { original_tag = SOV }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_3 = {
+  name = AOEIW_SOV_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_SOV_v7_advisor_3
+   allowed = { original_tag = SOV }
+   traits = { air_chief_all_weather_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_4 = {
+  name = AOEIW_SOV_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SOV_v7_advisor_4
+   allowed = { original_tag = SOV }
+   traits = { army_armored_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_5 = {
+  name = AOEIW_SOV_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SOV_v7_advisor_5
+   allowed = { original_tag = SOV }
+   traits = { army_artillery_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SOV_v7_advisor_6 = {
+  name = AOEIW_SOV_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_SOV_v7_advisor_6
+   allowed = { original_tag = SOV }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_1 = {
+  name = AOEIW_SPR_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_SPR_v7_advisor_1
+   allowed = { original_tag = SPR }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_2 = {
+  name = AOEIW_SPR_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_SPR_v7_advisor_2
+   allowed = { original_tag = SPR }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_3 = {
+  name = AOEIW_SPR_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_SPR_v7_advisor_3
+   allowed = { original_tag = SPR }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_4 = {
+  name = AOEIW_SPR_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SPR_v7_advisor_4
+   allowed = { original_tag = SPR }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_5 = {
+  name = AOEIW_SPR_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SPR_v7_advisor_5
+   allowed = { original_tag = SPR }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SPR_v7_advisor_6 = {
+  name = AOEIW_SPR_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_SPR_v7_advisor_6
+   allowed = { original_tag = SPR }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_1 = {
+  name = AOEIW_SWE_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_SWE_v7_advisor_1
+   allowed = { original_tag = SWE }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_2 = {
+  name = AOEIW_SWE_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_SWE_v7_advisor_2
+   allowed = { original_tag = SWE }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_3 = {
+  name = AOEIW_SWE_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_SWE_v7_advisor_3
+   allowed = { original_tag = SWE }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_4 = {
+  name = AOEIW_SWE_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SWE_v7_advisor_4
+   allowed = { original_tag = SWE }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_5 = {
+  name = AOEIW_SWE_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SWE_v7_advisor_5
+   allowed = { original_tag = SWE }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWE_v7_advisor_6 = {
+  name = AOEIW_SWE_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_SWE_v7_advisor_6
+   allowed = { original_tag = SWE }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_1 = {
+  name = AOEIW_SWI_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_SWI_v7_advisor_1
+   allowed = { original_tag = SWI }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_2 = {
+  name = AOEIW_SWI_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_SWI_v7_advisor_2
+   allowed = { original_tag = SWI }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_3 = {
+  name = AOEIW_SWI_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_SWI_v7_advisor_3
+   allowed = { original_tag = SWI }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_4 = {
+  name = AOEIW_SWI_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SWI_v7_advisor_4
+   allowed = { original_tag = SWI }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_5 = {
+  name = AOEIW_SWI_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_SWI_v7_advisor_5
+   allowed = { original_tag = SWI }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_SWI_v7_advisor_6 = {
+  name = AOEIW_SWI_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_SWI_v7_advisor_6
+   allowed = { original_tag = SWI }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_1 = {
+  name = AOEIW_TUR_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_TUR_v7_advisor_1
+   allowed = { original_tag = TUR }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_2 = {
+  name = AOEIW_TUR_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_TUR_v7_advisor_2
+   allowed = { original_tag = TUR }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_3 = {
+  name = AOEIW_TUR_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_TUR_v7_advisor_3
+   allowed = { original_tag = TUR }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_4 = {
+  name = AOEIW_TUR_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_TUR_v7_advisor_4
+   allowed = { original_tag = TUR }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_5 = {
+  name = AOEIW_TUR_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_TUR_v7_advisor_5
+   allowed = { original_tag = TUR }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_TUR_v7_advisor_6 = {
+  name = AOEIW_TUR_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_TUR_v7_advisor_6
+   allowed = { original_tag = TUR }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_1 = {
+  name = AOEIW_USA_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_USA_v7_advisor_1
+   allowed = { original_tag = USA }
+   traits = { army_chief_organizational_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_2 = {
+  name = AOEIW_USA_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_USA_v7_advisor_2
+   allowed = { original_tag = USA }
+   traits = { navy_chief_naval_aviation_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_3 = {
+  name = AOEIW_USA_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_USA_v7_advisor_3
+   allowed = { original_tag = USA }
+   traits = { air_chief_reform_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_4 = {
+  name = AOEIW_USA_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_USA_v7_advisor_4
+   allowed = { original_tag = USA }
+   traits = { army_armored_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_5 = {
+  name = AOEIW_USA_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_USA_v7_advisor_5
+   allowed = { original_tag = USA }
+   traits = { army_logistics_3 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_USA_v7_advisor_6 = {
+  name = AOEIW_USA_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_USA_v7_advisor_6
+   allowed = { original_tag = USA }
+   traits = { captain_of_industry }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_1 = {
+  name = AOEIW_YUG_v7_advisor_1
+  advisor = {
+   slot = army_chief
+   idea_token = AOEIW_YUG_v7_advisor_1
+   allowed = { original_tag = YUG }
+   traits = { army_chief_offensive_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_2 = {
+  name = AOEIW_YUG_v7_advisor_2
+  advisor = {
+   slot = navy_chief
+   idea_token = AOEIW_YUG_v7_advisor_2
+   allowed = { original_tag = YUG }
+   traits = { navy_chief_decisive_battle_1 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_3 = {
+  name = AOEIW_YUG_v7_advisor_3
+  advisor = {
+   slot = air_chief
+   idea_token = AOEIW_YUG_v7_advisor_3
+   allowed = { original_tag = YUG }
+   traits = { air_chief_ground_support_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_4 = {
+  name = AOEIW_YUG_v7_advisor_4
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_YUG_v7_advisor_4
+   allowed = { original_tag = YUG }
+   traits = { army_infantry_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_5 = {
+  name = AOEIW_YUG_v7_advisor_5
+  advisor = {
+   slot = high_command
+   idea_token = AOEIW_YUG_v7_advisor_5
+   allowed = { original_tag = YUG }
+   traits = { army_logistics_2 }
+   cost = 100
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+ AOEIW_YUG_v7_advisor_6 = {
+  name = AOEIW_YUG_v7_advisor_6
+  advisor = {
+   slot = political_advisor
+   idea_token = AOEIW_YUG_v7_advisor_6
+   allowed = { original_tag = YUG }
+   traits = { war_industrialist }
+   cost = 150
+   ai_will_do = { factor = 1.5 }
+  }
+ }
+}

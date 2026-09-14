@@ -1,0 +1,19 @@
+air_wings = {
+    439 = {
+        small_plane_airframe_0 = {
+            owner = "RAJ"
+            amount = 150
+            version_name = "AOEIW RAJ Interwar Fighter"
+        }
+        small_plane_cas_airframe_0 = {
+            owner = "RAJ"
+            amount = 50
+            version_name = "AOEIW RAJ Close Support"
+        }
+        medium_plane_airframe_0 = {
+            owner = "RAJ"
+            amount = 30
+            version_name = "AOEIW RAJ Medium Bomber"
+        }
+    }
+}

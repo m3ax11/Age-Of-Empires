@@ -1,0 +1,29 @@
+units = {
+    fleet = {
+        name = "TUR National Fleet"
+        naval_base = 9833
+        task_force = {
+            name = "TUR Main Fleet"
+            location = 9833
+            ship = { name = "TUR Battleship 01" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Battleship Class" } } }
+            ship = { name = "TUR Cruiser 01" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Cruiser Class" } } }
+            ship = { name = "TUR Cruiser 02" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Cruiser Class" } } }
+            ship = { name = "TUR Cruiser 03" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Cruiser Class" } } }
+            ship = { name = "TUR Destroyer 01" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 02" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 03" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 04" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 05" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 06" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 07" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 08" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 09" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Destroyer 10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Destroyer Class" } } }
+            ship = { name = "TUR Submarine 01" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Submarine Class" } } }
+            ship = { name = "TUR Submarine 02" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Submarine Class" } } }
+            ship = { name = "TUR Submarine 03" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Submarine Class" } } }
+            ship = { name = "TUR Submarine 04" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Submarine Class" } } }
+            ship = { name = "TUR Submarine 05" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "AOEIW TUR Submarine Class" } } }
+        }
+    }
+}

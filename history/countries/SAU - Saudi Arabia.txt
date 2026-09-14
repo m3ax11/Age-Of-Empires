@@ -1,0 +1,58 @@
+capital = 292
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_SAU_leader
+recruit_character = AOEIW_world_SAU_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    gw_artillery = 1
+    tech_trucks = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+}
+add_ideas = { AOEIW_world_frontier_state civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10800 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 720 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 540 }
+oob = "AOEIW_world_SAU_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = SAU_abdulaziz_ibn_saud
+recruit_character = SAU_muhammad_ibn_abbu_bakr
+recruit_character = SAU_revolutionary_council
+recruit_character = SAU_abdullah_bin_suleiman_al_hamdan
+recruit_character = SAU_khalid_bin_abdulaziz_al_saud
+recruit_character = SAU_faisal_bin_abdulaziz_al_saud
+recruit_character = SAU_saud_bin_al_saud
+recruit_character = SAU_mohammad_tarek_abdelkader_al_tarabulsi
+recruit_character = SAU_sharif_mohsen_al_hussein
+recruit_character = SAU_mohsen_bin_al_hussein_al_sharif
+recruit_character = SAU_abdullah_bin_sulaiman_al_issa
+recruit_character = SAU_jafar_al_tayyar
+recruit_character = SAU_abdullah_al_mandili
+recruit_character = SAU_rashid_al_saleh
+recruit_character = SAU_ibrahim_al_tassan
+recruit_character = SAU_admiral_reform
+recruit_character = SAU_khalid_ibn_mohammed
+recruit_character = SAU_yusuf_yasin
+recruit_character = SAU_muhammad_ibn_ibrahim_al_ash_seikh
+recruit_character = SAU_fuad_hamza
+recruit_character = SAU_muhammad_khashoggi
+recruit_character = SAU_khalid_al_hud_al_gargani
+recruit_character = SAU_mohammed_tahir_al_dabbagh
+recruit_character = SAU_mohammed_suroor_sabban
+recruit_character = SAU_nawaf_obaid

@@ -1,0 +1,821 @@
+#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
+political_actions = {
+	
+	ENG_split_up_the_British_Raj = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+			date > 1937.3.1
+			RAJ = {
+				is_subject_of = ENG
+			}
+		}
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		targets = { RAJ }
+
+		target_trigger = {
+			FROM = {
+				tag = RAJ
+			}
+		}
+
+		cost = 50
+
+		days_remove = 30
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5
+				RAJ = {
+					has_war_together_with = ROOT
+				}
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				factor = 2
+				RAJ = {
+					has_completed_focus = RAJ_Indian_National_Congress
+				}
+			}
+			modifier = {
+				factor = 5
+				RAJ = {
+					has_completed_focus = r56_RAJ_revolt_against_the_oppressors_showcase
+				}
+			}
+			modifier = {
+				factor = 10
+				RAJ = {
+					has_completed_focus = RAJ_Independent_Labour_Party
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1937.3.1
+			}
+			modifier = {
+				factor = 500
+				date > 1937.3.1
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = india_remains_united
+			}
+			RAJ = {
+				is_subject_of = ROOT
+				OR = {
+					count_triggers = {
+						amount = 3
+					}
+					288 = {
+						is_owned_and_controlled_by = RAJ
+					}
+					1019 = {
+						is_owned_and_controlled_by = RAJ
+					}
+					640 = {
+						is_owned_and_controlled_by = RAJ
+					}
+					1018 = {
+						is_owned_and_controlled_by = RAJ
+					}
+					1020 = {
+						is_owned_and_controlled_by = RAJ
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+		
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = BRM
+					is_owned_and_controlled_by = RAJ
+				}
+				RAJ =  {
+					give_resource_rights = {
+						receiver = ROOT
+						state = PREV
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = colony_of_burma
+				}
+				hidden_effect = {
+					if = { limit = { has_dynamic_modifier = { modifier = slight_religious_minority } }
+						remove_dynamic_modifier = { modifier = slight_religious_minority }
+					}
+				}
+			}
+			custom_effect_tooltip = r56_newline
+			if = {
+				limit = {
+					RAJ = {
+						659 = {
+							is_owned_and_controlled_by = RAJ
+						}
+					}
+				}
+				transfer_state = 659
+				RAJ = {
+					country_event = india.100
+				}
+			}
+		}
+	}
+}
+
+ENG_weapons_purchases_category = {
+	ENG_order_weapons_in_USA = {
+	icon = generic_prepare_civil_war
+		available = {
+			num_of_available_civilian_factories > 2
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_equipment = {
+					infantry_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				producer = USA
+				amount = 2500
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+			}
+		}
+	}
+	ENG_order_support_equipment_in_USA = {
+		icon = generic_prepare_civil_war
+		available = {
+			num_of_available_civilian_factories > 2
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_equipment = {
+					support_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				producer = USA
+				amount = 100
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+			}
+		}
+	}
+	ENG_order_artillery_in_USA = {
+		icon = ger_military_buildup
+		available = {
+			num_of_available_civilian_factories > 2
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_equipment = {
+					artillery_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				producer = USA
+				amount = 100
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+			}
+		}
+	}
+	ENG_order_tanks_in_USA = {
+		icon = generic_tank
+		available = {
+			num_of_available_civilian_factories > 5
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					light_tank_chassis < 10
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					USA = { 
+						OR = {
+							has_tech = basic_light_tank 
+							has_tech = basic_light_tank_chassis
+						}
+						NOT = { 
+							has_tech = basic_medium_tank 
+							has_tech = improved_medium_tank #needed because basic can be bypassed
+							has_tech = basic_medium_tank_chassis
+							has_tech = improved_medium_tank_chassis
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					producer = USA
+					amount = 50
+				}
+			}
+			else_if = {
+				limit = {
+					USA = {
+						OR = {
+							has_tech = basic_medium_tank
+							has_tech = improved_medium_tank #needed because basic can be bypassed
+							has_tech = basic_medium_tank_chassis
+							has_tech = improved_medium_tank_chassis
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					producer = USA
+					amount = 50
+				}
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+	ENG_order_fighters_in_USA = {
+		icon = generic_air
+		available = {
+			num_of_available_civilian_factories > 5
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					small_plane_airframe < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				producer = USA
+				amount = 50
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+	ENG_order_bombers_in_USA = {
+		icon = generic_air
+		available = {
+			num_of_available_civilian_factories > 5
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					tac_bomber_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe
+				producer = USA
+				amount = 25
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+}
+
+war_measures = {
+	r56_ENG_decision_recall_gilbert_stephenson = {
+	
+		icon = generic_naval
+	
+        fire_only_once = yes
+		
+		days_remove = 10
+		
+		custom_cost_text = gilbert_stephenson_decision_cost
+		custom_cost_trigger = {
+			has_navy_experience > 24
+			has_political_power > 24
+		}
+		
+		allowed = {
+			tag = ENG
+			
+		}
+	
+		available = {
+			has_war = yes
+			has_navy_experience > 24
+			has_political_power > 24
+			has_completed_focus = uk_destroyer_focus
+
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		remove_effect = {
+
+		}		
+		complete_effect = {
+			navy_experience = -25					
+			add_political_power = -25
+			country_event = { id = r56_eng.10 }
+		}
+	}
+
+	r56_ENG_decision_support_percy_hobart = {
+
+		icon = generic_tank
+	
+		cost = 50
+        fire_only_once = yes
+		
+		days_remove = 30
+		
+		custom_cost_text = percy_hobart_decision_cost
+		custom_cost_trigger = {
+			has_army_experience > 99
+			has_political_power > 49
+		}
+		
+		allowed = {
+			OR = {
+				tag = ENG
+				tag = CAN
+			}
+		}
+	
+		available = {
+			hidden_trigger = {
+				has_army_experience > 99
+			}
+			ROOT = {
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+				NOT = {
+					has_global_flag = r56_ENG_decision_support_percy_hobart_recruited
+				}
+				if = {
+					limit = {
+						tag = CAN
+					}
+					OR = {
+						is_puppet_of = ENG
+						AND = {
+							has_war_with = ENG
+							has_government = ENG
+							is_in_faction_with = ENG
+						}
+					}
+				}
+			}
+		}
+		
+		visible = {
+			OR = {
+				tag = ENG
+				tag = CAN
+			}
+			NOT = {
+				has_global_flag = r56_ENG_decision_support_percy_hobart_recruited
+			}
+			if = {
+				limit = { #yes we are checking twice to be extra safe
+					tag = ENG
+					has_character = ENG_r56_percy_hobart
+				}
+			}
+		}
+		
+		remove_effect = {
+			if = { #CAN effect
+				limit = {
+					tag = CAN
+				}
+				create_corps_commander = {
+					name = "Percy Hobart"
+					portrait_path = "gfx/leaders/ENG/r56_portrait_ENG_percy_hobart.dds"
+					traits = {unpopular funnies_inventor panzer_leader trait_engineer fortress_buster expert_improviser}
+					skill = 5
+					attack_skill = 6
+					defense_skill = 3
+					planning_skill = 5
+					logistics_skill = 2	
+				}
+				ROOT = {
+					add_breakthrough_points = {
+						specialization = specialization_land
+						value = 1
+					}
+				}
+				ENG = {
+					if = {
+						limit = { #yes we are checking twice to be extra safe
+							ENG = {
+								has_character = ENG_r56_percy_hobart
+							}
+						}
+						ENG = {
+							ENG_r56_percy_hobart = {
+								add_scientist_xp = {
+									experience = 500
+									specialization = specialization_land
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { #ENG effect
+				limit = { #yes we are checking twice to be extra safe
+					tag = ENG
+					has_character = ENG_r56_percy_hobart
+				}
+				add_corps_commander_role = {
+					character = ENG_r56_percy_hobart
+					traits = { unpopular funnies_inventor panzer_leader trait_engineer fortress_buster expert_improviser}
+					skill = 5
+					attack_skill = 6
+					defense_skill = 3
+					planning_skill = 5
+					logistics_skill = 2	
+				}
+				ENG_r56_percy_hobart = {
+					add_scientist_xp = {
+						experience = 500
+						specialization = specialization_land
+					}
+				}
+				add_breakthrough_points = {
+					specialization = specialization_land
+					value = 1
+				}	
+			}
+			set_global_flag = r56_ENG_decision_support_percy_hobart_recruited
+		}		
+
+		complete_effect = {
+			army_experience = -100		
+			add_political_power = -50
+		}
+	}
+	r56_ENG_decision_support_frederick_browning = {
+	
+		icon = generic_intelligence_operation
+	
+		cost = 50
+        fire_only_once = yes
+		
+		days_remove = 20
+		
+		custom_cost_text = frederick_browning_decision_cost
+		custom_cost_trigger = {
+			has_army_experience > 24
+			has_air_experience > 24
+			has_political_power > 24
+		}
+		
+		allowed = {
+			tag = ENG
+		}
+	
+		available = {
+			has_army_experience > 24
+			has_air_experience > 24
+
+			has_tech = paratroopers 
+
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		remove_effect = {
+			create_corps_commander = {
+				name = "Frederick Browning"
+				portrait_path = "gfx/leaders/ENG/r56_portrait_ENG_frederick_browning.dds"
+				traits = { air_force_ties commando paratrooper }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}		
+		complete_effect = {
+			army_experience = -25
+			air_experience = -25					
+			add_political_power = -25
+		}
+	}	
+	r56_ENG_decision_send_wavell_to_india = {
+
+		icon = generic_operation
+	
+		cost = 10
+        fire_only_once = yes
+		
+		days_remove = 10
+		
+		allowed = {
+			tag = ENG
+		}
+	
+		available = {
+			has_war = yes
+			RAJ = {
+				is_puppet_of = ENG
+			}
+			date > 1941.1.1
+		}
+		
+		visible = {
+			tag = ENG
+		}
+		
+		remove_effect = {
+			every_army_leader = {
+				limit = { has_id = 998 }
+				if = {
+					limit = {
+						is_field_marshal = no
+					}
+					promote_leader = yes
+				}
+				set_nationality = RAJ
+				RAJ = {
+					country_event = { id = englandmod.99 hours = 48 }
+				}
+			}
+		}
+	}
+	ENG_promote_jack_churchill = {
+
+		icon = generic_prepare_civil_war
+
+		custom_cost_text = apply_neames_guidelines_cost
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		
+		available = {
+			command_power > 24
+			has_war = yes
+			has_200_land_doctrine_mastery = yes
+			OR = {
+				has_tech = tech_mountaineers2
+				has_tech = marines2
+				has_tech = paratroopers2
+			}
+			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		visible = {
+			has_completed_focus = ENG_special_air_service
+		}
+
+		remove_effect = {
+			
+		}
+
+		complete_effect = {
+			add_command_power = -25
+			add_political_power = -25
+			hidden_effect = {
+				set_country_flag = promote_jack_churchill
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Jack Churchill"
+					portrait_path = "GFX_portrait_RAJ_jack_churchill"
+					traits={ inspirational_bagpiper commando vigorous unpopular }
+					skill=1
+					attack_skill=1
+					defense_skill=1
+					planning_skill=1
+					logistics_skill=1
+				}
+			}
+		}	
+	}
+}
+#resource_right
+#foreign_policy = {
+#	ENG_warn_FROM_to_protect_oil_concessions = {
+#		available = {
+#			has_war_support > 0.4
+#			if = {
+#				limit = {
+#					FROM = {
+#						has_offensive_war = yes
+#					}
+#				}
+#			}
+#			NOT = { has_war_with = FROM }
+#		}
+#		visible = {
+#			#not = { has_wargoal_against = FROM }
+#		}
+#		target_trigger = {
+#			FROM = {
+#				exists = yes
+#				not = {
+#					has_war_with = ROOT
+#					is_in_faction_with = ROOT
+#					is_subject_of = ROOT
+#				}
+#
+#			}
+#		}
+#		war_with_target_on_remove = yes
+#		days_remove = 60
+#		cost = 50
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				has_war = yes
+#				factor = 0
+#			}
+#			modifier = {
+#				OR = {
+#					GER = { has_completed_focus = GER_danzig_or_war }
+#					JAP = { has_completed_focus = JAP_intervene_in_china }
+#				}
+#				factor = 10
+#			}
+#		}
+#		remove_effect = {
+#			create_wargoal = {
+#				type = topple_government
+#				target = FROM
+#			}
+#		}
+#	}
+#	ENG_warn_FROM_to_protect_oil_concessions = {
+#		available = {
+#			
+#		}
+#	}
+#}

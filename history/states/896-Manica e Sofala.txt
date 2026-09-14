@@ -1,0 +1,30 @@
+state={
+	id=896
+	name="STATE_896"
+	manpower = 1231607
+	state_category = rural
+	history = {
+
+		buildings = {
+			infrastructure = 2
+			12935 = { # This was a sizeable trade port
+				naval_base = 1
+			}
+		}
+
+		add_to_array = { state_victory_points = 12935 }
+		victory_points = {
+			12935 1
+		}
+        owner = POR
+        add_core_of = POR
+    }
+
+
+	provinces={
+		2120 5155 12935 12950 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies = 0.000
+}

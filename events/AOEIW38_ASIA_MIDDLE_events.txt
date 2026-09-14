@@ -1,0 +1,210 @@
+add_namespace = AOEIW38_asia_middle
+
+# Mongolia: a continuing frontier-security sequence that reacts to China,
+# Manchuria, Japan and the Soviet Union without changing any country tag.
+country_event = {
+    id = AOEIW38_asia_middle.1
+    title = AOEIW38_asia_middle.1.t desc = AOEIW38_asia_middle.1.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.1.a
+        set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open
+        add_command_power = 10
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.2
+    title = AOEIW38_asia_middle.2.t desc = AOEIW38_asia_middle.2.d
+    picture = GFX_report_event_chinese_soldiers is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.2.a
+        add_war_support = 0.03
+        if = { limit = { CHI = { exists = yes } } add_opinion_modifier = { target = CHI modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } CHI = { country_event = { id = AOEIW38_asia_middle.10 days = 2 } } }
+        if = { limit = { MAN = { exists = yes } } MAN = { country_event = { id = AOEIW38_asia_middle.10 days = 3 } } }
+        if = { limit = { SOV = { exists = yes } } SOV = { country_event = { id = AOEIW38_asia_middle.10 days = 2 } } }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.3
+    title = AOEIW38_asia_middle.3.t desc = AOEIW38_asia_middle.3.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.3.a
+        add_stability = 0.03
+        if = { limit = { JAP = { exists = yes } } JAP = { country_event = { id = AOEIW38_asia_middle.11 days = 2 } } }
+        if = { limit = { MAN = { exists = yes } } MAN = { country_event = { id = AOEIW38_asia_middle.11 days = 3 } } }
+        if = { limit = { SOV = { exists = yes } } SOV = { country_event = { id = AOEIW38_asia_middle.11 days = 2 } } }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.4
+    title = AOEIW38_asia_middle.4.t desc = AOEIW38_asia_middle.4.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.4.a army_experience = 15 add_political_power = 35 }
+}
+country_event = {
+    id = AOEIW38_asia_middle.5
+    title = AOEIW38_asia_middle.5.t desc = AOEIW38_asia_middle.5.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.5.a
+        add_stability = 0.03
+        if = { limit = { CHI = { exists = yes } } CHI = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } } }
+        if = { limit = { SOV = { exists = yes } } SOV = { add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } } }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.10
+    title = AOEIW38_asia_middle.10.t desc = AOEIW38_asia_middle.10.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.10.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } }
+    option = { name = AOEIW38_asia_middle.10.b add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_frontier_suspicion } add_political_power = 20 }
+}
+country_event = {
+    id = AOEIW38_asia_middle.11
+    title = AOEIW38_asia_middle.11.t desc = AOEIW38_asia_middle.11.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.11.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_frontier_consultation } }
+    option = { name = AOEIW38_asia_middle.11.b add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_frontier_suspicion } add_war_support = 0.01 }
+}
+
+# Yemen: Bab el-Mandeb becomes a recurring diplomatic and security question.
+country_event = {
+    id = AOEIW38_asia_middle.20
+    title = AOEIW38_asia_middle.20.t desc = AOEIW38_asia_middle.20.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.20.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open navy_experience = 10 }
+}
+country_event = {
+    id = AOEIW38_asia_middle.21
+    title = AOEIW38_asia_middle.21.t desc = AOEIW38_asia_middle.21.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.21.a
+        add_ideas = AOEIW38_ASIA_MIDDLE_YEM_convoy_code
+        every_country = {
+            limit = { OR = { original_tag = ENG original_tag = ITA original_tag = SAU original_tag = ETH original_tag = EGY } }
+            country_event = { id = AOEIW38_asia_middle.30 days = 2 }
+        }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.22
+    title = AOEIW38_asia_middle.22.t desc = AOEIW38_asia_middle.22.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.22.a
+        add_ideas = AOEIW38_ASIA_MIDDLE_YEM_coastal_levies
+        every_country = {
+            limit = { OR = { original_tag = ENG original_tag = ITA original_tag = SAU original_tag = ETH original_tag = EGY } }
+            country_event = { id = AOEIW38_asia_middle.31 days = 2 }
+        }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.23
+    title = AOEIW38_asia_middle.23.t desc = AOEIW38_asia_middle.23.d
+    picture = GFX_report_event_generic_sign_treaty1 is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.23.a
+        add_political_power = 50
+        every_country = {
+            limit = { OR = { original_tag = SAU original_tag = ETH original_tag = EGY } }
+            add_opinion_modifier = { target = ROOT modifier = AOEIW38_ASIA_MIDDLE_regional_conference }
+        }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.24
+    title = AOEIW38_asia_middle.24.t desc = AOEIW38_asia_middle.24.d
+    picture = GFX_report_event_generic_factory is_triggered_only = yes
+    option = {
+        name = AOEIW38_asia_middle.24.a
+        add_stability = 0.04
+        random_owned_controlled_state = { limit = { is_core_of = ROOT is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+    }
+}
+country_event = {
+    id = AOEIW38_asia_middle.30
+    title = AOEIW38_asia_middle.30.t desc = AOEIW38_asia_middle.30.d
+    picture = GFX_report_event_generic_handshake is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.30.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_open_straits } }
+    option = { name = AOEIW38_asia_middle.30.b add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_competing_settlement } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.31
+    title = AOEIW38_asia_middle.31.t desc = AOEIW38_asia_middle.31.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.31.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_guarded_straits } navy_experience = 5 }
+}
+
+# 1940-42 regional consequence events. Each opens one authored follow-up action.
+country_event = {
+    id = AOEIW38_asia_middle.40 title = AOEIW38_asia_middle.40.t desc = AOEIW38_asia_middle.40.d
+    picture = GFX_report_event_generic_military_parade fire_only_once = yes
+    trigger = { original_tag = MAN date > 1940.2.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.40.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_MAN_civil_frontier every_country = { limit = { OR = { original_tag = CHI original_tag = JAP original_tag = MON } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.40.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_MAN_military_cordon every_country = { limit = { OR = { original_tag = CHI original_tag = JAP original_tag = MON } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.41 title = AOEIW38_asia_middle.41.t desc = AOEIW38_asia_middle.41.d
+    picture = GFX_report_event_chinese_soldiers fire_only_once = yes
+    trigger = { original_tag = CHI date > 1940.6.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.41.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_CHI_inland_reconstruction every_country = { limit = { OR = { original_tag = MAN original_tag = JAP original_tag = MON } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.41.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_CHI_maritime_customs every_country = { limit = { OR = { original_tag = MAN original_tag = JAP original_tag = MON } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.42 title = AOEIW38_asia_middle.42.t desc = AOEIW38_asia_middle.42.d
+    picture = GFX_report_event_generic_military_parade fire_only_once = yes
+    trigger = { original_tag = JAP date > 1941.1.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.42.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_JAP_continental_bureaux every_country = { limit = { OR = { original_tag = MAN original_tag = CHI original_tag = MON } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.42.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_JAP_negotiated_ports every_country = { limit = { OR = { original_tag = MAN original_tag = CHI original_tag = MON } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.43 title = AOEIW38_asia_middle.43.t desc = AOEIW38_asia_middle.43.d
+    picture = GFX_report_event_generic_sign_treaty1 fire_only_once = yes
+    trigger = { original_tag = PER date > 1940.8.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.43.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_PER_corridor_state every_country = { limit = { OR = { original_tag = TUR original_tag = SOV original_tag = ENG } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.43.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_PER_guarded_sovereignty every_country = { limit = { OR = { original_tag = TUR original_tag = SOV original_tag = ENG } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.44 title = AOEIW38_asia_middle.44.t desc = AOEIW38_asia_middle.44.d
+    picture = GFX_report_event_generic_parliament fire_only_once = yes
+    trigger = { original_tag = RAJ date > 1941.1.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.44.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_RAJ_federal_war_council if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.05 localization = AOEIW38_ASIA_MIDDLE_war_council_autonomy } } every_country = { limit = { OR = { original_tag = ENG original_tag = SIA original_tag = PER } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.44.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_RAJ_defence_directorate every_country = { limit = { OR = { original_tag = ENG original_tag = SIA original_tag = PER } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.45 title = AOEIW38_asia_middle.45.t desc = AOEIW38_asia_middle.45.d
+    picture = GFX_report_event_generic_sign_treaty1 fire_only_once = yes
+    trigger = { original_tag = SIA date > 1940.9.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.45.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_SIA_river_compact every_country = { limit = { OR = { original_tag = RAJ original_tag = JAP original_tag = CHI } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.45.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_SIA_armed_balance every_country = { limit = { OR = { original_tag = RAJ original_tag = JAP original_tag = CHI } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+}
+country_event = {
+    id = AOEIW38_asia_middle.46 title = AOEIW38_asia_middle.46.t desc = AOEIW38_asia_middle.46.d
+    picture = GFX_report_event_generic_sign_treaty1 fire_only_once = yes
+    trigger = { original_tag = TUR date > 1940.10.1 has_capitulated = no NOT = { has_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning } }
+    mean_time_to_happen = { days = 35 }
+    option = { name = AOEIW38_asia_middle.46.a set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_TUR_straits_convention every_country = { limit = { OR = { original_tag = PER original_tag = SOV original_tag = ENG original_tag = ITA } } country_event = { id = AOEIW38_asia_middle.60 days = 2 } } }
+    option = { name = AOEIW38_asia_middle.46.b set_country_flag = AOEIW38_ASIA_MIDDLE_regional_reckoning set_country_flag = AOEIW38_ASIA_MIDDLE_regional_agenda_open add_ideas = AOEIW38_ASIA_MIDDLE_TUR_fortified_narrows every_country = { limit = { OR = { original_tag = PER original_tag = SOV original_tag = ENG original_tag = ITA } } country_event = { id = AOEIW38_asia_middle.61 days = 2 } } }
+}
+
+country_event = {
+    id = AOEIW38_asia_middle.60 title = AOEIW38_asia_middle.60.t desc = AOEIW38_asia_middle.60.d
+    picture = GFX_report_event_generic_handshake is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.60.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_regional_conference } }
+    option = { name = AOEIW38_asia_middle.60.b add_political_power = 15 }
+}
+country_event = {
+    id = AOEIW38_asia_middle.61 title = AOEIW38_asia_middle.61.t desc = AOEIW38_asia_middle.61.d
+    picture = GFX_report_event_generic_military_parade is_triggered_only = yes
+    option = { name = AOEIW38_asia_middle.61.a add_opinion_modifier = { target = FROM modifier = AOEIW38_ASIA_MIDDLE_guarded_straits } }
+    option = { name = AOEIW38_asia_middle.61.b add_war_support = 0.01 add_political_power = 10 }
+}

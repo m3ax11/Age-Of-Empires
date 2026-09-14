@@ -1,0 +1,32 @@
+state={
+	id=891
+	name="STATE_891"
+	manpower = 640000
+	state_category = rural
+
+	resources = {
+		rubber = 1
+	}
+
+	history = {
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_to_array = { state_victory_points = 4735 }
+		victory_points = {
+			4735 1
+		}
+        owner = POR
+        add_core_of = POR
+    }
+
+
+	provinces={
+		1552 2126 4735 8054 13471
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

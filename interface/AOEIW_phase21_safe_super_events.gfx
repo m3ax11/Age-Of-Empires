@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_AOEIW21_safe_ger_sov"
+        texturefile = "gfx/event_pictures/aoeiw_phase21/AOEIW21_safe_ger_sov.png"
+    }
+    spriteType = {
+        name = "GFX_AOEIW21_safe_ger_fra"
+        texturefile = "gfx/event_pictures/aoeiw_phase21/AOEIW21_safe_ger_fra.png"
+    }
+    spriteType = {
+        name = "GFX_AOEIW21_safe_china_start"
+        texturefile = "gfx/event_pictures/aoeiw_phase21/AOEIW21_safe_china_start.png"
+    }
+    spriteType = {
+        name = "GFX_AOEIW21_safe_nra_victory"
+        texturefile = "gfx/event_pictures/aoeiw_phase21/AOEIW21_safe_nra_victory.png"
+    }
+    spriteType = {
+        name = "GFX_AOEIW21_safe_ccp_victory"
+        texturefile = "gfx/event_pictures/aoeiw_phase21/AOEIW21_safe_ccp_victory.png"
+    }
+}

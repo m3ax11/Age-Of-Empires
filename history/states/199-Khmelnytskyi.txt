@@ -1,0 +1,34 @@
+
+state={
+	id=199
+	name="STATE_199"
+	manpower = 1684723
+	
+	state_category = town
+
+	history = {
+		victory_points = {
+			6429 1
+		}
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 3
+		}
+		#add_core_of = SOV #Lack of core represents UKR resistance and future issues with the area -Spicyalfredo
+		add_claim_by = SOV
+
+
+		add_to_array = { state_victory_points = 6429 }
+        owner = UKR
+        add_core_of = UKR
+        add_core_of = SOV
+    }
+
+	provinces={
+		462 3430 3457 3511 6429 6509 
+	}
+
+	local_supplies=0.0
+}

@@ -1,0 +1,7 @@
+r56i_national_character_decisions = {
+
+	allowed = {
+		always = yes
+	}
+
+}

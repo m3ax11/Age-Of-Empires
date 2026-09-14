@@ -1,0 +1,54 @@
+capital = 293
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_YEM_leader
+recruit_character = AOEIW_world_YEM_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    infantry_weapons = 1
+    gw_artillery = 1
+    TIB_mountainous_people_tech = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+}
+add_ideas = { AOEIW_world_frontier_state civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9000 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 600 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 450 }
+oob = "AOEIW_world_YEM_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = YEM_imam_yahya
+recruit_character = YEM_ahmad_muhammad_numan
+recruit_character = YEM_abdul_rahman_al_eryani
+recruit_character = YEM_hassan_ibn_yahya
+recruit_character = YEM_ali_al_muradi
+recruit_character = YEM_abdullah_bin_ahmed_al_wazir
+recruit_character = YEM_ahmad_bin_yahya
+recruit_character = YEM_ja_far_al_hijazi
+recruit_character = YEM_hisham_ibn_salim
+recruit_character = YEM_ahmed_yahya_al_thalaya
+recruit_character = YEM_ahmad_al_hamid
+recruit_character = YEM_mansur_al_badr
+recruit_character = YEM_burkan_salem
+recruit_character = YEM_hisham_ibn_uthman
+recruit_character = YEM_khalid_ibn_yusuf
+recruit_character = YEM_ali_halukeh
+recruit_character = YEM_jabir_khaldun
+recruit_character = YEM_yusuf_ibn_khalid
+recruit_character = YEM_fuad_ibn_falil
+recruit_character = YEM_cecil_barrington_hurst
+recruit_character = YEM_nae_m_al_abdul

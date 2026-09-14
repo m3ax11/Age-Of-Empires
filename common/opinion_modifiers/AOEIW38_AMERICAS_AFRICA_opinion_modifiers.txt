@@ -1,0 +1,7 @@
+opinion_modifiers = {
+    AOEIW38_regional_partnership = { value = 30 decay = 1 }
+    AOEIW38_strategic_exclusion = { value = -35 decay = 1 }
+    AOEIW38_resource_compromise = { value = 25 decay = 1 }
+    AOEIW38_imperial_concession = { value = 35 decay = 1 }
+    AOEIW38_imperial_rebuff = { value = -45 decay = 1 }
+}

@@ -1,0 +1,197 @@
+AOEIW35_GER_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_GER_left_side
+    right_side = AOEIW35_GER_right_side
+    decision_category = AOEIW35_GER_governance_category
+    range = { id = AOEIW35_GER_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_GER_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_GER_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.02 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_GER_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 research_speed_factor = 0.01 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_GER_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 research_speed_factor = 0.025 consumer_goods_factor = 0.02 political_power_factor = -0.08 } }
+    }
+    side = {
+        id = AOEIW35_GER_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_GER_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 stability_factor = -0.01 } }
+        range = { id = AOEIW35_GER_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 war_support_factor = 0.04 stability_factor = -0.03 } }
+        range = { id = AOEIW35_GER_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.15 industrial_capacity_factory = 0.06 war_support_factor = 0.07 stability_factor = -0.08 } }
+    }
+}
+
+AOEIW35_FRA_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_FRA_left_side
+    right_side = AOEIW35_FRA_right_side
+    decision_category = AOEIW35_FRA_governance_category
+    range = { id = AOEIW35_FRA_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_FRA_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_FRA_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.025 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_FRA_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 research_speed_factor = 0.015 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_FRA_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 research_speed_factor = 0.03 consumer_goods_factor = 0.015 political_power_factor = -0.07 } }
+    }
+    side = {
+        id = AOEIW35_FRA_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_FRA_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 planning_speed = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_FRA_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 planning_speed = 0.05 war_support_factor = 0.03 stability_factor = -0.03 } }
+        range = { id = AOEIW35_FRA_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.12 planning_speed = 0.10 army_org_factor = 0.04 stability_factor = -0.07 } }
+    }
+}
+
+AOEIW35_ENG_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_ENG_left_side
+    right_side = AOEIW35_ENG_right_side
+    decision_category = AOEIW35_ENG_governance_category
+    range = { id = AOEIW35_ENG_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_ENG_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_ENG_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.02 trade_opinion_factor = 0.05 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_ENG_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 trade_opinion_factor = 0.10 consumer_goods_factor = 0.01 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_ENG_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 trade_opinion_factor = 0.18 research_speed_factor = 0.02 political_power_factor = -0.07 } }
+    }
+    side = {
+        id = AOEIW35_ENG_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_ENG_right_low min = 0.10 max = 0.35 modifier = { war_support_factor = 0.02 navy_org_factor = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_ENG_right_medium min = 0.35 max = 0.70 modifier = { war_support_factor = 0.05 navy_org_factor = 0.04 political_power_factor = 0.05 stability_factor = -0.03 } }
+        range = { id = AOEIW35_ENG_right_high min = 0.70 max = 1.00 modifier = { war_support_factor = 0.08 navy_org_factor = 0.07 industrial_capacity_dockyard = 0.08 stability_factor = -0.07 } }
+    }
+}
+
+AOEIW35_ITA_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_ITA_left_side
+    right_side = AOEIW35_ITA_right_side
+    decision_category = AOEIW35_ITA_governance_category
+    range = { id = AOEIW35_ITA_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_ITA_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_ITA_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.02 army_org_factor = 0.01 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_ITA_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 army_org_factor = 0.03 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_ITA_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.07 army_org_factor = 0.05 research_speed_factor = 0.02 political_power_factor = -0.07 } }
+    }
+    side = {
+        id = AOEIW35_ITA_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_ITA_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 war_support_factor = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_ITA_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 war_support_factor = 0.05 industrial_capacity_factory = 0.03 stability_factor = -0.04 } }
+        range = { id = AOEIW35_ITA_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.14 war_support_factor = 0.08 industrial_capacity_factory = 0.07 stability_factor = -0.08 } }
+    }
+}
+
+AOEIW35_JAP_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_JAP_left_side
+    right_side = AOEIW35_JAP_right_side
+    decision_category = AOEIW35_JAP_governance_category
+    range = { id = AOEIW35_JAP_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_JAP_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_JAP_left_low min = -0.35 max = -0.10 modifier = { navy_org_factor = 0.025 industrial_capacity_dockyard = 0.02 political_power_factor = -0.01 } }
+        range = { id = AOEIW35_JAP_left_medium min = -0.70 max = -0.35 modifier = { navy_org_factor = 0.05 industrial_capacity_dockyard = 0.05 army_org_factor = -0.01 } }
+        range = { id = AOEIW35_JAP_left_high min = -1.00 max = -0.70 modifier = { navy_org_factor = 0.08 industrial_capacity_dockyard = 0.09 trade_opinion_factor = 0.10 army_org_factor = -0.03 } }
+    }
+    side = {
+        id = AOEIW35_JAP_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_JAP_right_low min = 0.10 max = 0.35 modifier = { army_org_factor = 0.025 industrial_capacity_factory = 0.02 navy_org_factor = -0.01 } }
+        range = { id = AOEIW35_JAP_right_medium min = 0.35 max = 0.70 modifier = { army_org_factor = 0.05 industrial_capacity_factory = 0.05 supply_consumption_factor = 0.02 navy_org_factor = -0.02 } }
+        range = { id = AOEIW35_JAP_right_high min = 0.70 max = 1.00 modifier = { army_org_factor = 0.08 industrial_capacity_factory = 0.09 war_support_factor = 0.05 supply_consumption_factor = 0.05 navy_org_factor = -0.04 } }
+    }
+}
+
+AOEIW35_USA_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_USA_left_side
+    right_side = AOEIW35_USA_right_side
+    decision_category = AOEIW35_USA_governance_category
+    range = { id = AOEIW35_USA_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_USA_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_USA_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.025 production_speed_buildings_factor = 0.02 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_USA_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 production_speed_buildings_factor = 0.05 recruitable_population_factor = -0.003 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_USA_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 production_speed_buildings_factor = 0.09 recruitable_population_factor = -0.006 political_power_factor = -0.07 } }
+    }
+    side = {
+        id = AOEIW35_USA_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_USA_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 industrial_capacity_factory = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_USA_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 industrial_capacity_factory = 0.05 war_support_factor = 0.03 stability_factor = -0.04 } }
+        range = { id = AOEIW35_USA_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.14 industrial_capacity_factory = 0.09 war_support_factor = 0.06 stability_factor = -0.08 } }
+    }
+}
+
+AOEIW35_SOV_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_SOV_left_side
+    right_side = AOEIW35_SOV_right_side
+    decision_category = AOEIW35_SOV_governance_category
+    range = { id = AOEIW35_SOV_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_SOV_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_SOV_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.02 supply_consumption_factor = -0.01 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_SOV_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 supply_consumption_factor = -0.03 compliance_growth = 0.01 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_SOV_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 supply_consumption_factor = -0.05 compliance_growth = 0.025 political_power_factor = -0.08 } }
+    }
+    side = {
+        id = AOEIW35_SOV_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_SOV_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 industrial_capacity_factory = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_SOV_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 industrial_capacity_factory = 0.05 army_org_factor = 0.02 stability_factor = -0.04 } }
+        range = { id = AOEIW35_SOV_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.14 industrial_capacity_factory = 0.09 army_org_factor = 0.05 stability_factor = -0.08 } }
+    }
+}
+
+AOEIW35_SPR_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_SPR_left_side
+    right_side = AOEIW35_SPR_right_side
+    decision_category = AOEIW35_SPR_governance_category
+    range = { id = AOEIW35_SPR_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_SPR_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_SPR_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.025 resistance_target = -0.01 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_SPR_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 resistance_target = -0.025 production_speed_buildings_factor = 0.02 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_SPR_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 resistance_target = -0.05 production_speed_buildings_factor = 0.05 political_power_factor = -0.08 } }
+    }
+    side = {
+        id = AOEIW35_SPR_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_SPR_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 army_org_factor = 0.01 stability_factor = -0.01 } }
+        range = { id = AOEIW35_SPR_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 army_org_factor = 0.03 industrial_capacity_factory = 0.03 stability_factor = -0.04 } }
+        range = { id = AOEIW35_SPR_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.14 army_org_factor = 0.06 industrial_capacity_factory = 0.07 stability_factor = -0.09 } }
+    }
+}
+
+AOEIW35_AUS_governance_balance = {
+    initial_value = 0
+    left_side = AOEIW35_AUS_left_side
+    right_side = AOEIW35_AUS_right_side
+    decision_category = AOEIW35_AUS_governance_category
+    range = { id = AOEIW35_AUS_balanced_range min = -0.10 max = 0.10 modifier = { stability_factor = 0.01 } }
+    side = {
+        id = AOEIW35_AUS_left_side
+        icon = GFX_idea_generic_constitutional_guarantees
+        range = { id = AOEIW35_AUS_left_low min = -0.35 max = -0.10 modifier = { stability_factor = 0.025 resistance_target = -0.01 political_power_factor = -0.02 } }
+        range = { id = AOEIW35_AUS_left_medium min = -0.70 max = -0.35 modifier = { stability_factor = 0.05 resistance_target = -0.03 compliance_growth = 0.01 political_power_factor = -0.04 } }
+        range = { id = AOEIW35_AUS_left_high min = -1.00 max = -0.70 modifier = { stability_factor = 0.08 resistance_target = -0.06 compliance_growth = 0.025 political_power_factor = -0.08 } }
+    }
+    side = {
+        id = AOEIW35_AUS_right_side
+        icon = GFX_idea_generic_fascism_drift_bonus
+        range = { id = AOEIW35_AUS_right_low min = 0.10 max = 0.35 modifier = { political_power_factor = 0.04 industrial_capacity_factory = 0.02 stability_factor = -0.01 } }
+        range = { id = AOEIW35_AUS_right_medium min = 0.35 max = 0.70 modifier = { political_power_factor = 0.08 industrial_capacity_factory = 0.05 army_org_factor = 0.02 resistance_target = 0.01 stability_factor = -0.04 } }
+        range = { id = AOEIW35_AUS_right_high min = 0.70 max = 1.00 modifier = { political_power_factor = 0.14 industrial_capacity_factory = 0.08 army_org_factor = 0.05 resistance_target = 0.04 stability_factor = -0.08 } }
+    }
+}

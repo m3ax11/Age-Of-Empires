@@ -1,0 +1,261 @@
+ideas = {
+    country = {
+        AOEIW37_GER_federal_hegemony = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.05
+                trade_opinion_factor = 0.10
+                consumer_goods_factor = 0.01
+            }
+        }
+
+        AOEIW37_GER_european_charter = {
+            picture = generic_democratic_reformer_western_european_2d
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.04
+                stability_factor = 0.06
+                trade_opinion_factor = 0.15
+                war_support_factor = -0.02
+            }
+        }
+
+        AOEIW37_GER_continental_planning = {
+            picture = SOV_third_five_year_plan_military
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.08
+                production_factory_efficiency_gain_factor = 0.06
+                production_speed_infrastructure_factor = 0.08
+                consumer_goods_factor = 0.015
+            }
+        }
+
+        AOEIW37_GER_fortress_europe_spirit = {
+            picture = generic_war_preparation
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.08
+                army_defence_factor = 0.04
+                industrial_capacity_factory = 0.05
+                resistance_target = 0.03
+                stability_factor = -0.04
+            }
+        }
+
+        AOEIW37_GER_synthetic_independence_spirit = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_synthetic_refinery_factor = 0.15
+                fuel_gain_factor = 0.06
+                local_resources_factor = 0.05
+                consumer_goods_factor = 0.01
+            }
+        }
+
+        AOEIW37_GER_commercial_access_spirit = {
+            picture = generic_foreign_capital
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                trade_opinion_factor = 0.15
+                political_power_factor = 0.04
+                production_factory_efficiency_gain_factor = 0.04
+            }
+        }
+
+        AOEIW37_GER_strategic_reserves = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                max_fuel_factor = 0.12
+                local_resources_factor = 0.08
+                supply_consumption_factor = -0.03
+            }
+        }
+
+        AOEIW37_GER_joint_arms_board = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = 0.03
+                supply_consumption_factor = -0.03
+                air_mission_efficiency = 0.03
+                planning_speed = 0.04
+            }
+        }
+
+        AOEIW37_GER_coordinated_procurement = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.05
+                production_factory_max_efficiency_factor = 0.04
+                supply_consumption_factor = -0.02
+            }
+        }
+
+        AOEIW37_GER_development_credit = {
+            picture = generic_foreign_capital
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.06
+                production_speed_infrastructure_factor = 0.08
+                consumer_goods_factor = 0.01
+            }
+        }
+
+        AOEIW37_GER_workers_exchange = {
+            picture = generic_socialist_industry
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.03
+                industrial_capacity_factory = 0.04
+                production_factory_efficiency_gain_factor = 0.04
+            }
+        }
+
+        AOEIW37_GER_forced_levies = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.08
+                industrial_capacity_factory = 0.04
+                stability_factor = -0.04
+            }
+        }
+
+        AOEIW37_GER_peace_dividend = {
+            picture = generic_goods_red_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.02
+                stability_factor = 0.05
+                production_speed_buildings_factor = 0.05
+                war_support_factor = -0.05
+            }
+        }
+
+        AOEIW37_GER_chartered_empire = {
+            picture = generic_constitutional_guarantees
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                trade_opinion_factor = 0.10
+                political_power_factor = 0.03
+                subjects_autonomy_gain = 0.10
+            }
+        }
+
+        AOEIW37_GER_imperial_prerogative = {
+            picture = generic_war_preparation
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.04
+                mobilization_speed = 0.05
+                planning_speed = 0.03
+                subjects_autonomy_gain = -0.15
+                stability_factor = -0.02
+            }
+        }
+
+        AOEIW37_GER_civic_commonwealth = {
+            picture = generic_democratic_reformer_western_european_2d
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.03
+                stability_factor = 0.03
+                trade_opinion_factor = 0.10
+                production_speed_buildings_factor = 0.04
+            }
+        }
+
+        AOEIW37_GER_security_commonwealth = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                army_defence_factor = 0.03
+                planning_speed = 0.04
+                air_mission_efficiency = 0.03
+                war_support_factor = 0.03
+            }
+        }
+
+        AOEIW37_GER_federal_socialism = {
+            picture = generic_socialist_industry
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                research_speed_factor = 0.02
+                production_factory_efficiency_gain_factor = 0.04
+                production_speed_infrastructure_factor = 0.06
+            }
+        }
+
+        AOEIW37_GER_directed_common_plan = {
+            picture = SOV_third_five_year_plan_military
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = 0.07
+                production_factory_efficiency_gain_factor = 0.05
+                supply_consumption_factor = -0.02
+                consumer_goods_factor = 0.01
+            }
+        }
+
+        AOEIW37_GER_permanent_victory_state = {
+            picture = generic_war_preparation
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.03
+                army_defence_factor = 0.04
+                planning_speed = 0.04
+                industrial_capacity_factory = 0.03
+                resistance_target = 0.03
+                consumer_goods_factor = 0.01
+            }
+        }
+    }
+}

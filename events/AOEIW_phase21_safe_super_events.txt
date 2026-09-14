@@ -1,0 +1,55 @@
+add_namespace = aoeiw_phase21_safe_super
+
+# Engine-safe cinematic events.  The former scripted GUI uploaded a dynamic
+# full-screen texture on the first game tick and could reset the DX11 device.
+# These events retain the supplied art, audio, global human visibility and
+# one-shot war hooks while using HOI4's proven country-event renderer.
+
+country_event = {
+    id = aoeiw_phase21_safe_super.1
+    title = aoeiw_phase21_safe_super.1.t
+    desc = aoeiw_phase21_safe_super.1.d
+    picture = GFX_AOEIW21_safe_ger_sov
+    is_triggered_only = yes
+    immediate = { scoped_sound_effect = "AOEIW_german_war_start" }
+    option = { name = aoeiw_phase21_safe_super.a }
+}
+
+country_event = {
+    id = aoeiw_phase21_safe_super.2
+    title = aoeiw_phase21_safe_super.2.t
+    desc = aoeiw_phase21_safe_super.2.d
+    picture = GFX_AOEIW21_safe_ger_fra
+    is_triggered_only = yes
+    immediate = { scoped_sound_effect = "AOEIW_german_war_start" }
+    option = { name = aoeiw_phase21_safe_super.a }
+}
+
+country_event = {
+    id = aoeiw_phase21_safe_super.3
+    title = aoeiw_phase21_safe_super.3.t
+    desc = aoeiw_phase21_safe_super.3.d
+    picture = GFX_AOEIW21_safe_china_start
+    is_triggered_only = yes
+    option = { name = aoeiw_phase21_safe_super.a }
+}
+
+country_event = {
+    id = aoeiw_phase21_safe_super.4
+    title = aoeiw_phase21_safe_super.4.t
+    desc = aoeiw_phase21_safe_super.4.d
+    picture = GFX_AOEIW21_safe_nra_victory
+    is_triggered_only = yes
+    immediate = { scoped_sound_effect = "AOEIW_nra_victory" }
+    option = { name = aoeiw_phase21_safe_super.a }
+}
+
+country_event = {
+    id = aoeiw_phase21_safe_super.5
+    title = aoeiw_phase21_safe_super.5.t
+    desc = aoeiw_phase21_safe_super.5.d
+    picture = GFX_AOEIW21_safe_ccp_victory
+    is_triggered_only = yes
+    immediate = { scoped_sound_effect = "AOEIW_ccp_victory" }
+    option = { name = aoeiw_phase21_safe_super.a }
+}

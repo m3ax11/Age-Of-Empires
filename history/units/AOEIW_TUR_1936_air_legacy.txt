@@ -1,0 +1,16 @@
+air_wings = {
+    346 = {
+        fighter_equipment_0 = {
+            owner = "TUR"
+            amount = 130
+        }
+        CAS_equipment_1 = {
+            owner = "TUR"
+            amount = 45
+        }
+        tac_bomber_equipment_0 = {
+            owner = "TUR"
+            amount = 25
+        }
+    }
+}

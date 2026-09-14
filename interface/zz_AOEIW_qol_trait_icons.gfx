@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = { name = "GFX_trait_offensive_doctrine" texturefile = "gfx/interface/traits/aoeiw_qol/trait_offensive_doctrine.dds" }
+    spriteType = { name = "GFX_trait_aggressive_assaulter" texturefile = "gfx/interface/traits/aoeiw_qol/trait_aggressive_assaulter.dds" }
+    spriteType = { name = "GFX_trait_fortress_buster" texturefile = "gfx/interface/traits/aoeiw_qol/trait_fortress_buster.dds" }
+    spriteType = { name = "GFX_trait_infantry_leader" texturefile = "gfx/interface/traits/aoeiw_qol/trait_infantry_leader.dds" }
+    spriteType = { name = "GFX_trait_infantry_expert" texturefile = "gfx/interface/traits/aoeiw_qol/trait_infantry_expert.dds" }
+
+    spriteType = { name = "GFX_trait_defensive_doctrine" texturefile = "gfx/interface/traits/aoeiw_qol/trait_defensive_doctrine.dds" }
+    spriteType = { name = "GFX_trait_ambusher" texturefile = "gfx/interface/traits/aoeiw_qol/trait_ambusher.dds" }
+    spriteType = { name = "GFX_trait_unyielding_defender" texturefile = "gfx/interface/traits/aoeiw_qol/trait_unyielding_defender.dds" }
+    spriteType = { name = "GFX_trait_engineer" texturefile = "gfx/interface/traits/aoeiw_qol/trait_engineer.dds" }
+
+    spriteType = { name = "GFX_trait_panzer_leader" texturefile = "gfx/interface/traits/aoeiw_qol/trait_panzer_leader.dds" }
+    spriteType = { name = "GFX_trait_panzer_expert" texturefile = "gfx/interface/traits/aoeiw_qol/trait_panzer_expert.dds" }
+    spriteType = { name = "GFX_trait_combined_arms_expert" texturefile = "gfx/interface/traits/aoeiw_qol/trait_combined_arms_expert.dds" }
+
+    spriteType = { name = "GFX_trait_logistics_wizard" texturefile = "gfx/interface/traits/aoeiw_qol/trait_logistics_wizard.dds" }
+    spriteType = { name = "GFX_trait_organizer" texturefile = "gfx/interface/traits/aoeiw_qol/trait_organizer.dds" }
+    spriteType = { name = "GFX_trait_organisational_leader" texturefile = "gfx/interface/traits/aoeiw_qol/trait_organisational_leader.dds" }
+    spriteType = { name = "GFX_trait_skilled_staffer" texturefile = "gfx/interface/traits/aoeiw_qol/trait_skilled_staffer.dds" }
+
+    spriteType = { name = "GFX_trait_commando" texturefile = "gfx/interface/traits/aoeiw_qol/trait_commando.dds" }
+    spriteType = { name = "GFX_trait_ranger" texturefile = "gfx/interface/traits/aoeiw_qol/trait_ranger.dds" }
+    spriteType = { name = "GFX_trait_naval_invader" texturefile = "gfx/interface/traits/aoeiw_qol/trait_naval_invader.dds" }
+    spriteType = { name = "GFX_trait_paratroopers" texturefile = "gfx/interface/traits/aoeiw_qol/trait_paratroopers.dds" }
+    spriteType = { name = "GFX_trait_mountaineer" texturefile = "gfx/interface/traits/aoeiw_qol/trait_mountaineer.dds" }
+    spriteType = { name = "GFX_trait_winter_specialist" texturefile = "gfx/interface/traits/aoeiw_qol/trait_winter_specialist.dds" }
+    spriteType = { name = "GFX_trait_winter_expert" texturefile = "gfx/interface/traits/aoeiw_qol/trait_winter_expert.dds" }
+    spriteType = { name = "GFX_trait_jungle_rat" texturefile = "gfx/interface/traits/aoeiw_qol/trait_jungle_rat.dds" }
+    spriteType = { name = "GFX_trait_desert_fox" texturefile = "gfx/interface/traits/aoeiw_qol/trait_desert_fox.dds" }
+    spriteType = { name = "GFX_trait_hill_fighter" texturefile = "gfx/interface/traits/aoeiw_qol/trait_hill_fighter.dds" }
+    spriteType = { name = "GFX_trait_urban_assault_specialist" texturefile = "gfx/interface/traits/aoeiw_qol/trait_urban_assault_specialist.dds" }
+    spriteType = { name = "GFX_trait_amphibious" texturefile = "gfx/interface/traits/aoeiw_qol/trait_amphibious.dds" }
+}

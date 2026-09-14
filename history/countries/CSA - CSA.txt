@@ -1,0 +1,91 @@
+capital = 361
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = democratic
+    elections_allowed = yes
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_TCO_leader
+recruit_character = AOEIW_world_TCO_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    fuel_silos = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_recon = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    basic_train = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    early_ship_hull_light = 1
+    basic_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    basic_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_ship_hull_cruiser = 1
+    early_ship_hull_heavy = 1
+    early_ship_hull_carrier = 1
+    basic_ship_hull_carrier = 1
+    basic_battery = 1
+    basic_light_battery = 1
+    basic_medium_battery = 1
+    basic_heavy_battery = 1
+    basic_torpedo = 1
+    sonar = 1
+    basic_depth_charges = 1
+    basic_cruiser_armor_scheme = 1
+    basic_heavy_armor_scheme = 1
+    mtg_transport = 1
+    improved_airplane_launcher = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+add_ideas = { AOEIW_world_american_breakaway civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 23400 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 1560 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1170 }
+oob = "AOEIW_world_TCO_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = CSA_earl_kemp_long
+recruit_character = CSA_benjamin_travis_laney
+recruit_character = CSA_robert_rice_reynolds
+recruit_character = CSA_absalom_willis_robertson
+recruit_character = CSA_harry_f_byrd
+recruit_character = CSA_florence_sillers_ogden
+recruit_character = CSA_vernettie_ivy
+recruit_character = CSA_kitty_obrien_joyner
+recruit_character = CSA_industrialist
+recruit_character = CSA_armaments_organizer
+recruit_character = CSA_simon_buckner_jr
+recruit_character = CSA_georges_vereecken
+recruit_character = CSA_raoul_overstraeten
+recruit_character = CSA_rene_lagrou
+recruit_character = CSA_victor_van_strydonck_de_burkel
+recruit_character = CSA_fritz_conrad
+recruit_character = CSA_fritz_lob
+recruit_character = CSA_georges_deffontaine
+recruit_character = CSA_victor_strydonck_burkel
+recruit_character = CSA_charles_bastin
+recruit_character = CSA_leon_degrelle
+recruit_character = CSA_jules_iserentant
+recruit_character = CSA_jules_pire
+recruit_character = CSA_oscar_michiels
+recruit_character = CSA_yvan_gerard
+recruit_character = CSA_jack_dudley_miller
+recruit_character = CSA_william_thomas
+recruit_character = CSA_louis_everett
+recruit_character = CSA_edward_ronald
+recruit_character = CSA_howard_brrett
+recruit_character = CSA_mathew_theodore_alberto
+recruit_character = CSA_alex_franklin

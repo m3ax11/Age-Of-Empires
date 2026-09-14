@@ -1,0 +1,248 @@
+capital = 37
+set_research_slots = 4
+set_convoys = 41
+set_stability = 0.7
+set_war_support = 0.65
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 38
+    fascism = 4
+    communism = 6
+    neutrality = 45
+    imperialism = 7
+}
+recruit_character = AOEIW_DEN_christian_ix
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_DEN_legacy_0
+    civilian_economy
+    export_focus
+    volunteer_only
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    steel_production_1 = 1
+    winter_clothes_gw = 1
+    jaegers = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    gw_artillery = 1
+    basic_train = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    early_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_battery = 1
+    basic_cruiser_armor_scheme = 1
+    basic_torpedo = 1
+    coastal_defense_ships = 1
+    mtg_transport = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+oob = "AOEIW_DEN_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_DEN_v7_advisor_1
+recruit_character = AOEIW_DEN_v7_advisor_2
+recruit_character = AOEIW_DEN_v7_advisor_3
+recruit_character = AOEIW_DEN_v7_advisor_4
+recruit_character = AOEIW_DEN_v7_advisor_5
+recruit_character = AOEIW_DEN_v7_advisor_6
+
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3960 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 324 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 360 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 180 }
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW DEN Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW DEN Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW DEN Medium Bomber"
+        type = medium_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = medium_bomb_bay
+            engine_type_slot = engine_1_2x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_DEN_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+    }
+    set_air_oob = "AOEIW_DEN_1936_air_legacy"
+}
+
+# AOEIW V8.9 STARTING NAVY DESIGNS
+
+create_equipment_variant = {
+    name = "AOEIW DEN Destroyer Class"
+    type = ship_hull_light_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = light_ship_engine_1
+        fixed_ship_torpedo_slot = ship_torpedo_1
+        mid_1_custom_slot = empty
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW DEN Cruiser Class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = cruiser_ship_engine_1
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_light_battery_1
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW DEN Battleship Class"
+    type = ship_hull_heavy_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_heavy_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        front_1_custom_slot = empty
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_heavy_battery_1
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW DEN Submarine Class"
+    type = ship_hull_submarine_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_1
+        fixed_ship_engine_slot = sub_ship_engine_1
+        rear_1_custom_slot = empty
+    }
+}
+set_naval_oob = "AOEIW_DEN_1936_naval"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = DEN_thorvald_stauning
+recruit_character = DEN_Erik_Scavenius
+recruit_character = DEN_knud_bach
+recruit_character = DEN_knud_bach_2
+recruit_character = DEN_knud_bach_3
+recruit_character = DEN_christian_x
+recruit_character = DEN_frits_clausen
+recruit_character = DEN_wilhelm_wain_prior
+recruit_character = DEN_ebbe_gortz
+recruit_character = DEN_carl_hammerich
+recruit_character = DEN_poul_sommer
+recruit_character = DEN_paul_sommer
+recruit_character = DEN_hans_lunding
+recruit_character = DEN_ejnar_warum
+recruit_character = DEN_viggo_kampman
+recruit_character = DEN_knud_kristensen
+recruit_character = DEN_Peter_Munch
+recruit_character = DEN_aksel_larsen_r56
+recruit_character = DEN_John_Christmas_Moller
+recruit_character = DEN_Wilhelm_Buhl
+recruit_character = DEN_Kristen_Bording
+recruit_character = DEN_Vilhelm_Fibiger
+recruit_character = DEN_Halfdan_Hendriksen
+recruit_character = DEN_Alfred_Jensen
+recruit_character = DEN_Mogens_Fog
+recruit_character = DEN_Villy_Fuglsang
+recruit_character = DEN_Aage_Andersen
+recruit_character = DEN_Borge_Bryld
+recruit_character = DEN_Christian_Frederik_Schalburg
+recruit_character = DEN_Hans_Rolsted
+recruit_character = DEN_Erik_Leschly
+recruit_character = DEN_Erik_With
+recruit_character = DEN_Frederik_Christian_Essemann
+recruit_character = DEN_Carl_Jacobsen
+recruit_character = DEN_Aage_Falking
+recruit_character = DEN_Hans_Oluf_Hansen
+recruit_character = DEN_Kristian_Knudtzon
+recruit_character = DEN_Aage_Helgesen_Vedel
+recruit_character = DEN_Hjalmar_Rechnitzer
+recruit_character = DEN_Kaj_Birksted
+recruit_character = DEN_jacob_ellehammer
+recruit_character = DEN_jens_christian_jensen
+recruit_character = DEN_christopher_trampe
+recruit_character = DEN_frederik_victor_knuth
+recruit_character = DEN_einar_marius_gyldenkrone
+recruit_character = DEN_max_arildskov
+recruit_character = DEN_oluf_bech
+recruit_character = DEN_axel_nielsen
+recruit_character = DEN_werner_best

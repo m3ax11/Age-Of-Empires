@@ -1,0 +1,806 @@
+capital = 378
+set_research_slots = 4
+set_convoys = 125
+set_stability = 0.7
+set_war_support = 0.65
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 45
+    fascism = 5
+    communism = 7
+    neutrality = 35
+    imperialism = 8
+}
+recruit_character = AOEIW_USA_theodore_roosevelt
+recruit_character = USA_dwight_d_eisenhower
+recruit_character = USA_douglas_macarthur
+recruit_character = USA_george_s_patton
+recruit_character = USA_omar_bradley
+recruit_character = USA_joseph_stilwell
+recruit_character = USA_ernest_king
+recruit_character = USA_chester_w_nimitz
+recruit_character = USA_william_halsey_jr
+
+# Additional starting history effects
+
+
+
+
+
+
+
+
+# AOEIW AI BOOTSTRAP BEGIN
+add_ideas = {
+    AOEIW_USA_legacy_0
+    civilian_economy
+    export_focus
+    volunteer_only
+}
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    steel_production_1 = 1
+    aluminum_production_1 = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_recon = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    tech_trucks = 1
+    motorised_infantry = 1
+    fuel_silos = 1
+    fuel_refining = 1
+    marines = 1
+    basic_train = 1
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+    early_ship_hull_light = 1
+    basic_ship_hull_light = 1
+    early_ship_hull_submarine = 1
+    basic_ship_hull_submarine = 1
+    early_ship_hull_cruiser = 1
+    basic_ship_hull_cruiser = 1
+    early_ship_hull_heavy = 1
+    early_ship_hull_carrier = 1
+    basic_ship_hull_carrier = 1
+    basic_battery = 1
+    basic_light_battery = 1
+    basic_medium_battery = 1
+    basic_heavy_battery = 1
+    basic_torpedo = 1
+    sonar = 1
+    basic_depth_charges = 1
+    basic_cruiser_armor_scheme = 1
+    basic_heavy_armor_scheme = 1
+    mtg_transport = 1
+    improved_airplane_launcher = 1
+    support_weapons = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+}
+oob = "AOEIW_USA_REUNIFICATION_1936"
+# AOEIW AI BOOTSTRAP END
+
+
+ # AOEIW V7 SYSTEMS
+recruit_character = AOEIW_USA_v7_advisor_1
+recruit_character = AOEIW_USA_v7_advisor_2
+recruit_character = AOEIW_USA_v7_advisor_3
+recruit_character = AOEIW_USA_v7_advisor_4
+recruit_character = AOEIW_USA_v7_advisor_5
+recruit_character = AOEIW_USA_v7_advisor_6
+
+if = {
+ limit = { has_dlc = "No Step Back" }
+ set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 engine_tech_1 = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "No Step Back" } }
+ set_technology = { gwtank = 1 basic_light_tank = 1 }
+}
+if = {
+ limit = { has_dlc = "By Blood Alone" }
+ set_technology = { iw_small_airframe = 1 basic_small_airframe = 1 engines_1 = 1 aa_lmg = 1 early_bombs = 1 aircraft_construction = 1 }
+}
+if = {
+ limit = { NOT = { has_dlc = "By Blood Alone" } }
+ set_technology = { early_fighter = 1 fighter1 = 1 early_bomber = 1 CAS1 = 1 }
+}
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9900 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 810 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 900 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 360 }
+
+# AOEIW V8.8 SPECIALISED FORCE ACCESS
+
+
+# AOEIW V8.8 MOBILE FORCE RESERVE
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 540 }
+
+
+# AOEIW V10 PHASE 13 HISTORICAL OOB SUPPORT
+
+
+create_equipment_variant = {
+		name = "A-12" #
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_USA_CAS1_medium"
+	}
+
+create_equipment_variant = {
+		name = "B-10" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_medium_plane_1_medium"
+	}
+
+create_equipment_variant = {
+		name = "B-6A" #also covers other Keystone bombers
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		obsolete = yes
+		icon = GFX_USA_early_bomber_medium
+	}
+
+create_equipment_variant = {
+		name = "Barracuda Class"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "BM-2" #
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Clemson Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Colorado Class"
+		type = battleship_1
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 4
+		}
+	}
+
+create_equipment_variant = {
+		name = "F4B" #also covers F2F
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_USA_cv_fighter1_medium"
+	}
+
+create_equipment_variant = {
+		name = "Farragut Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+
+create_equipment_variant = {
+		name = "Langley Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		optional_assets = {
+			{
+				icon = "GFX_USA_carrier_langley"
+				model = "USA_carrier_0_entity"
+			}
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Lexington Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Nevada Class"				
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		optional_assets = {
+			{
+				icon = "GFX_USA_battleship_nevada"
+				model = "USA_battleship_4_entity"
+			}
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "New Orleans Class"
+		type = ship_hull_cruiser_2
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+
+create_equipment_variant = {
+		name = "New York Class"					# represents Wyoming (Arkansas) and New York classes
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Oglala Class"				#cruiser minelayers
+		type = ship_hull_cruiser_1
+		name_group = USA_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+
+create_equipment_variant = {
+		name = "Omaha Class"
+		type = ship_hull_cruiser_2
+		name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "P-26A" # Boeing P-26 Peashooter
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+		}
+		obsolete = yes
+		icon = "GFX_USA_light_plane_2_medium"
+	}
+
+create_equipment_variant = {
+		name = "P-35A" #
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_USA_light_plane_4_medium"
+	}
+
+create_equipment_variant = {
+		name = "P2Y" #
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+		}
+		obsolete = yes
+		optional_assets = {
+			{
+				icon = "GFX_USA_naval_bomber1_medium"
+				model = "USA_medium_plane_1_entity"
+			}
+		}
+
+	}
+
+create_equipment_variant = {
+		name = "Pennsylvania Class"
+		type = battleship_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Pensacola Class"			# Pensacola and Northampton classes
+		type = ship_hull_cruiser_1
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
+		type = ship_hull_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+
+create_equipment_variant = {
+		name = "Portland Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+	}
+
+create_equipment_variant = {
+		name = "Ranger Class"
+		type = ship_hull_carrier_1
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {			# represents O/R class, S class
+		name = "S Class"
+		type = ship_hull_submarine_1
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "SBU Corsair" #
+		type = cv_small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = dive_brakes_small
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+		name = "Tennessee Class"				
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		optional_assets = {
+			{
+				icon = "GFX_USA_battleship_tennessee"
+				model = "USA_battleship_5_entity"
+			}
+		}
+		obsolete = yes
+	}
+
+create_equipment_variant = {
+			name = "Wichita Class"
+			type = ship_hull_cruiser_2
+			name_group = USA_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_medium_battery_2
+			}
+			optional_assets = {
+				{
+					icon = "GFX_USA_heavy_cruiser_wichita"
+					model = "USA_heavy_cruiser_4_entity"
+				}
+			}
+		}
+
+create_equipment_variant = {
+		name = "Yorktown Class"
+		type = carrier_2
+		upgrades = {
+			ship_deckspace_upgrade = 1
+			carrier_armor_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_reliability_upgrade = 1
+		}
+	}
+
+# AOEIW V8.9 STARTING AIR FORCE
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        early_bombs = 1
+        aircraft_construction = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+    }
+    create_equipment_variant = {
+        name = "AOEIW USA Interwar Fighter"
+        type = small_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = light_mg_2x
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW USA Close Support"
+        type = small_plane_cas_airframe_0
+        modules = {
+            fixed_main_weapon_slot = bomb_locks
+            engine_type_slot = engine_1_1x
+            special_type_slot_1 = empty
+        }
+    }
+    create_equipment_variant = {
+        name = "AOEIW USA Medium Bomber"
+        type = medium_plane_airframe_0
+        modules = {
+            fixed_main_weapon_slot = medium_bomb_bay
+            engine_type_slot = engine_1_2x
+            special_type_slot_1 = empty
+        }
+    }
+    set_air_oob = "AOEIW_USA_1936_air_bba"
+}
+if = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+    set_technology = {
+        early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+    }
+    set_air_oob = "AOEIW_USA_1936_air_legacy"
+}
+
+# AOEIW V8.9 STARTING NAVY DESIGNS
+
+create_equipment_variant = {
+    name = "AOEIW USA Destroyer Class"
+    type = ship_hull_light_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = light_ship_engine_1
+        fixed_ship_torpedo_slot = ship_torpedo_1
+        mid_1_custom_slot = empty
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW USA Cruiser Class"
+    type = ship_hull_cruiser_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_light_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = cruiser_ship_engine_1
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_light_battery_1
+        rear_1_custom_slot = empty
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW USA Battleship Class"
+    type = ship_hull_heavy_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = ship_heavy_battery_1
+        fixed_ship_anti_air_slot = empty
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+        fixed_ship_radar_slot = empty
+        fixed_ship_engine_slot = heavy_ship_engine_1
+        fixed_ship_secondaries_slot = ship_secondaries_1
+        fixed_ship_armor_slot = ship_armor_bb_1
+        front_1_custom_slot = empty
+        mid_1_custom_slot = empty
+        mid_2_custom_slot = ship_secondaries_1
+        rear_1_custom_slot = ship_heavy_battery_1
+    }
+}
+create_equipment_variant = {
+    name = "AOEIW USA Submarine Class"
+    type = ship_hull_submarine_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_1
+        fixed_ship_engine_slot = sub_ship_engine_1
+        rear_1_custom_slot = empty
+    }
+}
+set_naval_oob = "AOEIW_USA_1936_naval"
+
+# AOEIW22 POLITICAL CHARACTERS BEGIN
+recruit_character = AOEIW22_USA_douglas_macarthur
+# AOEIW22 POLITICAL CHARACTERS END
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = USA_earl_browder
+recruit_character = USA_william_dudley_pelley
+recruit_character = USA_franklin_delano_roosevelt
+recruit_character = USA_geoffrey_keyes
+recruit_character = USA_lucian_truscott
+recruit_character = USA_mark_clark
+recruit_character = USA_walter_krueger
+recruit_character = USA_lloyd_fredendall
+recruit_character = USA_leslie_mcnair
+recruit_character = USA_russell_hartle
+recruit_character = USA_leonard_gerow
+recruit_character = USA_edward_brooks
+recruit_character = USA_clarence_huebner
+recruit_character = USA_alexander_patch
+recruit_character = USA_william_simpson
+recruit_character = USA_j_lawton_collins
+recruit_character = USA_courtney_hodges
+recruit_character = USA_oscar_griswold
+recruit_character = USA_maurice_rose
+recruit_character = USA_alexander_vandegrift
+recruit_character = USA_frank_jack_fletcher
+recruit_character = USA_raymond_a_spruance
+recruit_character = USA_harold_rainsford_stark
+recruit_character = USA_arleigh_burke
+recruit_character = USA_charles_m_cooke_jr
+recruit_character = USA_robert_goddard
+recruit_character = USA_robert_oppenheimer
+recruit_character = USA_curtis_lemay
+recruit_character = USA_thomas_kinkaid
+recruit_character = USA_henry_arnold
+recruit_character = USA_dewitt_clinton_ramsey
+recruit_character = USA_harold_mcclelland
+recruit_character = USA_charles_lindbergh
+recruit_character = USA_george_kenney
+recruit_character = USA_john_cannon
+recruit_character = USA_george_marshall
+recruit_character = USA_carl_spaatz
+recruit_character = USA_marc_mitscher
+recruit_character = USA_jimmy_doolittle
+recruit_character = USA_claire_lee_chennault
+recruit_character = USA_john_winant
+recruit_character = USA_henry_morgenthau
+recruit_character = USA_william_donovan
+recruit_character = USA_whittaker_chambers
+recruit_character = USA_robert_taft
+recruit_character = USA_donald_nelson
+recruit_character = USA_joseph_mccarthy
+recruit_character = USA_cordell_hull
+recruit_character = USA_harold_ickes
+recruit_character = USA_william_regnery
+recruit_character = USA_joseph_patterson
+recruit_character = USA_henry_stimson
+recruit_character = USA_victor_perlo
+recruit_character = USA_charles_coughlin
+recruit_character = USA_frank_nitti
+recruit_character = USA_harry_white
+recruit_character = USA_j_edgar_hoover
+recruit_character = USA_holland_smith
+recruit_character = USA_charles_lockwood
+recruit_character = USA_jerauld_wright
+recruit_character = USA_willis_augustus_lee
+recruit_character = USA_thomas_c_kinkaid
+recruit_character = USA_marc_a_mitscher
+recruit_character = USA_jesse_b_oldendorf
+recruit_character = rt56_john_j_pershing_car
+recruit_character = USA_benjamin_o_davis
+recruit_character = USA_james_gavin
+recruit_character = USA_adna_romanza_chaffee_jr
+recruit_character = USA_john_lee
+recruit_character = USA_edwin_harding
+recruit_character = USA_malin_craig
+recruit_character = USA_jacob_devers
+recruit_character = USA_george_deatherage
+recruit_character = USA_george_van_horn_moseley
+recruit_character = USA_john_l_lewis
+recruit_character = USA_henry_a_wallace
+recruit_character = USA_mauritz_a_hallgren
+recruit_character = USA_robert_henry_best
+recruit_character = USA_edsel_ford
+recruit_character = USA_benjamin_franklin_fairless
+recruit_character = USA_victor_jeremy_jerome
+recruit_character = USA_lawford_howard_fry
+recruit_character = USA_native_american_council
+recruit_character = USA_alf_landon
+recruit_character = USA_wendell_willkie
+recruit_character = USA_harry_truman
+recruit_character = USA_bert_acosta
+recruit_character = USA_gerhard_kunze
+recruit_character = USA_generoso_pope
+recruit_character = USA_wallis_simpson
+recruit_character = USA_leslie_skinner
+recruit_character = USA_edward_curtis_wells
+recruit_character = USA_glenn_seaborg
+recruit_character = USA_william_francis_gibbs
+recruit_character = USA_andrew_mckee
+recruit_character = USA_john_walter_christie
+recruit_character = USA_vannevar_bush
+recruit_character = USA_gladeon_barnes

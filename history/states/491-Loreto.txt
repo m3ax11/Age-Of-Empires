@@ -1,0 +1,30 @@
+
+state={
+	id=491
+	name="STATE_491"
+	manpower = 176626
+	resources={
+		rubber=2 # was: 18
+	}
+	state_category = pastoral
+
+	history = {
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_to_array = { state_victory_points = 5162 }
+        victory_points = {
+			5162 3
+		}
+        owner = PRU
+        add_core_of = PRU
+    }
+
+	provinces={
+		5162 8213 10970 12869 13355
+	}
+
+	local_supplies=0.0 
+}

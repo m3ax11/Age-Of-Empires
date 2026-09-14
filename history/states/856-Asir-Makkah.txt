@@ -1,0 +1,33 @@
+state={
+	id=856
+	name="STATE_856"
+	provinces={
+		1923 2090 5037 8073 10786 12883 5006
+	}
+	history = {
+
+
+		add_to_array = { state_victory_points = 12883 }
+		add_to_array = { state_victory_points = 5037 }
+		buildings = {
+			infrastructure = 2
+			12883 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12883 3 
+		}
+		victory_points = {
+			5037 1
+		}
+        owner = OMA
+        add_core_of = OMA
+        add_core_of = TUR
+    }
+	manpower=1124386
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+
+}

@@ -1,0 +1,22 @@
+spriteTypes = {
+    # Curated RT56 Germany party assets, bundled so the AOE tree also works standalone.
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_cvu_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_CVU.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_zentrum_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_zentrum_victory.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_dstp_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_dstp_victory.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_dnvp_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_dnvp_victory.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_kpd_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_kpd_victory.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_spd_victory" texturefile = "gfx/interface/goals/ger/r56_goal_GER_spd_victory.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_cvu_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_cvu.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_dnvp_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_dnvp.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_dstp_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_dstp.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_kpd_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_kpd.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_spd_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_spd.dds" }
+    SpriteType = { name = "GFX_AOEIW34_decision_GER_party_zentrum_icon" texturefile = "gfx/interface/decisions/GER/r56_decision_GER_party_zentrum.dds" }
+    SpriteType = { name = "GFX_focus_bra_populism" texturefile = "gfx/interface/goals/bra/focus_bra_populism.dds" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_cvu_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_CVU.dds" effectFile = "gfx/FX/buttonstate.lua" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_zentrum_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_zentrum_victory.dds" effectFile = "gfx/FX/buttonstate.lua" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_dstp_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_dstp_victory.dds" effectFile = "gfx/FX/buttonstate.lua" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_dnvp_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_dnvp_victory.dds" effectFile = "gfx/FX/buttonstate.lua" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_kpd_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_kpd_victory.dds" effectFile = "gfx/FX/buttonstate.lua" }
+    SpriteType = { name = "GFX_AOEIW34_goal_ger_spd_victory_shine" texturefile = "gfx/interface/goals/ger/r56_goal_GER_spd_victory.dds" effectFile = "gfx/FX/buttonstate.lua" }
+}

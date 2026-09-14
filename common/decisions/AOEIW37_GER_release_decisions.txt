@@ -1,0 +1,151 @@
+AOEIW37_GER_continental_policy_category = {
+    AOEIW37_GER_standardise_reichspakt_procurement = {
+        icon = generic_military
+        cost = 50
+        days_re_enable = 180
+        visible = { is_in_faction = yes }
+        available = {
+            any_other_country = { is_in_faction_with = ROOT }
+        }
+        complete_effect = {
+            add_timed_idea = { idea = AOEIW37_GER_coordinated_procurement days = 180 }
+            every_other_country = {
+                limit = { is_in_faction_with = ROOT }
+                country_event = { id = AOEIW37_ger.24 hours = 6 }
+            }
+            add_command_power = 10
+        }
+        ai_will_do = {
+            base = 4
+            modifier = { factor = 2 has_war = yes }
+        }
+    }
+
+    AOEIW37_GER_convene_subject_charters = {
+        icon = generic_political_discourse
+        cost = 60
+        days_re_enable = 365
+        visible = { has_country_flag = AOEIW37_GER_imperial_order }
+        available = {
+            has_war = no
+            any_other_country = { is_subject_of = ROOT }
+        }
+        complete_effect = {
+            every_other_country = {
+                limit = { is_subject_of = ROOT }
+                country_event = { id = AOEIW37_ger.20 hours = 6 }
+            }
+            add_stability = 0.02
+        }
+        ai_will_do = { base = 5 }
+    }
+
+    AOEIW37_GER_issue_continental_development_bonds = {
+        icon = generic_construction
+        cost = 75
+        days_re_enable = 365
+        visible = { has_country_flag = AOEIW37_GER_democratic_order }
+        available = {
+            has_war = no
+            is_in_faction = yes
+            any_other_country = { is_in_faction_with = ROOT }
+        }
+        complete_effect = {
+            add_timed_idea = { idea = AOEIW37_GER_development_credit days = 240 }
+            every_other_country = {
+                limit = { is_in_faction_with = ROOT }
+                country_event = { id = AOEIW37_ger.25 hours = 6 }
+            }
+            add_political_power = 25
+        }
+        ai_will_do = { base = 5 }
+    }
+
+    AOEIW37_GER_exchange_workers_delegations = {
+        icon = generic_industry
+        cost = 60
+        days_re_enable = 240
+        visible = { has_country_flag = AOEIW37_GER_workers_order }
+        available = {
+            is_in_faction = yes
+            any_other_country = { is_in_faction_with = ROOT }
+        }
+        complete_effect = {
+            add_timed_idea = { idea = AOEIW37_GER_workers_exchange days = 180 }
+            every_other_country = {
+                limit = { is_in_faction_with = ROOT }
+                country_event = { id = AOEIW37_ger.26 hours = 6 }
+            }
+            add_political_power = 20
+        }
+        ai_will_do = { base = 5 }
+    }
+
+    AOEIW37_GER_impose_continental_levies = {
+        icon = generic_army_support
+        cost = 50
+        days_re_enable = 180
+        visible = { has_country_flag = AOEIW37_GER_nationalist_order }
+        available = {
+            has_war = yes
+            any_other_country = { is_subject_of = ROOT }
+        }
+        complete_effect = {
+            every_other_country = {
+                limit = { is_subject_of = ROOT }
+                country_event = { id = AOEIW37_ger.22 hours = 6 }
+            }
+            army_experience = 10
+            add_war_support = 0.02
+        }
+        ai_will_do = { base = 6 }
+    }
+
+    AOEIW37_GER_define_continental_diplomacy = {
+        icon = generic_break_treaty
+        cost = 75
+        fire_only_once = yes
+        visible = {
+            OR = {
+                has_country_flag = AOEIW37_GER_imperial_order
+                has_country_flag = AOEIW37_GER_democratic_order
+                has_country_flag = AOEIW37_GER_workers_order
+                has_country_flag = AOEIW37_GER_nationalist_order
+            }
+            NOT = { has_country_flag = AOEIW37_GER_continental_diplomacy_defined }
+        }
+        available = {
+            has_war = no
+            OR = {
+                check_variable = { AOEIW37_GER_order_acceptances > 0 }
+                check_variable = { AOEIW37_GER_order_resistance > 0 }
+            }
+        }
+        complete_effect = {
+            set_country_flag = AOEIW37_GER_continental_diplomacy_defined
+            country_event = { id = AOEIW37_ger.5 hours = 6 }
+        }
+        ai_will_do = { base = 8 }
+    }
+
+    AOEIW37_GER_close_wartime_directorates = {
+        icon = generic_consumer_goods
+        cost = 75
+        fire_only_once = yes
+        visible = {
+            has_country_flag = AOEIW37_GER_nationalist_order
+            has_country_flag = AOEIW_final_major_war_fought
+            NOT = { has_country_flag = AOEIW37_GER_wartime_directorates_closed }
+        }
+        available = { has_war = no }
+        complete_effect = {
+            set_country_flag = AOEIW37_GER_wartime_directorates_closed
+            remove_ideas = AOEIW37_GER_fortress_europe_spirit
+            add_ideas = AOEIW37_GER_peace_dividend
+            add_stability = 0.04
+            add_war_support = -0.05
+            country_event = { id = AOEIW37_ger.6 hours = 6 }
+        }
+        ai_will_do = { base = 10 }
+    }
+}

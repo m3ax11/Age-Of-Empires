@@ -1,0 +1,4693 @@
+focus_tree = {
+	# AOEIW36 wide modular layout
+    id = AOEIW9_USA_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10000
+            tag = USA
+        }
+    }
+    continuous_focus_position = { x = 50 y = 2990 }
+    reset_on_civilwar = no
+
+    # AOEIW USA VANILLA-STRUCTURE SHORTCUTS BEGIN
+    initial_show_position = { x = 16 y = 0 }
+    shortcut = {
+        name = AOEIW_USA_politics_shortcut
+        target = AOEIW9_USA_politics_p1_1
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_USA_workers_path_shortcut
+        target = AOEIW9_USA_politics_p3_1
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_USA_alternative_paths_shortcut
+        target = AOEIW22_USA_alternative_americas
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_USA_new_deal_shortcut
+        target = AOEIW9_USA_eco_root
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_USA_mobilisation_shortcut
+        target = AOEIW_IMM_USA_root
+        scroll_wheel_factor = 0.72
+    }
+    shortcut = {
+        name = AOEIW_USA_armed_forces_shortcut
+        target = AOEIW9_USA_mil_root
+        scroll_wheel_factor = 0.78
+    }
+    shortcut = {
+        name = AOEIW_USA_two_ocean_shortcut
+        target = AOEIW9_USA_dip_root
+        scroll_wheel_factor = 0.78
+    }
+    # AOEIW USA VANILLA-STRUCTURE SHORTCUTS END
+
+    focus = {
+        # AOEIW visual-layout base: 13,1
+        # AOEIW expansion-space base: 21,1
+        id = AOEIW9_USA_politics_p1_1
+        icon = GFX_focus_usa_guarantee_the_american_dream
+        x = 17
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,2
+        # AOEIW expansion-space base: 22,2
+        id = AOEIW9_USA_politics_p1_2
+        icon = GFX_focus_generic_democratic_europe
+        x = 17
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_0 add_idea = AOEIW_USA_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,3
+        # AOEIW expansion-space base: 20,3
+        id = AOEIW9_USA_politics_p1_3
+        icon = GFX_focus_generic_court
+        x = 15
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,3
+        # AOEIW expansion-space base: 22,4
+        id = AOEIW9_USA_politics_p1_4
+        icon = GFX_goal_generic_political_pressure
+        x = 18
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_1 add_idea = AOEIW_USA_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,4
+        # AOEIW expansion-space base: 22,5
+        id = AOEIW9_USA_politics_p1_5
+        icon = GFX_focus_generic_election
+        x = 17
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_3 }
+        prerequisite = { focus = AOEIW9_USA_politics_p1_4 }
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,5
+        # AOEIW expansion-space base: 20,6
+        id = AOEIW9_USA_politics_p1_6
+        icon = GFX_focus_generic_democratic_europe
+        x = 17
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.04 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,6
+        # AOEIW expansion-space base: 22,7
+        id = AOEIW9_USA_politics_p1_7
+        icon = GFX_focus_generic_social_democracy
+        x = 17
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_politics_p1_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.06 }
+            AOEIW9_install_democratic_government = yes
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_2 add_idea = AOEIW_USA_legacy_3 }
+            add_ideas = AOEIW9_USA_spirit_statecraft
+            add_political_power = 75
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,1
+        # AOEIW expansion-space base: 26,1
+        id = AOEIW9_USA_politics_p2_1
+        icon = GFX_focus_usa_reestablish_the_gold_standard
+        x = 21
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = -0.03
+            add_ideas = AOEIW14_USA_economic_emergency
+            set_country_flag = AOEIW14_USA_crisis_route
+            country_event = { id = aoeiw_phase14_usa.1 }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,2
+        # AOEIW expansion-space base: 25,2
+        id = AOEIW9_USA_politics_p2_2
+        icon = GFX_goal_generic_political_pressure
+        x = 21
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p2_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            swap_ideas = { remove_idea = AOEIW14_USA_economic_emergency add_idea = AOEIW14_USA_political_paralysis }
+            add_political_power = -35
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_0 add_idea = AOEIW_USA_legacy_1 }
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,3
+        # AOEIW expansion-space base: 27,3
+        id = AOEIW9_USA_politics_p2_3
+        icon = GFX_focus_generic_public_meetings
+        x = 20
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p2_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_stability = -0.03
+            country_event = { id = aoeiw_phase14_usa.2 }
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 16,4
+        # AOEIW expansion-space base: 27,4
+        id = AOEIW9_USA_politics_p2_4
+        icon = GFX_goal_generic_forceful_treaty
+        x = 20
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p2_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            swap_ideas = { remove_idea = AOEIW14_USA_political_paralysis add_idea = AOEIW14_USA_federal_confrontation }
+            add_stability = -0.04
+            add_war_support = 0.03
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_1 add_idea = AOEIW_USA_legacy_2 }
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,3
+        # AOEIW expansion-space base: 25,5
+        id = AOEIW9_USA_politics_p2_5
+        icon = GFX_goal_generic_position_armies
+        x = 22
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p2_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            army_experience = 10
+            air_experience = 5
+            set_country_flag = AOEIW14_USA_continuity_plans
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,5
+        # AOEIW expansion-space base: 27,6
+        id = AOEIW9_USA_politics_p2_6
+        icon = GFX_focus_generic_social_democracy
+        x = 21
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p2_4 }
+        prerequisite = { focus = AOEIW9_USA_politics_p2_5 }
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_political_power = -50
+            add_stability = -0.03
+            country_event = { id = aoeiw_phase14_usa.3 }
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,6
+        # AOEIW expansion-space base: 27,7
+        id = AOEIW9_USA_politics_p2_7
+        icon = GFX_focus_generic_improve_the_administration
+        x = 21
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_politics_p2_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            remove_ideas = AOEIW14_USA_federal_confrontation
+            add_ideas = AOEIW14_USA_temporary_military_administration
+            country_event = { id = aoeiw_phase14_usa.4 }
+        }
+        ai_will_do = { factor = 4 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,1
+        # AOEIW expansion-space base: 31,1
+        id = AOEIW9_USA_politics_p3_1
+        icon = GFX_focus_usa_union_representation_act
+        x = 25
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,2
+        # AOEIW expansion-space base: 32,2
+        id = AOEIW9_USA_politics_p3_2
+        icon = GFX_focus_generic_spur_communist_revolutions
+        x = 25
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p3_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 45
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_0 add_idea = AOEIW_USA_legacy_1 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 20,3
+        # AOEIW expansion-space base: 32,3
+        id = AOEIW9_USA_politics_p3_3
+        icon = GFX_goal_generic_propaganda
+        x = 24
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p3_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 22,3
+        # AOEIW expansion-space base: 30,4
+        id = AOEIW9_USA_politics_p3_4
+        icon = GFX_focus_generic_workers
+        x = 26
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p3_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_stability = 0.03
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_1 add_idea = AOEIW_USA_legacy_2 }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,4
+        # AOEIW expansion-space base: 32,5
+        id = AOEIW9_USA_politics_p3_5
+        icon = GFX_focus_generic_communist
+        x = 25
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p3_3 }
+        prerequisite = { focus = AOEIW9_USA_politics_p3_4 }
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,5
+        # AOEIW expansion-space base: 32,6
+        id = AOEIW9_USA_politics_p3_6
+        icon = GFX_focus_generic_spur_communist_revolutions
+        x = 25
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p3_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 21,6
+        # AOEIW expansion-space base: 30,7
+        id = AOEIW9_USA_politics_p3_7
+        icon = GFX_goal_generic_propaganda
+        x = 25
+        y = 5
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_politics_p3_6 }
+        available = {
+            communism > 0.40
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            AOEIW9_install_workers_government = yes
+            swap_ideas = { remove_idea = AOEIW_USA_legacy_2 add_idea = AOEIW_USA_legacy_3 }
+            add_ideas = AOEIW9_USA_spirit_mobilised_society
+            add_political_power = 75
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,8
+        # AOEIW expansion-space base: 26,9
+        id = AOEIW9_USA_politics_settlement
+        icon = GFX_focus_generic_election
+        x = 21
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_p1_7 focus = AOEIW9_USA_politics_p2_7 focus = AOEIW9_USA_politics_p3_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_political_settlement = yes
+            add_stability = 0.04
+            add_war_support = 0.03
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,0
+        # AOEIW expansion-space base: 7,0
+        id = AOEIW9_USA_eco_root
+        icon = GFX_focus_generic_industrial_experts
+        x = 8
+        y = 0
+        cost = 7
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,1
+        # AOEIW expansion-space base: 2,1
+        id = AOEIW9_USA_eco_civ_1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 1
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,2
+        # AOEIW expansion-space base: 2,2
+        id = AOEIW9_USA_eco_civ_2
+        icon = GFX_focus_generic_railroad
+        x = 1
+        y = 2
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_eco_civ_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_civ_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,3
+        # AOEIW expansion-space base: 3,3
+        id = AOEIW9_USA_eco_civ_3
+        icon = GFX_focus_generic_industry_investment
+        x = 1
+        y = 3
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_eco_civ_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 368 controls_state = 368 }
+                368 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,4
+        # AOEIW expansion-space base: 1,4
+        id = AOEIW9_USA_eco_civ_4
+        icon = GFX_focus_generic_electrification
+        x = 1
+        y = 4
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_eco_civ_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 358 controls_state = 358 }
+                358 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { owns_state = 358 controls_state = 358 }
+                358 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,5
+        # AOEIW expansion-space base: 3,5
+        id = AOEIW9_USA_eco_civ_5
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 1
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_civ_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,6
+        # AOEIW expansion-space base: 1,6
+        id = AOEIW9_USA_eco_civ_6
+        icon = GFX_focus_generic_welfare
+        x = 1
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            capital_scope = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = { name = AOEIW21_USA_industrial_modernisation bonus = 0.50 uses = 1 category = industry }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,7
+        # AOEIW expansion-space base: 3,7
+        id = AOEIW9_USA_eco_civ_7
+        icon = GFX_focus_generic_military_industry
+        x = 1
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_ideas = AOEIW9_USA_spirit_civilian_engine
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,1
+        # AOEIW expansion-space base: 12,1
+        id = AOEIW9_USA_eco_war_1
+        icon = GFX_focus_generic_commission
+        x = 13
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_war_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,2
+        # AOEIW expansion-space base: 12,2
+        id = AOEIW9_USA_eco_war_2
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 13
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 378 controls_state = 378 }
+                378 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,3
+        # AOEIW expansion-space base: 11,3
+        id = AOEIW9_USA_eco_war_3
+        icon = GFX_focus_generic_welfare
+        x = 13
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,4
+        # AOEIW expansion-space base: 13,4
+        id = AOEIW9_USA_eco_war_4
+        icon = GFX_focus_generic_military_industry
+        x = 13
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_war_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,5
+        # AOEIW expansion-space base: 11,5
+        id = AOEIW9_USA_eco_war_5
+        icon = GFX_focus_generic_modernize_industry
+        x = 13
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 393 controls_state = 393 }
+                393 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,6
+        # AOEIW expansion-space base: 13,6
+        id = AOEIW9_USA_eco_war_6
+        icon = GFX_focus_generic_military_industry
+        x = 13
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 368 controls_state = 368 }
+                368 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,7
+        # AOEIW expansion-space base: 11,7
+        id = AOEIW9_USA_eco_war_7
+        icon = GFX_focus_generic_currency_reforms
+        x = 13
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 358 controls_state = 358 }
+                358 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_war_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,8
+        # AOEIW expansion-space base: 13,8
+        id = AOEIW9_USA_eco_war_8
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 13
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_ideas = AOEIW9_USA_spirit_war_industry
+            army_experience = 15
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,1
+        # AOEIW expansion-space base: 7,1
+        id = AOEIW9_USA_eco_science_1
+        icon = GFX_focus_generic_university_1
+        x = 9
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,2
+        # AOEIW expansion-space base: 8,2
+        id = AOEIW9_USA_eco_science_2
+        icon = GFX_focus_generic_industrial_experts
+        x = 9
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,3
+        # AOEIW expansion-space base: 6,3
+        id = AOEIW9_USA_eco_science_3
+        icon = GFX_focus_generic_university_2
+        x = 9
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,4
+        # AOEIW expansion-space base: 7,4
+        id = AOEIW9_USA_eco_science_4
+        icon = GFX_focus_generic_industrial_experts
+        x = 9
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,5
+        # AOEIW expansion-space base: 8,5
+        id = AOEIW9_USA_eco_science_5
+        icon = GFX_focus_generic_university_3
+        x = 9
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,6
+        # AOEIW expansion-space base: 6,6
+        id = AOEIW9_USA_eco_science_6
+        icon = GFX_focus_generic_radio_communication
+        x = 9
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_research_slot = 1
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,7
+        # AOEIW expansion-space base: 7,7
+        id = AOEIW9_USA_eco_science_7
+        icon = GFX_focus_generic_university_1
+        x = 9
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_science_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_sci_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+            add_ideas = AOEIW9_USA_spirit_research_network
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,3
+        # AOEIW expansion-space base: 5,3
+        id = AOEIW9_USA_eco_infra_1
+        icon = GFX_focus_generic_electrification
+        x = 4
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 368 controls_state = 368 }
+                368 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,4
+        # AOEIW expansion-space base: 6,4
+        id = AOEIW9_USA_eco_infra_2
+        icon = GFX_focus_generic_currency_reforms
+        x = 3
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 358 controls_state = 358 }
+                358 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,6
+        # AOEIW expansion-space base: 5,5
+        id = AOEIW9_USA_eco_infra_3
+        icon = GFX_focus_generic_low_cost_housing
+        x = 7
+        y = 6
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_civ_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            if = {
+                limit = { owns_state = 378 controls_state = 378 }
+                378 = {
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,7
+        # AOEIW expansion-space base: 5,6
+        id = AOEIW9_USA_eco_infra_4
+        icon = GFX_focus_generic_railroad
+        x = 4
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_infra_2 }
+        prerequisite = { focus = AOEIW9_USA_eco_infra_3 }
+        prerequisite = { focus = AOEIW9_USA_eco_infra_1 }
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+            add_political_power = 30
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,9
+        # AOEIW expansion-space base: 7,10
+        id = AOEIW9_USA_eco_final
+        icon = GFX_focus_generic_industry_3
+        x = 8
+        y = 9
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_eco_civ_7 }
+        prerequisite = { focus = AOEIW9_USA_eco_war_8 }
+        prerequisite = { focus = AOEIW9_USA_eco_science_7 }
+        prerequisite = { focus = AOEIW9_USA_eco_infra_4 }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            AOEIW_consolidation_apply_industrial_programme = yes
+            add_political_power = 50
+            add_stability = 0.02
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,11
+        # AOEIW expansion-space base: 10,10
+        id = AOEIW9_USA_mil_root
+        icon = GFX_goal_generic_army_doctrines
+        x = 8
+        y = 11
+        cost = 7
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 15
+            add_command_power = 20
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,12
+        # AOEIW expansion-space base: 5,11
+        id = AOEIW9_USA_mil_army_1
+        icon = GFX_focus_generic_military_academy
+        x = 3
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { army_experience = 20 }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,13
+        # AOEIW expansion-space base: 5,12
+        id = AOEIW9_USA_mil_army_2
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 1
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_USA_infantry1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = infantry_weapons }  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,14
+        # AOEIW expansion-space base: 6,13
+        id = AOEIW9_USA_mil_army_3
+        icon = GFX_goal_generic_army_artillery2
+        x = 1
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = artillery } army_experience = 15 }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,15
+        # AOEIW expansion-space base: 4,14
+        id = AOEIW9_USA_mil_army_4
+        icon = GFX_goal_generic_small_arms
+        x = 1
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { swap_ideas = { remove_idea = AOEIW28_USA_infantry1_spirit add_idea = AOEIW28_USA_infantry2_spirit } }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_5 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,16
+        # AOEIW expansion-space base: 6,15
+        id = AOEIW9_USA_mil_army_5
+        icon = GFX_focus_generic_tank_assault
+        x = 6
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_USA_armour1_spirit add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = armor }  mark_focus_tree_layout_dirty = yes }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 2,17
+        # AOEIW expansion-space base: 6,16
+        id = AOEIW9_USA_mil_army_6
+        icon = GFX_goal_generic_army_tanks
+        x = 6
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = motorized_equipment } army_experience = 15 }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,15
+        # AOEIW expansion-space base: 4,17
+        id = AOEIW9_USA_mil_army_7
+        icon = GFX_focus_generic_army_tanks2
+        x = 6
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { swap_ideas = { remove_idea = AOEIW28_USA_armour1_spirit add_idea = AOEIW28_USA_armour2_spirit } }
+        ai_will_do = {
+            factor = 10
+        }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_mil_army_2 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,18
+        # AOEIW expansion-space base: 6,18
+        id = AOEIW9_USA_mil_army_8
+        icon = GFX_focus_generic_truck
+        x = 3
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_4 focus = AOEIW9_USA_mil_army_7 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = logistics_tech } }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,19
+        # AOEIW expansion-space base: 6,19
+        id = AOEIW9_USA_mil_army_9
+        icon = GFX_focus_generic_mechanized
+        x = 3
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW28_USA_field_workshops focus = AOEIW28_USA_signals }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { army_experience = 30 add_doctrine_cost_reduction = { cost_reduction = 0.50 uses = 1 category = land_doctrine } }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,20
+        # AOEIW expansion-space base: 4,20
+        id = AOEIW9_USA_mil_army_10
+        icon = GFX_goal_generic_army_doctrines
+        x = 3
+        y = 19
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_9 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = { add_ideas = AOEIW28_USA_support_spirit }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,12
+        # AOEIW expansion-space base: 10,11
+        id = AOEIW9_USA_mil_air_1
+        icon = GFX_goal_generic_build_airforce
+        x = 9
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,13
+        # AOEIW expansion-space base: 11,12
+        id = AOEIW9_USA_mil_air_2
+        icon = GFX_focus_generic_pilot_training
+        x = 9
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,14
+        # AOEIW expansion-space base: 10,13
+        id = AOEIW9_USA_mil_air_3
+        icon = GFX_focus_generic_cas_aircraft
+        x = 9
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_doc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,15
+        # AOEIW expansion-space base: 11,14
+        id = AOEIW9_USA_mil_air_4
+        icon = GFX_focus_generic_long_range_aircraft
+        x = 9
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,16
+        # AOEIW expansion-space base: 10,15
+        id = AOEIW9_USA_mil_air_5
+        icon = GFX_goal_generic_radar
+        x = 9
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,17
+        # AOEIW expansion-space base: 11,16
+        id = AOEIW9_USA_mil_air_6
+        icon = GFX_goal_generic_air_fighter
+        x = 9
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,18
+        # AOEIW expansion-space base: 10,17
+        id = AOEIW9_USA_mil_air_7
+        icon = GFX_focus_generic_aircraft_production
+        x = 9
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_air_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_AIR_BONUS }
+        completion_reward = {
+            air_experience = 22
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_air_doc_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,12
+        # AOEIW expansion-space base: 15,11
+        id = AOEIW9_USA_mil_sea_1
+        icon = GFX_goal_generic_build_navy
+        x = 13
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 10
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,13
+        # AOEIW expansion-space base: 15,12
+        id = AOEIW9_USA_mil_sea_2
+        icon = GFX_goal_generic_navy_battleship
+        x = 13
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 12
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_1_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            if = {
+                limit = { owns_state = 362 controls_state = 362 }
+                362 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = dockyard level = 1 instant_build = yes }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,14
+        # AOEIW expansion-space base: 16,13
+        id = AOEIW9_USA_mil_sea_3
+        icon = GFX_focus_generic_cruiser2
+        x = 13
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 14
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_navydoc_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,15
+        # AOEIW expansion-space base: 14,14
+        id = AOEIW9_USA_mil_sea_4
+        icon = GFX_focus_generic_escort_efficiency
+        x = 13
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 16
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_3_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,16
+        # AOEIW expansion-space base: 16,15
+        id = AOEIW9_USA_mil_sea_5
+        icon = GFX_focus_generic_air_carrier
+        x = 13
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 18
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,17
+        # AOEIW expansion-space base: 14,16
+        id = AOEIW9_USA_mil_sea_6
+        icon = GFX_focus_generic_navy_battleship2
+        x = 13
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 20
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_5_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 10,18
+        # AOEIW expansion-space base: 16,17
+        id = AOEIW9_USA_mil_sea_7
+        icon = GFX_focus_generic_naval_discipline
+        x = 13
+        y = 18
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_sea_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_NAVY_BONUS }
+        completion_reward = {
+            navy_experience = 22
+            add_tech_bonus = {
+                name = AOEIW9_USA_navy_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_equipment
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_navydoc_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,21
+        # AOEIW expansion-space base: 10,22
+        id = AOEIW9_USA_mil_final
+        icon = GFX_focus_generic_combined_arms
+        x = 9
+        y = 21
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_mil_army_10 }
+        prerequisite = { focus = AOEIW9_USA_mil_air_7 }
+        prerequisite = { focus = AOEIW9_USA_mil_sea_7 }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            AOEIW_consolidation_apply_military_reform = yes
+            army_experience = 25
+            air_experience = 15
+            navy_experience = 10
+            add_war_support = 0.04
+            
+            
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,10
+        # AOEIW expansion-space base: 33,10
+        id = AOEIW9_USA_dip_root
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 29
+        y = 10
+        cost = 7
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+            add_ideas = AOEIW11_strategic_foreign_office
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,11
+        # AOEIW expansion-space base: 30,11
+        id = AOEIW9_USA_dip_a_1
+        icon = GFX_goal_generic_alliance
+        x = 26
+        y = 11
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { ENG = { exists = yes } }
+                add_opinion_modifier = { target = ENG modifier = AOEIW11_strategic_pressure_opinion }
+                ENG = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,12
+        # AOEIW expansion-space base: 30,12
+        id = AOEIW9_USA_dip_a_2
+        icon = GFX_focus_generic_military_mission
+        x = 26
+        y = 12
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_a_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = ENG modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { ENG = { exists = yes } }
+                add_opinion_modifier = { target = ENG modifier = AOEIW11_strategic_pressure_opinion }
+                ENG = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+            add_ideas = AOEIW_STRUCT_USA_atlantic_mission
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
+        }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_a_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,13
+        # AOEIW expansion-space base: 31,13
+        id = AOEIW9_USA_dip_a_3
+        icon = GFX_focus_generic_concessions
+        x = 29
+        y = 12
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_a_1 }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_a_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_USA_atlantic_commercial_pressure
+            add_tech_bonus = {
+                name = AOEIW11_USA_dip_a_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.50 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,14
+        # AOEIW expansion-space base: 29,14
+        id = AOEIW9_USA_dip_a_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 27
+        y = 13
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_a_2 focus = AOEIW9_USA_dip_a_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_USA_dip_a_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,15
+        # AOEIW expansion-space base: 31,15
+        id = AOEIW9_USA_dip_a_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 27
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_a_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { ENG = { exists = yes } }
+                add_opinion_modifier = { target = ENG modifier = AOEIW11_formal_warning_opinion }
+                ENG = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,16
+        # AOEIW expansion-space base: 29,16
+        id = AOEIW9_USA_dip_a_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 27
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_a_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { ENG = { exists = yes } }
+                add_opinion_modifier = { target = ENG modifier = AOEIW11_ultimatum_opinion }
+                ENG = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,17
+        # AOEIW expansion-space base: 31,17
+        id = AOEIW9_USA_dip_a_7
+        icon = GFX_goal_generic_political_pressure
+        x = 27
+        y = 16
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_a_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { ENG = { exists = yes } NOT = { has_war_with = ENG } } create_wargoal = { type = annex_everything target = ENG } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,11
+        # AOEIW expansion-space base: 36,11
+        id = AOEIW9_USA_dip_b_1
+        icon = GFX_goal_generic_alliance
+        x = 33
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = {
+                limit = { JAP = { exists = yes } }
+                add_opinion_modifier = { target = JAP modifier = AOEIW11_strategic_pressure_opinion }
+                JAP = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,12
+        # AOEIW expansion-space base: 36,12
+        id = AOEIW9_USA_dip_b_2
+        icon = GFX_focus_generic_military_mission
+        x = 31
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_b_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_opinion_modifier = { target = JAP modifier = AOEIW_geopolitical_rivalry }
+            if = {
+                limit = { JAP = { exists = yes } }
+                add_opinion_modifier = { target = JAP modifier = AOEIW11_strategic_pressure_opinion }
+                JAP = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_strategic_pressure_opinion } }
+            }
+            add_war_support = 0.02
+            add_command_power = 5
+            add_ideas = AOEIW_STRUCT_USA_pacific_mission
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.75 has_war = yes }
+        }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_b_3 }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,13
+        # AOEIW expansion-space base: 35,13
+        id = AOEIW9_USA_dip_b_3
+        icon = GFX_focus_generic_concessions
+        x = 34
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_b_1 }
+        mutually_exclusive = { focus = AOEIW9_USA_dip_b_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_ideas = AOEIW11_economic_pressure
+            add_ideas = AOEIW_STRUCT_USA_pacific_commercial_pressure
+            add_tech_bonus = {
+                name = AOEIW11_USA_dip_b_3_industry
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 8
+            modifier = { factor = 1.50 has_war = no }
+            modifier = { factor = 1.25 has_stability > 0.60 }
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,14
+        # AOEIW expansion-space base: 37,14
+        id = AOEIW9_USA_dip_b_4
+        icon = GFX_goal_generic_army_doctrines
+        x = 33
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_b_2 focus = AOEIW9_USA_dip_b_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            army_experience = 15
+            add_command_power = 10
+            add_doctrine_cost_reduction = {
+                name = AOEIW11_USA_dip_b_4_doctrine
+                cost_reduction = 0.20
+                uses = 1
+                category = land_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,15
+        # AOEIW expansion-space base: 35,15
+        id = AOEIW9_USA_dip_b_5
+        icon = GFX_goal_generic_forceful_treaty
+        x = 33
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_b_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { JAP = { exists = yes } }
+                add_opinion_modifier = { target = JAP modifier = AOEIW11_formal_warning_opinion }
+                JAP = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_formal_warning_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,16
+        # AOEIW expansion-space base: 37,16
+        id = AOEIW9_USA_dip_b_6
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 33
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_dip_b_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.03
+            add_war_support = 0.02
+            army_experience = 10
+            if = {
+                limit = { JAP = { exists = yes } }
+                add_opinion_modifier = { target = JAP modifier = AOEIW11_ultimatum_opinion }
+                JAP = { add_opinion_modifier = { target = ROOT modifier = AOEIW11_ultimatum_opinion } }
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,17
+        # AOEIW expansion-space base: 35,17
+        id = AOEIW9_USA_dip_b_7
+        icon = GFX_goal_generic_political_pressure
+        x = 33
+        y = 16
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_b_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 25
+            if = { limit = { JAP = { exists = yes } NOT = { has_war_with = JAP } } create_wargoal = { type = annex_everything target = JAP } }
+            add_war_support = 0.02
+            army_experience = 10
+            add_ideas = AOEIW11_strategic_pressure
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 26,19
+        # AOEIW expansion-space base: 33,19
+        id = AOEIW9_USA_dip_final
+        icon = GFX_focus_HUN_government_of_national_unity
+        x = 29
+        y = 19
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_dip_a_7 }
+        prerequisite = { focus = AOEIW9_USA_dip_b_7 }
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            AOEIW_consolidation_apply_diplomatic_charter = yes
+            add_political_power = 75
+            add_war_support = 0.05
+            add_ideas = AOEIW11_grand_strategy
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,10
+        # AOEIW expansion-space base: 19,8
+        id = AOEIW9_USA_special_1
+        icon = GFX_focus_generic_military_industry
+        x = 11
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_eco_war_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_special_0_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,11
+        # AOEIW expansion-space base: 20,9
+        id = AOEIW9_USA_special_2
+        icon = GFX_goal_generic_political_pressure
+        x = 11
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,12
+        # AOEIW expansion-space base: 19,10
+        id = AOEIW9_USA_special_3
+        icon = GFX_goal_generic_propaganda
+        x = 11
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_special_2_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,13
+        # AOEIW expansion-space base: 20,11
+        id = AOEIW9_USA_special_4
+        icon = GFX_focus_generic_monarchy_2
+        x = 11
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_3 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,14
+        # AOEIW expansion-space base: 19,12
+        id = AOEIW9_USA_special_5
+        icon = GFX_focus_generic_military_industry
+        x = 11
+        y = 14
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_4 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+            add_tech_bonus = {
+                name = AOEIW9_USA_special_4_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,15
+        # AOEIW expansion-space base: 20,13
+        id = AOEIW9_USA_special_6
+        icon = GFX_goal_generic_political_pressure
+        x = 11
+        y = 15
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_5 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,16
+        # AOEIW expansion-space base: 19,14
+        id = AOEIW9_USA_special_7
+        icon = GFX_focus_generic_railroad
+        x = 11
+        y = 16
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_6 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            add_tech_bonus = {
+                name = AOEIW9_USA_special_6_bonus
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 9,17
+        # AOEIW expansion-space base: 20,15
+        id = AOEIW9_USA_special_8
+        icon = GFX_focus_generic_military_industry
+        x = 11
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_special_7 }
+        prerequisite = { focus = AOEIW9_USA_eco_final }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+        completion_reward = {
+            army_experience = 10
+            add_ideas = AOEIW_STRUCT_USA_arsenal_of_the_republic
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+
+# AOEIW V10 PHASE 14 — EISENHOWER EMERGENCY GOVERNMENT ROUTE
+    focus = {
+        # AOEIW visual-layout base: 17,10
+        # AOEIW expansion-space base: 25,10
+        id = AOEIW14_USA_general_staff_planning
+        icon = GFX_goal_generic_army_doctrines
+        x = 21
+        y = 10
+        cost = 7
+        prerequisite = { focus = AOEIW9_USA_politics_settlement }
+        prerequisite = { focus = AOEIW_IMM_USA_national_destiny }
+        
+        
+        
+        
+        
+        
+        
+        
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+        completion_reward = {
+            country_event = { id = aoeiw_phase14_usa.5 }
+            army_experience = 15
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 17,11
+        # AOEIW expansion-space base: 25,11
+        id = AOEIW14_USA_continental_logistics_board
+        icon = GFX_focus_generic_railroad
+        x = 21
+        y = 11
+        cost = 6
+        prerequisite = { focus = AOEIW14_USA_general_staff_planning }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+        completion_reward = { add_ideas = AOEIW14_USA_continental_logistics }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 17,12
+        # AOEIW expansion-space base: 25,12
+        id = AOEIW14_USA_military_industrial_coordination
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 21
+        y = 12
+        cost = 7
+        prerequisite = { focus = AOEIW14_USA_continental_logistics_board }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = { add_ideas = AOEIW14_USA_military_industrial_coordination_spirit }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 15,13
+        # AOEIW expansion-space base: 23,13
+        id = AOEIW14_USA_air_defence_grid
+        icon = GFX_focus_generic_air_defense
+        x = 19
+        y = 13
+        cost = 6
+        prerequisite = { focus = AOEIW14_USA_military_industrial_coordination }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR }
+        completion_reward = {
+            add_ideas = AOEIW14_USA_air_defence_grid_spirit
+            add_tech_bonus = { name = AOEIW14_USA_radar_bonus bonus = 0.50 uses = 2 category = radar_tech }
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 15,14
+        # AOEIW expansion-space base: 23,14
+        id = AOEIW14_USA_strategic_air_command
+        icon = GFX_focus_generic_pilot_training
+        x = 19
+        y = 14
+        cost = 7
+        prerequisite = { focus = AOEIW14_USA_air_defence_grid }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR }
+        completion_reward = {
+            air_experience = 15
+            add_tech_bonus = { name = AOEIW14_USA_strategic_bomber_bonus bonus = 0.50 uses = 2 category = cat_strategic_bomber }
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 19,13
+        # AOEIW expansion-space base: 27,13
+        id = AOEIW14_USA_national_laboratories
+        icon = GFX_focus_generic_university_1
+        x = 23
+        y = 13
+        cost = 6
+        prerequisite = { focus = AOEIW14_USA_military_industrial_coordination }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW14_USA_laboratory_bonus bonus = 0.50 uses = 2 category = electronics }
+            add_tech_bonus = { name = AOEIW14_USA_industry_bonus bonus = 0.50 uses = 1 category = industry }
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 18,14
+        # AOEIW expansion-space base: 26,14
+        id = AOEIW14_USA_rocketry_program
+        icon = GFX_focus_rocketry
+        x = 22
+        y = 14
+        cost = 7
+        prerequisite = { focus = AOEIW14_USA_national_laboratories }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = { add_tech_bonus = { name = AOEIW14_USA_rocketry_bonus bonus = 0.50 uses = 2 category = rocketry } }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 20,14
+        # AOEIW expansion-space base: 28,14
+        id = AOEIW14_USA_atomic_energy_commission
+        icon = GFX_focus_generic_military_mission
+        x = 24
+        y = 14
+        cost = 7
+        prerequisite = { focus = AOEIW14_USA_national_laboratories }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH }
+        completion_reward = { add_tech_bonus = { name = AOEIW14_USA_nuclear_bonus bonus = 0.50 uses = 2 category = nuclear } }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 20,15
+        # AOEIW expansion-space base: 28,15
+        id = AOEIW14_USA_national_reactor_program
+        icon = GFX_focus_wonderweapons
+        x = 24
+        y = 15
+        cost = 8
+        prerequisite = { focus = AOEIW14_USA_atomic_energy_commission }
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+        completion_reward = { add_ideas = AOEIW14_USA_nuclear_coordination }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+    focus = {
+        # AOEIW visual-layout base: 17,16
+        # AOEIW expansion-space base: 25,16
+        id = AOEIW14_USA_integrated_war_planning
+        icon = GFX_focus_generic_military_mission
+        x = 21
+        y = 16
+        cost = 8
+        prerequisite = { focus = AOEIW14_USA_strategic_air_command }
+        prerequisite = { focus = AOEIW14_USA_rocketry_program }
+        prerequisite = { focus = AOEIW14_USA_national_reactor_program }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        available = { has_country_flag = AOEIW14_USA_permanent_directorate }
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+        completion_reward = {
+            add_ideas = AOEIW14_USA_integrated_war_planning_spirit
+            add_political_power = 50
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+
+# AOEIW MAJOR IMMERSION BEGIN
+    focus = {
+        # AOEIW visual-layout base: 27,1
+        # AOEIW expansion-space base: 43,0
+        id = AOEIW_IMM_USA_root
+        icon = GFX_goal_generic_political_pressure
+        x = 21
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 35
+            add_stability = 0.01
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,2
+        # AOEIW expansion-space base: 39,1
+        id = AOEIW_IMM_USA_executive_1
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 17
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 45
+                        add_war_support = 0.02
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_convention_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,3
+        # AOEIW expansion-space base: 39,2
+        id = AOEIW_IMM_USA_executive_2
+        icon = GFX_focus_generic_improve_the_administration
+        x = 17
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_executive_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_command_power = 15
+            country_event = { id = aoeiw_major_immersion.13 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_convention_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,4
+        # AOEIW expansion-space base: 39,3
+        id = AOEIW_IMM_USA_executive_3
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 17
+        y = 12
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_USA_executive_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_USA_executive_spirit
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_convention_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,2
+        # AOEIW expansion-space base: 43,1
+        id = AOEIW_IMM_USA_arsenal_1
+        icon = GFX_focus_generic_military_industry
+        x = 20
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_political_power = 25
+                        add_stability = 0.02
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_convention_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,3
+        # AOEIW expansion-space base: 43,2
+        id = AOEIW_IMM_USA_arsenal_2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 20
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_arsenal_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+            country_event = { id = aoeiw_major_immersion.14 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_convention_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,4
+        # AOEIW expansion-space base: 43,3
+        id = AOEIW_IMM_USA_arsenal_3
+        icon = GFX_focus_generic_modernize_industry
+        x = 20
+        y = 12
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_USA_arsenal_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_USA_arsenal_spirit
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_convention_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,2
+        # AOEIW expansion-space base: 47,1
+        id = AOEIW_IMM_USA_convention_1
+        icon = GFX_focus_CHL_endorse_the_constitution
+        x = 25
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_root }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.03
+                        add_political_power = 30
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,3
+        # AOEIW expansion-space base: 47,2
+        id = AOEIW_IMM_USA_convention_2
+        icon = GFX_goal_generic_improve_relations
+        x = 25
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW_IMM_USA_convention_1 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            country_event = { id = aoeiw_major_immersion.15 days = 1 }
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,4
+        # AOEIW expansion-space base: 47,3
+        id = AOEIW_IMM_USA_convention_3
+        icon = GFX_goal_generic_trade
+        x = 25
+        y = 12
+        cost = 6
+        prerequisite = { focus = AOEIW_IMM_USA_convention_2 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW_IMM_USA_convention_spirit
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas has_completed_focus = AOEIW_IMM_USA_arsenal_1 has_completed_focus = AOEIW_IMM_USA_executive_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 27,9
+        # AOEIW expansion-space base: 43,5
+        id = AOEIW_IMM_USA_national_destiny
+        icon = GFX_goal_generic_national_unity
+        x = 21
+        y = 13
+        cost = 7
+        prerequisite = { focus = AOEIW_IMM_USA_executive_3 focus = AOEIW_IMM_USA_arsenal_3 focus = AOEIW_IMM_USA_convention_3 }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.04
+            add_war_support = 0.05
+        }
+        ai_will_do = { factor = 5 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_alternative_americas } } }
+    }
+
+# AOEIW MAJOR IMMERSION END
+
+
+    # AOEIW22 POLITICAL EXPANSION BEGIN
+
+    focus = {
+        # AOEIW visual-layout base: 15,22
+        id = AOEIW22_USA_alternative_americas
+        icon = GFX_focus_usa_voter_registration_act
+        x = 46
+        y = 0
+        cost = 5
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75 add_stability = -0.03
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,23
+        id = AOEIW22_USA_business_plot
+        icon = GFX_focus_usa_reestablish_the_gold_standard
+        x = 35
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_business_lobby_spirit set_country_flag = AOEIW22_USA_business_plot_flag
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: -1,24
+        id = AOEIW22_USA_industrial_liaison_committee
+        icon = GFX_focus_generic_military_industry
+        x = 34
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_business_plot }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75 add_ideas = AOEIW22_USA_contract_state_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,24
+        id = AOEIW22_USA_banks_behind_the_curtain
+        icon = GFX_focus_generic_currency_reforms
+        x = 36
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_business_plot }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = -0.05 add_ideas = AOEIW22_USA_finance_directorate_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,25
+        id = AOEIW22_USA_legion_networks
+        icon = GFX_focus_usa_recruit_the_free_corps
+        x = 35
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_industrial_liaison_committee }
+        prerequisite = { focus = AOEIW22_USA_banks_behind_the_curtain }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_war_support = 0.08 add_ideas = AOEIW22_USA_business_strikes_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,26
+        id = AOEIW22_USA_break_general_strike
+        icon = GFX_focus_generic_workers
+        x = 35
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_legion_networks }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_corporate_decisions_flag country_event = { id = AOEIW22_usa.1 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 0,27
+        id = AOEIW22_USA_corporate_republic
+        icon = GFX_focus_generic_industrialists
+        x = 35
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_break_general_strike }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = corporate_republicanism set_cosmetic_tag = AOEIW22_USA_CORPORATE add_ideas = AOEIW22_USA_corporate_republic_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,23
+        id = AOEIW22_USA_macarthur_republic
+        icon = GFX_focus_generic_military_dictatorship
+        x = 40
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            country_event = { id = AOEIW22_usa.2 hours = 6 }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,24
+        id = AOEIW22_USA_emergency_in_washington
+        icon = GFX_focus_USA_uncle_sam
+        x = 40
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_macarthur_republic }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_protectorate_spirit add_command_power = 40
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,25
+        id = AOEIW22_USA_guardian_of_republic
+        icon = GFX_focus_usa_build_the_pentagon
+        x = 40
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_emergency_in_washington }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            army_experience = 25 add_war_support = 0.05
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,26
+        id = AOEIW22_USA_restore_ballot_box
+        icon = GFX_focus_usa_voter_registration_act
+        x = 39
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_guardian_of_republic }
+        mutually_exclusive = { focus = AOEIW22_USA_permanent_general_staff focus = AOEIW22_USA_american_caesar }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = 0.12 add_ideas = AOEIW22_USA_restored_republic_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_american_caesar has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_permanent_general_staff has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 6,26
+        id = AOEIW22_USA_permanent_general_staff
+        icon = GFX_goal_generic_army_doctrines
+        x = 40
+        y = 4
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_guardian_of_republic }
+        mutually_exclusive = { focus = AOEIW22_USA_restore_ballot_box focus = AOEIW22_USA_american_caesar }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = military_cesarism add_ideas = AOEIW22_USA_military_government_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_american_caesar has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_restore_ballot_box has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 8,26
+        id = AOEIW22_USA_american_caesar
+        icon = GFX_focus_PHI_appoint_macarthur
+        x = 41
+        y = 4
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_guardian_of_republic }
+        mutually_exclusive = { focus = AOEIW22_USA_restore_ballot_box focus = AOEIW22_USA_permanent_general_staff }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = military_cesarism set_cosmetic_tag = AOEIW22_USA_CAESAR add_ideas = AOEIW22_USA_american_caesar_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_permanent_general_staff has_completed_focus = AOEIW22_USA_restore_ballot_box has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,23
+        id = AOEIW22_USA_share_our_wealth
+        icon = GFX_focus_usa_union_representation_act
+        x = 44
+        y = 1
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_share_wealth_spirit add_political_power = 100
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,24
+        id = AOEIW22_USA_cap_fortunes
+        icon = GFX_focus_generic_crush_capitalism
+        x = 43
+        y = 2
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_share_our_wealth }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.05 add_ideas = AOEIW22_USA_redistribution_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,24
+        id = AOEIW22_USA_public_works_army
+        icon = GFX_goal_generic_construct_civilian
+        x = 45
+        y = 2
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_share_our_wealth }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } } add_political_power = 50
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 12,25
+        id = AOEIW22_USA_long_machine
+        icon = GFX_goal_generic_political_pressure
+        x = 44
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_cap_fortunes }
+        prerequisite = { focus = AOEIW22_USA_public_works_army }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_populist_machine_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 11,26
+        id = AOEIW22_USA_democratic_populism
+        icon = GFX_focus_usa_guarantee_the_american_dream
+        x = 43
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_long_machine }
+        mutually_exclusive = { focus = AOEIW22_USA_every_man_a_subject }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes } add_stability = 0.10 add_ideas = AOEIW22_USA_social_republic_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_every_man_a_subject has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,26
+        id = AOEIW22_USA_every_man_a_subject
+        icon = GFX_focus_bra_populism
+        x = 45
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_long_machine }
+        mutually_exclusive = { focus = AOEIW22_USA_democratic_populism }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = autocratic_imperialism_type add_ideas = AOEIW22_USA_personal_rule_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_democratic_populism has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,23
+        id = AOEIW22_USA_technocracy
+        icon = GFX_goal_generic_scientific_exchange
+        x = 48
+        y = 1
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_research_slot = 1 set_country_flag = AOEIW22_USA_technocracy_flag
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 17,24
+        id = AOEIW22_USA_continental_energy_survey
+        icon = GFX_focus_CZE_military_research_institute
+        x = 47
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_technocracy }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW22_USA_tech_bonus bonus = 0.75 uses = 2 category = electronics }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 19,24
+        id = AOEIW22_USA_abolish_price_system
+        icon = GFX_focus_generic_modernize_industry
+        x = 50
+        y = 2
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_technocracy }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_energy_accounting_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,25
+        id = AOEIW22_USA_functional_directorates
+        icon = GFX_focus_generic_commission
+        x = 48
+        y = 3
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_energy_survey }
+        prerequisite = { focus = AOEIW22_USA_abolish_price_system }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 100 add_ideas = AOEIW22_USA_directorates_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,26
+        id = AOEIW22_USA_scientific_state
+        icon = GFX_focus_generic_university_2
+        x = 48
+        y = 4
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_functional_directorates }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_research_slot = 1 add_ideas = AOEIW22_USA_scientific_state_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 18,27
+        id = AOEIW22_USA_technate_of_america
+        icon = GFX_focus_generic_university_1
+        x = 48
+        y = 5
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_scientific_state }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = technocratic_regime set_cosmetic_tag = AOEIW22_USA_TECHNATE add_ideas = AOEIW22_USA_technate_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,23
+        id = AOEIW22_USA_return_to_articles
+        icon = GFX_focus_usa_honor_the_confederacy
+        x = 53
+        y = 1
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_articles_flag add_ideas = AOEIW22_USA_confederal_transition_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,24
+        id = AOEIW22_USA_sovereign_state_convention
+        icon = GFX_focus_generic_democratic_europe
+        x = 53
+        y = 2
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_return_to_articles }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 100 add_stability = -0.03
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,25
+        id = AOEIW22_USA_repeal_federal_supremacy
+        icon = GFX_focus_CHL_endorse_the_constitution
+        x = 52
+        y = 3
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_sovereign_state_convention }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_state_sovereignty_spirit set_country_flag = AOEIW22_USA_state_economies_flag
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,25
+        id = AOEIW22_USA_state_economies
+        icon = GFX_focus_AST_new_south_wales_government_railways
+        x = 54
+        y = 3
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_sovereign_state_convention }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_state_economies_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,26
+        id = AOEIW22_USA_militia_compacts
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 53
+        y = 4
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_repeal_federal_supremacy }
+        prerequisite = { focus = AOEIW22_USA_state_economies }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_regional_militias_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,27
+        id = AOEIW22_USA_confederation_restored
+        icon = GFX_focus_CHL_union_of_hispanic_republics
+        x = 53
+        y = 5
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_militia_compacts }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes } set_cosmetic_tag = AOEIW22_USA_CONFEDERATION add_stability = 0.08
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,23
+        id = AOEIW22_USA_imperial_presidency
+        icon = GFX_goal_generic_political_pressure
+        x = 57
+        y = 1
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_alternative_americas }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_imperial_presidency_flag add_political_power = 150
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,24
+        id = AOEIW22_USA_permanent_emergency_act
+        icon = GFX_focus_generic_military_dictatorship
+        x = 57
+        y = 2
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_imperial_presidency }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_emergency_presidency_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 29,25
+        id = AOEIW22_USA_pack_supreme_court
+        icon = GFX_focus_generic_court
+        x = 56
+        y = 3
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_permanent_emergency_act }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 100 add_stability = -0.04
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,25
+        id = AOEIW22_USA_executive_budget
+        icon = GFX_focus_generic_commission
+        x = 58
+        y = 3
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_permanent_emergency_act }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_executive_budget_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,26
+        id = AOEIW22_USA_succession_statute
+        icon = GFX_focus_AFG_shadows_of_the_king
+        x = 57
+        y = 4
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_pack_supreme_court }
+        prerequisite = { focus = AOEIW22_USA_executive_budget }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = -0.06 add_war_support = 0.08
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,27
+        id = AOEIW22_USA_crowned_republic
+        icon = GFX_focus_CHL_an_imperial_capital
+        x = 57
+        y = 5
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_succession_statute }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } set_country_leader_ideology = autocratic_imperialism_type set_cosmetic_tag = AOEIW22_USA_IMPERIAL_PRESIDENCY add_ideas = AOEIW22_USA_imperial_presidency_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_return_to_articles has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        id = AOEIW27_USA_domestic_settlement
+        icon = GFX_focus_generic_court
+        x = 46
+        y = 6
+        cost = 5
+        prerequisite = {
+            focus = AOEIW22_USA_corporate_republic
+            focus = AOEIW22_USA_restore_ballot_box
+            focus = AOEIW22_USA_permanent_general_staff
+            focus = AOEIW22_USA_american_caesar
+            focus = AOEIW22_USA_democratic_populism
+            focus = AOEIW22_USA_every_man_a_subject
+            focus = AOEIW22_USA_technate_of_america
+            focus = AOEIW22_USA_confederation_restored
+            focus = AOEIW22_USA_crowned_republic
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.03
+            set_country_flag = AOEIW27_USA_domestic_order_settled
+        }
+        ai_will_do = { factor = 8 }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,30
+        id = AOEIW22_USA_manifest_destiny
+        icon = GFX_focus_USA_uncle_sam
+        x = 35
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW27_USA_domestic_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_war_support = 0.10 add_ideas = AOEIW22_USA_manifest_destiny_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,31
+        id = AOEIW22_USA_continental_claim
+        icon = GFX_focus_generic_american_investments
+        x = 35
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_manifest_destiny }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 100
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 1,32
+        id = AOEIW22_USA_northern_destiny
+        icon = GFX_focus_attack_canada
+        x = 32
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_claim }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            if = { limit = { CAN = { exists = yes } } create_wargoal = { type = puppet_wargoal_focus target = CAN } }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_caribbean_destiny has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_mexican_destiny has_completed_focus = AOEIW22_USA_pacific_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 3,32
+        id = AOEIW22_USA_mexican_destiny
+        icon = GFX_focus_attack_mexico
+        x = 34
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_claim }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            if = { limit = { MEX = { exists = yes } } create_wargoal = { type = puppet_wargoal_focus target = MEX } }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_caribbean_destiny has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_northern_destiny has_completed_focus = AOEIW22_USA_pacific_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 5,32
+        id = AOEIW22_USA_caribbean_destiny
+        icon = GFX_focus_generic_south_america
+        x = 36
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_claim }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            if = { limit = { CUB = { exists = yes } } create_wargoal = { type = puppet_wargoal_focus target = CUB } }
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_mexican_destiny has_completed_focus = AOEIW22_USA_northern_destiny has_completed_focus = AOEIW22_USA_pacific_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 7,32
+        id = AOEIW22_USA_pacific_destiny
+        icon = GFX_focus_usa_focus_on_asia
+        x = 39
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_claim }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_pacific_mandate_spirit navy_experience = 25
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_caribbean_destiny has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_mexican_destiny has_completed_focus = AOEIW22_USA_northern_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 4,34
+        id = AOEIW22_USA_continental_hegemony
+        icon = GFX_focus_ARG_the_american_push
+        x = 35
+        y = 10
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_northern_destiny focus = AOEIW22_USA_mexican_destiny focus = AOEIW22_USA_caribbean_destiny focus = AOEIW22_USA_pacific_destiny }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = autocratic_imperialism elections_allowed = no } add_ideas = AOEIW22_USA_continental_hegemony_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,30
+        id = AOEIW22_USA_pan_american_union
+        icon = GFX_focus_ARG_the_buenos_aires_conference
+        x = 44
+        y = 7
+        cost = 10
+        prerequisite = { focus = AOEIW27_USA_domestic_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_pan_american_flag add_stability = 0.04
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,31
+        id = AOEIW22_USA_good_neighbor_charter
+        icon = GFX_focus_generic_social_democracy
+        x = 44
+        y = 8
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_pan_american_union }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_political_power = 75 add_ideas = AOEIW22_USA_good_neighbor_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 13,32
+        id = AOEIW22_USA_common_market
+        icon = GFX_focus_generic_monetary_union
+        x = 43
+        y = 9
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_good_neighbor_charter }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_common_market_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 15,32
+        id = AOEIW22_USA_defense_council
+        icon = GFX_focus_HUN_government_of_national_unity
+        x = 45
+        y = 9
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_good_neighbor_charter }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_defense_council_spirit add_command_power = 30
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,33
+        id = AOEIW22_USA_continental_railway
+        icon = GFX_focus_generic_railroad
+        x = 44
+        y = 10
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_common_market }
+        prerequisite = { focus = AOEIW22_USA_defense_council }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_infrastructure_bank_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 14,34
+        id = AOEIW22_USA_federation_americas
+        icon = GFX_focus_CHL_union_of_hispanic_republics
+        x = 44
+        y = 11
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_continental_railway }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = democratic elections_allowed = yes } set_cosmetic_tag = AOEIW22_USA_AMERICAN_FEDERATION create_faction = AOEIW22_PAN_AMERICAN_UNION add_ideas = AOEIW22_USA_federation_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_fortress_america has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,30
+        id = AOEIW22_USA_fortress_america
+        icon = GFX_focus_generic_home_defense
+        x = 53
+        y = 7
+        cost = 10
+        prerequisite = { focus = AOEIW27_USA_domestic_settlement }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_fortress_flag add_ideas = AOEIW22_USA_isolation_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,31
+        id = AOEIW22_USA_absolute_neutrality
+        icon = GFX_goal_generic_neutrality_focus
+        x = 53
+        y = 8
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_fortress_america }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.08 add_ideas = AOEIW22_USA_neutrality_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 23,32
+        id = AOEIW22_USA_continental_redoubt
+        icon = GFX_goal_generic_fortify_city
+        x = 52
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_absolute_neutrality }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_continental_redoubt_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 25,32
+        id = AOEIW22_USA_integrated_air_defense
+        icon = GFX_focus_generic_air_defense
+        x = 54
+        y = 9
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_absolute_neutrality }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_tech_bonus = { name = AOEIW22_USA_radar bonus = 0.75 uses = 2 category = electronics } add_ideas = AOEIW22_USA_air_shield_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,33
+        id = AOEIW22_USA_two_ocean_wall
+        icon = GFX_focus_USA_fleet_alp
+        x = 53
+        y = 10
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_continental_redoubt }
+        prerequisite = { focus = AOEIW22_USA_integrated_air_defense }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            navy_experience = 35 add_ideas = AOEIW22_USA_two_ocean_wall_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 24,34
+        id = AOEIW22_USA_sleeping_giant
+        icon = GFX_focus_usa_build_the_pentagon
+        x = 53
+        y = 11
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_two_ocean_wall }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_sleeping_giant_spirit add_war_support = 0.10
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_manifest_destiny has_completed_focus = AOEIW22_USA_pan_american_union has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,30
+        id = AOEIW22_USA_pacific_republic
+        icon = GFX_focus_generic_western_pacific
+        x = 61
+        y = 7
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_confederation_restored }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_pacific_secession_flag
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,31
+        id = AOEIW22_USA_governors_convention
+        icon = GFX_focus_HUN_government_of_national_unity
+        x = 61
+        y = 8
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_pacific_republic }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = -0.05 add_ideas = AOEIW22_USA_pacific_organisers_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,32
+        id = AOEIW22_USA_break_with_washington
+        icon = GFX_focus_generic_democratic_europe
+        x = 61
+        y = 9
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_governors_convention }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            country_event = { id = AOEIW22_usa.3 hours = 6 }
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 31,33
+        id = AOEIW22_USA_orient_across_pacific
+        icon = GFX_focus_usa_focus_on_asia
+        x = 61
+        y = 10
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_break_with_washington }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_pacific_republic_spirit set_cosmetic_tag = AOEIW22_USA_PACIFIC_REPUBLIC
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 30,34
+        id = AOEIW22_USA_reunify_union
+        icon = GFX_goal_generic_national_unity
+        x = 59
+        y = 11
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_orient_across_pacific }
+        mutually_exclusive = { focus = AOEIW22_USA_pacific_power }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.10
+            set_country_flag = AOEIW22_USA_reunification_claim
+            remove_ideas = AOEIW22_USA_pacific_republic_spirit
+            drop_cosmetic_tag = yes
+            add_ideas = AOEIW22_USA_federal_reconciliation_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.75 has_stability < 0.60 } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_pacific_power has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 32,34
+        id = AOEIW22_USA_pacific_power
+        icon = GFX_focus_generic_western_pacific
+        x = 62
+        y = 11
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_orient_across_pacific }
+        mutually_exclusive = { focus = AOEIW22_USA_reunify_union }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_oceanic_power_spirit navy_experience = 40
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.75 has_war = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,30
+        id = AOEIW22_USA_new_england_restoration
+        icon = GFX_focus_AFG_revive_the_1923_constitution
+        x = 67
+        y = 7
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_confederation_restored }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_new_england_flag
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,31
+        id = AOEIW22_USA_mayflower_compact
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 67
+        y = 8
+        cost = 5
+        prerequisite = { focus = AOEIW22_USA_new_england_restoration }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_stability = 0.05 add_political_power = 75
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,32
+        id = AOEIW22_USA_boston_congress
+        icon = GFX_focus_AFG_kabul_conference
+        x = 67
+        y = 9
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_mayflower_compact }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_new_england_compact_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 37,33
+        id = AOEIW22_USA_aristocratic_republic
+        icon = GFX_focus_ICE_republicanism
+        x = 66
+        y = 10
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_boston_congress }
+        mutually_exclusive = { focus = AOEIW22_USA_anglo_monarchy }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = constitutional_monarchism elections_allowed = yes } set_country_leader_ideology = federal_monarchism set_cosmetic_tag = AOEIW22_USA_NEW_ENGLAND add_ideas = AOEIW22_USA_aristocratic_republic_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.50 ENG = { exists = no } } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_anglo_monarchy has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 39,33
+        id = AOEIW22_USA_anglo_monarchy
+        icon = GFX_focus_eng_the_kings_party
+        x = 68
+        y = 10
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_boston_congress }
+        mutually_exclusive = { focus = AOEIW22_USA_aristocratic_republic }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = constitutional_monarchism elections_allowed = yes } set_country_leader_ideology = constitutional_monarchism_type set_cosmetic_tag = AOEIW22_USA_NEW_ENGLAND_MONARCHY add_ideas = AOEIW22_USA_anglo_monarchy_spirit
+         mark_focus_tree_layout_dirty = yes }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } modifier = { factor = 1.50 ENG = { exists = yes } } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_aristocratic_republic has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 38,34
+        id = AOEIW22_USA_original_colonies
+        icon = GFX_focus_generic_monarchy_1
+        x = 67
+        y = 11
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_aristocratic_republic focus = AOEIW22_USA_anglo_monarchy }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_colonial_legacy_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_pacific_republic has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,36
+        id = AOEIW22_USA_nortonian_empire
+        icon = GFX_focus_CHL_an_imperial_capital
+        x = 62
+        y = 12
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_pacific_power }
+        
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_norton_flag add_political_power = 75
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,37
+        id = AOEIW22_USA_norton_societies
+        icon = GFX_focus_generic_monarchist_workers
+        x = 62
+        y = 13
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_nortonian_empire }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_norton_societies_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,38
+        id = AOEIW22_USA_imperial_decree_one
+        icon = GFX_focus_generic_court
+        x = 62
+        y = 14
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_norton_societies }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_country_flag = AOEIW22_USA_norton_decisions_flag add_stability = -0.02
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,39
+        id = AOEIW22_USA_court_san_francisco
+        icon = GFX_goal_generic_political_pressure
+        x = 62
+        y = 15
+        cost = 10
+        prerequisite = { focus = AOEIW22_USA_imperial_decree_one }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            add_ideas = AOEIW22_USA_norton_court_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    focus = {
+        # AOEIW visual-layout base: 34,40
+        id = AOEIW22_USA_empire_united_states
+        icon = GFX_focus_USA_uncle_sam
+        x = 62
+        y = 16
+        cost = 7
+        prerequisite = { focus = AOEIW22_USA_court_san_francisco }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        completion_reward = {
+            set_politics = { ruling_party = constitutional_monarchism elections_allowed = yes } set_country_leader_ideology = constitutional_monarchism_type set_cosmetic_tag = AOEIW22_USA_NORTON add_ideas = AOEIW22_USA_norton_empire_spirit
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 0 is_historical_focus_on = yes } }
+        allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_USA_business_plot has_completed_focus = AOEIW22_USA_imperial_presidency has_completed_focus = AOEIW22_USA_macarthur_republic has_completed_focus = AOEIW22_USA_new_england_restoration has_completed_focus = AOEIW22_USA_reunify_union has_completed_focus = AOEIW22_USA_share_our_wealth has_completed_focus = AOEIW22_USA_technocracy has_completed_focus = AOEIW9_USA_politics_p1_1 has_completed_focus = AOEIW9_USA_politics_p2_1 has_completed_focus = AOEIW9_USA_politics_p3_1 } } }
+    }
+
+    # AOEIW22 POLITICAL EXPANSION END
+
+focus = {
+        id = AOEIW28_USA_field_workshops
+        icon = GFX_focus_generic_election
+        x = 1
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_8 }
+        available_if_capitulated = no
+        completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
+        mutually_exclusive = { focus = AOEIW28_USA_signals }
+        ai_will_do = { factor = 5 modifier = { factor = 1.50 has_war = no } }
+    }
+focus = {
+        id = AOEIW28_USA_signals
+        icon = GFX_focus_generic_radio_communication
+        x = 6
+        y = 17
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_mil_army_8 }
+        available_if_capitulated = no
+        completion_reward = { army_experience = 20 add_command_power = 20 }
+        mutually_exclusive = { focus = AOEIW28_USA_field_workshops }
+        ai_will_do = { factor = 5 modifier = { factor = 1.50 has_war = yes } }
+    }
+
+    focus = {
+        id = AOEIW35_USA_institutional_settlement
+        icon = GFX_focus_usa_build_the_pentagon
+        x = 38
+        y = 11
+        cost = 5
+        prerequisite = { focus = AOEIW9_USA_politics_settlement focus = AOEIW27_USA_domestic_settlement }
+        dynamic = yes
+        allow_branch = { OR = { has_completed_focus = AOEIW9_USA_politics_settlement has_completed_focus = AOEIW27_USA_domestic_settlement } }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { if = { limit = { has_any_power_balance = no } set_power_balance = { id = AOEIW35_USA_governance_balance left_side = AOEIW35_USA_left_side right_side = AOEIW35_USA_right_side set_value = 0 } } country_event = { id = AOEIW35_usa.1 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_USA_institutional_left
+        icon = GFX_focus_ARG_defense_and_democracy
+        x = 36
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW35_USA_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_USA_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_USA_governance_balance value = -0.15 } add_stability = 0.02 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_USA_institutional_right
+        icon = GFX_focus_generic_the_giant_wakes
+        x = 40
+        y = 12
+        cost = 5
+        prerequisite = { focus = AOEIW35_USA_institutional_settlement }
+        mutually_exclusive = { focus = AOEIW35_USA_institutional_left }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_power_balance_value = { id = AOEIW35_USA_governance_balance value = 0.15 } add_war_support = 0.02 add_stability = -0.01 }
+        ai_will_do = { factor = 5 }
+    }
+
+    focus = {
+        id = AOEIW35_USA_institutional_capstone
+        icon = GFX_goal_generic_national_unity
+        x = 38
+        y = 13
+        cost = 5
+        prerequisite = { focus = AOEIW35_USA_institutional_left focus = AOEIW35_USA_institutional_right }
+        available_if_capitulated = no
+        cancel_if_invalid = yes
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+        completion_reward = { add_ideas = AOEIW35_USA_institutional_capstone_idea country_event = { id = AOEIW35_usa.2 hours = 6 } }
+        ai_will_do = { factor = 5 }
+    }
+}

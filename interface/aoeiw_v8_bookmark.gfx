@@ -1,0 +1,6 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_AOEIW8_select_date_1936"
+        texturefile = "gfx/AOEIW8_select_date_1936.dds"
+    }
+}

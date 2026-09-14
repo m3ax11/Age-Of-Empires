@@ -1,0 +1,129 @@
+scripted_gui = {
+	vp_renaming_container = {
+		context_type = player_context
+		
+		window_name = "vp_renaming_container"
+		parent_window_token = topbar
+
+		visible = {
+			is_ai = no
+		}
+		
+		ai_enabled = {
+			always = no
+		}
+
+		triggers = {
+			vp_name_button_turn_on_en_visible = {
+				check_variable = { global.r56_var_multiplayer < 1 }		#can lag MP
+				NOT = {
+					has_global_flag = disable_state_renaming
+				}
+			}
+			vp_name_button_turn_off_en_visible = {
+				has_global_flag = disable_state_renaming
+				check_variable = { global.r56_var_multiplayer < 1 }		#can lag MP
+			}
+		}
+		
+		effects = {
+			vp_name_button_turn_on_en_click = {
+				set_global_flag = disable_state_renaming
+				every_state = {
+					if = {
+						limit = {
+							r56_is_state_rename_exception = no
+						}
+						meta_effect = {
+							text = {
+								set_state_name = STATE_[ID]
+							}
+							ID = "[THIS.GetID]"
+						}
+					}
+					for_each_loop = {
+						array = state_victory_points
+						value = province_num
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										array = global.vp_rename_exceptions
+										value = province_num
+									}
+								}
+								var:global.province_controllers^province_num = {
+									NOT = {
+										has_country_flag = INS_already_renamed_states_flag 	#counter-intuitively only applies to VPs
+										has_idea = TAH_mangoes
+										has_cosmetic_tag = BYZ_UNIFIED
+										has_country_flag = GRE_GREATER_GREECE_flag
+										has_country_flag = GRE_byz_unified_flag
+										AND = {
+											original_tag = COG
+											OR = {
+												has_global_flag = COG_renamed_cities
+												has_global_flag = COG_renamed_cities_decoster
+											}
+										}
+									}
+								}
+							}
+							meta_effect = {
+								text = {
+									set_province_name = {
+										id = [ID]
+										name = VICTORY_POINTS_[ID]
+									}
+								}
+								ID = "[?province_num]"
+							}
+						}
+					}
+				}
+			}
+			vp_name_button_turn_off_en_click = {
+				clr_global_flag = disable_state_renaming
+				every_state = {
+					if = {
+						limit = {
+							r56_is_state_rename_exception = no
+						}
+						reset_state_name = yes
+					}
+					for_each_loop = {
+						array = state_victory_points
+						value = province_num
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										array = global.vp_rename_exceptions
+										value = province_num
+									}
+								}
+								var:global.province_controllers^province_num = {
+									NOT = {
+										has_country_flag = INS_already_renamed_states_flag 	#counter-intuitively only applies to VPs
+										has_idea = TAH_mangoes
+										has_cosmetic_tag = BYZ_UNIFIED
+										has_country_flag = GRE_GREATER_GREECE_flag
+										has_country_flag = GRE_byz_unified_flag
+										AND = {
+											original_tag = COG
+											OR = {
+												has_global_flag = COG_renamed_cities
+												has_global_flag = COG_renamed_cities_decoster
+											}
+										}
+									}
+								}
+							}
+							reset_province_name = province_num
+						}
+					}
+				}
+			}
+		}
+	}
+}

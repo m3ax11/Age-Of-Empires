@@ -1,0 +1,4 @@
+AOEIW22_USA_corporate_crisis = { icon = generic_propaganda allowed = { original_tag = USA } visible = { has_country_flag = AOEIW22_USA_corporate_decisions_flag } }
+AOEIW22_USA_state_programmes = { icon = generic_construct_civ_factory allowed = { original_tag = USA } visible = { has_country_flag = AOEIW22_USA_state_economies_flag } }
+AOEIW22_USA_norton_decrees = { icon = generic_political_actions allowed = { original_tag = USA } visible = { has_country_flag = AOEIW22_USA_norton_decisions_flag } }
+AOEIW22_AUS_nationalities = { icon = generic_political_actions allowed = { original_tag = AUS } visible = { OR = { has_completed_focus = AOEIW9_AUS_politics_p1_1 has_completed_focus = AOEIW9_AUS_politics_p2_1 has_completed_focus = AOEIW9_AUS_politics_p3_1 } } }

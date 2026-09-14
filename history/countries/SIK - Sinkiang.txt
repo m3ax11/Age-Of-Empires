@@ -1,0 +1,57 @@
+capital = 617
+set_research_slots = 3
+set_stability = 0.58
+set_war_support = 0.48
+set_politics = {
+    ruling_party = communism
+    elections_allowed = no
+    election_frequency = 48
+}
+set_popularities = { democratic = 20 communism = 10 fascism = 5 neutrality = 60 imperialism = 5 }
+recruit_character = AOEIW_world_SIK_leader
+recruit_character = AOEIW_world_SIK_general
+set_technology = {
+    etax_doctrine = 1
+    camo = 1
+    militia_tech = 1
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    tech_support = 1
+    basic_machine_tools = 1
+    construction1 = 1
+    electronic_mechanical_engineering = 1
+    tech_engineers = 1
+    gw_artillery = 1
+}
+add_ideas = { AOEIW_world_frontier_state civilian_economy export_focus limited_conscription }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10800 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 720 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 540 }
+oob = "AOEIW_world_SIK_1936"
+
+# RT56 compatibility: retain its country-specific character roster.
+recruit_character = SIK_sheng_shicai
+recruit_character = SIK_chiang_yufen
+recruit_character = SIK_kwong_jin
+recruit_character = SIK_luo_wei
+recruit_character = SIK_piotr_orlov
+recruit_character = SIK_kwong_tian
+recruit_character = SIK_yu_wei
+recruit_character = SIK_deng_tian
+recruit_character = SIK_xie_peng
+recruit_character = SIK_yang_tian
+recruit_character = SIK_cheng_fang
+recruit_character = SIK_yol_bars
+recruit_character = SIK_gao_jiang
+recruit_character = SIK_mao_wu
+recruit_character = SIK_sa_zhenbing
+recruit_character = SIK_tan_ma
+recruit_character = SIK_zhang_xiliang
+recruit_character = SIK_habibullah_huseinov
+recruit_character = SIK_isa_yusuf_alptekin
+recruit_character = SIK_ishaq_musonov
+recruit_character = SIK_sheng_shiqi
+recruit_character = SIK_liu_pin
+recruit_character = SIK_zhang_fengyi
+recruit_character = SIK_garegin_abramovich_apresov

@@ -1,0 +1,14 @@
+opinion_modifiers = {
+    AOEIW17_revolutionary_betrayal = {
+        value = -65
+        decay = 1
+    }
+    AOEIW17_equal_republics = {
+        value = 45
+        decay = 1
+    }
+    AOEIW17_pragmatic_industrial_relations = {
+        value = 35
+        decay = 1
+    }
+}

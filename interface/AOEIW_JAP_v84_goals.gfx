@@ -1,0 +1,94 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_monarchy"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/monarchy.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_revolution"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/revolution.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_parties"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/parties.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_army"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/army.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_air"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/air.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_navy"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/navy.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_industry"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/industry.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_colonies"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/colonies.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_china"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/china.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_attack_china"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/attack_china.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_invest"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/invest.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_trade"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/trade.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_shadow"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/shadow.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_crackdown"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/crackdown.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_constitution"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/constitution.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_mobilize"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/mobilize.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_coup"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/coup.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_resource"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/resource.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_mil_factory"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/mil_factory.png"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_naval_coup"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/naval_coup.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_china_friend"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/china_friend.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_north_attack"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/north_attack.dds"
+    }
+    SpriteType = {
+        name = "GFX_AOEIW_JAP_popular"
+        texturefile = "gfx/interface/goals/aoeiw_v84_jap/popular.png"
+    }
+}

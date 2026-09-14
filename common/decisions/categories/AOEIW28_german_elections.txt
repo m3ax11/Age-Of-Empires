@@ -1,0 +1,3 @@
+# Compatibility tombstone: the single authoritative category definition lives in
+# AOEIW30_german_parliament_categories.txt. Keeping this file avoids stale-save
+# and external patch path assumptions without registering a duplicate category.

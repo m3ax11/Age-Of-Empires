@@ -1,0 +1,53 @@
+division_template = {
+ name = "Bulgaria Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "BUL Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "BUL Mountain Division"
+ regiments = {
+  mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 }
+  mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Bulgaria Infantry Division" location = 9612 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Bulgaria Infantry Division" location = 3796 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Bulgaria Infantry Division" location = 914 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Bulgaria Infantry Division" location = 9783 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Bulgaria Infantry Division" location = 9902 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Bulgaria Infantry Division" location = 6967 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Bulgaria Infantry Division" location = 9888 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Bulgaria Infantry Division" location = 9769 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Bulgaria Infantry Division" location = 6923 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Bulgaria Infantry Division" location = 6814 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Bulgaria Infantry Division" location = 9862 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Bulgaria Infantry Division" location = 9780 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Bulgaria Infantry Division" location = 9612 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Bulgaria Infantry Division" location = 3796 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Bulgaria Infantry Division" location = 914 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Bulgaria Infantry Division" location = 9783 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Bulgaria Infantry Division" location = 9902 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Bulgaria Infantry Division" location = 6967 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Bulgaria Infantry Division" location = 9888 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Bulgaria Infantry Division" location = 9769 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Bulgaria Infantry Division" location = 6923 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Bulgaria Infantry Division" location = 6814 division_template = "Bulgaria Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. BUL Rapid Division" location = 9612 division_template = "BUL Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. BUL Mountain Division" location = 9612 division_template = "BUL Mountain Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

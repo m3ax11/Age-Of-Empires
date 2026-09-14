@@ -1,0 +1,50 @@
+division_template = {
+ name = "Brazil Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "BRA Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Brazil Infantry Division" location = 7476 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Brazil Infantry Division" location = 5107 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Brazil Infantry Division" location = 12939 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Brazil Infantry Division" location = 10946 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Brazil Infantry Division" location = 12933 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Brazil Infantry Division" location = 2111 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Brazil Infantry Division" location = 5153 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Brazil Infantry Division" location = 12951 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Brazil Infantry Division" location = 8181 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Brazil Infantry Division" location = 5214 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Brazil Infantry Division" location = 4548 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Brazil Infantry Division" location = 10405 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Brazil Infantry Division" location = 10980 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Brazil Infantry Division" location = 13278 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Brazil Infantry Division" location = 10447 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Brazil Infantry Division" location = 10513 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Brazil Infantry Division" location = 5112 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Brazil Infantry Division" location = 4980 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Brazil Infantry Division" location = 10934 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Brazil Infantry Division" location = 10999 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Brazil Infantry Division" location = 7476 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Brazil Infantry Division" location = 5107 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Brazil Infantry Division" location = 12939 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Brazil Infantry Division" location = 10946 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Brazil Infantry Division" location = 12933 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Brazil Infantry Division" location = 2111 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Brazil Infantry Division" location = 5153 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Brazil Infantry Division" location = 12951 division_template = "Brazil Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. BRA Rapid Division" location = 7476 division_template = "BRA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. BRA Rapid Division" location = 7476 division_template = "BRA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+}

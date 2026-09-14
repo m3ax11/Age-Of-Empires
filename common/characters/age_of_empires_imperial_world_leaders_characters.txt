@@ -1,0 +1,421 @@
+characters = {
+    AOEIW_FRA_napoleon_iv = {
+        name = AOEIW_FRA_napoleon_iv
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_FRA
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_ENG_queen_victoria = {
+        name = AOEIW_ENG_queen_victoria
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_ENG
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_GER_wilhelm_ii = {
+        name = AOEIW_GER_wilhelm_ii
+                                portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_GER
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_SOV_nicholas_ii = {
+        name = AOEIW_SOV_nicholas_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_SOV
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_SPR_alfonso_xiii = {
+        name = AOEIW_SPR_alfonso_xiii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_SPR
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_CHI_puyi = {
+        name = AOEIW_CHI_puyi
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_CHI
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_TUR_abdulhamid_ii = {
+        name = AOEIW_TUR_abdulhamid_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_TUR
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_JAP_emperor_meiji = {
+        name = AOEIW_JAP_emperor_meiji
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_JAP
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_USA_theodore_roosevelt = {
+        name = AOEIW_USA_theodore_roosevelt
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_USA
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_POR_carlos_i = {
+        name = AOEIW_POR_carlos_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_POR
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_SWE_gustaf_v = {
+        name = AOEIW_SWE_gustaf_v
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_SWE
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_RAJ_bahadur_shah_ii = {
+        name = AOEIW_RAJ_bahadur_shah_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_RAJ
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_GRE_george_i = {
+        name = AOEIW_GRE_george_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_GRE
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_ROM_carol_i = {
+        name = AOEIW_ROM_carol_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_ROM
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_BUL_ferdinand_i = {
+        name = AOEIW_BUL_ferdinand_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_BUL
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_YUG_peter_i = {
+        name = AOEIW_YUG_peter_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_YUG
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_PER_mozaffar_ad_din = {
+        name = AOEIW_PER_mozaffar_ad_din
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_PER
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_ETH_menelik_ii = {
+        name = AOEIW_ETH_menelik_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_ETH
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_SIA_chulalongkorn = {
+        name = AOEIW_SIA_chulalongkorn
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_SIA
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_BRA_pedro_ii = {
+        name = AOEIW_BRA_pedro_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_BRA
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_MEX_maximilian_i = {
+        name = AOEIW_MEX_maximilian_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_MEX
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_FIN_frederick_charles_i = {
+        name = AOEIW_FIN_frederick_charles_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_FIN
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_DEN_christian_ix = {
+        name = AOEIW_DEN_christian_ix
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_DEN
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_BEL_leopold_ii = {
+        name = AOEIW_BEL_leopold_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_BEL
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_SWI_jonas_furrer = {
+        name = AOEIW_SWI_jonas_furrer
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_SWI
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_IRE_brian_boru = {
+        name = AOEIW_IRE_brian_boru
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_IRE
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_POL_stanislaw_ii = {
+        name = AOEIW_POL_stanislaw_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_POL
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_AUS_franz_joseph_i = {
+        name = AOEIW_AUS_franz_joseph_i
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_AUS
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_CAN_wilfrid_laurier = {
+        name = AOEIW_CAN_wilfrid_laurier
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_CAN
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    AOEIW_EGY_abbas_ii = {
+        name = AOEIW_EGY_abbas_ii
+        portraits = {
+            civilian = {
+                large = GFX_AOEIW_portrait_EGY
+            }
+        }
+        
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+}

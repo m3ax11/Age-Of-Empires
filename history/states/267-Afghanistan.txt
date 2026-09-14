@@ -1,0 +1,44 @@
+
+state={
+	id=267
+	name="STATE_267" # Kabul
+	manpower = 2463895
+	
+	state_category = large_town
+
+	resources = {
+		steel = 1
+		coal = 1
+	}
+	
+	history = {
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			10737 10
+		}
+		victory_points = {
+			10826 1
+		}
+		victory_points = {
+			12831 1
+		}
+
+		add_to_array = { state_victory_points = 10737 }
+		add_to_array = { state_victory_points = 10826 }
+		add_to_array = { state_victory_points = 12831 }
+        owner = PER
+        add_core_of = PER
+    }
+
+	provinces={
+		10737 12831 10826
+	}
+
+	local_supplies=0.0
+}

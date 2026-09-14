@@ -1,0 +1,26 @@
+on_actions = {
+    on_war_relation_added = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        original_tag = GER original_tag = FRA original_tag = SOV original_tag = ITA
+                        original_tag = ENG original_tag = USA original_tag = JAP original_tag = CHI
+                    }
+                }
+                set_country_flag = AOEIW_final_major_war_fought
+            }
+            FROM = {
+                if = {
+                    limit = {
+                        OR = {
+                            original_tag = GER original_tag = FRA original_tag = SOV original_tag = ITA
+                            original_tag = ENG original_tag = USA original_tag = JAP original_tag = CHI
+                        }
+                    }
+                    set_country_flag = AOEIW_final_major_war_fought
+                }
+            }
+        }
+    }
+}

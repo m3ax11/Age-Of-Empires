@@ -1,0 +1,32 @@
+state={
+	id=961
+	name="STATE_961"
+	manpower = 714350
+	
+	resources={ #ljubija iron mine
+		aluminium = 3
+	}	
+
+	state_category = rural
+
+	history = {
+
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6983 3
+		}
+
+
+		add_to_array = { state_victory_points = 6983 }
+        owner = YUG
+        add_core_of = YUG
+    }
+
+	provinces={
+		3985 6614 6619 6983 9586
+	}
+
+	local_supplies = 0.0 
+}

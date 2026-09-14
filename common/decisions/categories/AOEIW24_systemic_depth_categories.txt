@@ -1,0 +1,245 @@
+AOEIW24_USA_corporate_balance = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+}
+
+AOEIW24_USA_macarthur_authority = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+}
+
+AOEIW24_USA_technate_projects = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+}
+
+AOEIW24_USA_federal_balance = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+}
+
+AOEIW24_USA_executive_power = {
+    icon = generic_political_actions
+    allowed = { original_tag = USA }
+    visible = { original_tag = USA }
+}
+
+AOEIW24_SOV_revolutionary_crisis = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { original_tag = SOV }
+}
+
+AOEIW24_SOV_eurasian_council = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { original_tag = SOV }
+}
+
+AOEIW24_SOV_duma_politics = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { original_tag = SOV }
+}
+
+AOEIW24_SOV_denikin_command = {
+    icon = generic_political_actions
+    allowed = { original_tag = SOV }
+    visible = { original_tag = SOV }
+}
+
+AOEIW24_ITA_grand_council = {
+    icon = generic_political_actions
+    allowed = { original_tag = ITA }
+    visible = { original_tag = ITA }
+}
+
+AOEIW24_ITA_workers_councils = {
+    icon = generic_political_actions
+    allowed = { original_tag = ITA }
+    visible = { original_tag = ITA }
+}
+
+AOEIW24_ITA_roman_provinces = {
+    icon = generic_political_actions
+    allowed = { original_tag = ITA }
+    visible = { original_tag = ITA }
+}
+
+AOEIW24_AUS_crownland_council = {
+    icon = generic_political_actions
+    allowed = { original_tag = AUS }
+    visible = { original_tag = AUS }
+}
+
+AOEIW24_ENG_imperial_cabinet = {
+    icon = generic_political_actions
+    allowed = { original_tag = ENG }
+    visible = { original_tag = ENG }
+}
+
+AOEIW24_JAP_service_rivalry = {
+    icon = generic_political_actions
+    allowed = { original_tag = JAP }
+    visible = { original_tag = JAP }
+}
+
+AOEIW24_CHI_provincial_cohesion = {
+    icon = generic_political_actions
+    allowed = { original_tag = CHI }
+    visible = { original_tag = CHI }
+}
+
+AOEIW24_RAJ_princely_conference = {
+    icon = generic_political_actions
+    allowed = { original_tag = RAJ }
+    visible = { original_tag = RAJ }
+}
+
+AOEIW24_TUR_assembly_politics = {
+    icon = generic_political_actions
+    allowed = { original_tag = TUR }
+    visible = { original_tag = TUR }
+}
+
+AOEIW24_BRA_federal_bargain = {
+    icon = generic_political_actions
+    allowed = { original_tag = BRA }
+    visible = { original_tag = BRA }
+}
+
+AOEIW24_MEX_social_settlement = {
+    icon = generic_political_actions
+    allowed = { original_tag = MEX }
+    visible = { original_tag = MEX }
+}
+
+AOEIW24_BUL_crown_and_committees = {
+    icon = generic_political_actions
+    allowed = { original_tag = BUL }
+    visible = { original_tag = BUL }
+}
+
+AOEIW24_GRE_national_schism = {
+    icon = generic_political_actions
+    allowed = { original_tag = GRE }
+    visible = { original_tag = GRE }
+}
+
+AOEIW24_monarchic_institutions = {
+    icon = generic_political_actions
+    allowed = { has_government = constitutional_monarchism }
+    visible = { has_government = constitutional_monarchism }
+}
+
+AOEIW24_autocratic_institutions = {
+    icon = generic_political_actions
+    allowed = { has_government = autocratic_imperialism }
+    visible = { has_government = autocratic_imperialism }
+}
+
+AOEIW24_UKR_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = UKR }
+    visible = { original_tag = UKR }
+}
+
+AOEIW24_EST_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = EST }
+    visible = { original_tag = EST }
+}
+
+AOEIW24_GEO_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = GEO }
+    visible = { original_tag = GEO }
+}
+
+AOEIW24_KAZ_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = KAZ }
+    visible = { original_tag = KAZ }
+}
+
+AOEIW24_SIK_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = SIK }
+    visible = { original_tag = SIK }
+}
+
+AOEIW24_TIB_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = TIB }
+    visible = { original_tag = TIB }
+}
+
+AOEIW24_SAU_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = SAU }
+    visible = { original_tag = SAU }
+}
+
+AOEIW24_YEM_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = YEM }
+    visible = { original_tag = YEM }
+}
+
+AOEIW24_OMA_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = OMA }
+    visible = { original_tag = OMA }
+}
+
+AOEIW24_MAL_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = MAL }
+    visible = { original_tag = MAL }
+}
+
+AOEIW24_VIN_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = VIN }
+    visible = { original_tag = VIN }
+}
+
+AOEIW24_ARG_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = ARG }
+    visible = { original_tag = ARG }
+}
+
+AOEIW24_PRU_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = PRU }
+    visible = { original_tag = PRU }
+}
+
+AOEIW24_HAI_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = HAI }
+    visible = { original_tag = HAI }
+}
+
+AOEIW24_CSA_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = CSA }
+    visible = { original_tag = CSA }
+}
+
+AOEIW24_QUE_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = QUE }
+    visible = { original_tag = QUE }
+}
+
+AOEIW24_MLI_national_programmes = {
+    icon = generic_political_actions
+    allowed = { original_tag = MLI }
+    visible = { original_tag = MLI }
+}

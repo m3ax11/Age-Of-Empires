@@ -1,0 +1,110 @@
+ideas = {
+    country = {
+        AOEIW_final_JAP_continental_preparations = {
+            picture = FRA_national_mobilization_focus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                planning_speed = 0.12
+                army_org_factor = 0.05
+                supply_consumption_factor = -0.05
+                war_support_factor = 0.05
+            }
+        }
+        AOEIW_final_JAP_naval_priority = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_dockyard = 0.12
+                naval_speed_factor = 0.05
+                sortie_efficiency = 0.08
+                naval_strike_agility_factor = 0.05
+            }
+        }
+        AOEIW_final_JAP_overextension = {
+            picture = generic_neglected_military
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                supply_consumption_factor = 0.08
+                consumer_goods_factor = 0.04
+                stability_factor = -0.05
+            }
+        }
+
+        AOEIW_final_reichspakt_staff = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { planning_speed = 0.10 land_reinforce_rate = 0.01 army_org_factor = 0.03 }
+        }
+        AOEIW_final_old_order_defence = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_defence_factor = 0.05 max_dig_in = 1 planning_speed = 0.05 }
+        }
+        AOEIW_final_mediterranean_coordination = {
+            picture = generic_navy_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { naval_speed_factor = 0.04 air_mission_efficiency = 0.05 convoy_escort_efficiency = 0.05 }
+        }
+        AOEIW_final_faction_economic_protocol = {
+            picture = generic_political_support
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { production_speed_buildings_factor = 0.05 production_factory_efficiency_gain_factor = 0.05 trade_opinion_factor = 0.10 }
+        }
+
+        AOEIW20_UF_national_reconstruction = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { production_speed_buildings_factor = 0.12 repair_speed_factor = 0.20 consumer_goods_factor = -0.03 }
+        }
+        AOEIW20_UF_nra_integration = {
+            picture = generic_army_war_college
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_org_factor = 0.08 planning_speed = 0.10 training_time_army_factor = -0.10 }
+        }
+        AOEIW20_UF_mao_rapid_industrialisation_spirit = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.18
+                production_speed_arms_factory_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.12
+                consumer_goods_factor = 0.03
+            }
+        }
+        AOEIW20_UF_council_charter = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { stability_factor = 0.10 political_power_factor = 0.08 trade_opinion_factor = 0.10 }
+        }
+        AOEIW20_UF_coastal_defence = {
+            picture = generic_fortify_the_borders
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { army_defence_factor = 0.06 invasion_preparation = -0.10 max_dig_in = 1 war_support_factor = 0.05 }
+        }
+
+        AOEIW_final_postwar_reconstruction = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { repair_speed_factor = 0.25 production_speed_buildings_factor = 0.08 stability_factor = 0.05 }
+        }
+        AOEIW_final_occupation_burden = {
+            picture = generic_disjointed_gov
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = { consumer_goods_factor = 0.04 stability_factor = -0.04 political_power_factor = -0.05 }
+        }
+    }
+}

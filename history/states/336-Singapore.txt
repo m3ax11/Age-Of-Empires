@@ -1,0 +1,48 @@
+
+state={
+	id=336
+	name="STATE_336"
+	#Moved to Johor
+	#resources={
+	#	steel=32.000
+	#	aluminium=25.000
+	#}
+
+	history = {
+
+		victory_points = {
+			12299 10 
+		}
+		
+		buildings = {
+			infrastructure = 3 #was 5
+			industrial_complex = 1
+			air_base = 6
+			12299 = {
+				naval_base = 8
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+				coastal_bunker = 3
+			}
+		}
+
+
+		add_to_array = { state_victory_points = 12299 }
+        owner = JAP
+        add_core_of = JAP
+    }
+
+	provinces={
+		12299
+	}
+	manpower=582324
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=0.0 
+}

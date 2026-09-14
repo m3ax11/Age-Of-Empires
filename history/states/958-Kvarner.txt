@@ -1,0 +1,33 @@
+state={
+	id=958
+	name="STATE_958"
+	manpower = 595693
+	
+	state_category = rural
+
+	history = {
+
+		buildings = {
+			infrastructure = 2 #was 3
+			dockyard = 1
+			industrial_complex = 1
+			11564 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			11901 1 
+		}
+
+
+		add_to_array = { state_victory_points = 11901 }
+        owner = YUG
+        add_core_of = YUG
+    }
+
+	provinces={
+		591 984 3601 6611 11901 11564
+	}
+
+	local_supplies = 0.0 
+}

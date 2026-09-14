@@ -1,0 +1,15 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            ITA = { if = { limit = { has_character = ITA_vittorio_emanuele_iii }
+                set_portraits = { character = ITA_vittorio_emanuele_iii civilian = { large = GFX_AOEIW_portrait_ITA } }
+            } }
+            HOL = { if = { limit = { has_character = HOL_wilhelmina }
+                set_portraits = { character = HOL_wilhelmina civilian = { large = GFX_AOEIW_portrait_HOL } }
+            } }
+            NOR = { if = { limit = { has_character = NOR_king_haakon_vii }
+                set_portraits = { character = NOR_king_haakon_vii civilian = { large = GFX_AOEIW_portrait_NOR } }
+            } }
+        }
+    }
+}

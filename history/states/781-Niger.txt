@@ -1,0 +1,29 @@
+
+state={
+	id=781
+	name="STATE_781" # Niger
+	manpower = 1699431
+	
+	state_category = rural
+
+	history = {
+
+
+
+		add_to_array = { state_victory_points = 2056 }
+		victory_points = {
+			2056 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+        owner = MLI
+        add_core_of = MLI
+    }
+
+	provinces={
+		1975 2056 12707 8028 10758 10805 10780
+	}
+
+	local_supplies=1.0 
+}

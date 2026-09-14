@@ -1,0 +1,7 @@
+opinion_modifiers = {
+    AOEIW37_WORLD_shared_sacrifice = { value = 20 decay = 1 }
+    AOEIW37_WORLD_charter_concession = { value = 35 decay = 1 }
+    AOEIW37_WORLD_directed_settlement = { value = -30 decay = 1 }
+    AOEIW37_WORLD_relief_diplomacy = { value = 15 decay = 1 }
+    AOEIW37_WORLD_strategic_encroachment = { value = -20 decay = 1 }
+}

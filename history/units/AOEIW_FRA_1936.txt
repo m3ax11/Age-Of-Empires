@@ -1,0 +1,99 @@
+division_template = {
+ name = "Second French Empire Line Infantry"
+ regiments = {
+  infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+  infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+  infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "Second French Empire Mobile Corps"
+ regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } motorized = { x = 3 y = 0 } motorized = { x = 3 y = 1 } }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+division_template = {
+ name = "FRA Rapid Division"
+ regiments = {
+  motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 }
+  motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+
+division_template = {
+ name = "FRA Marine Division"
+ regiments = {
+  marine = { x = 0 y = 0 } marine = { x = 0 y = 1 } marine = { x = 0 y = 2 }
+  marine = { x = 1 y = 0 } marine = { x = 1 y = 1 } marine = { x = 1 y = 2 }
+ }
+ support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } recon = { x = 0 y = 2 } }
+}
+units = {
+
+ division = { name = "1. Second French Empire Infantry Division" location = 2056 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "2. Second French Empire Infantry Division" location = 6613 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "3. Second French Empire Infantry Division" location = 3838 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "4. Second French Empire Infantry Division" location = 8193 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "5. Second French Empire Infantry Division" location = 12975 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "6. Second French Empire Infantry Division" location = 11465 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "7. Second French Empire Infantry Division" location = 9377 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "8. Second French Empire Infantry Division" location = 4401 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "9. Second French Empire Infantry Division" location = 778 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "10. Second French Empire Infantry Division" location = 9909 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "11. Second French Empire Infantry Division" location = 9490 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "12. Second French Empire Infantry Division" location = 13011 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "13. Second French Empire Infantry Division" location = 2056 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "14. Second French Empire Infantry Division" location = 6613 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "15. Second French Empire Infantry Division" location = 3838 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "16. Second French Empire Infantry Division" location = 8193 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "17. Second French Empire Infantry Division" location = 12975 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "18. Second French Empire Infantry Division" location = 11465 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "19. Second French Empire Infantry Division" location = 9377 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "20. Second French Empire Infantry Division" location = 4401 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "21. Second French Empire Infantry Division" location = 778 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "22. Second French Empire Infantry Division" location = 9909 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "23. Second French Empire Infantry Division" location = 9490 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "24. Second French Empire Infantry Division" location = 13011 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "25. Second French Empire Infantry Division" location = 2056 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "26. Second French Empire Infantry Division" location = 6613 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "27. Second French Empire Infantry Division" location = 3838 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "28. Second French Empire Infantry Division" location = 8193 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "29. Second French Empire Infantry Division" location = 12975 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "30. Second French Empire Infantry Division" location = 11465 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "31. Second French Empire Infantry Division" location = 9377 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "32. Second French Empire Infantry Division" location = 4401 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "33. Second French Empire Infantry Division" location = 778 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "34. Second French Empire Infantry Division" location = 9909 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "35. Second French Empire Infantry Division" location = 9490 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "36. Second French Empire Infantry Division" location = 13011 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "37. Second French Empire Infantry Division" location = 2056 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "38. Second French Empire Infantry Division" location = 6613 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "39. Second French Empire Infantry Division" location = 3838 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "40. Second French Empire Infantry Division" location = 8193 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "41. Second French Empire Infantry Division" location = 12975 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "42. Second French Empire Infantry Division" location = 11465 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "43. Second French Empire Infantry Division" location = 9377 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "44. Second French Empire Infantry Division" location = 4401 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "45. Second French Empire Infantry Division" location = 778 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "46. Second French Empire Infantry Division" location = 9909 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "47. Second French Empire Infantry Division" location = 9490 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "48. Second French Empire Infantry Division" location = 13011 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "49. Second French Empire Infantry Division" location = 2056 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "50. Second French Empire Infantry Division" location = 6613 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "51. Second French Empire Infantry Division" location = 3838 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "52. Second French Empire Infantry Division" location = 8193 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "53. Second French Empire Infantry Division" location = 12975 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "54. Second French Empire Infantry Division" location = 11465 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "55. Second French Empire Infantry Division" location = 9377 division_template = "Second French Empire Line Infantry" start_experience_factor = 0.30 start_equipment_factor = 1.0 }
+ division = { name = "1. Second French Empire Mobile Division" location = 4401 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "2. Second French Empire Mobile Division" location = 778 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "3. Second French Empire Mobile Division" location = 9909 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "4. Second French Empire Mobile Division" location = 9490 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "5. Second French Empire Mobile Division" location = 13011 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "6. Second French Empire Mobile Division" location = 2056 division_template = "Second French Empire Mobile Corps" start_experience_factor = 0.25 start_equipment_factor = 1.0 }
+ division = { name = "1. FRA Rapid Division" location = 2056 division_template = "FRA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "2. FRA Rapid Division" location = 2056 division_template = "FRA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "3. FRA Rapid Division" location = 2056 division_template = "FRA Rapid Division" start_experience_factor = 0.20 start_equipment_factor = 0.85 }
+ division = { name = "1. FRA Marine Division" location = 2056 division_template = "FRA Marine Division" start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+}

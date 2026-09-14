@@ -1,0 +1,17 @@
+AOEIW_imperial_world_map_mode_rule = {
+    name = "AOEIW_IMPERIAL_WORLD_MAP_MODE_RULE"
+    group = "RULE_GROUP_GENERAL_UI"
+    icon = "GFX_take_over_faction_leadership"
+
+    default = {
+        name = AOEIW_MAP_MODE_ENABLED
+        text = "AOEIW_MAP_MODE_ENABLED"
+        desc = "AOEIW_MAP_MODE_ENABLED_DESC"
+    }
+
+    option = {
+        name = AOEIW_MAP_MODE_DISABLED
+        text = "AOEIW_MAP_MODE_DISABLED"
+        desc = "AOEIW_MAP_MODE_DISABLED_DESC"
+    }
+}

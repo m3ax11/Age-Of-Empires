@@ -1,0 +1,25 @@
+state={
+	id=938
+	name="STATE_938"
+	provinces={
+		4556 
+	}
+	history = {
+
+
+		add_to_array = { state_victory_points = 4556 }
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4556 1
+		}
+        owner = ENG
+        add_core_of = ENG
+    }
+	manpower=734000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+
+	local_supplies = 0.0 
+}

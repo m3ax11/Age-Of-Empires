@@ -1,0 +1,7 @@
+BRA_uiracu = {
+
+	icon = ger_military_buildup
+	allowed = {
+		original_tag = BRA
+	}
+}

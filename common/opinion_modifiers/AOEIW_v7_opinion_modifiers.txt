@@ -1,0 +1,31 @@
+opinion_modifiers = {
+    AOEIW_geopolitical_rivalry = {
+        value = -75
+        decay = 0
+    }
+
+    AOEIW_old_order_cooperation = {
+        value = 40
+        decay = 0
+    }
+    AOEIW_reichspakt_cooperation = {
+        value = 40
+        decay = 0
+    }
+    AOEIW_mediterranean_league_cooperation = {
+        value = 35
+        decay = 0
+    }
+    AOEIW_mediterranean_arbitration = {
+        value = 25
+        decay = 0
+    }
+    AOEIW_german_austrian_understanding = {
+        value = 35
+        decay = 0
+    }
+    AOEIW_luso_brazilian_union_opinion = {
+        value = 45
+        decay = 0
+    }
+}
