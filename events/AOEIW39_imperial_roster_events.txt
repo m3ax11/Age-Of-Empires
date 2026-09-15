@@ -45,6 +45,18 @@ country_event = {
 }
 
 country_event = {
+    id = AOEIW39_imperial_roster.3
+    title = AOEIW39_imperial_roster.3.t
+    desc = { trigger = { original_tag = IAF } text = AOEIW39_final_IAF }
+    desc = { trigger = { original_tag = MAF } text = AOEIW39_final_MAF }
+    desc = { trigger = { original_tag = GPA } text = AOEIW39_final_GPA }
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { name = AOEIW39_imperial_roster.3.a add_political_power = 50 }
+}
+
+country_event = {
     id = AOEIW39_imperial_roster.2
     title = AOEIW39_imperial_roster.2.t
     desc = AOEIW39_imperial_roster.2.d

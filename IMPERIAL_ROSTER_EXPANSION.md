@@ -34,6 +34,10 @@ The Qing transfer effects no longer seize those states or add Qing cores there. 
 
 `MAF` (Mittelafrika) and `GPA` (German Pacific Administration) are new landless tags that Germany can establish after controlling their complete charter territories. Both receive their own identity modifier and become German subjects. `IAF` (Italian East Africa) is a new 1936 Italian colony holding Eritrea and Somalia. New tags have country definitions, history, localisation and complete flag sets at all three HOI4 sizes.
 
+All three new administrations have dedicated fourteen-focus trees. Each tree develops its political settlement, economy, armed forces, external connection and a post-consolidation payoff. The two political and two military alternatives grant different permanent modifier categories: appointed imperial command competes with local consultation, while locally recruited forces compete with mobile or naval projection. Economic alternatives also choose between distinct infrastructure, industry or dockyard outcomes. The branches reconverge only after preserving those lasting differences. Titles and descriptions use the named ports, roads, institutions and forces of each administration rather than a shared generic template.
+
+The other newly exposed tags retain their established RT56 country trees where available and gain the AOE scenario layer: correct compact territory, subject relationship, individual identity spirit, player introduction and recurring autonomy or regional-settlement decisions. This avoids replacing functioning country content with duplicate generic trees.
+
 ## Preserved boundaries
 
 The Ottoman Empire remains contiguous across Anatolia, the Levant and Mesopotamia. No Syrian, Iraqi, Palestinian, Kurdish or Armenian start state was created. Spain retains imperial cores in Cuba, matching the established ARG/PRU convention; Persia retains its claims in Afghanistan and South Azerbaijan; CHI retains national cores across the regional governments. State and province geometry is unchanged.

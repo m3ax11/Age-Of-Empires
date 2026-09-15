@@ -1,0 +1,284 @@
+focus_tree = { id = AOEIW39_IAF_focus country = { factor = 0 modifier = { add = 200000 original_tag = IAF } } default = no reset_on_civilwar = no
+
+    focus = { id = AOEIW39_IAF_root icon = GFX_focus_generic_improve_the_administration x = 5 y = 0 cost = 5
+        completion_reward = { add_political_power = 75 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_left icon = GFX_focus_generic_military_dictatorship x = 3 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_root }
+        mutually_exclusive = { focus = AOEIW39_IAF_right }
+        completion_reward = { add_ideas = AOEIW39_IAF_viceroys_council }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_right icon = GFX_focus_generic_public_meetings x = 7 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_root }
+        mutually_exclusive = { focus = AOEIW39_IAF_left }
+        completion_reward = { add_ideas = AOEIW39_IAF_consultative_assembly }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_charter icon = GFX_focus_generic_diplomatic_treaty x = 5 y = 2 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_left focus = AOEIW39_IAF_right }
+        completion_reward = { add_stability = 0.04 add_autonomy_ratio = { value = 0.04 localization = AOEIW39_local_budget_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_econ icon = GFX_focus_generic_industry_1 x = 5 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_charter }
+        completion_reward = { add_political_power = 35 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_econ_l icon = GFX_focus_generic_railroad x = 3 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_econ }
+        mutually_exclusive = { focus = AOEIW39_IAF_econ_r }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_tech_bonus = { name = AOEIW39_regional_industry_bonus bonus = 0.5 uses = 1 category = construction_tech } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_econ_r icon = GFX_focus_generic_naval_production x = 7 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_econ }
+        mutually_exclusive = { focus = AOEIW39_IAF_econ_l }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } add_political_power = 30 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_econ_cap icon = GFX_focus_generic_economic_recovery x = 5 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_econ_l focus = AOEIW39_IAF_econ_r }
+        completion_reward = { add_stability = 0.03 add_political_power = 50 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_mil icon = GFX_focus_generic_army_doctrines_2 x = 11 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_charter }
+        completion_reward = { army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_mil_l icon = GFX_goal_generic_small_arms x = 9 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_mil }
+        mutually_exclusive = { focus = AOEIW39_IAF_mil_r }
+        completion_reward = { add_ideas = AOEIW39_IAF_ascari_command army_experience = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_mil_r icon = GFX_focus_generic_motorized x = 13 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_mil }
+        mutually_exclusive = { focus = AOEIW39_IAF_mil_l }
+        completion_reward = { add_ideas = AOEIW39_IAF_motor_columns army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_mil_cap icon = GFX_focus_generic_home_defense x = 11 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_mil_l focus = AOEIW39_IAF_mil_r }
+        completion_reward = { add_war_support = 0.04 add_command_power = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_dip icon = GFX_focus_generic_diplomatic_treaty x = 0 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_charter }
+        completion_reward = { add_political_power = 50 add_autonomy_ratio = { value = 0.03 localization = AOEIW39_constitutional_conference_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_IAF_final icon = GFX_focus_generic_national_security x = 6 y = 7 cost = 5
+        prerequisite = { focus = AOEIW39_IAF_econ_cap }
+        prerequisite = { focus = AOEIW39_IAF_mil_cap }
+        prerequisite = { focus = AOEIW39_IAF_dip }
+        completion_reward = { add_stability = 0.05 add_war_support = 0.04 country_event = { id = AOEIW39_imperial_roster.3 hours = 1 } }
+        ai_will_do = { factor = 1 }
+    }
+
+}
+
+focus_tree = { id = AOEIW39_MAF_focus country = { factor = 0 modifier = { add = 200000 original_tag = MAF } } default = no reset_on_civilwar = no
+
+    focus = { id = AOEIW39_MAF_root icon = GFX_focus_generic_improve_the_administration x = 5 y = 0 cost = 5
+        completion_reward = { add_political_power = 75 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_left icon = GFX_focus_generic_military_dictatorship x = 3 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_root }
+        mutually_exclusive = { focus = AOEIW39_MAF_right }
+        completion_reward = { add_ideas = AOEIW39_MAF_company_rule }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_right icon = GFX_focus_generic_public_meetings x = 7 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_root }
+        mutually_exclusive = { focus = AOEIW39_MAF_left }
+        completion_reward = { add_ideas = AOEIW39_MAF_district_councils }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_charter icon = GFX_focus_generic_diplomatic_treaty x = 5 y = 2 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_left focus = AOEIW39_MAF_right }
+        completion_reward = { add_stability = 0.04 add_autonomy_ratio = { value = 0.04 localization = AOEIW39_local_budget_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_econ icon = GFX_focus_generic_industry_1 x = 5 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_charter }
+        completion_reward = { add_political_power = 35 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_econ_l icon = GFX_focus_generic_railroad x = 3 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_econ }
+        mutually_exclusive = { focus = AOEIW39_MAF_econ_r }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_tech_bonus = { name = AOEIW39_regional_industry_bonus bonus = 0.5 uses = 1 category = construction_tech } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_econ_r icon = GFX_focus_generic_naval_production x = 7 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_econ }
+        mutually_exclusive = { focus = AOEIW39_MAF_econ_l }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 30 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_econ_cap icon = GFX_focus_generic_economic_recovery x = 5 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_econ_l focus = AOEIW39_MAF_econ_r }
+        completion_reward = { add_stability = 0.03 add_political_power = 50 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_mil icon = GFX_focus_generic_army_doctrines_2 x = 11 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_charter }
+        completion_reward = { army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_mil_l icon = GFX_goal_generic_small_arms x = 9 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_mil }
+        mutually_exclusive = { focus = AOEIW39_MAF_mil_r }
+        completion_reward = { add_ideas = AOEIW39_MAF_schutztruppe army_experience = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_mil_r icon = GFX_focus_generic_motorized x = 13 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_mil }
+        mutually_exclusive = { focus = AOEIW39_MAF_mil_l }
+        completion_reward = { add_ideas = AOEIW39_MAF_african_officers army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_mil_cap icon = GFX_focus_generic_home_defense x = 11 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_mil_l focus = AOEIW39_MAF_mil_r }
+        completion_reward = { add_war_support = 0.04 add_command_power = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_dip icon = GFX_focus_generic_diplomatic_treaty x = 0 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_charter }
+        completion_reward = { add_political_power = 50 add_autonomy_ratio = { value = 0.03 localization = AOEIW39_constitutional_conference_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_MAF_final icon = GFX_focus_generic_national_security x = 6 y = 7 cost = 5
+        prerequisite = { focus = AOEIW39_MAF_econ_cap }
+        prerequisite = { focus = AOEIW39_MAF_mil_cap }
+        prerequisite = { focus = AOEIW39_MAF_dip }
+        completion_reward = { add_stability = 0.05 add_war_support = 0.04 country_event = { id = AOEIW39_imperial_roster.3 hours = 1 } }
+        ai_will_do = { factor = 1 }
+    }
+
+}
+
+focus_tree = { id = AOEIW39_GPA_focus country = { factor = 0 modifier = { add = 200000 original_tag = GPA } } default = no reset_on_civilwar = no
+
+    focus = { id = AOEIW39_GPA_root icon = GFX_focus_generic_improve_the_administration x = 5 y = 0 cost = 5
+        completion_reward = { add_political_power = 75 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_left icon = GFX_focus_generic_military_dictatorship x = 3 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_root }
+        mutually_exclusive = { focus = AOEIW39_GPA_right }
+        completion_reward = { add_ideas = AOEIW39_GPA_naval_governor }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_right icon = GFX_focus_generic_public_meetings x = 7 y = 1 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_root }
+        mutually_exclusive = { focus = AOEIW39_GPA_left }
+        completion_reward = { add_ideas = AOEIW39_GPA_island_council }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_charter icon = GFX_focus_generic_diplomatic_treaty x = 5 y = 2 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_left focus = AOEIW39_GPA_right }
+        completion_reward = { add_stability = 0.04 add_autonomy_ratio = { value = 0.04 localization = AOEIW39_local_budget_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_econ icon = GFX_focus_generic_industry_1 x = 5 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_charter }
+        completion_reward = { add_political_power = 35 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_econ_l icon = GFX_focus_generic_railroad x = 3 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_econ }
+        mutually_exclusive = { focus = AOEIW39_GPA_econ_r }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_tech_bonus = { name = AOEIW39_regional_industry_bonus bonus = 0.5 uses = 1 category = construction_tech } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_econ_r icon = GFX_focus_generic_naval_production x = 7 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_econ }
+        mutually_exclusive = { focus = AOEIW39_GPA_econ_l }
+        completion_reward = { random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } } add_political_power = 30 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_econ_cap icon = GFX_focus_generic_economic_recovery x = 5 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_econ_l focus = AOEIW39_GPA_econ_r }
+        completion_reward = { add_stability = 0.03 add_political_power = 50 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_mil icon = GFX_focus_generic_army_doctrines_2 x = 11 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_charter }
+        completion_reward = { army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_mil_l icon = GFX_goal_generic_small_arms x = 9 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_mil }
+        mutually_exclusive = { focus = AOEIW39_GPA_mil_r }
+        completion_reward = { add_ideas = AOEIW39_GPA_coastwatchers army_experience = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_mil_r icon = GFX_focus_generic_motorized x = 13 y = 4 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_mil }
+        mutually_exclusive = { focus = AOEIW39_GPA_mil_l }
+        completion_reward = { add_ideas = AOEIW39_GPA_cruiser_station army_experience = 10 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_mil_cap icon = GFX_focus_generic_home_defense x = 11 y = 5 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_mil_l focus = AOEIW39_GPA_mil_r }
+        completion_reward = { add_war_support = 0.04 add_command_power = 15 }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_dip icon = GFX_focus_generic_diplomatic_treaty x = 0 y = 3 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_charter }
+        completion_reward = { add_political_power = 50 add_autonomy_ratio = { value = 0.03 localization = AOEIW39_constitutional_conference_autonomy } }
+        ai_will_do = { factor = 1 }
+    }
+
+    focus = { id = AOEIW39_GPA_final icon = GFX_focus_generic_national_security x = 6 y = 7 cost = 5
+        prerequisite = { focus = AOEIW39_GPA_econ_cap }
+        prerequisite = { focus = AOEIW39_GPA_mil_cap }
+        prerequisite = { focus = AOEIW39_GPA_dip }
+        completion_reward = { add_stability = 0.05 add_war_support = 0.04 country_event = { id = AOEIW39_imperial_roster.3 hours = 1 } }
+        ai_will_do = { factor = 1 }
+    }
+
+}

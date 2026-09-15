@@ -1,5 +1,18 @@
 #reload countrycolors
 
+IAF = {
+    color = rgb { 157 114 69 }
+    color_ui = rgb { 157 114 69 }
+}
+MAF = {
+    color = rgb { 89 116 72 }
+    color_ui = rgb { 89 116 72 }
+}
+GPA = {
+    color = rgb { 76 123 146 }
+    color_ui = rgb { 76 123 146 }
+}
+
 GER = {
     color = rgb { 112 116 125 }
     color_ui = rgb { 112 116 125 }
