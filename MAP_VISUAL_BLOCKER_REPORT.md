@@ -88,3 +88,5 @@ Im installierten Build existiert kein `gfx/FX/standardfuncsgfx.fxh` mehr. Unter 
 ## Zweiter Rendering-Pass
 
 Nach dem ersten Ingame-Vergleich meldete der Benutzer weiterhin eine zu stark gemalte Karte. Daraufhin wurden die beiden verbliebenen einschlaegigen Terrain-Overrides `map/terrain/mud_diffuse_rgb_gloss_a_0.dds` und `map/terrain/atlas0.dds` entfernt. Die Mud-Textur war im direkten Vergleich deutlich dunkler, brauner und kontrastreicher als die aktuelle Vanilla-Datei; der Atlas stammte ebenfalls unveraendert aus dem importierten Ausgangsarchiv. HOI4 erbt fuer beide Assets nun die aktuelle Vanilla-Version. Welt- und Wasser-Colormaps, Normalmap, Terrain-/Provinzgeometrie und State-Grenzen wurden nicht geaendert.
+
+Der bereinigte Build wurde erneut mit ausschliesslich dem lokalen AOE-Descriptor gestartet. Die Engine lud 4.469 Defines und 13.535 Provinzen, setzte den Spielstand zurueck und fuehrte die History bis `1936.1.1.12` aus. Der Prozess blieb responsiv. Die frische Fehlerdatei enthielt null Treffer fuer AOE, Map-Roster, die entfernten Shader-/Terrain-Overrides oder die sechs geaenderten Pazifik-States.
