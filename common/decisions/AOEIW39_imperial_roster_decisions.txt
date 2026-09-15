@@ -9,7 +9,7 @@ AOEIW39_imperial_administration_category = {
             add_autonomy_ratio = { value = 0.04 localization = AOEIW39_local_budget_autonomy }
             add_stability = 0.01
         }
-        ai_will_do = { base = 3 modifier = { factor = 2 stability < 0.50 } }
+        ai_will_do = { base = 3 modifier = { factor = 2 has_stability < 0.50 } }
     }
 
     AOEIW39_accept_imperial_defence_quota = {
