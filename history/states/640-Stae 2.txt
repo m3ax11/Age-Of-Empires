@@ -24,8 +24,8 @@ state={
 		victory_points = {
 			1170 1	#Lashio
 		}
-        owner = RAJ
-        add_core_of = RAJ
+        owner = BRM
+        add_core_of = BRM
     }
 	
 	provinces={

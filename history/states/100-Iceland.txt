@@ -30,8 +30,8 @@ state={
 
 		add_to_array = { state_victory_points = 12674 }
 		add_to_array = { state_victory_points = 4861 }
-        owner = GER
-        add_core_of = GER
+        owner = ICE
+        add_core_of = ICE
     }
 
 	provinces={

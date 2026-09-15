@@ -16,7 +16,8 @@ state={
 
 
 		add_to_array = { state_victory_points = 1896 }
-        owner = PER
+        owner = AZR
+        add_core_of = AZR
         add_core_of = PER
     }
 

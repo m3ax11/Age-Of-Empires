@@ -29,8 +29,8 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-        owner = RAJ
-        add_core_of = RAJ
+        owner = BRM
+        add_core_of = BRM
     }
 
 	provinces={

@@ -34,7 +34,8 @@ state = {
 			}
 
 		}
-        owner = CHI
+        owner = XIC
+        add_core_of = XIC
         add_core_of = CHI
     }
 

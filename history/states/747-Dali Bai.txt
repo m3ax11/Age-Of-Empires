@@ -19,7 +19,8 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-        owner = CHI
+        owner = YUN
+        add_core_of = YUN
         add_core_of = CHI
     }
 

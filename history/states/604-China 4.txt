@@ -22,7 +22,8 @@ state = {
 			infrastructure = 1
 			industrial_complex = 2
 		}
-        owner = CHI
+        owner = XSM
+        add_core_of = XSM
         add_core_of = CHI
     }
 

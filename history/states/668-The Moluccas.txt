@@ -37,8 +37,8 @@ state={
 			}
 
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 
 	provinces={

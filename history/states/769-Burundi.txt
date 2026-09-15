@@ -27,8 +27,8 @@ state={
 			infrastructure = 1 #was 2
 
 		}
-        owner = BEL
-        add_core_of = BEL
+        owner = COG
+        add_core_of = COG
     }
 
 	provinces={

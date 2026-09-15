@@ -11,8 +11,8 @@ state={
 		buildings = {
 			infrastructure = 1 #was 2
 		}
-        owner = FRA
-        add_core_of = FRA
+        owner = ALG
+        add_core_of = ALG
     }
 	provinces={
 		1141 4970 5053 7033 7149 9943 10059 12034 12888 

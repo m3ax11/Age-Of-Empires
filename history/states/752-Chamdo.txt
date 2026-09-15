@@ -43,7 +43,8 @@ state = {
 
 			}
 		}
-        owner = CHI
+        owner = TIB
+        add_core_of = TIB
         add_core_of = CHI
     }
 

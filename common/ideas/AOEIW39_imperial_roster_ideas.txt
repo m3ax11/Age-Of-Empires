@@ -1,0 +1,35 @@
+ideas = {
+    country = {
+        AOEIW39_INS_insulindian_compact = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.10 convoy_escort_efficiency = 0.06 stability_factor = -0.03 } }
+        AOEIW39_PHI_archipelago_defence = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { naval_invasion_capacity = 2 army_defence_factor = 0.04 war_support_factor = 0.03 } }
+        AOEIW39_KOR_industrial_protectorate = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { production_factory_efficiency_gain_factor = 0.06 research_speed_factor = 0.02 autonomy_gain_global_factor = 0.05 } }
+        AOEIW39_BRM_frontier_administration = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.05 army_speed_factor = 0.04 stability_factor = -0.02 } }
+
+        AOEIW39_ALG_divided_colony = { picture = generic_disjointed_gov allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = 0.03 stability_factor = -0.04 local_resources_factor = 0.08 } }
+        AOEIW39_MOR_treaty_sultanate = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { political_power_factor = 0.04 trade_opinion_factor = 0.10 autonomy_gain_global_factor = 0.05 } }
+        AOEIW39_TUN_beylical_compact = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.04 industrial_capacity_factory = 0.03 autonomy_gain_global_factor = 0.03 } }
+
+        AOEIW39_NFL_commission_government = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { consumer_goods_factor = 0.02 industrial_capacity_dockyard = 0.08 stability_factor = 0.03 } }
+        AOEIW39_NGA_indirect_rule = { picture = generic_manpower_bonus allowed = { always = no } removal_cost = -1 modifier = { recruitable_population_factor = 0.02 production_speed_infrastructure_factor = 0.10 political_power_factor = -0.03 } }
+        AOEIW39_KEN_settler_federation = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.12 army_defence_factor = 0.03 stability_factor = -0.03 } }
+        AOEIW39_SRL_plantation_harbour = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { trade_opinion_factor = 0.15 industrial_capacity_dockyard = 0.10 local_resources_factor = 0.05 } }
+        AOEIW39_COG_concession_regime = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.15 industrial_capacity_factory = 0.04 stability_factor = -0.05 } }
+
+        AOEIW39_LBA_fourth_shore = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.10 army_defence_factor = 0.05 consumer_goods_factor = 0.02 } }
+        AOEIW39_CUB_captaincy_compact = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.03 trade_opinion_factor = 0.10 autonomy_gain_global_factor = 0.05 } }
+        AOEIW39_AFG_royal_buffer = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { army_defence_factor = 0.06 supply_consumption_factor = -0.06 improve_relations_maintain_cost_factor = -0.10 } }
+        AOEIW39_AZR_southern_oil_compact = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { fuel_gain_factor = 0.10 local_resources_factor = 0.10 political_power_factor = -0.03 } }
+        AOEIW39_ANG_atlantic_concessions = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.10 production_speed_infrastructure_factor = 0.10 autonomy_gain_global_factor = 0.04 } }
+        AOEIW39_MZB_indian_ocean_corridor = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { production_speed_infrastructure_factor = 0.12 trade_opinion_factor = 0.10 autonomy_gain_global_factor = 0.04 } }
+        AOEIW39_ICE_north_atlantic_outpost = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { convoy_escort_efficiency = 0.08 naval_detection = 0.06 autonomy_gain_global_factor = 0.05 } }
+
+        AOEIW39_SIK_oasis_coalition = { picture = generic_build_infrastructure allowed = { always = no } removal_cost = -1 modifier = { supply_consumption_factor = -0.06 local_resources_factor = 0.06 political_power_factor = -0.03 } }
+        AOEIW39_TIB_monastic_state = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { stability_factor = 0.06 research_speed_factor = -0.03 army_defence_factor = 0.04 } }
+        AOEIW39_YUN_kunming_arsenals = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.05 production_speed_arms_factory_factor = 0.10 supply_consumption_factor = 0.03 } }
+        AOEIW39_XSM_ma_clique_compact = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { cavalry_attack_factor = 0.06 army_speed_factor = 0.04 stability_factor = -0.03 } }
+        AOEIW39_XIC_xian_truce = { picture = generic_political_support allowed = { always = no } removal_cost = -1 modifier = { improve_relations_maintain_cost_factor = -0.15 army_org_factor = 0.03 political_power_factor = 0.03 } }
+        AOEIW39_IAF_red_sea_viceroyalty = { picture = generic_army_war_college allowed = { always = no } removal_cost = -1 modifier = { heat_attrition_factor = -0.08 army_org_factor = 0.03 autonomy_gain_global_factor = 0.04 } }
+        AOEIW39_MAF_chartered_colonies = { picture = generic_production_bonus allowed = { always = no } removal_cost = -1 modifier = { local_resources_factor = 0.12 production_speed_infrastructure_factor = 0.10 stability_factor = -0.04 } }
+        AOEIW39_GPA_island_station = { picture = generic_navy_bonus allowed = { always = no } removal_cost = -1 modifier = { naval_range = 0.10 convoy_escort_efficiency = 0.08 production_speed_naval_base_factor = 0.12 } }
+    }
+}

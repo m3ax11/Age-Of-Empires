@@ -31,7 +31,8 @@ state={
 		add_to_array = { state_victory_points = 7926 }
 		add_to_array = { state_victory_points = 4900 }
 		add_to_array = { state_victory_points = 2014 }
-        owner = CHI
+        owner = TIB
+        add_core_of = TIB
         add_core_of = CHI
     }
 

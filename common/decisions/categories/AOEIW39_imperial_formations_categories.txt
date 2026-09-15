@@ -1,0 +1,6 @@
+AOEIW39_imperial_formations_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = GER }
+    visible = { original_tag = GER }
+    visible_when_empty = no
+}

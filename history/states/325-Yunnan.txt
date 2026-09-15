@@ -36,7 +36,8 @@ state={
 			industrial_complex = 3
 
 		}
-        owner = CHI
+        owner = YUN
+        add_core_of = YUN
         add_core_of = CHI
     }
 

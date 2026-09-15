@@ -18,7 +18,8 @@ state={
 		add_claim_by = TMS
 		add_claim_by = UZB
 		add_to_array = { state_victory_points = 7448 }
-        owner = PER
+        owner = AFG
+        add_core_of = AFG
         add_core_of = PER
     }
 

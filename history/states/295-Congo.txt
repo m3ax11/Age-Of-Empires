@@ -35,8 +35,8 @@ state={
 		victory_points = {
 			5117 5
 		}
-        owner = BEL
-        add_core_of = BEL
+        owner = COG
+        add_core_of = COG
     }
 
 	provinces={

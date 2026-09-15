@@ -18,8 +18,8 @@ state={
 			13502 2 # Singaraja
 		}
 		add_to_array = { state_victory_points = 13502 }
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 
 	provinces={

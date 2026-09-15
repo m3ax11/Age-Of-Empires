@@ -49,30 +49,6 @@ add_equipment_to_stockpile = { type = support_equipment_1 amount = 720 }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 540 }
 oob = "AOEIW_world_GEA_1936"
 
-# RT56 compatibility: retain its country-specific character roster.
-recruit_character = MAL_onn_jaafar
-recruit_character = MAL_tunku_abdul_rahman
-recruit_character = MAL_shenton_thomas
-recruit_character = MAL_lai_teck
-recruit_character = MAL_chin_peng
-recruit_character = MAL_ibrahim_hj_yaacob
-recruit_character = MAL_mustapha_hussain
-recruit_character = MAL_edward_james_gent
-recruit_character = MAL_tan_cheng_lock
-recruit_character = MAL_tan_kan_kee
-recruit_character = MAL_leong_yew_koh
-recruit_character = MAL_simmons_frank_keith
-recruit_character = MAL_tunku_osman
-recruit_character = MAL_robert_brooke_popham
-recruit_character = MAL_tan_kay_hai
-recruit_character = MAL_john_leach
-recruit_character = MAL_caledon_charles_alexander
-recruit_character = MAL_ibrahim_ismail
-recruit_character = MAL_mohamed_shariff
-recruit_character = MAL_lee_hau_shik
-recruit_character = MAN_Gordon_Bennett
-recruit_character = MAN_Lewis_Heath
-recruit_character = MAN_adnan_saidi
-recruit_character = MAN_yeop_mahadin_shariff
-recruit_character = MAN_tom_phillips
-recruit_character = MAN_william_tennant
+# The MAL slot represents German East Asia in this scenario. Malaysian and
+# British-Malayan characters remain defined for compatibility but are not
+# recruited into the Qingdao colonial administration.

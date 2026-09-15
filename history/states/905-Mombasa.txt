@@ -19,7 +19,8 @@ state={
 		}
 
 		add_to_array = { state_victory_points = 5210 }
-        owner = ENG
+        owner = KEN
+        add_core_of = KEN
         add_core_of = ENG
     }
 

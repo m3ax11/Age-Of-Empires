@@ -15,8 +15,8 @@ state={
 		add_claim_by = DEN
 
 		add_to_array = { state_victory_points = 13331 }
-        owner = GER
-        add_core_of = GER
+        owner = ICE
+        add_core_of = ICE
     }
 
 	provinces={

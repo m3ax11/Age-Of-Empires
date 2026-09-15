@@ -18,8 +18,8 @@ state = {
 		victory_points = {
 			10243 1 # Cagayan de Oro
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = PHI
+        add_core_of = PHI
     }
 
 	provinces = {

@@ -23,7 +23,8 @@ state = {
 		victory_points = {
 			12331 1 # Pailingmiao
 		}
-        owner = CHI
+        owner = XSM
+        add_core_of = XSM
         add_core_of = CHI
     }
 

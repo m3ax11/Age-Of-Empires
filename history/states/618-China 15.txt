@@ -20,7 +20,8 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
-        owner = CHI
+        owner = SIK
+        add_core_of = SIK
         add_core_of = CHI
     }
 

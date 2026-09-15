@@ -22,8 +22,8 @@ state = {
 		victory_points = {
 			4241 5 # Davao
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = PHI
+        add_core_of = PHI
     }
 
 	provinces = {

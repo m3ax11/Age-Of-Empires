@@ -1,0 +1,6 @@
+AOEIW39_chinese_regional_category = {
+    icon = generic_political_actions
+    allowed = { OR = { original_tag = SIK original_tag = TIB original_tag = YUN original_tag = XSM original_tag = XIC } }
+    visible = { always = yes }
+    visible_when_empty = no
+}

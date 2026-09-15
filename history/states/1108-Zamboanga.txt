@@ -26,8 +26,8 @@ state = {
 		victory_points = {
 			1421 2 # Zamboanga
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = PHI
+        add_core_of = PHI
     }
 
 	provinces = {

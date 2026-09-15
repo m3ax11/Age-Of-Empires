@@ -41,8 +41,8 @@ state = {
 				naval_base = 3
 			}
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 	provinces = {
 		4306 4390 4608 7654 10479 12472 13500 13520 13501

@@ -23,7 +23,8 @@ state={
 		victory_points = {
 			1891 1 # Sokoto
 		}
-        owner = ENG
+        owner = NGA
+        add_core_of = NGA
         add_core_of = ENG
     }
 

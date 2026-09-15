@@ -18,7 +18,8 @@ state={
 
 		add_claim_by = CHI
 		add_to_array = { state_victory_points = 10802 }
-        owner = CHI
+        owner = TIB
+        add_core_of = TIB
         add_core_of = CHI
     }
 

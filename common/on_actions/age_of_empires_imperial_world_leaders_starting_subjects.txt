@@ -25,6 +25,81 @@ on_actions = {
                     autonomy_state = autonomy_dominion
                     freedom_level = 0.15
                 }
+                set_autonomy = { target = NFL autonomy_state = autonomy_dominion freedom_level = 0.25 }
+                set_autonomy = { target = BRM autonomy_state = autonomy_colony freedom_level = 0.20 }
+                set_autonomy = { target = NGA autonomy_state = autonomy_colony freedom_level = 0.15 }
+                set_autonomy = { target = KEN autonomy_state = autonomy_colony freedom_level = 0.15 }
+                set_autonomy = { target = SRL autonomy_state = autonomy_colony freedom_level = 0.10 }
+            }
+            JAP = {
+                set_autonomy = { target = INS autonomy_state = autonomy_colony freedom_level = 0.20 }
+                set_autonomy = { target = PHI autonomy_state = autonomy_puppet freedom_level = 0.30 }
+                set_autonomy = { target = KOR autonomy_state = autonomy_integrated_puppet freedom_level = 0.15 }
+            }
+            FRA = {
+                set_autonomy = { target = ALG autonomy_state = autonomy_colony freedom_level = 0.20 }
+                set_autonomy = { target = MOR autonomy_state = autonomy_puppet freedom_level = 0.35 }
+                set_autonomy = { target = TUN autonomy_state = autonomy_puppet freedom_level = 0.35 }
+            }
+            BEL = { set_autonomy = { target = COG autonomy_state = autonomy_colony freedom_level = 0.10 } }
+            ITA = {
+                set_autonomy = { target = LBA autonomy_state = autonomy_colony freedom_level = 0.20 }
+                set_autonomy = { target = IAF autonomy_state = autonomy_colony freedom_level = 0.15 }
+            }
+            SPR = { set_autonomy = { target = CUB autonomy_state = autonomy_colony freedom_level = 0.20 } }
+            PER = {
+                set_autonomy = { target = AFG autonomy_state = autonomy_puppet freedom_level = 0.45 }
+                set_autonomy = { target = AZR autonomy_state = autonomy_integrated_puppet freedom_level = 0.25 }
+            }
+            POR = {
+                set_autonomy = { target = ANG autonomy_state = autonomy_colony freedom_level = 0.15 }
+                set_autonomy = { target = MZB autonomy_state = autonomy_colony freedom_level = 0.15 }
+            }
+            GER = { set_autonomy = { target = ICE autonomy_state = autonomy_puppet freedom_level = 0.30 } }
+
+            INS = { add_ideas = AOEIW39_INS_insulindian_compact }
+            PHI = { add_ideas = AOEIW39_PHI_archipelago_defence }
+            KOR = { add_ideas = AOEIW39_KOR_industrial_protectorate }
+            BRM = { add_ideas = AOEIW39_BRM_frontier_administration }
+            ALG = { add_ideas = AOEIW39_ALG_divided_colony }
+            MOR = { add_ideas = AOEIW39_MOR_treaty_sultanate }
+            TUN = { add_ideas = AOEIW39_TUN_beylical_compact }
+            NFL = { add_ideas = AOEIW39_NFL_commission_government }
+            NGA = { add_ideas = AOEIW39_NGA_indirect_rule }
+            KEN = { add_ideas = AOEIW39_KEN_settler_federation }
+            SRL = { add_ideas = AOEIW39_SRL_plantation_harbour }
+            COG = { add_ideas = AOEIW39_COG_concession_regime }
+            LBA = { add_ideas = AOEIW39_LBA_fourth_shore }
+            CUB = { add_ideas = AOEIW39_CUB_captaincy_compact }
+            AFG = { add_ideas = AOEIW39_AFG_royal_buffer }
+            AZR = { add_ideas = AOEIW39_AZR_southern_oil_compact }
+            ANG = { add_ideas = AOEIW39_ANG_atlantic_concessions }
+            MZB = { add_ideas = AOEIW39_MZB_indian_ocean_corridor }
+            ICE = { add_ideas = AOEIW39_ICE_north_atlantic_outpost }
+            SIK = { add_ideas = AOEIW39_SIK_oasis_coalition }
+            TIB = { add_ideas = AOEIW39_TIB_monastic_state }
+            YUN = { add_ideas = AOEIW39_YUN_kunming_arsenals }
+            XSM = { add_ideas = AOEIW39_XSM_ma_clique_compact }
+            XIC = { add_ideas = AOEIW39_XIC_xian_truce }
+            IAF = { add_ideas = AOEIW39_IAF_red_sea_viceroyalty }
+
+            every_country = {
+                limit = {
+                    is_ai = no
+                    OR = {
+                        original_tag = INS original_tag = PHI original_tag = KOR original_tag = BRM
+                        original_tag = ALG original_tag = MOR original_tag = TUN original_tag = NFL
+                        original_tag = NGA original_tag = KEN original_tag = SRL original_tag = COG
+                        original_tag = LBA original_tag = CUB original_tag = AFG original_tag = AZR
+                        original_tag = ANG original_tag = MZB original_tag = ICE
+                        original_tag = SIK original_tag = TIB original_tag = YUN
+                        original_tag = XSM original_tag = XIC
+                        original_tag = IAF
+                        original_tag = MAL original_tag = EST original_tag = VIN
+                        original_tag = MLI original_tag = KAZ original_tag = GEO
+                    }
+                }
+                country_event = { id = AOEIW39_imperial_roster.1 hours = 12 }
             }
             AUS = { country_event = { id = AOEIW_map_roster.1 hours = 6 } }
             YUG = { country_event = { id = AOEIW_map_roster.2 hours = 8 } }

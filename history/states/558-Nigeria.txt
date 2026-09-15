@@ -21,7 +21,8 @@ state={
 		victory_points = {
 			2050 10
 		}
-        owner = ENG
+        owner = NGA
+        add_core_of = NGA
         add_core_of = ENG
     }
 

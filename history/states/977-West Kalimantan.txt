@@ -8,8 +8,8 @@ state = {  #actually Central Kalimantan / Dajak-Landen
 	impassable_ignored_links = { 1131 } #Limbang
 
 	history = {
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 
 	provinces={

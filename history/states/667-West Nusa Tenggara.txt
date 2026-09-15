@@ -38,8 +38,8 @@ state={
 		victory_points = {
 			12234 1
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 
 	provinces={

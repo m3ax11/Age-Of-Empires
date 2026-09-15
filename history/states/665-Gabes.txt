@@ -15,8 +15,8 @@ state={
 				bunker = 1
 			}
 		}
-        owner = FRA
-        add_core_of = FRA
+        owner = TUN
+        add_core_of = TUN
     }
 	
 	state_category = pastoral

@@ -1,0 +1,42 @@
+AOEIW39_imperial_administration_category = {
+    AOEIW39_petition_for_local_budget = {
+        icon = generic_economic_policy
+        cost = 45
+        visible = { is_subject = yes }
+        available = { is_subject = yes }
+        days_re_enable = 180
+        complete_effect = {
+            add_autonomy_ratio = { value = 0.04 localization = AOEIW39_local_budget_autonomy }
+            add_stability = 0.01
+        }
+        ai_will_do = { base = 3 modifier = { factor = 2 stability < 0.50 } }
+    }
+
+    AOEIW39_accept_imperial_defence_quota = {
+        icon = generic_operation
+        cost = 35
+        visible = { is_subject = yes }
+        available = { is_subject = yes }
+        days_re_enable = 180
+        complete_effect = {
+            add_autonomy_ratio = { value = -0.03 localization = AOEIW39_defence_quota_autonomy }
+            add_war_support = 0.02
+            army_experience = 5
+        }
+        ai_will_do = { base = 3 modifier = { factor = 3 has_war = yes } }
+    }
+
+    AOEIW39_convene_constitutional_conference = {
+        icon = generic_prepare_civil_war
+        cost = 100
+        fire_only_once = yes
+        visible = { is_subject = yes }
+        available = {
+            is_subject = yes
+            date > 1939.1.1
+            has_country_flag = AOEIW39_imperial_settlement_acknowledged
+        }
+        complete_effect = { country_event = { id = AOEIW39_imperial_roster.2 hours = 1 } }
+        ai_will_do = { base = 2 modifier = { factor = 2 has_war = no } }
+    }
+}

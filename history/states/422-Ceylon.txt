@@ -41,7 +41,8 @@ state=
 				coastal_bunker = 3
 			}
 		}
-        owner = ENG
+        owner = SRL
+        add_core_of = SRL
         add_core_of = ENG
     }
 	

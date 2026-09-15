@@ -1,0 +1,60 @@
+add_namespace = AOEIW39_imperial_roster
+
+country_event = {
+    id = AOEIW39_imperial_roster.1
+    title = AOEIW39_imperial_roster.1.t
+    desc = { trigger = { original_tag = INS } text = AOEIW39_intro_INS }
+    desc = { trigger = { original_tag = PHI } text = AOEIW39_intro_PHI }
+    desc = { trigger = { original_tag = KOR } text = AOEIW39_intro_KOR }
+    desc = { trigger = { original_tag = BRM } text = AOEIW39_intro_BRM }
+    desc = { trigger = { original_tag = ALG } text = AOEIW39_intro_ALG }
+    desc = { trigger = { original_tag = MOR } text = AOEIW39_intro_MOR }
+    desc = { trigger = { original_tag = TUN } text = AOEIW39_intro_TUN }
+    desc = { trigger = { original_tag = NFL } text = AOEIW39_intro_NFL }
+    desc = { trigger = { original_tag = NGA } text = AOEIW39_intro_NGA }
+    desc = { trigger = { original_tag = KEN } text = AOEIW39_intro_KEN }
+    desc = { trigger = { original_tag = SRL } text = AOEIW39_intro_SRL }
+    desc = { trigger = { original_tag = COG } text = AOEIW39_intro_COG }
+    desc = { trigger = { original_tag = LBA } text = AOEIW39_intro_LBA }
+    desc = { trigger = { original_tag = CUB } text = AOEIW39_intro_CUB }
+    desc = { trigger = { original_tag = AFG } text = AOEIW39_intro_AFG }
+    desc = { trigger = { original_tag = AZR } text = AOEIW39_intro_AZR }
+    desc = { trigger = { original_tag = ANG } text = AOEIW39_intro_ANG }
+    desc = { trigger = { original_tag = MZB } text = AOEIW39_intro_MZB }
+    desc = { trigger = { original_tag = ICE } text = AOEIW39_intro_ICE }
+    desc = { trigger = { original_tag = SIK } text = AOEIW39_intro_SIK }
+    desc = { trigger = { original_tag = TIB } text = AOEIW39_intro_TIB }
+    desc = { trigger = { original_tag = YUN } text = AOEIW39_intro_YUN }
+    desc = { trigger = { original_tag = XSM } text = AOEIW39_intro_XSM }
+    desc = { trigger = { original_tag = XIC } text = AOEIW39_intro_XIC }
+    desc = { trigger = { original_tag = IAF } text = AOEIW39_intro_IAF }
+    desc = { trigger = { original_tag = MAL } text = AOEIW39_intro_MAL }
+    desc = { trigger = { original_tag = EST } text = AOEIW39_intro_EST }
+    desc = { trigger = { original_tag = VIN } text = AOEIW39_intro_VIN }
+    desc = { trigger = { original_tag = MLI } text = AOEIW39_intro_MLI }
+    desc = { trigger = { original_tag = KAZ } text = AOEIW39_intro_KAZ }
+    desc = { trigger = { original_tag = GEO } text = AOEIW39_intro_GEO }
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = AOEIW39_imperial_roster.1.a
+        set_country_flag = AOEIW39_imperial_settlement_acknowledged
+    }
+}
+
+country_event = {
+    id = AOEIW39_imperial_roster.2
+    title = AOEIW39_imperial_roster.2.t
+    desc = AOEIW39_imperial_roster.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+
+    option = {
+        name = AOEIW39_imperial_roster.2.a
+        add_autonomy_ratio = { value = 0.10 localization = AOEIW39_constitutional_conference_autonomy }
+        add_stability = 0.02
+        set_country_flag = AOEIW39_constitutional_conference_held
+    }
+}

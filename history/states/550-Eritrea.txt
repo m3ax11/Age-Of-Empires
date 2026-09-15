@@ -30,8 +30,8 @@ state={
 			}
 
 		}
-        owner = ITA
-        add_core_of = ITA
+        owner = IAF
+        add_core_of = IAF
     }
 
 	provinces={

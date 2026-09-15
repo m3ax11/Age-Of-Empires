@@ -10,8 +10,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-        owner = ITA
-        add_core_of = ITA
+        owner = LBA
+        add_core_of = LBA
     }
 	
 	provinces={

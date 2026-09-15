@@ -1,0 +1,3 @@
+IAF = "countries/Italian East Africa.txt"
+MAF = "countries/Mittelafrika.txt"
+GPA = "countries/German Pacific Administration.txt"

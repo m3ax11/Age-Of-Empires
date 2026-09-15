@@ -40,8 +40,8 @@ state = {
 				naval_base = 3
 			}
 		}
-        owner = JAP
-        add_core_of = JAP
+        owner = INS
+        add_core_of = INS
     }
 	manpower = 3127450
 	buildings_max_level_factor=1.000
