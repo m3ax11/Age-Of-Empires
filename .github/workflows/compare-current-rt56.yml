@@ -112,6 +112,6 @@ jobs:
               if textnorm(aa[n])!=textnorm(ba[n]): aid.append(n)
           print('AI semantic diffs',len(aid),'sample',aid[:80])
 
-          # Fail only to make the log easy to spot; this is diagnostic.
+          # Diagnostic only.
           if semantic or binary or dr or sr_struct or st_struct or st_missing:
               raise SystemExit(2)
