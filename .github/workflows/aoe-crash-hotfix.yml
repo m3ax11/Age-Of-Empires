@@ -1,0 +1,78 @@
+name: Apply HOI4 1.19 crash hotfix
+
+on:
+  push:
+    branches:
+      - fix/main-menu-crash-1.19
+    paths:
+      - .github/workflows/aoe-crash-hotfix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  hotfix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out fix branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/main-menu-crash-1.19
+
+      - name: Remove invalid Hosho carrier-conversion slot
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path("history/countries/JAP - Japan.txt")
+          data = path.read_bytes()
+          marker = b'name = "Hosho Class"'
+          marker_pos = data.find(marker)
+          if marker_pos < 0:
+              raise SystemExit("Hosho Class variant not found")
+
+          block_start = data.rfind(b"create_equipment_variant = {", 0, marker_pos)
+          next_block = data.find(b"create_equipment_variant = {", marker_pos + len(marker))
+          if block_start < 0:
+              raise SystemExit("Hosho create_equipment_variant block start not found")
+          if next_block < 0:
+              next_block = len(data)
+
+          block = data[block_start:next_block]
+          targets = (
+              b"\t\tfixed_ship_armor_slot = empty\r\n",
+              b"\t\tfixed_ship_armor_slot = empty\n",
+          )
+          removed = False
+          for target in targets:
+              if target in block:
+                  block = block.replace(target, b"", 1)
+                  removed = True
+                  break
+
+          if not removed and b"fixed_ship_armor_slot" in block:
+              raise SystemExit("Hosho still contains an unexpected fixed_ship_armor_slot form")
+
+          patched = data[:block_start] + block + data[next_block:]
+          path.write_bytes(patched)
+
+          verify = patched[block_start:block_start + len(block)]
+          if b"fixed_ship_armor_slot" in verify:
+              raise SystemExit("Hosho carrier-conversion armor slot was not removed")
+
+          print("Hosho Class now matches the HOI4 1.19 / current RT56 carrier-conversion slot schema.")
+
+      - name: Commit hotfix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "history/countries/JAP - Japan.txt"
+          if git diff --cached --quiet; then
+            echo "No content change needed."
+          else
+            git commit -m "Fix: align Hosho carrier conversion with HOI4 1.19"
+            git push origin HEAD:fix/main-menu-crash-1.19
+          fi
+
+      - name: Run AOE static validator
+        run: python tools/validate_aoeiw.py
