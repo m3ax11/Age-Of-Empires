@@ -1,0 +1,39 @@
+name: Build focus-regression test branch
+
+on:
+  push:
+    branches:
+      - test/revert-focus-polish
+    paths:
+      - .github/workflows/revert-focus-polish-test.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: test/revert-focus-polish
+          fetch-depth: 0
+
+      - name: Restore AOE focus files from last known good runtime commit
+        run: |
+          git checkout cf7576f7856e688a10e22b7ec9651dcc1e288f2e -- ':(glob)common/national_focus/AOEIW*.txt'
+
+      - name: Validate scripts
+        run: python tools/validate_aoeiw.py
+
+      - name: Commit test build
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add common/national_focus
+          if git diff --cached --quiet; then
+            echo "No focus changes to restore"
+          else
+            git commit -m "Test: restore AOE focus files from last known good runtime"
+            git push origin HEAD:test/revert-focus-polish
+          fi
