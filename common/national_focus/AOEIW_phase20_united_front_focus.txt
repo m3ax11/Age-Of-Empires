@@ -181,6 +181,7 @@ focus_tree = {
         icon = GFX_focus_generic_election
         x = 1 y = 10 cost = 7
         prerequisite = { focus = AOEIW20_UF_question_leadership }
+        mutually_exclusive = { focus = AOEIW20_UF_mao_leads focus = AOEIW20_UF_council_endures }
         completion_reward = {
             custom_effect_tooltip = AOEIW_QOL_TT_CHIANG_LEADERSHIP
             promote_character = { character = AOEIW20_UF_chiang_kaishek ideology = despotism }
@@ -226,6 +227,7 @@ focus_tree = {
         icon = GFX_focus_AFG_parliamentary_democracy
         x = 5 y = 10 cost = 7
         prerequisite = { focus = AOEIW20_UF_question_leadership }
+        mutually_exclusive = { focus = AOEIW20_UF_chiang_leads focus = AOEIW20_UF_mao_leads }
         completion_reward = {
             custom_effect_tooltip = AOEIW_QOL_TT_COUNCIL_LEADERSHIP
             add_ideas = AOEIW20_UF_council_state

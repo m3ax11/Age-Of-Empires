@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_MEX_politics_p1_1
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_focus_generic_election
         x = 1
         y = 1
         cost = 6
@@ -54,6 +54,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_MEX_politics_root }
+        mutually_exclusive = { focus = AOEIW9_MEX_politics_p2_1 focus = AOEIW9_MEX_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_MEX_politics_p2_1 has_completed_focus = AOEIW9_MEX_politics_p3_1 } } }
     }
 
@@ -329,6 +330,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_MEX_politics_root }
+        mutually_exclusive = { focus = AOEIW9_MEX_politics_p1_1 focus = AOEIW9_MEX_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_MEX_politics_p1_1 has_completed_focus = AOEIW9_MEX_politics_p2_1 } } }
     }
 
@@ -599,7 +601,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,4
         id = AOEIW9_MEX_eco_civ_5
-        icon = GFX_focus_generic_modernize_industry
+        icon = GFX_focus_generic_industry_investment
         x = 12
         y = 4
         cost = 5
@@ -768,7 +770,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,3
         id = AOEIW9_MEX_eco_war_4
-        icon = GFX_focus_generic_industry_3
+        icon = GFX_focus_generic_military_industry
         x = 15
         y = 3
         cost = 5
@@ -968,7 +970,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 42,6
         id = AOEIW9_MEX_eco_science_5
-        icon = GFX_focus_generic_radio_communication
+        icon = GFX_focus_generic_industrial_experts
         x = 22
         y = 6
         cost = 7
@@ -1187,7 +1189,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,12
         id = AOEIW9_MEX_mil_army_2
-        icon = GFX_focus_generic_army_tanks2
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 11
         cost = 6
@@ -2050,7 +2052,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW38_MEX_sovereign_refineries
-        icon = GFX_focus_generic_railroad
+        icon = GFX_goal_generic_oil_refinery
         x = 0
         y = 1
         relative_position_id = AOEIW38_MEX_workers_and_wells

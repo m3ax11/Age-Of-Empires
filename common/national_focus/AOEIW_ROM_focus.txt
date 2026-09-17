@@ -54,6 +54,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 6 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_ROM_politics_root }
+        mutually_exclusive = { focus = AOEIW9_ROM_politics_p2_1 focus = AOEIW9_ROM_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ROM_politics_p2_1 has_completed_focus = AOEIW9_ROM_politics_p3_1 } } }
     }
 
@@ -329,6 +330,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 6 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_ROM_politics_root }
+        mutually_exclusive = { focus = AOEIW9_ROM_politics_p1_1 focus = AOEIW9_ROM_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_ROM_politics_p1_1 has_completed_focus = AOEIW9_ROM_politics_p2_1 } } }
     }
 
@@ -445,7 +447,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,7
         id = AOEIW9_ROM_politics_settlement
-        icon = GFX_focus_generic_court
+        icon = GFX_goal_generic_propaganda
         x = 4
         y = 7
         cost = 5
@@ -921,7 +923,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 44,3
         id = AOEIW9_ROM_eco_science_3
-        icon = GFX_focus_generic_university_3
+        icon = GFX_focus_generic_university_2
         x = 23
         y = 3
         cost = 5
@@ -1186,7 +1188,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,12
         id = AOEIW9_ROM_mil_army_2
-        icon = GFX_goal_generic_army_artillery2
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 11
         cost = 6
@@ -1334,7 +1336,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,17
         id = AOEIW9_ROM_mil_army_8
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_focus_GER_monarchy_compromise
         x = 1
         y = 16
         cost = 4
@@ -2103,7 +2105,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 37,19
         id = AOEIW9_ROM_dip_final
-        icon = GFX_goal_generic_alliance
+        icon = GFX_focus_ITA_the_italian_republic
         x = 18
         y = 18
         cost = 7

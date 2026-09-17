@@ -38,6 +38,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SWI_politics_root }
+        mutually_exclusive = { focus = AOEIW9_SWI_politics_p2_1 focus = AOEIW9_SWI_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -55,7 +56,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 17,2
         id = AOEIW9_SWI_politics_p1_2
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 14
         y = 2
         cost = 5
@@ -78,7 +79,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 19,3
         id = AOEIW9_SWI_politics_p1_3
-        icon = GFX_focus_generic_election
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 15
         y = 3
         cost = 5
@@ -123,7 +124,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 17,5
         id = AOEIW9_SWI_politics_p1_5
-        icon = GFX_goal_generic_national_unity
+        icon = GFX_focus_ITA_the_italian_republic
         x = 14
         y = 5
         cost = 7
@@ -171,7 +172,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,2
         id = AOEIW9_SWI_politics_p2_2
-        icon = GFX_focus_generic_election
+        icon = GFX_focus_ITA_the_italian_republic
         x = 18
         y = 2
         cost = 5
@@ -269,6 +270,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SWI_politics_root }
+        mutually_exclusive = { focus = AOEIW9_SWI_politics_p1_1 focus = AOEIW9_SWI_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -928,7 +930,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW9_SWI_eco_science_5
-        icon = GFX_focus_generic_university_2
+        icon = GFX_focus_generic_industrial_experts
         x = 8
         y = 6
         cost = 5
@@ -1093,7 +1095,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 11,11
         id = AOEIW9_SWI_mil_army_1
-        icon = GFX_focus_generic_army_tanks2
+        icon = GFX_goal_generic_army_doctrines
         x = 10
         y = 11
         cost = 5
@@ -1484,7 +1486,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 22,13
         id = AOEIW9_SWI_mil_special_3
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_home_defense
         x = 17
         y = 13
         cost = 5
@@ -1815,7 +1817,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 35,8
         id = AOEIW9_SWI_dip_final
-        icon = GFX_focus_generic_national_security
+        icon = GFX_focus_ITA_the_italian_republic
         x = 25
         y = 8
         cost = 7

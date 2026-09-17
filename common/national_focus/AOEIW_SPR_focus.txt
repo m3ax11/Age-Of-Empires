@@ -52,6 +52,7 @@ focus_tree = {
             # AOEIW INTEGRATED COUNTRY EFFECT END
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p2_1 focus = AOEIW9_SPR_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p2_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
     }
 
@@ -194,6 +195,7 @@ focus_tree = {
             # AOEIW INTEGRATED COUNTRY EFFECT END
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_stability < 0.60 } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p1_1 focus = AOEIW9_SPR_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p3_1 } } }
     }
 
@@ -336,6 +338,7 @@ focus_tree = {
             # AOEIW INTEGRATED COUNTRY EFFECT END
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 7 modifier = { factor = 1.6 has_war = yes } }
+        mutually_exclusive = { focus = AOEIW9_SPR_politics_p1_1 focus = AOEIW9_SPR_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SPR_politics_p1_1 has_completed_focus = AOEIW9_SPR_politics_p2_1 } } }
     }
 
@@ -516,7 +519,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW27_SPR_foral_compromise
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_spa_no_compromise_on_carlist_ideals
         x = 1
         y = 7
         cost = 6
@@ -536,7 +539,7 @@ focus_tree = {
 
     focus = {
         id = AOEIW27_SPR_imperial_social_charter
-        icon = GFX_focus_generic_welfare
+        icon = GFX_focus_spr_maintain_the_republic
         x = 5
         y = 7
         cost = 6
@@ -725,7 +728,7 @@ focus_tree = {
         # AOEIW visual-layout base: 24,4
         # AOEIW expansion-space base: 27,4
         id = AOEIW9_SPR_eco_civ_5
-        icon = GFX_focus_generic_industry_3
+        icon = GFX_focus_generic_industry_investment
         x = 15
         y = 4
         cost = 6
@@ -1042,7 +1045,7 @@ focus_tree = {
         # AOEIW visual-layout base: 32,3
         # AOEIW expansion-space base: 32,3
         id = AOEIW9_SPR_eco_science_3
-        icon = GFX_focus_generic_university_1
+        icon = GFX_focus_generic_university_2
         x = 21
         y = 3
         cost = 6
@@ -1313,7 +1316,7 @@ focus_tree = {
         # AOEIW visual-layout base: 3,12
         # AOEIW expansion-space base: 2,11
         id = AOEIW9_SPR_mil_army_2
-        icon = GFX_focus_generic_mechanized
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 11
         cost = 7
@@ -2250,7 +2253,7 @@ focus_tree = {
         # AOEIW visual-layout base: 37,19
         # AOEIW expansion-space base: 35,17
         id = AOEIW9_SPR_dip_final
-        icon = GFX_goal_generic_alliance
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 24
         y = 18
         cost = 7

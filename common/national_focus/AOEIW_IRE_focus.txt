@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_IRE_politics_p1_1
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_BRA_greater_federalism
         x = 1
         y = 1
         cost = 6
@@ -54,13 +54,14 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_politics_root }
+        mutually_exclusive = { focus = AOEIW9_IRE_politics_p2_1 focus = AOEIW9_IRE_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_IRE_politics_p2_1 has_completed_focus = AOEIW9_IRE_politics_p3_1 } } }
     }
 
     focus = {
         # AOEIW visual-layout base: 3,2
         id = AOEIW9_IRE_politics_p1_2
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 1
         y = 2
         cost = 7
@@ -82,7 +83,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,3
         id = AOEIW9_IRE_politics_p1_3
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_BRA_greater_federalism
         x = 1
         y = 3
         cost = 4
@@ -177,7 +178,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 9,2
         id = AOEIW9_IRE_politics_p2_2
-        icon = GFX_focus_generic_election
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 4
         y = 2
         cost = 4
@@ -287,6 +288,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_politics_root }
+        mutually_exclusive = { focus = AOEIW9_IRE_politics_p1_1 focus = AOEIW9_IRE_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_IRE_politics_p1_1 has_completed_focus = AOEIW9_IRE_politics_p2_1 } } }
     }
 
@@ -597,7 +599,7 @@ focus_tree = {
         # AOEIW visual-layout base: 24,6
         id = AOEIW9_IRE_eco_civ_7
         icon = GFX_focus_generic_mass_production
-        x = 11
+        x = 12
         y = 6
         cost = 7
         
@@ -622,15 +624,14 @@ focus_tree = {
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_IRE_eco_civ_6 }
-        mutually_exclusive = { focus = AOEIW9_IRE_eco_civ_8 }
     }
 
     focus = {
         # AOEIW visual-layout base: 24,7
         id = AOEIW9_IRE_eco_civ_8
         icon = GFX_focus_generic_industry_2
-        x = 13
-        y = 6
+        x = 12
+        y = 7
         cost = 4
         
         cancel_if_invalid = yes
@@ -645,8 +646,7 @@ focus_tree = {
             add_tech_bonus = { name = AOEIW21_IRE_industrial_modernisation bonus = 0.50 uses = 1 category = industry }
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_IRE_eco_civ_6 }
-        mutually_exclusive = { focus = AOEIW9_IRE_eco_civ_7 }
+        prerequisite = { focus = AOEIW9_IRE_eco_civ_7 }
     }
 
     focus = {
@@ -654,7 +654,7 @@ focus_tree = {
         id = AOEIW9_IRE_eco_civ_9
         icon = GFX_goal_generic_construct_civ_factory
         x = 12
-        y = 7
+        y = 8
         cost = 5
         
         cancel_if_invalid = yes
@@ -665,7 +665,7 @@ focus_tree = {
             add_ideas = AOEIW9_IRE_spirit_civilian_engine
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_IRE_eco_civ_7 focus = AOEIW9_IRE_eco_civ_8 }
+        prerequisite = { focus = AOEIW9_IRE_eco_civ_8 }
     }
 
     focus = {
@@ -916,7 +916,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 36,6
         id = AOEIW9_IRE_eco_science_5
-        icon = GFX_focus_generic_university_2
+        icon = GFX_focus_generic_industrial_experts
         x = 18
         y = 6
         cost = 7
@@ -1107,7 +1107,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,13
         id = AOEIW9_IRE_mil_army_2
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 12
         cost = 6
@@ -1609,7 +1609,6 @@ focus_tree = {
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_dip_root }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_b_1 }
     }
 
     focus = {
@@ -1627,12 +1626,9 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_opinion_modifier = { target = ENG modifier = AOEIW_geopolitical_rivalry }
-            army_experience = 15
-            add_command_power = 10
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_dip_a_1 }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_a_3 }
     }
 
     focus = {
@@ -1649,12 +1645,9 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             add_political_power = 25
-            add_political_power = 40
-            add_stability = -0.03
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_dip_a_1 }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_a_2 }
     }
 
     focus = {
@@ -1674,7 +1667,8 @@ focus_tree = {
             add_war_support = 0.03
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
-        prerequisite = { focus = AOEIW9_IRE_dip_a_2 focus = AOEIW9_IRE_dip_a_3 }
+        prerequisite = { focus = AOEIW9_IRE_dip_a_2 }
+        prerequisite = { focus = AOEIW9_IRE_dip_a_3 }
     }
 
     focus = {
@@ -1692,7 +1686,6 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             if = { limit = { ENG = { exists = yes } NOT = { has_war_with = ENG } } create_wargoal = { type = annex_everything target = ENG } }
-            add_ideas = AOEIW9_IRE_spirit_border_emergency
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_IRE_dip_a_4 }
@@ -1716,14 +1709,13 @@ focus_tree = {
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_IRE_dip_root }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_a_1 }
     }
 
     focus = {
         # AOEIW visual-layout base: 42,13
         id = AOEIW9_IRE_dip_b_2
         icon = GFX_focus_generic_military_mission
-        x = 20
+        x = 21
         y = 12
         cost = 6
         
@@ -1734,20 +1726,17 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             add_opinion_modifier = { target = USA modifier = AOEIW_geopolitical_rivalry }
-            navy_experience = 15
-            add_command_power = 10
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_IRE_dip_b_1 }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_b_3 }
     }
 
     focus = {
         # AOEIW visual-layout base: 42,14
         id = AOEIW9_IRE_dip_b_3
         icon = GFX_focus_generic_concessions
-        x = 22
-        y = 12
+        x = 21
+        y = 13
         cost = 7
         
         cancel_if_invalid = yes
@@ -1756,12 +1745,9 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             add_political_power = 25
-            add_political_power = 40
-            add_stability = -0.02
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_IRE_dip_b_1 }
-        mutually_exclusive = { focus = AOEIW9_IRE_dip_b_2 }
+        prerequisite = { focus = AOEIW9_IRE_dip_b_2 }
     }
 
     focus = {
@@ -1769,7 +1755,7 @@ focus_tree = {
         id = AOEIW9_IRE_dip_b_4
         icon = GFX_goal_generic_army_doctrines
         x = 21
-        y = 13
+        y = 14
         cost = 4
         
         cancel_if_invalid = yes
@@ -1781,7 +1767,7 @@ focus_tree = {
             add_war_support = 0.03
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
-        prerequisite = { focus = AOEIW9_IRE_dip_b_2 focus = AOEIW9_IRE_dip_b_3 }
+        prerequisite = { focus = AOEIW9_IRE_dip_b_3 }
     }
 
     focus = {
@@ -1789,7 +1775,7 @@ focus_tree = {
         id = AOEIW9_IRE_dip_b_5
         icon = GFX_goal_generic_forceful_treaty
         x = 21
-        y = 14
+        y = 15
         cost = 5
         
         cancel_if_invalid = yes
@@ -1799,7 +1785,6 @@ focus_tree = {
         completion_reward = {
             add_political_power = 25
             if = { limit = { USA = { exists = yes } NOT = { has_war_with = USA } } create_wargoal = { type = annex_everything target = USA } }
-            add_ideas = AOEIW9_IRE_spirit_atlantic_republic
         }
         ai_will_do = { factor = 4 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_IRE_dip_b_4 }
@@ -1825,7 +1810,8 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
-        prerequisite = { focus = AOEIW9_IRE_dip_a_5 focus = AOEIW9_IRE_dip_b_5 }
+        prerequisite = { focus = AOEIW9_IRE_dip_a_5 }
+        prerequisite = { focus = AOEIW9_IRE_dip_b_5 }
     }
 
 

@@ -5,7 +5,7 @@ focus_tree = {
  reset_on_civilwar = no
  focus = {
         # AOEIW visual-layout base: 8,0
-    id = AOEIW_FRONTIER_MON_khural icon = GFX_focus_generic_public_meetings x = 4 y = 0 cost = 5
+    id = AOEIW_FRONTIER_MON_khural icon = GFX_focus_AUS_danubian_socialist_communes x = 4 y = 0 cost = 5
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     
     completion_reward = { add_political_power = 60 add_stability = 0.02 country_event = { id = AOEIW35_mon.1 hours = 6 } }
@@ -217,6 +217,7 @@ focus = {
     icon = GFX_focus_generic_arms_trade
     x = 3 y = 11 cost = 6
     prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
+    mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_MON_guarded_neutrality }
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     completion_reward = {
         set_country_flag = AOEIW38_ASIA_MIDDLE_MON_solidarity_policy
@@ -235,6 +236,7 @@ focus = {
     icon = GFX_focus_generic_concessions
     x = 7 y = 11 cost = 6
     prerequisite = { focus = AOEIW38_ASIA_MIDDLE_MON_frontier_council }
+    mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_MON_eastern_solidarity }
     available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
     completion_reward = {
         set_country_flag = AOEIW38_ASIA_MIDDLE_MON_neutrality_policy

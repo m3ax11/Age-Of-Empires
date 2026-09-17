@@ -44,7 +44,7 @@ focus_tree = {
         # AOEIW visual-layout base: 19,0
         id = AOEIW9_GER_politics_root
         icon = GFX_focus_GER_monarchy_compromise
-        x = 11
+        x = 14
         y = 0
         cost = 5
         cancel_if_invalid = yes
@@ -59,6 +59,7 @@ focus_tree = {
             factor = 10
             modifier = { factor = 0 is_historical_focus_on = yes }
         }
+        mutually_exclusive = { focus = AOEIW_HIST_GER_nationalist_opposition focus = AOEIW25_GER_workers_front }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW25_GER_workers_front has_completed_focus = AOEIW_HIST_GER_nationalist_opposition } } }
     }
 
@@ -68,6 +69,7 @@ focus_tree = {
         x = 23
         y = 0
         cost = 5
+        mutually_exclusive = { focus = AOEIW9_GER_politics_root focus = AOEIW_HIST_GER_nationalist_opposition }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -88,11 +90,12 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 5,1
         id = AOEIW9_GER_politics_p1_1
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_GER_monarchy_compromise
         x = 3
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_GER_politics_root }
+        mutually_exclusive = { focus = AOEIW9_GER_politics_p2_1 focus = AOEIW9_GER_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -110,7 +113,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 5,2
         id = AOEIW9_GER_politics_p1_2
-        icon = GFX_focus_generic_social_democracy
+        icon = GFX_focus_generic_court
         x = 3
         y = 2
         cost = 5
@@ -260,6 +263,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_GER_politics_root }
+        mutually_exclusive = { focus = AOEIW9_GER_politics_p1_1 focus = AOEIW9_GER_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -417,11 +421,12 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,1
         id = AOEIW9_GER_politics_p3_1
-        icon = GFX_focus_generic_workers
+        icon = GFX_focus_GER_legacy_of_the_spartacus_league
         x = 21
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW25_GER_workers_front }
+        mutually_exclusive = { focus = AOEIW9_GER_politics_p1_1 focus = AOEIW9_GER_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -570,7 +575,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,8
         id = AOEIW17_GER_revolutionary_council
-        icon = GFX_focus_generic_workers
+        icon = GFX_focus_ITA_workers_unions
         x = 21
         y = 8
         cost = 5
@@ -732,7 +737,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,12
         id = AOEIW17_GER_workers_armoured_corps
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_focus_generic_army_tanks2
         x = 21
         y = 12
         cost = 7
@@ -850,7 +855,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 29,13
         id = AOEIW17_GER_kiel_sailors_councils
-        icon = GFX_focus_generic_soviet_politics
+        icon = GFX_focus_AUS_danubian_socialist_communes
         x = 24
         y = 13
         cost = 5
@@ -867,7 +872,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 21,14
         id = AOEIW17_GER_industrial_republics_league
-        icon = GFX_goal_generic_trade
+        icon = GFX_goal_generic_alliance
         x = 19
         y = 14
         cost = 7
@@ -1317,7 +1322,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 61,4
         id = AOEIW9_GER_eco_war_5
-        icon = GFX_focus_generic_industry_3
+        icon = GFX_focus_generic_modernize_industry
         x = 48
         y = 4
         cost = 5
@@ -1476,7 +1481,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 56,3
         id = AOEIW9_GER_eco_science_3
-        icon = GFX_focus_generic_university_3
+        icon = GFX_focus_generic_university_1
         x = 45
         y = 3
         cost = 5
@@ -1778,6 +1783,7 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_GER_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GER_mil_army_5 } } }
     }
 
@@ -1835,6 +1841,7 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_GER_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GER_mil_army_2 } } }
     }
 
@@ -1915,7 +1922,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 50,24
         id = AOEIW9_GER_mil_army_10
-        icon = GFX_focus_generic_combined_arms
+        icon = GFX_focus_GER_glory_to_the_imperial_army
         x = 39
         y = 24
         cost = 5
@@ -2549,7 +2556,7 @@ swap_ideas = { remove_idea = AOEIW_GER_legacy_3 add_idea = AOEIW_GER_legacy_4 } 
     focus = {
         # AOEIW visual-layout base: 4,24
         id = AOEIW9_GER_dip_a_7
-        icon = GFX_goal_generic_alliance
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 52
         y = 5
         cost = 7
@@ -3160,7 +3167,7 @@ swap_ideas = { remove_idea = AOEIW_GER_legacy_3 add_idea = AOEIW_GER_legacy_4 } 
     focus = {
         # AOEIW visual-layout base: 5,7
         id = AOEIW_IMM_GER_federal_1
-        icon = GFX_focus_generic_democratic_europe
+        icon = GFX_focus_GER_monarchy_compromise
         x = 3
         y = 18
         cost = 5
@@ -3225,6 +3232,7 @@ swap_ideas = { remove_idea = AOEIW_GER_legacy_3 add_idea = AOEIW_GER_legacy_4 } 
         y = 21
         cost = 5
         prerequisite = { focus = AOEIW_IMM_GER_federal_3 }
+        mutually_exclusive = { focus = AOEIW_IMM_GER_weltpolitik_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3284,6 +3292,7 @@ swap_ideas = { remove_idea = AOEIW_GER_legacy_3 add_idea = AOEIW_GER_legacy_4 } 
         y = 21
         cost = 5
         prerequisite = { focus = AOEIW_IMM_GER_federal_3 }
+        mutually_exclusive = { focus = AOEIW_IMM_GER_continental_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3657,7 +3666,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_GER_federal_accounts
     focus = {
         # AOEIW visual-layout base: 5,11
         id = AOEIW_STRUCT_GER_DEPTH_colonial_census
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_focus_GER_weltpolitik
         x = 3
         y = 22
         cost = 5
@@ -3951,6 +3960,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_GER_workshop_represe
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
         prerequisite = { focus = AOEIW_STRUCT_GER_DEPTH_shopfloor_delegates }
+        mutually_exclusive = { focus = AOEIW_STRUCT_GER_DEPTH_quota_directorate }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GER_politics_p1_1 has_completed_focus = AOEIW9_GER_politics_p2_1 has_completed_focus = AOEIW9_GER_politics_root has_completed_focus = AOEIW_HIST_GER_nationalist_opposition has_completed_focus = AOEIW_STRUCT_GER_DEPTH_quota_directorate } } }
     }
 
@@ -3969,6 +3979,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_GER_workshop_represe
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 6 modifier = { factor = 1.4 has_war = yes } }
         prerequisite = { focus = AOEIW_STRUCT_GER_DEPTH_technical_cadres }
+        mutually_exclusive = { focus = AOEIW_STRUCT_GER_DEPTH_council_autonomy }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GER_politics_p1_1 has_completed_focus = AOEIW9_GER_politics_p2_1 has_completed_focus = AOEIW9_GER_politics_root has_completed_focus = AOEIW_HIST_GER_nationalist_opposition has_completed_focus = AOEIW_STRUCT_GER_DEPTH_council_autonomy } } }
     }
 
@@ -4383,7 +4394,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_GER_field_services_s
     focus = {
         # AOEIW visual-layout base: 61,23
         id = AOEIW_STRUCT_GER_DEPTH_convoy_school
-        icon = GFX_focus_generic_escort_efficiency
+        icon = GFX_focus_generic_naval_discipline
         x = 48
         y = 23
         cost = 5
@@ -4434,6 +4445,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_GER_convoy_service_s
         x = 32
         y = 0
         cost = 6
+        mutually_exclusive = { focus = AOEIW9_GER_politics_root focus = AOEIW25_GER_workers_front }
         available = { fascism > 0.05 }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -5122,7 +5134,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_elections_to_bundestag
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_election
         x = 11
         y = 9
         cost = 5
@@ -5138,7 +5150,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_elections_to_reichstag
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_generic_election
         x = 11
         y = 9
         cost = 5
@@ -5455,7 +5467,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_cdu_cross_confessional_union
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_workers
         x = 14
         y = 12
         cost = 5
@@ -5504,7 +5516,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_dstp_civil_service
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_AOEIW34_goal_ger_dstp_victory
         x = 17
         y = 11
         cost = 5
@@ -5577,7 +5589,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_kpd_workers_control
-        icon = GFX_focus_generic_workers
+        icon = GFX_AOEIW34_goal_ger_kpd_victory
         x = 20
         y = 11
         cost = 5
@@ -5601,7 +5613,7 @@ focus = {
     }
 focus = {
         id = AOEIW30_GER_kpd_parliamentary_front
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_workers
         x = 21
         y = 12
         cost = 5
@@ -5638,7 +5650,7 @@ focus = {
 
 focus = {
         id = AOEIW28_GER_confidence
-        icon = GFX_goal_generic_national_unity
+        icon = GFX_focus_GER_monarchy_compromise
         x = 11
         y = 18
         cost = 5
@@ -5670,7 +5682,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_spd_housing_cooperatives
-        icon = GFX_focus_generic_modernize_industry
+        icon = GFX_goal_generic_construct_civilian
         x = 2
         y = 12
         cost = 5
@@ -5701,7 +5713,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_spd_social_insurance
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_generic_welfare
         x = 0
         y = 14
         cost = 5
@@ -5733,7 +5745,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_spd_mandate_delivered
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_election
         x = 1
         y = 16
         cost = 5
@@ -5748,7 +5760,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_zentrum_regional_compacts
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_welfare
         x = 3
         y = 12
         cost = 5
@@ -5794,7 +5806,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_zentrum_subsidiarity
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_welfare
         x = 3
         y = 14
         cost = 5
@@ -5810,7 +5822,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_zentrum_national_standards
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_generic_welfare
         x = 6
         y = 14
         cost = 5
@@ -5841,7 +5853,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_liberal_civil_liberties
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_court
         x = 7
         y = 12
         cost = 5
@@ -5856,7 +5868,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_liberal_research_endowments
-        icon = GFX_focus_generic_radio_communication
+        icon = GFX_focus_generic_university_1
         x = 9
         y = 12
         cost = 5
@@ -5919,7 +5931,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_liberal_mandate_delivered
-        icon = GFX_focus_generic_election
+        icon = GFX_focus_GER_defender_of_democracy
         x = 8
         y = 16
         cost = 5
@@ -5949,7 +5961,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_conservative_procurement_audit
-        icon = GFX_focus_generic_truck
+        icon = GFX_focus_generic_military_academy
         x = 12
         y = 12
         cost = 5
@@ -5996,7 +6008,7 @@ focus = {
     }
 focus = {
         id = AOEIW29_GER_conservative_defence_industry
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_court
         x = 12
         y = 14
         cost = 5
@@ -6030,7 +6042,7 @@ focus = {
         id = AOEIW35_GER_imperial_settlement
         icon = GFX_focus_generic_court
         x = 3
-        y = 28
+        y = 27
         cost = 5
         prerequisite = { focus = AOEIW_IMM_GER_national_destiny }
         dynamic = yes
@@ -6046,7 +6058,7 @@ focus = {
         id = AOEIW35_GER_imperial_institutions
         icon = GFX_goal_generic_major_alliance
         x = 2
-        y = 29
+        y = 28
         cost = 5
         prerequisite = { focus = AOEIW35_GER_imperial_settlement }
         mutually_exclusive = { focus = AOEIW35_GER_imperial_executive }
@@ -6061,7 +6073,7 @@ focus = {
         id = AOEIW35_GER_imperial_executive
         icon = GFX_focus_generic_diplomatic_treaty
         x = 4
-        y = 29
+        y = 28
         cost = 5
         prerequisite = { focus = AOEIW35_GER_imperial_settlement }
         mutually_exclusive = { focus = AOEIW35_GER_imperial_institutions }
@@ -6076,7 +6088,7 @@ focus = {
         id = AOEIW35_GER_imperial_capstone
         icon = GFX_goal_generic_national_unity
         x = 3
-        y = 30
+        y = 29
         cost = 5
         prerequisite = { focus = AOEIW35_GER_imperial_institutions focus = AOEIW35_GER_imperial_executive }
         available_if_capitulated = no
@@ -6420,7 +6432,7 @@ focus = {
 
     focus = {
         id = AOEIW37_GER_charter_of_free_europe
-        icon = GFX_goal_generic_alliance
+        icon = GFX_focus_GER_european_confederation
         x = 11
         y = 31
         cost = 7
@@ -6820,7 +6832,7 @@ focus = {
 
     focus = {
         id = AOEIW37_GER_common_plan_fulfilled
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_generic_soviet_politics
         x = 20
         y = 23
         cost = 7

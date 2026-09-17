@@ -33,7 +33,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW9_GRE_politics_p1_1
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 1
         y = 1
         cost = 5
@@ -54,6 +54,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_GRE_politics_root }
+        mutually_exclusive = { focus = AOEIW9_GRE_politics_p2_1 focus = AOEIW9_GRE_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GRE_politics_p2_1 has_completed_focus = AOEIW9_GRE_politics_p3_1 } } }
     }
 
@@ -125,7 +126,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,5
         id = AOEIW9_GRE_politics_p1_5
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_generic_monarchy_2
         x = 1
         y = 5
         cost = 5
@@ -287,6 +288,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_war = yes } }
         prerequisite = { focus = AOEIW9_GRE_politics_root }
+        mutually_exclusive = { focus = AOEIW9_GRE_politics_p1_1 focus = AOEIW9_GRE_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_GRE_politics_p1_1 has_completed_focus = AOEIW9_GRE_politics_p2_1 } } }
     }
 
@@ -537,7 +539,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 24,4
         id = AOEIW9_GRE_eco_civ_5
-        icon = GFX_focus_generic_mass_production
+        icon = GFX_focus_generic_industry_investment
         x = 12
         y = 4
         cost = 4
@@ -909,7 +911,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 30,5
         id = AOEIW9_GRE_eco_science_5
-        icon = GFX_focus_generic_radio_communication
+        icon = GFX_focus_generic_industrial_experts
         x = 16
         y = 5
         cost = 6
@@ -1100,7 +1102,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,13
         id = AOEIW9_GRE_mil_army_2
-        icon = GFX_focus_generic_army_tanks2
+        icon = GFX_focus_generic_military_academy
         x = 1
         y = 12
         cost = 5

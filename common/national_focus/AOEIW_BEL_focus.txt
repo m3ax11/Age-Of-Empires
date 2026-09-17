@@ -54,6 +54,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_BEL_politics_root }
+        mutually_exclusive = { focus = AOEIW9_BEL_politics_p2_1 focus = AOEIW9_BEL_politics_p3_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_BEL_politics_p2_1 has_completed_focus = AOEIW9_BEL_politics_p3_1 } } }
     }
 
@@ -125,7 +126,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,5
         id = AOEIW9_BEL_politics_p1_5
-        icon = GFX_focus_generic_commission
+        icon = GFX_focus_generic_monarchy_2
         x = 1
         y = 5
         cost = 4
@@ -287,6 +288,7 @@ focus_tree = {
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 3 modifier = { factor = 1.6 has_stability < 0.60 } }
         prerequisite = { focus = AOEIW9_BEL_politics_root }
+        mutually_exclusive = { focus = AOEIW9_BEL_politics_p1_1 focus = AOEIW9_BEL_politics_p2_1 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_BEL_politics_p1_1 has_completed_focus = AOEIW9_BEL_politics_p2_1 } } }
     }
 
@@ -336,7 +338,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 15,4
         id = AOEIW9_BEL_politics_p3_4
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 7
         y = 4
         cost = 5
@@ -920,7 +922,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 36,6
         id = AOEIW9_BEL_eco_science_5
-        icon = GFX_focus_generic_radio_communication
+        icon = GFX_focus_generic_industrial_experts
         x = 18
         y = 6
         cost = 5
@@ -1733,7 +1735,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 42,12
         id = AOEIW9_BEL_dip_b_1
-        icon = GFX_goal_generic_alliance
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 21
         y = 11
         cost = 7

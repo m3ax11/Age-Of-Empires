@@ -124,7 +124,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 10,1
         id = AOEIW_world_UKR_industry
-        icon = GFX_focus_generic_industry_2
+        icon = GFX_focus_generic_military_industry
         x = 6
         y = 1
         cost = 10
@@ -724,7 +724,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_BTF_army
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -1192,7 +1192,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 8,1
         id = AOEIW_world_CAF_railways
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_generic_railroad
         x = 4
         y = 1
         cost = 10
@@ -1260,7 +1260,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,0
         id = AOEIW_world_CAF_military_root
-        icon = GFX_focus_generic_defensive_reorganization
+        icon = GFX_focus_ITA_the_italian_republic
         x = 9
         y = 0
         cost = 7
@@ -1550,7 +1550,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 27,3
         id = AOEIW_UNIQUE_GEO_right_2
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_generic_election
         x = 17
         y = 3
         cost = 6
@@ -1594,7 +1594,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,5
         id = AOEIW_UNIQUE_GEO_settlement
-        icon = GFX_focus_generic_monarchy_1
+        icon = GFX_focus_GER_monarchy_compromise
         x = 16
         y = 5
         cost = 6
@@ -1725,7 +1725,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 8,1
         id = AOEIW_world_TRK_railways
-        icon = GFX_focus_generic_mass_production
+        icon = GFX_focus_generic_railroad
         x = 4
         y = 1
         cost = 10
@@ -1810,7 +1810,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_TRK_army
-        icon = GFX_goal_generic_army_artillery2
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -2363,7 +2363,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_SIK_army
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -2937,7 +2937,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_TIB_army
-        icon = GFX_goal_generic_army_artillery2
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -3096,7 +3096,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,1
         id = AOEIW_UNIQUE_TIB_identity
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_CHI_restore_the_old_republic
         x = 16
         y = 1
         cost = 7
@@ -3232,7 +3232,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_SAU_government
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_GER_monarchy_compromise
         x = 0
         y = 1
         cost = 10
@@ -3402,7 +3402,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_SAU_army
-        icon = GFX_focus_generic_truck
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -3803,7 +3803,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 8,1
         id = AOEIW_world_YEM_railways
-        icon = GFX_focus_generic_industry_3
+        icon = GFX_focus_generic_railroad
         x = 4
         y = 1
         cost = 10
@@ -3871,7 +3871,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 14,0
         id = AOEIW_world_YEM_military_root
-        icon = GFX_focus_generic_defensive_reorganization
+        icon = GFX_focus_GER_monarchy_compromise
         x = 9
         y = 0
         cost = 7
@@ -4219,6 +4219,7 @@ focus_tree = {
         icon = GFX_focus_generic_merchant_fleet
         x = 14 y = 8 cost = 6
         prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_straits_council }
+        mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_YEM_coastal_guard }
         available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
         completion_reward = {
             set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_open_straits
@@ -4234,6 +4235,7 @@ focus_tree = {
         icon = GFX_focus_generic_coastal_fort
         x = 18 y = 8 cost = 6
         prerequisite = { focus = AOEIW38_ASIA_MIDDLE_YEM_straits_council }
+        mutually_exclusive = { focus = AOEIW38_ASIA_MIDDLE_YEM_open_roadstead }
         available_if_capitulated = no cancel_if_invalid = yes continue_if_invalid = no
         completion_reward = {
             set_country_flag = AOEIW38_ASIA_MIDDLE_YEM_guarded_straits
@@ -4300,7 +4302,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_HEJ_government
-        icon = GFX_focus_generic_public_meetings
+        icon = GFX_focus_ITA_the_italian_republic
         x = 0
         y = 1
         cost = 10
@@ -4385,7 +4387,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 8,1
         id = AOEIW_world_HEJ_railways
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_generic_railroad
         x = 4
         y = 1
         cost = 10
@@ -4470,7 +4472,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_HEJ_army
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -4674,7 +4676,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 27,2
         id = AOEIW_UNIQUE_OMA_right_1
-        icon = GFX_focus_generic_diplomatic_treaty
+        icon = GFX_focus_AUS_diplomatic_effort
         x = 17
         y = 2
         cost = 6
@@ -4789,7 +4791,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_INA_government
-        icon = GFX_focus_generic_democratic_europe
+        icon = GFX_focus_ITA_the_italian_republic
         x = 0
         y = 1
         cost = 10
@@ -4959,7 +4961,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_INA_army
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -5297,7 +5299,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,1
         id = AOEIW_world_FWA_government
-        icon = GFX_focus_generic_democratic_europe
+        icon = GFX_focus_ITA_the_italian_republic
         x = 0
         y = 1
         cost = 10
@@ -5467,7 +5469,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_FWA_army
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -5689,7 +5691,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 23,4
         id = AOEIW_UNIQUE_MLI_left_1
-        icon = GFX_focus_generic_democratic_europe
+        icon = GFX_focus_YUG_pan_slavic_congress
         x = 14
         y = 4
         cost = 7
@@ -5996,7 +5998,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_GEA_army
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -6437,7 +6439,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 10,1
         id = AOEIW_world_ARG_industry
-        icon = GFX_focus_generic_industry_investment
+        icon = GFX_focus_generic_military_industry
         x = 6
         y = 1
         cost = 10
@@ -6505,7 +6507,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_ARG_army
-        icon = GFX_focus_generic_mechanized
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -7035,7 +7037,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_PRU_army
-        icon = GFX_focus_generic_army_tanks2
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -7306,7 +7308,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 23,5
         id = AOEIW_UNIQUE_PRU_left_2
-        icon = GFX_focus_generic_truck
+        icon = GFX_goal_generic_army_doctrines
         x = 14
         y = 5
         cost = 7
@@ -7520,7 +7522,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 10,1
         id = AOEIW_world_NEE_industry
-        icon = GFX_focus_generic_industry_2
+        icon = GFX_focus_generic_military_industry
         x = 6
         y = 1
         cost = 10
@@ -7588,7 +7590,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_NEE_army
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -8008,7 +8010,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 10,1
         id = AOEIW_world_TCO_industry
-        icon = GFX_focus_generic_industry_investment
+        icon = GFX_focus_generic_military_industry
         x = 6
         y = 1
         cost = 10
@@ -8076,7 +8078,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_TCO_army
-        icon = GFX_goal_generic_small_arms
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -8584,7 +8586,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 13,1
         id = AOEIW_world_FAM_army
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_army_doctrines
         x = 8
         y = 1
         cost = 7
@@ -8764,7 +8766,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 25,2
         id = AOEIW_UNIQUE_HAI_pre_1
-        icon = GFX_focus_generic_social_democracy
+        icon = GFX_focus_generic_public_meetings
         x = 16
         y = 2
         cost = 6

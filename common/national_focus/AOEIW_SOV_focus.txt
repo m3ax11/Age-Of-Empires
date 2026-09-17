@@ -42,7 +42,7 @@ focus_tree = {
         # AOEIW visual-layout base: 12,0
         id = AOEIW9_SOV_politics_root
         icon = GFX_focus_SOV_the_true_tsars
-        x = 27
+        x = 12
         y = 0
         cost = 5
         cancel_if_invalid = yes
@@ -87,11 +87,12 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,2
         id = AOEIW9_SOV_politics_p1_1
-        icon = GFX_focus_generic_monarchy_1
+        icon = GFX_focus_SOV_the_true_tsars
         x = 2
         y = 2
         cost = 5
         prerequisite = { focus = AOEIW_IMM_SOV_root }
+        mutually_exclusive = { focus = AOEIW9_SOV_politics_p2_1 focus = AOEIW9_SOV_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -200,7 +201,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 3,6
         id = AOEIW9_SOV_politics_p1_6
-        icon = GFX_focus_generic_monarchy_2
+        icon = GFX_focus_GER_monarchy_compromise
         x = 2
         y = 6
         cost = 5
@@ -258,6 +259,7 @@ focus_tree = {
         y = 2
         cost = 5
         prerequisite = { focus = AOEIW_IMM_SOV_root }
+        mutually_exclusive = { focus = AOEIW9_SOV_politics_p1_1 focus = AOEIW9_SOV_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -418,6 +420,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW25_SOV_path_of_the_soviets }
+        mutually_exclusive = { focus = AOEIW9_SOV_politics_p1_1 focus = AOEIW9_SOV_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -846,6 +849,7 @@ focus_tree = {
             add_stability = -0.02
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 14 }
+        mutually_exclusive = { focus = AOEIW19_SOV_trotsky_restore_party_democracy focus = AOEIW19_SOV_tukhachevsky_army_above_faction }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW19_SOV_trotsky_restore_party_democracy has_completed_focus = AOEIW19_SOV_tukhachevsky_army_above_faction has_completed_focus = AOEIW9_SOV_politics_p1_1 has_completed_focus = AOEIW9_SOV_politics_p2_1 has_completed_focus = AOEIW9_SOV_politics_root } } }
     }
 
@@ -931,6 +935,7 @@ focus_tree = {
             add_political_power = 75
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 14 }
+        mutually_exclusive = { focus = AOEIW19_SOV_stalin_centralise_the_party focus = AOEIW19_SOV_tukhachevsky_army_above_faction }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW19_SOV_stalin_centralise_the_party has_completed_focus = AOEIW19_SOV_tukhachevsky_army_above_faction has_completed_focus = AOEIW9_SOV_politics_p1_1 has_completed_focus = AOEIW9_SOV_politics_p2_1 has_completed_focus = AOEIW9_SOV_politics_root } } }
     }
 
@@ -1005,6 +1010,7 @@ focus_tree = {
             add_political_power = -50
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 14 }
+        mutually_exclusive = { focus = AOEIW19_SOV_stalin_centralise_the_party focus = AOEIW19_SOV_trotsky_restore_party_democracy }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW19_SOV_stalin_centralise_the_party has_completed_focus = AOEIW19_SOV_trotsky_restore_party_democracy has_completed_focus = AOEIW9_SOV_politics_p1_1 has_completed_focus = AOEIW9_SOV_politics_p2_1 has_completed_focus = AOEIW9_SOV_politics_root } } }
     }
 
@@ -1068,7 +1074,7 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 23,18
         id = AOEIW19_SOV_the_army_that_endures
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_goal_generic_major_war
         x = 24
         y = 18
         cost = 10
@@ -1117,8 +1123,8 @@ focus_tree = {
         # AOEIW visual-layout base: 40,0
         id = AOEIW9_SOV_eco_root
         icon = GFX_focus_generic_industry_investment
-        x = 40
-        y = 8
+        x = 37
+        y = 0
         cost = 7
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -1144,7 +1150,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_1
         icon = GFX_goal_generic_construct_civ_factory
         x = 35
-        y = 9
+        y = 1
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_root }
         cancel_if_invalid = yes
@@ -1176,7 +1182,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_2
         icon = GFX_focus_generic_railroad
         x = 35
-        y = 10
+        y = 2
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_civ_1 }
         cancel_if_invalid = yes
@@ -1206,9 +1212,9 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 34,3
         id = AOEIW9_SOV_eco_civ_3
-        icon = GFX_focus_generic_industry_2
+        icon = GFX_focus_generic_railroad
         x = 32
-        y = 11
+        y = 3
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_civ_2 }
         cancel_if_invalid = yes
@@ -1232,7 +1238,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_4
         icon = GFX_focus_generic_electrification
         x = 32
-        y = 12
+        y = 4
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_civ_3 }
         cancel_if_invalid = yes
@@ -1265,7 +1271,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_5
         icon = GFX_goal_generic_oil_refinery
         x = 36
-        y = 11
+        y = 3
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_civ_2 }
         cancel_if_invalid = yes
@@ -1297,7 +1303,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_6
         icon = GFX_focus_generic_steel_mill
         x = 35
-        y = 13
+        y = 5
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_civ_4 }
         prerequisite = { focus = AOEIW9_SOV_eco_civ_5 }
@@ -1324,7 +1330,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_civ_7
         icon = GFX_focus_generic_mass_production
         x = 35
-        y = 14
+        y = 6
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_civ_6 }
         cancel_if_invalid = yes
@@ -1351,7 +1357,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_1
         icon = GFX_focus_generic_commission
         x = 47
-        y = 9
+        y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_root }
         cancel_if_invalid = yes
@@ -1376,7 +1382,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_2
         icon = GFX_goal_generic_oil_refinery
         x = 47
-        y = 10
+        y = 2
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_1 }
         cancel_if_invalid = yes
@@ -1402,7 +1408,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_3
         icon = GFX_focus_generic_steel_mill
         x = 47
-        y = 11
+        y = 3
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_2 }
         cancel_if_invalid = yes
@@ -1428,7 +1434,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_4
         icon = GFX_focus_generic_military_industry
         x = 44
-        y = 12
+        y = 4
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_3 }
         cancel_if_invalid = yes
@@ -1460,7 +1466,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_5
         icon = GFX_focus_generic_modernize_industry
         x = 44
-        y = 13
+        y = 5
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_4 }
         cancel_if_invalid = yes
@@ -1486,7 +1492,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_6
         icon = GFX_focus_generic_mass_production
         x = 49
-        y = 12
+        y = 4
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_3 }
         cancel_if_invalid = yes
@@ -1510,7 +1516,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_war_7
         icon = GFX_focus_generic_military_industry
         x = 47
-        y = 14
+        y = 6
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_5 }
         prerequisite = { focus = AOEIW9_SOV_eco_war_6 }
@@ -1541,9 +1547,9 @@ focus_tree = {
     focus = {
         # AOEIW visual-layout base: 46,7
         id = AOEIW9_SOV_eco_war_8
-        icon = GFX_focus_generic_modernize_industry
+        icon = GFX_focus_generic_military_industry
         x = 47
-        y = 15
+        y = 7
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_7 }
         cancel_if_invalid = yes
@@ -1564,7 +1570,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_1
         icon = GFX_focus_research
         x = 38
-        y = 9
+        y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_root }
         cancel_if_invalid = yes
@@ -1589,7 +1595,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_2
         icon = GFX_focus_generic_university_1
         x = 38
-        y = 10
+        y = 2
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_1 }
         cancel_if_invalid = yes
@@ -1614,7 +1620,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_3
         icon = GFX_focus_generic_university_2
         x = 38
-        y = 11
+        y = 3
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_2 }
         cancel_if_invalid = yes
@@ -1639,7 +1645,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_4
         icon = GFX_focus_generic_industrial_experts
         x = 37
-        y = 12
+        y = 4
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_3 }
         cancel_if_invalid = yes
@@ -1664,7 +1670,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_5
         icon = GFX_focus_generic_industrial_experts
         x = 40
-        y = 12
+        y = 4
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_3 }
         cancel_if_invalid = yes
@@ -1689,7 +1695,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_6
         icon = GFX_focus_generic_university_3
         x = 38
-        y = 13
+        y = 5
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_4 }
         prerequisite = { focus = AOEIW9_SOV_eco_science_5 }
@@ -1716,7 +1722,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_science_7
         icon = GFX_focus_research
         x = 38
-        y = 14
+        y = 6
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_science_6 }
         cancel_if_invalid = yes
@@ -1742,7 +1748,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_infra_1
         icon = GFX_focus_generic_electrification
         x = 35
-        y = 16
+        y = 8
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_civ_7 }
         cancel_if_invalid = yes
@@ -1765,7 +1771,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_infra_2
         icon = GFX_focus_generic_military_industry
         x = 35
-        y = 17
+        y = 9
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_infra_1 }
         cancel_if_invalid = yes
@@ -1791,7 +1797,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_infra_3
         icon = GFX_focus_generic_low_cost_housing
         x = 35
-        y = 18
+        y = 10
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_infra_2 }
         cancel_if_invalid = yes
@@ -1816,7 +1822,7 @@ focus_tree = {
         id = AOEIW9_SOV_eco_infra_4
         icon = GFX_focus_generic_railroad
         x = 35
-        y = 19
+        y = 11
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_infra_3 }
         cancel_if_invalid = yes
@@ -1842,10 +1848,9 @@ focus_tree = {
         id = AOEIW9_SOV_eco_final
         icon = GFX_focus_generic_industry_3
         x = 38
-        y = 20
+        y = 12
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_eco_civ_7 focus = AOEIW9_SOV_eco_war_8 }
-        prerequisite = { focus = AOEIW9_SOV_eco_infra_4 }
         prerequisite = { focus = AOEIW9_SOV_eco_science_7 }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -1865,8 +1870,8 @@ focus_tree = {
         # AOEIW visual-layout base: 40,16
         id = AOEIW9_SOV_mil_root
         icon = GFX_focus_SOV_mobilization_plan
-        x = 40
-        y = 23
+        x = 37
+        y = 16
         cost = 7
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -1886,7 +1891,7 @@ focus_tree = {
         id = AOEIW9_SOV_mil_army_1
         icon = GFX_focus_generic_military_academy
         x = 32
-        y = 24
+        y = 17
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_root }
         cancel_if_invalid = yes
@@ -1905,7 +1910,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_2
         icon = GFX_goal_generic_allies_build_infantry
         x = 30
-        y = 25
+        y = 18
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_1 }
         cancel_if_invalid = yes
@@ -1916,6 +1921,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_SOV_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SOV_mil_army_5 } } }
     }
 
@@ -1924,7 +1930,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_3
         icon = GFX_goal_generic_army_artillery2
         x = 30
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_2 }
         cancel_if_invalid = yes
@@ -1943,7 +1949,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_4
         icon = GFX_goal_generic_small_arms
         x = 30
-        y = 27
+        y = 20
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_3 }
         cancel_if_invalid = yes
@@ -1962,7 +1968,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_5
         icon = GFX_focus_generic_tank_assault
         x = 35
-        y = 25
+        y = 18
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_1 }
         cancel_if_invalid = yes
@@ -1973,6 +1979,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_SOV_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_SOV_mil_army_2 } } }
     }
 
@@ -1981,7 +1988,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_6
         icon = GFX_goal_generic_army_tanks
         x = 35
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_5 }
         cancel_if_invalid = yes
@@ -2000,7 +2007,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_7
         icon = GFX_focus_generic_army_tanks2
         x = 35
-        y = 27
+        y = 20
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_6 }
         cancel_if_invalid = yes
@@ -2019,7 +2026,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps add_idea = AOEIW8_SOV
         id = AOEIW9_SOV_mil_army_8
         icon = GFX_focus_generic_railroad
         x = 32
-        y = 28
+        y = 21
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_4 focus = AOEIW9_SOV_mil_army_7 }
         
@@ -2039,7 +2046,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_1 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_army_9
         icon = GFX_focus_generic_mechanized
         x = 32
-        y = 30
+        y = 23
         cost = 5
         prerequisite = { focus = AOEIW28_SOV_field_workshops focus = AOEIW28_SOV_signals }
         cancel_if_invalid = yes
@@ -2057,7 +2064,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_1 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_army_10
         icon = GFX_focus_generic_military_academy
         x = 32
-        y = 31
+        y = 24
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_9 }
         cancel_if_invalid = yes
@@ -2076,7 +2083,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_1
         icon = GFX_goal_generic_build_airforce
         x = 40
-        y = 24
+        y = 17
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_root }
         cancel_if_invalid = yes
@@ -2102,7 +2109,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_2
         icon = GFX_focus_generic_pilot_training
         x = 40
-        y = 25
+        y = 18
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_1 }
         cancel_if_invalid = yes
@@ -2128,7 +2135,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_3
         icon = GFX_focus_generic_air_defense
         x = 37
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_2 }
         cancel_if_invalid = yes
@@ -2160,7 +2167,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_4
         icon = GFX_focus_generic_long_range_aircraft
         x = 40
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_2 }
         cancel_if_invalid = yes
@@ -2186,7 +2193,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_5
         icon = GFX_goal_generic_radar
         x = 42
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_2 }
         cancel_if_invalid = yes
@@ -2210,9 +2217,9 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
     focus = {
         # AOEIW visual-layout base: 42,20
         id = AOEIW9_SOV_mil_air_6
-        icon = GFX_goal_generic_build_airforce
+        icon = GFX_focus_generic_air_defense
         x = 40
-        y = 27
+        y = 20
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_3 }
         prerequisite = { focus = AOEIW9_SOV_mil_air_4 }
@@ -2241,7 +2248,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_air_7
         icon = GFX_focus_generic_aircraft_production
         x = 40
-        y = 28
+        y = 21
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_air_6 }
         cancel_if_invalid = yes
@@ -2273,7 +2280,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_1
         icon = GFX_goal_generic_build_navy
         x = 49
-        y = 24
+        y = 17
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_root }
         cancel_if_invalid = yes
@@ -2299,7 +2306,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_2
         icon = GFX_focus_generic_military_industry
         x = 49
-        y = 25
+        y = 18
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_1 }
         cancel_if_invalid = yes
@@ -2332,7 +2339,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_3
         icon = GFX_focus_generic_cruiser2
         x = 49
-        y = 26
+        y = 19
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_2 }
         cancel_if_invalid = yes
@@ -2364,7 +2371,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_4
         icon = GFX_focus_generic_escort_efficiency
         x = 47
-        y = 27
+        y = 20
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_3 }
         cancel_if_invalid = yes
@@ -2390,7 +2397,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_5
         icon = GFX_goal_generic_navy_doctrines_tactics
         x = 50
-        y = 27
+        y = 20
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_3 }
         cancel_if_invalid = yes
@@ -2416,7 +2423,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_6
         icon = GFX_focus_generic_navy_battleship2
         x = 49
-        y = 28
+        y = 21
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_4 }
         prerequisite = { focus = AOEIW9_SOV_mil_sea_5 }
@@ -2443,7 +2450,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_sea_7
         icon = GFX_focus_generic_naval_discipline
         x = 49
-        y = 29
+        y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_sea_6 }
         cancel_if_invalid = yes
@@ -2475,7 +2482,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_mil_final
         icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
         x = 40
-        y = 32
+        y = 25
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_mil_army_10 focus = AOEIW9_SOV_mil_air_7 focus = AOEIW9_SOV_mil_sea_7 }
         cancel_if_invalid = yes
@@ -2583,14 +2590,12 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_dip_a_2 }
-        mutually_exclusive = { focus = AOEIW9_SOV_dip_a_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_ideas = AOEIW_STRUCT_SOV_german_railway_mobilisation
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2600,13 +2605,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = industry
             }
         }
-
         ai_will_do = {
-            factor = 5
-            modifier = {
-                factor = 2
-                has_war = no
-            }
+            factor = 10
         }
     }
 
@@ -2618,14 +2618,12 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_dip_a_2 }
-        mutually_exclusive = { focus = AOEIW9_SOV_dip_a_3 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_ideas = AOEIW_STRUCT_SOV_winter_frontier_staff
             add_political_power = 25
             add_war_support = 0.03
             army_experience = 15
@@ -2637,13 +2635,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = land_doctrine
             }
         }
-
         ai_will_do = {
-            factor = 5
-            modifier = {
-                factor = 2
-                has_war = yes
-            }
+            factor = 10
         }
     }
 
@@ -2654,7 +2647,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         x = 2
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_SOV_dip_a_3 focus = AOEIW9_SOV_dip_a_4 }
+        prerequisite = { focus = AOEIW9_SOV_dip_a_3 }
+        prerequisite = { focus = AOEIW9_SOV_dip_a_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2792,14 +2786,12 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_dip_b_2 }
-        mutually_exclusive = { focus = AOEIW9_SOV_dip_b_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_ideas = AOEIW_STRUCT_SOV_black_sea_export_corridor
             add_political_power = 25
             add_ideas = AOEIW11_economic_pressure
             add_tech_bonus = {
@@ -2809,13 +2801,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = industry
             }
         }
-
         ai_will_do = {
-            factor = 5
-            modifier = {
-                factor = 2
-                has_war = no
-            }
+            factor = 10
         }
     }
 
@@ -2827,14 +2814,12 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_dip_b_2 }
-        mutually_exclusive = { focus = AOEIW9_SOV_dip_b_3 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
-            add_ideas = AOEIW_STRUCT_SOV_sevastopol_mine_command
             add_political_power = 25
             add_war_support = 0.03
             army_experience = 15
@@ -2846,13 +2831,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
                 category = land_doctrine
             }
         }
-
         ai_will_do = {
-            factor = 5
-            modifier = {
-                factor = 2
-                has_war = yes
-            }
+            factor = 10
         }
     }
 
@@ -2863,7 +2843,8 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         x = 12
         y = 23
         cost = 5
-        prerequisite = { focus = AOEIW9_SOV_dip_b_3 focus = AOEIW9_SOV_dip_b_4 }
+        prerequisite = { focus = AOEIW9_SOV_dip_b_3 }
+        prerequisite = { focus = AOEIW9_SOV_dip_b_4 }
         available = { NOT = { has_country_flag = AOEIW19_SOV_union_proclaimed } }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2967,7 +2948,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_1
         icon = GFX_focus_generic_industry_1
         x = 47
-        y = 16
+        y = 8
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_eco_war_8 }
         cancel_if_invalid = yes
@@ -2997,7 +2978,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_2
         icon = GFX_focus_generic_military_industry
         x = 42
-        y = 17
+        y = 9
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_1 }
         cancel_if_invalid = yes
@@ -3022,7 +3003,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_3
         icon = GFX_goal_generic_oil_refinery
         x = 49
-        y = 17
+        y = 9
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_1 }
         cancel_if_invalid = yes
@@ -3047,7 +3028,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_4
         icon = GFX_focus_generic_railroad
         x = 47
-        y = 18
+        y = 10
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_2 }
         prerequisite = { focus = AOEIW9_SOV_special_3 }
@@ -3073,7 +3054,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_5
         icon = GFX_focus_generic_full_social_mobilization
         x = 42
-        y = 19
+        y = 11
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_4 }
         cancel_if_invalid = yes
@@ -3103,7 +3084,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_6
         icon = GFX_focus_generic_defensive_reorganization
         x = 49
-        y = 19
+        y = 11
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_4 }
         cancel_if_invalid = yes
@@ -3123,7 +3104,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_7
         icon = GFX_focus_generic_military_industry
         x = 47
-        y = 20
+        y = 12
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_5 }
         prerequisite = { focus = AOEIW9_SOV_special_6 }
@@ -3149,17 +3130,15 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
         id = AOEIW9_SOV_special_8
         icon = GFX_focus_generic_industry_3
         x = 47
-        y = 21
+        y = 13
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_special_7 }
-        prerequisite = { focus = AOEIW9_SOV_eco_final }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
         completion_reward = {
             army_experience = 10
-            add_ideas = AOEIW_STRUCT_SOV_industrial_colossus
         }
         ai_will_do = {
             factor = 10
@@ -3170,11 +3149,12 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
     focus = {
         # AOEIW visual-layout base: 6,1
         id = AOEIW_IMM_SOV_root
-        icon = GFX_focus_SOV_third_rome
-        x = 13
+        icon = GFX_focus_SOV_the_true_tsars
+        x = 5
         y = 1
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_politics_root }
+        mutually_exclusive = { focus = AOEIW22_SOV_eurasian_idea focus = AOEIW22_SOV_russian_republic focus = AOEIW22_SOV_denikin_conspiracy }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -3190,7 +3170,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
     focus = {
         # AOEIW visual-layout base: 3,9
         id = AOEIW_IMM_SOV_autocracy_1
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_focus_generic_court
         x = 2
         y = 9
         cost = 7
@@ -3391,7 +3371,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
     focus = {
         # AOEIW visual-layout base: 1,12
         id = AOEIW_STRUCT_SOV_crown_arsenals
-        icon = GFX_focus_generic_military_industry
+        icon = GFX_focus_GER_monarchy_compromise
         x = 0
         y = 12
         cost = 5
@@ -3439,6 +3419,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
         prerequisite = { focus = AOEIW_IMM_SOV_zemstvo_3 }
+        mutually_exclusive = { focus = AOEIW_STRUCT_SOV_duma_appropriations }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy has_completed_focus = AOEIW22_SOV_eurasian_idea has_completed_focus = AOEIW22_SOV_russian_republic has_completed_focus = AOEIW25_SOV_path_of_the_soviets has_completed_focus = AOEIW9_SOV_politics_p1_1 has_completed_focus = AOEIW9_SOV_politics_p3_1 has_completed_focus = AOEIW_STRUCT_SOV_duma_appropriations } } }
     }
 
@@ -3457,6 +3438,7 @@ swap_ideas = { remove_idea = AOEIW8_SOV_weak_officer_corps_2 add_idea = AOEIW8_S
          mark_focus_tree_layout_dirty = yes }
         ai_will_do = { factor = 5 modifier = { factor = 1.5 has_war = yes } }
         prerequisite = { focus = AOEIW_IMM_SOV_zemstvo_3 }
+        mutually_exclusive = { focus = AOEIW_STRUCT_SOV_zemstvo_credit }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW22_SOV_denikin_conspiracy has_completed_focus = AOEIW22_SOV_eurasian_idea has_completed_focus = AOEIW22_SOV_russian_republic has_completed_focus = AOEIW25_SOV_path_of_the_soviets has_completed_focus = AOEIW9_SOV_politics_p1_1 has_completed_focus = AOEIW9_SOV_politics_p3_1 has_completed_focus = AOEIW_STRUCT_SOV_zemstvo_credit } } }
     }
 
@@ -3704,7 +3686,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_zemstvo_services
     focus = {
         # AOEIW visual-layout base: 9,4
         id = AOEIW_STRUCT_SOV_DEPTH_provincial_juries
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_SOV_zemsky_sobor
         x = 10
         y = 4
         cost = 5
@@ -3952,7 +3934,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_imperial_supply_
     focus = {
         # AOEIW visual-layout base: 6,13
         id = AOEIW_STRUCT_SOV_DEPTH_staff_maps
-        icon = GFX_focus_generic_military_mission
+        icon = GFX_focus_SOV_mobilization_plan
         x = 5
         y = 13
         cost = 5
@@ -4018,7 +4000,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_winter_services_
     focus = {
         # AOEIW visual-layout base: 10,15
         id = AOEIW_STRUCT_SOV_DEPTH_recovery_columns
-        icon = GFX_focus_generic_supply_line
+        icon = GFX_focus_SOV_the_road_of_life
         x = 10
         y = 15
         cost = 5
@@ -4337,7 +4319,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_international_st
         id = AOEIW_STRUCT_SOV_DEPTH_operational_college
         icon = GFX_focus_SOV_approach_tukahchevsky
         x = 29
-        y = 24
+        y = 17
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4361,7 +4343,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_operational_dept
         id = AOEIW_STRUCT_SOV_DEPTH_motorised_staff
         icon = GFX_goal_generic_army_doctrines
         x = 26
-        y = 25
+        y = 18
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4385,7 +4367,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_operational_dept
         id = AOEIW_STRUCT_SOV_DEPTH_second_echelon
         icon = GFX_focus_generic_railroad
         x = 26
-        y = 26
+        y = 19
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4410,7 +4392,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_operational_dept
         id = AOEIW_STRUCT_SOV_DEPTH_volga_survey
         icon = GFX_focus_generic_industry_1
         x = 32
-        y = 15
+        y = 7
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4427,7 +4409,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_operational_dept
         id = AOEIW_STRUCT_SOV_DEPTH_volga_contract
         icon = GFX_focus_generic_industry_2
         x = 32
-        y = 16
+        y = 8
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4444,7 +4426,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_operational_dept
         id = AOEIW_STRUCT_SOV_DEPTH_technical_correspondence
         icon = GFX_focus_generic_university_2
         x = 37
-        y = 15
+        y = 7
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4467,7 +4449,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_diesel_workshops
         icon = GFX_focus_generic_railroad
         x = 37
-        y = 16
+        y = 8
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4490,7 +4472,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_spare_catalogue
         icon = GFX_focus_generic_reinforcing_the_supply_network
         x = 37
-        y = 17
+        y = 9
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4513,7 +4495,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_volga_acceptance
         icon = GFX_focus_generic_industry_3
         x = 37
-        y = 21
+        y = 13
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4532,7 +4514,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_capital_arsenal
         icon = GFX_focus_SOV_the_defense_of_moscow
         x = 49
-        y = 15
+        y = 7
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4549,7 +4531,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_arsenal_gauges
         icon = GFX_focus_generic_military_industry
         x = 49
-        y = 16
+        y = 8
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4567,7 +4549,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_industrial_spare
         id = AOEIW_STRUCT_SOV_DEPTH_fleet_workshops
         icon = GFX_focus_generic_refit_civilian_ships
         x = 47
-        y = 30
+        y = 23
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4589,7 +4571,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         id = AOEIW_STRUCT_SOV_DEPTH_ice_navigation
         icon = GFX_focus_SOV_reinforce_northern_naval_bases
         x = 49
-        y = 31
+        y = 24
         cost = 5
         available_if_capitulated = no
         cancel_if_invalid = yes
@@ -4617,6 +4599,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_politics_root }
+        mutually_exclusive = { focus = AOEIW_IMM_SOV_root focus = AOEIW22_SOV_russian_republic focus = AOEIW22_SOV_denikin_conspiracy }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -4688,7 +4671,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
     focus = {
         # AOEIW visual-layout base: 45,3
         id = AOEIW22_SOV_persian_overture
-        icon = GFX_goal_generic_improve_relations
+        icon = GFX_focus_PER_imperial_expansionism
         x = 34
         y = 4
         cost = 5
@@ -4746,11 +4729,12 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
     focus = {
         # AOEIW visual-layout base: 54,0
         id = AOEIW22_SOV_russian_republic
-        icon = GFX_focus_SOV_zemsky_sobor
-        x = 36
+        icon = GFX_focus_SOV_bukharan_republic
+        x = 42
         y = 1
         cost = 7
         prerequisite = { focus = AOEIW9_SOV_politics_root }
+        mutually_exclusive = { focus = AOEIW_IMM_SOV_root focus = AOEIW22_SOV_eurasian_idea focus = AOEIW22_SOV_denikin_conspiracy }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -4766,7 +4750,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 54,1
         id = AOEIW22_SOV_provisional_assembly
         icon = GFX_focus_AFG_parliamentary_democracy
-        x = 36
+        x = 42
         y = 2
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_russian_republic }
@@ -4785,7 +4769,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 54,2
         id = AOEIW22_SOV_constitutional_convention
         icon = GFX_focus_generic_court
-        x = 36
+        x = 42
         y = 3
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_provisional_assembly }
@@ -4803,8 +4787,8 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
     focus = {
         # AOEIW visual-layout base: 53,3
         id = AOEIW22_SOV_federal_constitution
-        icon = GFX_focus_generic_public_meetings
-        x = 35
+        icon = GFX_focus_generic_court
+        x = 41
         y = 4
         cost = 10
         prerequisite = { focus = AOEIW22_SOV_constitutional_convention }
@@ -4824,7 +4808,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 55,3
         id = AOEIW22_SOV_strong_presidency
         icon = GFX_goal_generic_political_pressure
-        x = 37
+        x = 43
         y = 4
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_constitutional_convention }
@@ -4844,7 +4828,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 54,4
         id = AOEIW22_SOV_free_elections
         icon = GFX_focus_generic_election
-        x = 36
+        x = 42
         y = 5
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_federal_constitution focus = AOEIW22_SOV_strong_presidency }
@@ -4863,7 +4847,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 53,5
         id = AOEIW22_SOV_republic_faces_europe
         icon = GFX_focus_usa_focus_on_europe
-        x = 35
+        x = 41
         y = 6
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_free_elections }
@@ -4883,7 +4867,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 55,5
         id = AOEIW22_SOV_republic_faces_asia
         icon = GFX_focus_usa_focus_on_asia
-        x = 37
+        x = 43
         y = 6
         cost = 7
         prerequisite = { focus = AOEIW22_SOV_free_elections }
@@ -4903,10 +4887,11 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 64,0
         id = AOEIW22_SOV_denikin_conspiracy
         icon = GFX_focus_SOV_approach_semyonov
-        x = 42
+        x = 52
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_politics_root }
+        mutually_exclusive = { focus = AOEIW_IMM_SOV_root focus = AOEIW22_SOV_eurasian_idea focus = AOEIW22_SOV_russian_republic }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -4922,7 +4907,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 64,1
         id = AOEIW22_SOV_restore_white_networks
         icon = GFX_SOV_muster_the_old_guard_ccp_2d_sov_compatibility
-        x = 42
+        x = 52
         y = 2
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_denikin_conspiracy }
@@ -4941,7 +4926,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 64,2
         id = AOEIW22_SOV_barracks_rise
         icon = GFX_focus_generic_conspiracy
-        x = 42
+        x = 52
         y = 3
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_restore_white_networks }
@@ -4960,7 +4945,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 63,3
         id = AOEIW22_SOV_supreme_commander
         icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
-        x = 40
+        x = 50
         y = 4
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_barracks_rise }
@@ -4979,7 +4964,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 65,3
         id = AOEIW22_SOV_rebuild_national_army
         icon = GFX_SOV_military_reorganization_ccp_2d_sov_compatibility
-        x = 43
+        x = 53
         y = 4
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_barracks_rise }
@@ -4998,7 +4983,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 63,5
         id = AOEIW22_SOV_restore_duma
         icon = GFX_focus_AFG_parliamentary_democracy
-        x = 40
+        x = 50
         y = 6
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_supreme_commander }
@@ -5019,7 +5004,7 @@ else_if = { limit = { OR = { has_country_flag = AOEIW_DEPTH_SOV_northern_fleet_s
         # AOEIW visual-layout base: 65,5
         id = AOEIW22_SOV_military_directorate
         icon = GFX_focus_generic_military_dictatorship
-        x = 43
+        x = 53
         y = 6
         cost = 5
         prerequisite = { focus = AOEIW22_SOV_supreme_commander }
@@ -5042,32 +5027,30 @@ focus = {
         id = AOEIW28_SOV_field_workshops
         icon = GFX_focus_generic_military_industry
         x = 30
-        y = 29
+        y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_8 }
-        mutually_exclusive = { focus = AOEIW28_SOV_signals }
         available_if_capitulated = no
         completion_reward = { add_tech_bonus = { name = AOEIW28_army_research bonus = 0.75 uses = 1 category = support_tech } }
-        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = no } }
+        ai_will_do = { factor = 5 }
     }
 focus = {
         id = AOEIW28_SOV_signals
         icon = GFX_focus_generic_radio_communication
         x = 35
-        y = 29
+        y = 22
         cost = 5
         prerequisite = { focus = AOEIW9_SOV_mil_army_8 }
-        mutually_exclusive = { focus = AOEIW28_SOV_field_workshops }
         available_if_capitulated = no
         completion_reward = { army_experience = 20 add_command_power = 20 }
-        ai_will_do = { factor = 5 modifier = { factor = 2 has_war = yes } }
+        ai_will_do = { factor = 5 }
     }
 
     focus = {
         id = AOEIW35_SOV_institutional_settlement
         icon = GFX_focus_generic_soviet_politics
-        x = 27
-        y = 20
+        x = 58
+        y = 14
         cost = 5
         prerequisite = { focus = AOEIW_IMM_SOV_national_destiny focus = AOEIW19_SOV_the_army_that_endures focus = AOEIW22_SOV_proclaim_eurasian_empire focus = AOEIW22_SOV_republic_faces_europe focus = AOEIW22_SOV_republic_faces_asia focus = AOEIW22_SOV_restore_duma focus = AOEIW22_SOV_military_directorate }
         dynamic = yes
@@ -5082,8 +5065,8 @@ focus = {
     focus = {
         id = AOEIW35_SOV_institutional_left
         icon = GFX_focus_generic_self_management
-        x = 25
-        y = 21
+        x = 56
+        y = 15
         cost = 5
         prerequisite = { focus = AOEIW35_SOV_institutional_settlement }
         mutually_exclusive = { focus = AOEIW35_SOV_institutional_right }
@@ -5097,8 +5080,8 @@ focus = {
     focus = {
         id = AOEIW35_SOV_institutional_right
         icon = GFX_focus_generic_military_academy
-        x = 29
-        y = 21
+        x = 59
+        y = 15
         cost = 5
         prerequisite = { focus = AOEIW35_SOV_institutional_settlement }
         mutually_exclusive = { focus = AOEIW35_SOV_institutional_left }
@@ -5112,8 +5095,8 @@ focus = {
     focus = {
         id = AOEIW35_SOV_institutional_capstone
         icon = GFX_focus_generic_socialist_science
-        x = 27
-        y = 22
+        x = 58
+        y = 16
         cost = 5
         prerequisite = { focus = AOEIW35_SOV_institutional_left focus = AOEIW35_SOV_institutional_right }
         available_if_capitulated = no

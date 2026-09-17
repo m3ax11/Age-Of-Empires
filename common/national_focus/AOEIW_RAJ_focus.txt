@@ -40,6 +40,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_RAJ_politics_root }
+        mutually_exclusive = { focus = AOEIW9_RAJ_politics_p2_1 focus = AOEIW9_RAJ_politics_p3_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -225,7 +226,7 @@ focus_tree = {
         # AOEIW visual-layout base: 22,2
         # AOEIW expansion-space base: 24,2
         id = AOEIW9_RAJ_politics_p2_2
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_focus_generic_court
         x = 20
         y = 2
         cost = 5
@@ -379,6 +380,7 @@ focus_tree = {
         y = 1
         cost = 5
         prerequisite = { focus = AOEIW9_RAJ_politics_root }
+        mutually_exclusive = { focus = AOEIW9_RAJ_politics_p1_1 focus = AOEIW9_RAJ_politics_p2_1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -468,7 +470,7 @@ focus_tree = {
         # AOEIW visual-layout base: 26,5
         # AOEIW expansion-space base: 29,5
         id = AOEIW9_RAJ_politics_p3_5
-        icon = GFX_focus_generic_court
+        icon = GFX_focus_ITA_the_italian_republic
         x = 23
         y = 5
         cost = 5
@@ -1124,7 +1126,7 @@ focus_tree = {
         # AOEIW visual-layout base: 9,6
         # AOEIW expansion-space base: 8,6
         id = AOEIW9_RAJ_eco_science_5
-        icon = GFX_focus_generic_university_2
+        icon = GFX_focus_generic_industrial_experts
         x = 8
         y = 6
         cost = 5
@@ -1382,6 +1384,7 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_RAJ_mil_army_5 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_RAJ_mil_army_5 } } }
     }
 
@@ -1442,6 +1445,7 @@ focus_tree = {
         ai_will_do = {
             factor = 10
         }
+        mutually_exclusive = { focus = AOEIW9_RAJ_mil_army_2 }
         allow_branch = { NOT = { OR = { has_completed_focus = AOEIW9_RAJ_mil_army_2 } } }
     }
 
@@ -2326,7 +2330,7 @@ focus_tree = {
 
 focus = {
         id = AOEIW28_RAJ_field_workshops
-        icon = GFX_focus_generic_improve_the_administration
+        icon = GFX_focus_generic_truck
         x = 8
         y = 16
         cost = 5
