@@ -28,7 +28,6 @@ jobs:
           root=Path('.')
           rt=Path('/tmp/rt56')
 
-          # These files are RT56 map infrastructure, not AOE scenario ownership content.
           for rel in [
               'map/buildings.txt',
               'map/railways.txt',
@@ -52,7 +51,6 @@ jobs:
               dst.write_text(d, encoding='utf-8', newline='\n')
               print('patched provinces only', rel)
 
-          # Preserve AOE ownership/cores/history; update geometry only.
           for rel in [
               'history/states/668-The Moluccas.txt',
               'history/states/673-Sulawesi.txt',
