@@ -1,0 +1,117 @@
+name: Compare fork against current RT56
+
+on:
+  push:
+    branches:
+      - fix/main-menu-crash-1.19
+    paths:
+      - .github/workflows/compare-current-rt56.yml
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/main-menu-crash-1.19
+      - name: Fetch current RT56
+        run: git clone --depth 1 --branch Beta-Edits https://github.com/deliciousmods/1956_beta.git /tmp/rt56
+      - name: Semantic map/state comparison
+        shell: python
+        run: |
+          from pathlib import Path
+          import csv, hashlib, re
+
+          ours=Path('.')
+          rt=Path('/tmp/rt56')
+
+          def textnorm(p):
+              return p.read_text(encoding='utf-8-sig', errors='replace').replace('\r\n','\n').replace('\r','\n').strip()
+
+          def sha(p):
+              return hashlib.sha1(p.read_bytes()).hexdigest()
+
+          def parse_list(text,key):
+              text=re.sub(r'#.*','',text)
+              m=re.search(rf'\b{re.escape(key)}\s*=\s*\{{([^}}]*)\}}',text,re.S)
+              return tuple(int(x) for x in re.findall(r'\b\d+\b',m.group(1))) if m else ()
+
+          def scalar(text,key):
+              text=re.sub(r'#.*','',text)
+              m=re.search(rf'\b{re.escape(key)}\s*=\s*(\d+)',text)
+              return int(m.group(1)) if m else None
+
+          print('=== TOP LEVEL MAP SEMANTIC DIFFS ===')
+          allnames=sorted(set(p.name for p in (ours/'map').iterdir() if p.is_file())|set(p.name for p in (rt/'map').iterdir() if p.is_file()))
+          text_ext={'.txt','.csv','.map'}
+          semantic=[]
+          binary=[]
+          missing=[]
+          for n in allnames:
+              a=ours/'map'/n; b=rt/'map'/n
+              if not a.exists() or not b.exists():
+                  missing.append((n,a.exists(),b.exists())); continue
+              if a.suffix.lower() in text_ext:
+                  if textnorm(a)!=textnorm(b): semantic.append(n)
+              else:
+                  if sha(a)!=sha(b): binary.append(n)
+          print('semantic text diffs',len(semantic),semantic)
+          print('binary diffs',len(binary),binary)
+          print('missing one side',len(missing),missing)
+
+          print('=== DEFINITION.CSV ROW DIFFS ===')
+          def rows(p):
+              out={}
+              with p.open(encoding='utf-8-sig',errors='replace',newline='') as f:
+                  for row in csv.reader(f,delimiter=';'):
+                      if not row: continue
+                      try: out[int(row[0])]=tuple(x.strip() for x in row[1:])
+                      except: pass
+              return out
+          A=rows(ours/'map/definition.csv'); B=rows(rt/'map/definition.csv')
+          dr=[i for i in sorted(set(A)|set(B)) if A.get(i)!=B.get(i)]
+          print('definition row diffs',len(dr),'sample',[(i,A.get(i),B.get(i)) for i in dr[:30]])
+
+          print('=== STRATEGIC REGION STRUCTURAL DIFFS ===')
+          ar={p.name:p for p in (ours/'map/strategicregions').glob('*.txt')}
+          br={p.name:p for p in (rt/'map/strategicregions').glob('*.txt')}
+          sr_sem=[]; sr_struct=[]; sr_missing=[]
+          for n in sorted(set(ar)|set(br)):
+              if n not in ar or n not in br:
+                  sr_missing.append((n,n in ar,n in br)); continue
+              ta=textnorm(ar[n]); tb=textnorm(br[n])
+              if ta!=tb: sr_sem.append(n)
+              sa=(scalar(ta,'id'),parse_list(ta,'provinces'))
+              sb=(scalar(tb,'id'),parse_list(tb,'provinces'))
+              if sa!=sb: sr_struct.append((n,sa,sb))
+          print('semantic region diffs',len(sr_sem),'sample',sr_sem[:30])
+          print('STRUCTURAL region diffs',len(sr_struct),'sample',sr_struct[:20])
+          print('missing region files',len(sr_missing),sr_missing[:20])
+
+          print('=== STATE STRUCTURAL DIFFS ===')
+          ast={p.name:p for p in (ours/'history/states').glob('*.txt')}
+          bst={p.name:p for p in (rt/'history/states').glob('*.txt')}
+          st_struct=[]; st_sem=[]; st_missing=[]
+          for n in sorted(set(ast)|set(bst)):
+              if n not in ast or n not in bst:
+                  st_missing.append((n,n in ast,n in bst)); continue
+              ta=textnorm(ast[n]); tb=textnorm(bst[n])
+              if ta!=tb: st_sem.append(n)
+              sa=(scalar(ta,'id'),parse_list(ta,'provinces'))
+              sb=(scalar(tb,'id'),parse_list(tb,'provinces'))
+              if sa!=sb: st_struct.append((n,sa,sb))
+          print('semantic state diffs',len(st_sem),'sample',st_sem[:60])
+          print('STRUCTURAL state diffs',len(st_struct),'sample',st_struct[:40])
+          print('missing state files',len(st_missing),st_missing[:40])
+
+          print('=== AI STRATEGY SEMANTIC DIFFS ===')
+          aa={p.name:p for p in (ours/'common/ai_strategy').glob('*.txt')}
+          ba={p.name:p for p in (rt/'common/ai_strategy').glob('*.txt')}
+          aid=[]
+          for n in sorted(set(aa)&set(ba)):
+              if textnorm(aa[n])!=textnorm(ba[n]): aid.append(n)
+          print('AI semantic diffs',len(aid),'sample',aid[:80])
+
+          # Fail only to make the log easy to spot; this is diagnostic.
+          if semantic or binary or dr or sr_struct or st_struct or st_missing:
+              raise SystemExit(2)
