@@ -1,0 +1,110 @@
+name: Apply targeted current-RT56 map sync
+
+on:
+  push:
+    branches:
+      - fix/main-menu-crash-1.19
+    paths:
+      - .github/workflows/apply-rt56-map-sync.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/main-menu-crash-1.19
+      - name: Fetch current RT56
+        run: git clone --depth 1 --branch Beta-Edits https://github.com/deliciousmods/1956_beta.git /tmp/rt56
+      - name: Sync only map structures that differ
+        shell: python
+        run: |
+          from pathlib import Path
+          import re, shutil
+
+          root=Path('.')
+          rt=Path('/tmp/rt56')
+
+          # These files are RT56 map infrastructure, not AOE scenario ownership content.
+          for rel in [
+              'map/buildings.txt',
+              'map/railways.txt',
+              'map/supply_nodes.txt',
+              'map/unitstacks.txt',
+          ]:
+              shutil.copyfile(rt/rel, root/rel)
+              print('synced', rel)
+
+          def replace_provinces(rel):
+              dst=root/rel
+              src=rt/rel
+              d=dst.read_text(encoding='utf-8-sig', errors='replace')
+              s=src.read_text(encoding='utf-8-sig', errors='replace')
+              pat=re.compile(r'\bprovinces\s*=\s*\{[^}]*\}', re.S)
+              sm=pat.search(s)
+              dm=pat.search(d)
+              if not sm or not dm:
+                  raise SystemExit(f'provinces block missing in {rel}')
+              d=d[:dm.start()]+sm.group(0)+d[dm.end():]
+              dst.write_text(d, encoding='utf-8', newline='\n')
+              print('patched provinces only', rel)
+
+          # Preserve AOE ownership/cores/history; update geometry only.
+          for rel in [
+              'history/states/668-The Moluccas.txt',
+              'history/states/673-Sulawesi.txt',
+              'history/states/909-Riau Islands.txt',
+              'history/states/975-North Sulawesi.txt',
+              'history/states/978-Central Kalimantan.txt',
+              'map/strategicregions/159-Borneo.txt',
+              'map/strategicregions/188-Malaya.txt',
+          ]:
+              replace_provinces(rel)
+
+      - name: Verify targeted structures equal current RT56
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          root=Path('.')
+          rt=Path('/tmp/rt56')
+          def plist(p):
+              t=p.read_text(encoding='utf-8-sig',errors='replace')
+              m=re.search(r'\bprovinces\s*=\s*\{([^}]*)\}',t,re.S)
+              return tuple(int(x) for x in re.findall(r'\b\d+\b',m.group(1)))
+          targets=[
+              'history/states/668-The Moluccas.txt',
+              'history/states/673-Sulawesi.txt',
+              'history/states/909-Riau Islands.txt',
+              'history/states/975-North Sulawesi.txt',
+              'history/states/978-Central Kalimantan.txt',
+              'map/strategicregions/159-Borneo.txt',
+              'map/strategicregions/188-Malaya.txt',
+          ]
+          for rel in targets:
+              if plist(root/rel)!=plist(rt/rel):
+                  raise SystemExit(f'structural mismatch remains: {rel}')
+          print('targeted state/region geometry matches current RT56')
+      - name: Run AOE validator
+        run: python tools/validate_aoeiw.py
+      - name: Commit targeted map compatibility fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map/buildings.txt map/railways.txt map/supply_nodes.txt map/unitstacks.txt \
+            "history/states/668-The Moluccas.txt" \
+            "history/states/673-Sulawesi.txt" \
+            "history/states/909-Riau Islands.txt" \
+            "history/states/975-North Sulawesi.txt" \
+            "history/states/978-Central Kalimantan.txt" \
+            "map/strategicregions/159-Borneo.txt" \
+            "map/strategicregions/188-Malaya.txt"
+          if git diff --cached --quiet; then
+            echo "No map changes needed"
+          else
+            git commit -m "Fix: sync RT56 map province assignments"
+            git push origin HEAD:fix/main-menu-crash-1.19
+          fi
